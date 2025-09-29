@@ -18,9 +18,11 @@ public class AnioBisiesto {
         System.out.println("Introduzca un año: ");
         int anio = sc.nextInt();
         // Calculo si es bisiesto (si es divisible por 4 y no 100 o por 400)
-        if((anio%4==0 && anio%100!=0)||anio%400==0){
+        if(anio%4==0 && anio%100!=0){
             System.out.println("El año es bisiesto");
-        } else {
+        } else if(anio%400==0){
+            System.out.println("El año es bisiesto ¡y divisible entre 400!");
+        } else{
             System.out.println("El año no es bisiesto");
         }
         // Cierro Scanner
