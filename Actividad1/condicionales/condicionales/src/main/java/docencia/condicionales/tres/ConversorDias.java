@@ -17,23 +17,17 @@ public class ConversorDias {
         // Pido el número por consola
         System.out.println("Introduzca un número para saber el día: ");
         int numero = sc.nextInt();
-        // Abro un array con todas las posibles respuestas
-
-
-        // CAMBIAR ARRAY POR SWITCH
-
-
-
-        String dias[] = {"Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sábado", "Domingo"};
-        // Si no está entre 0 y 7 error
-        if(numero <0 || numero >7){ 
-            System.out.println("Introduzca un número del 0 al 7");
-        // Si es 0 es domingo
-        } else if(numero==0){ 
-            System.out.println("Día: "+dias[6]);
-        // Cualquier otro caso imprimo la posición del número en el array -1 
-        } else {
-            System.out.println("Día: "+ dias[numero-1]);
+        // Imprimo el día correspondiente en base al número
+        switch (numero) {
+            case 1: System.out.println("Lunes"); break;
+            case 2: System.out.println("Martes"); break;
+            case 3: System.out.println("Miércoles"); break;
+            case 4: System.out.println("Jueves"); break;
+            case 5: System.out.println("Viernes"); break;
+            case 6: System.out.println("Sábado"); break;
+            case 7: case 0: System.out.println("Domingo"); break;
+            default:  System.out.println("Valor inválido"); break;
+        
         }
         // Cierro el scanner
         sc.close();
