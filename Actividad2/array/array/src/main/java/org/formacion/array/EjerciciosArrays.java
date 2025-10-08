@@ -10,7 +10,13 @@ public class EjerciciosArrays {
      * @return array ordenado
      */
     public static int[] invertir(int[] array) {
-        return null;
+
+        int tamanio = array.length;
+        int[] invertido = new int[tamanio];
+        for(int i = 0; i < tamanio; i++){
+            invertido[i] = array[tamanio-i-1];
+        }
+        return invertido;
     }
 
     /**
@@ -19,7 +25,13 @@ public class EjerciciosArrays {
      * @return
      */
     public static int  paresCalcetines(String[] colores, String color) {
-        return 0;
+        int parejas=0;
+        for(int i =0; i < colores.length; i++){
+            if(colores[i].equals(color)){
+                parejas++;
+            }
+        }
+        return parejas/2;
     }
 
 
@@ -29,6 +41,16 @@ public class EjerciciosArrays {
      * @return playlist sin duplicados
      */
     public static String[] sinRepetidos(String[] playlist) {
+        String cancion;
+        String []play = new String[playlist.length];
+        for(int i=0; i < playlist.length; i++) {
+            cancion = playlist[i];
+            for(int j=0; j < play.length; j++) {
+                if(play[j] != null){
+                    play[j] = cancion;
+                }
+            }
+        }
         return null;
     }
 
@@ -39,7 +61,18 @@ public class EjerciciosArrays {
      * @return
      */
     public static int[] rotar(int[] array, int k) {
-        return null;
+        int[] rotado = new int[array.length];
+
+        for(int i = 0; i <array.length; i++){
+            int indice = i+k;
+            if (indice >= array.length) {
+                rotado [indice-k] = array[indice-array.length];
+             } else {
+                rotado[i] = array[indice];
+             }
+        }
+
+        return rotado;
     }
 
     /**
