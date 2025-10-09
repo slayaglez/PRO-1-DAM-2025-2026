@@ -55,6 +55,7 @@ public class EjerciciosArrays {
     }
 
     /**
+     * EJERCICIO DE EXAMEN
      * Rota un array k posiciones a la derecha.
      * @param array
      * @param k posiciones que debe de rotar
@@ -76,6 +77,7 @@ public class EjerciciosArrays {
     }
 
     /**
+     * EJERCICIO DE EXAMEN
      * Devuelve un subarray desde índice i hasta j.
      * @param array
      * @param i posicion inicial
@@ -83,7 +85,24 @@ public class EjerciciosArrays {
      * @return sub array
      */
     public static int[] rebanada(int[] array, int i, int j) {
-        return null;
+        // Mensaje error 
+        if(i <0){
+            return null;
+        }
+        if(j >= array.length){
+            return null;
+        }
+        if(i >= j){
+            return null;
+        }
+        // 
+        int tamanioNuevo = j - i;
+        int[] resultado = new int[tamanioNuevo];
+        for(int k = 0 ; k<tamanioNuevo; k++){
+            resultado[k]= array[k+i];
+        }
+
+        return resultado;
     }
 
     /**
@@ -101,18 +120,36 @@ public class EjerciciosArrays {
      * @return
      */
     public static int[] swapExtremos(int[] array) {
-        return null;
+        int auxiliar = array[0];
+        array[0] = array[array.length-1];
+        array[array.length-1] = auxiliar;
+        return array;
     }
 
     /**
      * Devuelve los elementos comunes entre dos arrays.
-     * @param primerArray
-     * @param segundoArray
+     * @param arrayA
+     * @param arrayB
      * @return array con valores comunes
      */
-    public static int[] interseccion(int[] primerArray, int[] segundoArray) {
+    public static int[] interseccion(int[] arrayA, int[] arrayB) {
 
-        return null;
+        int[] tercerArray = new int[arrayB.length];
+        int futuroTamanio=0;
+        for(int i=0; i<arrayA.length; i++){
+            for(int j=0; j<arrayB.length; j++){
+                if(arrayA[i]==arrayB[j]){
+                    futuroTamanio++;
+                    tercerArray[j]=arrayA[i];
+                }
+            }
+        }
+
+        int [] cuartoArray = new int[futuroTamanio];
+        for(int i =0; i<cuartoArray.length; i++){
+            cuartoArray[i]=tercerArray[i];
+        }
+        return cuartoArray;
     }
 
     /**
@@ -122,7 +159,45 @@ public class EjerciciosArrays {
      * @return array con la diferencia simetrica
      */
     public static int[] difSim(int[] arrayA, int[] arrayB) {
-        return null;
+        
+        for(int i=0; i<arrayA.length; i++){
+            for(int j=0; j<arrayB.length; j++){
+                if(arrayA[i]==arrayB[j]){
+                    arrayA[i]=0;
+                    arrayB[j]=0;
+                }
+            }
+        }
+        int futuroTamanio=0;
+        for(int numero : arrayA){
+            if(numero != 0){
+                futuroTamanio++;
+            }
+        }
+        for(int numero : arrayB){
+            if(numero != 0){
+                futuroTamanio++;
+            }
+        }
+
+        int [] tercerArray = new int[futuroTamanio];
+        int contador=0;
+        for(int i =0; i<tercerArray.length; i++){
+            for(int numero : arrayA){
+            if(numero != 0){
+                tercerArray[contador] = numero;
+            }
+            contador++;
+        }
+        for(int numero : arrayB){
+            if(numero != 0){
+                tercerArray[contador] = numero;
+            }
+            contador++;
+        }
+        }
+        
+        return tercerArray;
     }
 
     /**
@@ -173,7 +248,7 @@ public static void main(String[] args) {
 
         System.out.println("Rotación del carrusel: " + Arrays.toString(EjerciciosArrays.rotar(new int[]{1,2,3,4,5}, 2)));
 
-        System.out.println("Rotación del carrusel: " + Arrays.toString(EjerciciosArrays.rebanada(new int[]{0,1,2,3,4}, 1, 4)));
+        System.out.println("Rebanada de array: " + Arrays.toString(EjerciciosArrays.rebanada(new int[]{0,1,2,3,4}, 1, 4)));
 
         System.out.println("Suma de pares: " + EjerciciosArrays.sumaPares(new int[]{1,2,3,4,5,6}));
 
