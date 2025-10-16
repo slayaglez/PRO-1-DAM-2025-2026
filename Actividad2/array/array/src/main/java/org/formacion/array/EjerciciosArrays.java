@@ -160,6 +160,7 @@ public class EjerciciosArrays {
      */
     public static int[] difSim(int[] arrayA, int[] arrayB) {
         
+        // Borro las posiciones en las que hayan numeros iguales
         for(int i=0; i<arrayA.length; i++){
             for(int j=0; j<arrayB.length; j++){
                 if(arrayA[i]==arrayB[j]){
@@ -168,6 +169,7 @@ public class EjerciciosArrays {
                 }
             }
         }
+        // Hago un tamaño con las posiciones llenas tanto de A como de B
         int futuroTamanio=0;
         for(int numero : arrayA){
             if(numero != 0){
@@ -179,25 +181,31 @@ public class EjerciciosArrays {
                 futuroTamanio++;
             }
         }
-
+        // Creo un array con el tamaño de las posiciones llenas
         int [] tercerArray = new int[futuroTamanio];
-        int contador=0;
-        for(int i =0; i<tercerArray.length; i++){
-            for(int numero : arrayA){
-            if(numero != 0){
-                tercerArray[contador] = numero;
-            }
-            contador++;
-        }
-        for(int numero : arrayB){
-            if(numero != 0){
-                tercerArray[contador] = numero;
-            }
-            contador++;
-        }
-        }
+        // int contador=0;
+
+        // for(int i =0; i<tercerArray.length-1; i++){
+        //     for(int numero : arrayA){
+        //     if(numero != 0){
+        //         tercerArray[contador] = numero;
+        //     }
+        //     contador++;
+        // }
+        // for(int numero : arrayB){
+        //     if(numero != 0){
+        //         tercerArray[contador] = numero;
+        //     }
+        //     contador++;
+        // }
+        // }
+
         
-        return tercerArray;
+        // return tercerArray;
+        for(int i=0; i<tercerArray.length-1; i++){
+            
+        }
+        return null;
     }
 
     /**
@@ -206,17 +214,27 @@ public class EjerciciosArrays {
      * @return true/false si es palindrome
      */
     public static boolean esPalindromo(int[] array) {
-        return false;
+        for(int i = 0; i < array.length/2; i++) {
+            if(array[i]!=array[array.length -1 -i]) {
+                return false;
+            }
+        }
+        return true;
     }
 
     /**
-     * Busca el indice de un valor.
+     * Busca el indice de un valor. 
      * @param array de entrada 
      * @param objetivo del indice
      * @return posicion en la que se encuentra
      */
     public static int buscar(int[] array, int objetivo) {
-        return -1;
+
+        if (objetivo >= array.length || objetivo < 0) {
+            return -1;
+        }
+
+        return array[objetivo];
     }
 
     /**
@@ -226,7 +244,11 @@ public class EjerciciosArrays {
      * @return array sin las posiciones dadas
      */
     public static int[] eliminarPorIndices(int[] array, int[] indices) {
-        return null;
+        for(int indice : indices){
+            array[indice] = 0;
+        }
+
+        return array;
     }
 
     /**
