@@ -64,7 +64,7 @@ public class EjerciciosArrays {
     public static int[] rotar(int[] array, int k) {
         int[] rotado = new int[array.length];
 
-        for(int i = 0; i <array.length; i++){
+        for(int i = 0; i < array.length; i++){
             int indice = i+k;
             if (indice >= array.length) {
                 rotado [indice-k] = array[indice-array.length];
@@ -85,21 +85,27 @@ public class EjerciciosArrays {
      * @return sub array
      */
     public static int[] rebanada(int[] array, int i, int j) {
-        // Mensaje error 
-        if(i <0){
+        // Mensaje error
+        if (i<0) {
+            return null;
+        } 
+        if (j >= array.length) {
             return null;
         }
-        if(j >= array.length){
+        if(i>j) {
             return null;
         }
-        if(i >= j){
-            return null;
-        }
-        // 
-        int tamanioNuevo = j - i;
-        int[] resultado = new int[tamanioNuevo];
-        for(int k = 0 ; k<tamanioNuevo; k++){
-            resultado[k]= array[k+i];
+
+        int[] resultado = new int[j-i];
+        for (int k = 0; k < array.length; k++) {
+
+            int indice = i+k;
+
+            if(indice < array.length){
+                resultado[k] = array[indice];
+            }
+         
+
         }
 
         return resultado;
@@ -257,6 +263,7 @@ public class EjerciciosArrays {
      * @return array con la matriz aplanada
      */
     public static int[] aplanar2D(int[][] matriz) {
+
         return null;
     }
 

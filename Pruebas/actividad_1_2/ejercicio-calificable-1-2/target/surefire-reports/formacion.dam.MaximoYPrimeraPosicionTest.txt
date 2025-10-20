@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: formacion.dam.MaximoYPrimeraPosicionTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.030 s <<< FAILURE! -- in formacion.dam.MaximoYPrimeraPosicionTest
+formacion.dam.MaximoYPrimeraPosicionTest.null_LanzaExcepcion -- Time elapsed: 0.005 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.NullPointerException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at formacion.dam.MaximoYPrimeraPosicionTest.null_LanzaExcepcion(MaximoYPrimeraPosicionTest.java:36)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.NullPointerException: Cannot load from int array because "datos" is null
+	at formacion.dam.MaximoYPrimeraPosicion.calcular(MaximoYPrimeraPosicion.java:13)
+	at formacion.dam.MaximoYPrimeraPosicionTest.lambda$null_LanzaExcepcion$1(MaximoYPrimeraPosicionTest.java:37)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+formacion.dam.MaximoYPrimeraPosicionTest.arrayVacio_LanzaExcepcion -- Time elapsed: 0.005 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.ArrayIndexOutOfBoundsException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at formacion.dam.MaximoYPrimeraPosicionTest.arrayVacio_LanzaExcepcion(MaximoYPrimeraPosicionTest.java:30)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at formacion.dam.MaximoYPrimeraPosicion.calcular(MaximoYPrimeraPosicion.java:13)
+	at formacion.dam.MaximoYPrimeraPosicionTest.lambda$arrayVacio_LanzaExcepcion$0(MaximoYPrimeraPosicionTest.java:31)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
