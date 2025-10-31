@@ -83,9 +83,42 @@ public class StringUtils {
 
         return true;
     }
-
+    
+    /**
+     * Funcion que convierte una cadena en un acronimo
+     * @param frase una string de texto con espacios
+     * @return un string acronimo
+     */
     public static String acronimo(String frase) {
-        return null;
+        if (frase == null || frase.isEmpty()) {
+            return frase;
+        }
+
+        String resultado="";
+        boolean hayMayus = false;
+
+        frase = frase.trim();
+        String[] palabras =frase.split(" ");
+
+        for (int i = 0; i < palabras.length; i++) {
+            String palabra = palabras[i];
+            char letra = palabra.charAt(0);
+            String letraStr = String.valueOf(letra);
+            String letraMayus = letraStr.toUpperCase();
+
+            if(letraStr.equals(letraMayus)){
+                resultado += String.valueOf(letra);
+                hayMayus = true;
+            }
+
+            if(!hayMayus){
+                resultado += String.valueOf(letra);
+            }
+
+        }
+
+        resultado = resultado.toUpperCase();
+        return resultado;
     }
 
     public static void main(String[] args) {
@@ -97,5 +130,10 @@ public class StringUtils {
 
         boolean resultado3 = esPalindromo("Ojo Rojo");
         System.out.println(resultado3);
+
+        String resultado4 = acronimo("   Organizacion de las Naciones Unidas");
+        System.out.println(resultado4);
+        resultado4 = acronimo(" lenguaje de marcas ");
+        System.out.println(resultado4);
     }
 }
