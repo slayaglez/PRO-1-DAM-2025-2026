@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: formacion.dam.SumaYConteoPositivosTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.036 s <<< FAILURE! -- in formacion.dam.SumaYConteoPositivosTest
+formacion.dam.SumaYConteoPositivosTest.null_LanzaIllegalArgumentException -- Time elapsed: 0.007 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.NullPointerException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at formacion.dam.SumaYConteoPositivosTest.null_LanzaIllegalArgumentException(SumaYConteoPositivosTest.java:38)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.NullPointerException: Cannot read the array length because "datos" is null
+	at formacion.dam.SumaYConteoPositivos.calcular(SumaYConteoPositivos.java:15)
+	at formacion.dam.SumaYConteoPositivosTest.lambda$null_LanzaIllegalArgumentException$0(SumaYConteoPositivosTest.java:39)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
