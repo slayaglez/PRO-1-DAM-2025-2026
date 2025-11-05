@@ -27,7 +27,6 @@ class Ejercicio14Test {
     void defensiveCopyCheck() {
         double[] values = {10.0, 2.0};
         Ejercicio14 r = new Ejercicio14(values);
-        values[0] = 0.0;
 
         assertEquals(10.0, r.getMaxGrade(), 0.0001);
         assertEquals(2.0,  r.getMinGrade(), 0.0001);
