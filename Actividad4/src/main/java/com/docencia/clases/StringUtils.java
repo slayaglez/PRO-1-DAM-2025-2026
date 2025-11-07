@@ -1,10 +1,10 @@
 package com.docencia.clases;
-
 /**
  * @author slayaglez 
  * @version 1.0.0
  * 
  */
+
 public class StringUtils {
 
     /**

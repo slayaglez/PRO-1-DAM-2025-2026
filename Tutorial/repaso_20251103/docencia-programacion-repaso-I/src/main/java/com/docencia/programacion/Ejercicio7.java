@@ -6,6 +6,7 @@ package com.docencia.programacion;
  * @version 1.0.0
  */
 public class Ejercicio7 {
+    
     /**
      * Funcion que devuelve el tamanio de una cadena de texto
      * @param text cadena de texto

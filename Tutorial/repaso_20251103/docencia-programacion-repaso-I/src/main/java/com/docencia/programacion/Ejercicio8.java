@@ -5,6 +5,7 @@ package com.docencia.programacion;
  * @version 1.0.0
  */
 public class Ejercicio8 {
+    
     /**
      * Funcion que transforma una cadena de texto a un numero entero
      * @param text la cadena de texto

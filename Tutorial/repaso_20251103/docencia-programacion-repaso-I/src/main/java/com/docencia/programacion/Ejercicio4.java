@@ -4,6 +4,7 @@ package com.docencia.programacion;
  * @version 1.0.0.
  */
 public class Ejercicio4 {
+    
     /**
      * Funcion que calcula el area de un rectangulo
      * @param base la base del rectangulo

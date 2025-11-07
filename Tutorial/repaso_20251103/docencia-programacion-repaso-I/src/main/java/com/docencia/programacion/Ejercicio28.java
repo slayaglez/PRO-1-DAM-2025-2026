@@ -1,23 +1,34 @@
 package com.docencia.programacion;
-
+/** 
+ * Clase que trabaja con dos cordenadas de un vector
+ * @author slayaglez
+ * @version 1.0.0
+*/
 public class Ejercicio28 {
     private final double x;
     private final double y;
 
+    /**
+     * Constructor por defecto
+     * @param x punto x
+     * @param y punto y
+     */
     public Ejercicio28(double x, double y) {
-        // TODO asignar campos
-        this.x = 0.0;
-        this.y = 0.0;
+        this.x = x;
+        this.y = y;
     }
 
+    /**
+     * Funcion que suma que coordenadas
+     * @param other
+     * @return
+    */
     public Ejercicio28 add(Ejercicio28 other) {
-        // TODO implementar
-        return new Ejercicio28(0.0, 0.0);
+        return new Ejercicio28(this.x + other.x, this.y + other.y);
     }
 
     public double magnitude() {
-        // TODO implementar
-        return 0.0;
+        return (Math.sqrt(Math.pow(x, 2)+Math.pow(y, 2)));
     }
 
     public double distanceTo(Ejercicio28 other) {
@@ -26,12 +37,10 @@ public class Ejercicio28 {
     }
 
     public double getX() {
-        // TODO implementar
-        return 0.0;
+        return x;
     }
 
     public double getY() {
-        // TODO implementar
-        return 0.0;
+        return y;
     }
 }
