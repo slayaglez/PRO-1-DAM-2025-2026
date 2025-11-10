@@ -13,7 +13,7 @@ public class Ejercicio2 {
      */
     public static int contarVocales(String frase) {
 
-        if(frase == "" || frase == null) {
+        if(frase == null || frase.isEmpty()) {
             return 0;
         }
 

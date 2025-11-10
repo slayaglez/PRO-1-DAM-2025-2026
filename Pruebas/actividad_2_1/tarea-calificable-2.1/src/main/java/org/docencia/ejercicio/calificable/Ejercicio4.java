@@ -19,7 +19,7 @@ public class Ejercicio4 {
      */
     public static int tamPalabraEnFrase(String frase, String palabra) {
 
-        if (frase == null || frase.isEmpty() || palabra == "" || palabra == null) {
+        if (frase == null || frase.isEmpty() || palabra == null || palabra.isEmpty()) {
             return 0;
         }
 
@@ -29,13 +29,12 @@ public class Ejercicio4 {
         String caracterStr = "";
         String fraseAlfanumerica = "";
 
-
         for (int i = 0; i < frase.length(); i++) {
             char caracter = frase.charAt(i);
             caracterStr = String.valueOf(caracter);
-            
-            if (caracter == ' ' || (caracter >= 'A' && caracter <= 'Z') || (caracter >= 'a' && caracter <= 'z')
-                    || (caracter >= '0' && caracter <= '9') || caracter == 'ó' || caracter == 'é' || caracter == 'í'
+
+            if (caracter == ' ' || (caracter >= 'a' && caracter <= 'z') || (caracter >= '0' && caracter <= '9') 
+                    || caracter == 'ó' || caracter == 'é' || caracter == 'í'
                     || caracter == 'á' || caracter == 'ú') {
                 fraseAlfanumerica += caracterStr;
             } else {
