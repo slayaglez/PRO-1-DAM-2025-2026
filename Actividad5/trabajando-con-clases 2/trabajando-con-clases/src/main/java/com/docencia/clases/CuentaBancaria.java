@@ -12,7 +12,7 @@ public class CuentaBancaria {
 
     /**
      * Constructor de la clase Cuenta Bancaria
-     *
+     * 
      * @param iban de la cuenta. Por defecto el saldo incial es 0.0
      */
     public CuentaBancaria(String iban) {
@@ -21,13 +21,13 @@ public class CuentaBancaria {
 
     /**
      * Constructor de la clase Cuenta Bancaria
-     *
+     * 
      * @param iban  Iban identificativo de la cuenta
      * @param saldo Saldo positivo de la cuenta. En caso de <= 0 genera
      *              IllegalArgumentException.
      */
     public CuentaBancaria(String iban, double saldo) {
-        if (!esIban(iban)) {
+        if(!esIban(iban)) {
             throw new IllegalArgumentException("iban");
         }
         this.iban = iban;
@@ -49,7 +49,7 @@ public class CuentaBancaria {
 
     /**
      * Funcion que permite ingresar una cantidad en la cuenta
-     *
+     * 
      * @param cantidad Cantidad que sumamos en la cuenta
      */
     public void ingresar(double cantidad) {
@@ -62,7 +62,7 @@ public class CuentaBancaria {
 
     /**
      * Funcion que retira una cantidad de la cuenta
-     *
+     * 
      * @param cantidad Cantidad que se retira de la cuenta. Nunca la cantidad a
      *                 retirar sera
      *                 mayor que el saldo disponible
@@ -77,7 +77,7 @@ public class CuentaBancaria {
 
     /**
      * Funcion que crea un objeto tipo Cuenta Bancaria a partir del iban y el saldo
-     *
+     * 
      * @param iban  Iban de la cuenta bancaria
      * @param saldo Saldo de la cuenta bancaria
      * @return Un objeto creado de tipo CuentaBancaria
@@ -88,9 +88,8 @@ public class CuentaBancaria {
 
     /**
      * Funcion que indica si el parametro iban es correcto
-     * 
      * @param iban Iban de la cuenta bancaria
-     * @return true/false
+     * @return true/false 
      */
     public static boolean esIban(String iban) {
         if (iban == null || iban.isEmpty()) {
@@ -104,6 +103,7 @@ public class CuentaBancaria {
         return "Cuenta(" + iban + ", saldo=" + saldo + ")";
     }
 
+
     @Override
     public boolean equals(Object o) {
         if (o == this)
@@ -112,11 +112,11 @@ public class CuentaBancaria {
             return false;
         }
         CuentaBancaria cuentaBancaria = (CuentaBancaria) o;
-
+        
         if (!esIban(iban) || !esIban(cuentaBancaria.iban)) {
             return false;
         }
-
+        
         return Objects.equals(iban, cuentaBancaria.iban);
     }
 
@@ -124,6 +124,7 @@ public class CuentaBancaria {
     public int hashCode() {
         return Objects.hash(iban);
     }
+
 
     public static void main(String[] args) {
         CuentaBancaria cuentaBancaria1 = new CuentaBancaria("iban1");
@@ -136,10 +137,10 @@ public class CuentaBancaria {
 
         CuentaBancaria cuentaBancaria3 = CuentaBancaria.of("iban3", 10);
         String iban4 = "iban4";
-
+        
         if (CuentaBancaria.esIban(iban4)) {
-            System.out.println("El iban " + iban4 + ", es valido");
-        } else {
+            System.out.println("El iban "+iban4+", es valido");
+        }else {
             System.out.println("El iban es incorrecto");
         }
         System.out.println(cuentaBancaria3);
