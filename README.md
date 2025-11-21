@@ -4,8 +4,7 @@
 <hr>
 Todos los ejercicios hechos a lo largo del primer año de programación estarán aquí listados para la posterioridad
 
-## Exámenes
-### aka "pruebas evaluables"
+## Exámenes y "pruebas evaluables"
 El ejercicio_1_1 data del *3 de Oct 2025* &nbsp; | **10/10**
 <br>
 El ejercicio_1_2 data del *17 de Oct 2025* | **10/10**
