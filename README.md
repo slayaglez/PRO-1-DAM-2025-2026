@@ -6,7 +6,7 @@ Todos los ejercicios hechos a lo largo del primer año de programación estarán
 
 ## Exámenes
 ### aka "pruebas evaluables"
-El ejercicio_1_1 data del *3 de Oct 2025* &nbsp;|
+El ejercicio_1_1 data del *3 de Oct 2025* &nbsp; |
 <br>
 El ejercicio_1_2 data del *17 de Oct 2025* | 
 <br>
