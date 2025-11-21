@@ -5,22 +5,22 @@
 Todos los ejercicios hechos a lo largo del primer año de programación estarán aquí listados para la posterioridad
 
 ### Actividad 1
-Trabajamos con condicionales, if, else, switch... Cualquier bucle encontrado no pertenece a lo impartido en la clase, en esta actividad se impartió exclusivamente el uso de los condicionales.
+Trabajamos con **condicionales**, if, else, switch... Cualquier bucle encontrado no pertenece a lo impartido en la clase, en esta actividad se impartió exclusivamente el uso de los condicionales.
 
 ### Actividad 2
 Introducción a **arrays** y varios ejercicios sobre cómo recorrer uno con bucles for.
 
 ### Actividad 3
-Introducción a clases, constructores, getters, setters... Importante los métodos `equals()` y `toString()`.
+Introducción a **clases**, constructores, getters, setters... Importante los métodos `equals()` y `toString()`.
 
 ### Actividad 4
-Seguimos con clases aunque entramos en librerías como `java.util.Math` y funciones para tratar con Strings como si fueran arrays. (MathUtils está incompleto).
+Seguimos con **clases** aunque entramos en librerías como `java.util.Math` y funciones para tratar con Strings como si fueran arrays. (MathUtils está incompleto). A destacar funciones como `charAt()` y `contains()`.
 
 ### Actividad 5
-Avanzamos aún más en clases y entramos en herencias de otras clases. (Nótese que `trabajando_con_clases2es` la continuación de `trabajando_con_clases` y no otro ejercicio)
+Avanzamos aún más en clases y entramos en **herencias** de otras clases. (Nótese que `trabajando_con_clases2es` la continuación de `trabajando_con_clases` y no otro ejercicio)
 
 ### Actividad 6
-Ejercicios sobre clases (sin herencias) con las primeras listas. Ideados para el repaso del ejercicio_3_1 que data del *21 de Nov 2025*.
+Ejercicios sobre clases (sin herencias) con las primeras **listas**. Ideados para el repaso del ejercicio_3_1 que data del *21 de Nov 2025*.
 
 ## Exámenes y "pruebas evaluables"
 El ejercicio_1_1 data del *3 de Oct 2025* &nbsp; | **10/10**
