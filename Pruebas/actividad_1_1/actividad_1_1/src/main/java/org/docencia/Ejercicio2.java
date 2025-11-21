@@ -2,11 +2,11 @@ package org.docencia;
 import java.util.Scanner;
 /**
  * 
- * @author Sebastian Laya González (slayaglez)
+ * @author slayaglez
  * @date 3 Oct 2025
  * @class Al introducir un numero se compara para que no este fuera de un rango, luego 
  * se crea un array con los dias de la semana y a el numero dado se le resta uno  
- * para que equivalga a la posición del array e imprima el dia de su interior.
+ * para que equivalga a la posicion del array e imprima el dia de su interior.
  * 
  */
 

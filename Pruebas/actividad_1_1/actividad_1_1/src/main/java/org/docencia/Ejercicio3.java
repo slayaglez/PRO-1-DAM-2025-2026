@@ -2,7 +2,7 @@ package org.docencia;
 import java.util.Scanner;
 /**
  * 
- * @author Sebastian Laya Gonzalez (slayaglez)
+ * @author slayaglez
  * @date 3 Oct 2025
  * @class Una calculadora de areas de circulos, cuadrados y triangulos. Introduce 
  * una opcion de estas y hace el calculo matematico correspondiente. Funciona perfectamente

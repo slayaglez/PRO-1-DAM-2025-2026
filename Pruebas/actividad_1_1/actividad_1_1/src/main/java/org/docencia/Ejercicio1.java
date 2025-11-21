@@ -2,7 +2,7 @@ package org.docencia;
 import java.util.Scanner;
 /**
  * 
- * @author Sebastian Laya González (slayaglez)
+ * @author slayaglez
  * @date 3 Oct 2025
  * @class Un programa que pregunta tus datos por consola y los devuelve de 
  * forma ordenada en un mensaje conjunto.
