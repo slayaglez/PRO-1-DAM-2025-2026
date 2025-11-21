@@ -3,7 +3,21 @@ package unidad3;
 public class Ejercicio10 {
 
     public static String cuadrado(int n) {
-        return null;
+        if (n <= 0) {
+            throw new IllegalArgumentException("n debe ser >= 1");
+        }
+
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                sb.append('*');
+            }
+            if(i != n-1){
+            sb.append('\n');
+            }
+        }
+
+        return sb.toString();
     }
 
     /**

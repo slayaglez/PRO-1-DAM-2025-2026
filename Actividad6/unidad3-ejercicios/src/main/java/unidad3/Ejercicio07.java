@@ -1,13 +1,15 @@
 package unidad3;
 
-import java.util.List;
+import java.util.*;
 
 
 public class Ejercicio07 {
 
     public static class ParesImpares {
-        private final List<Integer> pares;
-        private final List<Integer> impares;
+        private List<Integer> pares;
+        private List<Integer> impares;
+
+        public ParesImpares(){}
 
         public ParesImpares(List<Integer> pares, List<Integer> impares) {
             this.pares = pares;
@@ -25,11 +27,24 @@ public class Ejercicio07 {
 
 
     public static ParesImpares calcularParesImpares(int a, int b) {
-        for (int i = 0; i < b; i++) {
-            if(a > b){
-                
+        if(a > b){ // a siempre será el menor
+            int aux = a;
+            a = b;
+            b = aux;
             }
+
+        List<Integer> pares = new ArrayList<>();
+        List<Integer> impares = new ArrayList<>();
+
+        for (int i = a; i <= b; i++) {
+            if(i % 2 == 0){
+               pares.add(i); 
+            }
+            if(i % 2 != 0){
+               impares.add(i); 
+            }
+
         }
-        return new ParesImpares(null, null);
+        return new ParesImpares(pares, impares);
     }
 }
