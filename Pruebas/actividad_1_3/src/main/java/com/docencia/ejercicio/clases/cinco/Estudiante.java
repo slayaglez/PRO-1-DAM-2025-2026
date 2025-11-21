@@ -1,8 +1,8 @@
 package com.docencia.ejercicio.clases.cinco;
 /**
- * @brief Clase coche que contiene constructores, getters y setters de los parámetros
- * dni y nombre de estudiantes y trabaja con ellos.
  * @author slayaglez
+ * @brief Clase coche que contiene constructores, getters y setters de los parametros
+ * dni y nombre de estudiantes y trabaja con ellos.
  * @date 24 Oct 2025
  * @version 1.0.0
  */

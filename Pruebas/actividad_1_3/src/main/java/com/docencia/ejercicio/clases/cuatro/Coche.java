@@ -1,8 +1,8 @@
 package com.docencia.ejercicio.clases.cuatro;
 /**
- * @brief Clase coche que contiene constructores, getters y setters de los parámetros
- * matrícula, marca, modelo y año y trabaja con ellos.
  * @author slayaglez
+ * @brief Clase coche que contiene constructores, getters y setters de los parametros
+ * matrícula, marca, modelo y año y trabaja con ellos.
  * @date 24 Oct 2025
  * @version 1.0.0
  */

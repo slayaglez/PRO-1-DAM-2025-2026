@@ -1,8 +1,8 @@
 package com.docencia.ejercicio.clases.tres;
 /**
- * @brief Clase CuentaBancaria que contiene constructores, getters y setters de los parámetros
- * titular, numero y saldo y trabaja con ellos.
  * @author slayaglez
+ * @brief Clase CuentaBancaria que contiene constructores, getters y setters de los parametros
+ * titular, numero y saldo y trabaja con ellos.
  * @date 24 Oct 2025
  * @version 1.0.0
  */

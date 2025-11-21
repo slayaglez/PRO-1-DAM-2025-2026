@@ -1,9 +1,9 @@
 package com.docencia.ejercicio.clases.dos;
 import java.util.Objects;
 /**
- * @brief Clase libro que contiene constructores, getters y setters de los parámetros
- * titulo, autor y isbn y trabaja con ellos.
  * @author slayaglez
+ * @brief Clase libro que contiene constructores, getters y setters de los parametros
+ * titulo, autor y isbn y trabaja con ellos.
  * @date 24 Oct 2025
  * @version 1.0.0
  */

@@ -1,10 +1,10 @@
 package com.docencia.ejercicio.clases.uno;
 /**
- * @brief Puto2D que contiene constructores, getters y setters de los parámetros
- * X e Y y trabaja con ellos.
  * @author slayaglez
  * @date 24 Oct 2025
  * @version 1.0.0
+ * @brief Puto2D que contiene constructores, getters y setters de los parametros
+ * X e Y y trabaja con ellos.
  */
 import java.util.Objects;
 
@@ -27,14 +27,12 @@ public class Punto2D {
         this.y = y;
     }
     
-    // Getters y setters
     public double getX() { return x; }
     public void setX(double x) { this.x = x; }
 
     public double getY() { return y; }
     public void setY(double y) { this.y = y; }
 
-    // toEquals
     @Override
     public boolean equals(Object o) {
         if (o == this)
@@ -46,13 +44,11 @@ public class Punto2D {
         return x == punto2D.x && y == punto2D.y;
     }
     
-    //hashCode
     @Override
     public int hashCode() {
         return Objects.hash(x, y);
     }
 
-    //toString
     @Override
     public String toString() {
         return "(x=" + getX() + ", y=" + getY()+")";
