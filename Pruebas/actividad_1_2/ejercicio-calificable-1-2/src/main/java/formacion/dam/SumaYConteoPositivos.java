@@ -1,8 +1,8 @@
 package formacion.dam;
 /**
+ * @author slayaglez
  * @brief Un programa que lee un array y suma sus números positivos
  * y los cuenta devolviendo un array con la suma y el conteo.
- * @author Sebastián Laya González (slayaglez)
  * @date 17 Oct 2025
  */
 

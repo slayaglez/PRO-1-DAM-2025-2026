@@ -1,6 +1,10 @@
 package formacion.dam;
 
 import java.util.Arrays;
+/**
+ * Los 5 ejercicios estan bien y funcionan de forma optima.
+ *  -slayaglez
+ */
 
 public class App {
  

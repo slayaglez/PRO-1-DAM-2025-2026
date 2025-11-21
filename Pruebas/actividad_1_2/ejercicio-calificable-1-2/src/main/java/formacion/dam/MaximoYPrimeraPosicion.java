@@ -1,8 +1,9 @@
 package formacion.dam;
 /**
+ * 
+ * @author slayaglez
  * @brief Programa que devuelve un array con el número más
  * grande del array y su posición.
- * @author Sebastián Laya González (slayaglez)
  * @date 17 Oct 2025
  */
 

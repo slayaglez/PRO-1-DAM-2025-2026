@@ -1,7 +1,7 @@
 package formacion.dam;
 /**
+ * @author slayaglez
  * @brief Un programa que invierte un array sin crear otro del mismo tamaño
- * @author Sebastián Laya González (slayaglez)
  * @date 17 Oct 2025
  */
 

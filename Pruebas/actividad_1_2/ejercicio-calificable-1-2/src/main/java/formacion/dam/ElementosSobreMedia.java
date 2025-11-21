@@ -1,11 +1,12 @@
 package formacion.dam;
 /**
+ * @author slayaglez
  * @brief Un programa que hace una media de los números de un array
- * y en otro array mete los números que sean superiores a la media. 
- * @author Sebastián Laya González (slayaglez)
+ * y en otro array mete los numeros que sean superiores a la media. 
  * @date 17 Oct 2025
  */
 
+//! A Joathan no le gustan los comentarios en medio del codigo aun.
 import java.util.Arrays;
 
 

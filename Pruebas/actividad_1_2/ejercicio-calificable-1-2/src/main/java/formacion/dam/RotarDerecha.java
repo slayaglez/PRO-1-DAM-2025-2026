@@ -1,7 +1,7 @@
 package formacion.dam;
 /**
+ * @author slayaglez
  * @brief Un programa que rota el array dos posiciones hacia la derecha
- * @author Sebastián Laya González (slayaglez)
  * @date 17 Oct 2025
  */
 
