@@ -17,7 +17,7 @@ Introducción a **clases**, constructores, getters, setters... Importante los m�
 Seguimos con **clases** aunque entramos en librerías como `java.util.Math` y funciones para tratar con Strings como si fueran arrays. (MathUtils está incompleto). A destacar funciones como `charAt()` y `contains()`.
 
 ### Actividad 5
-Avanzamos aún más en clases y entramos en **herencias** de otras clases. (Nótese que `trabajando_con_clases2es` la continuación de `trabajando_con_clases` y no otro ejercicio)
+Avanzamos aún más en clases y entramos en **herencias** de otras clases. (Nótese que `trabajando_con_clases2` es la continuación de `trabajando_con_clases` y no otro ejercicio)
 
 ### Actividad 6
 Ejercicios sobre clases (sin herencias) con las primeras **listas**. Ideados para el repaso del ejercicio_3_1 que data del *21 de Nov 2025*.
