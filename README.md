@@ -23,13 +23,13 @@ Avanzamos aún más en clases y entramos en **herencias** de otras clases. (Nót
 Ejercicios sobre clases (sin herencias) con las primeras **listas**. Ideados para el repaso del ejercicio_2_2 que data del *21 de Nov 2025*.
 
 ## Exámenes y "pruebas evaluables"
-El ejercicio_1_1 data del *3 de Oct 2025* &nbsp; | **10/10**
+El ejercicio_1_1 data del *3 de Oct 2025* &nbsp; &nbsp;| **10/10**
 <br>
-El ejercicio_1_2 data del *17 de Oct 2025* | **10/10**
+El ejercicio_1_2 data del *17 de Oct 2025* &nbsp;| **10/10**
 <br>
-El ejercicio_1_3 data del *24 de Oct 2025* | **10/10**
+El ejercicio_1_3 data del *24 de Oct 2025* &nbsp;| **10/10**
 <br>
-El ejercicio_2_1 data del *7 de Nov 2025* &nbsp;| **10/10**
+El ejercicio_2_1 data del *7 de Nov 2025* &nbsp; | **10/10**
 <br>
 El ejercicio_2_2 data del *21 de Nov 2025* | **10/10**
 
