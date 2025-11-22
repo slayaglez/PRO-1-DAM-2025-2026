@@ -31,5 +31,5 @@ El ejercicio_1_3 data del *24 de Oct 2025* | **10/10**
 <br>
 El ejercicio_2_1 data del *7 de Nov 2025* &nbsp;| **10/10**
 <br>
-El ejercicio_2_2 data del *21 de Nov 2025* &nbsp;| **10/10**
+El ejercicio_2_2 data del *21 de Nov 2025* | **10/10**
 
