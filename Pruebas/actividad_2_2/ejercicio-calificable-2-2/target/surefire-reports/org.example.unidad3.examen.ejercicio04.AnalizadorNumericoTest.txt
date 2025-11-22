@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.example.unidad3.examen.ejercicio04.AnalizadorNumericoTest
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 s -- in org.example.unidad3.examen.ejercicio04.AnalizadorNumericoTest
