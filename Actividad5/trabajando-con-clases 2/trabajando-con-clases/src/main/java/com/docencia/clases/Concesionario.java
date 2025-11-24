@@ -36,9 +36,7 @@ public class Concesionario {
     }
 
     public List<Coche> cochesOrdenadosPorMatricula() { //! Pregunta de examen
-        coches.sort(Comparator
-            .comparing((Coche c)-> c.getMatricula(), 
-            Comparator.reverseOrder()));
+        coches.sort(Comparator.comparing((Coche c)-> c.getMatricula(), Comparator.reverseOrder()));
 
         return coches;  
     }
