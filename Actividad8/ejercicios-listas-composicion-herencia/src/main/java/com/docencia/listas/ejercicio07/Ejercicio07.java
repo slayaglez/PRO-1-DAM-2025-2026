@@ -13,11 +13,15 @@ public class Ejercicio07 {
         Collections.sort(lista);
     }
 
-    public static void ordenarSinSort(List<Integer> lista) {
+    public static void ordenarSinSort(List<Integer> lista) { 
+        
         List<Integer> resultado = new ArrayList<>();
 
-        resultado.add(Collections.min(lista));
-        
-        // TODO
+        int tamanio= lista.size();
+        for (int i = 0; i < tamanio; i++) {
+            resultado.add(Collections.min(lista));
+            lista.removeIf(elemento -> elemento.equals((Collections.min(lista)))); 
+        }
+        lista.addAll(resultado);
     }
 }
