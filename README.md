@@ -23,7 +23,10 @@ Avanzamos aún más en clases y entramos en **herencias** de otras clases. (Nót
 Ejercicios sobre clases (sin herencias) con las primeras **listas**. Ideados para el repaso del ejercicio_2_2 que data del *21 de Nov 2025*.
 
 ### Actividad 7
-Ejercicios sobre clases con **herencias**.
+Ejercicios sobre clases con **herencias**. Data del *24 de Nov 2025*.
+
+### Actividad 8
+Ejercicios con clases y **listas**, usamos Collections y métodos como .size() o .min(). Data del *26 de Nov 2025*.
 
 ## Exámenes y "pruebas evaluables"
 El ejercicio_1_1 data del *3 de Oct 2025* &nbsp; &nbsp;| **10/10**
