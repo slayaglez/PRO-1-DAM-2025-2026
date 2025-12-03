@@ -8,5 +8,15 @@ package com.docencia.herencia.ejercicio23;
  * al enunciado.
  */
 public class Ejercicio23 {
-    // TODO: implementar jerarquía de herencia para el ejercicio 23
+
+    
+    public static void main(String[] args) {
+        Vehiculo vehiculo = new Coche("4223 FDK");
+        //System.out.println(vehiculo.descripcion());
+        
+        Vehiculo avion = new Aeronave(2, "2222ACD");
+        System.out.println(avion);
+    
+    }
+
 }
