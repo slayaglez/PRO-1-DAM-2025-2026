@@ -2,7 +2,7 @@
 # Programación 1º de DAM
 ## IES Puerto de la Cruz
 <hr>
-Todos los ejercicios hechos a lo largo del primer año de programación estarán aquí listados para la posterioridad
+Todos los ejercicios hechos a lo largo del primer año de programación estarán aquí listados para la posterioridad. Asignatura impartida por Joathan Pérez Expósito.
 
 ### Actividad 1
 Trabajamos con **condicionales**, if, else, switch... Cualquier bucle encontrado no pertenece a lo impartido en la clase, en esta actividad se impartió exclusivamente el uso de los condicionales.
