@@ -4,6 +4,10 @@
 <hr>
 Todos los ejercicios hechos a lo largo del primer año de programación estarán aquí listados para la posterioridad. Asignatura impartida por Joathan Pérez Expósito.
 
+<br>
+
+## Actividades
+
 ### Actividad 1
 Trabajamos con **condicionales**, if, else, switch... Cualquier bucle encontrado no pertenece a lo impartido en la clase, en esta actividad se impartió exclusivamente el uso de los condicionales.
 
@@ -28,7 +32,11 @@ Ejercicios sobre clases con **herencias**. Data del *24 de Nov 2025*.
 ### Actividad 8
 Ejercicios con clases y **listas**, usamos Collections y métodos como .size() o .min(). Data del *26 de Nov 2025*.
 
-## Exámenes y "pruebas evaluables"
+<br>
+
+## Exámenes y "Pruebas evaluables"
+Dentro de la carpeta Pruebas se encontrará:
+
 El ejercicio_1_1 data del *3 de Oct 2025* &nbsp; &nbsp;| **10/10**
 <br>
 El ejercicio_1_2 data del *17 de Oct 2025* &nbsp;| **10/10**
