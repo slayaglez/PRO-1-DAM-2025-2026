@@ -1,5 +1,5 @@
+<img src="/img/pro_header.png">
 
-# Programación 1º de DAM
 ## IES Puerto de la Cruz
 <hr>
 Todos los ejercicios y exámenes hechos a lo largo del primer año de programación estarán aquí listados para la posterioridad. Asignatura impartida por Joathan Pérez Expósito.
