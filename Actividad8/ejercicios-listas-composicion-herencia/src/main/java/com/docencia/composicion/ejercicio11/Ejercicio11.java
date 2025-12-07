@@ -1,14 +1,17 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Programa de clases que trabaja con Personas y direcciones
+ * permitiendo obtener una lista de personas buscando una ciudad.
+ * 
+ */
+
 package com.docencia.composicion.ejercicio11;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Ejercicio 11 - ver la descripción detallada en el README.md.
- *
- * Diseña aquí las clases de dominio, atributos, métodos y relaciones
- * de composición correspondientes al enunciado.
- */
+
 public class Ejercicio11 {
     public static void main(String[] args) {
         Direccion direccion1 = new Direccion("Venezuela", "Caracas", "El paraíso", 98435);
@@ -28,6 +31,12 @@ public class Ejercicio11 {
         System.out.println(personasEncontradas);
     }
 
+    /**
+     * Devuelve una lista de Persona que vivan en la ciudad pasada
+     * @param personas Lista de tipo Persona
+     * @param ciudad Nombre de la ciudad
+     * @return Lista de personas de la ciudad
+     */
     public static List<Persona> encontrarPersonaPorCiudad(List<Persona> personas, String ciudad){
         if(personas == null || ciudad == null || ciudad.isBlank()){
             return null;
