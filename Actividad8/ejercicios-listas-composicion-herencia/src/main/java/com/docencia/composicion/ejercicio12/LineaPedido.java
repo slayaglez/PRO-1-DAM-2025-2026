@@ -54,8 +54,6 @@ public class LineaPedido{
                 return false;
         } else if (!producto.equals(other.producto))
             return false;
-        if (cantidad != other.cantidad)
-            return false;
         return true;
     }
 

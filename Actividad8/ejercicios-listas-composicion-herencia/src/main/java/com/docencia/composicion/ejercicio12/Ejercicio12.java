@@ -14,7 +14,6 @@ public class Ejercicio12 {
     public static void main(String[] args) {
         Producto producto1 = new Producto("pizza", 9.99);
         Producto producto2 = new Producto("silla", 39.99);
-        Producto producto3 = new Producto("avion", 999.99);
 
         LineaPedido linea1 = new LineaPedido(producto1, 3);
         LineaPedido linea2 = new LineaPedido(producto2, 2);

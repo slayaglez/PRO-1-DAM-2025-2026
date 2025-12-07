@@ -55,8 +55,6 @@ public class Producto {
                 return false;
         } else if (!nombre.equals(other.nombre))
             return false;
-        if (Double.doubleToLongBits(precio) != Double.doubleToLongBits(other.precio))
-            return false;
         return true;
     }
 
