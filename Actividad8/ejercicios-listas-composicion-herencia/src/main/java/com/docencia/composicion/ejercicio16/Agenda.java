@@ -1,5 +1,6 @@
 package com.docencia.composicion.ejercicio16;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Agenda {
@@ -46,6 +47,38 @@ public class Agenda {
     public String toString() {
         return "Agenda [Agenda=" + Agenda + "]";
     }
-    
+
+    //! Esto es una castaña, usa el remove() y el contains()
+    public Agenda borrarTelefonoPorTipo(Agenda agenda, String tipo){
+        
+        List<Telefono> telefonos2 = new ArrayList<>();
+        Contacto contacto2 = new Contacto(null, null);
+        List<Contacto> contactos = new ArrayList<>();
+        contactos = agenda.getAgenda();
+        String nombre="";
+        List<Contacto> contactos2 = new ArrayList<>();
+
+        for (Contacto contacto : agenda.getAgenda()) {
+            List<Telefono> telefonos = contacto.getTelefonos();
+            for (int i = 0; i < telefonos.size(); i++) {
+                if(!(telefonos.get(i).getTipo().equals(tipo))){
+                    contacto2.agregarTelefono(telefonos.get(i)); //! Rompe aqui
+                    nombre = getContactoPorIndex(contactos, i).getNombre();
+                    contacto2.setNombre(nombre);
+                }
+            }
+            contactos2.add(contacto2);
+        }
+        Agenda resultado = new Agenda(contactos2);
+        return resultado;
+    }
+
+    public Contacto getContactoPorIndex(List<Contacto> contactos, int index){
+
+        Contacto resultado = new Contacto();
+        resultado = contactos.get(index);
+        
+        return resultado;
+    }
     
 }

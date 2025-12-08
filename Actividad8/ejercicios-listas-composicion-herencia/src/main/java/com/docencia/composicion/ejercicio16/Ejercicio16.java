@@ -28,10 +28,20 @@ public class Ejercicio16 {
         Contacto contacto2 = new Contacto("Andrea", telefonos2);
 
         List<Contacto> contactos = new ArrayList<>();
-
+        contactos.add(contacto1);
+        contactos.add(contacto2);
         Agenda agenda = new Agenda(contactos);
+        System.out.println(agenda);
+
+        contacto1.agregarTelefono(numero3);
+        System.out.println(contacto1);
+
+        Agenda agendaBorrada = new Agenda(null);
+        agendaBorrada.borrarTelefonoPorTipo(agenda, "fijo");
+        System.out.println(agenda);
     }
 
+    
     
 
 }

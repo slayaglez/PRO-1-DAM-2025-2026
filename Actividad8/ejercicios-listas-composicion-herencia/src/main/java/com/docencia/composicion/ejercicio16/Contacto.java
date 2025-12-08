@@ -6,6 +6,16 @@ public class Contacto {
     private String nombre;
     private List<Telefono> telefonos;
 
+    public Contacto(){}
+
+    public Contacto(String nombre){
+        this.nombre = nombre;
+    }
+
+    public Contacto(List<Telefono> telefonos){
+        this.telefonos = telefonos;
+    }
+
     public Contacto(String nombre, List<Telefono> telefonos) {
         this.nombre = nombre;
         this.telefonos = telefonos;
@@ -66,4 +76,6 @@ public class Contacto {
     public void agregarTelefono(Telefono telefono){
         telefonos.add(telefono);
     }
+
+    
 }
