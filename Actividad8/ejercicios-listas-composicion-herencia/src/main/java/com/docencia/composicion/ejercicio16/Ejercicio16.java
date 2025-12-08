@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Ejercicio 16 - ver la descripción detallada en el README.md.
- *
- * Diseña aquí las clases de dominio, atributos, métodos y relaciones de
- * composición correspondientes al enunciado.
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Programa de clases con telefonos, contactos y agendas; donde se pueden añadir telefonos
+ *  a un contacto, borrar telefonos por su tipo y buscar contactos por nombre o numero
  */
 public class Ejercicio16 {
 
@@ -31,14 +31,23 @@ public class Ejercicio16 {
         contactos.add(contacto1);
         contactos.add(contacto2);
         Agenda agenda = new Agenda(contactos);
-        System.out.println(agenda);
+        System.out.println("Agenda completa:");
+        System.out.println(agenda+"\n");
 
         contacto1.agregarTelefono(numero3);
-        System.out.println(contacto1);
+        System.out.println("Contacto1 mas un numero:");
+        System.out.println(contacto1+"\n");
 
-        Agenda agendaBorrada = new Agenda(null);
-        agendaBorrada.borrarTelefonoPorTipo(agenda, "fijo");
-        System.out.println(agenda);
+        
+        agenda.borrarTelefonoPorTipo("fijo");
+        System.out.println("Agenda menos los fijos:");
+        System.out.println(agenda+"\n");
+
+        System.out.println("Contacto buscado por nombre:");
+        System.out.println(agenda.buscarContactoPorNombre("Andrea")+"\n");
+
+        System.out.println("Contacto buscado por numero:");
+        System.out.println(agenda.buscarContactoPorNumero("618845790"));
     }
 
     

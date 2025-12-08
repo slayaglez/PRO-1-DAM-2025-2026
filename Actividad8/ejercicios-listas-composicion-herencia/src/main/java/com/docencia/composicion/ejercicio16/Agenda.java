@@ -6,6 +6,10 @@ import java.util.List;
 public class Agenda {
     private List<Contacto> Agenda;
 
+    /**
+     * Constructor por defecto
+     * @param agenda Lista de contactos
+     */
     public Agenda(List<Contacto> agenda) {
         Agenda = agenda;
     }
@@ -48,37 +52,46 @@ public class Agenda {
         return "Agenda [Agenda=" + Agenda + "]";
     }
 
-    //! Esto es una castaña, usa el remove() y el contains()
-    public Agenda borrarTelefonoPorTipo(Agenda agenda, String tipo){
-        
-        List<Telefono> telefonos2 = new ArrayList<>();
-        Contacto contacto2 = new Contacto(null, null);
-        List<Contacto> contactos = new ArrayList<>();
-        contactos = agenda.getAgenda();
-        String nombre="";
-        List<Contacto> contactos2 = new ArrayList<>();
+    /**
+     * Metodo que borra un telefono por su tipo
+     * @param tipo tipo de telefono que se borra
+     */
+    public void borrarTelefonoPorTipo(String tipo){
 
-        for (Contacto contacto : agenda.getAgenda()) {
-            List<Telefono> telefonos = contacto.getTelefonos();
-            for (int i = 0; i < telefonos.size(); i++) {
-                if(!(telefonos.get(i).getTipo().equals(tipo))){
-                    contacto2.agregarTelefono(telefonos.get(i)); //! Rompe aqui
-                    nombre = getContactoPorIndex(contactos, i).getNombre();
-                    contacto2.setNombre(nombre);
-                }
-            }
-            contactos2.add(contacto2);
+        for (Contacto contacto : Agenda) {
+            contacto.getTelefonos().removeIf(telefono -> telefono.getTipo().equals(tipo));
         }
-        Agenda resultado = new Agenda(contactos2);
-        return resultado;
     }
 
-    public Contacto getContactoPorIndex(List<Contacto> contactos, int index){
+    /**
+     * Metodo que busca un contacto por su nombre
+     * @param nombre nombre del contacto
+     * @return el contacto
+     */
+    public Contacto buscarContactoPorNombre(String nombre){
 
-        Contacto resultado = new Contacto();
-        resultado = contactos.get(index);
-        
-        return resultado;
+        for (Contacto contacto : Agenda) {
+            if(contacto.getNombre().equals(nombre)){
+                return contacto;
+            }
+        }
+        throw new IllegalArgumentException("El contacto no existe");
     }
-    
+
+    /**
+     * Metodo que busca un contacto por un numero de telefono
+     * @param numero el numero de telefono
+     * @return el contacto
+     */
+    public Contacto buscarContactoPorNumero(String numero){
+
+        List<Telefono> listaTelefonos = new ArrayList<>();
+        for (int i = 0; i < Agenda.size(); i++) {
+            listaTelefonos = Agenda.get(i).getTelefonos();
+            if(listaTelefonos.get(i).getNumero().equals(numero)){
+                return Agenda.get(i);
+            }
+        }
+        throw new IllegalArgumentException("El contacto no existe");
+    }   
 }

@@ -8,14 +8,11 @@ public class Contacto {
 
     public Contacto(){}
 
-    public Contacto(String nombre){
-        this.nombre = nombre;
-    }
-
-    public Contacto(List<Telefono> telefonos){
-        this.telefonos = telefonos;
-    }
-
+    /**
+     * Constructor por defecto
+     * @param nombre nombre del contacto
+     * @param telefonos Lista de telefonos
+     */
     public Contacto(String nombre, List<Telefono> telefonos) {
         this.nombre = nombre;
         this.telefonos = telefonos;
@@ -73,6 +70,10 @@ public class Contacto {
         return "Contacto [nombre=" + nombre + ", telefonos=" + telefonos + "]";
     }
 
+    /**
+     * Metodo que agrega un telefono al contacto
+     * @param telefono
+     */
     public void agregarTelefono(Telefono telefono){
         telefonos.add(telefono);
     }

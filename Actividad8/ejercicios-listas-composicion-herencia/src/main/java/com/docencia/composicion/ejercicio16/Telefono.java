@@ -4,6 +4,11 @@ public class Telefono {
     private String tipo;
     private String numero;
     
+    /**
+     * Constructor por defecto
+     * @param tipo tipo de telefono (movil o fijo)
+     * @param numero numero de telefono (String)
+     */
     public Telefono(String tipo, String numero) {
         this.tipo = tipo;
         this.numero = numero;
