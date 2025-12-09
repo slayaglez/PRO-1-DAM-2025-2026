@@ -37,13 +37,13 @@ Ejercicios con clases y **listas**, usamos Collections y métodos como .size() o
 ## Exámenes y "Pruebas evaluables"
 Dentro de la carpeta Pruebas se encontrará:
 
-El ejercicio_1_1 data del *3 de Oct 2025* &nbsp; &nbsp;| **10/10**
+El ejercicio_1_1 data del *3 de Oct 2025* &nbsp; &nbsp;| corregido
 <br>
-El ejercicio_1_2 data del *17 de Oct 2025* &nbsp;| **10/10**
+El ejercicio_1_2 data del *17 de Oct 2025* &nbsp;| corregido
 <br>
-El ejercicio_1_3 data del *24 de Oct 2025* &nbsp;| **10/10**
+El ejercicio_1_3 data del *24 de Oct 2025* &nbsp;| corregido
 <br>
-El ejercicio_2_1 data del *7 de Nov 2025* &nbsp; | **10/10**
+El ejercicio_2_1 data del *7 de Nov 2025* &nbsp; | corregido
 <br>
-El ejercicio_2_2 data del *21 de Nov 2025* | **10/10**
+El ejercicio_2_2 data del *21 de Nov 2025* | corregido
 
