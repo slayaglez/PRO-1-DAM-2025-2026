@@ -7,6 +7,11 @@ public class Figura {
     
     public Figura(){}    
     
+    /**
+     * Constructor por defecto
+     * @param base base de la figura
+     * @param altura altura de la figura
+     */
     public Figura(long base, long altura){
         this.base = base;
         this.altura = altura;

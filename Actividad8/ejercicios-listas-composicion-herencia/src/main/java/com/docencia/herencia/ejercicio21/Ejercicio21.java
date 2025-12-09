@@ -1,11 +1,10 @@
 package com.docencia.herencia.ejercicio21;
 
 /**
- * Ejercicio 21 - ver la descripción detallada en el README.md.
- *
- * Diseña aquí la jerarquía de clases, clases base abstractas,
- * subclases concretas y métodos polimórficos correspondientes
- * al enunciado.
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Un programa de clases y herencias que trabaja calculando areas
+ * de figuras geométricas.
  */
 public class Ejercicio21 {
     

@@ -1,12 +1,18 @@
 package com.docencia.herencia.ejercicio22;
 
 /**
- * Ejercicio 22 - ver la descripción detallada en el README.md.
- *
- * Diseña aquí la jerarquía de clases, clases base abstractas,
- * subclases concretas y métodos polimórficos correspondientes
- * al enunciado.
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief 
  */
 public class Ejercicio22 {
-    // TODO: implementar jerarquía de herencia para el ejercicio 22
+    public static void main(String[] args) {
+        EmpleadoFijo empleado1 = new EmpleadoFijo(1, "Iker", 24000);
+        EmpleadoPorHoras empleado2 = new EmpleadoPorHoras(2, "Lionel", 8);
+
+        System.out.println(empleado1.calcularSueldo());
+        System.out.println(empleado2.calcularSueldo());
+    }
+
+    
 }
