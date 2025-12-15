@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.condiciones.ejercicio7.Ejercicio7Test
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.029 s <<< FAILURE! -- in com.docencia.condiciones.ejercicio7.Ejercicio7Test
+com.docencia.condiciones.ejercicio7.Ejercicio7Test.caso1 -- Time elapsed: 0.010 s <<< ERROR!
+java.lang.UnsupportedOperationException: No implementado
+	at com.docencia.condiciones.ejercicio7.Ejercicio7.esVocal(Ejercicio7.java:9)
+	at com.docencia.condiciones.ejercicio7.Ejercicio7Test.caso1(Ejercicio7Test.java:9)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.condiciones.ejercicio7.Ejercicio7Test.caso2 -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: No implementado
+	at com.docencia.condiciones.ejercicio7.Ejercicio7.esVocal(Ejercicio7.java:9)
+	at com.docencia.condiciones.ejercicio7.Ejercicio7Test.caso2(Ejercicio7Test.java:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.condiciones.ejercicio7.Ejercicio7Test.caso3 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: No implementado
+	at com.docencia.condiciones.ejercicio7.Ejercicio7.esVocal(Ejercicio7.java:9)
+	at com.docencia.condiciones.ejercicio7.Ejercicio7Test.caso3(Ejercicio7Test.java:19)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

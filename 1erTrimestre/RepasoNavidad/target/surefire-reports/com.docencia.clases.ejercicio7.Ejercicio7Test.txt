@@ -1,0 +1,53 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.clases.ejercicio7.Ejercicio7Test
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.006 s <<< FAILURE! -- in com.docencia.clases.ejercicio7.Ejercicio7Test
+com.docencia.clases.ejercicio7.Ejercicio7Test.toStringDebeContenerElIdentificador -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: toString debe incluir el identificador único ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at com.docencia.clases.ejercicio7.Ejercicio7Test.toStringDebeContenerElIdentificador(Ejercicio7Test.java:41)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.clases.ejercicio7.Ejercicio7Test.equalsDebeCompararPorIdentificador -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Dos objetos con el mismo id deben ser iguales ==> expected: <com.docencia.clases.ejercicio7.Pelicula@19e4653c> but was: <com.docencia.clases.ejercicio7.Pelicula@795509d9>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at com.docencia.clases.ejercicio7.Ejercicio7Test.equalsDebeCompararPorIdentificador(Ejercicio7Test.java:25)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.clases.ejercicio7.Ejercicio7Test.hashCodeDebeSerConsistenteConEquals -- Time elapsed: 0 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Si equals es true, hashCode debe coincidir ==> expected: <1363793720> but was: <1807648168>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at com.docencia.clases.ejercicio7.Ejercicio7Test.hashCodeDebeSerConsistenteConEquals(Ejercicio7Test.java:33)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.clases.ejercicio7.Ejercicio7Test.constructorConIdDebeAsignarIdentificador -- Time elapsed: 0 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <CODIGO-123> but was: <null>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at com.docencia.clases.ejercicio7.Ejercicio7Test.constructorConIdDebeAsignarIdentificador(Ejercicio7Test.java:16)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

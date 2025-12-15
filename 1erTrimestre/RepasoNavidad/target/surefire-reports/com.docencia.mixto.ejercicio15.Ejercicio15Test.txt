@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.mixto.ejercicio15.Ejercicio15Test
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.010 s <<< FAILURE! -- in com.docencia.mixto.ejercicio15.Ejercicio15Test
+com.docencia.mixto.ejercicio15.Ejercicio15Test.debeResolverElEjercicio -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: No implementado
+	at com.docencia.mixto.ejercicio15.Ejercicio15.calcularEstado(Ejercicio15.java:12)
+	at com.docencia.mixto.ejercicio15.Ejercicio15Test.debeResolverElEjercicio(Ejercicio15Test.java:24)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.mixto.ejercicio15.Ejercicio15Test.equalsDebeCompararPorIdentificador -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <com.docencia.mixto.ejercicio15.Alumno2@6221a451> but was: <com.docencia.mixto.ejercicio15.Alumno2@52719fb6>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at com.docencia.mixto.ejercicio15.Ejercicio15Test.equalsDebeCompararPorIdentificador(Ejercicio15Test.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
