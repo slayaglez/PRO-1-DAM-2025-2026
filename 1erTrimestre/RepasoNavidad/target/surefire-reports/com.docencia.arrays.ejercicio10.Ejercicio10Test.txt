@@ -1,12 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.arrays.ejercicio10.Ejercicio10Test
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! -- in com.docencia.arrays.ejercicio10.Ejercicio10Test
-com.docencia.arrays.ejercicio10.Ejercicio10Test.caso1 -- Time elapsed: 0.001 s <<< ERROR!
-java.lang.UnsupportedOperationException: No implementado
-	at com.docencia.arrays.ejercicio10.Ejercicio10.normalizarNegativos(Ejercicio10.java:9)
-	at com.docencia.arrays.ejercicio10.Ejercicio10Test.caso1(Ejercicio10Test.java:9)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.060 s -- in com.docencia.arrays.ejercicio10.Ejercicio10Test
