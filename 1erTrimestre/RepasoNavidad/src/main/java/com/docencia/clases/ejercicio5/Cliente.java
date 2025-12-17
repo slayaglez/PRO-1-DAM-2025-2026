@@ -1,3 +1,8 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Clase cliente que trabaja con clientes
+ */
 package com.docencia.clases.ejercicio5;
 
 import java.util.Objects;
@@ -7,14 +12,32 @@ public class Cliente {
     private String nombre;
     private boolean vip;
 
-    public Cliente() {
-        // TODO: constructor vacío (dejar valores por defecto o inicializar si lo necesitas)
-    }
+    /**
+     * Constructor vacio
+     */
+    public Cliente() {}
 
+    /**
+     * Constructor con identificador unico
+     * @param id identificador unico
+     */
     public Cliente(int id) {
-        // TODO: constructor con identificador único
+        this.id = id;
     }
 
+    /**
+     * Constructor por defecto
+     * @param id identificador unico
+     * @param nombre nombre del cliente
+     * @param vip si el cliente es vip o no
+     */
+    public Cliente(int id, String nombre, boolean vip) {
+        this.id = id;
+        this.nombre = nombre;
+        this.vip = vip;
+    }
+
+    /** Getters y Setters */
     public int getId() {
         return id;
     }
@@ -40,20 +63,26 @@ public class Cliente {
     }
 
     @Override
-    public boolean equals(Object o) {
-        // TODO: implementar equals comparando SOLO el identificador único (id)
-        return super.equals(o);
+    public int hashCode() {
+        return Objects.hash(id);
     }
 
     @Override
-    public int hashCode() {
-        // TODO: implementar hashCode consistente con equals (usar SOLO el identificador único)
-        return super.hashCode();
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Cliente other = (Cliente) obj;
+        return id == other.id;
     }
 
     @Override
     public String toString() {
-        // TODO: implementar toString legible incluyendo al menos el identificador único
-        return super.toString();
+        return "Cliente [id=" + id + ", nombre=" + nombre + ", vip=" + vip + "]";
     }
+
+    
 }

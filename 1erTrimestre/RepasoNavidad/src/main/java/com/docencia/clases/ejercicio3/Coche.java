@@ -1,3 +1,8 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Clase que trabaja con Coches
+ */
 package com.docencia.clases.ejercicio3;
 
 import java.util.Objects;
@@ -7,14 +12,32 @@ public class Coche {
     private String marca;
     private int anio;
 
-    public Coche() {
-        // TODO: constructor vacío (dejar valores por defecto o inicializar si lo necesitas)
-    }
+    /**
+     * Constructor vacio
+     */
+    public Coche() {}
 
+    /**
+     * Constructor por defecto
+     * @param matricula identificador unico
+     */
     public Coche(String matricula) {
-        // TODO: constructor con identificador único
+        this.matricula = matricula;
     }
 
+    /**
+     * Constructor por defecto
+     * @param matricula identificador unico
+     * @param marca marca del coche
+     * @param anio anio del vehiculo
+     */
+    public Coche(String matricula, String marca, int anio) {
+        this.matricula = matricula;
+        this.marca = marca;
+        this.anio = anio;
+    }
+    
+    /** Getters y Setters */
     public String getMatricula() {
         return matricula;
     }
@@ -40,20 +63,26 @@ public class Coche {
     }
 
     @Override
-    public boolean equals(Object o) {
-        // TODO: implementar equals comparando SOLO el identificador único (matricula)
-        return super.equals(o);
+    public int hashCode() {
+        return Objects.hash(matricula);
     }
 
     @Override
-    public int hashCode() {
-        // TODO: implementar hashCode consistente con equals (usar SOLO el identificador único)
-        return super.hashCode();
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Coche other = (Coche) obj;
+        return Objects.equals(matricula, other.matricula);
     }
 
     @Override
     public String toString() {
-        // TODO: implementar toString legible incluyendo al menos el identificador único
-        return super.toString();
+        return "Coche [matricula=" + matricula + ", marca=" + marca + ", anio=" + anio + "]";
     }
+
+    
 }

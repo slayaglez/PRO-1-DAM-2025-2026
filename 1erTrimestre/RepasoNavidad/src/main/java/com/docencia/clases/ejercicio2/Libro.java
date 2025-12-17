@@ -1,3 +1,8 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Clase que trabaja con Libros
+ */
 package com.docencia.clases.ejercicio2;
 
 import java.util.Objects;
@@ -7,14 +12,32 @@ public class Libro {
     private String titulo;
     private String autor;
 
-    public Libro() {
-        // TODO: constructor vacío (dejar valores por defecto o inicializar si lo necesitas)
-    }
+    /**
+     * Constructor vacío
+     */
+    public Libro() {}
 
+    /**
+     * Constructor por id
+     * @param isbn identificador unico
+     */
     public Libro(String isbn) {
-        // TODO: constructor con identificador único
+        this.isbn = isbn;
     }
 
+    /**
+     * Constructor por defecto
+     * @param isbn identificador unico
+     * @param titulo titulo del libro
+     * @param autor autor del libro
+     */
+    public Libro(String isbn, String titulo, String autor) {
+        this.isbn = isbn;
+        this.titulo = titulo;
+        this.autor = autor;
+    }
+
+    /** Getters y Setters */
     public String getIsbn() {
         return isbn;
     }
@@ -40,20 +63,26 @@ public class Libro {
     }
 
     @Override
-    public boolean equals(Object o) {
-        // TODO: implementar equals comparando SOLO el identificador único (isbn)
-        return super.equals(o);
+    public int hashCode() {
+        return Objects.hash(isbn);
     }
 
     @Override
-    public int hashCode() {
-        // TODO: implementar hashCode consistente con equals (usar SOLO el identificador único)
-        return super.hashCode();
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Libro other = (Libro) obj;
+        return Objects.equals(isbn, other.isbn);
     }
 
     @Override
     public String toString() {
-        // TODO: implementar toString legible incluyendo al menos el identificador único
-        return super.toString();
+        return "Libro [isbn=" + isbn + ", titulo=" + titulo + ", autor=" + autor + "]";
     }
+
+    
 }

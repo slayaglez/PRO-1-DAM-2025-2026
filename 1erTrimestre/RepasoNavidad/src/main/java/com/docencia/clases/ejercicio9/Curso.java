@@ -1,3 +1,8 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Clase que trabaja con Cursos
+ */
 package com.docencia.clases.ejercicio9;
 
 import java.util.Objects;
@@ -7,14 +12,32 @@ public class Curso {
     private String nombre;
     private int creditos;
 
-    public Curso() {
-        // TODO: constructor vacío (dejar valores por defecto o inicializar si lo necesitas)
-    }
+    /**
+     * Constructor vacio
+     */
+    public Curso() {}
 
+    /**
+     * Constructor con identificador unico
+     * @param codigo
+     */
     public Curso(String codigo) {
-        // TODO: constructor con identificador único
+        this.codigo = codigo;
     }
 
+    /**
+     * Constructor por defecto
+     * @param codigo id unico
+     * @param nombre nombre del curso
+     * @param creditos creditos que otorga
+     */
+    public Curso(String codigo, String nombre, int creditos) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.creditos = creditos;
+    }
+
+    /** Getters y Setters */
     public String getCodigo() {
         return codigo;
     }
@@ -40,20 +63,26 @@ public class Curso {
     }
 
     @Override
-    public boolean equals(Object o) {
-        // TODO: implementar equals comparando SOLO el identificador único (codigo)
-        return super.equals(o);
+    public int hashCode() {
+        return Objects.hash(codigo);
     }
 
     @Override
-    public int hashCode() {
-        // TODO: implementar hashCode consistente con equals (usar SOLO el identificador único)
-        return super.hashCode();
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Curso other = (Curso) obj;
+        return Objects.equals(codigo, other.codigo);
     }
 
     @Override
     public String toString() {
-        // TODO: implementar toString legible incluyendo al menos el identificador único
-        return super.toString();
+        return "Curso [codigo=" + codigo + ", nombre=" + nombre + ", creditos=" + creditos + "]";
     }
+
+    
 }

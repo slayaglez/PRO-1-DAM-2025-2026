@@ -1,3 +1,8 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Clase que trabaja con usuarios
+ */
 package com.docencia.clases.ejercicio8;
 
 import java.util.Objects;
@@ -7,14 +12,32 @@ public class Usuario {
     private String email;
     private boolean activo;
 
-    public Usuario() {
-        // TODO: constructor vacío (dejar valores por defecto o inicializar si lo necesitas)
-    }
+    /**
+     * Constructor vacio
+     */
+    public Usuario() {}
 
+    /**
+     * Constructor con identificador unico
+     * @param username
+     */
     public Usuario(String username) {
-        // TODO: constructor con identificador único
+        this.username = username;
     }
 
+    /**
+     * Constructor con identificador unico
+     * @param username id unico
+     * @param email email del usuario
+     * @param activo si esta activo o no
+     */
+    public Usuario(String username, String email, boolean activo) {
+        this.username = username;
+        this.email = email;
+        this.activo = activo;
+    }
+
+    /** Getters y Setters */
     public String getUsername() {
         return username;
     }
@@ -40,20 +63,26 @@ public class Usuario {
     }
 
     @Override
-    public boolean equals(Object o) {
-        // TODO: implementar equals comparando SOLO el identificador único (username)
-        return super.equals(o);
+    public int hashCode() {
+        return Objects.hash(username);
     }
 
     @Override
-    public int hashCode() {
-        // TODO: implementar hashCode consistente con equals (usar SOLO el identificador único)
-        return super.hashCode();
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Usuario other = (Usuario) obj;
+        return Objects.equals(username, other.username);
     }
 
     @Override
     public String toString() {
-        // TODO: implementar toString legible incluyendo al menos el identificador único
-        return super.toString();
+        return "Usuario [username=" + username + ", email=" + email + ", activo=" + activo + "]";
     }
+
+    
 }

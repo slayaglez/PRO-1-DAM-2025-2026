@@ -1,3 +1,8 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Clase que trabaja con Peliculas
+ */
 package com.docencia.clases.ejercicio7;
 
 import java.util.Objects;
@@ -7,14 +12,30 @@ public class Pelicula {
     private String titulo;
     private int duracionMin;
 
-    public Pelicula() {
-        // TODO: constructor vacío (dejar valores por defecto o inicializar si lo necesitas)
-    }
+    /**
+     * Constructor vacio
+     */
+    public Pelicula() {}
 
+    /**
+     * Constructor con identificador unico
+     * @param codigo identificador unico
+     */
     public Pelicula(String codigo) {
-        // TODO: constructor con identificador único
+        this.codigo = codigo;
     }
 
+    /**
+     * Constructor con identificador unico
+     * @param codigo identificador unico
+     */
+    public Pelicula(String codigo, String titulo, int duracionMin) {
+        this.codigo = codigo;
+        this.titulo = titulo;
+        this.duracionMin = duracionMin;
+    }
+
+    /** Getters y Setters */
     public String getCodigo() {
         return codigo;
     }
@@ -40,20 +61,25 @@ public class Pelicula {
     }
 
     @Override
-    public boolean equals(Object o) {
-        // TODO: implementar equals comparando SOLO el identificador único (codigo)
-        return super.equals(o);
+    public int hashCode() {
+        return Objects.hash(codigo);
     }
 
     @Override
-    public int hashCode() {
-        // TODO: implementar hashCode consistente con equals (usar SOLO el identificador único)
-        return super.hashCode();
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Pelicula other = (Pelicula) obj;
+        return Objects.equals(codigo, other.codigo);
     }
 
     @Override
     public String toString() {
-        // TODO: implementar toString legible incluyendo al menos el identificador único
-        return super.toString();
+        return "Pelicula [codigo=" + codigo + ", titulo=" + titulo + ", duracionMin=" + duracionMin + "]";
     }
+
 }

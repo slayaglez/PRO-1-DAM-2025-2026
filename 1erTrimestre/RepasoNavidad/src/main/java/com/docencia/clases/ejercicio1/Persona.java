@@ -1,3 +1,8 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Clase que trabaja con Personas
+ */
 package com.docencia.clases.ejercicio1;
 
 import java.util.Objects;
@@ -7,14 +12,32 @@ public class Persona {
     private String nombre;
     private int edad;
 
-    public Persona() {
-        // TODO: constructor vacío (dejar valores por defecto o inicializar si lo necesitas)
-    }
+    /**
+     * Constructor vacio
+     */
+    public Persona() {}
 
+    /**
+     * Constructor con id
+     * @param dni el dni de la persona
+     */
     public Persona(String dni) {
-        // TODO: constructor con identificador único
+        this.dni = dni;
     }
 
+    /**
+     * Constructor con id
+     * @param dni el dni de la persona
+     * @param nombre el nombre de la persona
+     * @param edad edad de la persona
+     */
+    public Persona(String dni, String nombre, int edad) {
+        this.dni = dni;
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
+    /** Getters y setters */
     public String getDni() {
         return dni;
     }
@@ -40,20 +63,24 @@ public class Persona {
     }
 
     @Override
-    public boolean equals(Object o) {
-        // TODO: implementar equals comparando SOLO el identificador único (dni)
-        return super.equals(o);
+    public int hashCode() {
+        return Objects.hash(dni);
     }
 
     @Override
-    public int hashCode() {
-        // TODO: implementar hashCode consistente con equals (usar SOLO el identificador único)
-        return super.hashCode();
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Persona other = (Persona) obj;
+        return Objects.equals(dni, other.dni);
     }
 
     @Override
     public String toString() {
-        // TODO: implementar toString legible incluyendo al menos el identificador único
-        return super.toString();
-    }
+        return "Persona [dni=" + dni + ", nombre=" + nombre + ", edad=" + edad + "]";
+    } 
 }
