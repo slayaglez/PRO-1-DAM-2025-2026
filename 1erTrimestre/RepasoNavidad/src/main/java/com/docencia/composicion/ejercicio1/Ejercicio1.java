@@ -1,8 +1,9 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Clase que trabaja con Tareas
+ */
 package com.docencia.composicion.ejercicio1;
-
-
-import java.util.ArrayList;
-import java.util.List;
 
 
 /**
