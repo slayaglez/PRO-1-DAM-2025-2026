@@ -15,6 +15,7 @@ Todos los ejercicios y exámenes hechos a lo largo del primer año de Programaci
   - Unidad 2
     - [Actividad 3](#actividad-3)
     - [Actividad 4](#actividad-4)
+    - [Actividad 4.5](#actividad-4.5)
     - [Actividad 5](#actividad-5)
     - [Actividad 6](#actividad-6)
   - Unidad 3
@@ -50,6 +51,11 @@ Introducción a **clases**, constructores, getters, setters... Importante los m�
 Seguimos con **clases** aunque entramos en librerías como `java.util.Math` y funciones para tratar con Strings como si fueran arrays. (MathUtils está incompleto). A destacar funciones como `charAt()` y `contains()`.
 
 [Link a la actividad 4](./1erTrimestre/Actividad4/src/main/java/com/docencia/clases)
+
+### Actividad 4.5
+Repaso de 40 ejercicios con test sobre todo lo hecho hasta ahora en el trimestre sea condicionales, arrays y clases. (faltan algunos ejercicios por hacer).
+
+[Link a la actividad 4.5](./1erTrimestre/Actividad4/src/main/java/com/docencia/clases)
 
 ### Actividad 5
 Avanzamos aún más en clases y entramos en **herencias** de otras clases. (Nótese que `trabajando_con_clases2` es la continuación de `trabajando_con_clases` y no otro ejercicio)
