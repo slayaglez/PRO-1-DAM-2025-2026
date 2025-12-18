@@ -7,14 +7,17 @@ Todos los ejercicios y exámenes hechos a lo largo del primer año de programaci
 <br>
 
 ## Índice
-- [Actividades](#actividades)
-- [Primer Trimestre](#primer-trimestre-actividad-1---actividad-9)
+- Actividades
+- Primer Trimestre
+  - Unidad 1
     - [Actividad 1](#actividad-1)
     - [Actividad 2](#actividad-2)
+  - Unidad 2
     - [Actividad 3](#actividad-3)
     - [Actividad 4](#actividad-4)
     - [Actividad 5](#actividad-5)
     - [Actividad 6](#actividad-6)
+  - Unidad 3
     - [Actividad 7](#actividad-7)
     - [Actividad 8](#actividad-8)
     - [Actividad 9](#actividad-9)
