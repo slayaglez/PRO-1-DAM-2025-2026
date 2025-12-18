@@ -7,6 +7,9 @@ Todos los ejercicios y exámenes hechos a lo largo del primer año de programaci
 <br>
 
 ## Actividades
+Lo trabajado en clase está dividido por trimestres.
+
+## Primer Trimestre (Actividad 1 - Actividad 9)
 
 ### Actividad 1
 Trabajamos con **condicionales**, if, else, switch... Cualquier bucle encontrado no pertenece a lo impartido en la clase, en esta actividad se impartió exclusivamente el uso de los condicionales.
@@ -39,6 +42,12 @@ Esta actividad se compone de 30 ejercicios donde tenemos:
   
 Ideal para estudiar para el examen de final de trimestre (hay algunos ejercicios sin hacer).
 Data del *26 de Nov 2025*.
+
+### Actividad 9
+Repaso de 12 ejercicios siendo 4 de clases, composición y herencias respectivamente.
+
+### Repaso Navidad
+Un **repaso general** de lo trabajado hasta ahora en todo el primer Trimestre contando con un total de **98** ejercicios, entre los que se encuentran condicionales, arrays, listas, clases, composición y herencias.
 
 <br>
 
