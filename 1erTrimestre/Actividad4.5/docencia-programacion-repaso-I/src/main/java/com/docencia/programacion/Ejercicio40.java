@@ -68,6 +68,7 @@ public class Ejercicio40 {
          */
 
         int ganador=0;
+        //TODO
         // Esto ubica un elemento X
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[i].length; j++) {
