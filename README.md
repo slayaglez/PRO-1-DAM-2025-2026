@@ -31,23 +31,37 @@ Lo trabajado en clase está dividido por trimestres.
 ### Actividad 1
 Trabajamos con **condicionales**, if, else, switch... Cualquier bucle encontrado no pertenece a lo impartido en la clase, en esta actividad se impartió exclusivamente el uso de los condicionales.
 
+[Link a la actividad](./1erTrimestre/Actividad1/condicionales/condicionales/src/main/java/docencia/condicionales)
+
 ### Actividad 2
 Introducción a **arrays** y varios ejercicios sobre cómo recorrer uno con bucles for.
+
+[Link a la actividad](./1erTrimestre/Actividad2/array/array/src/main/java/org/formacion/array)
 
 ### Actividad 3
 Introducción a **clases**, constructores, getters, setters... Importante los métodos `equals()` y `toString()`.
 
+[Link a la actividad](./1erTrimestre/Actividad3/src/main/java/es/docencia/clases)
+
 ### Actividad 4
 Seguimos con **clases** aunque entramos en librerías como `java.util.Math` y funciones para tratar con Strings como si fueran arrays. (MathUtils está incompleto). A destacar funciones como `charAt()` y `contains()`.
+
+[Link a la actividad](./1erTrimestre/Actividad4/src/main/java/com/docencia/clases)
 
 ### Actividad 5
 Avanzamos aún más en clases y entramos en **herencias** de otras clases. (Nótese que `trabajando_con_clases2` es la continuación de `trabajando_con_clases` y no otro ejercicio)
 
+[Link a la actividad](./1erTrimestre/Actividad5/trabajando-con-clases-2/trabajando-con-clases/src/main/java/com/docencia/clases)
+
 ### Actividad 6
 Ejercicios sobre clases (sin herencias) con las primeras **listas**. Ideados para el repaso del ejercicio_2_2 que data del *21 de Nov 2025*.
 
+[Link a la actividad](./1erTrimestre/Actividad6/unidad3-ejercicios/src/main/java/unidad3)
+
 ### Actividad 7
-Ejercicios sobre clases con **herencias**. Data del *24 de Nov 2025*.
+Ejercicio sobre clases con **herencias**. Data del *24 de Nov 2025*.
+
+[Link a la actividad](./1erTrimestre/Actividad7/src/main/java/com/docencia)
 
 ### Actividad 8
 Ejercicios con clases y **listas**, usamos Collections y métodos como .size() o .min().  
@@ -60,11 +74,17 @@ Esta actividad se compone de 30 ejercicios donde tenemos:
 Ideal para estudiar para el examen de final de trimestre (hay algunos ejercicios sin hacer).
 Data del *26 de Nov 2025*.
 
+[Link a la actividad](./1erTrimestre/Actividad8/ejercicios-listas-composicion-herencia/src/main/java/com)
+
 ### Actividad 9
 Repaso de 12 ejercicios siendo 4 de clases, composición y herencias respectivamente.
 
+[Link a la actividad](./1erTrimestre/Actividad9/ejercicios-1-eval-repaso-I/src/main/java/com/docencia)
+
 ### Repaso Navidad
 Un **repaso general** de lo trabajado hasta ahora en todo el primer Trimestre contando con un total de **98** ejercicios, entre los que se encuentran condicionales, arrays, listas, clases, composición y herencias.
+
+[Link a la actividad](./1erTrimestre/RepasoNavidad/src/main/java/com/docencia)
 
 <br>
 
@@ -82,4 +102,6 @@ El ejercicio_2_1 data del *7 de Nov 2025* &nbsp; | corregido
 El ejercicio_2_2 data del *21 de Nov 2025* | corregido
 
 La carpeta Pruebas **NO** contendrá los exámenes de final de trimestre.
+
+[Link a la carpeta Pruebas](./Pruebas)
 
