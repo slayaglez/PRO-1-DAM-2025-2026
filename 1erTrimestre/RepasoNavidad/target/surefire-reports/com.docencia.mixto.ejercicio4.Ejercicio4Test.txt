@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.mixto.ejercicio4.Ejercicio4Test
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 0.016 s <<< FAILURE! -- in com.docencia.mixto.ejercicio4.Ejercicio4Test
+com.docencia.mixto.ejercicio4.Ejercicio4Test.toStringDebeContenerElIdentificador -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
+	at com.docencia.mixto.ejercicio4.Ejercicio4Test.toStringDebeContenerElIdentificador(Ejercicio4Test.java:19)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.mixto.ejercicio4.Ejercicio4Test.debeResolverElEjercicio -- Time elapsed: 0.008 s <<< ERROR!
+java.lang.UnsupportedOperationException: No implementado
+	at com.docencia.mixto.ejercicio4.Ejercicio4.impuestoTotal(Ejercicio4.java:12)
+	at com.docencia.mixto.ejercicio4.Ejercicio4Test.debeResolverElEjercicio(Ejercicio4Test.java:24)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.mixto.ejercicio4.Ejercicio4Test.equalsDebeCompararPorIdentificador -- Time elapsed: 0 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <com.docencia.mixto.ejercicio4.Vehiculo@55634720> but was: <com.docencia.mixto.ejercicio4.Vehiculo@4b0d79fc>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at com.docencia.mixto.ejercicio4.Ejercicio4Test.equalsDebeCompararPorIdentificador(Ejercicio4Test.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

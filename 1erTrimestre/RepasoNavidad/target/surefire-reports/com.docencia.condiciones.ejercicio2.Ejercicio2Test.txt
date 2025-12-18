@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.condiciones.ejercicio2.Ejercicio2Test
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.013 s <<< FAILURE! -- in com.docencia.condiciones.ejercicio2.Ejercicio2Test
+com.docencia.condiciones.ejercicio2.Ejercicio2Test.caso1 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: No implementado
+	at com.docencia.condiciones.ejercicio2.Ejercicio2.nombreDia(Ejercicio2.java:9)
+	at com.docencia.condiciones.ejercicio2.Ejercicio2Test.caso1(Ejercicio2Test.java:9)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.condiciones.ejercicio2.Ejercicio2Test.caso2 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: No implementado
+	at com.docencia.condiciones.ejercicio2.Ejercicio2.nombreDia(Ejercicio2.java:9)
+	at com.docencia.condiciones.ejercicio2.Ejercicio2Test.caso2(Ejercicio2Test.java:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.condiciones.ejercicio2.Ejercicio2Test.caso3 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: No implementado
+	at com.docencia.condiciones.ejercicio2.Ejercicio2.nombreDia(Ejercicio2.java:9)
+	at com.docencia.condiciones.ejercicio2.Ejercicio2Test.caso3(Ejercicio2Test.java:19)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

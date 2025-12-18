@@ -2,7 +2,7 @@
 
 ## IES Puerto de la Cruz
 <hr>
-Todos los ejercicios y exámenes hechos a lo largo del primer año de programación estarán aquí listados para la posterioridad. Asignatura impartida por Joathan Pérez Expósito.
+Todos los ejercicios y exámenes hechos a lo largo del primer año de programación estarán aquí listados para la posterioridad. Asignatura impartida por Joatham Pérez Expósito.
 
 <br>
 
@@ -30,7 +30,15 @@ Ejercicios sobre clases (sin herencias) con las primeras **listas**. Ideados par
 Ejercicios sobre clases con **herencias**. Data del *24 de Nov 2025*.
 
 ### Actividad 8
-Ejercicios con clases y **listas**, usamos Collections y métodos como .size() o .min(). Data del *26 de Nov 2025*.
+Ejercicios con clases y **listas**, usamos Collections y métodos como .size() o .min().  
+Esta actividad se compone de 30 ejercicios donde tenemos:
+
+- 10 de listas
+- 10 de composición
+- 10 de herencias
+  
+Ideal para estudiar para el examen de final de trimestre (hay algunos ejercicios sin hacer).
+Data del *26 de Nov 2025*.
 
 <br>
 

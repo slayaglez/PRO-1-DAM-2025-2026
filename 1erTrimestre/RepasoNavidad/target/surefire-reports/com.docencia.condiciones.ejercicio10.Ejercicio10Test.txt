@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.condiciones.ejercicio10.Ejercicio10Test
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.029 s <<< FAILURE! -- in com.docencia.condiciones.ejercicio10.Ejercicio10Test
+com.docencia.condiciones.ejercicio10.Ejercicio10Test.caso1 -- Time elapsed: 0.007 s <<< ERROR!
+java.lang.UnsupportedOperationException: No implementado
+	at com.docencia.condiciones.ejercicio10.Ejercicio10.accionSemaforo(Ejercicio10.java:9)
+	at com.docencia.condiciones.ejercicio10.Ejercicio10Test.caso1(Ejercicio10Test.java:9)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.condiciones.ejercicio10.Ejercicio10Test.caso2 -- Time elapsed: 0.009 s <<< ERROR!
+java.lang.UnsupportedOperationException: No implementado
+	at com.docencia.condiciones.ejercicio10.Ejercicio10.accionSemaforo(Ejercicio10.java:9)
+	at com.docencia.condiciones.ejercicio10.Ejercicio10Test.caso2(Ejercicio10Test.java:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.condiciones.ejercicio10.Ejercicio10Test.caso3 -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: No implementado
+	at com.docencia.condiciones.ejercicio10.Ejercicio10.accionSemaforo(Ejercicio10.java:9)
+	at com.docencia.condiciones.ejercicio10.Ejercicio10Test.caso3(Ejercicio10Test.java:19)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.condiciones.ejercicio10.Ejercicio10Test.caso4 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: No implementado
+	at com.docencia.condiciones.ejercicio10.Ejercicio10.accionSemaforo(Ejercicio10.java:9)
+	at com.docencia.condiciones.ejercicio10.Ejercicio10Test.caso4(Ejercicio10Test.java:24)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
