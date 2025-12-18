@@ -15,7 +15,7 @@ Todos los ejercicios y exámenes hechos a lo largo del primer año de Programaci
   - Unidad 2
     - [Actividad 3](#actividad-3)
     - [Actividad 4](#actividad-4)
-    - [Actividad 4.5](#actividad-4.5)
+    - [Actividad 4.5](#actividad-45)
     - [Actividad 5](#actividad-5)
     - [Actividad 6](#actividad-6)
   - Unidad 3
