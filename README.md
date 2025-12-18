@@ -55,7 +55,7 @@ Seguimos con **clases** aunque entramos en librerías como `java.util.Math` y fu
 ### Actividad 4.5
 Repaso de 40 ejercicios con test sobre todo lo hecho hasta ahora en el trimestre sea condicionales, arrays y clases. (faltan algunos ejercicios por hacer).
 
-[Link a la actividad 4.5](./1erTrimestre/Actividad4/src/main/java/com/docencia/clases)
+[Link a la actividad 4.5](./1erTrimestre/Actividad4.5/docencia-programacion-repaso-I/src/main/java/com/docencia/programacion)
 
 ### Actividad 5
 Avanzamos aún más en clases y entramos en **herencias** de otras clases. (Nótese que `trabajando_con_clases2` es la continuación de `trabajando_con_clases` y no otro ejercicio)
