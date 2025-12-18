@@ -16,8 +16,25 @@ public class Aula {
     }
 
     public double mediaAlumno(String nombreAlumno) {
-        // TODO: calcular media ignorando mayúsculas/minúsculas; 0.0 si no hay notas válidas.
-        return 0.0;
+
+        if(nombreAlumno==null || nombreAlumno.isBlank()){
+            return 0.0;
+        }
+
+        double media=0;
+        int numeroNotas=0;
+
+        for (int i = 0; i < registros.size(); i++) {
+            if(registros.get(i).getAlumno().getNombre().equals(nombreAlumno.trim().toLowerCase()) && registros.get(i).getNota()>0){
+                media += registros.get(i).getNota();
+                numeroNotas++;
+            }
+        }
+        if(media==0){
+            return 0.0;
+        }
+        media /= numeroNotas;
+        return media;
     }
 
     public List<RegistroNota> getRegistros() {

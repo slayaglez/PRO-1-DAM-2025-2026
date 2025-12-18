@@ -1,10 +1,6 @@
 package com.docencia.composicion.ejercicio2;
 
 
-import java.util.ArrayList;
-import java.util.List;
-
-
 public class RegistroNota {
     private final Alumno alumno;
     private final String asignatura;
