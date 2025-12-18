@@ -2,7 +2,7 @@
 
 ## IES Puerto de la Cruz
 <hr>
-Todos los ejercicios y exámenes hechos a lo largo del primer año de programación estarán aquí listados para la posterioridad. Asignatura impartida por Joatham Pérez Expósito.
+Todos los ejercicios y exámenes hechos a lo largo del primer año de Programación en Java para Desarrollo de Aplicaciones Multiplataforma estarán aquí listados para la posterioridad. Asignatura impartida por Joatham Pérez Expósito.
 
 <br>
 
