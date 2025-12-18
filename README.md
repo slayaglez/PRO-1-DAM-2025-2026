@@ -55,3 +55,5 @@ El ejercicio_2_1 data del *7 de Nov 2025* &nbsp; | corregido
 <br>
 El ejercicio_2_2 data del *21 de Nov 2025* | corregido
 
+La carpeta Pruebas **NO** contendrá los exámenes de final de trimestre.
+
