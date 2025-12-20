@@ -109,6 +109,8 @@ El ejercicio_1_3 data del *24 de Oct 2025* &nbsp;| corregido
 El ejercicio_2_1 data del *7 de Nov 2025* &nbsp; | corregido
 <br>
 El ejercicio_2_2 data del *21 de Nov 2025* | corregido
+<br>
+El ejercicio_3_1 data del *17 de Dec 2025* | corregido
 
 La carpeta Pruebas **NO** contendrá los exámenes de final de trimestre.
 
