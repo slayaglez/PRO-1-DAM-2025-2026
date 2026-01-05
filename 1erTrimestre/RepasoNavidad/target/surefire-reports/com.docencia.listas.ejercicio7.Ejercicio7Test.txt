@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.listas.ejercicio7.Ejercicio7Test
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.007 s <<< FAILURE! -- in com.docencia.listas.ejercicio7.Ejercicio7Test
-com.docencia.listas.ejercicio7.Ejercicio7Test.concatenarConSeparador_basico -- Time elapsed: 0.003 s <<< FAILURE!
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.017 s <<< FAILURE! -- in com.docencia.listas.ejercicio7.Ejercicio7Test
+com.docencia.listas.ejercicio7.Ejercicio7Test.concatenarConSeparador_basico -- Time elapsed: 0.002 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <uno - dos - tres> but was: <>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -11,11 +11,11 @@ org.opentest4j.AssertionFailedError: expected: <uno - dos - tres> but was: <>
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
 	at com.docencia.listas.ejercicio7.Ejercicio7Test.concatenarConSeparador_basico(Ejercicio7Test.java:16)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.listas.ejercicio7.Ejercicio7Test.concatenarConSeparador_separadorNullYSinPartesValidas -- Time elapsed: 0.002 s <<< FAILURE!
+com.docencia.listas.ejercicio7.Ejercicio7Test.concatenarConSeparador_separadorNullYSinPartesValidas -- Time elapsed: 0.005 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <a, b> but was: <>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -24,7 +24,7 @@ org.opentest4j.AssertionFailedError: expected: <a, b> but was: <>
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
 	at com.docencia.listas.ejercicio7.Ejercicio7Test.concatenarConSeparador_separadorNullYSinPartesValidas(Ejercicio7Test.java:27)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 

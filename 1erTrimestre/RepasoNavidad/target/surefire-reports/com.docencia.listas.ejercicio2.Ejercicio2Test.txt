@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.listas.ejercicio2.Ejercicio2Test
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.012 s <<< FAILURE! -- in com.docencia.listas.ejercicio2.Ejercicio2Test
-com.docencia.listas.ejercicio2.Ejercicio2Test.invertirYFiltrarNoVacias_basico -- Time elapsed: 0.011 s <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.018 s <<< FAILURE! -- in com.docencia.listas.ejercicio2.Ejercicio2Test
+com.docencia.listas.ejercicio2.Ejercicio2Test.invertirYFiltrarNoVacias_basico -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <[aloh, soida]> but was: <[]>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -11,7 +11,7 @@ org.opentest4j.AssertionFailedError: expected: <[aloh, soida]> but was: <[]>
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
 	at com.docencia.listas.ejercicio2.Ejercicio2Test.invertirYFiltrarNoVacias_basico(Ejercicio2Test.java:17)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 

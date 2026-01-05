@@ -1,36 +1,36 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.condiciones.ejercicio1.Ejercicio1Test
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.021 s <<< FAILURE! -- in com.docencia.condiciones.ejercicio1.Ejercicio1Test
-com.docencia.condiciones.ejercicio1.Ejercicio1Test.caso1 -- Time elapsed: 0.013 s <<< ERROR!
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.013 s <<< FAILURE! -- in com.docencia.condiciones.ejercicio1.Ejercicio1Test
+com.docencia.condiciones.ejercicio1.Ejercicio1Test.caso1 -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: No implementado
 	at com.docencia.condiciones.ejercicio1.Ejercicio1.clasificarNota(Ejercicio1.java:9)
 	at com.docencia.condiciones.ejercicio1.Ejercicio1Test.caso1(Ejercicio1Test.java:9)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.condiciones.ejercicio1.Ejercicio1Test.caso2 -- Time elapsed: 0.002 s <<< ERROR!
+com.docencia.condiciones.ejercicio1.Ejercicio1Test.caso2 -- Time elapsed: 0.005 s <<< ERROR!
 java.lang.UnsupportedOperationException: No implementado
 	at com.docencia.condiciones.ejercicio1.Ejercicio1.clasificarNota(Ejercicio1.java:9)
 	at com.docencia.condiciones.ejercicio1.Ejercicio1Test.caso2(Ejercicio1Test.java:14)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.condiciones.ejercicio1.Ejercicio1Test.caso3 -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.condiciones.ejercicio1.Ejercicio1Test.caso3 -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: No implementado
 	at com.docencia.condiciones.ejercicio1.Ejercicio1.clasificarNota(Ejercicio1.java:9)
 	at com.docencia.condiciones.ejercicio1.Ejercicio1Test.caso3(Ejercicio1Test.java:19)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.condiciones.ejercicio1.Ejercicio1Test.caso4 -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.condiciones.ejercicio1.Ejercicio1Test.caso4 -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: No implementado
 	at com.docencia.condiciones.ejercicio1.Ejercicio1.clasificarNota(Ejercicio1.java:9)
 	at com.docencia.condiciones.ejercicio1.Ejercicio1Test.caso4(Ejercicio1Test.java:24)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 

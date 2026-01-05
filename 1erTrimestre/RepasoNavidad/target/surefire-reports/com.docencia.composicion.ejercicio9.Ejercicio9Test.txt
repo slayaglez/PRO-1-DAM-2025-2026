@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.composicion.ejercicio9.Ejercicio9Test
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.011 s <<< FAILURE! -- in com.docencia.composicion.ejercicio9.Ejercicio9Test
-com.docencia.composicion.ejercicio9.Ejercicio9Test.inventario_basico -- Time elapsed: 0.001 s <<< FAILURE!
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.013 s <<< FAILURE! -- in com.docencia.composicion.ejercicio9.Ejercicio9Test
+com.docencia.composicion.ejercicio9.Ejercicio9Test.inventario_basico -- Time elapsed: 0.007 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <15> but was: <0>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -11,11 +11,11 @@ org.opentest4j.AssertionFailedError: expected: <15> but was: <0>
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
 	at com.docencia.composicion.ejercicio9.Ejercicio9Test.inventario_basico(Ejercicio9Test.java:18)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.composicion.ejercicio9.Ejercicio9Test.inventario_nombreInvalidoOCantidadInvalida -- Time elapsed: 0 s <<< FAILURE!
+com.docencia.composicion.ejercicio9.Ejercicio9Test.inventario_nombreInvalidoOCantidadInvalida -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <0> but was: <10>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -24,7 +24,7 @@ org.opentest4j.AssertionFailedError: expected: <0> but was: <10>
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
 	at com.docencia.composicion.ejercicio9.Ejercicio9Test.inventario_nombreInvalidoOCantidadInvalida(Ejercicio9Test.java:36)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 

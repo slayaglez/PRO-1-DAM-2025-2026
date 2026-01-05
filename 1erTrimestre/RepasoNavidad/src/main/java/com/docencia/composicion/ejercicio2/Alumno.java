@@ -1,7 +1,7 @@
 /**
  * @author slayaglez
  * @version 1.0.0
- * @brief Clases
+ * @brief Composicion
  */
 package com.docencia.composicion.ejercicio2;
 

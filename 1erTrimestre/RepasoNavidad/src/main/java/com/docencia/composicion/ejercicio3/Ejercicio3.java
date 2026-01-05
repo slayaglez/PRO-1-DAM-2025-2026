@@ -1,8 +1,9 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Composicion
+ */
 package com.docencia.composicion.ejercicio3;
-
-
-import java.util.ArrayList;
-import java.util.List;
 
 
 /**

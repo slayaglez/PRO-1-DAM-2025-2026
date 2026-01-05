@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.mixto.ejercicio2.Ejercicio2Test
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 0.013 s <<< FAILURE! -- in com.docencia.mixto.ejercicio2.Ejercicio2Test
-com.docencia.mixto.ejercicio2.Ejercicio2Test.toStringDebeContenerElIdentificador -- Time elapsed: 0.002 s <<< FAILURE!
+Tests run: 3, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 0.006 s <<< FAILURE! -- in com.docencia.mixto.ejercicio2.Ejercicio2Test
+com.docencia.mixto.ejercicio2.Ejercicio2Test.toStringDebeContenerElIdentificador -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -11,20 +11,20 @@ org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
 	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
 	at com.docencia.mixto.ejercicio2.Ejercicio2Test.toStringDebeContenerElIdentificador(Ejercicio2Test.java:19)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.mixto.ejercicio2.Ejercicio2Test.debeResolverElEjercicio -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.mixto.ejercicio2.Ejercicio2Test.debeResolverElEjercicio -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: No implementado
 	at com.docencia.mixto.ejercicio2.Ejercicio2.resumenAprobados(Ejercicio2.java:12)
 	at com.docencia.mixto.ejercicio2.Ejercicio2Test.debeResolverElEjercicio(Ejercicio2Test.java:24)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.mixto.ejercicio2.Ejercicio2Test.equalsDebeCompararPorIdentificador -- Time elapsed: 0.004 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <com.docencia.mixto.ejercicio2.Alumno@13e344d> but was: <com.docencia.mixto.ejercicio2.Alumno@1ffaf86>
+com.docencia.mixto.ejercicio2.Ejercicio2Test.equalsDebeCompararPorIdentificador -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <com.docencia.mixto.ejercicio2.Alumno@7526515b> but was: <com.docencia.mixto.ejercicio2.Alumno@1ed4ae0f>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
 	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
@@ -32,7 +32,7 @@ org.opentest4j.AssertionFailedError: expected: <com.docencia.mixto.ejercicio2.Al
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
 	at com.docencia.mixto.ejercicio2.Ejercicio2Test.equalsDebeCompararPorIdentificador(Ejercicio2Test.java:12)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 

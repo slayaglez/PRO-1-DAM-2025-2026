@@ -1,28 +1,28 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.condiciones.ejercicio6.Ejercicio6Test
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.012 s <<< FAILURE! -- in com.docencia.condiciones.ejercicio6.Ejercicio6Test
-com.docencia.condiciones.ejercicio6.Ejercicio6Test.caso1 -- Time elapsed: 0.001 s <<< ERROR!
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.014 s <<< FAILURE! -- in com.docencia.condiciones.ejercicio6.Ejercicio6Test
+com.docencia.condiciones.ejercicio6.Ejercicio6Test.caso1 -- Time elapsed: 0.005 s <<< ERROR!
 java.lang.UnsupportedOperationException: No implementado
 	at com.docencia.condiciones.ejercicio6.Ejercicio6.diasDelMes(Ejercicio6.java:9)
 	at com.docencia.condiciones.ejercicio6.Ejercicio6Test.caso1(Ejercicio6Test.java:9)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.condiciones.ejercicio6.Ejercicio6Test.caso2 -- Time elapsed: 0.009 s <<< ERROR!
+com.docencia.condiciones.ejercicio6.Ejercicio6Test.caso2 -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: No implementado
 	at com.docencia.condiciones.ejercicio6.Ejercicio6.diasDelMes(Ejercicio6.java:9)
 	at com.docencia.condiciones.ejercicio6.Ejercicio6Test.caso2(Ejercicio6Test.java:14)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.condiciones.ejercicio6.Ejercicio6Test.caso3 -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.condiciones.ejercicio6.Ejercicio6Test.caso3 -- Time elapsed: 0.005 s <<< ERROR!
 java.lang.UnsupportedOperationException: No implementado
 	at com.docencia.condiciones.ejercicio6.Ejercicio6.diasDelMes(Ejercicio6.java:9)
 	at com.docencia.condiciones.ejercicio6.Ejercicio6Test.caso3(Ejercicio6Test.java:19)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 

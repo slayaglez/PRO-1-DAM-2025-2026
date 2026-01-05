@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.listas.ejercicio13.Ejercicio13Test
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.012 s <<< FAILURE! -- in com.docencia.listas.ejercicio13.Ejercicio13Test
-com.docencia.listas.ejercicio13.Ejercicio13Test.filtrarMayoresYOrdenar_basico -- Time elapsed: 0 s <<< FAILURE!
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.013 s <<< FAILURE! -- in com.docencia.listas.ejercicio13.Ejercicio13Test
+com.docencia.listas.ejercicio13.Ejercicio13Test.filtrarMayoresYOrdenar_basico -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <[3, 5, 10]> but was: <[]>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -11,7 +11,7 @@ org.opentest4j.AssertionFailedError: expected: <[3, 5, 10]> but was: <[]>
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
 	at com.docencia.listas.ejercicio13.Ejercicio13Test.filtrarMayoresYOrdenar_basico(Ejercicio13Test.java:16)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
