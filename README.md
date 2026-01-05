@@ -93,6 +93,8 @@ Repaso de 12 ejercicios siendo 4 de clases, composición y herencias respectivam
 ### Repaso Navidad
 Un **repaso general** de lo trabajado hasta ahora en todo el primer Trimestre contando con un total de **98** ejercicios, entre los que se encuentran condicionales, arrays, listas, clases, composición y herencias.
 
+35 / 98
+
 [Link a la actividad navideña](./1erTrimestre/RepasoNavidad/src/main/java/com/docencia)
 
 <br>
