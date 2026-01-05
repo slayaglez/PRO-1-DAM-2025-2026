@@ -5,8 +5,7 @@ public class Ejercicio5 {
      * Devuelve true si el año es bisiesto.
      */
     public static boolean esBisiesto(int anio) {
-        // TODO: implementar usando condiciones (if/else) y/o switch según se indica
-        throw new UnsupportedOperationException("No implementado");
+        return anio % 4 == 0 && anio % 100 != 0 || anio % 400 == 0 && anio % 100 == 0;
     }
 
     public static void main(String[] args) {

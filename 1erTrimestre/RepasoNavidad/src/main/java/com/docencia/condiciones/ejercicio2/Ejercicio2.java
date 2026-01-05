@@ -5,8 +5,17 @@ public class Ejercicio2 {
      * Usa switch: 1=Lunes ... 7=Domingo. Si no es válido devuelve "ERROR".
      */
     public static String nombreDia(int dia) {
-        // TODO: implementar usando condiciones (if/else) y/o switch según se indica
-        throw new UnsupportedOperationException("No implementado");
+
+        return switch(dia) {
+            case 1 -> "Lunes";
+            case 2 -> "Martes";
+            case 3 -> "Miércoles";
+            case 4 -> "Jueves";
+            case 5 -> "Viernes";
+            case 6 -> "Sábado";
+            case 7 -> "Domingo";
+            default -> "ERROR";
+        };
     }
 
     public static void main(String[] args) {

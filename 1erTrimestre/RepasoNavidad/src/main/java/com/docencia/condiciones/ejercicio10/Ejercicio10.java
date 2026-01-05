@@ -5,8 +5,12 @@ public class Ejercicio10 {
      * Usa switch sobre color ("ROJO","AMARILLO","VERDE"). Devuelve "PARAR","PRECAUCION","AVANZAR". Si otro, "ERROR".
      */
     public static String accionSemaforo(String color) {
-        // TODO: implementar usando condiciones (if/else) y/o switch según se indica
-        throw new UnsupportedOperationException("No implementado");
+        switch(color){
+            case "ROJO": return "PARAR";
+            case "AMARILLO": return "PRECAUCION";
+            case "VERDE": return "AVANZAR";
+            default: return "ERROR";
+        }
     }
 
     public static void main(String[] args) {

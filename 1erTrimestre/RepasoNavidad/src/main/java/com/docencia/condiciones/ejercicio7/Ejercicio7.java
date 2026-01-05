@@ -6,7 +6,16 @@ public class Ejercicio7 {
      */
     public static boolean esVocal(char c) {
         // TODO: implementar usando condiciones (if/else) y/o switch según se indica
-        throw new UnsupportedOperationException("No implementado");
+        String letra = String.valueOf(c);
+        letra = letra.toLowerCase();
+        c = letra.charAt(0);
+
+        if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'){
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     public static void main(String[] args) {

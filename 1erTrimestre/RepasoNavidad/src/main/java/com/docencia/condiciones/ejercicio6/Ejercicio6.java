@@ -6,7 +6,18 @@ public class Ejercicio6 {
      */
     public static int diasDelMes(int mes, int anio) {
         // TODO: implementar usando condiciones (if/else) y/o switch según se indica
-        throw new UnsupportedOperationException("No implementado");
+        switch(mes){
+            case 1, 3, 5, 7, 8, 10, 12: return 31;
+            case 4, 6, 9, 11: return 30;
+            case 2:
+                if(anio % 4 == 0 && anio % 100 != 0 || anio % 400 == 0 && anio % 100 == 0){
+                    return 29;
+                }
+                else{
+                    return 28;
+                }
+        }
+        throw new UnsupportedOperationException("Entrada inválida");
     }
 
     public static void main(String[] args) {
