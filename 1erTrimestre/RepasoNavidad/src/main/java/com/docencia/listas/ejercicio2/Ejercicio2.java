@@ -25,8 +25,22 @@ public class Ejercicio2 {
      * TODO: Implementar completamente según enunciado y tests.
      */
     public static List<String> invertirYFiltrarNoVacias(List<String> cadenas) {
+        List<String> resultado = new ArrayList<>();
+        String palabra="";
+        if (cadenas != null ) {
+            for (int i = 0; i < cadenas.size(); i++) {
+                if(cadenas.get(i)!=null && !(cadenas.get(i).isBlank())){
+                    for (int j = cadenas.get(i).length()-1; j >= 0; j--) {
+                        palabra += cadenas.get(i).charAt(j); 
+                    }
+                    
+                    resultado.add(palabra);
+                }
+                palabra = "";
+            }
+        }
         // Implementación provisional: devuelve lista vacía.
-        return new ArrayList<>();
+        return resultado;
     }
 
 }
