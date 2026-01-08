@@ -20,12 +20,23 @@ public class Ejercicio5 {
         // Puedes ejecutar aquí pruebas manuales rápidas si lo deseas.
     }
 
-
-/**
-     * TODO: Implementar completamente según enunciado y tests.
-     */
     public static List<String> normalizarNombres(List<String> nombres) {
-        // Implementación provisional: devuelve lista vacía.
+ 
+        if (nombres != null && !nombres.isEmpty()) {
+            String resultado = "";
+            List<String> resultadoLista = new ArrayList<>();
+            for (int i = 0; i < nombres.size(); i++) {
+                if(nombres.get(i) != null && !nombres.get(i).isBlank()){
+                    String nombre = nombres.get(i);
+                    resultado = nombre.trim().toLowerCase();
+                    char inicial = resultado.charAt(0);
+                    String inicialString = String.valueOf(inicial);
+                    String inicialStringUpper = inicialString.toUpperCase();
+                    resultadoLista.add(resultado.replaceFirst(inicialString, inicialStringUpper));
+                }
+            }
+            return resultadoLista;
+        }
         return new ArrayList<>();
     }
 

@@ -24,8 +24,25 @@ public class Ejercicio4 {
      * TODO: Implementar completamente según enunciado y tests.
      */
     public static double mediaValoresValidos(List<Integer> valores) {
-        // Implementación provisional: siempre 0.0
-        return 0.0;
+        
+        if(valores != null && !valores.isEmpty()){
+            double media = 0;
+            int tamanio = valores.size();
+            if(valores.get(0) != null){
+                media=valores.get(0);
+            }
+
+            for (int i = 1; i < valores.size(); i++) {
+                if(valores.get(i)!= null){
+                    media += valores.get(i);
+                } else {
+                    tamanio--;
+                }
+            }
+            media /= tamanio;
+            return media;
+        }
+        return 0;
     }
 
 }

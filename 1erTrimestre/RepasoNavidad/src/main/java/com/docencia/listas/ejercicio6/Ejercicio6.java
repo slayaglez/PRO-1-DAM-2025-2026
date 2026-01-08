@@ -25,6 +25,21 @@ public class Ejercicio6 {
      */
     public static int contarOcurrencias(List<String> textos, String objetivo) {
         // Implementación provisional: siempre 0.
+
+        if(textos != null && objetivo != null && !textos.isEmpty() && !objetivo.isBlank()){
+            int resultado = 0;
+            for (int i = 0; i < textos.size(); i++) {
+                
+                String palabra = textos.get(i);
+                if(palabra != null){
+                    palabra = palabra.trim().toLowerCase();
+                    if(palabra.equals(objetivo.trim().toLowerCase())){
+                        resultado++;
+                    }
+                }
+            }
+            return resultado;
+        }
         return 0;
     }
 
