@@ -2,6 +2,7 @@ package com.docencia.listas.ejercicio11;
 
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 
@@ -21,15 +22,14 @@ public class Ejercicio11 {
     }
 
 
-/**
-     * TODO: Implementar completamente según enunciado y tests.
-     */
     public static List<Integer> ordenarDescSinNulls(List<Integer> numeros) {
-        // Implementación provisional: lista vacía para null, o copia sin ordenar.
         if (numeros == null) {
             return new ArrayList<>();
         }
-        return new ArrayList<>(numeros);
+        List<Integer> copia = new ArrayList<>(numeros);
+        copia.removeIf(numero -> numero == null);
+        copia.sort(Comparator.reverseOrder());
+        return copia;
     }
 
 }

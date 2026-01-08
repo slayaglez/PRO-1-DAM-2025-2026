@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.mixto.ejercicio8.Ejercicio8Test
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 0.005 s <<< FAILURE! -- in com.docencia.mixto.ejercicio8.Ejercicio8Test
-com.docencia.mixto.ejercicio8.Ejercicio8Test.toStringDebeContenerElIdentificador -- Time elapsed: 0.001 s <<< FAILURE!
+Tests run: 3, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 0.009 s <<< FAILURE! -- in com.docencia.mixto.ejercicio8.Ejercicio8Test
+com.docencia.mixto.ejercicio8.Ejercicio8Test.toStringDebeContenerElIdentificador -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -11,20 +11,20 @@ org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
 	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
 	at com.docencia.mixto.ejercicio8.Ejercicio8Test.toStringDebeContenerElIdentificador(Ejercicio8Test.java:19)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
 com.docencia.mixto.ejercicio8.Ejercicio8Test.debeResolverElEjercicio -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: No implementado
 	at com.docencia.mixto.ejercicio8.Ejercicio8.totalPorEstado(Ejercicio8.java:12)
 	at com.docencia.mixto.ejercicio8.Ejercicio8Test.debeResolverElEjercicio(Ejercicio8Test.java:24)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.mixto.ejercicio8.Ejercicio8Test.equalsDebeCompararPorIdentificador -- Time elapsed: 0.001 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <com.docencia.mixto.ejercicio8.Pedido@4b0d79fc> but was: <com.docencia.mixto.ejercicio8.Pedido@4c1909a3>
+com.docencia.mixto.ejercicio8.Ejercicio8Test.equalsDebeCompararPorIdentificador -- Time elapsed: 0 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <com.docencia.mixto.ejercicio8.Pedido@13fd2ccd> but was: <com.docencia.mixto.ejercicio8.Pedido@b9b00e0>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
 	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
@@ -32,7 +32,7 @@ org.opentest4j.AssertionFailedError: expected: <com.docencia.mixto.ejercicio8.Pe
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
 	at com.docencia.mixto.ejercicio8.Ejercicio8Test.equalsDebeCompararPorIdentificador(Ejercicio8Test.java:12)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 

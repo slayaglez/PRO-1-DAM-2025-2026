@@ -1,9 +1,6 @@
 package com.docencia.listas.ejercicio8;
 
-
-import java.util.Collections;
 import java.util.List;
-
 
 /**
  * Ejercicio 8
@@ -20,21 +17,28 @@ public class Ejercicio8 {
         // Puedes ejecutar aquí pruebas manuales rápidas si lo deseas.
     }
 
-
-/**
+    /**
      * TODO: Implementar completamente según enunciado y tests.
      */
     public static Integer maximoSeguro(List<Integer> numeros) {
         // Implementación provisional: siempre null.
-        Integer resultado=0;
-        for (int i = 0; i < numeros.size(); i++) {
-            if(numeros.get(i) == null){
-                numeros.remove(i); //! POR TERMINAR
+        Integer resultado = 0;
+        int cuentaNulls=0;
+        if (numeros != null && !numeros.isEmpty()) {
+            for (int i = 0; i < numeros.size(); i++) {
+                if (numeros.get(i) != null && numeros.get(i) > resultado) {
+                    resultado = numeros.get(i);
+                }
+                if(numeros.get(i)== null){
+                    cuentaNulls++;
+                }
+                if (cuentaNulls == numeros.size()) {
+                    return null;
+                }
             }
+            return resultado;
         }
-        resultado = Collections.max(numeros);
-        
-        return resultado;
+        return null;
     }
 
 }

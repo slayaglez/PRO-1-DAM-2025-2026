@@ -21,12 +21,22 @@ public class Ejercicio10 {
     }
 
 
-/**
-     * TODO: Implementar completamente según enunciado y tests.
-     */
+
     public static List<String> filtrarPorPrefijo(List<String> textos, String prefijo) {
         // Implementación provisional: lista vacía.
-        return new ArrayList<>();
+        List<String> resultado = new ArrayList<>();
+        if(textos != null && !textos.isEmpty() && prefijo != null && !prefijo.isBlank()){
+            prefijo = prefijo.trim();
+            for (int i = 0; i < textos.size(); i++) {
+                if(textos.get(i) != null && !textos.get(i).isBlank()){
+                    String palabra = textos.get(i);
+                    if (palabra.trim().toLowerCase().contains(prefijo)) {
+                        resultado.add(palabra.trim());
+                    }
+                }
+            }
+        }
+        return resultado;
     }
 
 }

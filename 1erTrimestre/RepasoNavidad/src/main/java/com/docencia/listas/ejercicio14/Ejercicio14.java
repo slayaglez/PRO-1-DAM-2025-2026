@@ -21,15 +21,20 @@ public class Ejercicio14 {
     }
 
 
-/**
-     * TODO: Implementar completamente según enunciado y tests.
-     */
     public static List<String> eliminarDuplicadosPreservandoOrden(List<String> textos) {
-        // Implementación provisional: lista vacía si null, copia si no.
-        if (textos == null) {
+
+        if (textos == null || textos.isEmpty()) {
             return new ArrayList<>();
         }
-        return new ArrayList<>(textos);
+        List<String> resultado = new ArrayList<>(textos);
+
+        
+        for (int i = 0; i < textos.size(); i++) {
+            String palabra = textos.get(i);
+            //resultado.removeAll(palabra);  //! POR HACER NO TE OLVIDES          
+        }
+        
+        return resultado;
     }
 
 }

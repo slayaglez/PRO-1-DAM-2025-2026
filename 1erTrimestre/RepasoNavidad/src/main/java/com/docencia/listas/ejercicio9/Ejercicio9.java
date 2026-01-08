@@ -20,12 +20,18 @@ public class Ejercicio9 {
     }
 
 
-/**
-     * TODO: Implementar completamente según enunciado y tests.
-     */
+
     public static int sumarPositivos(List<Integer> numeros) {
         // Implementación provisional: siempre 0.
-        return 0;
+        int suma = 0;
+        if(numeros != null && !numeros.isEmpty()){
+            for (int i = 0; i < numeros.size(); i++) {
+                if(numeros.get(i) != null && numeros.get(i)>0){
+                    suma += numeros.get(i);
+                }
+            }
+        }
+        return suma;
     }
 
 }

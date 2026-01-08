@@ -2,6 +2,7 @@ package com.docencia.listas.ejercicio13;
 
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 
@@ -21,12 +22,16 @@ public class Ejercicio13 {
     }
 
 
-/**
-     * TODO: Implementar completamente según enunciado y tests.
-     */
     public static List<Integer> filtrarMayoresYOrdenar(List<Integer> numeros, int minimo) {
-        // Implementación provisional: lista vacía.
-        return new ArrayList<>();
+
+        if(minimo <= 0) {
+            return new ArrayList<>();
+        }
+        List<Integer> resultado = new ArrayList<>(numeros);
+        resultado.removeIf(numero -> numero == null);
+        resultado.removeIf(numero -> numero < minimo);
+        resultado.sort(Comparator.naturalOrder());
+        return resultado;
     }
 
 }
