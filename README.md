@@ -102,17 +102,19 @@ Un **repaso general** de lo trabajado hasta ahora en todo el primer Trimestre co
 ## Exámenes y "Pruebas evaluables"
 Dentro de la carpeta Pruebas se encontrará:
 
-El ejercicio_1_1 data del *3 de Oct 2025* &nbsp; &nbsp;| corregido
+El ejercicio_1_1 data del *3 Oct 2025* &nbsp; &nbsp;| corregido
 <br>
-El ejercicio_1_2 data del *17 de Oct 2025* &nbsp;| corregido
+El ejercicio_1_2 data del *17 Oct 2025* &nbsp;| corregido
 <br>
-El ejercicio_1_3 data del *24 de Oct 2025* &nbsp;| corregido
+El ejercicio_1_3 data del *24 Oct 2025* &nbsp;| corregido
 <br>
-El ejercicio_2_1 data del *7 de Nov 2025* &nbsp; | corregido
+El ejercicio_2_1 data del *7 Nov 2025* &nbsp; | corregido
 <br>
-El ejercicio_2_2 data del *21 de Nov 2025* | corregido
+El ejercicio_2_2 data del *21 Nov 2025* | corregido
 <br>
-El ejercicio_3_1 data del *17 de Dec 2025* | corregido
+El ejercicio_3_1 data del *17 Dec 2025* | corregido
+<br>
+El ejercicio_3_2 data del *9 Jan 2026*  &nbsp; &nbsp;| corregido
 
 La carpeta Pruebas **NO** contendrá los exámenes de final de trimestre.
 
