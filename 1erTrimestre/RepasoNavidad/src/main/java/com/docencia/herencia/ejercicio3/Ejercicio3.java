@@ -27,8 +27,7 @@ public static class Perro extends Animal {
 
         @Override
         public String sonido() {
-            // TODO: devolver "guau".
-            return "";
+            return "guau";
         }
     }
 
@@ -39,14 +38,21 @@ public static class Perro extends Animal {
 
         @Override
         public String sonido() {
-            // TODO: devolver "miau".
-            return "";
+            return "miau";
         }
     }
 
     public static String concatenarSonidos(List<Animal> animales) {
-        // TODO: concatenar sonidos separados por espacio, ignorando animales null.
-        return "";
+        if(animales == null || animales.isEmpty()){
+            return "";
+        }
+        String sonidos = animales.get(0).sonido();
+        for (int i = 1; i < animales.size(); i++) {
+            if(animales.get(i) != null){
+                sonidos += " "+animales.get(i).sonido();
+            }
+        }
+        return sonidos;
     }
 
 }

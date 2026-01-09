@@ -19,10 +19,6 @@ public class Ejercicio6 {
         // Puedes ejecutar aquí pruebas manuales rápidas si lo deseas.
     }
 
-
-/**
-     * TODO: Implementar completamente según enunciado y tests.
-     */
     public static int contarOcurrencias(List<String> textos, String objetivo) {
         // Implementación provisional: siempre 0.
 

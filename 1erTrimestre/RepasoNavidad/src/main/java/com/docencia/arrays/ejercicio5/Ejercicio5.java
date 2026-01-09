@@ -7,7 +7,7 @@ package com.docencia.arrays.ejercicio5;
 
 public class Ejercicio5 {
     /**
-     * Devuelve el índice de objetivo o -1 si no está.
+     * Devuelve el indice de objetivo o -1 si no esta.
      * @param numeros array de numeros
      * @param objetivo numero cuyo indice se busca
      * @return indice del numero

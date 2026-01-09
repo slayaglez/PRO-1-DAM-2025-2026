@@ -14,12 +14,22 @@ public class EmpleadoPorHoras extends Empleado {
 
     @Override
     public double calcularSalarioMensual() {
-        // TODO: devolver horas * tarifaPorHora, controlando valores negativos.
+        if(horas > 0 && tarifaPorHora > 0){
+            return horas * tarifaPorHora;
+        }
         return 0.0;
     }
 
     public static double costeTotalNomina(List<Empleado> empleados) {
-        // TODO: sumar salarios de empleados no nulos.
-        return 0.0;
+        if(empleados == null){
+            return 0;
+        }
+        float salario=0;
+        for (int i = 0; i < empleados.size(); i++) {
+            if(empleados.get(i) != null){
+                salario += empleados.get(i).calcularSalarioMensual();
+            }
+        }
+        return salario;
     }
 }
