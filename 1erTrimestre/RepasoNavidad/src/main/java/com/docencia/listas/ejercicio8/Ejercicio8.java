@@ -17,11 +17,7 @@ public class Ejercicio8 {
         // Puedes ejecutar aquí pruebas manuales rápidas si lo deseas.
     }
 
-    /**
-     * TODO: Implementar completamente según enunciado y tests.
-     */
     public static Integer maximoSeguro(List<Integer> numeros) {
-        // Implementación provisional: siempre null.
         Integer resultado = 0;
         int cuentaNulls=0;
         if (numeros != null && !numeros.isEmpty()) {
