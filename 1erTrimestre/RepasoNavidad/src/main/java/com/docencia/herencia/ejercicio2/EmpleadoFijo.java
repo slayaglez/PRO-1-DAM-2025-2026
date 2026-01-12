@@ -10,8 +10,8 @@ public class EmpleadoFijo extends Empleado {
 
     @Override
     public double calcularSalarioMensual() {
-        // TODO: devolver salario mensual.
-        return 0.0;
+        
+        return salarioMensual;
     }
 
 }

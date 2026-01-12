@@ -3,6 +3,7 @@
  * @version 1.0.0
  * @brief Clase que trabaja con Peliculas
  */
+//! EJERCICIO DE EXAMEN
 package com.docencia.clases.ejercicio7;
 
 import java.util.Objects;
