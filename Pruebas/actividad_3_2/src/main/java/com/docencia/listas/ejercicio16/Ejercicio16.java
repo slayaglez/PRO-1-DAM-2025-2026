@@ -18,8 +18,6 @@ public class Ejercicio16 {
      
     }
 
-
-
     /**
      * Funcion que suma el tamanio de todas las cadenas en una lista.
      * @param textos la lista de cadenas

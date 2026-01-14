@@ -1,0 +1,11 @@
+package com.docencia;
+
+public class Avestruz implements Animal{
+
+    @Override
+    public String comer() {
+        return "pequeños roedores";
+    }
+
+    
+}
