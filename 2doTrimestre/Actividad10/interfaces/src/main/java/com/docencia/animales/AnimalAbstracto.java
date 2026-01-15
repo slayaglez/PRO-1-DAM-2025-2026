@@ -1,4 +1,4 @@
-package com.docencia;
+package com.docencia.animales;
 
 public abstract class AnimalAbstracto implements Animal {
 

@@ -1,4 +1,4 @@
-package com.docencia;
+package com.docencia.animales;
 
 public class Avestruz implements Animal{
 

@@ -1,4 +1,4 @@
-package com.docencia;
+package com.docencia.animales;
 
 import java.util.ArrayList;
 import java.util.List;
