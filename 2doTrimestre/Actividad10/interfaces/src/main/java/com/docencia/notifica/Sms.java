@@ -1,6 +1,6 @@
 package com.docencia.notifica;
 
-public class Sms extends Notificacion implements INotificacion {
+public class Sms extends Notificacion{
 
     private final String texto;
 

@@ -1,6 +1,6 @@
 package com.docencia.notifica;
 
-public class Email extends Notificacion implements INotificacion{
+public class Email extends Notificacion{
 
     private final String asunto;
     private final String cuerpo;

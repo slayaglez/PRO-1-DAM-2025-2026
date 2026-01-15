@@ -1,6 +1,6 @@
 package com.docencia.notifica;
 
-public abstract class Notificacion {
+public abstract class Notificacion implements INotificacion{
 
     private final String destino;
 
