@@ -38,10 +38,53 @@ public class ArrayListEj {
 
         List<Persona> personas = new ArrayList<>();
         
-        personas.add(new Persona("4512355B", "Juan"));
-        personas.add(new Persona("4849535C", "Carlos"));
-        personas.add(new Persona("4596485D", "María"));
+        add(personas, new Persona("4512355B", "Juan"));
+        add(personas, new Persona("4849535C", "Carlos"));
+        add(personas, new Persona("4596485D", "María"));
+        add(personas, new Persona("4596485D", "María"));
+        add(personas, null);
         
         System.out.println(personas);
+
+        Persona juan = personas.get(0);
+        System.out.println(juan);
+        boolean existeJuan = personas.contains(juan);
+        System.out.println("¿Existe Juan en la lista? " + existeJuan);
+
+        Persona carmen = new Persona("4565656E", "carmen");
+        boolean existeCarmen = personas.contains(carmen);
+        System.out.println("¿Existe Carmen en la lista? " + existeCarmen);
+
+        Persona persona1 = new Persona("4512355B");
+        boolean existePersona1 = personas.contains(persona1);
+        System.out.println("¿Existe Persona uno en la lista? " + existePersona1);
+
+        int posicion = personas.indexOf(persona1);
+        System.out.println("Se encuentra en la posición: "+ posicion);
+
+        persona1 = personas.get(posicion);
+        System.out.println(persona1);
+
+
+        System.out.println(personas);
+    }
+
+    /**
+     * Add an personita
+     * @param lista lista de Persona
+     * @param persona Persona
+     * @return true or false
+     */
+    public static boolean add(List<Persona> lista, Persona persona){
+        
+        if (lista == null || persona == null || persona.getId() == null || persona.getId().isBlank()){
+            return false;
+        }
+
+        int posicion = lista.indexOf(persona);
+        if(posicion > -1) {
+            return false;
+        }
+        return lista.add(persona);
     }
 }

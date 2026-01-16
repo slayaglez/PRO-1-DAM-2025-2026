@@ -2,7 +2,7 @@ package com.docencia.arraylist;
 
 import java.util.Objects;
 
-public class Persona {
+public final class Persona {
 
     String id;
     String nombre;
@@ -10,11 +10,11 @@ public class Persona {
     public Persona(){}
 
     public Persona(String id){
-        this.id = id;
+        setId(id);
     }
 
     public Persona(String id, String nombre){
-        this.id = id;
+        setId(id);
         this.nombre = nombre;
     }
 
@@ -40,4 +40,24 @@ public class Persona {
         return "Persona [id=" + id + ", nombre=" + nombre + "]";
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        if(id == null || id.isBlank()){
+            throw new IllegalArgumentException("Identificador null");
+        }
+        this.id = id.trim().toLowerCase();
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    
 }
