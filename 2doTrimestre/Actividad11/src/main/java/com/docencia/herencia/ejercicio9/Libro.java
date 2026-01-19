@@ -8,7 +8,7 @@ public class Libro extends Producto {
 
     public Libro(UUID id, String nombre, double precio, String isbn) {
         super(id, nombre, precio);
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        this.isbn = isbn;
 }
 
     public String getIsbn() { return isbn; }
@@ -20,6 +20,8 @@ public class Libro extends Producto {
 
     @Override
     public String toString() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return "Libro [isbn=" + isbn + ", id=" + getId() + "]";
     }
+
+    
 }

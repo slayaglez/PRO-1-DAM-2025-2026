@@ -8,7 +8,7 @@ public class Electronica extends Producto {
 
     public Electronica(UUID id, String nombre, double precio, int garantiaMeses) {
         super(id, nombre, precio);
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        this.garantiaMeses = garantiaMeses;
 }
 
     public int getGarantiaMeses() { return garantiaMeses; }
@@ -20,6 +20,10 @@ public class Electronica extends Producto {
 
     @Override
     public String toString() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return "Electronica [garantiaMeses=" + garantiaMeses + ", id=" + getId() + "]";
     }
+
+    
+
+    
 }
