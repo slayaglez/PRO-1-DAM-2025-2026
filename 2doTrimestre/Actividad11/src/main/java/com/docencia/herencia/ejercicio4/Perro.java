@@ -8,7 +8,7 @@ public class Perro extends Animal {
 
     public Perro(UUID id, String nombre, String raza) {
         super(id, nombre);
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        this.raza = raza;
 }
 
     public String getRaza() { return raza; }
@@ -20,6 +20,8 @@ public class Perro extends Animal {
 
     @Override
     public String toString() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return "Perro [raza=" + raza + ", id=" + getId() + "]";
     }
+
+    
 }

@@ -8,7 +8,7 @@ public class Gato extends Animal {
 
     public Gato(UUID id, String nombre, boolean cazador) {
         super(id, nombre);
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        this.cazador = cazador;
 }
 
     public boolean getCazador() { return cazador; }
@@ -20,6 +20,8 @@ public class Gato extends Animal {
 
     @Override
     public String toString() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return "Gato [cazador=" + cazador + ", id=" + getId() + "]";
     }
+
+    
 }
