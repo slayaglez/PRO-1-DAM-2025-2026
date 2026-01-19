@@ -9,7 +9,8 @@ public class Rectangulo extends Figura {
 
     public Rectangulo(UUID id, String color, double ancho, double alto) {
         super(id, color);
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        this.ancho = ancho;
+        this.alto = alto;
 }
 
     public double getAncho() { return ancho; }
@@ -22,6 +23,8 @@ public class Rectangulo extends Figura {
 
     @Override
     public String toString() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return "Rectangulo [ancho=" + ancho + ", alto=" + alto + ", id=" + getId() + "]";
     }
+
+    
 }

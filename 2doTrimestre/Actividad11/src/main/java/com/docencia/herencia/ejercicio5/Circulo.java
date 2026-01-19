@@ -8,7 +8,7 @@ public class Circulo extends Figura {
 
     public Circulo(UUID id, String color, double radio) {
         super(id, color);
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        this.radio = radio;
 }
 
     public double getRadio() { return radio; }
@@ -20,6 +20,8 @@ public class Circulo extends Figura {
 
     @Override
     public String toString() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return "Circulo [radio=" + radio + ", id=" + getId() + "]";
     }
+
+    
 }
