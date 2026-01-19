@@ -8,7 +8,7 @@ public class Desarrollador extends Empleado {
 
     public Desarrollador(UUID id, String nombre, double salarioBase, String lenguajePrincipal) {
         super(id, nombre, salarioBase);
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        this.lenguajePrincipal = lenguajePrincipal;
 }
 
     public String getLenguajePrincipal() { return lenguajePrincipal; }
@@ -20,6 +20,8 @@ public class Desarrollador extends Empleado {
 
     @Override
     public String toString() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return "Desarrollador [lenguajePrincipal=" + lenguajePrincipal + "]" + "id=" + getId();
     }
+
+    
 }

@@ -8,7 +8,7 @@ public class Gerente extends Empleado {
 
     public Gerente(UUID id, String nombre, double salarioBase, int numReportes) {
         super(id, nombre, salarioBase);
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        this.numReportes = numReportes;
 }
 
     public int getNumReportes() { return numReportes; }
@@ -20,6 +20,8 @@ public class Gerente extends Empleado {
 
     @Override
     public String toString() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return "Gerente [numReportes=" + numReportes + ", id=" + getId() + "]";
     }
+
+    
 }
