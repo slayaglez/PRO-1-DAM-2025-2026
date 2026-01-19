@@ -8,7 +8,7 @@ public class PagoEfectivo extends Pago {
 
     public PagoEfectivo(UUID id, double importe, boolean entregado) {
         super(id, importe);
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        this.entregado = entregado;
 }
 
     public Boolean getEntregado() { return entregado; }
@@ -20,6 +20,8 @@ public class PagoEfectivo extends Pago {
 
     @Override
     public String toString() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return "PagoEfectivo [entregado=" + entregado + ", id=" + getId() + "]" + "importe=" + getImporte() + "entrega=";
     }
+
+    
 }

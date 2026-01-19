@@ -8,7 +8,7 @@ public class Portatil extends Dispositivo {
 
     public Portatil(UUID id, String fabricante, double pulgadas) {
         super(id, fabricante);
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        this.pulgadas = pulgadas;
 }
 
     public double getPulgadas() { return pulgadas; }
@@ -20,6 +20,8 @@ public class Portatil extends Dispositivo {
 
     @Override
     public String toString() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return "Portatil [pulgadas=" + pulgadas + ", id=" + getId() + "]";
     }
+
+    
 }

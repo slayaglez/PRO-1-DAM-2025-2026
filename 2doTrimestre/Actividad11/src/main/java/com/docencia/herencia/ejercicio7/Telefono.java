@@ -8,7 +8,7 @@ public class Telefono extends Dispositivo {
 
     public Telefono(UUID id, String fabricante, String numero) {
         super(id, fabricante);
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        this.numero = numero;
 }
 
     public String getNumero() { return numero; }
@@ -20,6 +20,8 @@ public class Telefono extends Dispositivo {
 
     @Override
     public String toString() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return "Telefono [numero=" + numero + "]" + "id="+getId();
     }
+
+    
 }

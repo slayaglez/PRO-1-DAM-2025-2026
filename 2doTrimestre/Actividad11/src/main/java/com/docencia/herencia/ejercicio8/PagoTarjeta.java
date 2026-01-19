@@ -8,8 +8,8 @@ public class PagoTarjeta extends Pago {
 
     public PagoTarjeta(UUID id, double importe, String ultimos4) {
         super(id, importe);
-        throw new UnsupportedOperationException("El metodo no esta implementado");
-}
+        this.ultimos4 = ultimos4;
+    }
 
     public String getUltimos4() { return ultimos4; }
 
@@ -20,6 +20,8 @@ public class PagoTarjeta extends Pago {
 
     @Override
     public String toString() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return "PagoTarjeta [ultimos4=" + ultimos4 + ", id=" + getId() + "]";
     }
+
+    
 }
