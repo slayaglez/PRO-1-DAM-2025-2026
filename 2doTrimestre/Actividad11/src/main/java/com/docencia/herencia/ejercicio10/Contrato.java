@@ -8,7 +8,7 @@ public class Contrato extends Documento {
 
     public Contrato(UUID id, String titulo, String partes) {
         super(id, titulo);
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        this.partes = partes;
 }
 
     public String getPartes() { return partes; }
@@ -20,6 +20,8 @@ public class Contrato extends Documento {
 
     @Override
     public String toString() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return "Contrato [partes=" + partes + ", id=" + getId() + "]";
     }
+
+    
 }

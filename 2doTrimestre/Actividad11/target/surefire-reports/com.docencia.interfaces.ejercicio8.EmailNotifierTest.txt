@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.interfaces.ejercicio8.EmailNotifierTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.012 s <<< FAILURE! -- in com.docencia.interfaces.ejercicio8.EmailNotifierTest
-com.docencia.interfaces.ejercicio8.EmailNotifierTest.idsDiferentesParaInstanciasDistintas -- Time elapsed: 0.001 s <<< ERROR!
+Tests run: 8, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.013 s <<< FAILURE! -- in com.docencia.interfaces.ejercicio8.EmailNotifierTest
+com.docencia.interfaces.ejercicio8.EmailNotifierTest.idsDiferentesParaInstanciasDistintas -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio8.EmailNotifier.<init>(EmailNotifier.java:15)
 	at com.docencia.interfaces.ejercicio8.EmailNotifierTest.idsDiferentesParaInstanciasDistintas(EmailNotifierTest.java:31)
@@ -10,7 +10,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio8.EmailNotifierTest.toStringContieneClaseEId -- Time elapsed: 0 s <<< ERROR!
+com.docencia.interfaces.ejercicio8.EmailNotifierTest.toStringContieneClaseEId -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio8.EmailNotifier.<init>(EmailNotifier.java:15)
 	at com.docencia.interfaces.ejercicio8.EmailNotifierTest.toStringContieneClaseEId(EmailNotifierTest.java:55)
@@ -34,7 +34,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio8.EmailNotifierTest.idSeAutogeneraSiEsNull -- Time elapsed: 0 s <<< ERROR!
+com.docencia.interfaces.ejercicio8.EmailNotifierTest.idSeAutogeneraSiEsNull -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio8.EmailNotifier.<init>(EmailNotifier.java:15)
 	at com.docencia.interfaces.ejercicio8.EmailNotifierTest.idSeAutogeneraSiEsNull(EmailNotifierTest.java:25)
@@ -42,7 +42,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio8.EmailNotifierTest.implementaInterfazYEjecutaMetodo -- Time elapsed: 0 s <<< ERROR!
+com.docencia.interfaces.ejercicio8.EmailNotifierTest.implementaInterfazYEjecutaMetodo -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio8.EmailNotifier.<init>(EmailNotifier.java:15)
 	at com.docencia.interfaces.ejercicio8.EmailNotifierTest.implementaInterfazYEjecutaMetodo(EmailNotifierTest.java:63)
@@ -50,7 +50,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio8.EmailNotifierTest.equalsMismoIdEsTrue -- Time elapsed: 0.003 s <<< ERROR!
+com.docencia.interfaces.ejercicio8.EmailNotifierTest.equalsMismoIdEsTrue -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio8.EmailNotifier.<init>(EmailNotifier.java:15)
 	at com.docencia.interfaces.ejercicio8.EmailNotifierTest.equalsMismoIdEsTrue(EmailNotifierTest.java:39)

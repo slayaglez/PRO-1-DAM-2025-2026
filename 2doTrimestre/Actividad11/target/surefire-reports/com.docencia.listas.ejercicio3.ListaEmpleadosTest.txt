@@ -1,17 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.listas.ejercicio3.ListaEmpleadosTest
 -------------------------------------------------------------------------------
-Tests run: 18, Failures: 5, Errors: 12, Skipped: 0, Time elapsed: 0.060 s <<< FAILURE! -- in com.docencia.listas.ejercicio3.ListaEmpleadosTest
-com.docencia.listas.ejercicio3.ListaEmpleadosTest.modificarNullIdTest -- Time elapsed: 0 s <<< ERROR!
+Tests run: 18, Failures: 5, Errors: 12, Skipped: 0, Time elapsed: 0.027 s <<< FAILURE! -- in com.docencia.listas.ejercicio3.ListaEmpleadosTest
+com.docencia.listas.ejercicio3.ListaEmpleadosTest.modificarNullIdTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio3.Desarrollador.<init>(Desarrollador.java:11)
-	at com.docencia.listas.ejercicio3.ListaEmpleadosTest.nuevoA(ListaEmpleadosTest.java:19)
+	at com.docencia.listas.ejercicio3.ListaEmpleados.anadir(ListaEmpleados.java:24)
 	at com.docencia.listas.ejercicio3.ListaEmpleadosTest.modificarNullIdTest(ListaEmpleadosTest.java:114)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.listas.ejercicio3.ListaEmpleadosTest.buscarPorIdNoExisteTest -- Time elapsed: 0 s <<< ERROR!
+com.docencia.listas.ejercicio3.ListaEmpleadosTest.buscarPorIdNoExisteTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio3.ListaEmpleados.buscarPorId(ListaEmpleados.java:28)
 	at com.docencia.listas.ejercicio3.ListaEmpleadosTest.buscarPorIdNoExisteTest(ListaEmpleadosTest.java:76)
@@ -19,7 +18,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.listas.ejercicio3.ListaEmpleadosTest.eliminarPorIdNullTest -- Time elapsed: 0.005 s <<< FAILURE!
+com.docencia.listas.ejercicio3.ListaEmpleadosTest.eliminarPorIdNullTest -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -35,10 +34,9 @@ Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementa
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.listas.ejercicio3.ListaEmpleadosTest.modificarInvalidTest -- Time elapsed: 0.011 s <<< ERROR!
+com.docencia.listas.ejercicio3.ListaEmpleadosTest.modificarInvalidTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio3.Desarrollador.<init>(Desarrollador.java:11)
-	at com.docencia.listas.ejercicio3.ListaEmpleadosTest.nuevoA(ListaEmpleadosTest.java:19)
+	at com.docencia.listas.ejercicio3.ListaEmpleados.anadir(ListaEmpleados.java:24)
 	at com.docencia.listas.ejercicio3.ListaEmpleadosTest.modificarInvalidTest(ListaEmpleadosTest.java:130)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
@@ -46,32 +44,29 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 
 com.docencia.listas.ejercicio3.ListaEmpleadosTest.buscarPorIdOkTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio3.Desarrollador.<init>(Desarrollador.java:11)
-	at com.docencia.listas.ejercicio3.ListaEmpleadosTest.nuevoA(ListaEmpleadosTest.java:19)
+	at com.docencia.listas.ejercicio3.ListaEmpleados.anadir(ListaEmpleados.java:24)
 	at com.docencia.listas.ejercicio3.ListaEmpleadosTest.buscarPorIdOkTest(ListaEmpleadosTest.java:63)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.listas.ejercicio3.ListaEmpleadosTest.modificarIdDistintoTest -- Time elapsed: 0 s <<< ERROR!
+com.docencia.listas.ejercicio3.ListaEmpleadosTest.modificarIdDistintoTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio3.Desarrollador.<init>(Desarrollador.java:11)
-	at com.docencia.listas.ejercicio3.ListaEmpleadosTest.nuevoA(ListaEmpleadosTest.java:19)
+	at com.docencia.listas.ejercicio3.ListaEmpleados.anadir(ListaEmpleados.java:24)
 	at com.docencia.listas.ejercicio3.ListaEmpleadosTest.modificarIdDistintoTest(ListaEmpleadosTest.java:138)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.listas.ejercicio3.ListaEmpleadosTest.modificarOkTest -- Time elapsed: 0.003 s <<< ERROR!
+com.docencia.listas.ejercicio3.ListaEmpleadosTest.modificarOkTest -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio3.Desarrollador.<init>(Desarrollador.java:11)
-	at com.docencia.listas.ejercicio3.ListaEmpleadosTest.nuevoA(ListaEmpleadosTest.java:19)
+	at com.docencia.listas.ejercicio3.ListaEmpleados.anadir(ListaEmpleados.java:24)
 	at com.docencia.listas.ejercicio3.ListaEmpleadosTest.modificarOkTest(ListaEmpleadosTest.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.listas.ejercicio3.ListaEmpleadosTest.anadirNullTest -- Time elapsed: 0.002 s <<< FAILURE!
+com.docencia.listas.ejercicio3.ListaEmpleadosTest.anadirNullTest -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -87,16 +82,15 @@ Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementa
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.listas.ejercicio3.ListaEmpleadosTest.anadirDuplicadoIdTest -- Time elapsed: 0.003 s <<< ERROR!
+com.docencia.listas.ejercicio3.ListaEmpleadosTest.anadirDuplicadoIdTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio3.Desarrollador.<init>(Desarrollador.java:11)
-	at com.docencia.listas.ejercicio3.ListaEmpleadosTest.nuevoA(ListaEmpleadosTest.java:19)
+	at com.docencia.listas.ejercicio3.ListaEmpleados.anadir(ListaEmpleados.java:24)
 	at com.docencia.listas.ejercicio3.ListaEmpleadosTest.anadirDuplicadoIdTest(ListaEmpleadosTest.java:55)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.listas.ejercicio3.ListaEmpleadosTest.buscarPorIdNullTest -- Time elapsed: 0.003 s <<< FAILURE!
+com.docencia.listas.ejercicio3.ListaEmpleadosTest.buscarPorIdNullTest -- Time elapsed: 0.002 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -112,10 +106,9 @@ Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementa
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.listas.ejercicio3.ListaEmpleadosTest.anadirOkTest -- Time elapsed: 0.002 s <<< ERROR!
+com.docencia.listas.ejercicio3.ListaEmpleadosTest.anadirOkTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio3.Desarrollador.<init>(Desarrollador.java:11)
-	at com.docencia.listas.ejercicio3.ListaEmpleadosTest.nuevoA(ListaEmpleadosTest.java:19)
+	at com.docencia.listas.ejercicio3.ListaEmpleados.anadir(ListaEmpleados.java:24)
 	at com.docencia.listas.ejercicio3.ListaEmpleadosTest.anadirOkTest(ListaEmpleadosTest.java:34)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
@@ -132,31 +125,28 @@ org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio3.Desarrollador.<init>(Desarrollador.java:11)
-	at com.docencia.listas.ejercicio3.ListaEmpleadosTest.invalido(ListaEmpleadosTest.java:27)
+	at com.docencia.listas.ejercicio3.ListaEmpleados.anadir(ListaEmpleados.java:24)
 	at com.docencia.listas.ejercicio3.ListaEmpleadosTest.lambda$anadirInvalidTest$1(ListaEmpleadosTest.java:48)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
 com.docencia.listas.ejercicio3.ListaEmpleadosTest.eliminarPorIdOkTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio3.Desarrollador.<init>(Desarrollador.java:11)
-	at com.docencia.listas.ejercicio3.ListaEmpleadosTest.nuevoA(ListaEmpleadosTest.java:19)
+	at com.docencia.listas.ejercicio3.ListaEmpleados.anadir(ListaEmpleados.java:24)
 	at com.docencia.listas.ejercicio3.ListaEmpleadosTest.eliminarPorIdOkTest(ListaEmpleadosTest.java:83)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.listas.ejercicio3.ListaEmpleadosTest.modificarNullElementoTest -- Time elapsed: 0 s <<< ERROR!
+com.docencia.listas.ejercicio3.ListaEmpleadosTest.modificarNullElementoTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio3.Desarrollador.<init>(Desarrollador.java:11)
-	at com.docencia.listas.ejercicio3.ListaEmpleadosTest.nuevoA(ListaEmpleadosTest.java:19)
+	at com.docencia.listas.ejercicio3.ListaEmpleados.anadir(ListaEmpleados.java:24)
 	at com.docencia.listas.ejercicio3.ListaEmpleadosTest.modificarNullElementoTest(ListaEmpleadosTest.java:122)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.listas.ejercicio3.ListaEmpleadosTest.eliminarPorIdNoExisteTest -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.listas.ejercicio3.ListaEmpleadosTest.eliminarPorIdNoExisteTest -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio3.ListaEmpleados.eliminarPorId(ListaEmpleados.java:32)
 	at com.docencia.listas.ejercicio3.ListaEmpleadosTest.eliminarPorIdNoExisteTest(ListaEmpleadosTest.java:97)
@@ -164,16 +154,15 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.listas.ejercicio3.ListaEmpleadosTest.listarInmutableTest -- Time elapsed: 0 s <<< ERROR!
+com.docencia.listas.ejercicio3.ListaEmpleadosTest.listarInmutableTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio3.Desarrollador.<init>(Desarrollador.java:11)
-	at com.docencia.listas.ejercicio3.ListaEmpleadosTest.nuevoA(ListaEmpleadosTest.java:19)
+	at com.docencia.listas.ejercicio3.ListaEmpleados.anadir(ListaEmpleados.java:24)
 	at com.docencia.listas.ejercicio3.ListaEmpleadosTest.listarInmutableTest(ListaEmpleadosTest.java:152)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.listas.ejercicio3.ListaEmpleadosTest.modificarNoExisteTest -- Time elapsed: 0.001 s <<< FAILURE!
+com.docencia.listas.ejercicio3.ListaEmpleadosTest.modificarNoExisteTest -- Time elapsed: 0.002 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.util.NoSuchElementException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -184,8 +173,7 @@ org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio3.Desarrollador.<init>(Desarrollador.java:11)
-	at com.docencia.listas.ejercicio3.ListaEmpleadosTest.nuevoA(ListaEmpleadosTest.java:19)
+	at com.docencia.listas.ejercicio3.ListaEmpleados.modificar(ListaEmpleados.java:36)
 	at com.docencia.listas.ejercicio3.ListaEmpleadosTest.lambda$modificarNoExisteTest$9(ListaEmpleadosTest.java:146)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more

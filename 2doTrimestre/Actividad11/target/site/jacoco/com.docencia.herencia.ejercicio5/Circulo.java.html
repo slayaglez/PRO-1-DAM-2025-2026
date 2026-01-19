@@ -8,19 +8,21 @@ public class Circulo extends Figura {
 
     public Circulo(UUID id, String color, double radio) {
 <span class="fc" id="L10">        super(id, color);</span>
-<span class="fc" id="L11">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
-}
+<span class="fc" id="L11">        this.radio = radio;</span>
+<span class="fc" id="L12">}</span>
 
-<span class="nc" id="L14">    public double getRadio() { return radio; }</span>
+<span class="fc" id="L14">    public double getRadio() { return radio; }</span>
 
     @Override
     public double area() {
-<span class="nc" id="L18">        return Math.PI * getRadio() * getRadio();</span>
+<span class="fc" id="L18">        return Math.PI * getRadio() * getRadio();</span>
     }
 
     @Override
     public String toString() {
-<span class="nc" id="L23">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
+<span class="fc" id="L23">        return &quot;Circulo [radio=&quot; + radio + &quot;, id=&quot; + getId() + &quot;]&quot;;</span>
     }
+
+    
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

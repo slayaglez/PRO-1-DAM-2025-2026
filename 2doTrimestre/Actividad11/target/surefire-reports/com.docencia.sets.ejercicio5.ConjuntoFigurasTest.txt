@@ -1,26 +1,24 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.sets.ejercicio5.ConjuntoFigurasTest
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 4, Errors: 5, Skipped: 0, Time elapsed: 0.017 s <<< FAILURE! -- in com.docencia.sets.ejercicio5.ConjuntoFigurasTest
+Tests run: 10, Failures: 4, Errors: 5, Skipped: 0, Time elapsed: 0.011 s <<< FAILURE! -- in com.docencia.sets.ejercicio5.ConjuntoFigurasTest
 com.docencia.sets.ejercicio5.ConjuntoFigurasTest.buscarPorIdOkTest -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio5.Circulo.<init>(Circulo.java:11)
-	at com.docencia.sets.ejercicio5.ConjuntoFigurasTest.nuevoA(ConjuntoFigurasTest.java:19)
+	at com.docencia.sets.ejercicio5.ConjuntoFiguras.anadir(ConjuntoFiguras.java:24)
 	at com.docencia.sets.ejercicio5.ConjuntoFigurasTest.buscarPorIdOkTest(ConjuntoFigurasTest.java:64)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.sets.ejercicio5.ConjuntoFigurasTest.modificarOkTest -- Time elapsed: 0 s <<< ERROR!
+com.docencia.sets.ejercicio5.ConjuntoFigurasTest.modificarOkTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio5.Circulo.<init>(Circulo.java:11)
-	at com.docencia.sets.ejercicio5.ConjuntoFigurasTest.nuevoA(ConjuntoFigurasTest.java:19)
+	at com.docencia.sets.ejercicio5.ConjuntoFiguras.anadir(ConjuntoFiguras.java:24)
 	at com.docencia.sets.ejercicio5.ConjuntoFigurasTest.modificarOkTest(ConjuntoFigurasTest.java:87)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.sets.ejercicio5.ConjuntoFigurasTest.anadirNullTest -- Time elapsed: 0.001 s <<< FAILURE!
+com.docencia.sets.ejercicio5.ConjuntoFigurasTest.anadirNullTest -- Time elapsed: 0 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -38,8 +36,7 @@ Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementa
 
 com.docencia.sets.ejercicio5.ConjuntoFigurasTest.anadirDuplicadoIdTest -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio5.Circulo.<init>(Circulo.java:11)
-	at com.docencia.sets.ejercicio5.ConjuntoFigurasTest.nuevoA(ConjuntoFigurasTest.java:19)
+	at com.docencia.sets.ejercicio5.ConjuntoFiguras.anadir(ConjuntoFiguras.java:24)
 	at com.docencia.sets.ejercicio5.ConjuntoFigurasTest.anadirDuplicadoIdTest(ConjuntoFigurasTest.java:56)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
@@ -61,10 +58,9 @@ Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementa
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.sets.ejercicio5.ConjuntoFigurasTest.anadirOkTest -- Time elapsed: 0.005 s <<< ERROR!
+com.docencia.sets.ejercicio5.ConjuntoFigurasTest.anadirOkTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio5.Circulo.<init>(Circulo.java:11)
-	at com.docencia.sets.ejercicio5.ConjuntoFigurasTest.nuevoA(ConjuntoFigurasTest.java:19)
+	at com.docencia.sets.ejercicio5.ConjuntoFiguras.anadir(ConjuntoFiguras.java:24)
 	at com.docencia.sets.ejercicio5.ConjuntoFigurasTest.anadirOkTest(ConjuntoFigurasTest.java:34)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
@@ -81,16 +77,14 @@ org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio5.Circulo.<init>(Circulo.java:11)
-	at com.docencia.sets.ejercicio5.ConjuntoFigurasTest.invalido(ConjuntoFigurasTest.java:27)
+	at com.docencia.sets.ejercicio5.ConjuntoFiguras.anadir(ConjuntoFiguras.java:24)
 	at com.docencia.sets.ejercicio5.ConjuntoFigurasTest.lambda$anadirInvalidTest$1(ConjuntoFigurasTest.java:49)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
 com.docencia.sets.ejercicio5.ConjuntoFigurasTest.eliminarPorIdOkTest -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio5.Circulo.<init>(Circulo.java:11)
-	at com.docencia.sets.ejercicio5.ConjuntoFigurasTest.nuevoA(ConjuntoFigurasTest.java:19)
+	at com.docencia.sets.ejercicio5.ConjuntoFiguras.anadir(ConjuntoFiguras.java:24)
 	at com.docencia.sets.ejercicio5.ConjuntoFigurasTest.eliminarPorIdOkTest(ConjuntoFigurasTest.java:78)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
@@ -107,8 +101,7 @@ org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio5.Circulo.<init>(Circulo.java:11)
-	at com.docencia.sets.ejercicio5.ConjuntoFigurasTest.nuevoA(ConjuntoFigurasTest.java:19)
+	at com.docencia.sets.ejercicio5.ConjuntoFiguras.modificar(ConjuntoFiguras.java:39)
 	at com.docencia.sets.ejercicio5.ConjuntoFigurasTest.lambda$modificarNoExisteTest$4(ConjuntoFigurasTest.java:97)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more

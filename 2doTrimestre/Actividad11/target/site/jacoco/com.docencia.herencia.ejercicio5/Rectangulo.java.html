@@ -9,20 +9,23 @@ public class Rectangulo extends Figura {
 
     public Rectangulo(UUID id, String color, double ancho, double alto) {
 <span class="fc" id="L11">        super(id, color);</span>
-<span class="fc" id="L12">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
-}
+<span class="fc" id="L12">        this.ancho = ancho;</span>
+<span class="fc" id="L13">        this.alto = alto;</span>
+<span class="fc" id="L14">}</span>
 
-<span class="nc" id="L15">    public double getAncho() { return ancho; }</span>
-<span class="nc" id="L16">    public double getAlto() { return alto; }</span>
+<span class="fc" id="L16">    public double getAncho() { return ancho; }</span>
+<span class="fc" id="L17">    public double getAlto() { return alto; }</span>
 
     @Override
     public double area() {
-<span class="nc" id="L20">        return getAncho() * getAlto();</span>
+<span class="fc" id="L21">        return getAncho() * getAlto();</span>
     }
 
     @Override
     public String toString() {
-<span class="nc" id="L25">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
+<span class="fc" id="L26">        return &quot;Rectangulo [ancho=&quot; + ancho + &quot;, alto=&quot; + alto + &quot;, id=&quot; + getId() + &quot;]&quot;;</span>
     }
+
+    
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

@@ -1,26 +1,24 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 4, Errors: 5, Skipped: 0, Time elapsed: 0.013 s <<< FAILURE! -- in com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest
-com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.buscarPorIdOkTest -- Time elapsed: 0 s <<< ERROR!
+Tests run: 10, Failures: 4, Errors: 5, Skipped: 0, Time elapsed: 0.014 s <<< FAILURE! -- in com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest
+com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.buscarPorIdOkTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio6.CuentaAhorro.<init>(CuentaAhorro.java:11)
-	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.nuevoA(ConjuntoCuentasBancariasTest.java:19)
+	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancarias.anadir(ConjuntoCuentasBancarias.java:24)
 	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.buscarPorIdOkTest(ConjuntoCuentasBancariasTest.java:64)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.modificarOkTest -- Time elapsed: 0 s <<< ERROR!
+com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.modificarOkTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio6.CuentaAhorro.<init>(CuentaAhorro.java:11)
-	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.nuevoA(ConjuntoCuentasBancariasTest.java:19)
+	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancarias.anadir(ConjuntoCuentasBancarias.java:24)
 	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.modificarOkTest(ConjuntoCuentasBancariasTest.java:87)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.anadirNullTest -- Time elapsed: 0.002 s <<< FAILURE!
+com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.anadirNullTest -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -38,14 +36,13 @@ Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementa
 
 com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.anadirDuplicadoIdTest -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio6.CuentaAhorro.<init>(CuentaAhorro.java:11)
-	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.nuevoA(ConjuntoCuentasBancariasTest.java:19)
+	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancarias.anadir(ConjuntoCuentasBancarias.java:24)
 	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.anadirDuplicadoIdTest(ConjuntoCuentasBancariasTest.java:56)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.buscarPorIdNullTest -- Time elapsed: 0 s <<< FAILURE!
+com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.buscarPorIdNullTest -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -63,14 +60,13 @@ Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementa
 
 com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.anadirOkTest -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio6.CuentaAhorro.<init>(CuentaAhorro.java:11)
-	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.nuevoA(ConjuntoCuentasBancariasTest.java:19)
+	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancarias.anadir(ConjuntoCuentasBancarias.java:24)
 	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.anadirOkTest(ConjuntoCuentasBancariasTest.java:34)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.anadirInvalidTest -- Time elapsed: 0.002 s <<< FAILURE!
+com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.anadirInvalidTest -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -81,16 +77,14 @@ org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio6.CuentaAhorro.<init>(CuentaAhorro.java:11)
-	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.invalido(ConjuntoCuentasBancariasTest.java:27)
+	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancarias.anadir(ConjuntoCuentasBancarias.java:24)
 	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.lambda$anadirInvalidTest$1(ConjuntoCuentasBancariasTest.java:49)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
 com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.eliminarPorIdOkTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio6.CuentaAhorro.<init>(CuentaAhorro.java:11)
-	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.nuevoA(ConjuntoCuentasBancariasTest.java:19)
+	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancarias.anadir(ConjuntoCuentasBancarias.java:24)
 	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.eliminarPorIdOkTest(ConjuntoCuentasBancariasTest.java:78)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
@@ -107,8 +101,7 @@ org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio6.CuentaAhorro.<init>(CuentaAhorro.java:11)
-	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.nuevoA(ConjuntoCuentasBancariasTest.java:19)
+	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancarias.modificar(ConjuntoCuentasBancarias.java:39)
 	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.lambda$modificarNoExisteTest$4(ConjuntoCuentasBancariasTest.java:97)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more

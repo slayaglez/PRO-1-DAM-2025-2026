@@ -27,18 +27,27 @@ public abstract class Producto {
     public abstract String categoria();
 
     @Override
-    public boolean equals(Object o) {
-<span class="fc" id="L31">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
+    public int hashCode() {
+<span class="fc" id="L31">        return Objects.hash(id);</span>
     }
 
     @Override
-    public int hashCode() {
-<span class="nc" id="L36">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
+    public boolean equals(Object obj) {
+<span class="pc bpc" id="L36" title="1 of 2 branches missed.">        if (this == obj)</span>
+<span class="nc" id="L37">            return true;</span>
+<span class="pc bpc" id="L38" title="1 of 2 branches missed.">        if (obj == null)</span>
+<span class="nc" id="L39">            return false;</span>
+<span class="fc bfc" id="L40" title="All 2 branches covered.">        if (getClass() != obj.getClass())</span>
+<span class="fc" id="L41">            return false;</span>
+<span class="fc" id="L42">        Producto other = (Producto) obj;</span>
+<span class="fc" id="L43">        return Objects.equals(id, other.id);</span>
     }
 
     @Override
     public String toString() {
-<span class="fc" id="L41">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
+<span class="fc" id="L48">        return &quot;Producto [id=&quot; + id + &quot;, nombre=&quot; + nombre + &quot;, precio=&quot; + precio + &quot;]&quot;;</span>
     }
+
+    
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

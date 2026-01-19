@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.interfaces.ejercicio1.FacturaTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.022 s <<< FAILURE! -- in com.docencia.interfaces.ejercicio1.FacturaTest
-com.docencia.interfaces.ejercicio1.FacturaTest.idsDiferentesParaInstanciasDistintas -- Time elapsed: 0.008 s <<< ERROR!
+Tests run: 8, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.017 s <<< FAILURE! -- in com.docencia.interfaces.ejercicio1.FacturaTest
+com.docencia.interfaces.ejercicio1.FacturaTest.idsDiferentesParaInstanciasDistintas -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio1.Factura.<init>(Factura.java:15)
 	at com.docencia.interfaces.ejercicio1.FacturaTest.idsDiferentesParaInstanciasDistintas(FacturaTest.java:31)
@@ -10,7 +10,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio1.FacturaTest.toStringContieneClaseEId -- Time elapsed: 0.002 s <<< ERROR!
+com.docencia.interfaces.ejercicio1.FacturaTest.toStringContieneClaseEId -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio1.Factura.<init>(Factura.java:15)
 	at com.docencia.interfaces.ejercicio1.FacturaTest.toStringContieneClaseEId(FacturaTest.java:55)
@@ -18,7 +18,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio1.FacturaTest.equalsIdDistintoEsFalse -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.interfaces.ejercicio1.FacturaTest.equalsIdDistintoEsFalse -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio1.Factura.<init>(Factura.java:15)
 	at com.docencia.interfaces.ejercicio1.FacturaTest.equalsIdDistintoEsFalse(FacturaTest.java:47)
@@ -26,7 +26,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio1.FacturaTest.constructorAsignaCampos -- Time elapsed: 0 s <<< ERROR!
+com.docencia.interfaces.ejercicio1.FacturaTest.constructorAsignaCampos -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio1.Factura.<init>(Factura.java:15)
 	at com.docencia.interfaces.ejercicio1.FacturaTest.constructorAsignaCampos(FacturaTest.java:17)
@@ -42,7 +42,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio1.FacturaTest.implementaInterfazYEjecutaMetodo -- Time elapsed: 0.002 s <<< ERROR!
+com.docencia.interfaces.ejercicio1.FacturaTest.implementaInterfazYEjecutaMetodo -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio1.Factura.<init>(Factura.java:15)
 	at com.docencia.interfaces.ejercicio1.FacturaTest.implementaInterfazYEjecutaMetodo(FacturaTest.java:63)

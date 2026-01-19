@@ -1,26 +1,24 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.sets.ejercicio9.ConjuntoProductosTest
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 4, Errors: 5, Skipped: 0, Time elapsed: 0.010 s <<< FAILURE! -- in com.docencia.sets.ejercicio9.ConjuntoProductosTest
-com.docencia.sets.ejercicio9.ConjuntoProductosTest.buscarPorIdOkTest -- Time elapsed: 0 s <<< ERROR!
+Tests run: 10, Failures: 4, Errors: 5, Skipped: 0, Time elapsed: 0.018 s <<< FAILURE! -- in com.docencia.sets.ejercicio9.ConjuntoProductosTest
+com.docencia.sets.ejercicio9.ConjuntoProductosTest.buscarPorIdOkTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio9.Libro.<init>(Libro.java:11)
-	at com.docencia.sets.ejercicio9.ConjuntoProductosTest.nuevoA(ConjuntoProductosTest.java:19)
+	at com.docencia.sets.ejercicio9.ConjuntoProductos.anadir(ConjuntoProductos.java:24)
 	at com.docencia.sets.ejercicio9.ConjuntoProductosTest.buscarPorIdOkTest(ConjuntoProductosTest.java:64)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.sets.ejercicio9.ConjuntoProductosTest.modificarOkTest -- Time elapsed: 0 s <<< ERROR!
+com.docencia.sets.ejercicio9.ConjuntoProductosTest.modificarOkTest -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio9.Libro.<init>(Libro.java:11)
-	at com.docencia.sets.ejercicio9.ConjuntoProductosTest.nuevoA(ConjuntoProductosTest.java:19)
+	at com.docencia.sets.ejercicio9.ConjuntoProductos.anadir(ConjuntoProductos.java:24)
 	at com.docencia.sets.ejercicio9.ConjuntoProductosTest.modificarOkTest(ConjuntoProductosTest.java:87)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.sets.ejercicio9.ConjuntoProductosTest.anadirNullTest -- Time elapsed: 0.001 s <<< FAILURE!
+com.docencia.sets.ejercicio9.ConjuntoProductosTest.anadirNullTest -- Time elapsed: 0.002 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -38,8 +36,7 @@ Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementa
 
 com.docencia.sets.ejercicio9.ConjuntoProductosTest.anadirDuplicadoIdTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio9.Libro.<init>(Libro.java:11)
-	at com.docencia.sets.ejercicio9.ConjuntoProductosTest.nuevoA(ConjuntoProductosTest.java:19)
+	at com.docencia.sets.ejercicio9.ConjuntoProductos.anadir(ConjuntoProductos.java:24)
 	at com.docencia.sets.ejercicio9.ConjuntoProductosTest.anadirDuplicadoIdTest(ConjuntoProductosTest.java:56)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
@@ -61,16 +58,15 @@ Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementa
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.sets.ejercicio9.ConjuntoProductosTest.anadirOkTest -- Time elapsed: 0 s <<< ERROR!
+com.docencia.sets.ejercicio9.ConjuntoProductosTest.anadirOkTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio9.Libro.<init>(Libro.java:11)
-	at com.docencia.sets.ejercicio9.ConjuntoProductosTest.nuevoA(ConjuntoProductosTest.java:19)
+	at com.docencia.sets.ejercicio9.ConjuntoProductos.anadir(ConjuntoProductos.java:24)
 	at com.docencia.sets.ejercicio9.ConjuntoProductosTest.anadirOkTest(ConjuntoProductosTest.java:34)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.sets.ejercicio9.ConjuntoProductosTest.anadirInvalidTest -- Time elapsed: 0 s <<< FAILURE!
+com.docencia.sets.ejercicio9.ConjuntoProductosTest.anadirInvalidTest -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -81,22 +77,20 @@ org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio9.Libro.<init>(Libro.java:11)
-	at com.docencia.sets.ejercicio9.ConjuntoProductosTest.invalido(ConjuntoProductosTest.java:27)
+	at com.docencia.sets.ejercicio9.ConjuntoProductos.anadir(ConjuntoProductos.java:24)
 	at com.docencia.sets.ejercicio9.ConjuntoProductosTest.lambda$anadirInvalidTest$1(ConjuntoProductosTest.java:49)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.sets.ejercicio9.ConjuntoProductosTest.eliminarPorIdOkTest -- Time elapsed: 0 s <<< ERROR!
+com.docencia.sets.ejercicio9.ConjuntoProductosTest.eliminarPorIdOkTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio9.Libro.<init>(Libro.java:11)
-	at com.docencia.sets.ejercicio9.ConjuntoProductosTest.nuevoA(ConjuntoProductosTest.java:19)
+	at com.docencia.sets.ejercicio9.ConjuntoProductos.anadir(ConjuntoProductos.java:24)
 	at com.docencia.sets.ejercicio9.ConjuntoProductosTest.eliminarPorIdOkTest(ConjuntoProductosTest.java:78)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.sets.ejercicio9.ConjuntoProductosTest.modificarNoExisteTest -- Time elapsed: 0.001 s <<< FAILURE!
+com.docencia.sets.ejercicio9.ConjuntoProductosTest.modificarNoExisteTest -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.util.NoSuchElementException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -107,8 +101,7 @@ org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.herencia.ejercicio9.Libro.<init>(Libro.java:11)
-	at com.docencia.sets.ejercicio9.ConjuntoProductosTest.nuevoA(ConjuntoProductosTest.java:19)
+	at com.docencia.sets.ejercicio9.ConjuntoProductos.modificar(ConjuntoProductos.java:39)
 	at com.docencia.sets.ejercicio9.ConjuntoProductosTest.lambda$modificarNoExisteTest$4(ConjuntoProductosTest.java:97)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more

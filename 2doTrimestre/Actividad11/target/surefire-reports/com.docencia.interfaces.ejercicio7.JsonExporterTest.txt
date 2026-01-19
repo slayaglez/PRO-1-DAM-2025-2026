@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.interfaces.ejercicio7.JsonExporterTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.033 s <<< FAILURE! -- in com.docencia.interfaces.ejercicio7.JsonExporterTest
-com.docencia.interfaces.ejercicio7.JsonExporterTest.idsDiferentesParaInstanciasDistintas -- Time elapsed: 0.005 s <<< ERROR!
+Tests run: 8, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.017 s <<< FAILURE! -- in com.docencia.interfaces.ejercicio7.JsonExporterTest
+com.docencia.interfaces.ejercicio7.JsonExporterTest.idsDiferentesParaInstanciasDistintas -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio7.JsonExporter.<init>(JsonExporter.java:15)
 	at com.docencia.interfaces.ejercicio7.JsonExporterTest.idsDiferentesParaInstanciasDistintas(JsonExporterTest.java:31)
@@ -18,7 +18,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio7.JsonExporterTest.equalsIdDistintoEsFalse -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.interfaces.ejercicio7.JsonExporterTest.equalsIdDistintoEsFalse -- Time elapsed: 0.003 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio7.JsonExporter.<init>(JsonExporter.java:15)
 	at com.docencia.interfaces.ejercicio7.JsonExporterTest.equalsIdDistintoEsFalse(JsonExporterTest.java:47)
@@ -26,7 +26,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio7.JsonExporterTest.constructorAsignaCampos -- Time elapsed: 0.002 s <<< ERROR!
+com.docencia.interfaces.ejercicio7.JsonExporterTest.constructorAsignaCampos -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio7.JsonExporter.<init>(JsonExporter.java:15)
 	at com.docencia.interfaces.ejercicio7.JsonExporterTest.constructorAsignaCampos(JsonExporterTest.java:17)
@@ -34,7 +34,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio7.JsonExporterTest.idSeAutogeneraSiEsNull -- Time elapsed: 0 s <<< ERROR!
+com.docencia.interfaces.ejercicio7.JsonExporterTest.idSeAutogeneraSiEsNull -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio7.JsonExporter.<init>(JsonExporter.java:15)
 	at com.docencia.interfaces.ejercicio7.JsonExporterTest.idSeAutogeneraSiEsNull(JsonExporterTest.java:25)

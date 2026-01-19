@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.sets.ejercicio10.ConjuntoDocumentosTest
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 4, Errors: 5, Skipped: 0, Time elapsed: 0.012 s <<< FAILURE! -- in com.docencia.sets.ejercicio10.ConjuntoDocumentosTest
+Tests run: 10, Failures: 4, Errors: 5, Skipped: 0, Time elapsed: 0.014 s <<< FAILURE! -- in com.docencia.sets.ejercicio10.ConjuntoDocumentosTest
 com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.buscarPorIdOkTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.herencia.ejercicio10.Factura.<init>(Factura.java:11)
@@ -61,7 +61,7 @@ Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementa
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.anadirOkTest -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.anadirOkTest -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.herencia.ejercicio10.Factura.<init>(Factura.java:11)
 	at com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.nuevoA(ConjuntoDocumentosTest.java:19)
@@ -87,7 +87,7 @@ Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementa
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.eliminarPorIdOkTest -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.eliminarPorIdOkTest -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.herencia.ejercicio10.Factura.<init>(Factura.java:11)
 	at com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.nuevoA(ConjuntoDocumentosTest.java:19)

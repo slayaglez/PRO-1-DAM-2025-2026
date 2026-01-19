@@ -8,19 +8,21 @@ public class Desarrollador extends Empleado {
 
     public Desarrollador(UUID id, String nombre, double salarioBase, String lenguajePrincipal) {
 <span class="fc" id="L10">        super(id, nombre, salarioBase);</span>
-<span class="fc" id="L11">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
-}
+<span class="fc" id="L11">        this.lenguajePrincipal = lenguajePrincipal;</span>
+<span class="fc" id="L12">}</span>
 
-<span class="nc" id="L14">    public String getLenguajePrincipal() { return lenguajePrincipal; }</span>
+<span class="fc" id="L14">    public String getLenguajePrincipal() { return lenguajePrincipal; }</span>
 
     @Override
     public double calcularBonus() {
-<span class="nc" id="L18">        return getSalarioBase() * 0.10;</span>
+<span class="fc" id="L18">        return getSalarioBase() * 0.10;</span>
     }
 
     @Override
     public String toString() {
-<span class="nc" id="L23">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
+<span class="fc" id="L23">        return &quot;Desarrollador [lenguajePrincipal=&quot; + lenguajePrincipal + &quot;]&quot; + &quot;id=&quot; + getId();</span>
     }
+
+    
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

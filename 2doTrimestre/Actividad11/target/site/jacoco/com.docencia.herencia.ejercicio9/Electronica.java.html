@@ -8,19 +8,23 @@ public class Electronica extends Producto {
 
     public Electronica(UUID id, String nombre, double precio, int garantiaMeses) {
 <span class="fc" id="L10">        super(id, nombre, precio);</span>
-<span class="fc" id="L11">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
-}
+<span class="fc" id="L11">        this.garantiaMeses = garantiaMeses;</span>
+<span class="fc" id="L12">}</span>
 
-<span class="nc" id="L14">    public int getGarantiaMeses() { return garantiaMeses; }</span>
+<span class="fc" id="L14">    public int getGarantiaMeses() { return garantiaMeses; }</span>
 
     @Override
     public String categoria() {
-<span class="nc" id="L18">        return &quot;Electronica&quot;;</span>
+<span class="fc" id="L18">        return &quot;Electronica&quot;;</span>
     }
 
     @Override
     public String toString() {
-<span class="nc" id="L23">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
+<span class="fc" id="L23">        return &quot;Electronica [garantiaMeses=&quot; + garantiaMeses + &quot;, id=&quot; + getId() + &quot;]&quot;;</span>
     }
+
+    
+
+    
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

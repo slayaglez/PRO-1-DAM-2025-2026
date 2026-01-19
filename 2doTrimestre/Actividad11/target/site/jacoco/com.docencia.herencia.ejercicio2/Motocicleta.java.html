@@ -8,19 +8,21 @@ public class Motocicleta extends Vehiculo {
 
     public Motocicleta(UUID id, String marca, String modelo, boolean tieneSidecar) {
 <span class="fc" id="L10">        super(id, marca, modelo);</span>
-<span class="fc" id="L11">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
-}
+<span class="fc" id="L11">        this.tieneSidecar = tieneSidecar;</span>
+<span class="fc" id="L12">}</span>
 
-<span class="nc" id="L14">    public boolean getTieneSidecar() { return tieneSidecar; }</span>
+<span class="fc" id="L14">    public boolean getTieneSidecar() { return tieneSidecar; }</span>
 
     @Override
     public int ruedas() {
-<span class="nc" id="L18">        return 2;</span>
+<span class="fc" id="L18">        return 2;</span>
     }
 
     @Override
     public String toString() {
-<span class="nc" id="L23">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
+<span class="fc" id="L23">        return &quot;Motocicleta [tieneSidecar=&quot; + tieneSidecar + &quot;]&quot;+&quot;id=&quot;+getId();</span>
     }
+
+    
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

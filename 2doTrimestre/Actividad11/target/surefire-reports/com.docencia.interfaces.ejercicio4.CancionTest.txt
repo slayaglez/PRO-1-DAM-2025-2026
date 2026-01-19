@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.interfaces.ejercicio4.CancionTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.013 s <<< FAILURE! -- in com.docencia.interfaces.ejercicio4.CancionTest
-com.docencia.interfaces.ejercicio4.CancionTest.idsDiferentesParaInstanciasDistintas -- Time elapsed: 0.003 s <<< ERROR!
+Tests run: 8, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.012 s <<< FAILURE! -- in com.docencia.interfaces.ejercicio4.CancionTest
+com.docencia.interfaces.ejercicio4.CancionTest.idsDiferentesParaInstanciasDistintas -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio4.Cancion.<init>(Cancion.java:15)
 	at com.docencia.interfaces.ejercicio4.CancionTest.idsDiferentesParaInstanciasDistintas(CancionTest.java:31)
@@ -18,7 +18,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio4.CancionTest.equalsIdDistintoEsFalse -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.interfaces.ejercicio4.CancionTest.equalsIdDistintoEsFalse -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio4.Cancion.<init>(Cancion.java:15)
 	at com.docencia.interfaces.ejercicio4.CancionTest.equalsIdDistintoEsFalse(CancionTest.java:47)
@@ -42,7 +42,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio4.CancionTest.implementaInterfazYEjecutaMetodo -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.interfaces.ejercicio4.CancionTest.implementaInterfazYEjecutaMetodo -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio4.Cancion.<init>(Cancion.java:15)
 	at com.docencia.interfaces.ejercicio4.CancionTest.implementaInterfazYEjecutaMetodo(CancionTest.java:63)
@@ -50,7 +50,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio4.CancionTest.equalsMismoIdEsTrue -- Time elapsed: 0.002 s <<< ERROR!
+com.docencia.interfaces.ejercicio4.CancionTest.equalsMismoIdEsTrue -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio4.Cancion.<init>(Cancion.java:15)
 	at com.docencia.interfaces.ejercicio4.CancionTest.equalsMismoIdEsTrue(CancionTest.java:39)
