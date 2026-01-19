@@ -1,0 +1,60 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.interfaces.ejercicio9.ClienteVipTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.026 s <<< FAILURE! -- in com.docencia.interfaces.ejercicio9.ClienteVipTest
+com.docencia.interfaces.ejercicio9.ClienteVipTest.idsDiferentesParaInstanciasDistintas -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.interfaces.ejercicio9.ClienteVip.<init>(ClienteVip.java:15)
+	at com.docencia.interfaces.ejercicio9.ClienteVipTest.idsDiferentesParaInstanciasDistintas(ClienteVipTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.interfaces.ejercicio9.ClienteVipTest.toStringContieneClaseEId -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.interfaces.ejercicio9.ClienteVip.<init>(ClienteVip.java:15)
+	at com.docencia.interfaces.ejercicio9.ClienteVipTest.toStringContieneClaseEId(ClienteVipTest.java:55)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.interfaces.ejercicio9.ClienteVipTest.equalsIdDistintoEsFalse -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.interfaces.ejercicio9.ClienteVip.<init>(ClienteVip.java:15)
+	at com.docencia.interfaces.ejercicio9.ClienteVipTest.equalsIdDistintoEsFalse(ClienteVipTest.java:47)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.interfaces.ejercicio9.ClienteVipTest.constructorAsignaCampos -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.interfaces.ejercicio9.ClienteVip.<init>(ClienteVip.java:15)
+	at com.docencia.interfaces.ejercicio9.ClienteVipTest.constructorAsignaCampos(ClienteVipTest.java:17)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.interfaces.ejercicio9.ClienteVipTest.idSeAutogeneraSiEsNull -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.interfaces.ejercicio9.ClienteVip.<init>(ClienteVip.java:15)
+	at com.docencia.interfaces.ejercicio9.ClienteVipTest.idSeAutogeneraSiEsNull(ClienteVipTest.java:25)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.interfaces.ejercicio9.ClienteVipTest.implementaInterfazYEjecutaMetodo -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.interfaces.ejercicio9.ClienteVip.<init>(ClienteVip.java:15)
+	at com.docencia.interfaces.ejercicio9.ClienteVipTest.implementaInterfazYEjecutaMetodo(ClienteVipTest.java:63)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.interfaces.ejercicio9.ClienteVipTest.equalsMismoIdEsTrue -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.interfaces.ejercicio9.ClienteVip.<init>(ClienteVip.java:15)
+	at com.docencia.interfaces.ejercicio9.ClienteVipTest.equalsMismoIdEsTrue(ClienteVipTest.java:39)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

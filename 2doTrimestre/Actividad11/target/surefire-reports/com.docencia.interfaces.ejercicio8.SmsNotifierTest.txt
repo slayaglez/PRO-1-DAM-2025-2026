@@ -1,0 +1,60 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.interfaces.ejercicio8.SmsNotifierTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.013 s <<< FAILURE! -- in com.docencia.interfaces.ejercicio8.SmsNotifierTest
+com.docencia.interfaces.ejercicio8.SmsNotifierTest.idsDiferentesParaInstanciasDistintas -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.interfaces.ejercicio8.SmsNotifier.<init>(SmsNotifier.java:15)
+	at com.docencia.interfaces.ejercicio8.SmsNotifierTest.idsDiferentesParaInstanciasDistintas(SmsNotifierTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.interfaces.ejercicio8.SmsNotifierTest.toStringContieneClaseEId -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.interfaces.ejercicio8.SmsNotifier.<init>(SmsNotifier.java:15)
+	at com.docencia.interfaces.ejercicio8.SmsNotifierTest.toStringContieneClaseEId(SmsNotifierTest.java:55)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.interfaces.ejercicio8.SmsNotifierTest.equalsIdDistintoEsFalse -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.interfaces.ejercicio8.SmsNotifier.<init>(SmsNotifier.java:15)
+	at com.docencia.interfaces.ejercicio8.SmsNotifierTest.equalsIdDistintoEsFalse(SmsNotifierTest.java:47)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.interfaces.ejercicio8.SmsNotifierTest.constructorAsignaCampos -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.interfaces.ejercicio8.SmsNotifier.<init>(SmsNotifier.java:15)
+	at com.docencia.interfaces.ejercicio8.SmsNotifierTest.constructorAsignaCampos(SmsNotifierTest.java:17)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.interfaces.ejercicio8.SmsNotifierTest.idSeAutogeneraSiEsNull -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.interfaces.ejercicio8.SmsNotifier.<init>(SmsNotifier.java:15)
+	at com.docencia.interfaces.ejercicio8.SmsNotifierTest.idSeAutogeneraSiEsNull(SmsNotifierTest.java:25)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.interfaces.ejercicio8.SmsNotifierTest.implementaInterfazYEjecutaMetodo -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.interfaces.ejercicio8.SmsNotifier.<init>(SmsNotifier.java:15)
+	at com.docencia.interfaces.ejercicio8.SmsNotifierTest.implementaInterfazYEjecutaMetodo(SmsNotifierTest.java:63)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.interfaces.ejercicio8.SmsNotifierTest.equalsMismoIdEsTrue -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.interfaces.ejercicio8.SmsNotifier.<init>(SmsNotifier.java:15)
+	at com.docencia.interfaces.ejercicio8.SmsNotifierTest.equalsMismoIdEsTrue(SmsNotifierTest.java:39)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

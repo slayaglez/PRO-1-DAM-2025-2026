@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ConjuntoPersonas.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Herencia/Interfaces/List/Set/Map - 10 ejercicios</a> &gt; <a href="index.source.html" class="el_package">com.docencia.sets.ejercicio1</a> &gt; <span class="el_source">ConjuntoPersonas.java</span></div><h1>ConjuntoPersonas.java</h1><pre class="source lang-java linenums">package com.docencia.sets.ejercicio1;
+
+import com.docencia.herencia.ejercicio1.Persona;
+
+import java.util.HashSet;
+import java.util.NoSuchElementException;
+import java.util.Set;
+import java.util.UUID;
+
+/**
+ * Gestiona un conjunto de {@link Persona} usando internamente {@link HashSet}.
+ *
+ * Reglas:
+ * - No se permiten elementos nulos.
+ * - No se permiten elementos con campos &quot;vacios&quot; segun la validacion del ejercicio.
+ * - No se permiten ids nulos ni duplicados.
+ */
+<span class="fc" id="L18">public class ConjuntoPersonas {</span>
+
+<span class="fc" id="L20">    private final Set&lt;Persona&gt; set = new HashSet&lt;&gt;();</span>
+
+    /** Anad... un elemento a la coleccion. */
+    public void anadir(Persona elemento) {
+<span class="fc" id="L24">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
+    }
+
+    /** Busca por id. */
+public Persona buscarPorId(UUID id) {
+<span class="fc" id="L29">    throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
+}
+
+    /** Elimina por id. */
+    public boolean eliminarPorId(UUID id) {
+<span class="nc" id="L34">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
+    }
+
+    /** Reemplaza el elemento con ese id por otro (mismo id). */
+    public void modificar(UUID id, Persona nuevoElemento) {
+<span class="fc" id="L39">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
+    }
+
+    /** Devuelve una copia inmutable del conjunto. */
+    public Set&lt;Persona&gt; listar() {
+<span class="nc" id="L44">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
+    }
+
+    public int tamanio() {
+<span class="nc" id="L48">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
+    }
+    private void validar(Persona elemento) {
+<span class="nc bnc" id="L51" title="All 2 branches missed.">        if (elemento == null) {</span>
+<span class="nc" id="L52">            throw new IllegalArgumentException(&quot;La persona no puede ser nula&quot;);</span>
+        }
+<span class="nc bnc" id="L54" title="All 2 branches missed.">        if (elemento.getId() == null) {</span>
+<span class="nc" id="L55">            throw new IllegalArgumentException(&quot;El id no puede ser nulo&quot;);</span>
+        }
+<span class="nc bnc" id="L57" title="All 4 branches missed.">        if (elemento.getNombre() == null || elemento.getNombre().isBlank()) {</span>
+<span class="nc" id="L58">            throw new IllegalArgumentException(&quot;El nombre no puede ser nulo o en blanco&quot;);</span>
+        }
+<span class="nc bnc" id="L60" title="All 2 branches missed.">        if (elemento.getEdad() &lt; 0) {</span>
+<span class="nc" id="L61">            throw new IllegalArgumentException(&quot;La edad no puede ser negativa&quot;);</span>
+        }
+<span class="nc" id="L63">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

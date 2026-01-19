@@ -1,0 +1,76 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.herencia.ejercicio9.ElectronicaTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.032 s <<< FAILURE! -- in com.docencia.herencia.ejercicio9.ElectronicaTest
+com.docencia.herencia.ejercicio9.ElectronicaTest.metodo_abstracto_implementado_devuelve_esperado -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio9.Electronica.<init>(Electronica.java:11)
+	at com.docencia.herencia.ejercicio9.ElectronicaTest.metodo_abstracto_implementado_devuelve_esperado(ElectronicaTest.java:66)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio9.ElectronicaTest.equals_otro_tipo_es_false -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio9.Electronica.<init>(Electronica.java:11)
+	at com.docencia.herencia.ejercicio9.ElectronicaTest.equals_otro_tipo_es_false(ElectronicaTest.java:44)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio9.ElectronicaTest.ids_son_unicos_en_instancias_distintas -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio9.Electronica.<init>(Electronica.java:11)
+	at com.docencia.herencia.ejercicio9.ElectronicaTest.ids_son_unicos_en_instancias_distintas(ElectronicaTest.java:28)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio9.ElectronicaTest.equals_mismo_id_misma_clase_es_true -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio9.Electronica.<init>(Electronica.java:11)
+	at com.docencia.herencia.ejercicio9.ElectronicaTest.equals_mismo_id_misma_clase_es_true(ElectronicaTest.java:36)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio9.ElectronicaTest.es_instancia_de_la_clase_base -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio9.Electronica.<init>(Electronica.java:11)
+	at com.docencia.herencia.ejercicio9.ElectronicaTest.es_instancia_de_la_clase_base(ElectronicaTest.java:72)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio9.ElectronicaTest.equals_distinto_id_es_false -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio9.Electronica.<init>(Electronica.java:11)
+	at com.docencia.herencia.ejercicio9.ElectronicaTest.equals_distinto_id_es_false(ElectronicaTest.java:51)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio9.ElectronicaTest.constructor_genera_id_si_null -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio9.Electronica.<init>(Electronica.java:11)
+	at com.docencia.herencia.ejercicio9.ElectronicaTest.constructor_genera_id_si_null(ElectronicaTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio9.ElectronicaTest.constructor_asigna_campos -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio9.Electronica.<init>(Electronica.java:11)
+	at com.docencia.herencia.ejercicio9.ElectronicaTest.constructor_asigna_campos(ElectronicaTest.java:13)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio9.ElectronicaTest.toString_contiene_nombre_clase_y_campos -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio9.Electronica.<init>(Electronica.java:11)
+	at com.docencia.herencia.ejercicio9.ElectronicaTest.toString_contiene_nombre_clase_y_campos(ElectronicaTest.java:58)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

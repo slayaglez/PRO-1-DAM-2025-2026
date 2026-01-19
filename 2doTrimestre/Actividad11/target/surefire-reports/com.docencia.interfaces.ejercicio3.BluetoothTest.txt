@@ -1,0 +1,60 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.interfaces.ejercicio3.BluetoothTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.017 s <<< FAILURE! -- in com.docencia.interfaces.ejercicio3.BluetoothTest
+com.docencia.interfaces.ejercicio3.BluetoothTest.idsDiferentesParaInstanciasDistintas -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.interfaces.ejercicio3.Bluetooth.<init>(Bluetooth.java:15)
+	at com.docencia.interfaces.ejercicio3.BluetoothTest.idsDiferentesParaInstanciasDistintas(BluetoothTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.interfaces.ejercicio3.BluetoothTest.toStringContieneClaseEId -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.interfaces.ejercicio3.Bluetooth.<init>(Bluetooth.java:15)
+	at com.docencia.interfaces.ejercicio3.BluetoothTest.toStringContieneClaseEId(BluetoothTest.java:55)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.interfaces.ejercicio3.BluetoothTest.equalsIdDistintoEsFalse -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.interfaces.ejercicio3.Bluetooth.<init>(Bluetooth.java:15)
+	at com.docencia.interfaces.ejercicio3.BluetoothTest.equalsIdDistintoEsFalse(BluetoothTest.java:47)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.interfaces.ejercicio3.BluetoothTest.constructorAsignaCampos -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.interfaces.ejercicio3.Bluetooth.<init>(Bluetooth.java:15)
+	at com.docencia.interfaces.ejercicio3.BluetoothTest.constructorAsignaCampos(BluetoothTest.java:17)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.interfaces.ejercicio3.BluetoothTest.idSeAutogeneraSiEsNull -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.interfaces.ejercicio3.Bluetooth.<init>(Bluetooth.java:15)
+	at com.docencia.interfaces.ejercicio3.BluetoothTest.idSeAutogeneraSiEsNull(BluetoothTest.java:25)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.interfaces.ejercicio3.BluetoothTest.implementaInterfazYEjecutaMetodo -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.interfaces.ejercicio3.Bluetooth.<init>(Bluetooth.java:15)
+	at com.docencia.interfaces.ejercicio3.BluetoothTest.implementaInterfazYEjecutaMetodo(BluetoothTest.java:63)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.interfaces.ejercicio3.BluetoothTest.equalsMismoIdEsTrue -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.interfaces.ejercicio3.Bluetooth.<init>(Bluetooth.java:15)
+	at com.docencia.interfaces.ejercicio3.BluetoothTest.equalsMismoIdEsTrue(BluetoothTest.java:39)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

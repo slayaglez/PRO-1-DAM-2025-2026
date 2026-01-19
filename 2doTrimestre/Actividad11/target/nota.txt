@@ -1,0 +1,3 @@
+testsTotales=790
+testsPasados=111
+notaSobre10=1.41

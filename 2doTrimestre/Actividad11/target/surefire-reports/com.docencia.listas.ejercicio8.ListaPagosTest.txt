@@ -1,0 +1,192 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.listas.ejercicio8.ListaPagosTest
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 5, Errors: 12, Skipped: 0, Time elapsed: 0.032 s <<< FAILURE! -- in com.docencia.listas.ejercicio8.ListaPagosTest
+com.docencia.listas.ejercicio8.ListaPagosTest.modificarNullIdTest -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio8.PagoTarjeta.<init>(PagoTarjeta.java:11)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.nuevoA(ListaPagosTest.java:19)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.modificarNullIdTest(ListaPagosTest.java:114)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.listas.ejercicio8.ListaPagosTest.buscarPorIdNoExisteTest -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.listas.ejercicio8.ListaPagos.buscarPorId(ListaPagos.java:27)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.buscarPorIdNoExisteTest(ListaPagosTest.java:76)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.listas.ejercicio8.ListaPagosTest.eliminarPorIdNullTest -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.eliminarPorIdNullTest(ListaPagosTest.java:91)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.listas.ejercicio8.ListaPagos.eliminarPorId(ListaPagos.java:31)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.lambda$eliminarPorIdNullTest$4(ListaPagosTest.java:91)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+com.docencia.listas.ejercicio8.ListaPagosTest.modificarInvalidTest -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio8.PagoTarjeta.<init>(PagoTarjeta.java:11)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.nuevoA(ListaPagosTest.java:19)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.modificarInvalidTest(ListaPagosTest.java:130)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.listas.ejercicio8.ListaPagosTest.buscarPorIdOkTest -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio8.PagoTarjeta.<init>(PagoTarjeta.java:11)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.nuevoA(ListaPagosTest.java:19)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.buscarPorIdOkTest(ListaPagosTest.java:63)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.listas.ejercicio8.ListaPagosTest.modificarIdDistintoTest -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio8.PagoTarjeta.<init>(PagoTarjeta.java:11)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.nuevoA(ListaPagosTest.java:19)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.modificarIdDistintoTest(ListaPagosTest.java:138)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.listas.ejercicio8.ListaPagosTest.modificarOkTest -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio8.PagoTarjeta.<init>(PagoTarjeta.java:11)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.nuevoA(ListaPagosTest.java:19)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.modificarOkTest(ListaPagosTest.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.listas.ejercicio8.ListaPagosTest.anadirNullTest -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.anadirNullTest(ListaPagosTest.java:42)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.listas.ejercicio8.ListaPagos.anadir(ListaPagos.java:23)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.lambda$anadirNullTest$0(ListaPagosTest.java:42)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+com.docencia.listas.ejercicio8.ListaPagosTest.anadirDuplicadoIdTest -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio8.PagoTarjeta.<init>(PagoTarjeta.java:11)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.nuevoA(ListaPagosTest.java:19)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.anadirDuplicadoIdTest(ListaPagosTest.java:55)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.listas.ejercicio8.ListaPagosTest.buscarPorIdNullTest -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.buscarPorIdNullTest(ListaPagosTest.java:70)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.listas.ejercicio8.ListaPagos.buscarPorId(ListaPagos.java:27)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.lambda$buscarPorIdNullTest$3(ListaPagosTest.java:70)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+com.docencia.listas.ejercicio8.ListaPagosTest.anadirOkTest -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio8.PagoTarjeta.<init>(PagoTarjeta.java:11)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.nuevoA(ListaPagosTest.java:19)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.anadirOkTest(ListaPagosTest.java:34)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.listas.ejercicio8.ListaPagosTest.anadirInvalidTest -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.anadirInvalidTest(ListaPagosTest.java:48)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio8.PagoTarjeta.<init>(PagoTarjeta.java:11)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.invalido(ListaPagosTest.java:27)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.lambda$anadirInvalidTest$1(ListaPagosTest.java:48)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+com.docencia.listas.ejercicio8.ListaPagosTest.eliminarPorIdOkTest -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio8.PagoTarjeta.<init>(PagoTarjeta.java:11)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.nuevoA(ListaPagosTest.java:19)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.eliminarPorIdOkTest(ListaPagosTest.java:83)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.listas.ejercicio8.ListaPagosTest.modificarNullElementoTest -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio8.PagoTarjeta.<init>(PagoTarjeta.java:11)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.nuevoA(ListaPagosTest.java:19)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.modificarNullElementoTest(ListaPagosTest.java:122)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.listas.ejercicio8.ListaPagosTest.eliminarPorIdNoExisteTest -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.listas.ejercicio8.ListaPagos.eliminarPorId(ListaPagos.java:31)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.eliminarPorIdNoExisteTest(ListaPagosTest.java:97)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.listas.ejercicio8.ListaPagosTest.listarInmutableTest -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio8.PagoTarjeta.<init>(PagoTarjeta.java:11)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.nuevoA(ListaPagosTest.java:19)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.listarInmutableTest(ListaPagosTest.java:152)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.listas.ejercicio8.ListaPagosTest.modificarNoExisteTest -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.util.NoSuchElementException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.modificarNoExisteTest(ListaPagosTest.java:146)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio8.PagoTarjeta.<init>(PagoTarjeta.java:11)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.nuevoA(ListaPagosTest.java:19)
+	at com.docencia.listas.ejercicio8.ListaPagosTest.lambda$modificarNoExisteTest$9(ListaPagosTest.java:146)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+

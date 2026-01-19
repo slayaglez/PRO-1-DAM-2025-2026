@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.herencia.ejercicio2.VehiculoTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.008 s <<< FAILURE! -- in com.docencia.herencia.ejercicio2.VehiculoTest
+com.docencia.herencia.ejercicio2.VehiculoTest.equals_mismo_id_misma_clase_es_true -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio2.Vehiculo.equals(Vehiculo.java:31)
+	at org.junit.jupiter.api.AssertionUtils.objectsAreEqual(AssertionUtils.java:110)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:181)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at com.docencia.herencia.ejercicio2.VehiculoTest.equals_mismo_id_misma_clase_es_true(VehiculoTest.java:46)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio2.VehiculoTest.equals_distinto_id_es_false -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio2.Vehiculo.equals(Vehiculo.java:31)
+	at org.junit.jupiter.api.AssertionUtils.objectsAreEqual(AssertionUtils.java:110)
+	at org.junit.jupiter.api.AssertNotEquals.assertNotEquals(AssertNotEquals.java:262)
+	at org.junit.jupiter.api.AssertNotEquals.assertNotEquals(AssertNotEquals.java:258)
+	at org.junit.jupiter.api.Assertions.assertNotEquals(Assertions.java:2819)
+	at com.docencia.herencia.ejercicio2.VehiculoTest.equals_distinto_id_es_false(VehiculoTest.java:54)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio2.VehiculoTest.toString_contiene_nombre_clase_y_id -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio2.Vehiculo.toString(Vehiculo.java:41)
+	at com.docencia.herencia.ejercicio2.VehiculoTest.toString_contiene_nombre_clase_y_id(VehiculoTest.java:60)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

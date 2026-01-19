@@ -1,0 +1,76 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.herencia.ejercicio2.MotocicletaTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.014 s <<< FAILURE! -- in com.docencia.herencia.ejercicio2.MotocicletaTest
+com.docencia.herencia.ejercicio2.MotocicletaTest.metodo_abstracto_implementado_devuelve_esperado -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio2.Motocicleta.<init>(Motocicleta.java:11)
+	at com.docencia.herencia.ejercicio2.MotocicletaTest.metodo_abstracto_implementado_devuelve_esperado(MotocicletaTest.java:66)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio2.MotocicletaTest.equals_otro_tipo_es_false -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio2.Motocicleta.<init>(Motocicleta.java:11)
+	at com.docencia.herencia.ejercicio2.MotocicletaTest.equals_otro_tipo_es_false(MotocicletaTest.java:44)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio2.MotocicletaTest.ids_son_unicos_en_instancias_distintas -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio2.Motocicleta.<init>(Motocicleta.java:11)
+	at com.docencia.herencia.ejercicio2.MotocicletaTest.ids_son_unicos_en_instancias_distintas(MotocicletaTest.java:28)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio2.MotocicletaTest.equals_mismo_id_misma_clase_es_true -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio2.Motocicleta.<init>(Motocicleta.java:11)
+	at com.docencia.herencia.ejercicio2.MotocicletaTest.equals_mismo_id_misma_clase_es_true(MotocicletaTest.java:36)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio2.MotocicletaTest.es_instancia_de_la_clase_base -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio2.Motocicleta.<init>(Motocicleta.java:11)
+	at com.docencia.herencia.ejercicio2.MotocicletaTest.es_instancia_de_la_clase_base(MotocicletaTest.java:72)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio2.MotocicletaTest.equals_distinto_id_es_false -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio2.Motocicleta.<init>(Motocicleta.java:11)
+	at com.docencia.herencia.ejercicio2.MotocicletaTest.equals_distinto_id_es_false(MotocicletaTest.java:51)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio2.MotocicletaTest.constructor_genera_id_si_null -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio2.Motocicleta.<init>(Motocicleta.java:11)
+	at com.docencia.herencia.ejercicio2.MotocicletaTest.constructor_genera_id_si_null(MotocicletaTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio2.MotocicletaTest.constructor_asigna_campos -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio2.Motocicleta.<init>(Motocicleta.java:11)
+	at com.docencia.herencia.ejercicio2.MotocicletaTest.constructor_asigna_campos(MotocicletaTest.java:13)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio2.MotocicletaTest.toString_contiene_nombre_clase_y_campos -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio2.Motocicleta.<init>(Motocicleta.java:11)
+	at com.docencia.herencia.ejercicio2.MotocicletaTest.toString_contiene_nombre_clase_y_campos(MotocicletaTest.java:58)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

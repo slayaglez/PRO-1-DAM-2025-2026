@@ -1,0 +1,76 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.herencia.ejercicio7.PortatilTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.020 s <<< FAILURE! -- in com.docencia.herencia.ejercicio7.PortatilTest
+com.docencia.herencia.ejercicio7.PortatilTest.metodo_abstracto_implementado_devuelve_esperado -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio7.Portatil.<init>(Portatil.java:11)
+	at com.docencia.herencia.ejercicio7.PortatilTest.metodo_abstracto_implementado_devuelve_esperado(PortatilTest.java:65)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio7.PortatilTest.equals_otro_tipo_es_false -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio7.Portatil.<init>(Portatil.java:11)
+	at com.docencia.herencia.ejercicio7.PortatilTest.equals_otro_tipo_es_false(PortatilTest.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio7.PortatilTest.ids_son_unicos_en_instancias_distintas -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio7.Portatil.<init>(Portatil.java:11)
+	at com.docencia.herencia.ejercicio7.PortatilTest.ids_son_unicos_en_instancias_distintas(PortatilTest.java:27)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio7.PortatilTest.equals_mismo_id_misma_clase_es_true -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio7.Portatil.<init>(Portatil.java:11)
+	at com.docencia.herencia.ejercicio7.PortatilTest.equals_mismo_id_misma_clase_es_true(PortatilTest.java:35)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio7.PortatilTest.es_instancia_de_la_clase_base -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio7.Portatil.<init>(Portatil.java:11)
+	at com.docencia.herencia.ejercicio7.PortatilTest.es_instancia_de_la_clase_base(PortatilTest.java:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio7.PortatilTest.equals_distinto_id_es_false -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio7.Portatil.<init>(Portatil.java:11)
+	at com.docencia.herencia.ejercicio7.PortatilTest.equals_distinto_id_es_false(PortatilTest.java:50)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio7.PortatilTest.constructor_genera_id_si_null -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio7.Portatil.<init>(Portatil.java:11)
+	at com.docencia.herencia.ejercicio7.PortatilTest.constructor_genera_id_si_null(PortatilTest.java:21)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio7.PortatilTest.constructor_asigna_campos -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio7.Portatil.<init>(Portatil.java:11)
+	at com.docencia.herencia.ejercicio7.PortatilTest.constructor_asigna_campos(PortatilTest.java:13)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio7.PortatilTest.toString_contiene_nombre_clase_y_campos -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio7.Portatil.<init>(Portatil.java:11)
+	at com.docencia.herencia.ejercicio7.PortatilTest.toString_contiene_nombre_clase_y_campos(PortatilTest.java:57)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

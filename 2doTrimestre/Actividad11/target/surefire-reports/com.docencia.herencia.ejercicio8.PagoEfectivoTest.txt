@@ -1,0 +1,76 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.herencia.ejercicio8.PagoEfectivoTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.016 s <<< FAILURE! -- in com.docencia.herencia.ejercicio8.PagoEfectivoTest
+com.docencia.herencia.ejercicio8.PagoEfectivoTest.metodo_abstracto_implementado_devuelve_esperado -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio8.PagoEfectivo.<init>(PagoEfectivo.java:11)
+	at com.docencia.herencia.ejercicio8.PagoEfectivoTest.metodo_abstracto_implementado_devuelve_esperado(PagoEfectivoTest.java:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio8.PagoEfectivoTest.equals_otro_tipo_es_false -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio8.PagoEfectivo.<init>(PagoEfectivo.java:11)
+	at com.docencia.herencia.ejercicio8.PagoEfectivoTest.equals_otro_tipo_es_false(PagoEfectivoTest.java:46)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio8.PagoEfectivoTest.ids_son_unicos_en_instancias_distintas -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio8.PagoEfectivo.<init>(PagoEfectivo.java:11)
+	at com.docencia.herencia.ejercicio8.PagoEfectivoTest.ids_son_unicos_en_instancias_distintas(PagoEfectivoTest.java:29)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio8.PagoEfectivoTest.equals_mismo_id_misma_clase_es_true -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio8.PagoEfectivo.<init>(PagoEfectivo.java:11)
+	at com.docencia.herencia.ejercicio8.PagoEfectivoTest.equals_mismo_id_misma_clase_es_true(PagoEfectivoTest.java:37)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio8.PagoEfectivoTest.es_instancia_de_la_clase_base -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio8.PagoEfectivo.<init>(PagoEfectivo.java:11)
+	at com.docencia.herencia.ejercicio8.PagoEfectivoTest.es_instancia_de_la_clase_base(PagoEfectivoTest.java:77)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio8.PagoEfectivoTest.equals_distinto_id_es_false -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio8.PagoEfectivo.<init>(PagoEfectivo.java:11)
+	at com.docencia.herencia.ejercicio8.PagoEfectivoTest.equals_distinto_id_es_false(PagoEfectivoTest.java:53)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio8.PagoEfectivoTest.constructor_genera_id_si_null -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio8.PagoEfectivo.<init>(PagoEfectivo.java:11)
+	at com.docencia.herencia.ejercicio8.PagoEfectivoTest.constructor_genera_id_si_null(PagoEfectivoTest.java:23)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio8.PagoEfectivoTest.constructor_asigna_campos -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio8.PagoEfectivo.<init>(PagoEfectivo.java:11)
+	at com.docencia.herencia.ejercicio8.PagoEfectivoTest.constructor_asigna_campos(PagoEfectivoTest.java:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.herencia.ejercicio8.PagoEfectivoTest.toString_contiene_nombre_clase_y_campos -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: El metodo no esta implementado
+	at com.docencia.herencia.ejercicio8.PagoEfectivo.<init>(PagoEfectivo.java:11)
+	at com.docencia.herencia.ejercicio8.PagoEfectivoTest.toString_contiene_nombre_clase_y_campos(PagoEfectivoTest.java:60)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
