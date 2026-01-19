@@ -8,7 +8,7 @@ public class Coche extends Vehiculo {
 
     public Coche(UUID id, String marca, String modelo, int puertas) {
         super(id, marca, modelo);
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        this.puertas = puertas;
 }
 
     public int getPuertas() { return puertas; }
@@ -20,6 +20,8 @@ public class Coche extends Vehiculo {
 
     @Override
     public String toString() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return "Coche [puertas=" + puertas + "]" + "id="+ getId();
     }
+
+    
 }
