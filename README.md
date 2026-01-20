@@ -23,6 +23,10 @@ Todos los ejercicios y exámenes hechos a lo largo del primer año de Programaci
     - [Actividad 8](#actividad-8)
     - [Actividad 9](#actividad-9)
     - [Repaso Navidad](#repaso-navidad)
+- Segundo Trimestre
+  - Unidad 4
+    - [Actividad 10](#actividad-10)
+    - [Actividad 11](#actividad-11)
 - [Exámenes y "Pruebas evaluables"](#exámenes-y-pruebas-evaluables)
 
 <br>
@@ -89,6 +93,16 @@ Data del *26 de Nov 2025*.
 Repaso de 12 ejercicios siendo 4 de clases, composición y herencias respectivamente.
 
 [Link a la actividad 9](./1erTrimestre/Actividad9/ejercicios-1-eval-repaso-I/src/main/java/com/docencia)
+
+### Actividad 10
+Introducción a interfaces, y ejercicios de ejemplo con uso de herencias y polimorfismo.
+
+[Link a la actividad 10](./2doTrimestre/Actividad10/interfaces/src/main/java/com/docencia)
+
+### Actividad 11
+Actividad 3.3 evaluable, un conjunto de 50 ejercicios de listas, herencias, interfaces, sets y maps
+
+[Link a la actividad 11](./2doTrimestre/Actividad11/src/main/java/com/docencia)
 
 ### Repaso Navidad
 Un **repaso general** de lo trabajado hasta ahora en todo el primer Trimestre contando con un total de **98** ejercicios, entre los que se encuentran condicionales, arrays, listas, clases, composición y herencias.
