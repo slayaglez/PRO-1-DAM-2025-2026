@@ -94,6 +94,13 @@ Repaso de 12 ejercicios siendo 4 de clases, composición y herencias respectivam
 
 [Link a la actividad 9](./1erTrimestre/Actividad9/ejercicios-1-eval-repaso-I/src/main/java/com/docencia)
 
+### Repaso Navidad
+Un **repaso general** de lo trabajado hasta ahora en todo el primer Trimestre contando con un total de **98** ejercicios, entre los que se encuentran condicionales, arrays, listas, clases, composición y herencias.
+
+[Link a la actividad navideña](./1erTrimestre/RepasoNavidad/src/main/java/com/docencia)
+
+## Segundo Trimestre (Actividad 10 ...)
+
 ### Actividad 10
 Introducción a interfaces, y ejercicios de ejemplo con uso de herencias y polimorfismo.
 
@@ -103,13 +110,6 @@ Introducción a interfaces, y ejercicios de ejemplo con uso de herencias y polim
 Actividad 3.3 evaluable, un conjunto de 50 ejercicios de listas, herencias, interfaces, sets y maps
 
 [Link a la actividad 11](./2doTrimestre/Actividad11/src/main/java/com/docencia)
-
-### Repaso Navidad
-Un **repaso general** de lo trabajado hasta ahora en todo el primer Trimestre contando con un total de **98** ejercicios, entre los que se encuentran condicionales, arrays, listas, clases, composición y herencias.
-
-35 / 98
-
-[Link a la actividad navideña](./1erTrimestre/RepasoNavidad/src/main/java/com/docencia)
 
 <br>
 
