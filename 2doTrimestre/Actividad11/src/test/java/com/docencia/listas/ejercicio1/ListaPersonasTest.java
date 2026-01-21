@@ -20,7 +20,7 @@ public class ListaPersonasTest {
     }
 
     private Persona nuevoB(UUID id) {
-        return new Profesor(id, "Luis", 40, "Informatica");
+        return new Alumno(id, "Luis", 40, "Informatica");
     }
 
     private Persona invalido(UUID id) {

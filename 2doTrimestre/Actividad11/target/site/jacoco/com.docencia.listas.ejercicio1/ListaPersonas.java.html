@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ListaPersonas.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Herencia/Interfaces/List/Set/Map - 10 ejercicios</a> &gt; <a href="index.source.html" class="el_package">com.docencia.listas.ejercicio1</a> &gt; <span class="el_source">ListaPersonas.java</span></div><h1>ListaPersonas.java</h1><pre class="source lang-java linenums">package com.docencia.listas.ejercicio1;
 
-import com.docencia.herencia.ejercicio1.Persona;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.UUID;
+
+import com.docencia.herencia.ejercicio1.Alumno;
+import com.docencia.herencia.ejercicio1.Persona;
 
 /**
  * Gestiona una lista de {@link Persona} usando {@link java.util.ArrayList}.
@@ -15,9 +16,9 @@ import java.util.UUID;
  * - No se permiten personas con nombre nulo o en blanco.
  * - No se permiten ids nulos ni duplicados dentro de la lista.
  */
-<span class="fc" id="L18">public class ListaPersonas {</span>
+<span class="fc" id="L19">public class ListaPersonas {</span>
 
-<span class="fc" id="L20">    private final List&lt;Persona&gt; personas = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L21">    private final List&lt;Persona&gt; personas = new ArrayList&lt;&gt;();</span>
 
     /**
      * Anade una persona a la lista.
@@ -26,17 +27,41 @@ import java.util.UUID;
      * @throws IllegalArgumentException si persona es nula, tiene campos invalidos o su id ya existe
      */
     public void anadir(Persona persona) {
-<span class="fc" id="L29">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
-    }
+<span class="fc" id="L30">        validar(persona);</span>
+<span class="fc bfc" id="L31" title="All 2 branches covered.">        if(personas.contains(persona)){</span>
+<span class="fc" id="L32">            throw new IllegalArgumentException(&quot;La Persona ya existe&quot;);</span>
+        }
+<span class="fc" id="L34">        personas.add(persona);</span>
+<span class="fc" id="L35">    }</span>
 
     /** Busca una persona por id. */
     public Persona buscarPorId(UUID id) {
-<span class="fc" id="L34">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
+<span class="fc bfc" id="L39" title="All 2 branches covered.">        if(id == null){</span>
+<span class="fc" id="L40">            throw new IllegalArgumentException(&quot;El id no puede ser nulo&quot;);</span>
+        }
+<span class="pc bfc" id="L42" title="All 2 branches covered.">        for (int i = 0; i &lt; personas.size(); i++) {</span>
+<span class="pc bpc" id="L43" title="1 of 2 branches missed.">            if(personas.get(i).getId().equals(id)){</span>
+<span class="fc" id="L44">                return personas.get(i);</span>
+            }
+        }
+<span class="fc" id="L47">        Alumno persona = new Alumno(id);</span>
+<span class="fc" id="L48">        int posicion = personas.indexOf(persona);</span>
+<span class="pc bpc" id="L49" title="1 of 2 branches missed.">        if(posicion &lt; 0){</span>
+<span class="fc" id="L50">            return null;</span>
+        }
+<span class="nc" id="L52">        return personas.get(posicion);</span>
     }
+
+    //! Buscar por el objeto y no por el ID SIEMPRE será mejor
+    //? Pues si en el futuro la validación cambia de Id a Id+nombre será
+    //? más facil cambiarlo de la primera manera
 
     /** Elimina una persona por id. */
     public boolean eliminarPorId(UUID id) {
-<span class="fc" id="L39">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
+<span class="fc bfc" id="L61" title="All 2 branches covered.">        if(id == null){</span>
+<span class="fc" id="L62">            throw new IllegalArgumentException();</span>
+        }
+<span class="fc" id="L64">        return personas.removeIf(persona -&gt; persona.getId().equals(id));</span>
     }
 
     /**
@@ -46,35 +71,46 @@ import java.util.UUID;
      * @param nuevaPersona nueva persona (debe tener el mismo id)
      */
     public void modificar(UUID id, Persona nuevaPersona) {
-<span class="fc" id="L49">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
-    }
+
+<span class="fc" id="L75">        validar(nuevaPersona);</span>
+<span class="fc" id="L76">        Persona existente = buscarPorId(id);</span>
+<span class="fc bfc" id="L77" title="All 2 branches covered.">        if(existente == null){</span>
+<span class="fc" id="L78">            throw new NoSuchElementException(&quot;No existe persona con ese id&quot;);</span>
+        }
+<span class="fc bfc" id="L80" title="All 2 branches covered.">        if(!existente.equals(nuevaPersona)){</span>
+<span class="fc" id="L81">            throw new IllegalArgumentException(&quot;El id de la persona no debe ser el mismo&quot;);</span>
+        }
+<span class="fc" id="L83">        int indice = personas.indexOf(existente);</span>
+<span class="fc" id="L84">        personas.set(indice, nuevaPersona);</span>
+
+<span class="fc" id="L86">    }</span>
 
     /** Devuelve una copia inmutable de la lista. */
     public List&lt;Persona&gt; listar() {
-<span class="nc" id="L54">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
+<span class="fc" id="L90">        return List.copyOf(personas);</span>
     }
 
     public int tamanio() {
-<span class="nc" id="L58">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
+<span class="fc" id="L94">        return personas.size();</span>
     }
 
     private boolean existeId(UUID id) {
-<span class="nc" id="L62">        return personas.stream().anyMatch(p -&gt; p.getId().equals(id));</span>
+<span class="nc" id="L98">        return personas.stream().anyMatch(p -&gt; p.getId().equals(id));</span>
     }
 
     private void validar(Persona persona) {
-<span class="nc bnc" id="L66" title="All 2 branches missed.">        if (persona == null) {</span>
-<span class="nc" id="L67">            throw new IllegalArgumentException(&quot;La persona no puede ser nula&quot;);</span>
+<span class="fc bfc" id="L102" title="All 2 branches covered.">        if (persona == null) {</span>
+<span class="fc" id="L103">            throw new IllegalArgumentException(&quot;La persona no puede ser nula&quot;);</span>
         }
-<span class="nc bnc" id="L69" title="All 2 branches missed.">        if (persona.getId() == null) {</span>
-<span class="nc" id="L70">            throw new IllegalArgumentException(&quot;El id no puede ser nulo&quot;);</span>
+<span class="pc bpc" id="L105" title="1 of 2 branches missed.">        if (persona.getId() == null) {</span>
+<span class="nc" id="L106">            throw new IllegalArgumentException(&quot;El id no puede ser nulo&quot;);</span>
         }
-<span class="nc bnc" id="L72" title="All 4 branches missed.">        if (persona.getNombre() == null || persona.getNombre().isBlank()) {</span>
-<span class="nc" id="L73">            throw new IllegalArgumentException(&quot;El nombre no puede ser nulo o en blanco&quot;);</span>
+<span class="pc bpc" id="L108" title="1 of 4 branches missed.">        if (persona.getNombre() == null || persona.getNombre().isBlank()) {</span>
+<span class="fc" id="L109">            throw new IllegalArgumentException(&quot;El nombre no puede ser nulo o en blanco&quot;);</span>
         }
-<span class="nc bnc" id="L75" title="All 2 branches missed.">        if (persona.getEdad() &lt; 0) {</span>
-<span class="nc" id="L76">            throw new IllegalArgumentException(&quot;La edad no puede ser negativa&quot;);</span>
+<span class="pc bpc" id="L111" title="1 of 2 branches missed.">        if (persona.getEdad() &lt; 0) {</span>
+<span class="nc" id="L112">            throw new IllegalArgumentException(&quot;La edad no puede ser negativa&quot;);</span>
         }
-<span class="nc" id="L78">    }</span>
+<span class="fc" id="L114">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

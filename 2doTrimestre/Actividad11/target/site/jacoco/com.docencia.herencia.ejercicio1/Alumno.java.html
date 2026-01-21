@@ -7,8 +7,8 @@ public class Alumno extends Persona {
     private String matricula;
 
     public Alumno(UUID id){
-<span class="nc" id="L10">        super(id);</span>
-<span class="nc" id="L11">    }</span>
+<span class="fc" id="L10">        super(id);</span>
+<span class="fc" id="L11">    }</span>
 
     public Alumno(UUID id, String nombre, int edad, String matricula) {
 <span class="fc" id="L14">        super(id, nombre, edad);</span>
@@ -26,6 +26,19 @@ public class Alumno extends Persona {
     @Override
     public String toString() {
 <span class="fc" id="L28">        return rol() + &quot; matricula='&quot; + getMatricula() + &quot;'&quot; + &quot;id='&quot;+ getId() +&quot;'&quot;;</span>
+    }
+
+    @Override
+    public int hashCode() {
+<span class="fc" id="L33">        return super.hashCode();</span>
+    }
+
+    @Override
+    public boolean equals (Object obj) {
+<span class="fc bfc" id="L38" title="All 2 branches covered.">        if(!(obj instanceof Alumno)){</span>
+<span class="fc" id="L39">            return false;</span>
+        }
+<span class="fc" id="L41">        return super.equals(obj);</span>
     }
 
 }

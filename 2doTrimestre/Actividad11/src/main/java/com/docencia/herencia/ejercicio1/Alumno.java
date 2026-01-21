@@ -28,4 +28,17 @@ public class Alumno extends Persona {
         return rol() + " matricula='" + getMatricula() + "'" + "id='"+ getId() +"'";
     }
 
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals (Object obj) {
+        if(!(obj instanceof Alumno)){
+            return false;
+        }
+        return super.equals(obj);
+    }
+
 }

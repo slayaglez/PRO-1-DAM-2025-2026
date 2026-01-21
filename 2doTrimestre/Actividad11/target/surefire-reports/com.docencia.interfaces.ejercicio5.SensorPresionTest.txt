@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.interfaces.ejercicio5.SensorPresionTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.012 s <<< FAILURE! -- in com.docencia.interfaces.ejercicio5.SensorPresionTest
-com.docencia.interfaces.ejercicio5.SensorPresionTest.idsDiferentesParaInstanciasDistintas -- Time elapsed: 0.001 s <<< ERROR!
+Tests run: 8, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.021 s <<< FAILURE! -- in com.docencia.interfaces.ejercicio5.SensorPresionTest
+com.docencia.interfaces.ejercicio5.SensorPresionTest.idsDiferentesParaInstanciasDistintas -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio5.SensorPresion.<init>(SensorPresion.java:15)
 	at com.docencia.interfaces.ejercicio5.SensorPresionTest.idsDiferentesParaInstanciasDistintas(SensorPresionTest.java:31)
@@ -10,7 +10,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio5.SensorPresionTest.toStringContieneClaseEId -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.interfaces.ejercicio5.SensorPresionTest.toStringContieneClaseEId -- Time elapsed: 0.007 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio5.SensorPresion.<init>(SensorPresion.java:15)
 	at com.docencia.interfaces.ejercicio5.SensorPresionTest.toStringContieneClaseEId(SensorPresionTest.java:55)
@@ -18,7 +18,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio5.SensorPresionTest.equalsIdDistintoEsFalse -- Time elapsed: 0 s <<< ERROR!
+com.docencia.interfaces.ejercicio5.SensorPresionTest.equalsIdDistintoEsFalse -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio5.SensorPresion.<init>(SensorPresion.java:15)
 	at com.docencia.interfaces.ejercicio5.SensorPresionTest.equalsIdDistintoEsFalse(SensorPresionTest.java:47)
@@ -42,7 +42,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio5.SensorPresionTest.implementaInterfazYEjecutaMetodo -- Time elapsed: 0 s <<< ERROR!
+com.docencia.interfaces.ejercicio5.SensorPresionTest.implementaInterfazYEjecutaMetodo -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio5.SensorPresion.<init>(SensorPresion.java:15)
 	at com.docencia.interfaces.ejercicio5.SensorPresionTest.implementaInterfazYEjecutaMetodo(SensorPresionTest.java:63)

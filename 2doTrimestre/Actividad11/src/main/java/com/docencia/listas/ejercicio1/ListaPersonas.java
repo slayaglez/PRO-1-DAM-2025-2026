@@ -1,11 +1,12 @@
 package com.docencia.listas.ejercicio1;
 
-import com.docencia.herencia.ejercicio1.Persona;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.UUID;
+
+import com.docencia.herencia.ejercicio1.Alumno;
+import com.docencia.herencia.ejercicio1.Persona;
 
 /**
  * Gestiona una lista de {@link Persona} usando {@link java.util.ArrayList}.
@@ -26,17 +27,41 @@ public class ListaPersonas {
      * @throws IllegalArgumentException si persona es nula, tiene campos invalidos o su id ya existe
      */
     public void anadir(Persona persona) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        validar(persona);
+        if(personas.contains(persona)){
+            throw new IllegalArgumentException("La Persona ya existe");
+        }
+        personas.add(persona);
     }
 
     /** Busca una persona por id. */
     public Persona buscarPorId(UUID id) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        if(id == null){
+            throw new IllegalArgumentException("El id no puede ser nulo");
+        }
+        for (int i = 0; i < personas.size(); i++) {
+            if(personas.get(i).getId().equals(id)){
+                return personas.get(i);
+            }
+        }
+        Alumno persona = new Alumno(id);
+        int posicion = personas.indexOf(persona);
+        if(posicion < 0){
+            return null;
+        }
+        return personas.get(posicion);
     }
+
+    //! Buscar por el objeto y no por el ID SIEMPRE será mejor
+    //? Pues si en el futuro la validación cambia de Id a Id+nombre será
+    //? más facil cambiarlo de la primera manera
 
     /** Elimina una persona por id. */
     public boolean eliminarPorId(UUID id) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        if(id == null){
+            throw new IllegalArgumentException();
+        }
+        return personas.removeIf(persona -> persona.getId().equals(id));
     }
 
     /**
@@ -46,16 +71,27 @@ public class ListaPersonas {
      * @param nuevaPersona nueva persona (debe tener el mismo id)
      */
     public void modificar(UUID id, Persona nuevaPersona) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+
+        validar(nuevaPersona);
+        Persona existente = buscarPorId(id);
+        if(existente == null){
+            throw new NoSuchElementException("No existe persona con ese id");
+        }
+        if(!existente.equals(nuevaPersona)){
+            throw new IllegalArgumentException("El id de la persona no debe ser el mismo");
+        }
+        int indice = personas.indexOf(existente);
+        personas.set(indice, nuevaPersona);
+
     }
 
     /** Devuelve una copia inmutable de la lista. */
     public List<Persona> listar() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return List.copyOf(personas);
     }
 
     public int tamanio() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return personas.size();
     }
 
     private boolean existeId(UUID id) {

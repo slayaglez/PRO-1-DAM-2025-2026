@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.interfaces.ejercicio5.SensorTemperaturaTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.009 s <<< FAILURE! -- in com.docencia.interfaces.ejercicio5.SensorTemperaturaTest
+Tests run: 8, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.036 s <<< FAILURE! -- in com.docencia.interfaces.ejercicio5.SensorTemperaturaTest
 com.docencia.interfaces.ejercicio5.SensorTemperaturaTest.idsDiferentesParaInstanciasDistintas -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio5.SensorTemperatura.<init>(SensorTemperatura.java:15)
@@ -18,7 +18,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio5.SensorTemperaturaTest.equalsIdDistintoEsFalse -- Time elapsed: 0 s <<< ERROR!
+com.docencia.interfaces.ejercicio5.SensorTemperaturaTest.equalsIdDistintoEsFalse -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio5.SensorTemperatura.<init>(SensorTemperatura.java:15)
 	at com.docencia.interfaces.ejercicio5.SensorTemperaturaTest.equalsIdDistintoEsFalse(SensorTemperaturaTest.java:47)
@@ -26,7 +26,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio5.SensorTemperaturaTest.constructorAsignaCampos -- Time elapsed: 0 s <<< ERROR!
+com.docencia.interfaces.ejercicio5.SensorTemperaturaTest.constructorAsignaCampos -- Time elapsed: 0.008 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio5.SensorTemperatura.<init>(SensorTemperatura.java:15)
 	at com.docencia.interfaces.ejercicio5.SensorTemperaturaTest.constructorAsignaCampos(SensorTemperaturaTest.java:17)
@@ -34,7 +34,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio5.SensorTemperaturaTest.idSeAutogeneraSiEsNull -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.interfaces.ejercicio5.SensorTemperaturaTest.idSeAutogeneraSiEsNull -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio5.SensorTemperatura.<init>(SensorTemperatura.java:15)
 	at com.docencia.interfaces.ejercicio5.SensorTemperaturaTest.idSeAutogeneraSiEsNull(SensorTemperaturaTest.java:25)
@@ -42,7 +42,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio5.SensorTemperaturaTest.implementaInterfazYEjecutaMetodo -- Time elapsed: 0 s <<< ERROR!
+com.docencia.interfaces.ejercicio5.SensorTemperaturaTest.implementaInterfazYEjecutaMetodo -- Time elapsed: 0.009 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio5.SensorTemperatura.<init>(SensorTemperatura.java:15)
 	at com.docencia.interfaces.ejercicio5.SensorTemperaturaTest.implementaInterfazYEjecutaMetodo(SensorTemperaturaTest.java:63)
@@ -50,7 +50,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio5.SensorTemperaturaTest.equalsMismoIdEsTrue -- Time elapsed: 0 s <<< ERROR!
+com.docencia.interfaces.ejercicio5.SensorTemperaturaTest.equalsMismoIdEsTrue -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio5.SensorTemperatura.<init>(SensorTemperatura.java:15)
 	at com.docencia.interfaces.ejercicio5.SensorTemperaturaTest.equalsMismoIdEsTrue(SensorTemperaturaTest.java:39)

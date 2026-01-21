@@ -23,5 +23,16 @@ public class Profesor extends Persona {
         return "Profesor [departamento=" + departamento + ", rol=" + rol() + ", id=" + getId() + "]";
     }
 
-    
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals (Object obj) {
+        if(!(obj instanceof Profesor)){
+            return false;
+        }
+        return super.equals(obj);
+    }
 }

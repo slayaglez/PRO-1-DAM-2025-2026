@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.listas.ejercicio7.ListaDispositivosTest
 -------------------------------------------------------------------------------
-Tests run: 18, Failures: 5, Errors: 12, Skipped: 0, Time elapsed: 0.038 s <<< FAILURE! -- in com.docencia.listas.ejercicio7.ListaDispositivosTest
-com.docencia.listas.ejercicio7.ListaDispositivosTest.modificarNullIdTest -- Time elapsed: 0.004 s <<< ERROR!
+Tests run: 18, Failures: 5, Errors: 12, Skipped: 0, Time elapsed: 0.064 s <<< FAILURE! -- in com.docencia.listas.ejercicio7.ListaDispositivosTest
+com.docencia.listas.ejercicio7.ListaDispositivosTest.modificarNullIdTest -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio7.ListaDispositivos.anadir(ListaDispositivos.java:23)
 	at com.docencia.listas.ejercicio7.ListaDispositivosTest.modificarNullIdTest(ListaDispositivosTest.java:114)
@@ -10,7 +10,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.listas.ejercicio7.ListaDispositivosTest.buscarPorIdNoExisteTest -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.listas.ejercicio7.ListaDispositivosTest.buscarPorIdNoExisteTest -- Time elapsed: 0.006 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio7.ListaDispositivos.buscarPorId(ListaDispositivos.java:27)
 	at com.docencia.listas.ejercicio7.ListaDispositivosTest.buscarPorIdNoExisteTest(ListaDispositivosTest.java:76)
@@ -42,7 +42,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.listas.ejercicio7.ListaDispositivosTest.buscarPorIdOkTest -- Time elapsed: 0.004 s <<< ERROR!
+com.docencia.listas.ejercicio7.ListaDispositivosTest.buscarPorIdOkTest -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio7.ListaDispositivos.anadir(ListaDispositivos.java:23)
 	at com.docencia.listas.ejercicio7.ListaDispositivosTest.buscarPorIdOkTest(ListaDispositivosTest.java:63)
@@ -50,7 +50,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.listas.ejercicio7.ListaDispositivosTest.modificarIdDistintoTest -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.listas.ejercicio7.ListaDispositivosTest.modificarIdDistintoTest -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio7.ListaDispositivos.anadir(ListaDispositivos.java:23)
 	at com.docencia.listas.ejercicio7.ListaDispositivosTest.modificarIdDistintoTest(ListaDispositivosTest.java:138)
@@ -58,7 +58,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.listas.ejercicio7.ListaDispositivosTest.modificarOkTest -- Time elapsed: 0.004 s <<< ERROR!
+com.docencia.listas.ejercicio7.ListaDispositivosTest.modificarOkTest -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio7.ListaDispositivos.anadir(ListaDispositivos.java:23)
 	at com.docencia.listas.ejercicio7.ListaDispositivosTest.modificarOkTest(ListaDispositivosTest.java:104)
@@ -66,7 +66,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.listas.ejercicio7.ListaDispositivosTest.anadirNullTest -- Time elapsed: 0.001 s <<< FAILURE!
+com.docencia.listas.ejercicio7.ListaDispositivosTest.anadirNullTest -- Time elapsed: 0.006 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -82,7 +82,7 @@ Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementa
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.listas.ejercicio7.ListaDispositivosTest.anadirDuplicadoIdTest -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.listas.ejercicio7.ListaDispositivosTest.anadirDuplicadoIdTest -- Time elapsed: 0.003 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio7.ListaDispositivos.anadir(ListaDispositivos.java:23)
 	at com.docencia.listas.ejercicio7.ListaDispositivosTest.anadirDuplicadoIdTest(ListaDispositivosTest.java:55)
@@ -90,7 +90,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.listas.ejercicio7.ListaDispositivosTest.buscarPorIdNullTest -- Time elapsed: 0.001 s <<< FAILURE!
+com.docencia.listas.ejercicio7.ListaDispositivosTest.buscarPorIdNullTest -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -106,7 +106,7 @@ Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementa
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.listas.ejercicio7.ListaDispositivosTest.anadirOkTest -- Time elapsed: 0.004 s <<< ERROR!
+com.docencia.listas.ejercicio7.ListaDispositivosTest.anadirOkTest -- Time elapsed: 0.003 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio7.ListaDispositivos.anadir(ListaDispositivos.java:23)
 	at com.docencia.listas.ejercicio7.ListaDispositivosTest.anadirOkTest(ListaDispositivosTest.java:34)
@@ -114,7 +114,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.listas.ejercicio7.ListaDispositivosTest.anadirInvalidTest -- Time elapsed: 0.001 s <<< FAILURE!
+com.docencia.listas.ejercicio7.ListaDispositivosTest.anadirInvalidTest -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -130,7 +130,7 @@ Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementa
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.listas.ejercicio7.ListaDispositivosTest.eliminarPorIdOkTest -- Time elapsed: 0 s <<< ERROR!
+com.docencia.listas.ejercicio7.ListaDispositivosTest.eliminarPorIdOkTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio7.ListaDispositivos.anadir(ListaDispositivos.java:23)
 	at com.docencia.listas.ejercicio7.ListaDispositivosTest.eliminarPorIdOkTest(ListaDispositivosTest.java:83)
@@ -138,7 +138,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.listas.ejercicio7.ListaDispositivosTest.modificarNullElementoTest -- Time elapsed: 0 s <<< ERROR!
+com.docencia.listas.ejercicio7.ListaDispositivosTest.modificarNullElementoTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio7.ListaDispositivos.anadir(ListaDispositivos.java:23)
 	at com.docencia.listas.ejercicio7.ListaDispositivosTest.modificarNullElementoTest(ListaDispositivosTest.java:122)
@@ -154,7 +154,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.listas.ejercicio7.ListaDispositivosTest.listarInmutableTest -- Time elapsed: 0 s <<< ERROR!
+com.docencia.listas.ejercicio7.ListaDispositivosTest.listarInmutableTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio7.ListaDispositivos.anadir(ListaDispositivos.java:23)
 	at com.docencia.listas.ejercicio7.ListaDispositivosTest.listarInmutableTest(ListaDispositivosTest.java:152)
@@ -162,7 +162,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.listas.ejercicio7.ListaDispositivosTest.modificarNoExisteTest -- Time elapsed: 0.001 s <<< FAILURE!
+com.docencia.listas.ejercicio7.ListaDispositivosTest.modificarNoExisteTest -- Time elapsed: 0.002 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.util.NoSuchElementException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)

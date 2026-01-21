@@ -20,7 +20,7 @@ public class ConjuntoPersonasTest {
     }
 
     private Persona nuevoB(UUID id) {
-        return new Profesor(id, "Luis", 40, "Matematicas");
+        return new Alumno(id, "Luis", 40, "Matematicas");
     }
 
     private Persona invalido(UUID id) {

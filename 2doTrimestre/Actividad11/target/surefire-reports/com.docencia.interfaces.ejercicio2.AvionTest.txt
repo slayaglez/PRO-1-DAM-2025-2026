@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.interfaces.ejercicio2.AvionTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.014 s <<< FAILURE! -- in com.docencia.interfaces.ejercicio2.AvionTest
-com.docencia.interfaces.ejercicio2.AvionTest.idsDiferentesParaInstanciasDistintas -- Time elapsed: 0.002 s <<< ERROR!
+Tests run: 8, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.030 s <<< FAILURE! -- in com.docencia.interfaces.ejercicio2.AvionTest
+com.docencia.interfaces.ejercicio2.AvionTest.idsDiferentesParaInstanciasDistintas -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio2.Avion.<init>(Avion.java:15)
 	at com.docencia.interfaces.ejercicio2.AvionTest.idsDiferentesParaInstanciasDistintas(AvionTest.java:31)
@@ -10,7 +10,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio2.AvionTest.toStringContieneClaseEId -- Time elapsed: 0 s <<< ERROR!
+com.docencia.interfaces.ejercicio2.AvionTest.toStringContieneClaseEId -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio2.Avion.<init>(Avion.java:15)
 	at com.docencia.interfaces.ejercicio2.AvionTest.toStringContieneClaseEId(AvionTest.java:55)
@@ -18,7 +18,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio2.AvionTest.equalsIdDistintoEsFalse -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.interfaces.ejercicio2.AvionTest.equalsIdDistintoEsFalse -- Time elapsed: 0.006 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio2.Avion.<init>(Avion.java:15)
 	at com.docencia.interfaces.ejercicio2.AvionTest.equalsIdDistintoEsFalse(AvionTest.java:47)
@@ -26,7 +26,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio2.AvionTest.constructorAsignaCampos -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.interfaces.ejercicio2.AvionTest.constructorAsignaCampos -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio2.Avion.<init>(Avion.java:15)
 	at com.docencia.interfaces.ejercicio2.AvionTest.constructorAsignaCampos(AvionTest.java:17)
@@ -34,7 +34,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio2.AvionTest.idSeAutogeneraSiEsNull -- Time elapsed: 0.003 s <<< ERROR!
+com.docencia.interfaces.ejercicio2.AvionTest.idSeAutogeneraSiEsNull -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio2.Avion.<init>(Avion.java:15)
 	at com.docencia.interfaces.ejercicio2.AvionTest.idSeAutogeneraSiEsNull(AvionTest.java:25)
@@ -50,7 +50,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio2.AvionTest.equalsMismoIdEsTrue -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.interfaces.ejercicio2.AvionTest.equalsMismoIdEsTrue -- Time elapsed: 0.004 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio2.Avion.<init>(Avion.java:15)
 	at com.docencia.interfaces.ejercicio2.AvionTest.equalsMismoIdEsTrue(AvionTest.java:39)

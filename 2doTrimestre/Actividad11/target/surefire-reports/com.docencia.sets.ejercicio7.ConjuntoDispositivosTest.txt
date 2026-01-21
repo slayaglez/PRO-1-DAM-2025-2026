@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.sets.ejercicio7.ConjuntoDispositivosTest
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 4, Errors: 5, Skipped: 0, Time elapsed: 0.014 s <<< FAILURE! -- in com.docencia.sets.ejercicio7.ConjuntoDispositivosTest
+Tests run: 10, Failures: 4, Errors: 5, Skipped: 0, Time elapsed: 0.012 s <<< FAILURE! -- in com.docencia.sets.ejercicio7.ConjuntoDispositivosTest
 com.docencia.sets.ejercicio7.ConjuntoDispositivosTest.buscarPorIdOkTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.sets.ejercicio7.ConjuntoDispositivos.anadir(ConjuntoDispositivos.java:24)
@@ -10,7 +10,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.sets.ejercicio7.ConjuntoDispositivosTest.modificarOkTest -- Time elapsed: 0 s <<< ERROR!
+com.docencia.sets.ejercicio7.ConjuntoDispositivosTest.modificarOkTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.sets.ejercicio7.ConjuntoDispositivos.anadir(ConjuntoDispositivos.java:24)
 	at com.docencia.sets.ejercicio7.ConjuntoDispositivosTest.modificarOkTest(ConjuntoDispositivosTest.java:87)
@@ -18,7 +18,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.sets.ejercicio7.ConjuntoDispositivosTest.anadirNullTest -- Time elapsed: 0.001 s <<< FAILURE!
+com.docencia.sets.ejercicio7.ConjuntoDispositivosTest.anadirNullTest -- Time elapsed: 0 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -58,7 +58,7 @@ Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementa
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.sets.ejercicio7.ConjuntoDispositivosTest.anadirOkTest -- Time elapsed: 0 s <<< ERROR!
+com.docencia.sets.ejercicio7.ConjuntoDispositivosTest.anadirOkTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.sets.ejercicio7.ConjuntoDispositivos.anadir(ConjuntoDispositivos.java:24)
 	at com.docencia.sets.ejercicio7.ConjuntoDispositivosTest.anadirOkTest(ConjuntoDispositivosTest.java:34)
@@ -82,7 +82,7 @@ Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementa
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.sets.ejercicio7.ConjuntoDispositivosTest.eliminarPorIdOkTest -- Time elapsed: 0 s <<< ERROR!
+com.docencia.sets.ejercicio7.ConjuntoDispositivosTest.eliminarPorIdOkTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.sets.ejercicio7.ConjuntoDispositivos.anadir(ConjuntoDispositivos.java:24)
 	at com.docencia.sets.ejercicio7.ConjuntoDispositivosTest.eliminarPorIdOkTest(ConjuntoDispositivosTest.java:78)
@@ -90,7 +90,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.sets.ejercicio7.ConjuntoDispositivosTest.modificarNoExisteTest -- Time elapsed: 0 s <<< FAILURE!
+com.docencia.sets.ejercicio7.ConjuntoDispositivosTest.modificarNoExisteTest -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.util.NoSuchElementException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)

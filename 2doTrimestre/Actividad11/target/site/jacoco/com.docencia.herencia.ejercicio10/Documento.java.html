@@ -24,18 +24,27 @@ public abstract class Documento {
     public abstract String tipo();
 
     @Override
-    public boolean equals(Object o) {
-<span class="fc" id="L28">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
+    public int hashCode() {
+<span class="fc" id="L28">        return Objects.hash(id);</span>
     }
 
     @Override
-    public int hashCode() {
-<span class="nc" id="L33">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
+    public boolean equals(Object obj) {
+<span class="pc bpc" id="L33" title="1 of 2 branches missed.">        if (this == obj)</span>
+<span class="nc" id="L34">            return true;</span>
+<span class="pc bpc" id="L35" title="1 of 2 branches missed.">        if (obj == null)</span>
+<span class="nc" id="L36">            return false;</span>
+<span class="fc bfc" id="L37" title="All 2 branches covered.">        if (getClass() != obj.getClass())</span>
+<span class="fc" id="L38">            return false;</span>
+<span class="fc" id="L39">        Documento other = (Documento) obj;</span>
+<span class="fc" id="L40">        return Objects.equals(id, other.id);</span>
     }
 
     @Override
     public String toString() {
-<span class="fc" id="L38">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
+<span class="fc" id="L45">        return &quot;Documento [id=&quot; + id + &quot;, titulo=&quot; + titulo + &quot;]&quot;;</span>
     }
+
+    
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

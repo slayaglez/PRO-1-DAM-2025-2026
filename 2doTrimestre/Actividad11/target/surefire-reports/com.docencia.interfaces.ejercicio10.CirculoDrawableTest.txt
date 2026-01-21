@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.interfaces.ejercicio10.CirculoDrawableTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.019 s <<< FAILURE! -- in com.docencia.interfaces.ejercicio10.CirculoDrawableTest
-com.docencia.interfaces.ejercicio10.CirculoDrawableTest.idsDiferentesParaInstanciasDistintas -- Time elapsed: 0.003 s <<< ERROR!
+Tests run: 8, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.014 s <<< FAILURE! -- in com.docencia.interfaces.ejercicio10.CirculoDrawableTest
+com.docencia.interfaces.ejercicio10.CirculoDrawableTest.idsDiferentesParaInstanciasDistintas -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio10.CirculoDrawable.<init>(CirculoDrawable.java:15)
 	at com.docencia.interfaces.ejercicio10.CirculoDrawableTest.idsDiferentesParaInstanciasDistintas(CirculoDrawableTest.java:31)
@@ -18,7 +18,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio10.CirculoDrawableTest.equalsIdDistintoEsFalse -- Time elapsed: 0.004 s <<< ERROR!
+com.docencia.interfaces.ejercicio10.CirculoDrawableTest.equalsIdDistintoEsFalse -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio10.CirculoDrawable.<init>(CirculoDrawable.java:15)
 	at com.docencia.interfaces.ejercicio10.CirculoDrawableTest.equalsIdDistintoEsFalse(CirculoDrawableTest.java:47)
@@ -26,7 +26,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio10.CirculoDrawableTest.constructorAsignaCampos -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.interfaces.ejercicio10.CirculoDrawableTest.constructorAsignaCampos -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio10.CirculoDrawable.<init>(CirculoDrawable.java:15)
 	at com.docencia.interfaces.ejercicio10.CirculoDrawableTest.constructorAsignaCampos(CirculoDrawableTest.java:17)
@@ -50,7 +50,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.interfaces.ejercicio10.CirculoDrawableTest.equalsMismoIdEsTrue -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.interfaces.ejercicio10.CirculoDrawableTest.equalsMismoIdEsTrue -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.interfaces.ejercicio10.CirculoDrawable.<init>(CirculoDrawable.java:15)
 	at com.docencia.interfaces.ejercicio10.CirculoDrawableTest.equalsMismoIdEsTrue(CirculoDrawableTest.java:39)

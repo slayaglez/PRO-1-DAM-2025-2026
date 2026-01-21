@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.maps.ejercicio7.MapaDispositivosTest
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 4, Errors: 5, Skipped: 0, Time elapsed: 0.034 s <<< FAILURE! -- in com.docencia.maps.ejercicio7.MapaDispositivosTest
+Tests run: 10, Failures: 4, Errors: 5, Skipped: 0, Time elapsed: 0.015 s <<< FAILURE! -- in com.docencia.maps.ejercicio7.MapaDispositivosTest
 com.docencia.maps.ejercicio7.MapaDispositivosTest.buscarPorIdOkTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.maps.ejercicio7.MapaDispositivos.anadir(MapaDispositivos.java:23)
@@ -10,7 +10,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.maps.ejercicio7.MapaDispositivosTest.modificarOkTest -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.maps.ejercicio7.MapaDispositivosTest.modificarOkTest -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.maps.ejercicio7.MapaDispositivos.anadir(MapaDispositivos.java:23)
 	at com.docencia.maps.ejercicio7.MapaDispositivosTest.modificarOkTest(MapaDispositivosTest.java:87)
@@ -18,7 +18,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.maps.ejercicio7.MapaDispositivosTest.anadirNullTest -- Time elapsed: 0.002 s <<< FAILURE!
+com.docencia.maps.ejercicio7.MapaDispositivosTest.anadirNullTest -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -34,7 +34,7 @@ Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementa
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.maps.ejercicio7.MapaDispositivosTest.anadirDuplicadoIdTest -- Time elapsed: 0 s <<< ERROR!
+com.docencia.maps.ejercicio7.MapaDispositivosTest.anadirDuplicadoIdTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.maps.ejercicio7.MapaDispositivos.anadir(MapaDispositivos.java:23)
 	at com.docencia.maps.ejercicio7.MapaDispositivosTest.anadirDuplicadoIdTest(MapaDispositivosTest.java:56)
@@ -58,7 +58,7 @@ Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementa
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.maps.ejercicio7.MapaDispositivosTest.anadirOkTest -- Time elapsed: 0.003 s <<< ERROR!
+com.docencia.maps.ejercicio7.MapaDispositivosTest.anadirOkTest -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.maps.ejercicio7.MapaDispositivos.anadir(MapaDispositivos.java:23)
 	at com.docencia.maps.ejercicio7.MapaDispositivosTest.anadirOkTest(MapaDispositivosTest.java:34)
@@ -66,7 +66,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.maps.ejercicio7.MapaDispositivosTest.anadirInvalidTest -- Time elapsed: 0.004 s <<< FAILURE!
+com.docencia.maps.ejercicio7.MapaDispositivosTest.anadirInvalidTest -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -82,7 +82,7 @@ Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementa
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.maps.ejercicio7.MapaDispositivosTest.eliminarPorIdOkTest -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.maps.ejercicio7.MapaDispositivosTest.eliminarPorIdOkTest -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.maps.ejercicio7.MapaDispositivos.anadir(MapaDispositivos.java:23)
 	at com.docencia.maps.ejercicio7.MapaDispositivosTest.eliminarPorIdOkTest(MapaDispositivosTest.java:78)
@@ -90,7 +90,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.maps.ejercicio7.MapaDispositivosTest.modificarNoExisteTest -- Time elapsed: 0.006 s <<< FAILURE!
+com.docencia.maps.ejercicio7.MapaDispositivosTest.modificarNoExisteTest -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.util.NoSuchElementException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)

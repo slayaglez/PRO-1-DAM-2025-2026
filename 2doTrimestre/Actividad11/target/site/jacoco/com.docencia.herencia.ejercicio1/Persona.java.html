@@ -15,9 +15,9 @@ public abstract class Persona {
 
 <span class="nc" id="L16">    public Persona(){}</span>
 
-<span class="nc" id="L18">    public Persona(UUID id){</span>
-<span class="nc" id="L19">        this.id = id;</span>
-<span class="nc" id="L20">    }</span>
+<span class="fc" id="L18">    public Persona(UUID id){</span>
+<span class="fc" id="L19">        this.id = id;</span>
+<span class="fc" id="L20">    }</span>
 
 <span class="fc" id="L22">    protected Persona(UUID id, String nombre, int edad) {</span>
 <span class="fc bfc" id="L23" title="All 2 branches covered.">        this.id = id == null ? UUID.randomUUID() : id;</span>
@@ -39,19 +39,20 @@ public abstract class Persona {
 
     @Override
     public boolean equals(Object obj) {
-<span class="pc bpc" id="L42" title="1 of 2 branches missed.">        if (this == obj)</span>
-<span class="nc" id="L43">            return true;</span>
-<span class="pc bpc" id="L44" title="1 of 2 branches missed.">        if (obj == null)</span>
-<span class="nc" id="L45">            return false;</span>
-<span class="fc bfc" id="L46" title="All 2 branches covered.">        if (getClass() != obj.getClass())</span>
-<span class="fc" id="L47">            return false;</span>
-<span class="fc" id="L48">        Persona other = (Persona) obj;</span>
-<span class="fc" id="L49">        return Objects.equals(id, other.id);</span>
+
+<span class="pc bpc" id="L43" title="1 of 2 branches missed.">        if (obj == null)</span>
+<span class="nc" id="L44">            return false;</span>
+
+<span class="fc bfc" id="L46" title="All 2 branches covered.">        if (this == obj)</span>
+<span class="fc" id="L47">            return true;</span>
+        
+<span class="fc" id="L49">        Persona other = (Persona) obj;</span>
+<span class="fc" id="L50">        return Objects.equals(id, other.id);</span>
     }
 
     @Override
     public String toString() {
-<span class="fc" id="L54">        return &quot;Persona [id=&quot; + id + &quot;, nombre=&quot; + nombre + &quot;, edad=&quot; + edad + &quot;]&quot;;</span>
+<span class="fc" id="L55">        return &quot;Persona [id=&quot; + id + &quot;, nombre=&quot; + nombre + &quot;, edad=&quot; + edad + &quot;]&quot;;</span>
     }
 
     

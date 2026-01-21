@@ -1,11 +1,12 @@
 package com.docencia.sets.ejercicio1;
 
-import com.docencia.herencia.ejercicio1.Persona;
-
 import java.util.HashSet;
 import java.util.NoSuchElementException;
 import java.util.Set;
 import java.util.UUID;
+
+import com.docencia.herencia.ejercicio1.Alumno;
+import com.docencia.herencia.ejercicio1.Persona;
 
 /**
  * Gestiona un conjunto de {@link Persona} usando internamente {@link HashSet}.
@@ -21,22 +22,58 @@ public class ConjuntoPersonas {
 
     /** Anad... un elemento a la coleccion. */
     public void anadir(Persona elemento) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        validar(elemento);
+        if(set.contains(elemento)){
+            throw new IllegalArgumentException("Este id ya existe");
+        }
+        set.add(elemento);
     }
 
     /** Busca por id. */
 public Persona buscarPorId(UUID id) {
-    throw new UnsupportedOperationException("El metodo no esta implementado");
+    if(id == null){
+        throw new IllegalArgumentException("El id no puede ser nulo");
+    }
+    Persona personaBuscar = new Alumno(id);
+    return buscar(personaBuscar);
+}
+
+    /** Busca por Persona */
+public Persona buscar(Persona personaBuscar) {
+    if(personaBuscar == null){
+        throw new IllegalArgumentException("La persona no puede ser nula");
+    }
+
+    for (Persona persona : set) {
+        if(persona.equals(personaBuscar)){
+            return persona;
+        }
+    }
+    return null;
 }
 
     /** Elimina por id. */
     public boolean eliminarPorId(UUID id) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        if(id == null){
+            throw new IllegalArgumentException("Id no puede ser nulo");
+        }
+        return set.removeIf(persona -> persona.getId().equals(id));
     }
 
     /** Reemplaza el elemento con ese id por otro (mismo id). */
     public void modificar(UUID id, Persona nuevoElemento) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        
+        validar(nuevoElemento);
+        Persona existe = buscarPorId(id);
+        if(existe == null){
+            throw new NoSuchElementException("Id inexistente");
+        }
+        if(!existe.equals(nuevoElemento)){
+            throw new IllegalArgumentException("El id no puede ser igual al de otra Persona");
+        }
+
+        set.add(nuevoElemento);
+        
     }
 
     /** Devuelve una copia inmutable del conjunto. */
@@ -45,7 +82,7 @@ public Persona buscarPorId(UUID id) {
     }
 
     public int tamanio() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return set.size();
     }
     private void validar(Persona elemento) {
         if (elemento == null) {

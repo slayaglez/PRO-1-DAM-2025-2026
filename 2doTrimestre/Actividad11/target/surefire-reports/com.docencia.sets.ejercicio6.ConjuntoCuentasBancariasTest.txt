@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 4, Errors: 5, Skipped: 0, Time elapsed: 0.014 s <<< FAILURE! -- in com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest
-com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.buscarPorIdOkTest -- Time elapsed: 0.001 s <<< ERROR!
+Tests run: 10, Failures: 4, Errors: 5, Skipped: 0, Time elapsed: 0.015 s <<< FAILURE! -- in com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest
+com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.buscarPorIdOkTest -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancarias.anadir(ConjuntoCuentasBancarias.java:24)
 	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.buscarPorIdOkTest(ConjuntoCuentasBancariasTest.java:64)
@@ -34,7 +34,7 @@ Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementa
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.anadirDuplicadoIdTest -- Time elapsed: 0 s <<< ERROR!
+com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.anadirDuplicadoIdTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancarias.anadir(ConjuntoCuentasBancarias.java:24)
 	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.anadirDuplicadoIdTest(ConjuntoCuentasBancariasTest.java:56)
@@ -66,7 +66,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.anadirInvalidTest -- Time elapsed: 0.001 s <<< FAILURE!
+com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.anadirInvalidTest -- Time elapsed: 0 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -82,7 +82,7 @@ Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementa
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.eliminarPorIdOkTest -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.eliminarPorIdOkTest -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancarias.anadir(ConjuntoCuentasBancarias.java:24)
 	at com.docencia.sets.ejercicio6.ConjuntoCuentasBancariasTest.eliminarPorIdOkTest(ConjuntoCuentasBancariasTest.java:78)

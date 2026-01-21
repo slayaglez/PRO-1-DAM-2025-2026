@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.sets.ejercicio2.ConjuntoVehiculosTest
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 4, Errors: 5, Skipped: 0, Time elapsed: 0.011 s <<< FAILURE! -- in com.docencia.sets.ejercicio2.ConjuntoVehiculosTest
-com.docencia.sets.ejercicio2.ConjuntoVehiculosTest.buscarPorIdOkTest -- Time elapsed: 0.002 s <<< ERROR!
+Tests run: 10, Failures: 4, Errors: 5, Skipped: 0, Time elapsed: 0.013 s <<< FAILURE! -- in com.docencia.sets.ejercicio2.ConjuntoVehiculosTest
+com.docencia.sets.ejercicio2.ConjuntoVehiculosTest.buscarPorIdOkTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.sets.ejercicio2.ConjuntoVehiculos.anadir(ConjuntoVehiculos.java:24)
 	at com.docencia.sets.ejercicio2.ConjuntoVehiculosTest.buscarPorIdOkTest(ConjuntoVehiculosTest.java:64)
@@ -58,7 +58,7 @@ Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementa
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.sets.ejercicio2.ConjuntoVehiculosTest.anadirOkTest -- Time elapsed: 0 s <<< ERROR!
+com.docencia.sets.ejercicio2.ConjuntoVehiculosTest.anadirOkTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.sets.ejercicio2.ConjuntoVehiculos.anadir(ConjuntoVehiculos.java:24)
 	at com.docencia.sets.ejercicio2.ConjuntoVehiculosTest.anadirOkTest(ConjuntoVehiculosTest.java:34)
@@ -66,7 +66,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.sets.ejercicio2.ConjuntoVehiculosTest.anadirInvalidTest -- Time elapsed: 0 s <<< FAILURE!
+com.docencia.sets.ejercicio2.ConjuntoVehiculosTest.anadirInvalidTest -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -82,7 +82,7 @@ Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementa
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.sets.ejercicio2.ConjuntoVehiculosTest.eliminarPorIdOkTest -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.sets.ejercicio2.ConjuntoVehiculosTest.eliminarPorIdOkTest -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.sets.ejercicio2.ConjuntoVehiculos.anadir(ConjuntoVehiculos.java:24)
 	at com.docencia.sets.ejercicio2.ConjuntoVehiculosTest.eliminarPorIdOkTest(ConjuntoVehiculosTest.java:78)
