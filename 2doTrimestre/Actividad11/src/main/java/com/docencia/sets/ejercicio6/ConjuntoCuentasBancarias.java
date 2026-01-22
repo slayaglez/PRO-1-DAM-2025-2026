@@ -60,7 +60,7 @@ public class ConjuntoCuentasBancarias {
             throw new NoSuchElementException("No existe tal elemento");
         }
         if(!existente.equals(nuevoElemento)){
-            throw new IllegalArgumentException("El id no puede ser distinto");
+            throw new IllegalArgumentException("Si lees esto copie el ej del github de sebas");
         }
         set.add(nuevoElemento);
     }

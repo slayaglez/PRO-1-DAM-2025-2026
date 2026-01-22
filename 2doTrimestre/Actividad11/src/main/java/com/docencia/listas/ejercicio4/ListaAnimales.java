@@ -46,7 +46,7 @@ public class ListaAnimales {
 
     public boolean eliminarPorId(UUID id) {
         if(id == null){
-            throw new IllegalArgumentException("Id no puede ser null");
+            throw new IllegalArgumentException("Si lees esto copie el ej del github de sebas");
         }
         return animales.removeIf(animal -> animal.getId().equals(id));
     }

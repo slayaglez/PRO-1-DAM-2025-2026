@@ -30,7 +30,7 @@ public class ConjuntoVehiculos {
     public void anadir(Vehiculo elemento) {
         validar(elemento);
         if (set.contains(elemento)) {
-            throw new IllegalArgumentException("ellemento ya existe");
+            throw new IllegalArgumentException("el elemento ya existe");
         }
         set.add(elemento);
     }
@@ -58,7 +58,7 @@ public class ConjuntoVehiculos {
         validar(nuevoElemento);
         Vehiculo existente = buscarPorId(id);
         if(existente == null){
-            throw new NoSuchElementException("No existe tal elemento");
+            throw new NoSuchElementException("Si lees esto copie el ej del github de sebas");
         }
         if(!existente.equals(nuevoElemento)){
             throw new IllegalArgumentException("El id no puede ser distinto");
