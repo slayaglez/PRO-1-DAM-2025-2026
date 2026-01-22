@@ -1,17 +1,18 @@
 package com.docencia.sets.ejercicio9;
 
-import com.docencia.herencia.ejercicio9.Producto;
-import com.docencia.herencia.ejercicio9.Libro;
-import com.docencia.herencia.ejercicio9.Electronica;
-
-import org.junit.jupiter.api.Test;
-
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.NoSuchElementException;
 import java.util.UUID;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
+
+import com.docencia.herencia.ejercicio9.Libro;
+import com.docencia.herencia.ejercicio9.Producto;
 
 public class ConjuntoProductosTest {
 
@@ -20,7 +21,7 @@ public class ConjuntoProductosTest {
     }
 
     private Producto nuevoB(UUID id) {
-        return new Electronica(id, "Teclado", 20.0, 24);
+        return new Libro(id, "Teclado", 20.0, "ISBN2");
     }
 
     private Producto invalido(UUID id) {

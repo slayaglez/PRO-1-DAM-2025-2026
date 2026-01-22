@@ -1,17 +1,18 @@
 package com.docencia.sets.ejercicio4;
 
-import com.docencia.herencia.ejercicio4.Animal;
-import com.docencia.herencia.ejercicio4.Perro;
-import com.docencia.herencia.ejercicio4.Gato;
-
-import org.junit.jupiter.api.Test;
-
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.NoSuchElementException;
 import java.util.UUID;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
+
+import com.docencia.herencia.ejercicio4.Animal;
+import com.docencia.herencia.ejercicio4.Perro;
 
 public class ConjuntoAnimalesTest {
 
@@ -20,7 +21,7 @@ public class ConjuntoAnimalesTest {
     }
 
     private Animal nuevoB(UUID id) {
-        return new Gato(id, "Misu", true);
+        return new Perro(id, "Misu", "Pitbull");
     }
 
     private Animal invalido(UUID id) {

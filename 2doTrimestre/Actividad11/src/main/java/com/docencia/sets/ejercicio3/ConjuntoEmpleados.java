@@ -1,18 +1,25 @@
-package com.docencia.sets.ejercicio3;
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief ejercicios evaluables 3.3
+ */
 
-import com.docencia.herencia.ejercicio3.Empleado;
+package com.docencia.sets.ejercicio3;
 
 import java.util.HashSet;
 import java.util.NoSuchElementException;
 import java.util.Set;
 import java.util.UUID;
 
+import com.docencia.herencia.ejercicio3.Empleado;
+
 /**
  * Gestiona un conjunto de {@link Empleado} usando internamente {@link HashSet}.
  *
  * Reglas:
  * - No se permiten elementos nulos.
- * - No se permiten elementos con campos "vacios" segun la validacion del ejercicio.
+ * - No se permiten elementos con campos "vacios" segun la validacion del
+ * ejercicio.
  * - No se permiten ids nulos ni duplicados.
  */
 public class ConjuntoEmpleados {
@@ -21,32 +28,53 @@ public class ConjuntoEmpleados {
 
     /** Anad... un elemento a la coleccion. */
     public void anadir(Empleado elemento) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        validar(elemento);
+        if (set.contains(elemento)) {
+            throw new IllegalArgumentException("ellemento ya existe");
+        }
+        set.add(elemento);
     }
 
     /** Busca por id. */
-public Empleado buscarPorId(UUID id) {
-    throw new UnsupportedOperationException("El metodo no esta implementado");
-}
+    public Empleado buscarPorId(UUID id) {
+        if (id == null) {
+            throw new IllegalArgumentException();
+        }
+        for (Empleado empleado : set) {
+            if (empleado.getId().equals(id)) {
+                return empleado;
+            }
+        }
+        return null;
+    }
 
     /** Elimina por id. */
     public boolean eliminarPorId(UUID id) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return set.removeIf(elemento -> elemento.getId().equals(id));
     }
 
     /** Reemplaza el elemento con ese id por otro (mismo id). */
     public void modificar(UUID id, Empleado nuevoElemento) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        validar(nuevoElemento);
+        Empleado existente = buscarPorId(id);
+        if(existente == null){
+            throw new NoSuchElementException("No existe tal elemento");
+        }
+        if(!existente.equals(nuevoElemento)){
+            throw new IllegalArgumentException("El id no puede ser distinto");
+        }
+        set.add(nuevoElemento);
     }
 
     /** Devuelve una copia inmutable del conjunto. */
     public Set<Empleado> listar() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return Set.copyOf(set);
     }
 
     public int tamanio() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return set.size();
     }
+
     private void validar(Empleado elemento) {
         if (elemento == null) {
             throw new IllegalArgumentException("El empleado no puede ser nulo");

@@ -1,17 +1,18 @@
 package com.docencia.sets.ejercicio6;
 
-import com.docencia.herencia.ejercicio6.CuentaBancaria;
-import com.docencia.herencia.ejercicio6.CuentaAhorro;
-import com.docencia.herencia.ejercicio6.CuentaCorriente;
-
-import org.junit.jupiter.api.Test;
-
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.NoSuchElementException;
 import java.util.UUID;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
+
+import com.docencia.herencia.ejercicio6.CuentaAhorro;
+import com.docencia.herencia.ejercicio6.CuentaBancaria;
 
 public class ConjuntoCuentasBancariasTest {
 
@@ -20,7 +21,7 @@ public class ConjuntoCuentasBancariasTest {
     }
 
     private CuentaBancaria nuevoB(UUID id) {
-        return new CuentaCorriente(id, "Luis", 200.0, 1.0);
+        return new CuentaAhorro(id, "Luis", 200.0, 0.01);
     }
 
     private CuentaBancaria invalido(UUID id) {

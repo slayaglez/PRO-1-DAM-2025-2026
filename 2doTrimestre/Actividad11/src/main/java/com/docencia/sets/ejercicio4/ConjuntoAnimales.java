@@ -1,11 +1,16 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief ejercicios evaluables 3.3
+ */
 package com.docencia.sets.ejercicio4;
-
-import com.docencia.herencia.ejercicio4.Animal;
 
 import java.util.HashSet;
 import java.util.NoSuchElementException;
 import java.util.Set;
 import java.util.UUID;
+
+import com.docencia.herencia.ejercicio4.Animal;
 
 /**
  * Gestiona un conjunto de {@link Animal} usando internamente {@link HashSet}.
@@ -21,31 +26,51 @@ public class ConjuntoAnimales {
 
     /** Anad... un elemento a la coleccion. */
     public void anadir(Animal elemento) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        validar(elemento);
+        if (set.contains(elemento)) {
+            throw new IllegalArgumentException("ellemento ya existe");
+        }
+        set.add(elemento);
     }
 
     /** Busca por id. */
-public Animal buscarPorId(UUID id) {
-    throw new UnsupportedOperationException("El metodo no esta implementado");
-}
+    public Animal buscarPorId(UUID id) {
+        if (id == null) {
+            throw new IllegalArgumentException();
+        }
+        for (Animal animal : set) {
+            if (animal.getId().equals(id)) {
+                return animal;
+            }
+        }
+        return null;
+    }
 
     /** Elimina por id. */
     public boolean eliminarPorId(UUID id) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return set.removeIf(elemento -> elemento.getId().equals(id));
     }
 
     /** Reemplaza el elemento con ese id por otro (mismo id). */
     public void modificar(UUID id, Animal nuevoElemento) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        validar(nuevoElemento);
+        Animal existente = buscarPorId(id);
+        if(existente == null){
+            throw new NoSuchElementException("No existe tal elemento");
+        }
+        if(!existente.equals(nuevoElemento)){
+            throw new IllegalArgumentException("El id no puede ser distinto");
+        }
+        set.add(nuevoElemento);
     }
 
     /** Devuelve una copia inmutable del conjunto. */
     public Set<Animal> listar() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return Set.copyOf(set);
     }
 
     public int tamanio() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return set.size();
     }
     private void validar(Animal elemento) {
         if (elemento == null) {

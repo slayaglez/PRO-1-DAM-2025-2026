@@ -19,16 +19,23 @@ public class MapaPersonas {
 
     /** Anad... un elemento a la coleccion. */
     public void anadir(Persona elemento) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        validar(elemento);
+        if(index.containsValue(elemento)){
+            throw new IllegalArgumentException("Ya existe");
+        }
+        index.put(elemento.getId(), elemento);
     }
 
     /** Busca por id. */
     public Persona buscarPorId(UUID id) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        if(id == null){
+            throw new IllegalArgumentException("id nulo");
+        }
+        return null; //TODO
     }
     /** Elimina por id. */
     public boolean eliminarPorId(UUID id) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return index.remove(id) != null;
     }
 
     /** Reemplaza el elemento con ese id por otro (mismo id). */
@@ -38,11 +45,11 @@ public class MapaPersonas {
 
     /** Devuelve una copia inmutable del conjunto. */
     public java.util.Set<Persona> listar() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return null;
     }
 
     public int tamanio() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return index.size();
     }
     private void validar(Persona elemento) {
         if (elemento == null) {

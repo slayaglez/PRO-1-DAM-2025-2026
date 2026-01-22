@@ -1,11 +1,16 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief ejercicios evaluables 3.3
+ */
 package com.docencia.sets.ejercicio9;
-
-import com.docencia.herencia.ejercicio9.Producto;
 
 import java.util.HashSet;
 import java.util.NoSuchElementException;
 import java.util.Set;
 import java.util.UUID;
+
+import com.docencia.herencia.ejercicio9.Producto;
 
 /**
  * Gestiona un conjunto de {@link Producto} usando internamente {@link HashSet}.
@@ -21,32 +26,53 @@ public class ConjuntoProductos {
 
     /** Anad... un elemento a la coleccion. */
     public void anadir(Producto elemento) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        validar(elemento);
+        if (set.contains(elemento)) {
+            throw new IllegalArgumentException("ellemento ya existe");
+        }
+        set.add(elemento);
     }
 
     /** Busca por id. */
-public Producto buscarPorId(UUID id) {
-    throw new UnsupportedOperationException("El metodo no esta implementado");
-}
+    public Producto buscarPorId(UUID id) {
+        if (id == null) {
+            throw new IllegalArgumentException();
+        }
+        for (Producto elemento : set) {
+            if (elemento.getId().equals(id)) {
+                return elemento;
+            }
+        }
+        return null;
+    }
 
     /** Elimina por id. */
     public boolean eliminarPorId(UUID id) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return set.removeIf(elemento -> elemento.getId().equals(id));
     }
 
     /** Reemplaza el elemento con ese id por otro (mismo id). */
     public void modificar(UUID id, Producto nuevoElemento) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        validar(nuevoElemento);
+        Producto existente = buscarPorId(id);
+        if(existente == null){
+            throw new NoSuchElementException("No existe tal elemento");
+        }
+        if(!existente.equals(nuevoElemento)){
+            throw new IllegalArgumentException("El id no puede ser distinto");
+        }
+        set.add(nuevoElemento);
     }
 
     /** Devuelve una copia inmutable del conjunto. */
     public Set<Producto> listar() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return Set.copyOf(set);
     }
 
     public int tamanio() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return set.size();
     }
+
     private void validar(Producto elemento) {
         if (elemento == null) {
             throw new IllegalArgumentException("El producto no puede ser nulo");
