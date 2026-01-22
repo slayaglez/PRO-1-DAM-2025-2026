@@ -1,17 +1,20 @@
 package com.docencia.listas.ejercicio3;
 
-import com.docencia.herencia.ejercicio3.Desarrollador;
-import com.docencia.herencia.ejercicio3.Empleado;
-import com.docencia.herencia.ejercicio3.Gerente;
-
-import org.junit.jupiter.api.Test;
-
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.NoSuchElementException;
 import java.util.UUID;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
+
+import com.docencia.herencia.ejercicio3.Desarrollador;
+import com.docencia.herencia.ejercicio3.Empleado;
 
 public class ListaEmpleadosTest {
 
@@ -20,7 +23,7 @@ public class ListaEmpleadosTest {
     }
 
     private Empleado nuevoB(UUID id) {
-        return new Gerente(id, "Pedro", 3000.0, 5);
+        return new Desarrollador(id, "Pedro", 3000.0, "Python");
     }
 
     private Empleado invalido(UUID id) {

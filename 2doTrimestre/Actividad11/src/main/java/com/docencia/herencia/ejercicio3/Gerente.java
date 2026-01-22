@@ -23,5 +23,13 @@ public class Gerente extends Empleado {
         return "Gerente [numReportes=" + numReportes + ", id=" + getId() + "]";
     }
 
+    @Override
+    public boolean equals (Object obj) {
+        if(!(obj instanceof Gerente)){
+            return false;
+        }
+        return super.equals(obj);
+    }
+
     
 }

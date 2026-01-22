@@ -23,8 +23,8 @@ import com.docencia.herencia.ejercicio1.Persona;
     /** Anad... un elemento a la coleccion. */
     public void anadir(Persona elemento) {
 <span class="fc" id="L25">        validar(elemento);</span>
-<span class="pc bpc" id="L26" title="1 of 2 branches missed.">        if(set.contains(elemento)){</span>
-<span class="nc" id="L27">            throw new IllegalArgumentException(&quot;Este id ya existe&quot;);</span>
+<span class="fc bfc" id="L26" title="All 2 branches covered.">        if(set.contains(elemento)){</span>
+<span class="fc" id="L27">            throw new IllegalArgumentException(&quot;Este id ya existe&quot;);</span>
         }
 <span class="fc" id="L29">        set.add(elemento);</span>
 <span class="fc" id="L30">    }</span>
@@ -69,12 +69,12 @@ public Persona buscar(Persona personaBuscar) {
 <span class="fc" id="L69">            throw new NoSuchElementException(&quot;Id inexistente&quot;);</span>
         }
 <span class="pc bpc" id="L71" title="1 of 2 branches missed.">        if(!existe.equals(nuevoElemento)){</span>
-<span class="fc" id="L72">            throw new IllegalArgumentException(&quot;El id no puede ser igual al de otra Persona&quot;);</span>
+<span class="nc" id="L72">            throw new IllegalArgumentException(&quot;El id no puede ser igual al de otra Persona&quot;);</span>
         }
 
-<span class="nc" id="L75">        set.add(nuevoElemento);</span>
+<span class="fc" id="L75">        set.add(nuevoElemento);</span>
         
-<span class="nc" id="L77">    }</span>
+<span class="fc" id="L77">    }</span>
 
     /** Devuelve una copia inmutable del conjunto. */
     public Set&lt;Persona&gt; listar() {

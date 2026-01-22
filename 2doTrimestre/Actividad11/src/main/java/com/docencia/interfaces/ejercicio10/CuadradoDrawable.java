@@ -1,6 +1,5 @@
 package com.docencia.interfaces.ejercicio10;
 
-import java.util.Objects;
 import java.util.UUID;
 
 /**
@@ -12,12 +11,27 @@ public class CuadradoDrawable implements Drawable {
     private double lado;
     private String color;
 
-    public CuadradoDrawable(UUID id, double lado, String color) {        throw new UnsupportedOperationException("El metodo no esta implementado");
-}
+    public CuadradoDrawable(UUID id, double lado, String color) {
+        if (id == null) {
+            this.id = UUID.randomUUID();
+        } else {
+            this.id = id;
+        }
+        this.lado = lado;
+        this.color = color;
+    }
 
-    public UUID getId() { return id; }
-    public double getLado() { return lado; }
-    public String getColor() { return color; }
+    public UUID getId() {
+        return id;
+    }
+
+    public double getLado() {
+        return lado;
+    }
+
+    public String getColor() {
+        return color;
+    }
 
     @Override
     public String dibujar() {
@@ -25,17 +39,34 @@ public class CuadradoDrawable implements Drawable {
     }
 
     @Override
-    public boolean equals(Object o) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((id == null) ? 0 : id.hashCode());
+        return result;
     }
 
     @Override
-    public int hashCode() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        CuadradoDrawable other = (CuadradoDrawable) obj;
+        if (id == null) {
+            if (other.id != null)
+                return false;
+        } else if (!id.equals(other.id))
+            return false;
+        return true;
     }
 
     @Override
     public String toString() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return "CuadradoDrawable [id=" + id + ", lado=" + lado + ", color=" + color + "]";
     }
+
+    
 }

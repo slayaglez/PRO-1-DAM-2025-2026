@@ -1,33 +1,33 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.sets.ejercicio10.ConjuntoDocumentosTest
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 4, Errors: 5, Skipped: 0, Time elapsed: 0.015 s <<< FAILURE! -- in com.docencia.sets.ejercicio10.ConjuntoDocumentosTest
+Tests run: 10, Failures: 4, Errors: 5, Skipped: 0, Time elapsed: 0.018 s <<< FAILURE! -- in com.docencia.sets.ejercicio10.ConjuntoDocumentosTest
 com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.buscarPorIdOkTest -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.sets.ejercicio10.ConjuntoDocumentos.anadir(ConjuntoDocumentos.java:24)
 	at com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.buscarPorIdOkTest(ConjuntoDocumentosTest.java:64)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
 com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.modificarOkTest -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.sets.ejercicio10.ConjuntoDocumentos.anadir(ConjuntoDocumentos.java:24)
 	at com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.modificarOkTest(ConjuntoDocumentosTest.java:87)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.anadirNullTest -- Time elapsed: 0.001 s <<< FAILURE!
+com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.anadirNullTest -- Time elapsed: 0.002 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
 	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
 	at com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.anadirNullTest(ConjuntoDocumentosTest.java:42)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.sets.ejercicio10.ConjuntoDocumentos.anadir(ConjuntoDocumentos.java:24)
 	at com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.lambda$anadirNullTest$0(ConjuntoDocumentosTest.java:42)
@@ -38,23 +38,23 @@ com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.anadirDuplicadoIdTest -- Ti
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.sets.ejercicio10.ConjuntoDocumentos.anadir(ConjuntoDocumentos.java:24)
 	at com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.anadirDuplicadoIdTest(ConjuntoDocumentosTest.java:56)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.buscarPorIdNullTest -- Time elapsed: 0.001 s <<< FAILURE!
+com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.buscarPorIdNullTest -- Time elapsed: 0.002 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
 	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
 	at com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.buscarPorIdNullTest(ConjuntoDocumentosTest.java:71)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.sets.ejercicio10.ConjuntoDocumentos.buscarPorId(ConjuntoDocumentos.java:29)
-	at com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.lambda$buscarPorIdNullTest$3(ConjuntoDocumentosTest.java:71)
+	at com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.lambda$buscarPorIdNullTest$0(ConjuntoDocumentosTest.java:71)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
@@ -62,23 +62,23 @@ com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.anadirOkTest -- Time elapse
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.sets.ejercicio10.ConjuntoDocumentos.anadir(ConjuntoDocumentos.java:24)
 	at com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.anadirOkTest(ConjuntoDocumentosTest.java:34)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.anadirInvalidTest -- Time elapsed: 0.001 s <<< FAILURE!
+com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.anadirInvalidTest -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
 	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
 	at com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.anadirInvalidTest(ConjuntoDocumentosTest.java:49)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.sets.ejercicio10.ConjuntoDocumentos.anadir(ConjuntoDocumentos.java:24)
-	at com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.lambda$anadirInvalidTest$1(ConjuntoDocumentosTest.java:49)
+	at com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.lambda$anadirInvalidTest$0(ConjuntoDocumentosTest.java:49)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
@@ -86,23 +86,23 @@ com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.eliminarPorIdOkTest -- Time
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.sets.ejercicio10.ConjuntoDocumentos.anadir(ConjuntoDocumentos.java:24)
 	at com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.eliminarPorIdOkTest(ConjuntoDocumentosTest.java:78)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.modificarNoExisteTest -- Time elapsed: 0.002 s <<< FAILURE!
+com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.modificarNoExisteTest -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.util.NoSuchElementException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
 	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
 	at com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.modificarNoExisteTest(ConjuntoDocumentosTest.java:97)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.sets.ejercicio10.ConjuntoDocumentos.modificar(ConjuntoDocumentos.java:39)
-	at com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.lambda$modificarNoExisteTest$4(ConjuntoDocumentosTest.java:97)
+	at com.docencia.sets.ejercicio10.ConjuntoDocumentosTest.lambda$modificarNoExisteTest$0(ConjuntoDocumentosTest.java:97)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 

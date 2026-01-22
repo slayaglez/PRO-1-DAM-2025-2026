@@ -1,36 +1,36 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.listas.ejercicio9.ListaProductosTest
 -------------------------------------------------------------------------------
-Tests run: 18, Failures: 5, Errors: 12, Skipped: 0, Time elapsed: 0.053 s <<< FAILURE! -- in com.docencia.listas.ejercicio9.ListaProductosTest
-com.docencia.listas.ejercicio9.ListaProductosTest.modificarNullIdTest -- Time elapsed: 0.006 s <<< ERROR!
+Tests run: 18, Failures: 5, Errors: 12, Skipped: 0, Time elapsed: 0.024 s <<< FAILURE! -- in com.docencia.listas.ejercicio9.ListaProductosTest
+com.docencia.listas.ejercicio9.ListaProductosTest.modificarNullIdTest -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio9.ListaProductos.anadir(ListaProductos.java:24)
 	at com.docencia.listas.ejercicio9.ListaProductosTest.modificarNullIdTest(ListaProductosTest.java:114)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.listas.ejercicio9.ListaProductosTest.buscarPorIdNoExisteTest -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.listas.ejercicio9.ListaProductosTest.buscarPorIdNoExisteTest -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio9.ListaProductos.buscarPorId(ListaProductos.java:28)
 	at com.docencia.listas.ejercicio9.ListaProductosTest.buscarPorIdNoExisteTest(ListaProductosTest.java:76)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.listas.ejercicio9.ListaProductosTest.eliminarPorIdNullTest -- Time elapsed: 0.005 s <<< FAILURE!
+com.docencia.listas.ejercicio9.ListaProductosTest.eliminarPorIdNullTest -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
 	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
 	at com.docencia.listas.ejercicio9.ListaProductosTest.eliminarPorIdNullTest(ListaProductosTest.java:91)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio9.ListaProductos.eliminarPorId(ListaProductos.java:32)
-	at com.docencia.listas.ejercicio9.ListaProductosTest.lambda$eliminarPorIdNullTest$4(ListaProductosTest.java:91)
+	at com.docencia.listas.ejercicio9.ListaProductosTest.lambda$eliminarPorIdNullTest$0(ListaProductosTest.java:91)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
@@ -38,129 +38,129 @@ com.docencia.listas.ejercicio9.ListaProductosTest.modificarInvalidTest -- Time e
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio9.ListaProductos.anadir(ListaProductos.java:24)
 	at com.docencia.listas.ejercicio9.ListaProductosTest.modificarInvalidTest(ListaProductosTest.java:130)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.listas.ejercicio9.ListaProductosTest.buscarPorIdOkTest -- Time elapsed: 0 s <<< ERROR!
+com.docencia.listas.ejercicio9.ListaProductosTest.buscarPorIdOkTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio9.ListaProductos.anadir(ListaProductos.java:24)
 	at com.docencia.listas.ejercicio9.ListaProductosTest.buscarPorIdOkTest(ListaProductosTest.java:63)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.listas.ejercicio9.ListaProductosTest.modificarIdDistintoTest -- Time elapsed: 0 s <<< ERROR!
+com.docencia.listas.ejercicio9.ListaProductosTest.modificarIdDistintoTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio9.ListaProductos.anadir(ListaProductos.java:24)
 	at com.docencia.listas.ejercicio9.ListaProductosTest.modificarIdDistintoTest(ListaProductosTest.java:138)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.listas.ejercicio9.ListaProductosTest.modificarOkTest -- Time elapsed: 0.003 s <<< ERROR!
+com.docencia.listas.ejercicio9.ListaProductosTest.modificarOkTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio9.ListaProductos.anadir(ListaProductos.java:24)
 	at com.docencia.listas.ejercicio9.ListaProductosTest.modificarOkTest(ListaProductosTest.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.listas.ejercicio9.ListaProductosTest.anadirNullTest -- Time elapsed: 0.001 s <<< FAILURE!
+com.docencia.listas.ejercicio9.ListaProductosTest.anadirNullTest -- Time elapsed: 0.002 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
 	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
 	at com.docencia.listas.ejercicio9.ListaProductosTest.anadirNullTest(ListaProductosTest.java:42)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio9.ListaProductos.anadir(ListaProductos.java:24)
 	at com.docencia.listas.ejercicio9.ListaProductosTest.lambda$anadirNullTest$0(ListaProductosTest.java:42)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.listas.ejercicio9.ListaProductosTest.anadirDuplicadoIdTest -- Time elapsed: 0.004 s <<< ERROR!
+com.docencia.listas.ejercicio9.ListaProductosTest.anadirDuplicadoIdTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio9.ListaProductos.anadir(ListaProductos.java:24)
 	at com.docencia.listas.ejercicio9.ListaProductosTest.anadirDuplicadoIdTest(ListaProductosTest.java:55)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.listas.ejercicio9.ListaProductosTest.buscarPorIdNullTest -- Time elapsed: 0.004 s <<< FAILURE!
+com.docencia.listas.ejercicio9.ListaProductosTest.buscarPorIdNullTest -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
 	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
 	at com.docencia.listas.ejercicio9.ListaProductosTest.buscarPorIdNullTest(ListaProductosTest.java:70)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio9.ListaProductos.buscarPorId(ListaProductos.java:28)
-	at com.docencia.listas.ejercicio9.ListaProductosTest.lambda$buscarPorIdNullTest$3(ListaProductosTest.java:70)
+	at com.docencia.listas.ejercicio9.ListaProductosTest.lambda$buscarPorIdNullTest$0(ListaProductosTest.java:70)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.listas.ejercicio9.ListaProductosTest.anadirOkTest -- Time elapsed: 0 s <<< ERROR!
+com.docencia.listas.ejercicio9.ListaProductosTest.anadirOkTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio9.ListaProductos.anadir(ListaProductos.java:24)
 	at com.docencia.listas.ejercicio9.ListaProductosTest.anadirOkTest(ListaProductosTest.java:34)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.listas.ejercicio9.ListaProductosTest.anadirInvalidTest -- Time elapsed: 0.003 s <<< FAILURE!
+com.docencia.listas.ejercicio9.ListaProductosTest.anadirInvalidTest -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
 	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
 	at com.docencia.listas.ejercicio9.ListaProductosTest.anadirInvalidTest(ListaProductosTest.java:48)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio9.ListaProductos.anadir(ListaProductos.java:24)
-	at com.docencia.listas.ejercicio9.ListaProductosTest.lambda$anadirInvalidTest$1(ListaProductosTest.java:48)
+	at com.docencia.listas.ejercicio9.ListaProductosTest.lambda$anadirInvalidTest$0(ListaProductosTest.java:48)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.listas.ejercicio9.ListaProductosTest.eliminarPorIdOkTest -- Time elapsed: 0 s <<< ERROR!
+com.docencia.listas.ejercicio9.ListaProductosTest.eliminarPorIdOkTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio9.ListaProductos.anadir(ListaProductos.java:24)
 	at com.docencia.listas.ejercicio9.ListaProductosTest.eliminarPorIdOkTest(ListaProductosTest.java:83)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
 com.docencia.listas.ejercicio9.ListaProductosTest.modificarNullElementoTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio9.ListaProductos.anadir(ListaProductos.java:24)
 	at com.docencia.listas.ejercicio9.ListaProductosTest.modificarNullElementoTest(ListaProductosTest.java:122)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
 com.docencia.listas.ejercicio9.ListaProductosTest.eliminarPorIdNoExisteTest -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio9.ListaProductos.eliminarPorId(ListaProductos.java:32)
 	at com.docencia.listas.ejercicio9.ListaProductosTest.eliminarPorIdNoExisteTest(ListaProductosTest.java:97)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
 com.docencia.listas.ejercicio9.ListaProductosTest.listarInmutableTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio9.ListaProductos.anadir(ListaProductos.java:24)
 	at com.docencia.listas.ejercicio9.ListaProductosTest.listarInmutableTest(ListaProductosTest.java:152)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
 com.docencia.listas.ejercicio9.ListaProductosTest.modificarNoExisteTest -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.util.NoSuchElementException> but was: <java.lang.UnsupportedOperationException>
@@ -169,12 +169,12 @@ org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected:
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
 	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
 	at com.docencia.listas.ejercicio9.ListaProductosTest.modificarNoExisteTest(ListaProductosTest.java:146)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.listas.ejercicio9.ListaProductos.modificar(ListaProductos.java:36)
-	at com.docencia.listas.ejercicio9.ListaProductosTest.lambda$modificarNoExisteTest$9(ListaProductosTest.java:146)
+	at com.docencia.listas.ejercicio9.ListaProductosTest.lambda$modificarNoExisteTest$0(ListaProductosTest.java:146)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 

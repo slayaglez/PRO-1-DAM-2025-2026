@@ -1,17 +1,20 @@
 package com.docencia.listas.ejercicio2;
 
-import com.docencia.herencia.ejercicio2.Coche;
-import com.docencia.herencia.ejercicio2.Motocicleta;
-import com.docencia.herencia.ejercicio2.Vehiculo;
-
-import org.junit.jupiter.api.Test;
-
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.NoSuchElementException;
 import java.util.UUID;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
+
+import com.docencia.herencia.ejercicio2.Coche;
+import com.docencia.herencia.ejercicio2.Vehiculo;
 
 public class ListaVehiculosTest {
 
@@ -20,7 +23,7 @@ public class ListaVehiculosTest {
     }
 
     private Vehiculo nuevoB(UUID id) {
-        return new Motocicleta(id, "Honda", "CB500", false);
+        return new Coche(id, "Honda", "CB500", 5);
     }
 
     private Vehiculo invalido(UUID id) {

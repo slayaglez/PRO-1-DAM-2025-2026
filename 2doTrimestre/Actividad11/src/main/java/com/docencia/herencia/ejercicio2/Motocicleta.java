@@ -23,5 +23,18 @@ public class Motocicleta extends Vehiculo {
         return "Motocicleta [tieneSidecar=" + tieneSidecar + "]"+"id="+getId();
     }
 
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals (Object obj) {
+        if(!(obj instanceof Motocicleta)){
+            return false;
+        }
+        return super.equals(obj);
+    }
+
     
 }

@@ -1,33 +1,33 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.maps.ejercicio3.MapaEmpleadosTest
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 4, Errors: 5, Skipped: 0, Time elapsed: 0.015 s <<< FAILURE! -- in com.docencia.maps.ejercicio3.MapaEmpleadosTest
-com.docencia.maps.ejercicio3.MapaEmpleadosTest.buscarPorIdOkTest -- Time elapsed: 0.001 s <<< ERROR!
+Tests run: 10, Failures: 4, Errors: 5, Skipped: 0, Time elapsed: 0.026 s <<< FAILURE! -- in com.docencia.maps.ejercicio3.MapaEmpleadosTest
+com.docencia.maps.ejercicio3.MapaEmpleadosTest.buscarPorIdOkTest -- Time elapsed: 0.003 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.maps.ejercicio3.MapaEmpleados.anadir(MapaEmpleados.java:23)
 	at com.docencia.maps.ejercicio3.MapaEmpleadosTest.buscarPorIdOkTest(MapaEmpleadosTest.java:64)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.maps.ejercicio3.MapaEmpleadosTest.modificarOkTest -- Time elapsed: 0 s <<< ERROR!
+com.docencia.maps.ejercicio3.MapaEmpleadosTest.modificarOkTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.maps.ejercicio3.MapaEmpleados.anadir(MapaEmpleados.java:23)
 	at com.docencia.maps.ejercicio3.MapaEmpleadosTest.modificarOkTest(MapaEmpleadosTest.java:87)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.maps.ejercicio3.MapaEmpleadosTest.anadirNullTest -- Time elapsed: 0.001 s <<< FAILURE!
+com.docencia.maps.ejercicio3.MapaEmpleadosTest.anadirNullTest -- Time elapsed: 0.005 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
 	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
 	at com.docencia.maps.ejercicio3.MapaEmpleadosTest.anadirNullTest(MapaEmpleadosTest.java:42)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.maps.ejercicio3.MapaEmpleados.anadir(MapaEmpleados.java:23)
 	at com.docencia.maps.ejercicio3.MapaEmpleadosTest.lambda$anadirNullTest$0(MapaEmpleadosTest.java:42)
@@ -38,71 +38,71 @@ com.docencia.maps.ejercicio3.MapaEmpleadosTest.anadirDuplicadoIdTest -- Time ela
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.maps.ejercicio3.MapaEmpleados.anadir(MapaEmpleados.java:23)
 	at com.docencia.maps.ejercicio3.MapaEmpleadosTest.anadirDuplicadoIdTest(MapaEmpleadosTest.java:56)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.maps.ejercicio3.MapaEmpleadosTest.buscarPorIdNullTest -- Time elapsed: 0.002 s <<< FAILURE!
+com.docencia.maps.ejercicio3.MapaEmpleadosTest.buscarPorIdNullTest -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
 	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
 	at com.docencia.maps.ejercicio3.MapaEmpleadosTest.buscarPorIdNullTest(MapaEmpleadosTest.java:71)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.maps.ejercicio3.MapaEmpleados.buscarPorId(MapaEmpleados.java:28)
-	at com.docencia.maps.ejercicio3.MapaEmpleadosTest.lambda$buscarPorIdNullTest$3(MapaEmpleadosTest.java:71)
+	at com.docencia.maps.ejercicio3.MapaEmpleadosTest.lambda$buscarPorIdNullTest$0(MapaEmpleadosTest.java:71)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.maps.ejercicio3.MapaEmpleadosTest.anadirOkTest -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.maps.ejercicio3.MapaEmpleadosTest.anadirOkTest -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.maps.ejercicio3.MapaEmpleados.anadir(MapaEmpleados.java:23)
 	at com.docencia.maps.ejercicio3.MapaEmpleadosTest.anadirOkTest(MapaEmpleadosTest.java:34)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.maps.ejercicio3.MapaEmpleadosTest.anadirInvalidTest -- Time elapsed: 0.001 s <<< FAILURE!
+com.docencia.maps.ejercicio3.MapaEmpleadosTest.anadirInvalidTest -- Time elapsed: 0.002 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
 	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
 	at com.docencia.maps.ejercicio3.MapaEmpleadosTest.anadirInvalidTest(MapaEmpleadosTest.java:49)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.maps.ejercicio3.MapaEmpleados.anadir(MapaEmpleados.java:23)
-	at com.docencia.maps.ejercicio3.MapaEmpleadosTest.lambda$anadirInvalidTest$1(MapaEmpleadosTest.java:49)
+	at com.docencia.maps.ejercicio3.MapaEmpleadosTest.lambda$anadirInvalidTest$0(MapaEmpleadosTest.java:49)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 
-com.docencia.maps.ejercicio3.MapaEmpleadosTest.eliminarPorIdOkTest -- Time elapsed: 0 s <<< ERROR!
+com.docencia.maps.ejercicio3.MapaEmpleadosTest.eliminarPorIdOkTest -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.maps.ejercicio3.MapaEmpleados.anadir(MapaEmpleados.java:23)
 	at com.docencia.maps.ejercicio3.MapaEmpleadosTest.eliminarPorIdOkTest(MapaEmpleadosTest.java:78)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.maps.ejercicio3.MapaEmpleadosTest.modificarNoExisteTest -- Time elapsed: 0.001 s <<< FAILURE!
+com.docencia.maps.ejercicio3.MapaEmpleadosTest.modificarNoExisteTest -- Time elapsed: 0.005 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.util.NoSuchElementException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
 	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
 	at com.docencia.maps.ejercicio3.MapaEmpleadosTest.modificarNoExisteTest(MapaEmpleadosTest.java:97)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.maps.ejercicio3.MapaEmpleados.modificar(MapaEmpleados.java:37)
-	at com.docencia.maps.ejercicio3.MapaEmpleadosTest.lambda$modificarNoExisteTest$4(MapaEmpleadosTest.java:97)
+	at com.docencia.maps.ejercicio3.MapaEmpleadosTest.lambda$modificarNoExisteTest$0(MapaEmpleadosTest.java:97)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
 	... 6 more
 

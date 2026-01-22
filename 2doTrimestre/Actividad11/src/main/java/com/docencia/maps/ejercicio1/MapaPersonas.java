@@ -1,11 +1,10 @@
 package com.docencia.maps.ejercicio1;
 
-import com.docencia.herencia.ejercicio1.Persona;
-
 import java.util.HashMap;
 import java.util.Map;
-import java.util.NoSuchElementException;
 import java.util.UUID;
+
+import com.docencia.herencia.ejercicio1.Persona;
 
 /**
  * Gestiona un mapa de {@link Persona} usando internamente {@link HashMap}.

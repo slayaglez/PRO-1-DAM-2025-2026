@@ -23,6 +23,23 @@ public class Coche extends Vehiculo {
 <span class="fc" id="L23">        return &quot;Coche [puertas=&quot; + puertas + &quot;]&quot; + &quot;id=&quot;+ getId();</span>
     }
 
+    @Override
+    public int hashCode() {
+<span class="fc" id="L28">        return super.hashCode();</span>
+    }
+
+    @Override
+    public boolean equals (Object obj) {
+<span class="fc bfc" id="L33" title="All 2 branches covered.">        if(!(obj instanceof Coche)){</span>
+<span class="fc" id="L34">            return false;</span>
+        }
+<span class="fc" id="L36">        return super.equals(obj);</span>
+    }
+
+   
+
+    
+
     
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

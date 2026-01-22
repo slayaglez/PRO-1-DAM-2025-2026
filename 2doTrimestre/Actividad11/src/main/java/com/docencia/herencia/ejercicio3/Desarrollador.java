@@ -23,5 +23,12 @@ public class Desarrollador extends Empleado {
         return "Desarrollador [lenguajePrincipal=" + lenguajePrincipal + "]" + "id=" + getId();
     }
 
+    @Override
+    public boolean equals (Object obj) {
+        if(!(obj instanceof Desarrollador)){
+            return false;
+        }
+        return super.equals(obj);
+    }
     
 }

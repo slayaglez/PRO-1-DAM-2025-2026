@@ -1,6 +1,5 @@
 package com.docencia.interfaces.ejercicio3;
 
-import java.util.Objects;
 import java.util.UUID;
 
 /**
@@ -12,12 +11,27 @@ public class Bluetooth implements Conectable {
     private String mac;
     private int canal;
 
-    public Bluetooth(UUID id, String mac, int canal) {        throw new UnsupportedOperationException("El metodo no esta implementado");
-}
+    public Bluetooth(UUID id, String mac, int canal) {
+        if (id == null) {
+            this.id = UUID.randomUUID();
+        } else {
+            this.id = id;
+        }
+        this.mac = mac;
+        this.canal = canal;
+    }
 
-    public UUID getId() { return id; }
-    public String getMac() { return mac; }
-    public int getCanal() { return canal; }
+    public UUID getId() {
+        return id;
+    }
+
+    public String getMac() {
+        return mac;
+    }
+
+    public int getCanal() {
+        return canal;
+    }
 
     @Override
     public boolean conectar(String destino) {
@@ -25,17 +39,34 @@ public class Bluetooth implements Conectable {
     }
 
     @Override
-    public boolean equals(Object o) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((id == null) ? 0 : id.hashCode());
+        return result;
     }
 
     @Override
-    public int hashCode() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Bluetooth other = (Bluetooth) obj;
+        if (id == null) {
+            if (other.id != null)
+                return false;
+        } else if (!id.equals(other.id))
+            return false;
+        return true;
     }
 
     @Override
     public String toString() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return "Bluetooth [id=" + id + ", mac=" + mac + ", canal=" + canal + "]";
     }
+
+    
 }

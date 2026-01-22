@@ -23,6 +23,13 @@ public class Desarrollador extends Empleado {
 <span class="fc" id="L23">        return &quot;Desarrollador [lenguajePrincipal=&quot; + lenguajePrincipal + &quot;]&quot; + &quot;id=&quot; + getId();</span>
     }
 
+    @Override
+    public boolean equals (Object obj) {
+<span class="fc bfc" id="L28" title="All 2 branches covered.">        if(!(obj instanceof Desarrollador)){</span>
+<span class="fc" id="L29">            return false;</span>
+        }
+<span class="fc" id="L31">        return super.equals(obj);</span>
+    }
     
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

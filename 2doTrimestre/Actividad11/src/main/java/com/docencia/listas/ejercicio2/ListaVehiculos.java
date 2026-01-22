@@ -1,11 +1,11 @@
 package com.docencia.listas.ejercicio2;
 
-import com.docencia.herencia.ejercicio2.Vehiculo;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.UUID;
+
+import com.docencia.herencia.ejercicio2.Vehiculo;
 
 /**
  * Gestiona una lista de {@link Vehiculo} usando {@link java.util.ArrayList}.
@@ -20,27 +20,57 @@ public class ListaVehiculos {
     private final List<Vehiculo> vehiculos = new ArrayList<>();
 
     public void anadir(Vehiculo vehiculo) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        validar(vehiculo);
+        if (vehiculos.contains(vehiculo)) {
+            throw new IllegalArgumentException();
+        }
+        vehiculos.add(vehiculo);
     }
 
+    /**
+     * Busca un vehiculo por id
+     * @param id
+     * @return
+     */
     public Vehiculo buscarPorId(UUID id) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        if(id == null){
+            throw new IllegalArgumentException("Id no puede ser null");
+        }
+        
+        for (int i = 0; i < vehiculos.size(); i++) {
+            if(vehiculos.get(i).getId().equals(id)){
+                return vehiculos.get(i);
+            }
+        }
+        return null;
     }
 
     public boolean eliminarPorId(UUID id) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        if (id == null){
+            throw new IllegalArgumentException("Id no puede ser null");
+        }
+        return vehiculos.removeIf(vehiculo -> vehiculo.getId().equals(id));
     }
 
     public void modificar(UUID id, Vehiculo nuevoVehiculo) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        validar(nuevoVehiculo);
+        Vehiculo existe = buscarPorId(id);
+        if(existe == null){
+            throw new NoSuchElementException("El vehiculo no existe");
+        }
+        if(!existe.equals(nuevoVehiculo)) {
+            throw new IllegalArgumentException("El id de la persona no puede ser igual");
+        }
+        int indice = vehiculos.indexOf(existe);
+        vehiculos.set(indice, nuevoVehiculo);
     }
 
     public List<Vehiculo> listar() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return List.copyOf(vehiculos);
     }
 
     public int tamanio() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return vehiculos.size();
     }
 
     private boolean existeId(UUID id) {

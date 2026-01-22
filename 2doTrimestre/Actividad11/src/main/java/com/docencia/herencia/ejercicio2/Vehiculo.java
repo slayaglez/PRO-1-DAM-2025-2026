@@ -13,6 +13,8 @@ public abstract class Vehiculo {
     private String marca;
     private String modelo;
 
+    public Vehiculo(){}
+
     protected Vehiculo(UUID id, String marca, String modelo) {
         this.id = id == null ? UUID.randomUUID() : id;
         this.marca = marca;
@@ -33,12 +35,12 @@ public abstract class Vehiculo {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
         if (obj == null)
             return false;
-        if (getClass() != obj.getClass())
-            return false;
+
+        if (this == obj)
+            return true;
+        
         Vehiculo other = (Vehiculo) obj;
         return Objects.equals(id, other.id);
     }

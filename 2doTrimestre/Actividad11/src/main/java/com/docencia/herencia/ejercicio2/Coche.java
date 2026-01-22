@@ -23,5 +23,22 @@ public class Coche extends Vehiculo {
         return "Coche [puertas=" + puertas + "]" + "id="+ getId();
     }
 
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals (Object obj) {
+        if(!(obj instanceof Coche)){
+            return false;
+        }
+        return super.equals(obj);
+    }
+
+   
+
+    
+
     
 }

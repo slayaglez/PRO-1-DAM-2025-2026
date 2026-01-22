@@ -33,19 +33,17 @@ public abstract class Empleado {
 
     @Override
     public boolean equals(Object obj) {
-<span class="pc bpc" id="L36" title="1 of 2 branches missed.">        if (this == obj)</span>
-<span class="nc" id="L37">            return true;</span>
+<span class="fc bfc" id="L36" title="All 2 branches covered.">        if (this == obj)</span>
+<span class="fc" id="L37">            return true;</span>
 <span class="pc bpc" id="L38" title="1 of 2 branches missed.">        if (obj == null)</span>
 <span class="nc" id="L39">            return false;</span>
-<span class="fc bfc" id="L40" title="All 2 branches covered.">        if (getClass() != obj.getClass())</span>
-<span class="fc" id="L41">            return false;</span>
-<span class="fc" id="L42">        Empleado other = (Empleado) obj;</span>
-<span class="fc" id="L43">        return Objects.equals(id, other.id);</span>
+<span class="fc" id="L40">        Empleado other = (Empleado) obj;</span>
+<span class="fc" id="L41">        return Objects.equals(id, other.id);</span>
     }
 
     @Override
     public String toString() {
-<span class="fc" id="L48">        return &quot;Empleado [id=&quot; + id + &quot;, nombre=&quot; + nombre + &quot;, salarioBase=&quot; + salarioBase + &quot;]&quot;;</span>
+<span class="fc" id="L46">        return &quot;Empleado [id=&quot; + id + &quot;, nombre=&quot; + nombre + &quot;, salarioBase=&quot; + salarioBase + &quot;]&quot;;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

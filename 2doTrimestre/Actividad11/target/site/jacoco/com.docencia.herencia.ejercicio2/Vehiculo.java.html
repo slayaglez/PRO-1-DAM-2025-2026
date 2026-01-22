@@ -13,39 +13,41 @@ public abstract class Vehiculo {
     private String marca;
     private String modelo;
 
-<span class="fc" id="L16">    protected Vehiculo(UUID id, String marca, String modelo) {</span>
-<span class="fc bfc" id="L17" title="All 2 branches covered.">        this.id = id == null ? UUID.randomUUID() : id;</span>
-<span class="fc" id="L18">        this.marca = marca;</span>
-<span class="fc" id="L19">        this.modelo = modelo;</span>
-<span class="fc" id="L20">    }</span>
+<span class="nc" id="L16">    public Vehiculo(){}</span>
 
-<span class="fc" id="L22">    public UUID getId() { return id; }</span>
-<span class="fc" id="L23">    public String getMarca() { return marca; }</span>
-<span class="fc" id="L24">    public String getModelo() { return modelo; }</span>
+<span class="fc" id="L18">    protected Vehiculo(UUID id, String marca, String modelo) {</span>
+<span class="fc bfc" id="L19" title="All 2 branches covered.">        this.id = id == null ? UUID.randomUUID() : id;</span>
+<span class="fc" id="L20">        this.marca = marca;</span>
+<span class="fc" id="L21">        this.modelo = modelo;</span>
+<span class="fc" id="L22">    }</span>
+
+<span class="fc" id="L24">    public UUID getId() { return id; }</span>
+<span class="fc" id="L25">    public String getMarca() { return marca; }</span>
+<span class="fc" id="L26">    public String getModelo() { return modelo; }</span>
 
     /** Metodo abstracto para demostrar polimorfismo. */
     public abstract int ruedas();
 
     @Override
     public int hashCode() {
-<span class="fc" id="L31">        return Objects.hash(id);</span>
+<span class="fc" id="L33">        return Objects.hash(id);</span>
     }
 
     @Override
     public boolean equals(Object obj) {
-<span class="pc bpc" id="L36" title="1 of 2 branches missed.">        if (this == obj)</span>
-<span class="nc" id="L37">            return true;</span>
 <span class="pc bpc" id="L38" title="1 of 2 branches missed.">        if (obj == null)</span>
 <span class="nc" id="L39">            return false;</span>
-<span class="fc bfc" id="L40" title="All 2 branches covered.">        if (getClass() != obj.getClass())</span>
-<span class="fc" id="L41">            return false;</span>
-<span class="fc" id="L42">        Vehiculo other = (Vehiculo) obj;</span>
-<span class="fc" id="L43">        return Objects.equals(id, other.id);</span>
+
+<span class="fc bfc" id="L41" title="All 2 branches covered.">        if (this == obj)</span>
+<span class="fc" id="L42">            return true;</span>
+        
+<span class="fc" id="L44">        Vehiculo other = (Vehiculo) obj;</span>
+<span class="fc" id="L45">        return Objects.equals(id, other.id);</span>
     }
 
     @Override
     public String toString() {
-<span class="fc" id="L48">        return &quot;Vehiculo [id=&quot; + id + &quot;, marca=&quot; + marca + &quot;, modelo=&quot; + modelo + &quot;]&quot;;</span>
+<span class="fc" id="L50">        return &quot;Vehiculo [id=&quot; + id + &quot;, marca=&quot; + marca + &quot;, modelo=&quot; + modelo + &quot;]&quot;;</span>
     }
 
     
