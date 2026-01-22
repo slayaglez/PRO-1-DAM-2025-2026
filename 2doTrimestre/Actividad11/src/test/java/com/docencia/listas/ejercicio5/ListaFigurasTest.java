@@ -1,17 +1,20 @@
 package com.docencia.listas.ejercicio5;
 
-import com.docencia.herencia.ejercicio5.Circulo;
-import com.docencia.herencia.ejercicio5.Figura;
-import com.docencia.herencia.ejercicio5.Rectangulo;
-
-import org.junit.jupiter.api.Test;
-
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.NoSuchElementException;
 import java.util.UUID;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
+
+import com.docencia.herencia.ejercicio5.Circulo;
+import com.docencia.herencia.ejercicio5.Figura;
 
 public class ListaFigurasTest {
 
@@ -20,7 +23,7 @@ public class ListaFigurasTest {
     }
 
     private Figura nuevoB(UUID id) {
-        return new Rectangulo(id, "Azul", 2.0, 3.0);
+        return new Circulo(id, "Azul", 3.0);
     }
 
     private Figura invalido(UUID id) {

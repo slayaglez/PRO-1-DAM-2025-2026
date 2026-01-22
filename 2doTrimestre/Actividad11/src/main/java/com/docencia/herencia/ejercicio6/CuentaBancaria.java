@@ -1,3 +1,8 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief ejercicios evaluables 3.3
+ */
 package com.docencia.herencia.ejercicio6;
 
 import java.util.Objects;
@@ -36,8 +41,6 @@ public abstract class CuentaBancaria {
         if (this == obj)
             return true;
         if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
             return false;
         CuentaBancaria other = (CuentaBancaria) obj;
         return Objects.equals(id, other.id);

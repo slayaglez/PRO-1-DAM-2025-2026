@@ -54,6 +54,7 @@ com/docencia/interfaces/ejercicio3/Wifi.class
 com/docencia/listas/ejercicio7/ListaDispositivos.class
 com/docencia/interfaces/ejercicio5/SensorTemperatura.class
 com/docencia/interfaces/ejercicio5/Medible.class
+com/docencia/maps/ejercicio1/MapaPersonas.class
 com/docencia/interfaces/ejercicio6/Usuario.class
 com/docencia/interfaces/ejercicio7/CsvExporter.class
 com/docencia/interfaces/ejercicio1/Pagable.class

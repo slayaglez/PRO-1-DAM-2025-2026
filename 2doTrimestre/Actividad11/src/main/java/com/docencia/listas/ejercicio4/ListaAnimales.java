@@ -1,11 +1,16 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief ejercicios evaluables 3.3
+ */
 package com.docencia.listas.ejercicio4;
-
-import com.docencia.herencia.ejercicio4.Animal;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.UUID;
+
+import com.docencia.herencia.ejercicio4.Animal;
 
 /**
  * Gestiona una lista de {@link Animal} usando {@link java.util.ArrayList}.
@@ -20,27 +25,51 @@ public class ListaAnimales {
     private final List<Animal> animales = new ArrayList<>();
 
     public void anadir(Animal animal) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        validar(animal);
+        if(animales.contains(animal)){
+            throw new IllegalArgumentException("El animal ya existe");
+        }
+        animales.add(animal);
     }
 
     public Animal buscarPorId(UUID id) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        if(id == null){
+            throw new IllegalArgumentException("Id no puede ser null");
+        }
+        for (Animal animal : animales) {
+            if(animal.getId().equals(id)){
+                return animal;
+            }
+        }
+        return null;
     }
 
     public boolean eliminarPorId(UUID id) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        if(id == null){
+            throw new IllegalArgumentException("Id no puede ser null");
+        }
+        return animales.removeIf(animal -> animal.getId().equals(id));
     }
 
     public void modificar(UUID id, Animal nuevoAnimal) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        validar(nuevoAnimal);
+        Animal existente = buscarPorId(id);
+        if(existente == null){
+            throw new NoSuchElementException("El Id no existe");
+        }
+        if(!existente.equals(nuevoAnimal)){
+            throw new IllegalArgumentException();
+        }
+        int indice = animales.indexOf(existente);
+        animales.set(indice, nuevoAnimal);
     }
 
     public List<Animal> listar() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return List.copyOf(animales);
     }
 
     public int tamanio() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return animales.size();
     }
 
     private boolean existeId(UUID id) {

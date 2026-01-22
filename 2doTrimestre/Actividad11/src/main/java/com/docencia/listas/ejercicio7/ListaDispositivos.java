@@ -1,11 +1,16 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief ejercicios evaluables 3.3
+ */
 package com.docencia.listas.ejercicio7;
-
-import com.docencia.herencia.ejercicio7.Dispositivo;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.UUID;
+
+import com.docencia.herencia.ejercicio7.Dispositivo;
 
 /**
  * Gestiona una lista de {@link Dispositivo} usando {@link java.util.ArrayList}.
@@ -20,27 +25,52 @@ public class ListaDispositivos {
     private final List<Dispositivo> dispositivos = new ArrayList<>();
 
     public void anadir(Dispositivo dispositivo) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        validar(dispositivo);
+        if(dispositivos.contains(dispositivo)){
+            throw new IllegalArgumentException("EL dispositivo ya existe");
+        }
+        dispositivos.add(dispositivo);
     }
 
     public Dispositivo buscarPorId(UUID id) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        if(id == null){
+            throw new IllegalArgumentException("El id no puede ser null");
+        }
+        for (Dispositivo dispositivo : dispositivos) {
+            if(dispositivo.getId().equals(id)){
+                return dispositivo;
+            }
+        }
+        return null;
     }
 
     public boolean eliminarPorId(UUID id) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        if(id == null){
+            throw new IllegalArgumentException("El id no puede ser nulo");
+        }
+        return dispositivos.removeIf(dispositivo -> dispositivo.getId().equals(id));
     }
 
     public void modificar(UUID id, Dispositivo nuevoDispositivo) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        
+        validar(nuevoDispositivo);
+        Dispositivo existente = buscarPorId(id);
+        if(existente == null){
+            throw new NoSuchElementException("No existe el elemento");
+        }
+        if(!existente.equals(nuevoDispositivo)){
+            throw new IllegalArgumentException("El id debe ser el mismo");
+        }
+        int indice = dispositivos.indexOf(existente);
+        dispositivos.set(indice, nuevoDispositivo);
     }
 
     public List<Dispositivo> listar() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return List.copyOf(dispositivos);
     }
 
     public int tamanio() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return dispositivos.size();
     }
 
     private boolean existeId(UUID id) {

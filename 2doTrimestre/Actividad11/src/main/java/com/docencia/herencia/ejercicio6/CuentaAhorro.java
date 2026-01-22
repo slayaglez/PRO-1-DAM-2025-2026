@@ -1,3 +1,8 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief ejercicios evaluables 3.3
+ */
 package com.docencia.herencia.ejercicio6;
 
 import java.util.UUID;
@@ -23,5 +28,11 @@ public class CuentaAhorro extends CuentaBancaria {
         return "CuentaAhorro [interesAnual=" + interesAnual + ", id=" + getId() + "]";
     }
 
-    
+    @Override
+    public boolean equals(Object obj){
+        if(!(obj instanceof CuentaAhorro)){
+            return false;
+        }
+        return super.equals(obj);
+    }
 }

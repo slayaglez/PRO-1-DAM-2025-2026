@@ -1,11 +1,16 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief ejercicios evaluables 3.3
+ */
 package com.docencia.listas.ejercicio8;
-
-import com.docencia.herencia.ejercicio8.Pago;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.UUID;
+
+import com.docencia.herencia.ejercicio8.Pago;
 
 /**
  * Gestiona una lista de {@link Pago} usando {@link java.util.ArrayList}.
@@ -20,27 +25,52 @@ public class ListaPagos {
     private final List<Pago> pagos = new ArrayList<>();
 
     public void anadir(Pago pago) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        validar(pago);
+        if(pagos.contains(pago)){
+            throw new IllegalArgumentException("El pago ya existe");
+        }
+        pagos.add(pago);
     }
 
     public Pago buscarPorId(UUID id) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        if(id == null){
+            throw new IllegalArgumentException("Id no puede ser nulo");
+        }
+        for (Pago pago : pagos) {
+            if(pago.getId().equals(id)){
+                return pago;
+            }
+        }
+        return null;
     }
 
     public boolean eliminarPorId(UUID id) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        if(id == null){
+            throw new IllegalArgumentException("Id nulo");
+        }
+        return pagos.removeIf(pago -> pago.getId().equals(id));
     }
 
     public void modificar(UUID id, Pago nuevoPago) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        
+        validar(nuevoPago);
+        Pago existente = buscarPorId(id);
+        if(existente == null){
+            throw new NoSuchElementException("No existe tal elemento");
+        }
+        if(!existente.equals(nuevoPago)){
+            throw new IllegalArgumentException("El id debe ser igual");
+        }
+        int indice = pagos.indexOf(existente);
+        pagos.set(indice, nuevoPago);
     }
 
     public List<Pago> listar() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return List.copyOf(pagos);
     }
 
     public int tamanio() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return pagos.size();
     }
 
     private boolean existeId(UUID id) {

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.maps.ejercicio4.MapaAnimalesTest
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 4, Errors: 5, Skipped: 0, Time elapsed: 0.022 s <<< FAILURE! -- in com.docencia.maps.ejercicio4.MapaAnimalesTest
-com.docencia.maps.ejercicio4.MapaAnimalesTest.buscarPorIdOkTest -- Time elapsed: 0.001 s <<< ERROR!
+Tests run: 10, Failures: 4, Errors: 5, Skipped: 0, Time elapsed: 0.033 s <<< FAILURE! -- in com.docencia.maps.ejercicio4.MapaAnimalesTest
+com.docencia.maps.ejercicio4.MapaAnimalesTest.buscarPorIdOkTest -- Time elapsed: 0.008 s <<< ERROR!
 java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at com.docencia.maps.ejercicio4.MapaAnimales.anadir(MapaAnimales.java:23)
 	at com.docencia.maps.ejercicio4.MapaAnimalesTest.buscarPorIdOkTest(MapaAnimalesTest.java:64)
@@ -18,7 +18,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.maps.ejercicio4.MapaAnimalesTest.anadirNullTest -- Time elapsed: 0.003 s <<< FAILURE!
+com.docencia.maps.ejercicio4.MapaAnimalesTest.anadirNullTest -- Time elapsed: 0.002 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -42,7 +42,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.maps.ejercicio4.MapaAnimalesTest.buscarPorIdNullTest -- Time elapsed: 0.001 s <<< FAILURE!
+com.docencia.maps.ejercicio4.MapaAnimalesTest.buscarPorIdNullTest -- Time elapsed: 0.002 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
@@ -90,7 +90,7 @@ java.lang.UnsupportedOperationException: El metodo no esta implementado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.maps.ejercicio4.MapaAnimalesTest.modificarNoExisteTest -- Time elapsed: 0.002 s <<< FAILURE!
+com.docencia.maps.ejercicio4.MapaAnimalesTest.modificarNoExisteTest -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.util.NoSuchElementException> but was: <java.lang.UnsupportedOperationException>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)

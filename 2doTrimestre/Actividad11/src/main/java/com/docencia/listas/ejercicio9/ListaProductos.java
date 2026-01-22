@@ -1,11 +1,16 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief ejercicios evaluables 3.3
+ */
 package com.docencia.listas.ejercicio9;
-
-import com.docencia.herencia.ejercicio9.Producto;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.UUID;
+
+import com.docencia.herencia.ejercicio9.Producto;
 
 /**
  * Gestiona una lista de {@link Producto} usando {@link java.util.ArrayList}.
@@ -21,27 +26,51 @@ public class ListaProductos {
     private final List<Producto> productos = new ArrayList<>();
 
     public void anadir(Producto producto) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        validar(producto);
+        if(productos.contains(producto)){
+            throw new IllegalArgumentException("Ya existe dicho producto");
+        }
+        productos.add(producto);
     }
 
     public Producto buscarPorId(UUID id) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        if(id == null){
+            throw new IllegalArgumentException("id nulo");
+        }
+        for (Producto producto : productos) {
+            if(producto.getId().equals(id)){
+                return producto;
+            }
+        }
+        return null;
     }
 
     public boolean eliminarPorId(UUID id) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        if(id == null){
+            throw new IllegalArgumentException("El ide no puede ser nulo");
+        }
+        return productos.removeIf(prod -> prod.getId().equals(id));
     }
 
     public void modificar(UUID id, Producto nuevoProducto) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        validar(nuevoProducto);
+        Producto existente = buscarPorId(id);
+        if(existente == null){
+            throw new NoSuchElementException("No existe");
+        }
+        if(!existente.equals(nuevoProducto)){
+            throw new IllegalArgumentException("id debe ser igual");
+        }
+        int indice = productos.indexOf(existente);
+        productos.set(indice, nuevoProducto);
     }
 
     public List<Producto> listar() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return List.copyOf(productos);
     }
 
     public int tamanio() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return productos.size();
     }
 
     private boolean existeId(UUID id) {

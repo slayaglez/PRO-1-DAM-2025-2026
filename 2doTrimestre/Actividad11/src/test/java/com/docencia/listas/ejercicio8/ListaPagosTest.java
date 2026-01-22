@@ -1,17 +1,20 @@
 package com.docencia.listas.ejercicio8;
 
-import com.docencia.herencia.ejercicio8.Pago;
-import com.docencia.herencia.ejercicio8.PagoEfectivo;
-import com.docencia.herencia.ejercicio8.PagoTarjeta;
-
-import org.junit.jupiter.api.Test;
-
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.NoSuchElementException;
 import java.util.UUID;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
+
+import com.docencia.herencia.ejercicio8.Pago;
+import com.docencia.herencia.ejercicio8.PagoTarjeta;
 
 public class ListaPagosTest {
 
@@ -20,7 +23,7 @@ public class ListaPagosTest {
     }
 
     private Pago nuevoB(UUID id) {
-        return new PagoEfectivo(id, 20.0, true);
+        return new PagoTarjeta(id, 20.0, "3456");
     }
 
     private Pago invalido(UUID id) {

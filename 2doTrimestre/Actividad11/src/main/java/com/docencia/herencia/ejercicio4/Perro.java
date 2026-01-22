@@ -1,3 +1,8 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief ejercicios evaluables 3.3
+ */
 package com.docencia.herencia.ejercicio4;
 
 import java.util.UUID;
@@ -23,5 +28,12 @@ public class Perro extends Animal {
         return "Perro [raza=" + raza + ", id=" + getId() + "]";
     }
 
+    @Override
+    public boolean equals(Object obj){
+        if(!(obj instanceof Perro)){
+            return false;
+        }
+        return super.equals(obj);
+    }
     
 }

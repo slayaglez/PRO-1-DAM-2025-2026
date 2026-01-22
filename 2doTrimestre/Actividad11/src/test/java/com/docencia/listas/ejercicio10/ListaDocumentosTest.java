@@ -1,17 +1,20 @@
 package com.docencia.listas.ejercicio10;
 
-import com.docencia.herencia.ejercicio10.Contrato;
-import com.docencia.herencia.ejercicio10.Documento;
-import com.docencia.herencia.ejercicio10.Factura;
-
-import org.junit.jupiter.api.Test;
-
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.NoSuchElementException;
 import java.util.UUID;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
+
+import com.docencia.herencia.ejercicio10.Documento;
+import com.docencia.herencia.ejercicio10.Factura;
 
 public class ListaDocumentosTest {
 
@@ -20,7 +23,7 @@ public class ListaDocumentosTest {
     }
 
     private Documento nuevoB(UUID id) {
-        return new Contrato(id, "Contrato Alquiler", "Ana y Luis");
+        return new Factura(id, "Contrato Alquiler", "F-002");
     }
 
     private Documento invalido(UUID id) {

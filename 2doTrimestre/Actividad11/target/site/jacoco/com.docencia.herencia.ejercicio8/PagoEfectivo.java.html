@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PagoEfectivo.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Herencia/Interfaces/List/Set/Map - 10 ejercicios</a> &gt; <a href="index.source.html" class="el_package">com.docencia.herencia.ejercicio8</a> &gt; <span class="el_source">PagoEfectivo.java</span></div><h1>PagoEfectivo.java</h1><pre class="source lang-java linenums">package com.docencia.herencia.ejercicio8;
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PagoEfectivo.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Herencia/Interfaces/List/Set/Map - 10 ejercicios</a> &gt; <a href="index.source.html" class="el_package">com.docencia.herencia.ejercicio8</a> &gt; <span class="el_source">PagoEfectivo.java</span></div><h1>PagoEfectivo.java</h1><pre class="source lang-java linenums">/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief ejercicios evaluables 3.3
+ */
+package com.docencia.herencia.ejercicio8;
 
 import java.util.UUID;
 
@@ -7,20 +12,20 @@ public class PagoEfectivo extends Pago {
     private boolean entregado;
 
     public PagoEfectivo(UUID id, double importe, boolean entregado) {
-<span class="fc" id="L10">        super(id, importe);</span>
-<span class="fc" id="L11">        this.entregado = entregado;</span>
-<span class="fc" id="L12">}</span>
+<span class="fc" id="L15">        super(id, importe);</span>
+<span class="fc" id="L16">        this.entregado = entregado;</span>
+<span class="fc" id="L17">}</span>
 
-<span class="fc" id="L14">    public Boolean getEntregado() { return entregado; }</span>
+<span class="fc" id="L19">    public Boolean getEntregado() { return entregado; }</span>
 
     @Override
     public boolean requiereValidacion() {
-<span class="fc" id="L18">        return false;</span>
+<span class="fc" id="L23">        return false;</span>
     }
 
     @Override
     public String toString() {
-<span class="fc" id="L23">        return &quot;PagoEfectivo [entregado=&quot; + entregado + &quot;, id=&quot; + getId() + &quot;]&quot; + &quot;importe=&quot; + getImporte() + &quot;entrega=&quot;;</span>
+<span class="fc" id="L28">        return &quot;PagoEfectivo [entregado=&quot; + entregado + &quot;, id=&quot; + getId() + &quot;]&quot; + &quot;importe=&quot; + getImporte() + &quot;entrega=&quot;;</span>
     }
 
     

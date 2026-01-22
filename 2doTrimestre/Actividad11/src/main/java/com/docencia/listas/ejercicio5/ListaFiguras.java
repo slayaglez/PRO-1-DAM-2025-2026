@@ -1,11 +1,16 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief ejercicios evaluables 3.3
+ */
 package com.docencia.listas.ejercicio5;
-
-import com.docencia.herencia.ejercicio5.Figura;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.UUID;
+
+import com.docencia.herencia.ejercicio5.Figura;
 
 /**
  * Gestiona una lista de {@link Figura} usando {@link java.util.ArrayList}.
@@ -20,27 +25,51 @@ public class ListaFiguras {
     private final List<Figura> figuras = new ArrayList<>();
 
     public void anadir(Figura figura) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        validar(figura);
+        if(figuras.contains(figura)){
+            throw new IllegalArgumentException("Esa figura ya existe");
+        }
+        figuras.add(figura);
     }
 
     public Figura buscarPorId(UUID id) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        if(id == null){
+            throw new IllegalArgumentException("Id no puede ser nulo");
+        }
+        for (Figura figura : figuras) {
+            if(figura.getId().equals(id)){
+                return figura;
+            }
+        }
+        return null;
     }
 
     public boolean eliminarPorId(UUID id) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        if(id == null){
+            throw new IllegalArgumentException("Id no puede ser nulo");
+        }
+        return figuras.removeIf(figura -> figura.getId().equals(id));
     }
 
     public void modificar(UUID id, Figura nuevaFigura) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        validar(nuevaFigura);
+        Figura existente = buscarPorId(id);
+        if(existente == null){
+            throw new NoSuchElementException("No existe la figura");
+        }
+        if(!existente.equals(nuevaFigura)){
+            throw new IllegalArgumentException("La figura debe tener el mismo id");
+        }
+        int indice = figuras.indexOf(existente);
+        figuras.set(indice, nuevaFigura);
     }
 
     public List<Figura> listar() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return List.copyOf(figuras);
     }
 
     public int tamanio() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return figuras.size();
     }
 
     private boolean existeId(UUID id) {
