@@ -1,17 +1,18 @@
 package com.docencia.sets.ejercicio7;
 
-import com.docencia.herencia.ejercicio7.Dispositivo;
-import com.docencia.herencia.ejercicio7.Telefono;
-import com.docencia.herencia.ejercicio7.Portatil;
-
-import org.junit.jupiter.api.Test;
-
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.NoSuchElementException;
 import java.util.UUID;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
+
+import com.docencia.herencia.ejercicio7.Dispositivo;
+import com.docencia.herencia.ejercicio7.Telefono;
 
 public class ConjuntoDispositivosTest {
 
@@ -20,7 +21,7 @@ public class ConjuntoDispositivosTest {
     }
 
     private Dispositivo nuevoB(UUID id) {
-        return new Portatil(id, "Dell", 16);
+        return new Telefono(id, "Dell", "1645");
     }
 
     private Dispositivo invalido(UUID id) {

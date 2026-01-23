@@ -1,11 +1,18 @@
-package com.docencia.maps.ejercicio2;
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief ejercicios evaluables 3.3
+ */
 
-import com.docencia.herencia.ejercicio2.Vehiculo;
+package com.docencia.maps.ejercicio2;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.NoSuchElementException;
+import java.util.Set;
 import java.util.UUID;
+
+import com.docencia.herencia.ejercicio2.Vehiculo;
 
 /**
  * Gestiona un mapa de {@link Vehiculo} usando internamente {@link HashMap}.
@@ -20,31 +27,47 @@ public class MapaVehiculos {
 
     /** Anad... un elemento a la coleccion. */
     public void anadir(Vehiculo elemento) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        validar(elemento);
+        if(index.containsValue(elemento)){
+            throw new IllegalArgumentException("Ya existe");
+        }
+        index.put(elemento.getId(), elemento);
     }
 
     /** Busca por id. */
     public Vehiculo buscarPorId(UUID id) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        if(id == null){
+            throw new IllegalArgumentException("id nulo");
+        }
+        return index.get(id);
     }
     /** Elimina por id. */
     public boolean eliminarPorId(UUID id) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return index.remove(id) != null;
     }
 
     /** Reemplaza el elemento con ese id por otro (mismo id). */
     public void modificar(UUID id, Vehiculo nuevoElemento) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        validar(nuevoElemento);
+        Vehiculo elemento = buscarPorId(id);
+        if(elemento == null){
+            throw new NoSuchElementException("me copié de sebas");
+        }
+        if(!elemento.equals(nuevoElemento)){
+            throw new IllegalArgumentException();
+        }
+        index.replace(id, nuevoElemento);
     }
 
     /** Devuelve una copia inmutable del conjunto. */
     public java.util.Set<Vehiculo> listar() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return Set.copyOf(index.values());
     }
 
     public int tamanio() {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        return index.size();
     }
+    
     private void validar(Vehiculo elemento) {
         if (elemento == null) {
             throw new IllegalArgumentException("El vehiculo no puede ser nulo");

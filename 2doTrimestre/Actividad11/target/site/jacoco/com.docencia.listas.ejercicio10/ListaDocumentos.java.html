@@ -3,6 +3,7 @@
  * @version 1.0.0
  * @brief ejercicios evaluables 3.3
  */
+
 package com.docencia.listas.ejercicio10;
 
 import java.util.ArrayList;
@@ -20,72 +21,72 @@ import com.docencia.herencia.ejercicio10.Documento;
  * - No se permiten documentos con titulo nulo o en blanco.
  * - No se permiten ids nulos ni duplicados dentro de la lista.
  */
-<span class="fc" id="L23">public class ListaDocumentos {</span>
+<span class="fc" id="L24">public class ListaDocumentos {</span>
 
-<span class="fc" id="L25">    private final List&lt;Documento&gt; documentos = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L26">    private final List&lt;Documento&gt; documentos = new ArrayList&lt;&gt;();</span>
 
     public void anadir(Documento documento) {
-<span class="fc" id="L28">        validar(documento);</span>
-<span class="fc bfc" id="L29" title="All 2 branches covered.">        if(documentos.contains(documento)){</span>
-<span class="fc" id="L30">            throw new IllegalArgumentException();</span>
+<span class="fc" id="L29">        validar(documento);</span>
+<span class="fc bfc" id="L30" title="All 2 branches covered.">        if(documentos.contains(documento)){</span>
+<span class="fc" id="L31">            throw new IllegalArgumentException();</span>
         }
-<span class="fc" id="L32">        documentos.add(documento);</span>
-<span class="fc" id="L33">    }</span>
+<span class="fc" id="L33">        documentos.add(documento);</span>
+<span class="fc" id="L34">    }</span>
 
     public Documento buscarPorId(UUID id) {
-<span class="fc bfc" id="L36" title="All 2 branches covered.">        if(id == null){</span>
-<span class="fc" id="L37">            throw new IllegalArgumentException();</span>
+<span class="fc bfc" id="L37" title="All 2 branches covered.">        if(id == null){</span>
+<span class="fc" id="L38">            throw new IllegalArgumentException();</span>
         }
-<span class="fc bfc" id="L39" title="All 2 branches covered.">        for (Documento documento : documentos) {</span>
-<span class="pc bpc" id="L40" title="1 of 2 branches missed.">            if(documento.getId().equals(id)){</span>
-<span class="fc" id="L41">                return documento;</span>
+<span class="fc bfc" id="L40" title="All 2 branches covered.">        for (Documento documento : documentos) {</span>
+<span class="pc bpc" id="L41" title="1 of 2 branches missed.">            if(documento.getId().equals(id)){</span>
+<span class="fc" id="L42">                return documento;</span>
             }
-<span class="nc" id="L43">        }</span>
-<span class="fc" id="L44">        return null;</span>
+<span class="nc" id="L44">        }</span>
+<span class="fc" id="L45">        return null;</span>
     }
 
     public boolean eliminarPorId(UUID id) {
-<span class="fc bfc" id="L48" title="All 2 branches covered.">        if(id == null){</span>
-<span class="fc" id="L49">            throw new IllegalArgumentException();</span>
+<span class="fc bfc" id="L49" title="All 2 branches covered.">        if(id == null){</span>
+<span class="fc" id="L50">            throw new IllegalArgumentException();</span>
         }
-<span class="fc" id="L51">        return documentos.removeIf(doc -&gt; doc.getId().equals(id));</span>
+<span class="fc" id="L52">        return documentos.removeIf(doc -&gt; doc.getId().equals(id));</span>
     }
 
     public void modificar(UUID id, Documento nuevoDocumento) {
-<span class="fc" id="L55">        validar(nuevoDocumento);</span>
-<span class="fc" id="L56">        Documento existente = buscarPorId(id);</span>
-<span class="fc bfc" id="L57" title="All 2 branches covered.">        if(existente == null){</span>
-<span class="fc" id="L58">            throw new NoSuchElementException();</span>
+<span class="fc" id="L56">        validar(nuevoDocumento);</span>
+<span class="fc" id="L57">        Documento existente = buscarPorId(id);</span>
+<span class="fc bfc" id="L58" title="All 2 branches covered.">        if(existente == null){</span>
+<span class="fc" id="L59">            throw new NoSuchElementException();</span>
         }
-<span class="fc bfc" id="L60" title="All 2 branches covered.">        if(!existente.equals(nuevoDocumento)){</span>
-<span class="fc" id="L61">            throw new IllegalArgumentException();</span>
+<span class="fc bfc" id="L61" title="All 2 branches covered.">        if(!existente.equals(nuevoDocumento)){</span>
+<span class="fc" id="L62">            throw new IllegalArgumentException();</span>
         }
-<span class="fc" id="L63">        int indice = documentos.indexOf(existente);</span>
-<span class="fc" id="L64">        documentos.set(indice, nuevoDocumento);</span>
-<span class="fc" id="L65">    }</span>
+<span class="fc" id="L64">        int indice = documentos.indexOf(existente);</span>
+<span class="fc" id="L65">        documentos.set(indice, nuevoDocumento);</span>
+<span class="fc" id="L66">    }</span>
 
     public List&lt;Documento&gt; listar() {
-<span class="fc" id="L68">        return List.copyOf(documentos);</span>
+<span class="fc" id="L69">        return List.copyOf(documentos);</span>
     }
 
     public int tamanio() {
-<span class="fc" id="L72">        return documentos.size();</span>
+<span class="fc" id="L73">        return documentos.size();</span>
     }
 
     private boolean existeId(UUID id) {
-<span class="nc" id="L76">        return documentos.stream().anyMatch(d -&gt; d.getId().equals(id));</span>
+<span class="nc" id="L77">        return documentos.stream().anyMatch(d -&gt; d.getId().equals(id));</span>
     }
 
     private void validar(Documento documento) {
-<span class="fc bfc" id="L80" title="All 2 branches covered.">        if (documento == null) {</span>
-<span class="fc" id="L81">            throw new IllegalArgumentException(&quot;El documento no puede ser nulo&quot;);</span>
+<span class="fc bfc" id="L81" title="All 2 branches covered.">        if (documento == null) {</span>
+<span class="fc" id="L82">            throw new IllegalArgumentException(&quot;El documento no puede ser nulo&quot;);</span>
         }
-<span class="pc bpc" id="L83" title="1 of 2 branches missed.">        if (documento.getId() == null) {</span>
-<span class="nc" id="L84">            throw new IllegalArgumentException(&quot;El id no puede ser nulo&quot;);</span>
+<span class="pc bpc" id="L84" title="1 of 2 branches missed.">        if (documento.getId() == null) {</span>
+<span class="nc" id="L85">            throw new IllegalArgumentException(&quot;El id no puede ser nulo&quot;);</span>
         }
-<span class="pc bpc" id="L86" title="1 of 4 branches missed.">        if (documento.getTitulo() == null || documento.getTitulo().isBlank()) {</span>
-<span class="fc" id="L87">            throw new IllegalArgumentException(&quot;El titulo no puede ser nulo o en blanco&quot;);</span>
+<span class="pc bpc" id="L87" title="1 of 4 branches missed.">        if (documento.getTitulo() == null || documento.getTitulo().isBlank()) {</span>
+<span class="fc" id="L88">            throw new IllegalArgumentException(&quot;El titulo no puede ser nulo o en blanco&quot;);</span>
         }
-<span class="fc" id="L89">    }</span>
+<span class="fc" id="L90">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

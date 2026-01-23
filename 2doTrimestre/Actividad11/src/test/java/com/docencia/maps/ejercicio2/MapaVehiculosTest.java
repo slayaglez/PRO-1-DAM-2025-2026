@@ -1,17 +1,18 @@
 package com.docencia.maps.ejercicio2;
 
-import com.docencia.herencia.ejercicio2.Vehiculo;
-import com.docencia.herencia.ejercicio2.Coche;
-import com.docencia.herencia.ejercicio2.Motocicleta;
-
-import org.junit.jupiter.api.Test;
-
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.NoSuchElementException;
 import java.util.UUID;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
+
+import com.docencia.herencia.ejercicio2.Coche;
+import com.docencia.herencia.ejercicio2.Vehiculo;
 
 public class MapaVehiculosTest {
 
@@ -20,7 +21,7 @@ public class MapaVehiculosTest {
     }
 
     private Vehiculo nuevoB(UUID id) {
-        return new Motocicleta(id, "Honda", "CBR", true);
+        return new Coche(id, "Honda", "CBR", 5);
     }
 
     private Vehiculo invalido(UUID id) {

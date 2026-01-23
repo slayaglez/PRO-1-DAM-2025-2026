@@ -1,23 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.sets.ejercicio7.ConjuntoDispositivosTest
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.011 s <<< FAILURE! -- in com.docencia.sets.ejercicio7.ConjuntoDispositivosTest
-com.docencia.sets.ejercicio7.ConjuntoDispositivosTest.modificarOkTest -- Time elapsed: 0.001 s <<< ERROR!
-java.lang.IllegalArgumentException: El id no puede ser distinto
-	at com.docencia.sets.ejercicio7.ConjuntoDispositivos.modificar(ConjuntoDispositivos.java:57)
-	at com.docencia.sets.ejercicio7.ConjuntoDispositivosTest.modificarOkTest(ConjuntoDispositivosTest.java:88)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-com.docencia.sets.ejercicio7.ConjuntoDispositivosTest.anadirDuplicadoIdTest -- Time elapsed: 0.001 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
-	at com.docencia.sets.ejercicio7.ConjuntoDispositivosTest.anadirDuplicadoIdTest(ConjuntoDispositivosTest.java:57)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s -- in com.docencia.sets.ejercicio7.ConjuntoDispositivosTest

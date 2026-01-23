@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.docencia.maps.ejercicio4.MapaAnimalesTest" time="0.031" tests="10" errors="5" skipped="0" failures="4">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.docencia.maps.ejercicio4.MapaAnimalesTest" time="0.026" tests="10" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/dam/Escritorio/Programacion/2doTrimestre/Actividad11/target/surefire/surefirebooter-20260122151146499_3.jar /home/dam/Escritorio/Programacion/2doTrimestre/Actividad11/target/surefire 2026-01-22T15-11-46_381-jvmRun1 surefire-20260122151146499_1tmp surefire_0-20260122151146499_2tmp"/>
+    <property name="sun.java.command" value="/home/dam/Escritorio/Programacion/2doTrimestre/Actividad11/target/surefire/surefirebooter-20260122193406832_3.jar /home/dam/Escritorio/Programacion/2doTrimestre/Actividad11/target/surefire 2026-01-22T19-34-06_747-jvmRun1 surefire-20260122193406832_1tmp surefire_0-20260122193406832_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/dam/Escritorio/Programacion/2doTrimestre/Actividad11/target/test-classes:/home/dam/Escritorio/Programacion/2doTrimestre/Actividad11/target/classes:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/dam/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/dam/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/dam/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/dam/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/dam/Escritorio/Programacion/2doTrimestre/Actividad11/target/surefire/surefirebooter-20260122151146499_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/dam/Escritorio/Programacion/2doTrimestre/Actividad11/target/surefire/surefirebooter-20260122193406832_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.15+6-Ubuntu-0ubuntu124.04"/>
     <property name="user.name" value="dam"/>
@@ -52,118 +52,14 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="buscarPorIdOkTest" classname="com.docencia.maps.ejercicio4.MapaAnimalesTest" time="0.002">
-    <error message="El metodo no esta implementado" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.maps.ejercicio4.MapaAnimales.anadir(MapaAnimales.java:23)
-	at com.docencia.maps.ejercicio4.MapaAnimalesTest.buscarPorIdOkTest(MapaAnimalesTest.java:64)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-  </testcase>
-  <testcase name="modificarOkTest" classname="com.docencia.maps.ejercicio4.MapaAnimalesTest" time="0.001">
-    <error message="El metodo no esta implementado" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.maps.ejercicio4.MapaAnimales.anadir(MapaAnimales.java:23)
-	at com.docencia.maps.ejercicio4.MapaAnimalesTest.modificarOkTest(MapaAnimalesTest.java:87)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-  </testcase>
-  <testcase name="claseDocumentadaTest" classname="com.docencia.maps.ejercicio4.MapaAnimalesTest" time="0.001"/>
-  <testcase name="anadirNullTest" classname="com.docencia.maps.ejercicio4.MapaAnimalesTest" time="0.003">
-    <failure message="Unexpected exception type thrown, expected: &lt;java.lang.IllegalArgumentException&gt; but was: &lt;java.lang.UnsupportedOperationException&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
-	at com.docencia.maps.ejercicio4.MapaAnimalesTest.anadirNullTest(MapaAnimalesTest.java:42)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.maps.ejercicio4.MapaAnimales.anadir(MapaAnimales.java:23)
-	at com.docencia.maps.ejercicio4.MapaAnimalesTest.lambda$anadirNullTest$0(MapaAnimalesTest.java:42)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
-	... 6 more
-]]></failure>
-  </testcase>
-  <testcase name="anadirDuplicadoIdTest" classname="com.docencia.maps.ejercicio4.MapaAnimalesTest" time="0.001">
-    <error message="El metodo no esta implementado" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.maps.ejercicio4.MapaAnimales.anadir(MapaAnimales.java:23)
-	at com.docencia.maps.ejercicio4.MapaAnimalesTest.anadirDuplicadoIdTest(MapaAnimalesTest.java:56)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-  </testcase>
-  <testcase name="buscarPorIdNullTest" classname="com.docencia.maps.ejercicio4.MapaAnimalesTest" time="0.002">
-    <failure message="Unexpected exception type thrown, expected: &lt;java.lang.IllegalArgumentException&gt; but was: &lt;java.lang.UnsupportedOperationException&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
-	at com.docencia.maps.ejercicio4.MapaAnimalesTest.buscarPorIdNullTest(MapaAnimalesTest.java:71)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.maps.ejercicio4.MapaAnimales.buscarPorId(MapaAnimales.java:28)
-	at com.docencia.maps.ejercicio4.MapaAnimalesTest.lambda$buscarPorIdNullTest$3(MapaAnimalesTest.java:71)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
-	... 6 more
-]]></failure>
-  </testcase>
-  <testcase name="anadirOkTest" classname="com.docencia.maps.ejercicio4.MapaAnimalesTest" time="0.001">
-    <error message="El metodo no esta implementado" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.maps.ejercicio4.MapaAnimales.anadir(MapaAnimales.java:23)
-	at com.docencia.maps.ejercicio4.MapaAnimalesTest.anadirOkTest(MapaAnimalesTest.java:34)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-  </testcase>
-  <testcase name="anadirInvalidTest" classname="com.docencia.maps.ejercicio4.MapaAnimalesTest" time="0.008">
-    <failure message="Unexpected exception type thrown, expected: &lt;java.lang.IllegalArgumentException&gt; but was: &lt;java.lang.UnsupportedOperationException&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
-	at com.docencia.maps.ejercicio4.MapaAnimalesTest.anadirInvalidTest(MapaAnimalesTest.java:49)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.maps.ejercicio4.MapaAnimales.anadir(MapaAnimales.java:23)
-	at com.docencia.maps.ejercicio4.MapaAnimalesTest.lambda$anadirInvalidTest$1(MapaAnimalesTest.java:49)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
-	... 6 more
-]]></failure>
-  </testcase>
-  <testcase name="eliminarPorIdOkTest" classname="com.docencia.maps.ejercicio4.MapaAnimalesTest" time="0.001">
-    <error message="El metodo no esta implementado" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.maps.ejercicio4.MapaAnimales.anadir(MapaAnimales.java:23)
-	at com.docencia.maps.ejercicio4.MapaAnimalesTest.eliminarPorIdOkTest(MapaAnimalesTest.java:78)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-  </testcase>
-  <testcase name="modificarNoExisteTest" classname="com.docencia.maps.ejercicio4.MapaAnimalesTest" time="0.004">
-    <failure message="Unexpected exception type thrown, expected: &lt;java.util.NoSuchElementException&gt; but was: &lt;java.lang.UnsupportedOperationException&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.util.NoSuchElementException> but was: <java.lang.UnsupportedOperationException>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
-	at com.docencia.maps.ejercicio4.MapaAnimalesTest.modificarNoExisteTest(MapaAnimalesTest.java:97)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.UnsupportedOperationException: El metodo no esta implementado
-	at com.docencia.maps.ejercicio4.MapaAnimales.modificar(MapaAnimales.java:37)
-	at com.docencia.maps.ejercicio4.MapaAnimalesTest.lambda$modificarNoExisteTest$4(MapaAnimalesTest.java:97)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
-	... 6 more
-]]></failure>
-  </testcase>
+  <testcase name="buscarPorIdOkTest" classname="com.docencia.maps.ejercicio4.MapaAnimalesTest" time="0.0"/>
+  <testcase name="modificarOkTest" classname="com.docencia.maps.ejercicio4.MapaAnimalesTest" time="0.001"/>
+  <testcase name="claseDocumentadaTest" classname="com.docencia.maps.ejercicio4.MapaAnimalesTest" time="0.006"/>
+  <testcase name="anadirNullTest" classname="com.docencia.maps.ejercicio4.MapaAnimalesTest" time="0.0"/>
+  <testcase name="anadirDuplicadoIdTest" classname="com.docencia.maps.ejercicio4.MapaAnimalesTest" time="0.0"/>
+  <testcase name="buscarPorIdNullTest" classname="com.docencia.maps.ejercicio4.MapaAnimalesTest" time="0.004"/>
+  <testcase name="anadirOkTest" classname="com.docencia.maps.ejercicio4.MapaAnimalesTest" time="0.0"/>
+  <testcase name="anadirInvalidTest" classname="com.docencia.maps.ejercicio4.MapaAnimalesTest" time="0.0"/>
+  <testcase name="eliminarPorIdOkTest" classname="com.docencia.maps.ejercicio4.MapaAnimalesTest" time="0.0"/>
+  <testcase name="modificarNoExisteTest" classname="com.docencia.maps.ejercicio4.MapaAnimalesTest" time="0.001"/>
 </testsuite>

@@ -1,17 +1,18 @@
 package com.docencia.maps.ejercicio1;
 
-import com.docencia.herencia.ejercicio1.Persona;
-import com.docencia.herencia.ejercicio1.Alumno;
-import com.docencia.herencia.ejercicio1.Profesor;
-
-import org.junit.jupiter.api.Test;
-
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.NoSuchElementException;
 import java.util.UUID;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
+
+import com.docencia.herencia.ejercicio1.Alumno;
+import com.docencia.herencia.ejercicio1.Persona;
 
 public class MapaPersonasTest {
 
@@ -20,7 +21,7 @@ public class MapaPersonasTest {
     }
 
     private Persona nuevoB(UUID id) {
-        return new Profesor(id, "Luis", 40, "Matematicas");
+        return new Alumno(id, "Luis", 40, "A2");
     }
 
     private Persona invalido(UUID id) {

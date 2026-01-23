@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/dam/Escritorio/Programacion/2doTrimestre/Actividad11/target/surefire/surefirebooter-20260122151146499_3.jar /home/dam/Escritorio/Programacion/2doTrimestre/Actividad11/target/surefire 2026-01-22T15-11-46_381-jvmRun1 surefire-20260122151146499_1tmp surefire_0-20260122151146499_2tmp"/>
+    <property name="sun.java.command" value="/home/dam/Escritorio/Programacion/2doTrimestre/Actividad11/target/surefire/surefirebooter-20260122193406832_3.jar /home/dam/Escritorio/Programacion/2doTrimestre/Actividad11/target/surefire 2026-01-22T19-34-06_747-jvmRun1 surefire-20260122193406832_1tmp surefire_0-20260122193406832_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/dam/Escritorio/Programacion/2doTrimestre/Actividad11/target/test-classes:/home/dam/Escritorio/Programacion/2doTrimestre/Actividad11/target/classes:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/dam/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/dam/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/dam/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/dam/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/dam/Escritorio/Programacion/2doTrimestre/Actividad11/target/surefire/surefirebooter-20260122151146499_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/dam/Escritorio/Programacion/2doTrimestre/Actividad11/target/surefire/surefirebooter-20260122193406832_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.15+6-Ubuntu-0ubuntu124.04"/>
     <property name="user.name" value="dam"/>
@@ -52,12 +52,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="idsDiferentesParaInstanciasDistintas" classname="com.docencia.interfaces.ejercicio6.UsuarioTest" time="0.002"/>
-  <testcase name="toStringContieneClaseEId" classname="com.docencia.interfaces.ejercicio6.UsuarioTest" time="0.0"/>
-  <testcase name="equalsIdDistintoEsFalse" classname="com.docencia.interfaces.ejercicio6.UsuarioTest" time="0.0"/>
-  <testcase name="constructorAsignaCampos" classname="com.docencia.interfaces.ejercicio6.UsuarioTest" time="0.001"/>
-  <testcase name="documentacionPresenteEnClase" classname="com.docencia.interfaces.ejercicio6.UsuarioTest" time="0.001"/>
-  <testcase name="idSeAutogeneraSiEsNull" classname="com.docencia.interfaces.ejercicio6.UsuarioTest" time="0.001"/>
+  <testcase name="idsDiferentesParaInstanciasDistintas" classname="com.docencia.interfaces.ejercicio6.UsuarioTest" time="0.001"/>
+  <testcase name="toStringContieneClaseEId" classname="com.docencia.interfaces.ejercicio6.UsuarioTest" time="0.001"/>
+  <testcase name="equalsIdDistintoEsFalse" classname="com.docencia.interfaces.ejercicio6.UsuarioTest" time="0.001"/>
+  <testcase name="constructorAsignaCampos" classname="com.docencia.interfaces.ejercicio6.UsuarioTest" time="0.0"/>
+  <testcase name="documentacionPresenteEnClase" classname="com.docencia.interfaces.ejercicio6.UsuarioTest" time="0.0"/>
+  <testcase name="idSeAutogeneraSiEsNull" classname="com.docencia.interfaces.ejercicio6.UsuarioTest" time="0.0"/>
   <testcase name="implementaInterfazYEjecutaMetodo" classname="com.docencia.interfaces.ejercicio6.UsuarioTest" time="0.001"/>
   <testcase name="equalsMismoIdEsTrue" classname="com.docencia.interfaces.ejercicio6.UsuarioTest" time="0.001"/>
 </testsuite>

@@ -1,17 +1,18 @@
 package com.docencia.maps.ejercicio3;
 
-import com.docencia.herencia.ejercicio3.Empleado;
-import com.docencia.herencia.ejercicio3.Desarrollador;
-import com.docencia.herencia.ejercicio3.Gerente;
-
-import org.junit.jupiter.api.Test;
-
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.NoSuchElementException;
 import java.util.UUID;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
+
+import com.docencia.herencia.ejercicio3.Desarrollador;
+import com.docencia.herencia.ejercicio3.Empleado;
 
 public class MapaEmpleadosTest {
 
@@ -20,7 +21,7 @@ public class MapaEmpleadosTest {
     }
 
     private Empleado nuevoB(UUID id) {
-        return new Gerente(id, "Pablo", 2000.0, 5);
+        return new Desarrollador(id, "Pablo", 2000.0, "Python");
     }
 
     private Empleado invalido(UUID id) {

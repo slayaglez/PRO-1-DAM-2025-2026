@@ -1,11 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MapaPagos.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Herencia/Interfaces/List/Set/Map - 10 ejercicios</a> &gt; <a href="index.source.html" class="el_package">com.docencia.maps.ejercicio8</a> &gt; <span class="el_source">MapaPagos.java</span></div><h1>MapaPagos.java</h1><pre class="source lang-java linenums">package com.docencia.maps.ejercicio8;
-
-import com.docencia.herencia.ejercicio8.Pago;
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MapaPagos.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Herencia/Interfaces/List/Set/Map - 10 ejercicios</a> &gt; <a href="index.source.html" class="el_package">com.docencia.maps.ejercicio8</a> &gt; <span class="el_source">MapaPagos.java</span></div><h1>MapaPagos.java</h1><pre class="source lang-java linenums">/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief ejercicios evaluables 3.3
+ */
+package com.docencia.maps.ejercicio8;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.NoSuchElementException;
+import java.util.Set;
 import java.util.UUID;
+
+import com.docencia.herencia.ejercicio8.Pago;
 
 /**
  * Gestiona un mapa de {@link Pago} usando internamente {@link HashMap}.
@@ -15,47 +21,63 @@ import java.util.UUID;
  * - No se permiten elementos con campos &quot;vacios&quot; segun la validacion del ejercicio.
  * - No se permiten ids nulos ni duplicados.
  */
-<span class="fc" id="L18">public class MapaPagos {</span>
-<span class="fc" id="L19">    private final Map&lt;UUID, Pago&gt; index = new HashMap&lt;&gt;();</span>
+<span class="fc" id="L24">public class MapaPagos {</span>
+<span class="fc" id="L25">    private final Map&lt;UUID, Pago&gt; index = new HashMap&lt;&gt;();</span>
 
     /** Anad... un elemento a la coleccion. */
     public void anadir(Pago elemento) {
-<span class="fc" id="L23">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
-    }
+<span class="fc" id="L29">        validar(elemento);</span>
+<span class="fc bfc" id="L30" title="All 2 branches covered.">        if(index.containsValue(elemento)){</span>
+<span class="fc" id="L31">            throw new IllegalArgumentException(&quot;Ya existe&quot;);</span>
+        }
+<span class="fc" id="L33">        index.put(elemento.getId(), elemento);</span>
+<span class="fc" id="L34">    }</span>
 
     /** Busca por id. */
     public Pago buscarPorId(UUID id) {
-<span class="fc" id="L28">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
+<span class="fc bfc" id="L38" title="All 2 branches covered.">        if(id == null){</span>
+<span class="fc" id="L39">            throw new IllegalArgumentException(&quot;id nulo&quot;);</span>
+        }
+<span class="fc" id="L41">        return index.get(id);</span>
     }
     /** Elimina por id. */
     public boolean eliminarPorId(UUID id) {
-<span class="nc" id="L32">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
+<span class="pc bpc" id="L45" title="1 of 2 branches missed.">        return index.remove(id) != null;</span>
     }
 
     /** Reemplaza el elemento con ese id por otro (mismo id). */
     public void modificar(UUID id, Pago nuevoElemento) {
-<span class="fc" id="L37">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
-    }
+<span class="fc" id="L50">        validar(nuevoElemento);</span>
+<span class="fc" id="L51">        Pago elemento = buscarPorId(id);</span>
+<span class="fc bfc" id="L52" title="All 2 branches covered.">        if(elemento == null){</span>
+<span class="fc" id="L53">            throw new NoSuchElementException(&quot;me copié de sebas&quot;);</span>
+        }
+<span class="pc bpc" id="L55" title="1 of 2 branches missed.">        if(!elemento.equals(nuevoElemento)){</span>
+<span class="nc" id="L56">            throw new IllegalArgumentException();</span>
+        }
+<span class="fc" id="L58">        index.replace(id, nuevoElemento);</span>
+<span class="fc" id="L59">    }</span>
 
     /** Devuelve una copia inmutable del conjunto. */
     public java.util.Set&lt;Pago&gt; listar() {
-<span class="nc" id="L42">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
+<span class="nc" id="L63">        return Set.copyOf(index.values());</span>
     }
 
     public int tamanio() {
-<span class="nc" id="L46">        throw new UnsupportedOperationException(&quot;El metodo no esta implementado&quot;);</span>
+<span class="fc" id="L67">        return index.size();</span>
     }
+    
     private void validar(Pago elemento) {
-<span class="nc bnc" id="L49" title="All 2 branches missed.">        if (elemento == null) {</span>
-<span class="nc" id="L50">            throw new IllegalArgumentException(&quot;El pago no puede ser nulo&quot;);</span>
+<span class="fc bfc" id="L71" title="All 2 branches covered.">        if (elemento == null) {</span>
+<span class="fc" id="L72">            throw new IllegalArgumentException(&quot;El pago no puede ser nulo&quot;);</span>
         }
-<span class="nc bnc" id="L52" title="All 2 branches missed.">        if (elemento.getId() == null) {</span>
-<span class="nc" id="L53">            throw new IllegalArgumentException(&quot;El id no puede ser nulo&quot;);</span>
+<span class="pc bpc" id="L74" title="1 of 2 branches missed.">        if (elemento.getId() == null) {</span>
+<span class="nc" id="L75">            throw new IllegalArgumentException(&quot;El id no puede ser nulo&quot;);</span>
         }
-<span class="nc bnc" id="L55" title="All 2 branches missed.">        if (elemento.getImporte() &lt;= 0) {</span>
-<span class="nc" id="L56">            throw new IllegalArgumentException(&quot;El importe debe ser mayor que cero&quot;);</span>
+<span class="fc bfc" id="L77" title="All 2 branches covered.">        if (elemento.getImporte() &lt;= 0) {</span>
+<span class="fc" id="L78">            throw new IllegalArgumentException(&quot;El importe debe ser mayor que cero&quot;);</span>
         }
-<span class="nc" id="L58">    }</span>
+<span class="fc" id="L80">    }</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

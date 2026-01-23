@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class MapaPagosTest {
 
     private Pago nuevoA(UUID id) {
-        return new PagoTarjeta(id, 50.0, "4111111111111111");
+        return new PagoEfectivo(id, 50.0, false);
     }
 
     private Pago nuevoB(UUID id) {

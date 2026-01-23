@@ -1,7 +1,14 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief ejercicios evaluables 3.3
+ */
 package com.docencia.maps.ejercicio1;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.NoSuchElementException;
+import java.util.Set;
 import java.util.UUID;
 
 import com.docencia.herencia.ejercicio1.Persona;
@@ -31,7 +38,7 @@ public class MapaPersonas {
         if(id == null){
             throw new IllegalArgumentException("id nulo");
         }
-        return null; //TODO
+        return index.get(id);
     }
     /** Elimina por id. */
     public boolean eliminarPorId(UUID id) {
@@ -40,17 +47,26 @@ public class MapaPersonas {
 
     /** Reemplaza el elemento con ese id por otro (mismo id). */
     public void modificar(UUID id, Persona nuevoElemento) {
-        throw new UnsupportedOperationException("El metodo no esta implementado");
+        validar(nuevoElemento);
+        Persona elemento = buscarPorId(id);
+        if(elemento == null){
+            throw new NoSuchElementException("me copié de sebas");
+        }
+        if(!elemento.equals(nuevoElemento)){
+            throw new IllegalArgumentException();
+        }
+        index.replace(id, nuevoElemento);
     }
 
     /** Devuelve una copia inmutable del conjunto. */
     public java.util.Set<Persona> listar() {
-        return null;
+        return Set.copyOf(index.values());
     }
 
     public int tamanio() {
         return index.size();
     }
+    
     private void validar(Persona elemento) {
         if (elemento == null) {
             throw new IllegalArgumentException("La persona no puede ser nula");
