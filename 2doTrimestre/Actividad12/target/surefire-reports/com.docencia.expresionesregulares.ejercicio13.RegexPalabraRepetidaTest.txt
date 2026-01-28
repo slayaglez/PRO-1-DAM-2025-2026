@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.expresionesregulares.ejercicio13.RegexPalabraRepetidaTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.010 s <<< FAILURE! -- in com.docencia.expresionesregulares.ejercicio13.RegexPalabraRepetidaTest
+com.docencia.expresionesregulares.ejercicio13.RegexPalabraRepetidaTest.debeDetectarRepeticion -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio13.RegexPalabraRepetida.contieneRepeticion(RegexPalabraRepetida.java:14)
+	at com.docencia.expresionesregulares.ejercicio13.RegexPalabraRepetidaTest.debeDetectarRepeticion(RegexPalabraRepetidaTest.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.expresionesregulares.ejercicio13.RegexPalabraRepetidaTest.noDebeDetectarSiNoHayRepeticion -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio13.RegexPalabraRepetida.contieneRepeticion(RegexPalabraRepetida.java:14)
+	at com.docencia.expresionesregulares.ejercicio13.RegexPalabraRepetidaTest.noDebeDetectarSiNoHayRepeticion(RegexPalabraRepetidaTest.java:20)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.expresionesregulares.ejercicio13.RegexPalabraRepetidaTest.primeraRepetidaDebeDevolverPalabra -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio13.RegexPalabraRepetida.primeraRepetida(RegexPalabraRepetida.java:19)
+	at com.docencia.expresionesregulares.ejercicio13.RegexPalabraRepetidaTest.primeraRepetidaDebeDevolverPalabra(RegexPalabraRepetidaTest.java:25)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.expresionesregulares.ejercicio13.RegexPalabraRepetidaTest.patronNoDebeSerNulo -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio13.RegexPalabraRepetida.patron(RegexPalabraRepetida.java:24)
+	at com.docencia.expresionesregulares.ejercicio13.RegexPalabraRepetidaTest.patronNoDebeSerNulo(RegexPalabraRepetidaTest.java:10)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.expresionesregulares.ejercicio13.RegexPalabraRepetidaTest.primeraRepetidaDebeSerNullSiNoHay -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio13.RegexPalabraRepetida.primeraRepetida(RegexPalabraRepetida.java:19)
+	at com.docencia.expresionesregulares.ejercicio13.RegexPalabraRepetidaTest.primeraRepetidaDebeSerNullSiNoHay(RegexPalabraRepetidaTest.java:30)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

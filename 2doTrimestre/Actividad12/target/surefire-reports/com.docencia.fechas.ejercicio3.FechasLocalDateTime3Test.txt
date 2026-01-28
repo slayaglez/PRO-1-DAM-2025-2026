@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.fechas.ejercicio3.FechasLocalDateTime3Test
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.019 s <<< FAILURE! -- in com.docencia.fechas.ejercicio3.FechasLocalDateTime3Test
+com.docencia.fechas.ejercicio3.FechasLocalDateTime3Test.esAntesDebeSerFalseSiIgual -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio3.FechasLocalDateTime3.esAntes(FechasLocalDateTime3.java:23)
+	at com.docencia.fechas.ejercicio3.FechasLocalDateTime3Test.esAntesDebeSerFalseSiIgual(FechasLocalDateTime3Test.java:40)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio3.FechasLocalDateTime3Test.combinarDebeCrearLocalDateTime -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio3.FechasLocalDateTime3.combinar(FechasLocalDateTime3.java:13)
+	at com.docencia.fechas.ejercicio3.FechasLocalDateTime3Test.combinarDebeCrearLocalDateTime(FechasLocalDateTime3Test.java:13)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio3.FechasLocalDateTime3Test.esAntesDebeDetectarOrden -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio3.FechasLocalDateTime3.esAntes(FechasLocalDateTime3.java:23)
+	at com.docencia.fechas.ejercicio3.FechasLocalDateTime3Test.esAntesDebeDetectarOrden(FechasLocalDateTime3Test.java:33)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio3.FechasLocalDateTime3Test.sumarHorasDebeAvanzar -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio3.FechasLocalDateTime3.sumarHoras(FechasLocalDateTime3.java:18)
+	at com.docencia.fechas.ejercicio3.FechasLocalDateTime3Test.sumarHorasDebeAvanzar(FechasLocalDateTime3Test.java:20)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio3.FechasLocalDateTime3Test.sumarHorasDebeCambiarDia -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio3.FechasLocalDateTime3.sumarHoras(FechasLocalDateTime3.java:18)
+	at com.docencia.fechas.ejercicio3.FechasLocalDateTime3Test.sumarHorasDebeCambiarDia(FechasLocalDateTime3Test.java:27)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

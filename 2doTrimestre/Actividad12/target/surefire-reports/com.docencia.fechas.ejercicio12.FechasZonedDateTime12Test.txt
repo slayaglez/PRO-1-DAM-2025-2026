@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.fechas.ejercicio12.FechasZonedDateTime12Test
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.015 s <<< FAILURE! -- in com.docencia.fechas.ejercicio12.FechasZonedDateTime12Test
+com.docencia.fechas.ejercicio12.FechasZonedDateTime12Test.ahoraEnNoDebeSerNull -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio12.FechasZonedDateTime12.ahoraEn(FechasZonedDateTime12.java:12)
+	at com.docencia.fechas.ejercicio12.FechasZonedDateTime12Test.ahoraEnNoDebeSerNull(FechasZonedDateTime12Test.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio12.FechasZonedDateTime12Test.cambiarZonaDebeMantenerInstante -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio12.FechasZonedDateTime12.cambiarZona(FechasZonedDateTime12.java:17)
+	at com.docencia.fechas.ejercicio12.FechasZonedDateTime12Test.cambiarZonaDebeMantenerInstante(FechasZonedDateTime12Test.java:18)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio12.FechasZonedDateTime12Test.cambiarZonaDebeCambiarZoneId -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio12.FechasZonedDateTime12.cambiarZona(FechasZonedDateTime12.java:17)
+	at com.docencia.fechas.ejercicio12.FechasZonedDateTime12Test.cambiarZonaDebeCambiarZoneId(FechasZonedDateTime12Test.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio12.FechasZonedDateTime12Test.offsetHorasDebeSerConsistenteConOffset -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio12.FechasZonedDateTime12.offsetHoras(FechasZonedDateTime12.java:22)
+	at com.docencia.fechas.ejercicio12.FechasZonedDateTime12Test.offsetHorasDebeSerConsistenteConOffset(FechasZonedDateTime12Test.java:38)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio12.FechasZonedDateTime12Test.offsetHorasUtcDebeSerCero -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio12.FechasZonedDateTime12.offsetHoras(FechasZonedDateTime12.java:22)
+	at com.docencia.fechas.ejercicio12.FechasZonedDateTime12Test.offsetHorasUtcDebeSerCero(FechasZonedDateTime12Test.java:25)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

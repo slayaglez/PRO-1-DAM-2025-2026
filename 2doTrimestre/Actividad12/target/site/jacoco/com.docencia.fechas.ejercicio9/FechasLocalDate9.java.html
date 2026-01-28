@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FechasLocalDate9.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">enumerados</a> &gt; <a href="index.source.html" class="el_package">com.docencia.fechas.ejercicio9</a> &gt; <span class="el_source">FechasLocalDate9.java</span></div><h1>FechasLocalDate9.java</h1><pre class="source lang-java linenums">package com.docencia.fechas.ejercicio9;
+
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+
+public final class FechasLocalDate9 {
+
+  private FechasLocalDate9() {}
+
+  public static DayOfWeek diaSemana(LocalDate d) {
+    // TODO: implementar este metodo
+<span class="fc" id="L12">    throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
+  }
+
+  public static boolean esFinDeSemana(LocalDate d) {
+    // TODO: implementar este metodo
+<span class="fc" id="L17">    throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
+  }
+
+  public static LocalDate siguienteLunes(LocalDate d) {
+<span class="fc" id="L21">    LocalDate x = d;</span>
+<span class="fc bfc" id="L22" title="All 2 branches covered.">    while (x.getDayOfWeek() != DayOfWeek.MONDAY) {</span>
+<span class="fc" id="L23">      x = x.plusDays(1);</span>
+    }
+<span class="fc" id="L25">    return x;</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

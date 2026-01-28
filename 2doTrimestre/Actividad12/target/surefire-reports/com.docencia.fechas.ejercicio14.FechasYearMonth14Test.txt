@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.fechas.ejercicio14.FechasYearMonth14Test
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.014 s <<< FAILURE! -- in com.docencia.fechas.ejercicio14.FechasYearMonth14Test
+com.docencia.fechas.ejercicio14.FechasYearMonth14Test.sumarMesesDebeAceptarNegativos -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio14.FechasYearMonth14.sumarMeses(FechasYearMonth14.java:22)
+	at com.docencia.fechas.ejercicio14.FechasYearMonth14Test.sumarMesesDebeAceptarNegativos(FechasYearMonth14Test.java:35)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio14.FechasYearMonth14Test.sumarMesesDebeAvanzar -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio14.FechasYearMonth14.sumarMeses(FechasYearMonth14.java:22)
+	at com.docencia.fechas.ejercicio14.FechasYearMonth14Test.sumarMesesDebeAvanzar(FechasYearMonth14Test.java:29)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio14.FechasYearMonth14Test.ultimoDiaFebreroBisiestoDebeSer29 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio14.FechasYearMonth14.ultimoDia(FechasYearMonth14.java:12)
+	at com.docencia.fechas.ejercicio14.FechasYearMonth14Test.ultimoDiaFebreroBisiestoDebeSer29(FechasYearMonth14Test.java:18)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio14.FechasYearMonth14Test.ultimoDiaEneroDebeSer31 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio14.FechasYearMonth14.ultimoDia(FechasYearMonth14.java:12)
+	at com.docencia.fechas.ejercicio14.FechasYearMonth14Test.ultimoDiaEneroDebeSer31(FechasYearMonth14Test.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio14.FechasYearMonth14Test.esBisiestoDebeSerTrueEn2024 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio14.FechasYearMonth14.esBisiesto(FechasYearMonth14.java:17)
+	at com.docencia.fechas.ejercicio14.FechasYearMonth14Test.esBisiestoDebeSerTrueEn2024(FechasYearMonth14Test.java:24)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

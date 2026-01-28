@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.fechas.ejercicio9.FechasLocalDate9Test
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.027 s <<< FAILURE! -- in com.docencia.fechas.ejercicio9.FechasLocalDate9Test
+com.docencia.fechas.ejercicio9.FechasLocalDate9Test.diaSemanaDebeSerMonday -- Time elapsed: 0.013 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio9.FechasLocalDate9.diaSemana(FechasLocalDate9.java:12)
+	at com.docencia.fechas.ejercicio9.FechasLocalDate9Test.diaSemanaDebeSerMonday(FechasLocalDate9Test.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio9.FechasLocalDate9Test.esFinDeSemanaDebeSerTrueEnDomingo -- Time elapsed: 0.008 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio9.FechasLocalDate9.esFinDeSemana(FechasLocalDate9.java:17)
+	at com.docencia.fechas.ejercicio9.FechasLocalDate9Test.esFinDeSemanaDebeSerTrueEnDomingo(FechasLocalDate9Test.java:23)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio9.FechasLocalDate9Test.esFinDeSemanaDebeSerFalseEnLunes -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio9.FechasLocalDate9.esFinDeSemana(FechasLocalDate9.java:17)
+	at com.docencia.fechas.ejercicio9.FechasLocalDate9Test.esFinDeSemanaDebeSerFalseEnLunes(FechasLocalDate9Test.java:18)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

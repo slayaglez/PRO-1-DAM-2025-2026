@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.fechas.ejercicio1.FechasLocalDate1Test
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.025 s <<< FAILURE! -- in com.docencia.fechas.ejercicio1.FechasLocalDate1Test
+com.docencia.fechas.ejercicio1.FechasLocalDate1Test.sumarDiasDebeAceptarNegativos -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio1.FechasLocalDate1.sumarDias(FechasLocalDate1.java:24)
+	at com.docencia.fechas.ejercicio1.FechasLocalDate1Test.sumarDiasDebeAceptarNegativos(FechasLocalDate1Test.java:29)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio1.FechasLocalDate1Test.formatIsoDebeGenerarTextoIso -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio1.FechasLocalDate1.formatIso(FechasLocalDate1.java:19)
+	at com.docencia.fechas.ejercicio1.FechasLocalDate1Test.formatIsoDebeGenerarTextoIso(FechasLocalDate1Test.java:17)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio1.FechasLocalDate1Test.parseIsoNoDebeSerNulo -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio1.FechasLocalDate1.parseIso(FechasLocalDate1.java:14)
+	at com.docencia.fechas.ejercicio1.FechasLocalDate1Test.parseIsoNoDebeSerNulo(FechasLocalDate1Test.java:35)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio1.FechasLocalDate1Test.parseIsoDebeCrearFechaCorrecta -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio1.FechasLocalDate1.parseIso(FechasLocalDate1.java:14)
+	at com.docencia.fechas.ejercicio1.FechasLocalDate1Test.parseIsoDebeCrearFechaCorrecta(FechasLocalDate1Test.java:11)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio1.FechasLocalDate1Test.sumarDiasDebeAvanzarFecha -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio1.FechasLocalDate1.sumarDias(FechasLocalDate1.java:24)
+	at com.docencia.fechas.ejercicio1.FechasLocalDate1Test.sumarDiasDebeAvanzarFecha(FechasLocalDate1Test.java:23)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

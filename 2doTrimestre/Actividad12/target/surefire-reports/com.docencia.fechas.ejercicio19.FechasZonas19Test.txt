@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.fechas.ejercicio19.FechasZonas19Test
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.027 s <<< FAILURE! -- in com.docencia.fechas.ejercicio19.FechasZonas19Test
+com.docencia.fechas.ejercicio19.FechasZonas19Test.crearDebeTenerZonaCorrecta -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio19.FechasZonas19.crear(FechasZonas19.java:23)
+	at com.docencia.fechas.ejercicio19.FechasZonas19Test.crearDebeTenerZonaCorrecta(FechasZonas19Test.java:38)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio19.FechasZonas19Test.diferenciaInstanteDebeSerCeroSiMismoInstante -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio19.FechasZonas19.crear(FechasZonas19.java:23)
+	at com.docencia.fechas.ejercicio19.FechasZonas19Test.diferenciaInstanteDebeSerCeroSiMismoInstante(FechasZonas19Test.java:24)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio19.FechasZonas19Test.truncarAMinutoDebeQuitarNanos -- Time elapsed: 0.008 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio19.FechasZonas19.crear(FechasZonas19.java:23)
+	at com.docencia.fechas.ejercicio19.FechasZonas19Test.truncarAMinutoDebeQuitarNanos(FechasZonas19Test.java:18)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio19.FechasZonas19Test.truncarAMinutoDebeQuitarSegundos -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio19.FechasZonas19.crear(FechasZonas19.java:23)
+	at com.docencia.fechas.ejercicio19.FechasZonas19Test.truncarAMinutoDebeQuitarSegundos(FechasZonas19Test.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio19.FechasZonas19Test.diferenciaInstanteDebeSerPositivaSiBEsPosterior -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio19.FechasZonas19.crear(FechasZonas19.java:23)
+	at com.docencia.fechas.ejercicio19.FechasZonas19Test.diferenciaInstanteDebeSerPositivaSiBEsPosterior(FechasZonas19Test.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

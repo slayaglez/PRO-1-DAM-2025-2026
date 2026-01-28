@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.fechas.ejercicio16.FechasDuration16Test
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.121 s <<< FAILURE! -- in com.docencia.fechas.ejercicio16.FechasDuration16Test
+com.docencia.fechas.ejercicio16.FechasDuration16Test.parseIsoDebeAceptarMinutos -- Time elapsed: 0.046 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio16.FechasDuration16.parseIso(FechasDuration16.java:12)
+	at com.docencia.fechas.ejercicio16.FechasDuration16Test.parseIsoDebeAceptarMinutos(FechasDuration16Test.java:29)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio16.FechasDuration16Test.minutosDebeDevolverMinutos -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio16.FechasDuration16.minutos(FechasDuration16.java:22)
+	at com.docencia.fechas.ejercicio16.FechasDuration16Test.minutosDebeDevolverMinutos(FechasDuration16Test.java:24)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio16.FechasDuration16Test.parseIsoDebeLeerHoras -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio16.FechasDuration16.parseIso(FechasDuration16.java:12)
+	at com.docencia.fechas.ejercicio16.FechasDuration16Test.parseIsoDebeLeerHoras(FechasDuration16Test.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio16.FechasDuration16Test.parseIsoNoDebeSerNull -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio16.FechasDuration16.parseIso(FechasDuration16.java:12)
+	at com.docencia.fechas.ejercicio16.FechasDuration16Test.parseIsoNoDebeSerNull(FechasDuration16Test.java:34)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio16.FechasDuration16Test.sumarDebeAvanzarLocalDateTime -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio16.FechasDuration16.sumar(FechasDuration16.java:17)
+	at com.docencia.fechas.ejercicio16.FechasDuration16Test.sumarDebeAvanzarLocalDateTime(FechasDuration16Test.java:18)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

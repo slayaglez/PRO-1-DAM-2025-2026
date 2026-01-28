@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ClasificadorTicket.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">enumerados</a> &gt; <a href="index.source.html" class="el_package">com.docencia.enumerados.ejercicio9</a> &gt; <span class="el_source">ClasificadorTicket.java</span></div><h1>ClasificadorTicket.java</h1><pre class="source lang-java linenums">package com.docencia.enumerados.ejercicio9;
+
+<span class="fc" id="L3">public final class ClasificadorTicket {</span>
+
+  public boolean requiereGuardia(TipoTicket tipo) {
+<span class="pc bpc" id="L6" title="2 of 4 branches missed.">    return tipo == TipoTicket.Urgente || tipo == TipoTicket.CaidaServicio;</span>
+  }
+
+  public int tiempoObjetivoHoras(TipoTicket tipo) {
+<span class="pc bpc" id="L10" title="3 of 4 branches missed.">    return switch (tipo) {</span>
+<span class="nc" id="L11">      case Consulta -&gt; 48;</span>
+<span class="nc" id="L12">      case Incidencia -&gt; 24;</span>
+<span class="nc" id="L13">      case Urgente -&gt; 4;</span>
+<span class="fc" id="L14">      case CaidaServicio -&gt; 1;</span>
+    };
+  }
+
+  public boolean esTecnico(TipoTicket tipo) {
+<span class="pc bpc" id="L19" title="3 of 6 branches missed.">    return tipo == TipoTicket.Incidencia || tipo == TipoTicket.Urgente || tipo == TipoTicket.CaidaServicio;</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.expresionesregulares.ejercicio15.RegexLineaLogTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.018 s <<< FAILURE! -- in com.docencia.expresionesregulares.ejercicio15.RegexLineaLogTest
+com.docencia.expresionesregulares.ejercicio15.RegexLineaLogTest.debeExtraerUsuario -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio15.RegexLineaLog.usuario(RegexLineaLog.java:25)
+	at com.docencia.expresionesregulares.ejercicio15.RegexLineaLogTest.debeExtraerUsuario(RegexLineaLogTest.java:28)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.expresionesregulares.ejercicio15.RegexLineaLogTest.debeAceptarLineaValida -- Time elapsed: 0.010 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio15.RegexLineaLog.esValida(RegexLineaLog.java:15)
+	at com.docencia.expresionesregulares.ejercicio15.RegexLineaLogTest.debeAceptarLineaValida(RegexLineaLogTest.java:16)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.expresionesregulares.ejercicio15.RegexLineaLogTest.debeExtraerNivel -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio15.RegexLineaLog.nivel(RegexLineaLog.java:20)
+	at com.docencia.expresionesregulares.ejercicio15.RegexLineaLogTest.debeExtraerNivel(RegexLineaLogTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.expresionesregulares.ejercicio15.RegexLineaLogTest.patronNoDebeSerNulo -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio15.RegexLineaLog.patron(RegexLineaLog.java:30)
+	at com.docencia.expresionesregulares.ejercicio15.RegexLineaLogTest.patronNoDebeSerNulo(RegexLineaLogTest.java:10)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.expresionesregulares.ejercicio15.RegexLineaLogTest.debeDevolverNullSiNoCoincide -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio15.RegexLineaLog.usuario(RegexLineaLog.java:25)
+	at com.docencia.expresionesregulares.ejercicio15.RegexLineaLogTest.debeDevolverNullSiNoCoincide(RegexLineaLogTest.java:33)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

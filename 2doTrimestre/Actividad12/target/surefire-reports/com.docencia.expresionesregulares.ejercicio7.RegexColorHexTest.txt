@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.expresionesregulares.ejercicio7.RegexColorHexTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.014 s <<< FAILURE! -- in com.docencia.expresionesregulares.ejercicio7.RegexColorHexTest
+com.docencia.expresionesregulares.ejercicio7.RegexColorHexTest.debeRechazarSinAlmohadilla -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio7.RegexColorHex.esValido(RegexColorHex.java:16)
+	at com.docencia.expresionesregulares.ejercicio7.RegexColorHexTest.debeRechazarSinAlmohadilla(RegexColorHexTest.java:21)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.expresionesregulares.ejercicio7.RegexColorHexTest.patronNoDebeSerNulo -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio7.RegexColorHex.patron(RegexColorHex.java:21)
+	at com.docencia.expresionesregulares.ejercicio7.RegexColorHexTest.patronNoDebeSerNulo(RegexColorHexTest.java:10)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.expresionesregulares.ejercicio7.RegexColorHexTest.debeRechazarLongitudIncorrecta -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio7.RegexColorHex.esValido(RegexColorHex.java:16)
+	at com.docencia.expresionesregulares.ejercicio7.RegexColorHexTest.debeRechazarLongitudIncorrecta(RegexColorHexTest.java:26)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.expresionesregulares.ejercicio7.RegexColorHexTest.debeAceptarHex -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio7.RegexColorHex.esValido(RegexColorHex.java:16)
+	at com.docencia.expresionesregulares.ejercicio7.RegexColorHexTest.debeAceptarHex(RegexColorHexTest.java:16)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

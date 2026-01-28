@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.fechas.ejercicio11.FechasLocalDateTime11Test
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.020 s <<< FAILURE! -- in com.docencia.fechas.ejercicio11.FechasLocalDateTime11Test
+com.docencia.fechas.ejercicio11.FechasLocalDateTime11Test.horaNoDebeTenerNanos -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio11.FechasLocalDateTime11.hora(FechasLocalDateTime11.java:18)
+	at com.docencia.fechas.ejercicio11.FechasLocalDateTime11Test.horaNoDebeTenerNanos(FechasLocalDateTime11Test.java:37)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio11.FechasLocalDateTime11Test.esMismoDiaDebeSerTrue -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio11.FechasLocalDateTime11.esMismoDia(FechasLocalDateTime11.java:23)
+	at com.docencia.fechas.ejercicio11.FechasLocalDateTime11Test.esMismoDiaDebeSerTrue(FechasLocalDateTime11Test.java:25)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio11.FechasLocalDateTime11Test.fechaDebeExtraerLocalDate -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio11.FechasLocalDateTime11.fecha(FechasLocalDateTime11.java:13)
+	at com.docencia.fechas.ejercicio11.FechasLocalDateTime11Test.fechaDebeExtraerLocalDate(FechasLocalDateTime11Test.java:13)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio11.FechasLocalDateTime11Test.horaDebeExtraerLocalTime -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio11.FechasLocalDateTime11.hora(FechasLocalDateTime11.java:18)
+	at com.docencia.fechas.ejercicio11.FechasLocalDateTime11Test.horaDebeExtraerLocalTime(FechasLocalDateTime11Test.java:19)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio11.FechasLocalDateTime11Test.esMismoDiaDebeSerFalse -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio11.FechasLocalDateTime11.esMismoDia(FechasLocalDateTime11.java:23)
+	at com.docencia.fechas.ejercicio11.FechasLocalDateTime11Test.esMismoDiaDebeSerFalse(FechasLocalDateTime11Test.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

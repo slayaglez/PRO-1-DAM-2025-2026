@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FechasLaborables18.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">enumerados</a> &gt; <a href="index.source.html" class="el_package">com.docencia.fechas.ejercicio18</a> &gt; <span class="el_source">FechasLaborables18.java</span></div><h1>FechasLaborables18.java</h1><pre class="source lang-java linenums">package com.docencia.fechas.ejercicio18;
+
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+
+public final class FechasLaborables18 {
+
+  private FechasLaborables18() {}
+
+  public static boolean esLaborable(LocalDate d) {
+    // TODO: implementar este metodo
+<span class="fc" id="L12">    throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
+  }
+
+  public static LocalDate sumarDiasLaborables(LocalDate d, int dias) {
+<span class="fc" id="L16">    LocalDate x = d;</span>
+<span class="fc" id="L17">    int restantes = dias;</span>
+<span class="fc bfc" id="L18" title="All 2 branches covered.">    while (restantes &gt; 0) {</span>
+<span class="fc" id="L19">      x = x.plusDays(1);</span>
+<span class="nc bnc" id="L20" title="All 2 branches missed.">      if (esLaborable(x)) restantes--;</span>
+    }
+<span class="fc" id="L22">    return x;</span>
+  }
+
+  public static int contarLaborables(LocalDate inicio, LocalDate finExclusivo) {
+<span class="fc" id="L26">    int c = 0;</span>
+<span class="fc" id="L27">    LocalDate x = inicio;</span>
+<span class="pc bpc" id="L28" title="1 of 2 branches missed.">    while (x.isBefore(finExclusivo)) {</span>
+<span class="nc bnc" id="L29" title="All 2 branches missed.">      if (esLaborable(x)) c++;</span>
+<span class="nc" id="L30">      x = x.plusDays(1);</span>
+    }
+<span class="nc" id="L32">    return c;</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

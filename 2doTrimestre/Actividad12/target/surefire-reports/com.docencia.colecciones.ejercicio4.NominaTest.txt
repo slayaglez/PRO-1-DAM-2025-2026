@@ -1,0 +1,67 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.colecciones.ejercicio4.NominaTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.024 s <<< FAILURE! -- in com.docencia.colecciones.ejercicio4.NominaTest
+com.docencia.colecciones.ejercicio4.NominaTest.calcularPagoTotalDebeSoportarCeros -- Time elapsed: 0.008 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.colecciones.ejercicio4.EmpleadoPorHoras.pago(EmpleadoPorHoras.java:22)
+	at com.docencia.colecciones.ejercicio4.Nomina.calcularPagoTotal(Nomina.java:14)
+	at com.docencia.colecciones.ejercicio4.NominaTest.calcularPagoTotalDebeSoportarCeros(NominaTest.java:33)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.colecciones.ejercicio4.NominaTest.agruparPorTipoDebeCrearDosGrupos -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.colecciones.ejercicio4.EmpleadoFijo.tipo(EmpleadoFijo.java:14)
+	at com.docencia.colecciones.ejercicio4.Nomina.agruparPorTipo(Nomina.java:23)
+	at com.docencia.colecciones.ejercicio4.NominaTest.agruparPorTipoDebeCrearDosGrupos(NominaTest.java:48)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.colecciones.ejercicio4.NominaTest.agruparPorTipoDebeAgruparMultiples -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.colecciones.ejercicio4.EmpleadoFijo.tipo(EmpleadoFijo.java:14)
+	at com.docencia.colecciones.ejercicio4.Nomina.agruparPorTipo(Nomina.java:23)
+	at com.docencia.colecciones.ejercicio4.NominaTest.agruparPorTipoDebeAgruparMultiples(NominaTest.java:69)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.colecciones.ejercicio4.NominaTest.calcularPagoTotalDebeManejarDecimales -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.colecciones.ejercicio4.EmpleadoFijo.pago(EmpleadoFijo.java:20)
+	at com.docencia.colecciones.ejercicio4.Nomina.calcularPagoTotal(Nomina.java:14)
+	at com.docencia.colecciones.ejercicio4.NominaTest.calcularPagoTotalDebeManejarDecimales(NominaTest.java:40)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.colecciones.ejercicio4.NominaTest.calcularPagoTotalDebeSumarPagos -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.colecciones.ejercicio4.EmpleadoFijo.pago(EmpleadoFijo.java:20)
+	at com.docencia.colecciones.ejercicio4.Nomina.calcularPagoTotal(Nomina.java:14)
+	at com.docencia.colecciones.ejercicio4.NominaTest.calcularPagoTotalDebeSumarPagos(NominaTest.java:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.colecciones.ejercicio4.NominaTest.agruparPorTipoDebeContenerClaveFijo -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.colecciones.ejercicio4.EmpleadoFijo.tipo(EmpleadoFijo.java:14)
+	at com.docencia.colecciones.ejercicio4.Nomina.agruparPorTipo(Nomina.java:23)
+	at com.docencia.colecciones.ejercicio4.NominaTest.agruparPorTipoDebeContenerClaveFijo(NominaTest.java:55)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.colecciones.ejercicio4.NominaTest.agruparPorTipoDebeContenerClaveHoras -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.colecciones.ejercicio4.EmpleadoPorHoras.tipo(EmpleadoPorHoras.java:16)
+	at com.docencia.colecciones.ejercicio4.Nomina.agruparPorTipo(Nomina.java:23)
+	at com.docencia.colecciones.ejercicio4.NominaTest.agruparPorTipoDebeContenerClaveHoras(NominaTest.java:62)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

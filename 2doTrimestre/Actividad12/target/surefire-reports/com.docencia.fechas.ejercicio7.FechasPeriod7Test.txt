@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.fechas.ejercicio7.FechasPeriod7Test
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.015 s <<< FAILURE! -- in com.docencia.fechas.ejercicio7.FechasPeriod7Test
+com.docencia.fechas.ejercicio7.FechasPeriod7Test.sumarDebeAplicarPeriodo -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio7.FechasPeriod7.sumar(FechasPeriod7.java:17)
+	at com.docencia.fechas.ejercicio7.FechasPeriod7Test.sumarDebeAplicarPeriodo(FechasPeriod7Test.java:19)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio7.FechasPeriod7Test.entreDebeDevolverPeriodo -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio7.FechasPeriod7.entre(FechasPeriod7.java:12)
+	at com.docencia.fechas.ejercicio7.FechasPeriod7Test.entreDebeDevolverPeriodo(FechasPeriod7Test.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio7.FechasPeriod7Test.entreNoDebeSerNulo -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio7.FechasPeriod7.entre(FechasPeriod7.java:12)
+	at com.docencia.fechas.ejercicio7.FechasPeriod7Test.entreNoDebeSerNulo(FechasPeriod7Test.java:36)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio7.FechasPeriod7Test.entreDebeSerCeroSiMismaFecha -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio7.FechasPeriod7.entre(FechasPeriod7.java:12)
+	at com.docencia.fechas.ejercicio7.FechasPeriod7Test.entreDebeSerCeroSiMismaFecha(FechasPeriod7Test.java:30)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio7.FechasPeriod7Test.diasDebeDevolverComponenteDias -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio7.FechasPeriod7.dias(FechasPeriod7.java:22)
+	at com.docencia.fechas.ejercicio7.FechasPeriod7Test.diasDebeDevolverComponenteDias(FechasPeriod7Test.java:25)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

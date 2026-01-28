@@ -1,0 +1,58 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.colecciones.ejercicio5.NotificadorTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.029 s <<< FAILURE! -- in com.docencia.colecciones.ejercicio5.NotificadorTest
+com.docencia.colecciones.ejercicio5.NotificadorTest.contarPorCanalDebeContarMultiples -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.colecciones.ejercicio5.Mensaje.getCanal(Mensaje.java:14)
+	at com.docencia.colecciones.ejercicio5.Notificador.contarPorCanal(Notificador.java:15)
+	at com.docencia.colecciones.ejercicio5.NotificadorTest.contarPorCanalDebeContarMultiples(NotificadorTest.java:23)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.colecciones.ejercicio5.NotificadorTest.contarPorCanalDebeIncluirClaveSmsSiHaySms -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.colecciones.ejercicio5.Mensaje.getCanal(Mensaje.java:14)
+	at com.docencia.colecciones.ejercicio5.Notificador.contarPorCanal(Notificador.java:15)
+	at com.docencia.colecciones.ejercicio5.NotificadorTest.contarPorCanalDebeIncluirClaveSmsSiHaySms(NotificadorTest.java:42)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.colecciones.ejercicio5.NotificadorTest.destinosUnicosDebeEliminarDuplicados -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.colecciones.ejercicio5.MensajeSms.destino(MensajeSms.java:16)
+	at com.docencia.colecciones.ejercicio5.Notificador.destinosUnicos(Notificador.java:24)
+	at com.docencia.colecciones.ejercicio5.NotificadorTest.destinosUnicosDebeEliminarDuplicados(NotificadorTest.java:50)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.colecciones.ejercicio5.NotificadorTest.destinosUnicosDebeIncluirEmail -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.colecciones.ejercicio5.MensajeEmail.destino(MensajeEmail.java:16)
+	at com.docencia.colecciones.ejercicio5.Notificador.destinosUnicos(Notificador.java:24)
+	at com.docencia.colecciones.ejercicio5.NotificadorTest.destinosUnicosDebeIncluirEmail(NotificadorTest.java:57)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.colecciones.ejercicio5.NotificadorTest.destinosUnicosDebeIncluirSms -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.colecciones.ejercicio5.MensajeSms.destino(MensajeSms.java:16)
+	at com.docencia.colecciones.ejercicio5.Notificador.destinosUnicos(Notificador.java:24)
+	at com.docencia.colecciones.ejercicio5.NotificadorTest.destinosUnicosDebeIncluirSms(NotificadorTest.java:64)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.colecciones.ejercicio5.NotificadorTest.contarPorCanalDebeContarEmailYSms -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.colecciones.ejercicio5.Mensaje.getCanal(Mensaje.java:14)
+	at com.docencia.colecciones.ejercicio5.Notificador.contarPorCanal(Notificador.java:15)
+	at com.docencia.colecciones.ejercicio5.NotificadorTest.contarPorCanalDebeContarEmailYSms(NotificadorTest.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

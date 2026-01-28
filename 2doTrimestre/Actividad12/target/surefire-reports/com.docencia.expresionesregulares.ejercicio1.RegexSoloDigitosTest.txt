@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.expresionesregulares.ejercicio1.RegexSoloDigitosTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.139 s <<< FAILURE! -- in com.docencia.expresionesregulares.ejercicio1.RegexSoloDigitosTest
+com.docencia.expresionesregulares.ejercicio1.RegexSoloDigitosTest.patronNoDebeSerNulo -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio1.RegexSoloDigitos.patron(RegexSoloDigitos.java:21)
+	at com.docencia.expresionesregulares.ejercicio1.RegexSoloDigitosTest.patronNoDebeSerNulo(RegexSoloDigitosTest.java:10)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com.docencia.expresionesregulares.ejercicio1.RegexSoloDigitosTest.debeAceptarDigitos -- Time elapsed: 0.010 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Error: '12345' debe ser valido ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at com.docencia.expresionesregulares.ejercicio1.RegexSoloDigitosTest.debeAceptarDigitos(RegexSoloDigitosTest.java:16)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

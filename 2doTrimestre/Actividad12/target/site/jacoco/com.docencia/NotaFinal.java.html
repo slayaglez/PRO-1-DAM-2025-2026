@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>NotaFinal.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">enumerados</a> &gt; <a href="index.source.html" class="el_package">com.docencia</a> &gt; <span class="el_source">NotaFinal.java</span></div><h1>NotaFinal.java</h1><pre class="source lang-java linenums">package com.docencia;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.util.stream.Stream;
+
+/**
+ * Calcula y muestra la nota final usando:
+ * - resultados de Surefire (XML)
+ * - cobertura de JaCoCo (CSV)
+ *
+ * Formula: 70% tests + 30% cobertura.
+ */
+public final class NotaFinal {
+
+  private NotaFinal() {}
+
+  public static void main(String[] args) throws Exception {
+<span class="nc" id="L21">    double testRate = calcularRatioTests();</span>
+<span class="nc" id="L22">    double covRate = calcularCobertura();</span>
+<span class="nc" id="L23">    int nota = (int) Math.round(100.0 * (0.70 * testRate + 0.30 * covRate));</span>
+
+<span class="nc" id="L25">    System.out.println(&quot;----------------------------------------&quot;);</span>
+<span class="nc" id="L26">    System.out.println(&quot;Tests (ratio): &quot; + String.format(java.util.Locale.ROOT, &quot;%.2f&quot;, testRate * 100) + &quot;%&quot;);</span>
+<span class="nc" id="L27">    System.out.println(&quot;Cobertura lineas: &quot; + String.format(java.util.Locale.ROOT, &quot;%.2f&quot;, covRate * 100) + &quot;%&quot;);</span>
+<span class="nc" id="L28">    System.out.println(&quot;NOTA FINAL: &quot; + nota + &quot; / 100&quot;);</span>
+<span class="nc" id="L29">    System.out.println(&quot;----------------------------------------&quot;);</span>
+<span class="nc" id="L30">  }</span>
+
+  private static double calcularRatioTests() throws IOException {
+<span class="nc" id="L33">    Path reports = Paths.get(&quot;target&quot;, &quot;surefire-reports&quot;);</span>
+<span class="nc bnc" id="L34" title="All 2 branches missed.">    if (!Files.isDirectory(reports)) return 0.0;</span>
+
+<span class="nc" id="L36">    int total = 0;</span>
+<span class="nc" id="L37">    int failed = 0;</span>
+
+<span class="nc" id="L39">    try (Stream&lt;Path&gt; s = Files.list(reports)) {</span>
+<span class="nc bnc" id="L40" title="All 6 branches missed.">      for (Path p : (Iterable&lt;Path&gt;) s.filter(x -&gt; x.getFileName().toString().startsWith(&quot;TEST-&quot;) &amp;&amp; x.toString().endsWith(&quot;.xml&quot;))::iterator) {</span>
+<span class="nc" id="L41">        String xml = Files.readString(p, StandardCharsets.UTF_8);</span>
+<span class="nc" id="L42">        total += leerAtributo(xml, &quot;tests&quot;);</span>
+<span class="nc" id="L43">        failed += leerAtributo(xml, &quot;failures&quot;);</span>
+<span class="nc" id="L44">        failed += leerAtributo(xml, &quot;errors&quot;);</span>
+<span class="nc" id="L45">      }</span>
+    }
+
+<span class="nc bnc" id="L48" title="All 2 branches missed.">    if (total &lt;= 0) return 0.0;</span>
+<span class="nc" id="L49">    int passed = Math.max(0, total - failed);</span>
+<span class="nc" id="L50">    return (double) passed / (double) total;</span>
+  }
+
+  private static int leerAtributo(String xml, String attr) {
+    // busca attr=&quot;123&quot;
+<span class="nc" id="L55">    int idx = xml.indexOf(attr + &quot;=\&quot;&quot;);</span>
+<span class="nc bnc" id="L56" title="All 2 branches missed.">    if (idx &lt; 0) return 0;</span>
+<span class="nc" id="L57">    int start = idx + attr.length() + 2;</span>
+<span class="nc" id="L58">    int end = xml.indexOf('&quot;', start);</span>
+<span class="nc bnc" id="L59" title="All 2 branches missed.">    if (end &lt; 0) return 0;</span>
+    try {
+<span class="nc" id="L61">      return Integer.parseInt(xml.substring(start, end));</span>
+<span class="nc" id="L62">    } catch (NumberFormatException e) {</span>
+<span class="nc" id="L63">      return 0;</span>
+    }
+  }
+
+  private static double calcularCobertura() throws IOException {
+<span class="nc" id="L68">    Path csv = Paths.get(&quot;target&quot;, &quot;site&quot;, &quot;jacoco&quot;, &quot;jacoco.csv&quot;);</span>
+<span class="nc bnc" id="L69" title="All 2 branches missed.">    if (!Files.exists(csv)) return 0.0;</span>
+
+<span class="nc" id="L71">    long missed = 0;</span>
+<span class="nc" id="L72">    long covered = 0;</span>
+
+<span class="nc" id="L74">    try (BufferedReader br = Files.newBufferedReader(csv, StandardCharsets.UTF_8)) {</span>
+<span class="nc" id="L75">      String header = br.readLine();</span>
+<span class="nc bnc" id="L76" title="All 2 branches missed.">      if (header == null) return 0.0;</span>
+<span class="nc" id="L77">      String[] cols = header.split(&quot;,&quot;);</span>
+<span class="nc" id="L78">      int idxMiss = indexOf(cols, &quot;LINE_MISSED&quot;);</span>
+<span class="nc" id="L79">      int idxCov = indexOf(cols, &quot;LINE_COVERED&quot;);</span>
+<span class="nc bnc" id="L80" title="All 4 branches missed.">      if (idxMiss &lt; 0 || idxCov &lt; 0) return 0.0;</span>
+
+      String line;
+<span class="nc bnc" id="L83" title="All 2 branches missed.">      while ((line = br.readLine()) != null) {</span>
+<span class="nc" id="L84">        String[] parts = line.split(&quot;,&quot;, -1);</span>
+<span class="nc bnc" id="L85" title="All 2 branches missed.">        if (parts.length &lt;= Math.max(idxMiss, idxCov)) continue;</span>
+<span class="nc" id="L86">        missed += parseLongSafe(parts[idxMiss]);</span>
+<span class="nc" id="L87">        covered += parseLongSafe(parts[idxCov]);</span>
+<span class="nc" id="L88">      }</span>
+<span class="nc bnc" id="L89" title="All 4 branches missed.">    }</span>
+
+<span class="nc" id="L91">    long total = missed + covered;</span>
+<span class="nc bnc" id="L92" title="All 2 branches missed.">    return total == 0 ? 0.0 : (double) covered / (double) total;</span>
+  }
+
+  private static int indexOf(String[] cols, String name) {
+<span class="nc bnc" id="L96" title="All 2 branches missed.">    for (int i = 0; i &lt; cols.length; i++) {</span>
+<span class="nc bnc" id="L97" title="All 2 branches missed.">      if (name.equals(cols[i])) return i;</span>
+    }
+<span class="nc" id="L99">    return -1;</span>
+  }
+
+  private static long parseLongSafe(String s) {
+    try {
+<span class="nc" id="L104">      return Long.parseLong(s.trim());</span>
+<span class="nc" id="L105">    } catch (Exception e) {</span>
+<span class="nc" id="L106">      return 0;</span>
+    }
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

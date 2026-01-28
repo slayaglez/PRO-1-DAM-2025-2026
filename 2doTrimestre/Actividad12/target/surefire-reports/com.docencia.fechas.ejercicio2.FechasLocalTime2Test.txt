@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.fechas.ejercicio2.FechasLocalTime2Test
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.013 s <<< FAILURE! -- in com.docencia.fechas.ejercicio2.FechasLocalTime2Test
+com.docencia.fechas.ejercicio2.FechasLocalTime2Test.parseHoraDebeCrearHoraCorrecta -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio2.FechasLocalTime2.parseHora(FechasLocalTime2.java:14)
+	at com.docencia.fechas.ejercicio2.FechasLocalTime2Test.parseHoraDebeCrearHoraCorrecta(FechasLocalTime2Test.java:11)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio2.FechasLocalTime2Test.sumarMinutosDebeCambiarHora -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio2.FechasLocalTime2.sumarMinutos(FechasLocalTime2.java:24)
+	at com.docencia.fechas.ejercicio2.FechasLocalTime2Test.sumarMinutosDebeCambiarHora(FechasLocalTime2Test.java:23)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio2.FechasLocalTime2Test.parseHoraNoDebeSerNulo -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio2.FechasLocalTime2.parseHora(FechasLocalTime2.java:14)
+	at com.docencia.fechas.ejercicio2.FechasLocalTime2Test.parseHoraNoDebeSerNulo(FechasLocalTime2Test.java:35)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio2.FechasLocalTime2Test.sumarMinutosDebeHacerWrapDia -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio2.FechasLocalTime2.sumarMinutos(FechasLocalTime2.java:24)
+	at com.docencia.fechas.ejercicio2.FechasLocalTime2Test.sumarMinutosDebeHacerWrapDia(FechasLocalTime2Test.java:29)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio2.FechasLocalTime2Test.formatHoraDebeDevolverHHmm -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio2.FechasLocalTime2.formatHora(FechasLocalTime2.java:19)
+	at com.docencia.fechas.ejercicio2.FechasLocalTime2Test.formatHoraDebeDevolverHHmm(FechasLocalTime2Test.java:17)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

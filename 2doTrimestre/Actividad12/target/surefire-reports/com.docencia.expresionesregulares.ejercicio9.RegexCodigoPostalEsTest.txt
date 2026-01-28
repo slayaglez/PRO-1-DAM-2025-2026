@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.expresionesregulares.ejercicio9.RegexCodigoPostalEsTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.007 s <<< FAILURE! -- in com.docencia.expresionesregulares.ejercicio9.RegexCodigoPostalEsTest
+com.docencia.expresionesregulares.ejercicio9.RegexCodigoPostalEsTest.debeAceptarCodigoPostal -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio9.RegexCodigoPostalEs.esValido(RegexCodigoPostalEs.java:16)
+	at com.docencia.expresionesregulares.ejercicio9.RegexCodigoPostalEsTest.debeAceptarCodigoPostal(RegexCodigoPostalEsTest.java:16)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.expresionesregulares.ejercicio9.RegexCodigoPostalEsTest.debeRechazarProvincia00 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio9.RegexCodigoPostalEs.esValido(RegexCodigoPostalEs.java:16)
+	at com.docencia.expresionesregulares.ejercicio9.RegexCodigoPostalEsTest.debeRechazarProvincia00(RegexCodigoPostalEsTest.java:21)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.expresionesregulares.ejercicio9.RegexCodigoPostalEsTest.debeRechazarProvincia53 -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio9.RegexCodigoPostalEs.esValido(RegexCodigoPostalEs.java:16)
+	at com.docencia.expresionesregulares.ejercicio9.RegexCodigoPostalEsTest.debeRechazarProvincia53(RegexCodigoPostalEsTest.java:26)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.expresionesregulares.ejercicio9.RegexCodigoPostalEsTest.patronNoDebeSerNulo -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio9.RegexCodigoPostalEs.patron(RegexCodigoPostalEs.java:21)
+	at com.docencia.expresionesregulares.ejercicio9.RegexCodigoPostalEsTest.patronNoDebeSerNulo(RegexCodigoPostalEsTest.java:10)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.expresionesregulares.ejercicio8.RegexHora24hTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.014 s <<< FAILURE! -- in com.docencia.expresionesregulares.ejercicio8.RegexHora24hTest
+com.docencia.expresionesregulares.ejercicio8.RegexHora24hTest.debeRechazarMinutos60 -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio8.RegexHora24h.esValido(RegexHora24h.java:16)
+	at com.docencia.expresionesregulares.ejercicio8.RegexHora24hTest.debeRechazarMinutos60(RegexHora24hTest.java:26)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.expresionesregulares.ejercicio8.RegexHora24hTest.debeRechazarHora24 -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio8.RegexHora24h.esValido(RegexHora24h.java:16)
+	at com.docencia.expresionesregulares.ejercicio8.RegexHora24hTest.debeRechazarHora24(RegexHora24hTest.java:21)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.expresionesregulares.ejercicio8.RegexHora24hTest.patronNoDebeSerNulo -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio8.RegexHora24h.patron(RegexHora24h.java:21)
+	at com.docencia.expresionesregulares.ejercicio8.RegexHora24hTest.patronNoDebeSerNulo(RegexHora24hTest.java:10)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.expresionesregulares.ejercicio8.RegexHora24hTest.debeAceptarHora -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio8.RegexHora24h.esValido(RegexHora24h.java:16)
+	at com.docencia.expresionesregulares.ejercicio8.RegexHora24hTest.debeAceptarHora(RegexHora24hTest.java:16)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

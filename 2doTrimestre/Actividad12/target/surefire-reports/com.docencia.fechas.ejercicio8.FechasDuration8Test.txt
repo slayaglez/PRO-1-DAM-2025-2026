@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.fechas.ejercicio8.FechasDuration8Test
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.012 s <<< FAILURE! -- in com.docencia.fechas.ejercicio8.FechasDuration8Test
+com.docencia.fechas.ejercicio8.FechasDuration8Test.entrePuedeSerNegativa -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio8.FechasDuration8.entre(FechasDuration8.java:12)
+	at com.docencia.fechas.ejercicio8.FechasDuration8Test.entrePuedeSerNegativa(FechasDuration8Test.java:29)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio8.FechasDuration8Test.entreNoDebeSerNula -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio8.FechasDuration8.entre(FechasDuration8.java:12)
+	at com.docencia.fechas.ejercicio8.FechasDuration8Test.entreNoDebeSerNula(FechasDuration8Test.java:35)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio8.FechasDuration8Test.sumarDebeAvanzarInstant -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio8.FechasDuration8.sumar(FechasDuration8.java:22)
+	at com.docencia.fechas.ejercicio8.FechasDuration8Test.sumarDebeAvanzarInstant(FechasDuration8Test.java:23)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio8.FechasDuration8Test.segundosDebeDevolverSegundos -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio8.FechasDuration8.segundos(FechasDuration8.java:17)
+	at com.docencia.fechas.ejercicio8.FechasDuration8Test.segundosDebeDevolverSegundos(FechasDuration8Test.java:18)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio8.FechasDuration8Test.entreDebeCalcularSegundos -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio8.FechasDuration8.entre(FechasDuration8.java:12)
+	at com.docencia.fechas.ejercicio8.FechasDuration8Test.entreDebeCalcularSegundos(FechasDuration8Test.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

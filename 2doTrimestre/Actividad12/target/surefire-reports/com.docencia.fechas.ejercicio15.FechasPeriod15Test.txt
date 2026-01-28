@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.fechas.ejercicio15.FechasPeriod15Test
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.016 s <<< FAILURE! -- in com.docencia.fechas.ejercicio15.FechasPeriod15Test
+com.docencia.fechas.ejercicio15.FechasPeriod15Test.sumarDebeAplicarPeriodo -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio15.FechasPeriod15.sumar(FechasPeriod15.java:22)
+	at com.docencia.fechas.ejercicio15.FechasPeriod15Test.sumarDebeAplicarPeriodo(FechasPeriod15Test.java:23)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio15.FechasPeriod15Test.normalizarDebeConvertirMesesEnAnios -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio15.FechasPeriod15.normalizar(FechasPeriod15.java:17)
+	at com.docencia.fechas.ejercicio15.FechasPeriod15Test.normalizarDebeConvertirMesesEnAnios(FechasPeriod15Test.java:18)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio15.FechasPeriod15Test.crearDebeConstruirPeriodo -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio15.FechasPeriod15.crear(FechasPeriod15.java:12)
+	at com.docencia.fechas.ejercicio15.FechasPeriod15Test.crearDebeConstruirPeriodo(FechasPeriod15Test.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio15.FechasPeriod15Test.normalizarNoDebeSerNull -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio15.FechasPeriod15.normalizar(FechasPeriod15.java:17)
+	at com.docencia.fechas.ejercicio15.FechasPeriod15Test.normalizarNoDebeSerNull(FechasPeriod15Test.java:35)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio15.FechasPeriod15Test.sumarDebeAplicarDias -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio15.FechasPeriod15.sumar(FechasPeriod15.java:22)
+	at com.docencia.fechas.ejercicio15.FechasPeriod15Test.sumarDebeAplicarDias(FechasPeriod15Test.java:29)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.fechas.ejercicio5.FechasInstant5Test
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.021 s <<< FAILURE! -- in com.docencia.fechas.ejercicio5.FechasInstant5Test
+com.docencia.fechas.ejercicio5.FechasInstant5Test.aEpochMillisDebeVolverACero -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio5.FechasInstant5.aEpochMillis(FechasInstant5.java:16)
+	at com.docencia.fechas.ejercicio5.FechasInstant5Test.aEpochMillisDebeVolverACero(FechasInstant5Test.java:17)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio5.FechasInstant5Test.desdeEpochMillisDebeCrearInstant -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio5.FechasInstant5.desdeEpochMillis(FechasInstant5.java:11)
+	at com.docencia.fechas.ejercicio5.FechasInstant5Test.desdeEpochMillisDebeCrearInstant(FechasInstant5Test.java:11)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio5.FechasInstant5Test.desdeEpochMillisNoDebeSerNulo -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio5.FechasInstant5.desdeEpochMillis(FechasInstant5.java:11)
+	at com.docencia.fechas.ejercicio5.FechasInstant5Test.desdeEpochMillisNoDebeSerNulo(FechasInstant5Test.java:35)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio5.FechasInstant5Test.esPosteriorDebeDetectarOrden -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio5.FechasInstant5.esPosterior(FechasInstant5.java:21)
+	at com.docencia.fechas.ejercicio5.FechasInstant5Test.esPosteriorDebeDetectarOrden(FechasInstant5Test.java:24)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio5.FechasInstant5Test.esPosteriorDebeSerFalseSiIgual -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio5.FechasInstant5.esPosterior(FechasInstant5.java:21)
+	at com.docencia.fechas.ejercicio5.FechasInstant5Test.esPosteriorDebeSerFalseSiIgual(FechasInstant5Test.java:30)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

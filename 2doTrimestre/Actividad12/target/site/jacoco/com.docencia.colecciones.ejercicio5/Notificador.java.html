@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Notificador.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">enumerados</a> &gt; <a href="index.source.html" class="el_package">com.docencia.colecciones.ejercicio5</a> &gt; <span class="el_source">Notificador.java</span></div><h1>Notificador.java</h1><pre class="source lang-java linenums">package com.docencia.colecciones.ejercicio5;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+<span class="fc" id="L9">public final class Notificador {</span>
+
+  public Map&lt;String, Integer&gt; contarPorCanal(List&lt;Mensaje&gt; mensajes) {
+<span class="fc" id="L12">    Map&lt;String, Integer&gt; out = new HashMap&lt;&gt;();</span>
+<span class="fc bfc" id="L13" title="All 2 branches covered.">    if (mensajes == null) return out;</span>
+<span class="fc bfc" id="L14" title="All 2 branches covered.">    for (Mensaje m : mensajes) {</span>
+<span class="nc" id="L15">      out.put(m.getCanal(), out.getOrDefault(m.getCanal(), 0) + 1);</span>
+<span class="nc" id="L16">    }</span>
+<span class="fc" id="L17">    return out;</span>
+  }
+
+  public Set&lt;String&gt; destinosUnicos(List&lt;Mensaje&gt; mensajes) {
+<span class="fc" id="L21">    Set&lt;String&gt; out = new HashSet&lt;&gt;();</span>
+<span class="fc bfc" id="L22" title="All 2 branches covered.">    if (mensajes == null) return out;</span>
+<span class="fc bfc" id="L23" title="All 2 branches covered.">    for (Mensaje m : mensajes) {</span>
+<span class="nc" id="L24">      out.add(m.destino());</span>
+<span class="nc" id="L25">    }</span>
+<span class="fc" id="L26">    return out;</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

@@ -1,0 +1,49 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.colecciones.ejercicio1.ProcesadorRegistrosTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.016 s <<< FAILURE! -- in com.docencia.colecciones.ejercicio1.ProcesadorRegistrosTest
+com.docencia.colecciones.ejercicio1.ProcesadorRegistrosTest.filtrarPorTipoDebeDevolverVacioSiNoHayCoincidencias -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.colecciones.ejercicio1.RegistroNumero.tipo(RegistroNumero.java:19)
+	at com.docencia.colecciones.ejercicio1.ProcesadorRegistros.filtrarPorTipo(ProcesadorRegistros.java:13)
+	at com.docencia.colecciones.ejercicio1.ProcesadorRegistrosTest.filtrarPorTipoDebeDevolverVacioSiNoHayCoincidencias(ProcesadorRegistrosTest.java:29)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.colecciones.ejercicio1.ProcesadorRegistrosTest.sumarNumerosDebeSumarSoloNumeros -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.colecciones.ejercicio1.RegistroNumero.getValor(RegistroNumero.java:13)
+	at com.docencia.colecciones.ejercicio1.ProcesadorRegistros.sumarNumeros(ProcesadorRegistros.java:25)
+	at com.docencia.colecciones.ejercicio1.ProcesadorRegistrosTest.sumarNumerosDebeSumarSoloNumeros(ProcesadorRegistrosTest.java:50)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.colecciones.ejercicio1.ProcesadorRegistrosTest.filtrarPorTipoDebeIgnorarMayusculas -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.colecciones.ejercicio1.RegistroTexto.tipo(RegistroTexto.java:21)
+	at com.docencia.colecciones.ejercicio1.ProcesadorRegistros.filtrarPorTipo(ProcesadorRegistros.java:13)
+	at com.docencia.colecciones.ejercicio1.ProcesadorRegistrosTest.filtrarPorTipoDebeIgnorarMayusculas(ProcesadorRegistrosTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.colecciones.ejercicio1.ProcesadorRegistrosTest.filtrarPorTipoDebeDevolverSoloTexto -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.colecciones.ejercicio1.RegistroTexto.tipo(RegistroTexto.java:21)
+	at com.docencia.colecciones.ejercicio1.ProcesadorRegistros.filtrarPorTipo(ProcesadorRegistros.java:13)
+	at com.docencia.colecciones.ejercicio1.ProcesadorRegistrosTest.filtrarPorTipoDebeDevolverSoloTexto(ProcesadorRegistrosTest.java:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.colecciones.ejercicio1.ProcesadorRegistrosTest.sumarNumerosDebeAceptarNegativos -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.colecciones.ejercicio1.RegistroNumero.getValor(RegistroNumero.java:13)
+	at com.docencia.colecciones.ejercicio1.ProcesadorRegistros.sumarNumeros(ProcesadorRegistros.java:25)
+	at com.docencia.colecciones.ejercicio1.ProcesadorRegistrosTest.sumarNumerosDebeAceptarNegativos(ProcesadorRegistrosTest.java:62)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

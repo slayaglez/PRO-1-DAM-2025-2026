@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.fechas.ejercicio18.FechasLaborables18Test
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.054 s <<< FAILURE! -- in com.docencia.fechas.ejercicio18.FechasLaborables18Test
+com.docencia.fechas.ejercicio18.FechasLaborables18Test.contarLaborablesDebeContarCorrecto -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio18.FechasLaborables18.esLaborable(FechasLaborables18.java:12)
+	at com.docencia.fechas.ejercicio18.FechasLaborables18.contarLaborables(FechasLaborables18.java:29)
+	at com.docencia.fechas.ejercicio18.FechasLaborables18Test.contarLaborablesDebeContarCorrecto(FechasLaborables18Test.java:30)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio18.FechasLaborables18Test.esLaborableDebeSerTrueEnLunes -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio18.FechasLaborables18.esLaborable(FechasLaborables18.java:12)
+	at com.docencia.fechas.ejercicio18.FechasLaborables18Test.esLaborableDebeSerTrueEnLunes(FechasLaborables18Test.java:11)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio18.FechasLaborables18Test.sumarDiasLaborablesDebeSaltarFinDeSemana -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio18.FechasLaborables18.esLaborable(FechasLaborables18.java:12)
+	at com.docencia.fechas.ejercicio18.FechasLaborables18.sumarDiasLaborables(FechasLaborables18.java:20)
+	at com.docencia.fechas.ejercicio18.FechasLaborables18Test.sumarDiasLaborablesDebeSaltarFinDeSemana(FechasLaborables18Test.java:23)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio18.FechasLaborables18Test.esLaborableDebeSerFalseEnDomingo -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio18.FechasLaborables18.esLaborable(FechasLaborables18.java:12)
+	at com.docencia.fechas.ejercicio18.FechasLaborables18Test.esLaborableDebeSerFalseEnDomingo(FechasLaborables18Test.java:16)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

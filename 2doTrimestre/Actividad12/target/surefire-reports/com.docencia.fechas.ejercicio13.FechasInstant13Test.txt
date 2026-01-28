@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.fechas.ejercicio13.FechasInstant13Test
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.018 s <<< FAILURE! -- in com.docencia.fechas.ejercicio13.FechasInstant13Test
+com.docencia.fechas.ejercicio13.FechasInstant13Test.expiradoDebeSerTrueDespuesDeTtl -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio13.FechasInstant13.expirado(FechasInstant13.java:17)
+	at com.docencia.fechas.ejercicio13.FechasInstant13Test.expiradoDebeSerTrueDespuesDeTtl(FechasInstant13Test.java:26)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio13.FechasInstant13Test.expiradoDebeSerFalseSiIgualExacto -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio13.FechasInstant13.expirado(FechasInstant13.java:17)
+	at com.docencia.fechas.ejercicio13.FechasInstant13Test.expiradoDebeSerFalseSiIgualExacto(FechasInstant13Test.java:38)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio13.FechasInstant13Test.expiradoDebeSerFalseAntesDeTtl -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio13.FechasInstant13.expirado(FechasInstant13.java:17)
+	at com.docencia.fechas.ejercicio13.FechasInstant13Test.expiradoDebeSerFalseAntesDeTtl(FechasInstant13Test.java:19)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio13.FechasInstant13Test.sumarDebeAvanzar -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio13.FechasInstant13.sumar(FechasInstant13.java:12)
+	at com.docencia.fechas.ejercicio13.FechasInstant13Test.sumarDebeAvanzar(FechasInstant13Test.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio13.FechasInstant13Test.millisDebeDevolverMilis -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio13.FechasInstant13.millis(FechasInstant13.java:22)
+	at com.docencia.fechas.ejercicio13.FechasInstant13Test.millisDebeDevolverMilis(FechasInstant13Test.java:32)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>RegexHashtags.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">enumerados</a> &gt; <a href="index.source.html" class="el_package">com.docencia.expresionesregulares.ejercicio14</a> &gt; <span class="el_source">RegexHashtags.java</span></div><h1>RegexHashtags.java</h1><pre class="source lang-java linenums">package com.docencia.expresionesregulares.ejercicio14;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public final class RegexHashtags {
+
+<span class="fc" id="L10">  private static final Pattern PATRON = Pattern.compile(&quot;(?&lt;!\\w)#([A-Za-z0-9_]+)&quot;);</span>
+
+  private RegexHashtags() {}
+
+  public static List&lt;String&gt; extraer(String texto) {
+<span class="fc" id="L15">    List&lt;String&gt; out = new ArrayList&lt;&gt;();</span>
+<span class="pc bpc" id="L16" title="1 of 2 branches missed.">    if (texto == null) return out;</span>
+<span class="fc" id="L17">    Matcher m = PATRON.matcher(texto);</span>
+<span class="fc bfc" id="L18" title="All 2 branches covered.">    while (m.find()) {</span>
+<span class="fc" id="L19">      out.add(m.group(1));</span>
+    }
+<span class="fc" id="L21">    return out;</span>
+  }
+
+  public static boolean contiene(String texto, String tag) {
+    // TODO: implementar este metodo
+<span class="fc" id="L26">    throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
+  }
+
+  public static Pattern patron() {
+    // TODO: implementar este metodo
+<span class="fc" id="L31">    throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

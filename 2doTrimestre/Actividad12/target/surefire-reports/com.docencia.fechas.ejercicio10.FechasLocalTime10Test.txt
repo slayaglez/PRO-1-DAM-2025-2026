@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.fechas.ejercicio10.FechasLocalTime10Test
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.023 s <<< FAILURE! -- in com.docencia.fechas.ejercicio10.FechasLocalTime10Test
+com.docencia.fechas.ejercicio10.FechasLocalTime10Test.truncarMinutosDebeQuitarSegundos -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio10.FechasLocalTime10.truncarMinutos(FechasLocalTime10.java:22)
+	at com.docencia.fechas.ejercicio10.FechasLocalTime10Test.truncarMinutosDebeQuitarSegundos(FechasLocalTime10Test.java:28)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio10.FechasLocalTime10Test.minutosEntreDebeSerTreinta -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio10.FechasLocalTime10.minutosEntre(FechasLocalTime10.java:12)
+	at com.docencia.fechas.ejercicio10.FechasLocalTime10Test.minutosEntreDebeSerTreinta(FechasLocalTime10Test.java:11)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio10.FechasLocalTime10Test.truncarMinutosDebeQuitarNanos -- Time elapsed: 0.006 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio10.FechasLocalTime10.truncarMinutos(FechasLocalTime10.java:22)
+	at com.docencia.fechas.ejercicio10.FechasLocalTime10Test.truncarMinutosDebeQuitarNanos(FechasLocalTime10Test.java:34)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio10.FechasLocalTime10Test.esAntesDebeSerTrue -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio10.FechasLocalTime10.esAntes(FechasLocalTime10.java:17)
+	at com.docencia.fechas.ejercicio10.FechasLocalTime10Test.esAntesDebeSerTrue(FechasLocalTime10Test.java:23)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio10.FechasLocalTime10Test.minutosEntrePuedeSerNegativo -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio10.FechasLocalTime10.minutosEntre(FechasLocalTime10.java:12)
+	at com.docencia.fechas.ejercicio10.FechasLocalTime10Test.minutosEntrePuedeSerNegativo(FechasLocalTime10Test.java:17)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

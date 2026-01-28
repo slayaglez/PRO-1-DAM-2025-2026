@@ -1,0 +1,58 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.colecciones.ejercicio3.InventarioTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.020 s <<< FAILURE! -- in com.docencia.colecciones.ejercicio3.InventarioTest
+com.docencia.colecciones.ejercicio3.InventarioTest.skusDuplicadosDebeDevolverVacioSiNoHay -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.colecciones.ejercicio3.Producto.getSku(Producto.java:14)
+	at com.docencia.colecciones.ejercicio3.Inventario.skusDuplicados(Inventario.java:25)
+	at com.docencia.colecciones.ejercicio3.InventarioTest.skusDuplicadosDebeDevolverVacioSiNoHay(InventarioTest.java:60)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.colecciones.ejercicio3.InventarioTest.skusDuplicadosDebeDetectarVarios -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.colecciones.ejercicio3.Producto.getSku(Producto.java:14)
+	at com.docencia.colecciones.ejercicio3.Inventario.skusDuplicados(Inventario.java:25)
+	at com.docencia.colecciones.ejercicio3.InventarioTest.skusDuplicadosDebeDetectarVarios(InventarioTest.java:67)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.colecciones.ejercicio3.InventarioTest.indexarPorSkuDebeCrearMapa -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.colecciones.ejercicio3.Producto.getSku(Producto.java:14)
+	at com.docencia.colecciones.ejercicio3.Inventario.indexarPorSku(Inventario.java:15)
+	at com.docencia.colecciones.ejercicio3.InventarioTest.indexarPorSkuDebeCrearMapa(InventarioTest.java:16)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.colecciones.ejercicio3.InventarioTest.indexarPorSkuDebeSobrescribirSiDuplicado -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.colecciones.ejercicio3.Producto.getSku(Producto.java:14)
+	at com.docencia.colecciones.ejercicio3.Inventario.indexarPorSku(Inventario.java:15)
+	at com.docencia.colecciones.ejercicio3.InventarioTest.indexarPorSkuDebeSobrescribirSiDuplicado(InventarioTest.java:33)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.colecciones.ejercicio3.InventarioTest.skusDuplicadosDebeDetectarUno -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.colecciones.ejercicio3.Producto.getSku(Producto.java:14)
+	at com.docencia.colecciones.ejercicio3.Inventario.skusDuplicados(Inventario.java:25)
+	at com.docencia.colecciones.ejercicio3.InventarioTest.skusDuplicadosDebeDetectarUno(InventarioTest.java:53)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.colecciones.ejercicio3.InventarioTest.indexarPorSkuDebeAccederPorClave -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.colecciones.ejercicio3.Producto.getSku(Producto.java:14)
+	at com.docencia.colecciones.ejercicio3.Inventario.indexarPorSku(Inventario.java:15)
+	at com.docencia.colecciones.ejercicio3.InventarioTest.indexarPorSkuDebeAccederPorClave(InventarioTest.java:24)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

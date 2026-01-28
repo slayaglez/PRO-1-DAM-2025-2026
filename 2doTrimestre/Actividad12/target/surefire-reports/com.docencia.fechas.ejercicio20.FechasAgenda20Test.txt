@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.fechas.ejercicio20.FechasAgenda20Test
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.039 s <<< FAILURE! -- in com.docencia.fechas.ejercicio20.FechasAgenda20Test
+com.docencia.fechas.ejercicio20.FechasAgenda20Test.estaDentroVentanaDebeSerTrueEnLimiteSuperior -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio20.FechasAgenda20.estaDentroVentana(FechasAgenda20.java:23)
+	at com.docencia.fechas.ejercicio20.FechasAgenda20Test.estaDentroVentanaDebeSerTrueEnLimiteSuperior(FechasAgenda20Test.java:28)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio20.FechasAgenda20Test.estaDentroVentanaDebeSerFalseDespues -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio20.FechasAgenda20.estaDentroVentana(FechasAgenda20.java:23)
+	at com.docencia.fechas.ejercicio20.FechasAgenda20Test.estaDentroVentanaDebeSerFalseDespues(FechasAgenda20Test.java:42)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio20.FechasAgenda20Test.proximaRevisionDebeSumarPeriodo -- Time elapsed: 0.009 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio20.FechasAgenda20.proximaRevision(FechasAgenda20.java:13)
+	at com.docencia.fechas.ejercicio20.FechasAgenda20Test.proximaRevisionDebeSumarPeriodo(FechasAgenda20Test.java:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio20.FechasAgenda20Test.estaDentroVentanaDebeSerFalseAntes -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio20.FechasAgenda20.estaDentroVentana(FechasAgenda20.java:23)
+	at com.docencia.fechas.ejercicio20.FechasAgenda20Test.estaDentroVentanaDebeSerFalseAntes(FechasAgenda20Test.java:35)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio20.FechasAgenda20Test.sumarDuracionDebeSumarHoras -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio20.FechasAgenda20.sumarDuracion(FechasAgenda20.java:18)
+	at com.docencia.fechas.ejercicio20.FechasAgenda20Test.sumarDuracionDebeSumarHoras(FechasAgenda20Test.java:21)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

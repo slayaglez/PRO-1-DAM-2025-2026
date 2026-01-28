@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.fechas.ejercicio17.FechasConversion17Test
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.020 s <<< FAILURE! -- in com.docencia.fechas.ejercicio17.FechasConversion17Test
+com.docencia.fechas.ejercicio17.FechasConversion17Test.deInstantDebeVolverALocalDateTime -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio17.FechasConversion17.deInstant(FechasConversion17.java:24)
+	at com.docencia.fechas.ejercicio17.FechasConversion17Test.deInstantDebeVolverALocalDateTime(FechasConversion17Test.java:25)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio17.FechasConversion17Test.deInstantNoDebeSerNull -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio17.FechasConversion17.deInstant(FechasConversion17.java:24)
+	at com.docencia.fechas.ejercicio17.FechasConversion17Test.deInstantNoDebeSerNull(FechasConversion17Test.java:38)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio17.FechasConversion17Test.aInstantDebeSerConsistente -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio17.FechasConversion17.aInstant(FechasConversion17.java:14)
+	at com.docencia.fechas.ejercicio17.FechasConversion17Test.aInstantDebeSerConsistente(FechasConversion17Test.java:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio17.FechasConversion17Test.aInstantDebeCambiarConZona -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio17.FechasConversion17.aInstant(FechasConversion17.java:14)
+	at com.docencia.fechas.ejercicio17.FechasConversion17Test.aInstantDebeCambiarConZona(FechasConversion17Test.java:32)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio17.FechasConversion17Test.aZonedDebeTenerZona -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.fechas.ejercicio17.FechasConversion17.aZoned(FechasConversion17.java:19)
+	at com.docencia.fechas.ejercicio17.FechasConversion17Test.aZonedDebeTenerZona(FechasConversion17Test.java:20)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

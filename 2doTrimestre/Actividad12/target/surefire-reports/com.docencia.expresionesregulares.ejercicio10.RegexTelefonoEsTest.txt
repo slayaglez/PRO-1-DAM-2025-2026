@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.expresionesregulares.ejercicio10.RegexTelefonoEsTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.013 s <<< FAILURE! -- in com.docencia.expresionesregulares.ejercicio10.RegexTelefonoEsTest
+com.docencia.expresionesregulares.ejercicio10.RegexTelefonoEsTest.debeAceptarSinEspacios -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio10.RegexTelefonoEs.esValido(RegexTelefonoEs.java:16)
+	at com.docencia.expresionesregulares.ejercicio10.RegexTelefonoEsTest.debeAceptarSinEspacios(RegexTelefonoEsTest.java:21)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.expresionesregulares.ejercicio10.RegexTelefonoEsTest.debeRechazarInicioIncorrecto -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio10.RegexTelefonoEs.esValido(RegexTelefonoEs.java:16)
+	at com.docencia.expresionesregulares.ejercicio10.RegexTelefonoEsTest.debeRechazarInicioIncorrecto(RegexTelefonoEsTest.java:26)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.expresionesregulares.ejercicio10.RegexTelefonoEsTest.patronNoDebeSerNulo -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio10.RegexTelefonoEs.patron(RegexTelefonoEs.java:21)
+	at com.docencia.expresionesregulares.ejercicio10.RegexTelefonoEsTest.patronNoDebeSerNulo(RegexTelefonoEsTest.java:10)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.expresionesregulares.ejercicio10.RegexTelefonoEsTest.debeAceptarConPrefijo -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio10.RegexTelefonoEs.esValido(RegexTelefonoEs.java:16)
+	at com.docencia.expresionesregulares.ejercicio10.RegexTelefonoEsTest.debeAceptarConPrefijo(RegexTelefonoEsTest.java:16)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

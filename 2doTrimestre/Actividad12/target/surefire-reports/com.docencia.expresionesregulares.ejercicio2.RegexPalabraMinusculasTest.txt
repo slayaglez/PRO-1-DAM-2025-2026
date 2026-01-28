@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.expresionesregulares.ejercicio2.RegexPalabraMinusculasTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.016 s <<< FAILURE! -- in com.docencia.expresionesregulares.ejercicio2.RegexPalabraMinusculasTest
+com.docencia.expresionesregulares.ejercicio2.RegexPalabraMinusculasTest.debeAceptarPalabra -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio2.RegexPalabraMinusculas.esValido(RegexPalabraMinusculas.java:16)
+	at com.docencia.expresionesregulares.ejercicio2.RegexPalabraMinusculasTest.debeAceptarPalabra(RegexPalabraMinusculasTest.java:16)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.expresionesregulares.ejercicio2.RegexPalabraMinusculasTest.debeRechazarCorta -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio2.RegexPalabraMinusculas.esValido(RegexPalabraMinusculas.java:16)
+	at com.docencia.expresionesregulares.ejercicio2.RegexPalabraMinusculasTest.debeRechazarCorta(RegexPalabraMinusculasTest.java:26)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.expresionesregulares.ejercicio2.RegexPalabraMinusculasTest.patronNoDebeSerNulo -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio2.RegexPalabraMinusculas.patron(RegexPalabraMinusculas.java:21)
+	at com.docencia.expresionesregulares.ejercicio2.RegexPalabraMinusculasTest.patronNoDebeSerNulo(RegexPalabraMinusculasTest.java:10)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.expresionesregulares.ejercicio2.RegexPalabraMinusculasTest.debeRechazarMayusculas -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO
+	at com.docencia.expresionesregulares.ejercicio2.RegexPalabraMinusculas.esValido(RegexPalabraMinusculas.java:16)
+	at com.docencia.expresionesregulares.ejercicio2.RegexPalabraMinusculasTest.debeRechazarMayusculas(RegexPalabraMinusculasTest.java:21)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
