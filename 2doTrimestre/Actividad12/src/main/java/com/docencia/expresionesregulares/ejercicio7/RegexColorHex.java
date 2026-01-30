@@ -1,8 +1,5 @@
 package com.docencia.expresionesregulares.ejercicio7;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public final class RegexColorHex {
@@ -12,13 +9,12 @@ public final class RegexColorHex {
   private RegexColorHex() {}
 
   public static boolean esValido(String texto) {
-    // TODO: implementar este metodo
-    throw new UnsupportedOperationException("TODO");
+    String patron = "^#([0-9a-fA-F]){6}$";
+    return Pattern.matches(patron, texto);
   }
 
   public static Pattern patron() {
-    // TODO: implementar este metodo
-    throw new UnsupportedOperationException("TODO");
+    return PATRON;
   }
 
 
