@@ -1,3 +1,8 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Programa que valida un correo electronico
+ */
 package com.docencia.expresiones.ejercicio3;
 
 import java.util.regex.Pattern;

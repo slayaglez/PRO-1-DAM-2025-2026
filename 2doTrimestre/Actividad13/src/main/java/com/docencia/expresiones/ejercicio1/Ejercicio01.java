@@ -1,3 +1,8 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Programa que valida una hora
+ */
 package com.docencia.expresiones.ejercicio1;
 
 import java.util.regex.Pattern;

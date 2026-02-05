@@ -1,3 +1,8 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Programa que comprueba si una fecha se encuentra en un intervalo
+ */
 package com.docencia.fecha.ejercicio1;
 
 import java.time.LocalTime;
@@ -27,6 +32,12 @@ import java.time.LocalTime;
 
 public class Ejercicio01 {
     public static boolean estaDentro(LocalTime t, LocalTime inicio, LocalTime fin) {
-        throw new UnsupportedOperationException("TODO");
+        if (t == null || inicio == null || fin == null || inicio.isAfter(fin)) {
+            throw new IllegalArgumentException();
+        } else if (inicio.equals(fin)) {
+            return false;
+        }
+
+        return t.isBefore(fin) && t.isAfter(inicio) || t.equals(inicio);
     }
 }

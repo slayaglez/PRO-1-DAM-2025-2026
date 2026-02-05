@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TurnoEmpleado.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DateTime/Expresiones/Clases</a> &gt; <a href="index.source.html" class="el_package">com.docencia.clases.ejercicio5</a> &gt; <span class="el_source">TurnoEmpleado.java</span></div><h1>TurnoEmpleado.java</h1><pre class="source lang-java linenums">package com.docencia.clases.ejercicio5;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+
+public class TurnoEmpleado {
+
+    private static final String EMP_ID_REGEX = &quot;^EMP-\\d{5}$&quot;;
+    private static final String FRANJA_REGEX = &quot;^\\d{2}:\\d{2}-\\d{2}:\\d{2}$&quot;;
+
+    private final String empleadoId;
+    private final LocalDate dia;
+    private final LocalTime inicio;
+    private final LocalTime fin;
+
+<span class="fc" id="L17">    public TurnoEmpleado(String empleadoId, LocalDate dia, LocalTime inicio, LocalTime fin) {</span>
+<span class="fc" id="L18">        this.empleadoId = empleadoId;</span>
+<span class="fc" id="L19">        this.dia = dia;</span>
+<span class="fc" id="L20">        this.inicio = inicio;</span>
+<span class="fc" id="L21">        this.fin = fin;</span>
+<span class="fc" id="L22">    }</span>
+
+    public void validate() {
+<span class="fc" id="L25">        throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
+    }
+
+    public String franja() {
+<span class="nc" id="L29">        throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
+    }
+
+    public LocalDateTime inicioDateTime() {
+<span class="fc" id="L33">        throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
+    }
+
+    public LocalDateTime finDateTime() {
+<span class="nc" id="L37">        throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
+    }
+
+    public boolean cumpleDescansoMinimoDesde(TurnoEmpleado anterior, int minDescansoHoras) {
+<span class="fc" id="L41">        throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
+    }
+
+    public String getEmpleadoId() {
+<span class="nc" id="L45">        return empleadoId;</span>
+    }
+
+    public LocalDate getDia() {
+<span class="nc" id="L49">        return dia;</span>
+    }
+
+    public LocalTime getInicio() {
+<span class="nc" id="L53">        return inicio;</span>
+    }
+
+    public LocalTime getFin() {
+<span class="nc" id="L57">        return fin;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

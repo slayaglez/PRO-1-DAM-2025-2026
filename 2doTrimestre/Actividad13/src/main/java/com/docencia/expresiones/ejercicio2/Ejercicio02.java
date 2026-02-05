@@ -1,3 +1,8 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Programa que valida una fecha
+ */
 package com.docencia.expresiones.ejercicio2;
 
 import java.util.regex.Pattern;

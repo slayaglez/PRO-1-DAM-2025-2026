@@ -1,6 +1,5 @@
 package com.docencia.fecha.ejercicio3;
 
-import java.time.Duration;
 import java.time.LocalTime;
 
 /**
@@ -23,6 +22,12 @@ import java.time.LocalTime;
  */
 public class Ejercicio03 {
     public static long minutosHasta(LocalTime ahora, LocalTime objetivo) {
-        throw new UnsupportedOperationException("TODO");
+        if(ahora == null || objetivo == null){
+            throw new IllegalArgumentException();
+        }
+
+        //TODO
+        return 0;
+
     }
 }

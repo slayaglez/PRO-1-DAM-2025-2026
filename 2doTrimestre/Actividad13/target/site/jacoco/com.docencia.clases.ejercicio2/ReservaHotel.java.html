@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ReservaHotel.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DateTime/Expresiones/Clases</a> &gt; <a href="index.source.html" class="el_package">com.docencia.clases.ejercicio2</a> &gt; <span class="el_source">ReservaHotel.java</span></div><h1>ReservaHotel.java</h1><pre class="source lang-java linenums">package com.docencia.clases.ejercicio2;
+
+import java.time.LocalDate;
+
+public class ReservaHotel {
+
+    private final String codigoReserva;
+    private final String dni;
+    private final LocalDate checkIn;
+    private final LocalDate checkOut;
+
+<span class="fc" id="L12">    public ReservaHotel(String codigoReserva, String dni, LocalDate checkIn, LocalDate checkOut) {</span>
+<span class="fc" id="L13">        this.codigoReserva = codigoReserva;</span>
+<span class="fc" id="L14">        this.dni = dni;</span>
+<span class="fc" id="L15">        this.checkIn = checkIn;</span>
+<span class="fc" id="L16">        this.checkOut = checkOut;</span>
+<span class="fc" id="L17">    }</span>
+
+    public void validate() {
+<span class="fc" id="L20">        throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
+    }
+
+    public long noches() {
+<span class="fc" id="L24">        throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
+    }
+
+    public boolean puedeCancelar(LocalDate hoy) {
+<span class="fc" id="L28">        throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
+    }
+
+    public String getCodigoReserva() {
+<span class="nc" id="L32">        return codigoReserva;</span>
+    }
+
+    public String getDni() {
+<span class="nc" id="L36">        return dni;</span>
+    }
+
+    public LocalDate getCheckIn() {
+<span class="nc" id="L40">        return checkIn;</span>
+    }
+
+    public LocalDate getCheckOut() {
+<span class="nc" id="L44">        return checkOut;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ejercicio06.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DateTime/Expresiones/Clases</a> &gt; <a href="index.source.html" class="el_package">com.docencia.expresiones.ejercicio6</a> &gt; <span class="el_source">Ejercicio06.java</span></div><h1>Ejercicio06.java</h1><pre class="source lang-java linenums">/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Programa que valida una palabra repetida
+ */
+package com.docencia.expresiones.ejercicio6;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/**
+ * 6) DETECTAR PALABRA REPETIDA CONSECUTIVA - Detectar si existe una palabra
+ * repetida inmediatamente (ej: &quot;hola hola&quot;), usando grupos y backreferences.
+ * Válidos: &quot;hola hola&quot;, &quot;qué qué&quot;, &quot;test test&quot; Inválidos: &quot;hola adiós hola&quot;,
+ * &quot;holahola&quot;, &quot;hola adiós&quot;
+ */
+<span class="nc" id="L17">public class Ejercicio06 {</span>
+
+    /**
+     * Devuelve true si existe al menos una palabra repetida consecutivamente.
+     */
+    public static boolean hasConsecutiveRepeatedWord(String text) {
+<span class="fc bfc" id="L23" title="All 4 branches covered.">    if (text == null || text.isBlank()) {</span>
+<span class="fc" id="L24">        return false;</span>
+    }
+    
+    //? Uso \\b para marcarle al matcher el principio y final de la expresion
+    //? OJO no es lo mismo que ^ y $
+
+<span class="fc" id="L30">    String regex = &quot;\\b([a-zA-Záéíóú]+)\\s+\\1\\b&quot;;</span>
+    
+    //? Uso Pattern.CASE_INSENSITIVE... para decirle al matcher que compare igual entre mayusculas
+    //? minusculas y caracteres UNICODE como é (no pude encontrar otra forma) (te pasaste Joatham)
+    //? Aqui esta la documentacion de donde saque esto, NO USE IA
+    //? https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html#CASE_INSENSITIVE
+    //? https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html#UNICODE_CHARACTER_CLASS
+
+<span class="fc" id="L38">    Pattern pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CHARACTER_CLASS);</span>
+    
+<span class="fc" id="L40">    Matcher matcher = pattern.matcher(text);</span>
+    
+    //? Debo usar find() porque matches() compara toda la cadena y 
+    //? no busca una coincidencia dentro de una cadena
+<span class="fc" id="L44">    return matcher.find(); </span>
+}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

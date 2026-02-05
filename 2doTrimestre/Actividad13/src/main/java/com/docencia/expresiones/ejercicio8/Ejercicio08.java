@@ -1,3 +1,8 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Programa que valida una IPv4
+ */
 package com.docencia.expresiones.ejercicio8;
 
 import java.util.regex.Pattern;
@@ -13,6 +18,13 @@ import java.util.regex.Pattern;
 public class Ejercicio08 {
 
   public static boolean isValidIPv4(String ip) {
-    throw new UnsupportedOperationException("TODO");
+
+    if(ip == null || ip.isBlank()){
+      return false;
+    }
+
+    String patron = "^((2[0-5][0-5]||2[0-4][0-9]||1([0-9]){2}||[1-9][0-9]||[0-9])\\.){3}(2[0-5][0-5]||2[0-4][0-9]||1([0-9]){2}||[1-9][0-9]||[0-9])$";
+    return Pattern.matches(patron, ip);
+
   }
 }

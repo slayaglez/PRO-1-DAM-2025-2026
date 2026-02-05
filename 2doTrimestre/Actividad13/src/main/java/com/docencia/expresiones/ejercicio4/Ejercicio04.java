@@ -1,3 +1,8 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Programa que valida un código postal
+ */
 package com.docencia.expresiones.ejercicio4;
 
 import java.util.regex.Pattern;

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ejercicio08.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DateTime/Expresiones/Clases</a> &gt; <a href="index.source.html" class="el_package">com.docencia.fecha.ejercicio8</a> &gt; <span class="el_source">Ejercicio08.java</span></div><h1>Ejercicio08.java</h1><pre class="source lang-java linenums">package com.docencia.fecha.ejercicio8;
+
+import java.time.LocalTime;
+
+/**
+ * EJERCICIO 8B) NORMALIZAR FRANJA HORARIA (PUEDE CRUZAR MEDIANOCHE)
+ *
+ * Dada una franja en formato String: &quot;HH:mm-HH:mm&quot; (ej. &quot;22:00-06:00&quot;),
+ * devuelve un String normalizado con el mismo formato (siempre 2 dígitos),
+ * y además indica si la franja es válida según estas reglas:
+ *
+ * Reglas de validez:
+ * - Debe cumplir exactamente el patrón: ^\d{2}:\d{2}-\d{2}:\d{2}$
+ * - Las horas deben estar en 00..23 y los minutos en 00..59
+ * - Si inicio == fin, se considera franja VACÍA (inválida) y debe lanzar excepción.
+ *
+ * Normalización:
+ * - Debe devolver &quot;HH:mm-HH:mm&quot; con ceros a la izquierda.
+ * - Si el input ya está normalizado, debe devolverlo igual.
+ *
+ * Cruce de medianoche:
+ * - Si inicio &gt; fin, la franja cruza medianoche y se considera válida.
+ *
+ * Programación defensiva:
+ * - Si franja es null o blank, lanza IllegalArgumentException.
+ * - Si el formato o el rango es incorrecto, lanza IllegalArgumentException.
+ * - Si inicio.equals(fin), lanza IllegalArgumentException (franja vacía).
+ *
+ * Ejemplos válidos:
+ * - &quot;09:30-12:15&quot;  -&gt; &quot;09:30-12:15&quot;
+ * - &quot;22:00-06:00&quot;  -&gt; &quot;22:00-06:00&quot;
+ *
+ * Ejemplos inválidos:
+ * - &quot;9:30-12:15&quot;   (no cumple exactamente 2 dígitos)
+ * - &quot;24:00-06:00&quot;  (hora fuera de rango)
+ * - &quot;10:60-12:00&quot;  (minutos fuera de rango)
+ * - &quot;10:00-10:00&quot;  (franja vacía)
+ * - &quot;1030-1215&quot;    (formato incorrecto)
+ */
+<span class="nc" id="L40">public class Ejercicio08 {</span>
+    public static String normalizarFranja(String franja) {
+<span class="fc" id="L42">        throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ejercicio10.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DateTime/Expresiones/Clases</a> &gt; <a href="index.source.html" class="el_package">com.docencia.expresiones.ejercicio10</a> &gt; <span class="el_source">Ejercicio10.java</span></div><h1>Ejercicio10.java</h1><pre class="source lang-java linenums">/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Dios mio socorro
+ */
+package com.docencia.expresiones.ejercicio10;
+
+/**
+ /**
+ * 10) VALIDAR DNI/NIF ESPAÑOL (8 dígitos + letra) EXACTO
+ *    - Validar un DNI/NIF con este formato:
+ *      8 dígitos (sin separadores) + 1 letra (mayúscula)
+ *    - Reglas:
+ *      1) Debe ser EXACTAMENTE: ^\d{8}[A-Z]$
+ *      2) Además, la letra debe corresponder al número:
+ *         letra = &quot;TRWAGMYFPDXBNJZSQVHLCKE&quot;[numero % 23]
+ *
+ *    Válidos (si la letra cuadra):
+ *      &quot;00000000T&quot;, &quot;12345678Z&quot;, &quot;53077918Y&quot;
+ *
+ *    Inválidos:
+ *      - Formato incorrecto: &quot;1234567Z&quot;, &quot;12345678-z&quot;, &quot;12.345.678Z&quot;
+ *      - Letra incorrecta:   &quot;12345678A&quot;
+ *
+ */
+<span class="nc" id="L26">public class Ejercicio10 {</span>
+
+    public static boolean validarDNI(String dni) {
+    //! ????????????????????????????????????????????????????????????????????????????????????????????????????????????
+
+<span class="fc bfc" id="L31" title="All 2 branches covered.">    if (dni == null) {</span>
+<span class="fc" id="L32">        return false;</span>
+    }
+    
+<span class="fc" id="L35">    String patron = &quot;^\\d{8}[A-Z]$&quot;;</span>
+<span class="fc bfc" id="L36" title="All 2 branches covered.">    if (!dni.matches(patron)) {</span>
+<span class="fc" id="L37">        return false;</span>
+    }
+
+<span class="fc" id="L40">    String letras = &quot;TRWAGMYFPDXBNJZSQVHLCKE&quot;;</span>
+    //? substring() devuelve la cadena que se encuentre entre las posiciones dadas
+<span class="fc" id="L42">    int numero = Integer.parseInt(dni.substring(0, 8)); </span>
+<span class="fc" id="L43">    char letraProporcionada = dni.charAt(8);</span>
+<span class="fc" id="L44">    char letraCorrecta = letras.charAt(numero % 23);</span>
+    
+<span class="fc bfc" id="L46" title="All 2 branches covered.">    return letraProporcionada == letraCorrecta;</span>
+    }
+
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

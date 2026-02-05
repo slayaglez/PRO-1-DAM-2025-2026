@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ejercicio10.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DateTime/Expresiones/Clases</a> &gt; <a href="index.source.html" class="el_package">com.docencia.fecha.ejercicio10</a> &gt; <span class="el_source">Ejercicio10.java</span></div><h1>Ejercicio10.java</h1><pre class="source lang-java linenums">package com.docencia.fecha.ejercicio10;
+
+import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+     * EJERCICIO 10) Generador de alarmas repetidas (mod 24h)
+     *
+     * Genera una lista con las próximas n alarmas empezando en 'inicio', separadas por pasoMin minutos.
+     * La lista debe incluir 'inicio' como primera alarma.
+     * Si al sumar se cruza medianoche, debe continuar desde 00:00 (mod 24h).
+     *
+     * Programación defensiva:
+     * - Si inicio es null, lanza IllegalArgumentException.
+     * - Si pasoMin &lt;= 0, lanza IllegalArgumentException.
+     * - Si n &lt; 0, lanza IllegalArgumentException.
+     * - Si n == 0, devuelve una lista vacía.
+     *
+     * Ejemplo:
+     * - inicio=23:50, pasoMin=15, n=4 =&gt; [23:50, 00:05, 00:20, 00:35]
+     */
+<span class="nc" id="L23">public class Ejercicio10 {</span>
+public static List&lt;LocalTime&gt; generarAlarmas(LocalTime inicio, int pasoMin, int n) {
+<span class="fc" id="L25">        throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

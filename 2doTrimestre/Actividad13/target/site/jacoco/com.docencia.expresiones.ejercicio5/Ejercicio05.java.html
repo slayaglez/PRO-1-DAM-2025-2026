@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ejercicio05.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DateTime/Expresiones/Clases</a> &gt; <a href="index.source.html" class="el_package">com.docencia.expresiones.ejercicio5</a> &gt; <span class="el_source">Ejercicio05.java</span></div><h1>Ejercicio05.java</h1><pre class="source lang-java linenums">/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Programa que valida una matricula espaniola
+ */
+package com.docencia.expresiones.ejercicio5;
+
+import java.util.regex.Pattern;
+
+/**
+ * 5) MATRÍCULA ESPAÑOLA MODERNA (1234ABC, sin vocales típicas)
+ *    - Validar 4 dígitos + 3 letras (normalmente sin vocales A,E,I,O,U).
+ *    Válidos:   &quot;1234BCD&quot;, &quot;0001XYZ&quot;
+ *    Inválidos: &quot;123ABC&quot;, &quot;1234AEI&quot;, &quot;12A4BCD&quot; 
+ */
+<span class="nc" id="L16">public class Ejercicio05 {</span>
+
+
+  public static boolean isValidMatriculaES(String plate) {
+<span class="fc bfc" id="L20" title="All 4 branches covered.">    if(plate == null || plate.isEmpty()){</span>
+<span class="fc" id="L21">      return false;</span>
+    }
+<span class="fc" id="L23">    String patron = &quot;^[0-9]{4}[^AEIOUa-z0-9]{3}$&quot;;</span>
+<span class="fc" id="L24">    return Pattern.matches(patron, plate);</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

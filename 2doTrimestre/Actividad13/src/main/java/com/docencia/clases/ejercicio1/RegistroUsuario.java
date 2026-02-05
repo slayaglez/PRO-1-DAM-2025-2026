@@ -3,7 +3,6 @@ package com.docencia.clases.ejercicio1;
 import java.time.Clock;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.Period;
 
 
 public class RegistroUsuario {
@@ -27,7 +26,7 @@ public class RegistroUsuario {
     }
 
     public void validate(int edadMinima) {
-        int edad = Period.between(fechaNacimiento, fechaRegistro).getYears();
+        //TODO
         
         
     }
