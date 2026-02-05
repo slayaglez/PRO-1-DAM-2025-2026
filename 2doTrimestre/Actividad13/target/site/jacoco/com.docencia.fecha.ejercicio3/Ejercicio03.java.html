@@ -1,6 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ejercicio03.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DateTime/Expresiones/Clases</a> &gt; <a href="index.source.html" class="el_package">com.docencia.fecha.ejercicio3</a> &gt; <span class="el_source">Ejercicio03.java</span></div><h1>Ejercicio03.java</h1><pre class="source lang-java linenums">package com.docencia.fecha.ejercicio3;
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ejercicio03.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DateTime/Expresiones/Clases</a> &gt; <a href="index.source.html" class="el_package">com.docencia.fecha.ejercicio3</a> &gt; <span class="el_source">Ejercicio03.java</span></div><h1>Ejercicio03.java</h1><pre class="source lang-java linenums">/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Programa que calcula un intervalo en minutos entre dos horas distintas
+ */
+package com.docencia.fecha.ejercicio3;
 
-import java.time.Duration;
 import java.time.LocalTime;
 
 /**
@@ -21,9 +25,46 @@ import java.time.LocalTime;
  * - ahora=10:00, objetivo=10:10 =&gt; 10
  * - ahora=23:50, objetivo=00:10 =&gt; 20
  */
-<span class="nc" id="L24">public class Ejercicio03 {</span>
+<span class="nc" id="L28">public class Ejercicio03 {</span>
     public static long minutosHasta(LocalTime ahora, LocalTime objetivo) {
-<span class="fc" id="L26">        throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
+<span class="fc bfc" id="L30" title="All 4 branches covered.">        if(ahora == null || objetivo == null){</span>
+<span class="fc" id="L31">            throw new IllegalArgumentException();</span>
+        }
+<span class="fc" id="L33">        long minutos = 0;</span>
+<span class="fc" id="L34">        int horas = 0;</span>
+
+<span class="fc bfc" id="L36" title="All 2 branches covered.">        if(ahora.equals(objetivo)){</span>
+<span class="fc" id="L37">            return 0;</span>
+        }
+
+<span class="fc bfc" id="L40" title="All 2 branches covered.">        if(ahora.isBefore(objetivo)){</span>
+<span class="fc" id="L41">            minutos = objetivo.getMinute() - ahora.getMinute();</span>
+<span class="fc" id="L42">            horas = objetivo.getHour() - ahora.getHour();</span>
+<span class="fc" id="L43">            minutos += horas*60;</span>
+<span class="fc" id="L44">        }</span>
+        else {
+            // si ahora no es before obj es after obj
+            // calculo intervalo de ahora a las 00:00 y de las 00:00 a objetivo
+            // ejemplo 23:50 -&gt; 00:00 luego 00:00 -&gt; 00:10
+            // 00:00 se puede mirar de forma practica como 23:60
+            // si hago 23:60 - 23:50 devolveria 10 min y //! no permite 23:60
+            //? Lo sustituyo por 23:59 y le sumo un minuto
+            // sumo minutos y horas de obj
+<span class="fc" id="L53">            horas = 23;</span>
+<span class="fc" id="L54">            minutos = 59;</span>
+
+<span class="fc" id="L56">            horas -= ahora.getHour();</span>
+<span class="fc" id="L57">            minutos -= ahora.getMinute();</span>
+<span class="fc" id="L58">            minutos ++;</span>
+
+<span class="fc" id="L60">            horas += objetivo.getHour();</span>
+<span class="fc" id="L61">            minutos += objetivo.getMinute();</span>
+
+<span class="fc" id="L63">            minutos += horas*60;</span>
+        }
+        
+<span class="fc" id="L66">        return minutos;</span>
+
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

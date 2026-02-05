@@ -1,3 +1,8 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Programa que suma minutos a una hora especifica
+ */
 package com.docencia.fecha.ejercicio5;
 
 import java.time.LocalTime;
@@ -20,6 +25,15 @@ import java.time.LocalTime;
  */
 public class Ejercicio05 {
     public static LocalTime sumarMinutos(LocalTime t, long deltaMin) {
-        throw new UnsupportedOperationException("TODO");
+        
+        if(t == null){
+            throw new IllegalArgumentException();
+        }
+
+        if (deltaMin == 0) {
+            return t;
+        }
+
+        return t.plusMinutes(deltaMin);
     }
 }

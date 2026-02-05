@@ -1,6 +1,7 @@
 package com.docencia.clases.ejercicio2;
 
 import java.time.LocalDate;
+import java.util.regex.Pattern;
 
 public class ReservaHotel {
 
@@ -17,11 +18,23 @@ public class ReservaHotel {
     }
 
     public void validate() {
-        throw new UnsupportedOperationException("TODO");
+        String patronDni = "^[0-9]{8}[A-Z]$";
+        String patronCodigo = "^RES-[0-9]{4}-[A-Z]{3}$";
+
+        boolean validDni = Pattern.matches(patronDni, this.dni);
+        boolean validCodigo = Pattern.matches(patronCodigo, this.codigoReserva);
+
+        if(!validDni){
+            throw new IllegalArgumentException();
+        }
+        if(!validCodigo){
+            throw new IllegalArgumentException();
+        }
     }
 
     public long noches() {
-        throw new UnsupportedOperationException("TODO");
+        long resultado = checkOut.getDayOfYear() - checkIn.getDayOfYear();
+        return resultado;
     }
 
     public boolean puedeCancelar(LocalDate hoy) {

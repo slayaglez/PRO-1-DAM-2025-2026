@@ -25,7 +25,6 @@ public class Arcade extends Juego implements TarificableJuego {
         super(id, titulo, complemento);
     }
 
-
     /**
      * Metodo que devuelve el tipo de juego
      */

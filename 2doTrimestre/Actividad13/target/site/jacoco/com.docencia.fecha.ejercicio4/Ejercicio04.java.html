@@ -3,26 +3,64 @@
 import java.time.LocalTime;
 
 /**
-     * EJERCICIO 4) Redondear al siguiente múltiplo de X minutos (ceil)
-     *
-     * Dada una hora t y un paso en minutos pasoMin (por ejemplo 15),
-     * devuelve la hora redondeada hacia arriba al siguiente múltiplo de pasoMin.
-     * - Si t ya cae exactamente en un múltiplo, debe devolver t.
-     * - Si el redondeo supera las 23:59, debe &quot;pasar&quot; al día siguiente (mod 24h).
-     *
-     * Programación defensiva:
-     * - Si t es null, lanza IllegalArgumentException.
-     * - Si pasoMin &lt;= 0 o pasoMin &gt; 60, lanza IllegalArgumentException.
-     * - Recomendado: exigir que 60 % pasoMin == 0 (si no, documenta tu estrategia).
-     *
-     * Ejemplos (pasoMin=15):
-     * - 10:01 =&gt; 10:15
-     * - 10:15 =&gt; 10:15
-     * - 10:59 =&gt; 11:00
-     */
-<span class="nc" id="L23">public class Ejercicio04 {</span>
-public static LocalTime redondearArriba(LocalTime t, int pasoMin) {
-<span class="fc" id="L25">        throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
+ * EJERCICIO 4) Redondear al siguiente múltiplo de X minutos (ceil)
+ *
+ * Dada una hora t y un paso en minutos pasoMin (por ejemplo 15), devuelve la
+ * hora redondeada hacia arriba al siguiente múltiplo de pasoMin. - Si t ya cae
+ * exactamente en un múltiplo, debe devolver t. - Si el redondeo supera las
+ * 23:59, debe &quot;pasar&quot; al día siguiente (mod 24h).
+ *
+ * Programación defensiva: - Si t es null, lanza IllegalArgumentException. - Si
+ * pasoMin &lt;= 0 o pasoMin &gt; 60, lanza IllegalArgumentException. - Recomendado:
+ * exigir que 60 % pasoMin == 0 (si no, documenta tu estrategia).
+ *
+ * Ejemplos (pasoMin=15): - 10:01 =&gt; 10:15 - 10:15 =&gt; 10:15 - 10:59 =&gt; 11:00
+ */
+<span class="nc" id="L19">public class Ejercicio04 {</span>
+
+    public static LocalTime redondearArriba(LocalTime t, int pasoMin) {
+
+<span class="fc bfc" id="L23" title="All 8 branches covered.">        if(t == null || pasoMin &lt;= 0 || pasoMin &gt; 59 || 60 % pasoMin != 0){</span>
+<span class="fc" id="L24">            throw new IllegalArgumentException();</span>
+        }
+
+        // vale, debo devolver los minutos como un multiplo de pasoMin
+        // se me ocurre coger minutos de t
+        // si minutos == pasoMin return la hora tal cual (hh:mm) o (hh:xx)
+        // si minutos &lt; pasoMin return la hora con pasoMin (hh:xx) misma cconsecuencia que arriba realmente
+        // si minutos &gt; pasoMin multiplico pasoMin por un incremental hasta que minutos &lt;= pasoMin
+
+<span class="fc" id="L33">        int horas = t.getHour();</span>
+<span class="fc" id="L34">        int minutos = t.getMinute();</span>
+<span class="fc" id="L35">        int segundos = t.getSecond();</span>
+<span class="fc" id="L36">        int nano = t.getNano();</span>
+<span class="fc bfc" id="L37" title="All 4 branches covered.">        if(nano &gt; 0 || segundos &gt; 0){</span>
+<span class="fc" id="L38">            minutos++;</span>
+        }
+
+<span class="fc bfc" id="L41" title="All 2 branches covered.">        if(minutos &lt;= pasoMin){</span>
+<span class="fc" id="L42">            return LocalTime.of(horas, pasoMin);</span>
+        }
+
+        // si llega hasta aqui es que minutos &gt; pasoMin
+        // deberia usar un while
+<span class="fc" id="L47">        int pasoMinMultiplo=pasoMin;</span>
+<span class="pc bpc" id="L48" title="1 of 2 branches missed.">        for (int i = 0; i &lt; 59; i++) {</span>
+<span class="fc bfc" id="L49" title="All 2 branches covered.">            if(pasoMin + minutos &gt;= 60){</span>
+<span class="fc bfc" id="L50" title="All 2 branches covered.">                if(horas == 23) {</span>
+<span class="fc" id="L51">                    horas = -1;</span>
+                }
+<span class="fc" id="L53">                return LocalTime.of(horas+1, 0);</span>
+            }
+<span class="fc bfc" id="L55" title="All 2 branches covered.">            if(pasoMinMultiplo &gt;= minutos){</span>
+<span class="fc" id="L56">                return LocalTime.of(horas, pasoMinMultiplo);</span>
+            }
+<span class="fc" id="L58">            pasoMinMultiplo = pasoMin*i;</span>
+        }
+
+        //if pasoMin + minutos &gt;= 60 entonces hora ++ y minutos = (pasoMin + minutos) - 60
+
+<span class="nc" id="L63">        throw new IllegalArgumentException(&quot;Algo hiciste mal&quot;);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

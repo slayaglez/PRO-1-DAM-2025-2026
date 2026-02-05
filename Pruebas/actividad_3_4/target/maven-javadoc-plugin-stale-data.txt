@@ -1,0 +1,47 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+--release
+17
+-sourcepath
+'/home/dam/Escritorio/Programacion/Pruebas/actividad_3_4/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2026. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/dam/Escritorio/Programacion/Pruebas/actividad_3_4/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Examen Juegos - v4 (exceptions + más tests + README alumno) 4.0.0 API'
+-use
+-version
+-windowtitle
+'Examen Juegos - v4 (exceptions + más tests + README alumno) 4.0.0 API'
+com.docencia.examen.herencia
+com.docencia.examen.interfaces
+com.docencia.examen.colecciones
+/home/dam/Escritorio/Programacion/Pruebas/actividad_3_4/src/main/java = 1769171770890
+/home/dam/Escritorio/Programacion/Pruebas/actividad_3_4/target/reports/apidocs/help-doc.html = 1769627261275
+/home/dam/Escritorio/Programacion/Pruebas/actividad_3_4/target/reports/apidocs/allclasses-index.html = 1769627261251
+/home/dam/Escritorio/Programacion/Pruebas/actividad_3_4/target/reports/apidocs/type-search-index.js = 1769627261254
+/home/dam/Escritorio/Programacion/Pruebas/actividad_3_4/target/reports/apidocs/jquery-ui.overrides.css = 1769627261286
+/home/dam/Escritorio/Programacion/Pruebas/actividad_3_4/target/reports/apidocs/index-all.html = 1769627261271
+/home/dam/Escritorio/Programacion/Pruebas/actividad_3_4/target/reports/apidocs/index.html = 1769627261239
+/home/dam/Escritorio/Programacion/Pruebas/actividad_3_4/target/reports/apidocs/module-search-index.js = 1769627261254
+/home/dam/Escritorio/Programacion/Pruebas/actividad_3_4/target/reports/apidocs/search.js = 1769627261277
+/home/dam/Escritorio/Programacion/Pruebas/actividad_3_4/target/reports/apidocs/member-search-index.js = 1769627261254
+/home/dam/Escritorio/Programacion/Pruebas/actividad_3_4/target/reports/apidocs/element-list = 1769627261192
+/home/dam/Escritorio/Programacion/Pruebas/actividad_3_4/target/reports/apidocs/overview-tree.html = 1769627261237
+/home/dam/Escritorio/Programacion/Pruebas/actividad_3_4/target/reports/apidocs/overview-summary.html = 1769627261272
+/home/dam/Escritorio/Programacion/Pruebas/actividad_3_4/target/reports/apidocs/tag-search-index.js = 1769627261255
+/home/dam/Escritorio/Programacion/Pruebas/actividad_3_4/target/reports/apidocs/allpackages-index.html = 1769627261253
+/home/dam/Escritorio/Programacion/Pruebas/actividad_3_4/target/reports/apidocs/script.js = 1769627261276
+/home/dam/Escritorio/Programacion/Pruebas/actividad_3_4/target/reports/apidocs/package-search-index.js = 1769627261254
+/home/dam/Escritorio/Programacion/Pruebas/actividad_3_4/target/reports/apidocs/stylesheet.css = 1769627261276
