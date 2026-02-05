@@ -107,9 +107,19 @@ Introducción a interfaces, y ejercicios de ejemplo con uso de herencias y polim
 [Link a la actividad 10](./2doTrimestre/Actividad10/interfaces/src/main/java/com/docencia)
 
 ### Actividad 11
-Actividad 3.3 evaluable, un conjunto de 50 ejercicios de listas, herencias, interfaces, sets y maps
+Actividad 3.3 evaluable, un conjunto de 50 ejercicios de listas, herencias, interfaces, sets y maps.
 
 [Link a la actividad 11](./2doTrimestre/Actividad11/src/main/java/com/docencia)
+
+### Actividad 12
+Introducción a enums, expresiones regulares y fechas; un conjunto de 50 ejercicios incluyendo colecciones.
+
+[Link a la actividad 12](./2doTrimestre/Actividad12/src/main/java/com/docencia)
+
+### Actividad 13
+Actividad 3.6 evaluable, un conjunto de 25 ejercicios de expresiones regulares, fechas y clases incluyendo todo lo anterior.
+
+[Link a la actividad 13](./2doTrimestre/Actividad13/src/main/java/com/docencia)
 
 <br>
 
