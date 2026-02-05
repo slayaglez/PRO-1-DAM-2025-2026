@@ -27,6 +27,8 @@ Todos los ejercicios y exámenes hechos a lo largo del primer año de Programaci
   - Unidad 4
     - [Actividad 10](#actividad-10)
     - [Actividad 11](#actividad-11)
+    - [Actividad 12](#actividad-12)
+    - [Actividad 13](#actividad-13)
 - [Exámenes y "Pruebas evaluables"](#exámenes-y-pruebas-evaluables)
 
 <br>
