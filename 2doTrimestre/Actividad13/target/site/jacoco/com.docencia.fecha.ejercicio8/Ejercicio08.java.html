@@ -1,6 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ejercicio08.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DateTime/Expresiones/Clases</a> &gt; <a href="index.source.html" class="el_package">com.docencia.fecha.ejercicio8</a> &gt; <span class="el_source">Ejercicio08.java</span></div><h1>Ejercicio08.java</h1><pre class="source lang-java linenums">package com.docencia.fecha.ejercicio8;
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ejercicio08.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DateTime/Expresiones/Clases</a> &gt; <a href="index.source.html" class="el_package">com.docencia.fecha.ejercicio8</a> &gt; <span class="el_source">Ejercicio08.java</span></div><h1>Ejercicio08.java</h1><pre class="source lang-java linenums">/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Un programa que normaliza una franja horaria
+ */
+package com.docencia.fecha.ejercicio8;
 
-import java.time.LocalTime;
+import java.util.regex.Pattern;
 
 /**
  * EJERCICIO 8B) NORMALIZAR FRANJA HORARIA (PUEDE CRUZAR MEDIANOCHE)
@@ -12,7 +17,8 @@ import java.time.LocalTime;
  * Reglas de validez:
  * - Debe cumplir exactamente el patrón: ^\d{2}:\d{2}-\d{2}:\d{2}$
  * - Las horas deben estar en 00..23 y los minutos en 00..59
- * - Si inicio == fin, se considera franja VACÍA (inválida) y debe lanzar excepción.
+ * - Si inicio == fin, se considera franja VACÍA (inválida) y debe lanzar
+ * excepción.
  *
  * Normalización:
  * - Debe devolver &quot;HH:mm-HH:mm&quot; con ceros a la izquierda.
@@ -20,6 +26,7 @@ import java.time.LocalTime;
  *
  * Cruce de medianoche:
  * - Si inicio &gt; fin, la franja cruza medianoche y se considera válida.
+ * - slayaglez
  *
  * Programación defensiva:
  * - Si franja es null o blank, lanza IllegalArgumentException.
@@ -27,19 +34,46 @@ import java.time.LocalTime;
  * - Si inicio.equals(fin), lanza IllegalArgumentException (franja vacía).
  *
  * Ejemplos válidos:
- * - &quot;09:30-12:15&quot;  -&gt; &quot;09:30-12:15&quot;
- * - &quot;22:00-06:00&quot;  -&gt; &quot;22:00-06:00&quot;
+ * - &quot;09:30-12:15&quot; -&gt; &quot;09:30-12:15&quot;
+ * - &quot;22:00-06:00&quot; -&gt; &quot;22:00-06:00&quot;
  *
  * Ejemplos inválidos:
- * - &quot;9:30-12:15&quot;   (no cumple exactamente 2 dígitos)
- * - &quot;24:00-06:00&quot;  (hora fuera de rango)
- * - &quot;10:60-12:00&quot;  (minutos fuera de rango)
- * - &quot;10:00-10:00&quot;  (franja vacía)
- * - &quot;1030-1215&quot;    (formato incorrecto)
+ * - &quot;9:30-12:15&quot; (no cumple exactamente 2 dígitos)
+ * - &quot;24:00-06:00&quot; (hora fuera de rango)
+ * - &quot;10:60-12:00&quot; (minutos fuera de rango)
+ * - &quot;10:00-10:00&quot; (franja vacía)
+ * - &quot;1030-1215&quot; (formato incorrecto)
  */
-<span class="nc" id="L40">public class Ejercicio08 {</span>
+<span class="nc" id="L47">public class Ejercicio08 {</span>
     public static String normalizarFranja(String franja) {
-<span class="fc" id="L42">        throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
+
+<span class="fc bfc" id="L50" title="All 4 branches covered.">        if (franja == null || franja.isBlank()) {</span>
+<span class="fc" id="L51">            throw new IllegalArgumentException();</span>
+        }
+
+<span class="fc" id="L54">        String patron = &quot;^(2[0-3]|1[0-9]|0[0-9]):([0-5][0-9])-(2[0-3]|1[0-9]|0[0-9]):([0-5][0-9])$&quot;;</span>
+
+        // si la cadena es valida
+<span class="fc bfc" id="L57" title="All 2 branches covered.">        if (Pattern.matches(patron, franja)) {</span>
+<span class="fc" id="L58">            String horaInicioStr = franja.substring(0, 2);</span>
+<span class="fc" id="L59">            String minutoInicioStr = franja.substring(3, 5);</span>
+<span class="fc" id="L60">            String horaFinStr = franja.substring(6, 8);</span>
+<span class="fc" id="L61">            String minutoFinStr = franja.substring(9, 11);</span>
+
+<span class="fc" id="L63">            int horaInicio = Integer.parseInt(horaInicioStr);</span>
+<span class="fc" id="L64">            int minutoInicio = Integer.parseInt(minutoInicioStr);</span>
+<span class="fc" id="L65">            int horaFin = Integer.parseInt(horaFinStr);</span>
+<span class="fc" id="L66">            int minutoFin = Integer.parseInt(minutoFinStr);</span>
+
+<span class="pc bpc" id="L68" title="1 of 4 branches missed.">            if(horaInicio == horaFin &amp;&amp; minutoInicio == minutoFin){</span>
+<span class="fc" id="L69">                throw new IllegalArgumentException();</span>
+            }
+
+<span class="fc" id="L72">            return franja;</span>
+        }
+        
+
+<span class="fc" id="L76">        throw new IllegalArgumentException();</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

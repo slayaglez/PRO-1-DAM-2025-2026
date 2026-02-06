@@ -1,5 +1,11 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Programa que trabaja con empleados y sus turnos
+ */
 package com.docencia.clases.ejercicio5;
 
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -22,23 +28,68 @@ public class TurnoEmpleado {
     }
 
     public void validate() {
-        throw new UnsupportedOperationException("TODO");
+        if (empleadoId == null || !empleadoId.matches(EMP_ID_REGEX)) {
+            throw new IllegalArgumentException();
+        }
+        if (dia == null || inicio == null || fin == null) {
+            throw new IllegalArgumentException();
+        }
+        if (inicio.equals(fin)) {
+            throw new IllegalArgumentException();
+        }
     }
 
     public String franja() {
-        throw new UnsupportedOperationException("TODO");
+
+        int horaInicio = inicio.getHour();
+        int minutoInicio = inicio.getMinute();
+        int horaFin = fin.getHour();
+        int minutoFin = fin.getMinute();
+
+        String horaInicioStr = "" + horaInicio;
+        if (horaInicio < 10) {
+            horaInicioStr = "0" + horaInicio;
+        }
+        String minutoInicioStr = "" + minutoInicio;
+        if (minutoInicio < 10) {
+            minutoInicioStr = "0" + minutoInicio;
+        }
+        String horaFinStr = "" + horaFin;
+        if (horaFin < 10) {
+            horaFinStr = "0" + horaFin;
+        }
+        String minutoFinStr = "" + minutoFin;
+        if (minutoFin < 10) {
+            minutoFinStr = "0" + minutoFin;
+        }
+
+        return horaInicioStr + ":" + minutoInicioStr + "-" + horaFinStr + ":" + minutoFinStr;
     }
 
     public LocalDateTime inicioDateTime() {
-        throw new UnsupportedOperationException("TODO");
+        return LocalDateTime.of(dia, inicio);
     }
 
     public LocalDateTime finDateTime() {
-        throw new UnsupportedOperationException("TODO");
+        if (fin.isBefore(inicio)) {
+            return LocalDateTime.of(dia.plusDays(1), fin);
+        }
+        return LocalDateTime.of(dia, fin);
     }
 
     public boolean cumpleDescansoMinimoDesde(TurnoEmpleado anterior, int minDescansoHoras) {
-        throw new UnsupportedOperationException("TODO");
+        if (anterior == null) {
+            return false;
+        }
+        LocalDateTime finAnterior = anterior.finDateTime();
+        LocalDateTime inicioActual = this.inicioDateTime();
+        if (!inicioActual.isAfter(finAnterior)) {
+            return false;
+        }
+
+        //! SUPER UTIL -> para periodos entre tiempos
+        long horasDescanso = Duration.between(finAnterior, inicioActual).toHours();
+        return horasDescanso >= minDescansoHoras;
     }
 
     public String getEmpleadoId() {

@@ -1,6 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Factura.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DateTime/Expresiones/Clases</a> &gt; <a href="index.source.html" class="el_package">com.docencia.clases.ejercicio3</a> &gt; <span class="el_source">Factura.java</span></div><h1>Factura.java</h1><pre class="source lang-java linenums">package com.docencia.clases.ejercicio3;
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Factura.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DateTime/Expresiones/Clases</a> &gt; <a href="index.source.html" class="el_package">com.docencia.clases.ejercicio3</a> &gt; <span class="el_source">Factura.java</span></div><h1>Factura.java</h1><pre class="source lang-java linenums">/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Programa que valida facturas de empresas y relacionados
+ */
+package com.docencia.clases.ejercicio3;
 
 import java.time.LocalDate;
+import java.util.regex.Pattern;
 
 public class Factura {
 
@@ -11,40 +17,58 @@ public class Factura {
     private final LocalDate fechaVencimiento;
 
     public Factura(String numeroFactura, String iban, String nifEmpresa, LocalDate fechaEmision,
-<span class="fc" id="L14">            LocalDate fechaVencimiento) {</span>
-<span class="fc" id="L15">        this.numeroFactura = numeroFactura;</span>
-<span class="fc" id="L16">        this.iban = iban;</span>
-<span class="fc" id="L17">        this.nifEmpresa = nifEmpresa;</span>
-<span class="fc" id="L18">        this.fechaEmision = fechaEmision;</span>
-<span class="fc" id="L19">        this.fechaVencimiento = fechaVencimiento;</span>
-<span class="fc" id="L20">    }</span>
+<span class="fc" id="L20">            LocalDate fechaVencimiento) {</span>
+<span class="fc" id="L21">        this.numeroFactura = numeroFactura;</span>
+<span class="fc" id="L22">        this.iban = iban;</span>
+<span class="fc" id="L23">        this.nifEmpresa = nifEmpresa;</span>
+<span class="fc" id="L24">        this.fechaEmision = fechaEmision;</span>
+<span class="fc" id="L25">        this.fechaVencimiento = fechaVencimiento;</span>
+<span class="fc" id="L26">    }</span>
 
     public void validate() {
-<span class="fc" id="L23">        throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
-    }
+        
+<span class="fc" id="L30">        String patronIban = &quot;^ES66[0-9]{20}$&quot;;</span>
+<span class="fc bfc" id="L31" title="All 2 branches covered.">        if(!Pattern.matches(patronIban, this.iban)){</span>
+<span class="fc" id="L32">            throw new IllegalArgumentException(&quot;Iban incorrecto&quot;);</span>
+        }
+
+<span class="fc" id="L35">        String patronFactura = &quot;^FAC-[0-9]{4}-[0-9]{6}$&quot;;</span>
+<span class="fc bfc" id="L36" title="All 2 branches covered.">        if(!Pattern.matches(patronFactura, this.numeroFactura)){</span>
+<span class="fc" id="L37">            throw new IllegalArgumentException(&quot;Factura incorrecta&quot;);</span>
+        }
+
+<span class="fc" id="L40">        String patronNif = &quot;^[A-Z][0-9]{7}[A-Z]$&quot;;</span>
+<span class="fc bfc" id="L41" title="All 2 branches covered.">        if(!Pattern.matches(patronNif, this.nifEmpresa)){</span>
+<span class="fc" id="L42">            throw new IllegalArgumentException(&quot;NIF incorrecto&quot;);</span>
+        }
+
+<span class="fc bfc" id="L45" title="All 2 branches covered.">        if(fechaEmision.isAfter(fechaVencimiento)){</span>
+<span class="fc" id="L46">            throw new IllegalArgumentException(&quot;fechas sin sentido&quot;);</span>
+        }
+<span class="fc" id="L48">    }</span>
 
     public boolean isVencida(LocalDate hoy) {
-<span class="fc" id="L27">        throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
+<span class="fc" id="L51">        return fechaVencimiento.isBefore(hoy);</span>
     }
 
     public String getNumeroFactura() {
-<span class="nc" id="L31">        return numeroFactura;</span>
+<span class="nc" id="L55">        return numeroFactura;</span>
     }
 
     public String getIban() {
-<span class="nc" id="L35">        return iban;</span>
+<span class="nc" id="L59">        return iban;</span>
     }
 
     public String getNifEmpresa() {
-<span class="nc" id="L39">        return nifEmpresa;</span>
+<span class="nc" id="L63">        return nifEmpresa;</span>
     }
 
     public LocalDate getFechaEmision() {
-<span class="nc" id="L43">        return fechaEmision;</span>
+<span class="nc" id="L67">        return fechaEmision;</span>
     }
 
     public LocalDate getFechaVencimiento() {
-<span class="nc" id="L47">        return fechaVencimiento;</span>
+<span class="nc" id="L71">        return fechaVencimiento;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
