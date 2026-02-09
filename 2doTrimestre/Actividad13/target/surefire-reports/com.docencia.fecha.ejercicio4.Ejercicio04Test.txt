@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.fecha.ejercicio4.Ejercicio04Test
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s -- in com.docencia.fecha.ejercicio4.Ejercicio04Test
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 s -- in com.docencia.fecha.ejercicio4.Ejercicio04Test

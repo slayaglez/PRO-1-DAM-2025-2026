@@ -1,9 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ejercicio06.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DateTime/Expresiones/Clases</a> &gt; <a href="index.source.html" class="el_package">com.docencia.fecha.ejercicio6</a> &gt; <span class="el_source">Ejercicio06.java</span></div><h1>Ejercicio06.java</h1><pre class="source lang-java linenums">/**
- * @author slayaglez
- * @version 1.0.0
- * @brief Programa que valida el descanso entre dos turnos
- */
-package com.docencia.fecha.ejercicio6;
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ejercicio06.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DateTime/Expresiones/Clases</a> &gt; <a href="index.source.html" class="el_package">com.docencia.fecha.ejercicio6</a> &gt; <span class="el_source">Ejercicio06.java</span></div><h1>Ejercicio06.java</h1><pre class="source lang-java linenums">package com.docencia.fecha.ejercicio6;
 
 import java.time.LocalTime;
 
@@ -28,49 +23,9 @@ import java.time.LocalTime;
  * - fin=20:00, inicio=08:00 =&gt; true
  * - fin=20:00, inicio=06:00 =&gt; false
  */
-<span class="nc" id="L31">public class Ejercicio06 {</span>
+<span class="nc" id="L26">public class Ejercicio06 {</span>
     public static boolean cumpleDescanso(LocalTime finTurno, LocalTime inicioSiguiente, int minDescansoHoras) {
-        
-<span class="fc bfc" id="L34" title="All 8 branches covered.">        if(finTurno == null || inicioSiguiente == null || minDescansoHoras &lt;= 0 || minDescansoHoras &gt; 24){</span>
-<span class="fc" id="L35">            throw new IllegalArgumentException();</span>
-        }
-<span class="fc bfc" id="L37" title="All 2 branches covered.">        if(finTurno.equals(inicioSiguiente)){</span>
-<span class="fc" id="L38">            return false;</span>
-        }
-
-<span class="fc" id="L41">        int horasFin = finTurno.getHour();</span>
-<span class="fc" id="L42">        int minutosFin = finTurno.getMinute();</span>
-
-<span class="fc" id="L44">        int horasInicio = inicioSiguiente.getHour();</span>
-<span class="fc" id="L45">        int minutosInicio = inicioSiguiente.getMinute();</span>
-
-<span class="fc" id="L47">        int horasResultado = 0;</span>
-<span class="fc" id="L48">        int minutosResultado = 0;</span>
-
-        // entre fin e inicio deben haber 12 horas
-        // si fin &lt; inicio entonces es el mismo dia
-        // luego inicio - fin &gt;= min
-<span class="fc bfc" id="L53" title="All 2 branches covered.">        if(finTurno.isBefore(inicioSiguiente)){</span>
-<span class="fc" id="L54">            horasResultado = horasInicio - horasFin;</span>
-<span class="fc" id="L55">            minutosResultado = minutosInicio - minutosFin;</span>
-            // si hay overflow (minFin &gt; minInicio)
-<span class="pc bpc" id="L57" title="1 of 2 branches missed.">            if(minutosResultado &lt;0){</span>
-<span class="nc" id="L58">                horasResultado--;</span>
-            }
-<span class="fc bfc" id="L60" title="All 2 branches covered.">            return horasResultado &gt;= minDescansoHoras;</span>
-        }
-        // si por otro lado fin &gt; inicio entonces cambio de día
-        // luego calculo tiempo de fin -&gt; 00:00 y de 00:00 a inicio
-        // eso debe ser &gt;= a min
-        else {
-<span class="fc" id="L66">            horasResultado = (24-horasFin) + horasInicio;</span>
-<span class="fc" id="L67">            minutosResultado = minutosFin + minutosFin;</span>
-            //si hay overflow (minResultado &gt; 59)
-<span class="fc bfc" id="L69" title="All 2 branches covered.">            if(minutosResultado &gt;= 60){</span>
-<span class="fc" id="L70">                horasResultado++;</span>
-            }
-<span class="fc bfc" id="L72" title="All 2 branches covered.">            return horasResultado &gt;= minDescansoHoras;</span>
-        }
+<span class="fc" id="L28">        throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

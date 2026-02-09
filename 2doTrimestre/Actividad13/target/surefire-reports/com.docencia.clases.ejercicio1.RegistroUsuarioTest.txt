@@ -1,4 +1,59 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.clases.ejercicio1.RegistroUsuarioTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 s -- in com.docencia.clases.ejercicio1.RegistroUsuarioTest
+Tests run: 7, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.044 s <<< FAILURE! -- in com.docencia.clases.ejercicio1.RegistroUsuarioTest
+com.docencia.clases.ejercicio1.RegistroUsuarioTest.shouldThrowWhenPasswordIsWeak -- Time elapsed: 0.016 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.docencia.clases.ejercicio1.RegistroUsuarioTest.shouldThrowWhenPasswordIsWeak(RegistroUsuarioTest.java:57)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.clases.ejercicio1.RegistroUsuarioTest.shouldThrowWhenPhoneIsInvalid -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.docencia.clases.ejercicio1.RegistroUsuarioTest.shouldThrowWhenPhoneIsInvalid(RegistroUsuarioTest.java:67)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.clases.ejercicio1.RegistroUsuarioTest.shouldThrowWhenBirthDateIsFuture -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.docencia.clases.ejercicio1.RegistroUsuarioTest.shouldThrowWhenBirthDateIsFuture(RegistroUsuarioTest.java:77)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.clases.ejercicio1.RegistroUsuarioTest.shouldThrowWhenUnderMinimumAge -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.docencia.clases.ejercicio1.RegistroUsuarioTest.shouldThrowWhenUnderMinimumAge(RegistroUsuarioTest.java:87)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.clases.ejercicio1.RegistroUsuarioTest.shouldThrowWhenEmailIsInvalid -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.docencia.clases.ejercicio1.RegistroUsuarioTest.shouldThrowWhenEmailIsInvalid(RegistroUsuarioTest.java:47)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

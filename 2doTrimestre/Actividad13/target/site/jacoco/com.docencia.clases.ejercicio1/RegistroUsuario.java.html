@@ -3,8 +3,6 @@
 import java.time.Clock;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.regex.Pattern;
 
 
 public class RegistroUsuario {
@@ -16,70 +14,42 @@ public class RegistroUsuario {
     private final LocalDateTime fechaRegistro;
 
     public RegistroUsuario(String email, String password, String telefono, LocalDate fechaNacimiento) {
-<span class="nc" id="L19">        this(email, password, telefono, fechaNacimiento, Clock.systemDefaultZone());</span>
-<span class="nc" id="L20">    }</span>
+<span class="nc" id="L17">        this(email, password, telefono, fechaNacimiento, Clock.systemDefaultZone());</span>
+<span class="nc" id="L18">    }</span>
 
-<span class="fc" id="L22">    public RegistroUsuario(String email, String password, String telefono, LocalDate fechaNacimiento, Clock clock) {</span>
-<span class="fc" id="L23">        this.email = email;</span>
-<span class="fc" id="L24">        this.password = password;</span>
-<span class="fc" id="L25">        this.telefono = telefono;</span>
-<span class="fc" id="L26">        this.fechaNacimiento = fechaNacimiento;</span>
-<span class="fc" id="L27">        this.fechaRegistro = LocalDateTime.now(clock);</span>
-<span class="fc" id="L28">    }</span>
+<span class="fc" id="L20">    public RegistroUsuario(String email, String password, String telefono, LocalDate fechaNacimiento, Clock clock) {</span>
+<span class="fc" id="L21">        this.email = email;</span>
+<span class="fc" id="L22">        this.password = password;</span>
+<span class="fc" id="L23">        this.telefono = telefono;</span>
+<span class="fc" id="L24">        this.fechaNacimiento = fechaNacimiento;</span>
+<span class="fc" id="L25">        this.fechaRegistro = LocalDateTime.now(clock);</span>
+<span class="fc" id="L26">    }</span>
 
     public void validate(int edadMinima) {
+        //TODO
         
-
-<span class="fc" id="L33">        String patronEmail = &quot;^[a-zA-Z0-9+-_%]+@[a-z]+.[a-z]{2,}$&quot;;</span>
-<span class="fc bfc" id="L34" title="All 2 branches covered.">        if(!Pattern.matches(patronEmail, this.email)){</span>
-<span class="fc" id="L35">            throw new IllegalArgumentException(&quot;&quot;);</span>
-        }
-
-<span class="fc" id="L38">        String patronPassword = &quot;^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])\\S{8,32}$&quot;;</span>
-<span class="fc bfc" id="L39" title="All 2 branches covered.">        if(!Pattern.matches(patronPassword, this.password)){</span>
-<span class="fc" id="L40">            throw new IllegalArgumentException(&quot;&quot;);</span>
-        }
-
-<span class="fc" id="L43">        String patronTelefono = &quot;^\\+34(\\s)?6[0-9]{8}$&quot;;</span>
-<span class="fc bfc" id="L44" title="All 2 branches covered.">        if(!Pattern.matches(patronTelefono, this.telefono)){</span>
-<span class="fc" id="L45">            throw new IllegalArgumentException(&quot;&quot;);</span>
-        }
-
-<span class="fc" id="L48">        int diaRegistro = fechaRegistro.getDayOfMonth();</span>
-<span class="fc" id="L49">        int mesRegistro = fechaRegistro.getMonthValue();</span>
-<span class="fc" id="L50">        int anioRegistro = fechaRegistro.getYear();</span>
-
-<span class="fc" id="L52">        LocalDate fechaRegistroBuena = LocalDate.of(anioRegistro, mesRegistro, diaRegistro);</span>
-
-<span class="fc bfc" id="L54" title="All 2 branches covered.">        if(fechaNacimiento.isAfter(fechaRegistroBuena)){</span>
-<span class="fc" id="L55">            throw new IllegalArgumentException(&quot;&quot;);</span>
-        }
-<span class="fc bfc" id="L57" title="All 2 branches covered.">        if(fechaRegistroBuena.getYear()-fechaNacimiento.getYear()&lt;14){</span>
-<span class="fc" id="L58">            throw new IllegalArgumentException();</span>
-        }
-<span class="fc" id="L60">    }</span>
+        
+<span class="fc" id="L32">    }</span>
 
     public String getEmail() {
-<span class="nc" id="L63">        return email;</span>
+<span class="nc" id="L35">        return email;</span>
     }
 
     public String getPassword() {
-<span class="nc" id="L67">        return password;</span>
+<span class="nc" id="L39">        return password;</span>
     }
 
     public String getTelefono() {
-<span class="nc" id="L71">        return telefono;</span>
+<span class="nc" id="L43">        return telefono;</span>
     }
 
     public LocalDate getFechaNacimiento() {
-<span class="nc" id="L75">        return fechaNacimiento;</span>
+<span class="nc" id="L47">        return fechaNacimiento;</span>
     }
 
     public LocalDateTime getFechaRegistro() {
-<span class="fc" id="L79">        return fechaRegistro;</span>
+<span class="fc" id="L51">        return fechaRegistro;</span>
     }
-
-    
 
    
 }

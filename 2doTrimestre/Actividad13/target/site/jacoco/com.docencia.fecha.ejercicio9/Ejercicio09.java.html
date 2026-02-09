@@ -1,9 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ejercicio09.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DateTime/Expresiones/Clases</a> &gt; <a href="index.source.html" class="el_package">com.docencia.fecha.ejercicio9</a> &gt; <span class="el_source">Ejercicio09.java</span></div><h1>Ejercicio09.java</h1><pre class="source lang-java linenums">/**
- * @author slayaglez
- * @version 1.0.0
- * @brief Programa que itera en una lista de horas y se queda con la menor y la mayor
- */
-package com.docencia.fecha.ejercicio9;
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ejercicio09.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DateTime/Expresiones/Clases</a> &gt; <a href="index.source.html" class="el_package">com.docencia.fecha.ejercicio9</a> &gt; <span class="el_source">Ejercicio09.java</span></div><h1>Ejercicio09.java</h1><pre class="source lang-java linenums">package com.docencia.fecha.ejercicio9;
 
 import java.time.LocalTime;
 import java.util.List;
@@ -24,32 +19,9 @@ import java.util.List;
      * Ejemplo:
      * - [10:00, 09:30, 12:15] =&gt; [09:30, 12:15]
      */
-<span class="nc" id="L27">public class Ejercicio09 {</span>
+<span class="nc" id="L22">public class Ejercicio09 {</span>
     public static LocalTime[] minMax(List&lt;LocalTime&gt; horas) {
-<span class="fc bfc" id="L29" title="All 4 branches covered.">        if(horas == null || horas.isEmpty()){</span>
-<span class="fc" id="L30">            throw new IllegalArgumentException();</span>
-        }
-
-<span class="fc" id="L33">        LocalTime[] resultado = new LocalTime[2];</span>
-        //resultado[0] = min;
-        //resultado[1] = max;
-<span class="fc" id="L36">        LocalTime minimo = horas.get(0);</span>
-<span class="fc" id="L37">        LocalTime maximo = horas.get(0);</span>
-<span class="fc bfc" id="L38" title="All 2 branches covered.">        for (int i = 1; i &lt; horas.size(); i++) {</span>
-<span class="fc bfc" id="L39" title="All 2 branches covered.">            if(horas.get(i) == null){</span>
-<span class="fc" id="L40">                throw new IllegalArgumentException();</span>
-            }
-<span class="fc bfc" id="L42" title="All 2 branches covered.">            if(horas.get(i).isBefore(minimo)){</span>
-<span class="fc" id="L43">                minimo = horas.get(i);</span>
-            }
-<span class="fc bfc" id="L45" title="All 2 branches covered.">            if(horas.get(i).isAfter(maximo)){</span>
-<span class="fc" id="L46">                maximo = horas.get(i);</span>
-            }
-        }
-<span class="fc" id="L49">        resultado[0] = minimo;</span>
-<span class="fc" id="L50">        resultado[1] = maximo;</span>
-
-<span class="fc" id="L52">        return resultado;</span>
+<span class="fc" id="L24">        throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

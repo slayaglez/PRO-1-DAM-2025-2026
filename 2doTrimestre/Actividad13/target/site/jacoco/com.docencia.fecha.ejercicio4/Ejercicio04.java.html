@@ -1,9 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ejercicio04.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DateTime/Expresiones/Clases</a> &gt; <a href="index.source.html" class="el_package">com.docencia.fecha.ejercicio4</a> &gt; <span class="el_source">Ejercicio04.java</span></div><h1>Ejercicio04.java</h1><pre class="source lang-java linenums">/**
- * @author slayaglez
- * @version 1.0.0
- * @brief Programa que redondea minutos segun el multiplo de un numero dado
- */
-package com.docencia.fecha.ejercicio4;
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ejercicio04.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DateTime/Expresiones/Clases</a> &gt; <a href="index.source.html" class="el_package">com.docencia.fecha.ejercicio4</a> &gt; <span class="el_source">Ejercicio04.java</span></div><h1>Ejercicio04.java</h1><pre class="source lang-java linenums">package com.docencia.fecha.ejercicio4;
 
 import java.time.LocalTime;
 
@@ -21,12 +16,12 @@ import java.time.LocalTime;
  *
  * Ejemplos (pasoMin=15): - 10:01 =&gt; 10:15 - 10:15 =&gt; 10:15 - 10:59 =&gt; 11:00
  */
-<span class="nc" id="L24">public class Ejercicio04 {</span>
+<span class="nc" id="L19">public class Ejercicio04 {</span>
 
     public static LocalTime redondearArriba(LocalTime t, int pasoMin) {
 
-<span class="fc bfc" id="L28" title="All 8 branches covered.">        if(t == null || pasoMin &lt;= 0 || pasoMin &gt; 59 || 60 % pasoMin != 0){</span>
-<span class="fc" id="L29">            throw new IllegalArgumentException();</span>
+<span class="fc bfc" id="L23" title="All 8 branches covered.">        if(t == null || pasoMin &lt;= 0 || pasoMin &gt; 59 || 60 % pasoMin != 0){</span>
+<span class="fc" id="L24">            throw new IllegalArgumentException();</span>
         }
 
         // vale, debo devolver los minutos como un multiplo de pasoMin
@@ -35,37 +30,37 @@ import java.time.LocalTime;
         // si minutos &lt; pasoMin return la hora con pasoMin (hh:xx) misma cconsecuencia que arriba realmente
         // si minutos &gt; pasoMin multiplico pasoMin por un incremental hasta que minutos &lt;= pasoMin
 
-<span class="fc" id="L38">        int horas = t.getHour();</span>
-<span class="fc" id="L39">        int minutos = t.getMinute();</span>
-<span class="fc" id="L40">        int segundos = t.getSecond();</span>
-<span class="fc" id="L41">        int nano = t.getNano();</span>
-<span class="fc bfc" id="L42" title="All 4 branches covered.">        if(nano &gt; 0 || segundos &gt; 0){</span>
-<span class="fc" id="L43">            minutos++;</span>
+<span class="fc" id="L33">        int horas = t.getHour();</span>
+<span class="fc" id="L34">        int minutos = t.getMinute();</span>
+<span class="fc" id="L35">        int segundos = t.getSecond();</span>
+<span class="fc" id="L36">        int nano = t.getNano();</span>
+<span class="fc bfc" id="L37" title="All 4 branches covered.">        if(nano &gt; 0 || segundos &gt; 0){</span>
+<span class="fc" id="L38">            minutos++;</span>
         }
 
-<span class="fc bfc" id="L46" title="All 2 branches covered.">        if(minutos &lt;= pasoMin){</span>
-<span class="fc" id="L47">            return LocalTime.of(horas, pasoMin);</span>
+<span class="fc bfc" id="L41" title="All 2 branches covered.">        if(minutos &lt;= pasoMin){</span>
+<span class="fc" id="L42">            return LocalTime.of(horas, pasoMin);</span>
         }
 
         // si llega hasta aqui es que minutos &gt; pasoMin
         // deberia usar un while
-<span class="fc" id="L52">        int pasoMinMultiplo=pasoMin;</span>
-<span class="pc bpc" id="L53" title="1 of 2 branches missed.">        for (int i = 0; i &lt; 59; i++) {</span>
-<span class="fc bfc" id="L54" title="All 2 branches covered.">            if(pasoMin + minutos &gt;= 60){</span>
-<span class="fc bfc" id="L55" title="All 2 branches covered.">                if(horas == 23) {</span>
-<span class="fc" id="L56">                    horas = -1;</span>
+<span class="fc" id="L47">        int pasoMinMultiplo=pasoMin;</span>
+<span class="pc bpc" id="L48" title="1 of 2 branches missed.">        for (int i = 0; i &lt; 59; i++) {</span>
+<span class="fc bfc" id="L49" title="All 2 branches covered.">            if(pasoMin + minutos &gt;= 60){</span>
+<span class="fc bfc" id="L50" title="All 2 branches covered.">                if(horas == 23) {</span>
+<span class="fc" id="L51">                    horas = -1;</span>
                 }
-<span class="fc" id="L58">                return LocalTime.of(horas+1, 0);</span>
+<span class="fc" id="L53">                return LocalTime.of(horas+1, 0);</span>
             }
-<span class="fc bfc" id="L60" title="All 2 branches covered.">            if(pasoMinMultiplo &gt;= minutos){</span>
-<span class="fc" id="L61">                return LocalTime.of(horas, pasoMinMultiplo);</span>
+<span class="fc bfc" id="L55" title="All 2 branches covered.">            if(pasoMinMultiplo &gt;= minutos){</span>
+<span class="fc" id="L56">                return LocalTime.of(horas, pasoMinMultiplo);</span>
             }
-<span class="fc" id="L63">            pasoMinMultiplo = pasoMin*i;</span>
+<span class="fc" id="L58">            pasoMinMultiplo = pasoMin*i;</span>
         }
 
         //if pasoMin + minutos &gt;= 60 entonces hora ++ y minutos = (pasoMin + minutos) - 60
 
-<span class="nc" id="L68">        throw new IllegalArgumentException(&quot;Algo hiciste mal&quot;);</span>
+<span class="nc" id="L63">        throw new IllegalArgumentException(&quot;Algo hiciste mal&quot;);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

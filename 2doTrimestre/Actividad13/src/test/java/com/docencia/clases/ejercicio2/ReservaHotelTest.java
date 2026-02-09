@@ -1,8 +1,3 @@
-/**
- * @author slayaglez
- * @version 1.0.0
- * @brief Programa que gestiona reservas y valida dnis
- */
 package com.docencia.clases.ejercicio2;
 
 
@@ -16,7 +11,7 @@ public class ReservaHotelTest {
 
     @Test
     void shouldValidateWhenReservaIsCorrect() {
-        ReservaHotel r = new ReservaHotel("RES-2026-ABC", "12345678Z",  
+        ReservaHotel r = new ReservaHotel("RES-2026-ABC", "12345678Z",
                 LocalDate.of(2026, 2, 10),
                 LocalDate.of(2026, 2, 12));
         assertDoesNotThrow(r::validate);

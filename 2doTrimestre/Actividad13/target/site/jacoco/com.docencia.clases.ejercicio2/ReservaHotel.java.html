@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ReservaHotel.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DateTime/Expresiones/Clases</a> &gt; <a href="index.source.html" class="el_package">com.docencia.clases.ejercicio2</a> &gt; <span class="el_source">ReservaHotel.java</span></div><h1>ReservaHotel.java</h1><pre class="source lang-java linenums">package com.docencia.clases.ejercicio2;
 
 import java.time.LocalDate;
-import java.util.regex.Pattern;
 
 public class ReservaHotel {
 
@@ -10,67 +9,39 @@ public class ReservaHotel {
     private final LocalDate checkIn;
     private final LocalDate checkOut;
 
-<span class="fc" id="L13">    public ReservaHotel(String codigoReserva, String dni, LocalDate checkIn, LocalDate checkOut) {</span>
-<span class="fc" id="L14">        this.codigoReserva = codigoReserva;</span>
-<span class="fc" id="L15">        this.dni = dni;</span>
-<span class="fc" id="L16">        this.checkIn = checkIn;</span>
-<span class="fc" id="L17">        this.checkOut = checkOut;</span>
-<span class="fc" id="L18">    }</span>
+<span class="fc" id="L12">    public ReservaHotel(String codigoReserva, String dni, LocalDate checkIn, LocalDate checkOut) {</span>
+<span class="fc" id="L13">        this.codigoReserva = codigoReserva;</span>
+<span class="fc" id="L14">        this.dni = dni;</span>
+<span class="fc" id="L15">        this.checkIn = checkIn;</span>
+<span class="fc" id="L16">        this.checkOut = checkOut;</span>
+<span class="fc" id="L17">    }</span>
 
     public void validate() {
-<span class="fc" id="L21">        String patronDni = &quot;^[0-9]{8}[A-Z]$&quot;;</span>
-<span class="fc" id="L22">        String patronCodigo = &quot;^RES-[0-9]{4}-[A-Z]{3}$&quot;;</span>
-
-<span class="fc" id="L24">        boolean validDni = Pattern.matches(patronDni, this.dni);</span>
-<span class="fc" id="L25">        boolean validCodigo = Pattern.matches(patronCodigo, this.codigoReserva);</span>
-
-<span class="pc bpc" id="L27" title="1 of 2 branches missed.">        if(!validDni){</span>
-<span class="nc" id="L28">            throw new IllegalArgumentException(&quot;DNI incorrecto&quot;);</span>
-        }
-<span class="fc bfc" id="L30" title="All 2 branches covered.">        if(!validCodigo){</span>
-<span class="fc" id="L31">            throw new IllegalArgumentException(&quot;Codigo incorrecto&quot;);</span>
-        }
-<span class="pc bpc" id="L33" title="1 of 4 branches missed.">        if(checkIn.isAfter(checkOut) || checkIn.equals(checkOut)){</span>
-<span class="fc" id="L34">            throw new IllegalArgumentException(&quot;Check in despues del check out&quot;);</span>
-        }
-
-        // la letra del dni
-<span class="fc" id="L38">        String cadenaDni = &quot;TRWAGMYFPDXBNJZSQVLCKE&quot;;</span>
-<span class="fc" id="L39">        String dniNumeroStr = this.dni.substring(0,8);</span>
-<span class="fc" id="L40">        int dniNumero = Integer.parseInt(dniNumeroStr);</span>
-<span class="fc" id="L41">        int resto = dniNumero % 23;</span>
-<span class="fc" id="L42">        char letra = cadenaDni.charAt(resto);</span>
-<span class="fc" id="L43">        String letraStr = String.valueOf(letra);</span>
-<span class="fc bfc" id="L44" title="All 2 branches covered.">        if(!this.dni.substring(8,9).equals(letraStr)){</span>
-<span class="fc" id="L45">            throw new IllegalArgumentException(&quot;Letra DNI incorrecta&quot;);</span>
-        }
-<span class="fc" id="L47">    }</span>
+<span class="fc" id="L20">        throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
+    }
 
     public long noches() {
-<span class="fc" id="L50">        long resultado = checkOut.getDayOfYear() - checkIn.getDayOfYear();</span>
-<span class="fc" id="L51">        return resultado;</span>
+<span class="fc" id="L24">        throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
     }
 
     public boolean puedeCancelar(LocalDate hoy) {
-<span class="fc" id="L55">        int diaHoy = hoy.getDayOfMonth();</span>
-<span class="fc" id="L56">        int diaCheck = checkIn.getDayOfMonth();</span>
-<span class="fc bfc" id="L57" title="All 2 branches covered.">        return diaCheck-diaHoy &gt;= 2;</span>
+<span class="fc" id="L28">        throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
     }
 
     public String getCodigoReserva() {
-<span class="nc" id="L61">        return codigoReserva;</span>
+<span class="nc" id="L32">        return codigoReserva;</span>
     }
 
     public String getDni() {
-<span class="nc" id="L65">        return dni;</span>
+<span class="nc" id="L36">        return dni;</span>
     }
 
     public LocalDate getCheckIn() {
-<span class="nc" id="L69">        return checkIn;</span>
+<span class="nc" id="L40">        return checkIn;</span>
     }
 
     public LocalDate getCheckOut() {
-<span class="nc" id="L73">        return checkOut;</span>
+<span class="nc" id="L44">        return checkOut;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
