@@ -1,0 +1,11 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+DateTime/Expresiones/Clases,regexfechas,Exercise08,3,14,0,2,1,6,1,3,1,2
+DateTime/Expresiones/Clases,regexfechas,Exercise09,3,72,0,14,1,20,1,9,1,2
+DateTime/Expresiones/Clases,regexfechas,Exercise06,3,17,0,4,1,6,1,4,1,2
+DateTime/Expresiones/Clases,regexfechas,Exercise07,3,60,0,6,1,18,1,5,1,2
+DateTime/Expresiones/Clases,regexfechas,Exercise04,3,17,0,4,1,6,1,4,1,2
+DateTime/Expresiones/Clases,regexfechas,Exercise05,3,17,0,4,1,6,1,4,1,2
+DateTime/Expresiones/Clases,regexfechas,Exercise02,3,17,0,4,1,6,1,4,1,2
+DateTime/Expresiones/Clases,regexfechas,Exercise03,3,17,0,4,1,6,1,4,1,2
+DateTime/Expresiones/Clases,regexfechas,Exercise01,3,61,0,12,1,15,1,8,1,2
+DateTime/Expresiones/Clases,regexfechas,Exercise10,3,17,0,4,1,6,1,4,1,2

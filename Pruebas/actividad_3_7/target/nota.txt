@@ -1,0 +1,3 @@
+testsTotales=150
+testsPasados=150
+notaSobre10=10.00
