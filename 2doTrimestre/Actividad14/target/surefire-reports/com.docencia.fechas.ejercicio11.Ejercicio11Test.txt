@@ -1,0 +1,51 @@
+-------------------------------------------------------------------------------
+Test set: com.docencia.fechas.ejercicio11.Ejercicio11Test
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 3, Errors: 2, Skipped: 0, Time elapsed: 0.024 s <<< FAILURE! -- in com.docencia.fechas.ejercicio11.Ejercicio11Test
+com.docencia.fechas.ejercicio11.Ejercicio11Test.toUserZoneSameInstantShouldThrowOnNullOrigin -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.NullPointerException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.docencia.fechas.ejercicio11.Ejercicio11Test.toUserZoneSameInstantShouldThrowOnNullOrigin(Ejercicio11Test.java:25)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio11.Ejercicio11Test.toUserZoneSameInstantShouldThrowOnNullTarget -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.NullPointerException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.docencia.fechas.ejercicio11.Ejercicio11Test.toUserZoneSameInstantShouldThrowOnNullTarget(Ejercicio11Test.java:30)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio11.Ejercicio11Test.toUserZoneSameInstantShouldConvertAndKeepInstant -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.time.ZonedDateTime.getZone()" because "z" is null
+	at com.docencia.fechas.ejercicio11.Ejercicio11Test.toUserZoneSameInstantShouldConvertAndKeepInstant(Ejercicio11Test.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio11.Ejercicio11Test.toUserZoneSameInstantShouldProduceSameInstantAsOrigin -- Time elapsed: 0 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.time.ZonedDateTime.toInstant()" because "target" is null
+	at com.docencia.fechas.ejercicio11.Ejercicio11Test.toUserZoneSameInstantShouldProduceSameInstantAsOrigin(Ejercicio11Test.java:38)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.docencia.fechas.ejercicio11.Ejercicio11Test.toUserZoneSameInstantShouldThrowOnNullMeeting -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.NullPointerException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.docencia.fechas.ejercicio11.Ejercicio11Test.toUserZoneSameInstantShouldThrowOnNullMeeting(Ejercicio11Test.java:20)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
