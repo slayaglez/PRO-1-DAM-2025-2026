@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.expresiones.ejercicio6.Ejercicio6Test
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.023 s <<< FAILURE! -- in com.docencia.expresiones.ejercicio6.Ejercicio6Test
-com.docencia.expresiones.ejercicio6.Ejercicio6Test.applyDeltaCommandShouldSubtractHours -- Time elapsed: 0.006 s <<< FAILURE!
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.010 s <<< FAILURE! -- in com.docencia.expresiones.ejercicio6.Ejercicio6Test
+com.docencia.expresiones.ejercicio6.Ejercicio6Test.applyDeltaCommandShouldSubtractHours -- Time elapsed: 0.002 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <2026-02-10T07:00> but was: <null>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -26,7 +26,7 @@ org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.expresiones.ejercicio6.Ejercicio6Test.applyDeltaCommandShouldThrowOnInvalidUnit -- Time elapsed: 0 s <<< FAILURE!
+com.docencia.expresiones.ejercicio6.Ejercicio6Test.applyDeltaCommandShouldThrowOnInvalidUnit -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
@@ -37,7 +37,7 @@ org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.expresiones.ejercicio6.Ejercicio6Test.applyDeltaCommandShouldAddDays -- Time elapsed: 0.008 s <<< FAILURE!
+com.docencia.expresiones.ejercicio6.Ejercicio6Test.applyDeltaCommandShouldAddDays -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <2026-02-13T09:00> but was: <null>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)

@@ -1,49 +1,22 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.fechas.ejercicio5.Ejercicio5Test
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.102 s <<< FAILURE! -- in com.docencia.fechas.ejercicio5.Ejercicio5Test
-com.docencia.fechas.ejercicio5.Ejercicio5Test.ageYearsShouldComputeYears -- Time elapsed: 0.035 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <20> but was: <0>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+Tests run: 5, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.078 s <<< FAILURE! -- in com.docencia.fechas.ejercicio5.Ejercicio5Test
+com.docencia.fechas.ejercicio5.Ejercicio5Test.ageYearsShouldComputeYears -- Time elapsed: 0.030 s <<< ERROR!
+java.lang.IllegalArgumentException
+	at com.docencia.fechas.ejercicio5.Ejercicio5.ageYears(Ejercicio5.java:14)
 	at com.docencia.fechas.ejercicio5.Ejercicio5Test.ageYearsShouldComputeYears(Ejercicio5Test.java:16)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.fechas.ejercicio5.Ejercicio5Test.ageYearsShouldThrowWhenTodayBeforeBirth -- Time elapsed: 0.005 s <<< FAILURE!
+com.docencia.fechas.ejercicio5.Ejercicio5Test.ageYearsShouldThrowWhenTodayBeforeBirth -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
 	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
 	at com.docencia.fechas.ejercicio5.Ejercicio5Test.ageYearsShouldThrowWhenTodayBeforeBirth(Ejercicio5Test.java:31)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-com.docencia.fechas.ejercicio5.Ejercicio5Test.ageYearsShouldThrowOnNullBirth -- Time elapsed: 0.018 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: Expected java.lang.NullPointerException to be thrown, but nothing was thrown.
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
-	at com.docencia.fechas.ejercicio5.Ejercicio5Test.ageYearsShouldThrowOnNullBirth(Ejercicio5Test.java:21)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-com.docencia.fechas.ejercicio5.Ejercicio5Test.ageYearsShouldThrowOnNullToday -- Time elapsed: 0.004 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: Expected java.lang.NullPointerException to be thrown, but nothing was thrown.
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
-	at com.docencia.fechas.ejercicio5.Ejercicio5Test.ageYearsShouldThrowOnNullToday(Ejercicio5Test.java:26)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)

@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.expresiones.ejercicio5.Ejercicio5Test
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.025 s <<< FAILURE! -- in com.docencia.expresiones.ejercicio5.Ejercicio5Test
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.011 s <<< FAILURE! -- in com.docencia.expresiones.ejercicio5.Ejercicio5Test
 com.docencia.expresiones.ejercicio5.Ejercicio5Test.parseLogInstantShouldThrowOnMissingBracket -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
@@ -13,7 +13,7 @@ org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.expresiones.ejercicio5.Ejercicio5Test.parseLogInstantShouldThrowOnBlank -- Time elapsed: 0.009 s <<< FAILURE!
+com.docencia.expresiones.ejercicio5.Ejercicio5Test.parseLogInstantShouldThrowOnBlank -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
@@ -24,7 +24,7 @@ org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.expresiones.ejercicio5.Ejercicio5Test.parseLogInstantShouldThrowOnUnparseableTimestamp -- Time elapsed: 0.001 s <<< FAILURE!
+com.docencia.expresiones.ejercicio5.Ejercicio5Test.parseLogInstantShouldThrowOnUnparseableTimestamp -- Time elapsed: 0.002 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected java.time.DateTimeException to be thrown, but nothing was thrown.
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
@@ -35,7 +35,7 @@ org.opentest4j.AssertionFailedError: Expected java.time.DateTimeException to be 
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.expresiones.ejercicio5.Ejercicio5Test.parseLogInstantShouldParseOffsetDateTimeToInstant -- Time elapsed: 0.002 s <<< FAILURE!
+com.docencia.expresiones.ejercicio5.Ejercicio5Test.parseLogInstantShouldParseOffsetDateTimeToInstant -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <2026-02-10T14:35:20Z> but was: <null>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -48,7 +48,7 @@ org.opentest4j.AssertionFailedError: expected: <2026-02-10T14:35:20Z> but was: <
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.expresiones.ejercicio5.Ejercicio5Test.parseLogInstantShouldThrowOnNull -- Time elapsed: 0.002 s <<< FAILURE!
+com.docencia.expresiones.ejercicio5.Ejercicio5Test.parseLogInstantShouldThrowOnNull -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.expresiones.ejercicio1.Ejercicio1Test
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.016 s <<< FAILURE! -- in com.docencia.expresiones.ejercicio1.Ejercicio1Test
-com.docencia.expresiones.ejercicio1.Ejercicio1Test.parseIsoDateShouldThrowOnBlank -- Time elapsed: 0.001 s <<< FAILURE!
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.021 s <<< FAILURE! -- in com.docencia.expresiones.ejercicio1.Ejercicio1Test
+com.docencia.expresiones.ejercicio1.Ejercicio1Test.parseIsoDateShouldThrowOnBlank -- Time elapsed: 0.002 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
@@ -13,7 +13,7 @@ org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.expresiones.ejercicio1.Ejercicio1Test.parseIsoDateShouldParseValidDate -- Time elapsed: 0.007 s <<< FAILURE!
+com.docencia.expresiones.ejercicio1.Ejercicio1Test.parseIsoDateShouldParseValidDate -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <2026-02-10> but was: <null>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -26,7 +26,7 @@ org.opentest4j.AssertionFailedError: expected: <2026-02-10> but was: <null>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.expresiones.ejercicio1.Ejercicio1Test.parseIsoDateShouldThrowOnInvalidDateValue -- Time elapsed: 0.002 s <<< FAILURE!
+com.docencia.expresiones.ejercicio1.Ejercicio1Test.parseIsoDateShouldThrowOnInvalidDateValue -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected java.time.DateTimeException to be thrown, but nothing was thrown.
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
@@ -37,7 +37,7 @@ org.opentest4j.AssertionFailedError: Expected java.time.DateTimeException to be 
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.expresiones.ejercicio1.Ejercicio1Test.parseIsoDateShouldThrowOnWrongFormat -- Time elapsed: 0.001 s <<< FAILURE!
+com.docencia.expresiones.ejercicio1.Ejercicio1Test.parseIsoDateShouldThrowOnWrongFormat -- Time elapsed: 0.005 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
@@ -48,7 +48,7 @@ org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.expresiones.ejercicio1.Ejercicio1Test.parseIsoDateShouldThrowOnNull -- Time elapsed: 0.002 s <<< FAILURE!
+com.docencia.expresiones.ejercicio1.Ejercicio1Test.parseIsoDateShouldThrowOnNull -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)

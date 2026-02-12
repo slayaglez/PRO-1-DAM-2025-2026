@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.fechas.ejercicio9.Ejercicio9Test
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.025 s <<< FAILURE! -- in com.docencia.fechas.ejercicio9.Ejercicio9Test
-com.docencia.fechas.ejercicio9.Ejercicio9Test.canCancelWithin48hShouldThrowOnNullNow -- Time elapsed: 0.004 s <<< FAILURE!
+Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.033 s <<< FAILURE! -- in com.docencia.fechas.ejercicio9.Ejercicio9Test
+com.docencia.fechas.ejercicio9.Ejercicio9Test.canCancelWithin48hShouldThrowOnNullNow -- Time elapsed: 0.008 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected java.lang.NullPointerException to be thrown, but nothing was thrown.
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)

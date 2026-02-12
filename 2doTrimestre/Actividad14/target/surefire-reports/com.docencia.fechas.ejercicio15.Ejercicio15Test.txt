@@ -1,15 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.fechas.ejercicio15.Ejercicio15Test
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 4, Skipped: 0, Time elapsed: 0.026 s <<< FAILURE! -- in com.docencia.fechas.ejercicio15.Ejercicio15Test
-com.docencia.fechas.ejercicio15.Ejercicio15Test.nextProcessingPlanShouldScheduleNextBusinessDayWhenAfterCutoff -- Time elapsed: 0.003 s <<< ERROR!
+Tests run: 5, Failures: 1, Errors: 4, Skipped: 0, Time elapsed: 0.021 s <<< FAILURE! -- in com.docencia.fechas.ejercicio15.Ejercicio15Test
+com.docencia.fechas.ejercicio15.Ejercicio15Test.nextProcessingPlanShouldScheduleNextBusinessDayWhenAfterCutoff -- Time elapsed: 0.005 s <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "com.docencia.fechas.ProcessingPlan.nextProcessing()" because "plan" is null
 	at com.docencia.fechas.ejercicio15.Ejercicio15Test.nextProcessingPlanShouldScheduleNextBusinessDayWhenAfterCutoff(Ejercicio15Test.java:31)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.fechas.ejercicio15.Ejercicio15Test.nextProcessingPlanShouldThrowOnNullReceived -- Time elapsed: 0.003 s <<< FAILURE!
+com.docencia.fechas.ejercicio15.Ejercicio15Test.nextProcessingPlanShouldThrowOnNullReceived -- Time elapsed: 0.005 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected java.lang.NullPointerException to be thrown, but nothing was thrown.
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
@@ -20,14 +20,14 @@ org.opentest4j.AssertionFailedError: Expected java.lang.NullPointerException to 
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.fechas.ejercicio15.Ejercicio15Test.nextProcessingPlanShouldScheduleSameDayWhenBeforeSlot -- Time elapsed: 0.002 s <<< ERROR!
+com.docencia.fechas.ejercicio15.Ejercicio15Test.nextProcessingPlanShouldScheduleSameDayWhenBeforeSlot -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "com.docencia.fechas.ProcessingPlan.nextProcessing()" because "plan" is null
 	at com.docencia.fechas.ejercicio15.Ejercicio15Test.nextProcessingPlanShouldScheduleSameDayWhenBeforeSlot(Ejercicio15Test.java:15)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.fechas.ejercicio15.Ejercicio15Test.nextProcessingPlanShouldSkipWeekend -- Time elapsed: 0.004 s <<< ERROR!
+com.docencia.fechas.ejercicio15.Ejercicio15Test.nextProcessingPlanShouldSkipWeekend -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "com.docencia.fechas.ProcessingPlan.nextProcessing()" because "plan" is null
 	at com.docencia.fechas.ejercicio15.Ejercicio15Test.nextProcessingPlanShouldSkipWeekend(Ejercicio15Test.java:39)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)

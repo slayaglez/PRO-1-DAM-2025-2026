@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.fechas.ejercicio10.Ejercicio10Test
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.024 s <<< FAILURE! -- in com.docencia.fechas.ejercicio10.Ejercicio10Test
-com.docencia.fechas.ejercicio10.Ejercicio10Test.minutesBetweenWithWrapShouldThrowOnNullStart -- Time elapsed: 0.007 s <<< FAILURE!
+Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.015 s <<< FAILURE! -- in com.docencia.fechas.ejercicio10.Ejercicio10Test
+com.docencia.fechas.ejercicio10.Ejercicio10Test.minutesBetweenWithWrapShouldThrowOnNullStart -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected java.lang.NullPointerException to be thrown, but nothing was thrown.
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
@@ -13,7 +13,7 @@ org.opentest4j.AssertionFailedError: Expected java.lang.NullPointerException to 
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.fechas.ejercicio10.Ejercicio10Test.minutesBetweenWithWrapShouldComputeSameDayDifference -- Time elapsed: 0.004 s <<< FAILURE!
+com.docencia.fechas.ejercicio10.Ejercicio10Test.minutesBetweenWithWrapShouldComputeSameDayDifference -- Time elapsed: 0 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <30> but was: <0>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -26,7 +26,7 @@ org.opentest4j.AssertionFailedError: expected: <30> but was: <0>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.fechas.ejercicio10.Ejercicio10Test.minutesBetweenWithWrapShouldComputeWrapDifference -- Time elapsed: 0.002 s <<< FAILURE!
+com.docencia.fechas.ejercicio10.Ejercicio10Test.minutesBetweenWithWrapShouldComputeWrapDifference -- Time elapsed: 0 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <45> but was: <0>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)

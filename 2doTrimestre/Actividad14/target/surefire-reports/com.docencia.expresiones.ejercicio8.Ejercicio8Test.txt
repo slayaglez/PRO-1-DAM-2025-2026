@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.expresiones.ejercicio8.Ejercicio8Test
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 3, Errors: 2, Skipped: 0, Time elapsed: 0.024 s <<< FAILURE! -- in com.docencia.expresiones.ejercicio8.Ejercicio8Test
-com.docencia.expresiones.ejercicio8.Ejercicio8Test.countEventsByDayShouldThrowOnNull -- Time elapsed: 0.005 s <<< FAILURE!
+Tests run: 5, Failures: 3, Errors: 2, Skipped: 0, Time elapsed: 0.017 s <<< FAILURE! -- in com.docencia.expresiones.ejercicio8.Ejercicio8Test
+com.docencia.expresiones.ejercicio8.Ejercicio8Test.countEventsByDayShouldThrowOnNull -- Time elapsed: 0.002 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
@@ -13,7 +13,7 @@ org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.expresiones.ejercicio8.Ejercicio8Test.countEventsByDayShouldThrowOnBlank -- Time elapsed: 0.002 s <<< FAILURE!
+com.docencia.expresiones.ejercicio8.Ejercicio8Test.countEventsByDayShouldThrowOnBlank -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
@@ -42,7 +42,7 @@ java.lang.NullPointerException: Cannot invoke "java.util.Map.get(Object)" becaus
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.expresiones.ejercicio8.Ejercicio8Test.countEventsByDayShouldCountTwoDays -- Time elapsed: 0.002 s <<< ERROR!
+com.docencia.expresiones.ejercicio8.Ejercicio8Test.countEventsByDayShouldCountTwoDays -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "java.util.Map.size()" because "m" is null
 	at com.docencia.expresiones.ejercicio8.Ejercicio8Test.countEventsByDayShouldCountTwoDays(Ejercicio8Test.java:13)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)

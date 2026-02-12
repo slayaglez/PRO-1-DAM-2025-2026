@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.expresiones.ejercicio4.Ejercicio4Test
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.018 s <<< FAILURE! -- in com.docencia.expresiones.ejercicio4.Ejercicio4Test
-com.docencia.expresiones.ejercicio4.Ejercicio4Test.parseZoneCommandShouldThrowOnWrongPrefix -- Time elapsed: 0.002 s <<< FAILURE!
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.020 s <<< FAILURE! -- in com.docencia.expresiones.ejercicio4.Ejercicio4Test
+com.docencia.expresiones.ejercicio4.Ejercicio4Test.parseZoneCommandShouldThrowOnWrongPrefix -- Time elapsed: 0.005 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
@@ -13,7 +13,7 @@ org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.expresiones.ejercicio4.Ejercicio4Test.parseZoneCommandShouldThrowOnNull -- Time elapsed: 0.008 s <<< FAILURE!
+com.docencia.expresiones.ejercicio4.Ejercicio4Test.parseZoneCommandShouldThrowOnNull -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
@@ -24,7 +24,7 @@ org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.expresiones.ejercicio4.Ejercicio4Test.parseZoneCommandShouldThrowOnBlank -- Time elapsed: 0.002 s <<< FAILURE!
+com.docencia.expresiones.ejercicio4.Ejercicio4Test.parseZoneCommandShouldThrowOnBlank -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
@@ -35,7 +35,7 @@ org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.expresiones.ejercicio4.Ejercicio4Test.parseZoneCommandShouldThrowOnUnknownZone -- Time elapsed: 0.003 s <<< FAILURE!
+com.docencia.expresiones.ejercicio4.Ejercicio4Test.parseZoneCommandShouldThrowOnUnknownZone -- Time elapsed: 0.005 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected java.time.DateTimeException to be thrown, but nothing was thrown.
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)

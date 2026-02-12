@@ -27,7 +27,7 @@ public class Ejercicio7Test {
     }
 
     @Test
-    void isOpenInclusiveShouldBeFalseOutsideWindow() {
+    void isOpenInclusiveShouldBeFalseOutsideWindow() { 
         assertFalse(Ejercicio7.isOpenInclusive(LocalTime.of(8, 59), LocalTime.of(9, 0), LocalTime.of(18, 0)));
     }
 }
