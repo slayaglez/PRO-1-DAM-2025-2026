@@ -1,47 +1,47 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.fechas.ejercicio14.Ejercicio14Test
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 2, Errors: 3, Skipped: 0, Time elapsed: 0.016 s <<< FAILURE! -- in com.docencia.fechas.ejercicio14.Ejercicio14Test
-com.docencia.fechas.ejercicio14.Ejercicio14Test.overlapDurationShouldThrowOnNullStart1 -- Time elapsed: 0.005 s <<< FAILURE!
+Tests run: 5, Failures: 2, Errors: 3, Skipped: 0, Time elapsed: 0.025 s <<< FAILURE! -- in com.docencia.fechas.ejercicio14.Ejercicio14Test
+com.docencia.fechas.ejercicio14.Ejercicio14Test.overlapDurationShouldThrowOnNullStart1 -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected java.lang.NullPointerException to be thrown, but nothing was thrown.
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
 	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
 	at com.docencia.fechas.ejercicio14.Ejercicio14Test.overlapDurationShouldThrowOnNullStart1(Ejercicio14Test.java:39)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.fechas.ejercicio14.Ejercicio14Test.overlapDurationShouldComputeOverlapDuration -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.fechas.ejercicio14.Ejercicio14Test.overlapDurationShouldComputeOverlapDuration -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "com.docencia.fechas.OverlapResult.overlapDuration()" because the return value of "com.docencia.fechas.ejercicio14.Ejercicio14.overlapDuration(java.time.ZonedDateTime, java.time.ZonedDateTime, java.time.ZonedDateTime, java.time.ZonedDateTime)" is null
 	at com.docencia.fechas.ejercicio14.Ejercicio14Test.overlapDurationShouldComputeOverlapDuration(Ejercicio14Test.java:33)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.fechas.ejercicio14.Ejercicio14Test.overlapDurationShouldReturnFalseWhenNoOverlap -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.fechas.ejercicio14.Ejercicio14Test.overlapDurationShouldReturnFalseWhenNoOverlap -- Time elapsed: 0.005 s <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "com.docencia.fechas.OverlapResult.overlaps()" because the return value of "com.docencia.fechas.ejercicio14.Ejercicio14.overlapDuration(java.time.ZonedDateTime, java.time.ZonedDateTime, java.time.ZonedDateTime, java.time.ZonedDateTime)" is null
 	at com.docencia.fechas.ejercicio14.Ejercicio14Test.overlapDurationShouldReturnFalseWhenNoOverlap(Ejercicio14Test.java:15)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.fechas.ejercicio14.Ejercicio14Test.overlapDurationShouldThrowWhenStartAfterEnd -- Time elapsed: 0.001 s <<< FAILURE!
+com.docencia.fechas.ejercicio14.Ejercicio14Test.overlapDurationShouldThrowWhenStartAfterEnd -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
 	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
 	at com.docencia.fechas.ejercicio14.Ejercicio14Test.overlapDurationShouldThrowWhenStartAfterEnd(Ejercicio14Test.java:45)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.fechas.ejercicio14.Ejercicio14Test.overlapDurationShouldReturnTrueWhenOverlap -- Time elapsed: 0.002 s <<< ERROR!
+com.docencia.fechas.ejercicio14.Ejercicio14Test.overlapDurationShouldReturnTrueWhenOverlap -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "com.docencia.fechas.OverlapResult.overlaps()" because the return value of "com.docencia.fechas.ejercicio14.Ejercicio14.overlapDuration(java.time.ZonedDateTime, java.time.ZonedDateTime, java.time.ZonedDateTime, java.time.ZonedDateTime)" is null
 	at com.docencia.fechas.ejercicio14.Ejercicio14Test.overlapDurationShouldReturnTrueWhenOverlap(Ejercicio14Test.java:24)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 

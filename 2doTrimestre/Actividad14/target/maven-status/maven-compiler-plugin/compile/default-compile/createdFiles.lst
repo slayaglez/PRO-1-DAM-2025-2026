@@ -9,8 +9,8 @@ com/docencia/fechas/ejercicio15/Ejercicio15.class
 com/docencia/fechas/ejercicio6/Ejercicio6.class
 com/docencia/expresiones/ejercicio7/Ejercicio7.class
 com/docencia/fechas/ejercicio9/Ejercicio9.class
-com/docencia/fechas/ejercicio12/Ejercicio12.class
 com/docencia/fechas/ejercicio1/Ejercicio1.class
+com/docencia/fechas/ejercicio12/Ejercicio12.class
 com/docencia/expresiones/ejercicio2/Ejercicio2.class
 com/docencia/fechas/ProcessingPlan.class
 com/docencia/fechas/TimeWindow.class
@@ -26,6 +26,7 @@ com/docencia/fechas/ejercicio13/Ejercicio13.class
 com/docencia/expresiones/DateRangeResult.class
 com/docencia/fechas/ejercicio2/Ejercicio2.class
 com/docencia/expresiones/ejercicio3/Ejercicio3.class
+com/docencia/expresiones/ejercicio5/Matcher.class
 com/docencia/fechas/OverlapResult.class
 com/docencia/fechas/ejercicio10/Ejercicio10.class
 com/docencia/fechas/ejercicio5/Ejercicio5.class

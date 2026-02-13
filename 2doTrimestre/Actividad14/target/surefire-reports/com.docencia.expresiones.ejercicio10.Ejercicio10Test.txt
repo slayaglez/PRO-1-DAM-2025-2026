@@ -1,28 +1,28 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.expresiones.ejercicio10.Ejercicio10Test
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.010 s <<< FAILURE! -- in com.docencia.expresiones.ejercicio10.Ejercicio10Test
-com.docencia.expresiones.ejercicio10.Ejercicio10Test.parseReminderToInstantShouldParseUtcWithoutSeconds -- Time elapsed: 0.001 s <<< ERROR!
+Tests run: 5, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.018 s <<< FAILURE! -- in com.docencia.expresiones.ejercicio10.Ejercicio10Test
+com.docencia.expresiones.ejercicio10.Ejercicio10Test.parseReminderToInstantShouldParseUtcWithoutSeconds -- Time elapsed: 0.004 s <<< ERROR!
 java.lang.IllegalArgumentException: unsupported reminder format
 	at com.docencia.expresiones.ejercicio10.Ejercicio10.parseReminderToInstant(Ejercicio10.java:15)
 	at com.docencia.expresiones.ejercicio10.Ejercicio10Test.parseReminderToInstantShouldParseUtcWithoutSeconds(Ejercicio10Test.java:29)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.expresiones.ejercicio10.Ejercicio10Test.parseReminderToInstantShouldParseLocalWithZone -- Time elapsed: 0 s <<< ERROR!
+com.docencia.expresiones.ejercicio10.Ejercicio10Test.parseReminderToInstantShouldParseLocalWithZone -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.IllegalArgumentException: unsupported reminder format
 	at com.docencia.expresiones.ejercicio10.Ejercicio10.parseReminderToInstant(Ejercicio10.java:15)
 	at com.docencia.expresiones.ejercicio10.Ejercicio10Test.parseReminderToInstantShouldParseLocalWithZone(Ejercicio10Test.java:11)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.docencia.expresiones.ejercicio10.Ejercicio10Test.parseReminderToInstantShouldParseInMinutes -- Time elapsed: 0 s <<< ERROR!
+com.docencia.expresiones.ejercicio10.Ejercicio10Test.parseReminderToInstantShouldParseInMinutes -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.IllegalArgumentException: unsupported reminder format
 	at com.docencia.expresiones.ejercicio10.Ejercicio10.parseReminderToInstant(Ejercicio10.java:15)
 	at com.docencia.expresiones.ejercicio10.Ejercicio10Test.parseReminderToInstantShouldParseInMinutes(Ejercicio10Test.java:22)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
