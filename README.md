@@ -123,27 +123,44 @@ Actividad 3.6 evaluable, un conjunto de 25 ejercicios de expresiones regulares, 
 
 [Link a la actividad 13](./2doTrimestre/Actividad13/src/main/java/com/docencia)
 
+
+### Actividad 14
+Actividad 3.8 evaluable, un conjunto de 25 ejercicios de expresiones regulares (10) y fechas (15). (Faltan ejercicios)
+
+[Link a la actividad 14](./2doTrimestre/Actividad13/src/main/java/com/docencia)
+
+
+### Actividad 15
+Actividad 4.1 evaluable, introducción a la recursividad, un conjunto de 60 ejercicios de lógica orientada a bucles (30) y su contraparte hecha de forma recursiva (30).
+
+[Link a la actividad 15](./2doTrimestre/Actividad13/src/main/java/com/docencia)
+
 <br>
 
 ## Exámenes y "Pruebas evaluables"
 Dentro de la carpeta Pruebas se encontrará:
 
-El ejercicio_1_1 data del *3 Oct 2025* &nbsp; &nbsp;| corregido
+El ejercicio_1_1 data del *3 Oct 2025*
 <br>
-El ejercicio_1_2 data del *17 Oct 2025* &nbsp;| corregido
+El ejercicio_1_2 data del *17 Oct 2025*
 <br>
-El ejercicio_1_3 data del *24 Oct 2025* &nbsp;| corregido
+El ejercicio_1_3 data del *24 Oct 2025*
 <br>
-El ejercicio_2_1 data del *7 Nov 2025* &nbsp; | corregido
+El ejercicio_2_1 data del *7 Nov 2025*
 <br>
-El ejercicio_2_2 data del *21 Nov 2025* | corregido
+El ejercicio_2_2 data del *21 Nov 2025*
 <br>
-El ejercicio_3_1 data del *17 Dec 2025* | corregido
+El ejercicio_3_1 data del *17 Dec 2025*
 <br>
-El ejercicio_3_2 data del *9 Jan 2026*  &nbsp; &nbsp;| corregido
+El ejercicio_3_2 data del *9 Jan 2026*
 <br>
-El ejercicio_3_4 data del *23 Jan 2026* &nbsp;| corregido
+El ejercicio_3_4 data del *23 Jan 2026*
 <br>
+El ejercicio_3_7 data del *6 Feb 2026*
+<br>
+El ejercicio_3_9 data del *13 Feb 2026*
+<br>
+
 
 La carpeta Pruebas **NO** contendrá los exámenes de final de trimestre.
 
