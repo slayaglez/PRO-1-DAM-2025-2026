@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ejercicio05.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DateTime/Expresiones/Clases</a> &gt; <a href="index.source.html" class="el_package">com.docencia.fecha.ejercicio5</a> &gt; <span class="el_source">Ejercicio05.java</span></div><h1>Ejercicio05.java</h1><pre class="source lang-java linenums">package com.docencia.fecha.ejercicio5;
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ejercicio05.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DateTime/Expresiones/Clases</a> &gt; <a href="index.source.html" class="el_package">com.docencia.fecha.ejercicio5</a> &gt; <span class="el_source">Ejercicio05.java</span></div><h1>Ejercicio05.java</h1><pre class="source lang-java linenums">/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Programa que suma minutos a una hora especifica
+ */
+package com.docencia.fecha.ejercicio5;
 
 import java.time.LocalTime;
 
@@ -18,9 +23,18 @@ import java.time.LocalTime;
  * - 10:00 + 1500 =&gt; 11:00 (1500 min = 25h)
  * - 00:10 - 20 =&gt; 23:50
  */
-<span class="nc" id="L21">public class Ejercicio05 {</span>
+<span class="nc" id="L26">public class Ejercicio05 {</span>
     public static LocalTime sumarMinutos(LocalTime t, long deltaMin) {
-<span class="fc" id="L23">        throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
+        
+<span class="fc bfc" id="L29" title="All 2 branches covered.">        if(t == null){</span>
+<span class="fc" id="L30">            throw new IllegalArgumentException();</span>
+        }
+
+<span class="fc bfc" id="L33" title="All 2 branches covered.">        if (deltaMin == 0) {</span>
+<span class="fc" id="L34">            return t;</span>
+        }
+
+<span class="fc" id="L37">        return t.plusMinutes(deltaMin);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

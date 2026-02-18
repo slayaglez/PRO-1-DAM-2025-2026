@@ -1,287 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.068" tests="16" errors="5" skipped="0" failures="11">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.033" tests="16" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.specification.version" value="17"/>
+    <property name="java.specification.version" value="25"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/home/dam/Escritorio/Programacion/2doTrimestre/Actividad13/target/test-classes:/home/dam/Escritorio/Programacion/2doTrimestre/Actividad13/target/classes:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/dam/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/dam/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/dam/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/dam/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
-    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="java.class.path" value="/home/cbasx/Escritorio/CICLO_SEBAS/Programacion/PRO-1-DAM-2025-2026/2doTrimestre/Actividad13/target/test-classes:/home/cbasx/Escritorio/CICLO_SEBAS/Programacion/PRO-1-DAM-2025-2026/2doTrimestre/Actividad13/target/classes:/home/cbasx/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/cbasx/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/cbasx/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/cbasx/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/cbasx/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/cbasx/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/cbasx/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/cbasx/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="os.name" value="Linux"/>
-    <property name="java.vm.specification.version" value="17"/>
+    <property name="java.vm.specification.version" value="25"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
-    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/dam/Escritorio/Programacion/2doTrimestre/Actividad13/target/surefire/surefirebooter-20260205162705453_3.jar /home/dam/Escritorio/Programacion/2doTrimestre/Actividad13/target/surefire 2026-02-05T16-27-05_368-jvmRun1 surefire-20260205162705453_1tmp surefire_0-20260205162705453_2tmp"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk-25-oracle-x64/lib"/>
+    <property name="sun.java.command" value="/home/cbasx/Escritorio/CICLO_SEBAS/Programacion/PRO-1-DAM-2025-2026/2doTrimestre/Actividad13/target/surefire/surefirebooter-20260206023157967_3.jar /home/cbasx/Escritorio/CICLO_SEBAS/Programacion/PRO-1-DAM-2025-2026/2doTrimestre/Actividad13/target/surefire 2026-02-06T02-31-57_870-jvmRun1 surefire-20260206023157967_1tmp surefire_0-20260206023157967_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/home/dam/Escritorio/Programacion/2doTrimestre/Actividad13/target/test-classes:/home/dam/Escritorio/Programacion/2doTrimestre/Actividad13/target/classes:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/dam/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/dam/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/dam/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/dam/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
+    <property name="surefire.test.class.path" value="/home/cbasx/Escritorio/CICLO_SEBAS/Programacion/PRO-1-DAM-2025-2026/2doTrimestre/Actividad13/target/test-classes:/home/cbasx/Escritorio/CICLO_SEBAS/Programacion/PRO-1-DAM-2025-2026/2doTrimestre/Actividad13/target/classes:/home/cbasx/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/cbasx/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/cbasx/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/cbasx/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/cbasx/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/cbasx/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/cbasx/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/cbasx/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="/home/dam"/>
+    <property name="user.home" value="/home/cbasx"/>
     <property name="user.language" value="es"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2025-04-15"/>
-    <property name="java.home" value="/usr/lib/jvm/java-17-openjdk-amd64"/>
+    <property name="java.version.date" value="2025-09-16"/>
+    <property name="java.home" value="/usr/lib/jvm/jdk-25-oracle-x64"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/home/dam/Escritorio/Programacion/2doTrimestre/Actividad13"/>
+    <property name="basedir" value="/home/cbasx/Escritorio/CICLO_SEBAS/Programacion/PRO-1-DAM-2025-2026/2doTrimestre/Actividad13"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/dam/Escritorio/Programacion/2doTrimestre/Actividad13/target/surefire/surefirebooter-20260205162705453_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/cbasx/Escritorio/CICLO_SEBAS/Programacion/PRO-1-DAM-2025-2026/2doTrimestre/Actividad13/target/surefire/surefirebooter-20260206023157967_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="17.0.15+6-Ubuntu-0ubuntu124.04"/>
-    <property name="user.name" value="dam"/>
+    <property name="java.runtime.version" value="25+37-LTS-3491"/>
+    <property name="user.name" value="cbasx"/>
+    <property name="stdout.encoding" value="UTF-8"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="6.8.0-60-generic"/>
-    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="os.version" value="6.14.0-29-generic"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="localRepository" value="/home/dam/.m2/repository"/>
-    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-17"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/cbasx/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/tmp"/>
-    <property name="java.version" value="17.0.15"/>
-    <property name="user.dir" value="/home/dam/Escritorio/Programacion/2doTrimestre/Actividad13"/>
+    <property name="java.version" value="25"/>
+    <property name="user.dir" value="/home/cbasx/Escritorio/CICLO_SEBAS/Programacion/PRO-1-DAM-2025-2026/2doTrimestre/Actividad13"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="native.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.vendor" value="Ubuntu"/>
-    <property name="java.vm.version" value="17.0.15+6-Ubuntu-0ubuntu124.04"/>
-    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25+37-LTS-3491"/>
+    <property name="stdin.encoding" value="UTF-8"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="61.0"/>
+    <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="shouldThrowWhenInicioEqualsFin" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.002">
-    <failure message="Unexpected exception type thrown, expected: &lt;java.lang.IllegalArgumentException&gt; but was: &lt;java.lang.UnsupportedOperationException&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.shouldThrowWhenInicioEqualsFin(Ejercicio08Test.java:72)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.UnsupportedOperationException: TODO
-	at com.docencia.fecha.ejercicio8.Ejercicio08.normalizarFranja(Ejercicio08.java:42)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.lambda$shouldThrowWhenInicioEqualsFin$10(Ejercicio08Test.java:73)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
-	... 6 more
-]]></failure>
-  </testcase>
-  <testcase name="shouldReturnSameWhenAlreadyNormalizedSameDayInterval" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.001">
-    <error message="TODO" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO
-	at com.docencia.fecha.ejercicio8.Ejercicio08.normalizarFranja(Ejercicio08.java:42)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.shouldReturnSameWhenAlreadyNormalizedSameDayInterval(Ejercicio08Test.java:79)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-  </testcase>
-  <testcase name="shouldAcceptUpperBounds2359" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.0">
-    <error message="TODO" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO
-	at com.docencia.fecha.ejercicio8.Ejercicio08.normalizarFranja(Ejercicio08.java:42)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.shouldAcceptUpperBounds2359(Ejercicio08Test.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-  </testcase>
-  <testcase name="shouldAcceptMidnightAsValidEnd" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.009">
-    <error message="TODO" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO
-	at com.docencia.fecha.ejercicio8.Ejercicio08.normalizarFranja(Ejercicio08.java:42)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.shouldAcceptMidnightAsValidEnd(Ejercicio08Test.java:97)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-  </testcase>
-  <testcase name="shouldThrowWhenFormatIsInvalidMissingLeadingZero" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.001">
-    <failure message="Unexpected exception type thrown, expected: &lt;java.lang.IllegalArgumentException&gt; but was: &lt;java.lang.UnsupportedOperationException&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.shouldThrowWhenFormatIsInvalidMissingLeadingZero(Ejercicio08Test.java:29)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.UnsupportedOperationException: TODO
-	at com.docencia.fecha.ejercicio8.Ejercicio08.normalizarFranja(Ejercicio08.java:42)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.lambda$shouldThrowWhenFormatIsInvalidMissingLeadingZero$3(Ejercicio08Test.java:30)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
-	... 6 more
-]]></failure>
-  </testcase>
-  <testcase name="shouldThrowWhenMinutesAreOutOfRange60" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.005">
-    <failure message="Unexpected exception type thrown, expected: &lt;java.lang.IllegalArgumentException&gt; but was: &lt;java.lang.UnsupportedOperationException&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.shouldThrowWhenMinutesAreOutOfRange60(Ejercicio08Test.java:60)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.UnsupportedOperationException: TODO
-	at com.docencia.fecha.ejercicio8.Ejercicio08.normalizarFranja(Ejercicio08.java:42)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.lambda$shouldThrowWhenMinutesAreOutOfRange60$8(Ejercicio08Test.java:61)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
-	... 6 more
-]]></failure>
-  </testcase>
-  <testcase name="shouldThrowWhenFormatIsInvalidNoDash" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.005">
-    <failure message="Unexpected exception type thrown, expected: &lt;java.lang.IllegalArgumentException&gt; but was: &lt;java.lang.UnsupportedOperationException&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.shouldThrowWhenFormatIsInvalidNoDash(Ejercicio08Test.java:41)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.UnsupportedOperationException: TODO
-	at com.docencia.fecha.ejercicio8.Ejercicio08.normalizarFranja(Ejercicio08.java:42)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.lambda$shouldThrowWhenFormatIsInvalidNoDash$5(Ejercicio08Test.java:42)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
-	... 6 more
-]]></failure>
-  </testcase>
-  <testcase name="shouldReturnSameWhenAlreadyNormalizedCrossingMidnightInterval" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.001">
-    <error message="TODO" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO
-	at com.docencia.fecha.ejercicio8.Ejercicio08.normalizarFranja(Ejercicio08.java:42)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.shouldReturnSameWhenAlreadyNormalizedCrossingMidnightInterval(Ejercicio08Test.java:85)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-  </testcase>
-  <testcase name="shouldThrowWhenHourIsOutOfRangeNegativeNotPossibleButKeptByRegex" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.009">
-    <failure message="Unexpected exception type thrown, expected: &lt;java.lang.IllegalArgumentException&gt; but was: &lt;java.lang.UnsupportedOperationException&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.shouldThrowWhenHourIsOutOfRangeNegativeNotPossibleButKeptByRegex(Ejercicio08Test.java:54)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.UnsupportedOperationException: TODO
-	at com.docencia.fecha.ejercicio8.Ejercicio08.normalizarFranja(Ejercicio08.java:42)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.lambda$shouldThrowWhenHourIsOutOfRangeNegativeNotPossibleButKeptByRegex$7(Ejercicio08Test.java:55)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
-	... 6 more
-]]></failure>
-  </testcase>
-  <testcase name="shouldAcceptMidnightAsValidStart" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.001">
-    <error message="TODO" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO
-	at com.docencia.fecha.ejercicio8.Ejercicio08.normalizarFranja(Ejercicio08.java:42)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.shouldAcceptMidnightAsValidStart(Ejercicio08Test.java:91)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-  </testcase>
-  <testcase name="shouldThrowWhenFranjaIsBlank" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.005">
-    <failure message="Unexpected exception type thrown, expected: &lt;java.lang.IllegalArgumentException&gt; but was: &lt;java.lang.UnsupportedOperationException&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.shouldThrowWhenFranjaIsBlank(Ejercicio08Test.java:23)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.UnsupportedOperationException: TODO
-	at com.docencia.fecha.ejercicio8.Ejercicio08.normalizarFranja(Ejercicio08.java:42)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.lambda$shouldThrowWhenFranjaIsBlank$2(Ejercicio08Test.java:24)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
-	... 6 more
-]]></failure>
-  </testcase>
-  <testcase name="shouldThrowWhenFranjaIsEmpty" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.001">
-    <failure message="Unexpected exception type thrown, expected: &lt;java.lang.IllegalArgumentException&gt; but was: &lt;java.lang.UnsupportedOperationException&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.shouldThrowWhenFranjaIsEmpty(Ejercicio08Test.java:17)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.UnsupportedOperationException: TODO
-	at com.docencia.fecha.ejercicio8.Ejercicio08.normalizarFranja(Ejercicio08.java:42)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.lambda$shouldThrowWhenFranjaIsEmpty$1(Ejercicio08Test.java:18)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
-	... 6 more
-]]></failure>
-  </testcase>
-  <testcase name="shouldThrowWhenFormatIsInvalidWrongSeparator" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.001">
-    <failure message="Unexpected exception type thrown, expected: &lt;java.lang.IllegalArgumentException&gt; but was: &lt;java.lang.UnsupportedOperationException&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.shouldThrowWhenFormatIsInvalidWrongSeparator(Ejercicio08Test.java:35)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.UnsupportedOperationException: TODO
-	at com.docencia.fecha.ejercicio8.Ejercicio08.normalizarFranja(Ejercicio08.java:42)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.lambda$shouldThrowWhenFormatIsInvalidWrongSeparator$4(Ejercicio08Test.java:36)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
-	... 6 more
-]]></failure>
-  </testcase>
-  <testcase name="shouldThrowWhenMinutesAreOutOfRangeAtEnd" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.001">
-    <failure message="Unexpected exception type thrown, expected: &lt;java.lang.IllegalArgumentException&gt; but was: &lt;java.lang.UnsupportedOperationException&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.shouldThrowWhenMinutesAreOutOfRangeAtEnd(Ejercicio08Test.java:66)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.UnsupportedOperationException: TODO
-	at com.docencia.fecha.ejercicio8.Ejercicio08.normalizarFranja(Ejercicio08.java:42)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.lambda$shouldThrowWhenMinutesAreOutOfRangeAtEnd$9(Ejercicio08Test.java:67)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
-	... 6 more
-]]></failure>
-  </testcase>
-  <testcase name="shouldThrowWhenHourIsOutOfRange24" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.001">
-    <failure message="Unexpected exception type thrown, expected: &lt;java.lang.IllegalArgumentException&gt; but was: &lt;java.lang.UnsupportedOperationException&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.shouldThrowWhenHourIsOutOfRange24(Ejercicio08Test.java:47)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.UnsupportedOperationException: TODO
-	at com.docencia.fecha.ejercicio8.Ejercicio08.normalizarFranja(Ejercicio08.java:42)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.lambda$shouldThrowWhenHourIsOutOfRange24$6(Ejercicio08Test.java:48)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
-	... 6 more
-]]></failure>
-  </testcase>
-  <testcase name="shouldThrowWhenFranjaIsNull" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.001">
-    <failure message="Unexpected exception type thrown, expected: &lt;java.lang.IllegalArgumentException&gt; but was: &lt;java.lang.UnsupportedOperationException&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.IllegalArgumentException> but was: <java.lang.UnsupportedOperationException>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.shouldThrowWhenFranjaIsNull(Ejercicio08Test.java:11)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.UnsupportedOperationException: TODO
-	at com.docencia.fecha.ejercicio8.Ejercicio08.normalizarFranja(Ejercicio08.java:42)
-	at com.docencia.fecha.ejercicio8.Ejercicio08Test.lambda$shouldThrowWhenFranjaIsNull$0(Ejercicio08Test.java:12)
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
-	... 6 more
-]]></failure>
-  </testcase>
+  <testcase name="shouldThrowWhenInicioEqualsFin" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.003"/>
+  <testcase name="shouldReturnSameWhenAlreadyNormalizedSameDayInterval" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.003"/>
+  <testcase name="shouldAcceptUpperBounds2359" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.001"/>
+  <testcase name="shouldAcceptMidnightAsValidEnd" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.001"/>
+  <testcase name="shouldThrowWhenFormatIsInvalidMissingLeadingZero" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.002"/>
+  <testcase name="shouldThrowWhenMinutesAreOutOfRange60" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.002"/>
+  <testcase name="shouldThrowWhenFormatIsInvalidNoDash" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.001"/>
+  <testcase name="shouldReturnSameWhenAlreadyNormalizedCrossingMidnightInterval" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.001"/>
+  <testcase name="shouldThrowWhenHourIsOutOfRangeNegativeNotPossibleButKeptByRegex" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.001"/>
+  <testcase name="shouldAcceptMidnightAsValidStart" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.001"/>
+  <testcase name="shouldThrowWhenFranjaIsBlank" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.001"/>
+  <testcase name="shouldThrowWhenFranjaIsEmpty" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.001"/>
+  <testcase name="shouldThrowWhenFormatIsInvalidWrongSeparator" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.0"/>
+  <testcase name="shouldThrowWhenMinutesAreOutOfRangeAtEnd" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.001"/>
+  <testcase name="shouldThrowWhenHourIsOutOfRange24" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.001"/>
+  <testcase name="shouldThrowWhenFranjaIsNull" classname="com.docencia.fecha.ejercicio8.Ejercicio08Test" time="0.001"/>
 </testsuite>

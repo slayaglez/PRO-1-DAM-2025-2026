@@ -1,3 +1,8 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Programa que valida el descanso entre dos turnos
+ */
 package com.docencia.fecha.ejercicio6;
 
 import java.time.LocalTime;
@@ -25,6 +30,46 @@ import java.time.LocalTime;
  */
 public class Ejercicio06 {
     public static boolean cumpleDescanso(LocalTime finTurno, LocalTime inicioSiguiente, int minDescansoHoras) {
-        throw new UnsupportedOperationException("TODO");
+        
+        if(finTurno == null || inicioSiguiente == null || minDescansoHoras <= 0 || minDescansoHoras > 24){
+            throw new IllegalArgumentException();
+        }
+        if(finTurno.equals(inicioSiguiente)){
+            return false;
+        }
+
+        int horasFin = finTurno.getHour();
+        int minutosFin = finTurno.getMinute();
+
+        int horasInicio = inicioSiguiente.getHour();
+        int minutosInicio = inicioSiguiente.getMinute();
+
+        int horasResultado = 0;
+        int minutosResultado = 0;
+
+        // entre fin e inicio deben haber 12 horas
+        // si fin < inicio entonces es el mismo dia
+        // luego inicio - fin >= min
+        if(finTurno.isBefore(inicioSiguiente)){
+            horasResultado = horasInicio - horasFin;
+            minutosResultado = minutosInicio - minutosFin;
+            // si hay overflow (minFin > minInicio)
+            if(minutosResultado <0){
+                horasResultado--;
+            }
+            return horasResultado >= minDescansoHoras;
+        }
+        // si por otro lado fin > inicio entonces cambio de día
+        // luego calculo tiempo de fin -> 00:00 y de 00:00 a inicio
+        // eso debe ser >= a min
+        else {
+            horasResultado = (24-horasFin) + horasInicio;
+            minutosResultado = minutosFin + minutosFin;
+            //si hay overflow (minResultado > 59)
+            if(minutosResultado >= 60){
+                horasResultado++;
+            }
+            return horasResultado >= minDescansoHoras;
+        }
     }
 }

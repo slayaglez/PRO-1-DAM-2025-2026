@@ -1,7 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TarjetaEmbarque.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DateTime/Expresiones/Clases</a> &gt; <a href="index.source.html" class="el_package">com.docencia.clases.ejercicio4</a> &gt; <span class="el_source">TarjetaEmbarque.java</span></div><h1>TarjetaEmbarque.java</h1><pre class="source lang-java linenums">package com.docencia.clases.ejercicio4;
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TarjetaEmbarque.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DateTime/Expresiones/Clases</a> &gt; <a href="index.source.html" class="el_package">com.docencia.clases.ejercicio4</a> &gt; <span class="el_source">TarjetaEmbarque.java</span></div><h1>TarjetaEmbarque.java</h1><pre class="source lang-java linenums">/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Programa que calcula y trabaja horarios de un vuelo
+ */
+package com.docencia.clases.ejercicio4;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.regex.Pattern;
 
 public class TarjetaEmbarque {
 
@@ -9,30 +15,62 @@ public class TarjetaEmbarque {
     private final LocalDate fechaVuelo;
     private final LocalTime horaSalida;
 
-<span class="fc" id="L12">    public TarjetaEmbarque(String codigo, LocalDate fechaVuelo, LocalTime horaSalida) {</span>
-<span class="fc" id="L13">        this.codigo = codigo;</span>
-<span class="fc" id="L14">        this.fechaVuelo = fechaVuelo;</span>
-<span class="fc" id="L15">        this.horaSalida = horaSalida;</span>
-<span class="fc" id="L16">    }</span>
+<span class="fc" id="L18">    public TarjetaEmbarque(String codigo, LocalDate fechaVuelo, LocalTime horaSalida) {</span>
+<span class="fc" id="L19">        this.codigo = codigo;</span>
+<span class="fc" id="L20">        this.fechaVuelo = fechaVuelo;</span>
+<span class="fc" id="L21">        this.horaSalida = horaSalida;</span>
+<span class="fc" id="L22">    }</span>
 
     public void validate(LocalDate hoy) {
-<span class="fc" id="L19">        throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
-    }
+<span class="fc bfc" id="L25" title="All 4 branches covered.">        if (hoy == null || this.codigo == null) {</span>
+<span class="fc" id="L26">            throw new IllegalArgumentException();</span>
+        }
+
+        // BP-IB-2026-A1B2C3
+<span class="fc" id="L30">        String patron = &quot;^[A-Z]{2}-[A-Z]{2}-[0-9]{4}-[A-Z0-9]{6}$&quot;;</span>
+<span class="fc bfc" id="L31" title="All 2 branches covered.">        if (!Pattern.matches(patron, this.codigo)) {</span>
+<span class="fc" id="L32">            throw new IllegalArgumentException();</span>
+        }
+
+<span class="pc bpc" id="L35" title="1 of 2 branches missed.">        if (fechaVuelo.isBefore(hoy)) {</span>
+<span class="fc" id="L36">            throw new IllegalArgumentException(&quot;vuelo pasado&quot;);</span>
+        }
+
+<span class="nc" id="L39">    }</span>
 
     public boolean puedeEmbarcar(LocalDate hoy, LocalTime ahora) {
-<span class="fc" id="L23">        throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
+
+<span class="fc bfc" id="L43" title="All 2 branches covered.">        if (ahora == null) {</span>
+<span class="fc" id="L44">            throw new IllegalArgumentException();</span>
+        }
+
+<span class="fc bfc" id="L47" title="All 2 branches covered.">        if (!fechaVuelo.isEqual(hoy)) {</span>
+<span class="fc" id="L48">            return false;</span>
+        }
+
+<span class="fc" id="L51">        LocalTime apertura = horaSalida.minusMinutes(45); // 45 min antes</span>
+<span class="fc" id="L52">        LocalTime cierre = horaSalida.minusMinutes(10); // 10 min dspues</span>
+
+        // mismo dia
+<span class="fc bfc" id="L55" title="All 2 branches covered.">        if (apertura.isBefore(cierre)) {</span>
+<span class="fc bfc" id="L56" title="All 4 branches covered.">            return !ahora.isBefore(apertura) &amp;&amp; ahora.isBefore(cierre);</span>
+        }
+        // pasan las 00:00
+        else {
+<span class="fc bfc" id="L60" title="All 4 branches covered.">            return !ahora.isBefore(apertura) || ahora.isBefore(cierre);</span>
+        }
     }
 
     public String getCodigo() {
-<span class="nc" id="L27">        return codigo;</span>
+<span class="nc" id="L65">        return codigo;</span>
     }
 
     public LocalDate getFechaVuelo() {
-<span class="nc" id="L31">        return fechaVuelo;</span>
+<span class="nc" id="L69">        return fechaVuelo;</span>
     }
 
     public LocalTime getHoraSalida() {
-<span class="nc" id="L35">        return horaSalida;</span>
+<span class="nc" id="L73">        return horaSalida;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

@@ -1,6 +1,11 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Un programa que normaliza una franja horaria
+ */
 package com.docencia.fecha.ejercicio8;
 
-import java.time.LocalTime;
+import java.util.regex.Pattern;
 
 /**
  * EJERCICIO 8B) NORMALIZAR FRANJA HORARIA (PUEDE CRUZAR MEDIANOCHE)
@@ -12,7 +17,8 @@ import java.time.LocalTime;
  * Reglas de validez:
  * - Debe cumplir exactamente el patrón: ^\d{2}:\d{2}-\d{2}:\d{2}$
  * - Las horas deben estar en 00..23 y los minutos en 00..59
- * - Si inicio == fin, se considera franja VACÍA (inválida) y debe lanzar excepción.
+ * - Si inicio == fin, se considera franja VACÍA (inválida) y debe lanzar
+ * excepción.
  *
  * Normalización:
  * - Debe devolver "HH:mm-HH:mm" con ceros a la izquierda.
@@ -20,6 +26,7 @@ import java.time.LocalTime;
  *
  * Cruce de medianoche:
  * - Si inicio > fin, la franja cruza medianoche y se considera válida.
+ * - slayaglez
  *
  * Programación defensiva:
  * - Si franja es null o blank, lanza IllegalArgumentException.
@@ -27,18 +34,45 @@ import java.time.LocalTime;
  * - Si inicio.equals(fin), lanza IllegalArgumentException (franja vacía).
  *
  * Ejemplos válidos:
- * - "09:30-12:15"  -> "09:30-12:15"
- * - "22:00-06:00"  -> "22:00-06:00"
+ * - "09:30-12:15" -> "09:30-12:15"
+ * - "22:00-06:00" -> "22:00-06:00"
  *
  * Ejemplos inválidos:
- * - "9:30-12:15"   (no cumple exactamente 2 dígitos)
- * - "24:00-06:00"  (hora fuera de rango)
- * - "10:60-12:00"  (minutos fuera de rango)
- * - "10:00-10:00"  (franja vacía)
- * - "1030-1215"    (formato incorrecto)
+ * - "9:30-12:15" (no cumple exactamente 2 dígitos)
+ * - "24:00-06:00" (hora fuera de rango)
+ * - "10:60-12:00" (minutos fuera de rango)
+ * - "10:00-10:00" (franja vacía)
+ * - "1030-1215" (formato incorrecto)
  */
 public class Ejercicio08 {
     public static String normalizarFranja(String franja) {
-        throw new UnsupportedOperationException("TODO");
+
+        if (franja == null || franja.isBlank()) {
+            throw new IllegalArgumentException();
+        }
+
+        String patron = "^(2[0-3]|1[0-9]|0[0-9]):([0-5][0-9])-(2[0-3]|1[0-9]|0[0-9]):([0-5][0-9])$";
+
+        // si la cadena es valida
+        if (Pattern.matches(patron, franja)) {
+            String horaInicioStr = franja.substring(0, 2);
+            String minutoInicioStr = franja.substring(3, 5);
+            String horaFinStr = franja.substring(6, 8);
+            String minutoFinStr = franja.substring(9, 11);
+
+            int horaInicio = Integer.parseInt(horaInicioStr);
+            int minutoInicio = Integer.parseInt(minutoInicioStr);
+            int horaFin = Integer.parseInt(horaFinStr);
+            int minutoFin = Integer.parseInt(minutoFinStr);
+
+            if(horaInicio == horaFin && minutoInicio == minutoFin){
+                throw new IllegalArgumentException();
+            }
+
+            return franja;
+        }
+        
+
+        throw new IllegalArgumentException();
     }
 }

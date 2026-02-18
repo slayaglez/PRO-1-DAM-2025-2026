@@ -1,28 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ejercicio07.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DateTime/Expresiones/Clases</a> &gt; <a href="index.source.html" class="el_package">com.docencia.fecha.ejercicio7</a> &gt; <span class="el_source">Ejercicio07.java</span></div><h1>Ejercicio07.java</h1><pre class="source lang-java linenums">package com.docencia.fecha.ejercicio7;
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ejercicio07.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DateTime/Expresiones/Clases</a> &gt; <a href="index.source.html" class="el_package">com.docencia.fecha.ejercicio7</a> &gt; <span class="el_source">Ejercicio07.java</span></div><h1>Ejercicio07.java</h1><pre class="source lang-java linenums">/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Programa que determina si dos intervalos se solapan
+ */
+package com.docencia.fecha.ejercicio7;
 
 import java.time.LocalTime;
 
 /**
-     * EJERCICIO 7) Solapamiento de intervalos (sin cruzar medianoche)
-     *
-     * Determina si dos intervalos horarios [aIni, aFin) y [bIni, bFin) se solapan.
-     * Los intervalos se consideran válidos si aIni &lt; aFin y bIni &lt; bFin.
-     *
-     * Regla típica de solapamiento:
-     * - Se solapan si aIni &lt; bFin &amp;&amp; bIni &lt; aFin
-     *
-     * Programación defensiva:
-     * - Si cualquier parámetro es null, lanza IllegalArgumentException.
-     * - Si aIni no es before aFin, lanza IllegalArgumentException.
-     * - Si bIni no es before bFin, lanza IllegalArgumentException.
-     *
-     * Ejemplos:
-     * - [10:00,12:00) y [11:00,13:00) =&gt; true
-     * - [10:00,12:00) y [12:00,14:00) =&gt; false
-     */
-<span class="nc" id="L23">public class Ejercicio07 {</span>
-public static boolean solapan(LocalTime aIni, LocalTime aFin, LocalTime bIni, LocalTime bFin) {
-<span class="fc" id="L25">        throw new UnsupportedOperationException(&quot;TODO&quot;);</span>
+ * EJERCICIO 7) Solapamiento de intervalos (sin cruzar medianoche)
+ *
+ * Determina si dos intervalos horarios [aIni, aFin) y [bIni, bFin) se solapan.
+ * Los intervalos se consideran válidos si aIni &lt; aFin y bIni &lt; bFin.
+ *
+ * Regla típica de solapamiento:
+ * - Se solapan si aIni &lt; bFin &amp;&amp; bIni &lt; aFin
+ *
+ * Programación defensiva:
+ * - Si cualquier parámetro es null, lanza IllegalArgumentException.
+ * - Si aIni no es before aFin, lanza IllegalArgumentException.
+ * - Si bIni no es before bFin, lanza IllegalArgumentException.
+ *
+ * Ejemplos:
+ * - [10:00,12:00) y [11:00,13:00) =&gt; true
+ * - [10:00,12:00) y [12:00,14:00) =&gt; false
+ */
+<span class="nc" id="L28">public class Ejercicio07 {</span>
+    public static boolean solapan(LocalTime aIni, LocalTime aFin, LocalTime bIni, LocalTime bFin) {
+
+<span class="fc bfc" id="L31" title="All 12 branches covered.">        if (aIni == null || aFin == null || bIni == null || bFin == null || aIni.isAfter(aFin) || bIni.isAfter(bFin)</span>
+<span class="fc bfc" id="L32" title="All 4 branches covered.">                || aIni.equals(aFin) || bIni.equals(bFin)) {</span>
+<span class="fc" id="L33">            throw new IllegalArgumentException();</span>
+        }
+
+<span class="fc bfc" id="L36" title="All 4 branches covered.">        return aIni.isBefore(bFin) &amp;&amp; bIni.isBefore(aFin);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
