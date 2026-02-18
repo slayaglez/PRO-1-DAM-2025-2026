@@ -5,8 +5,13 @@
 Todos los ejercicios y exámenes hechos a lo largo del primer año de Programación en Java para Desarrollo de Aplicaciones Multiplataforma estarán aquí listados para la posterioridad. Asignatura impartida por Joatham Pérez Expósito.
 
 <br>
+<br>
+<br>
 
-## Índice
+# Índice
+<details>
+<summary>Click para ver el índice</summary>
+
 - Actividades
 - Primer Trimestre
   - Unidad 1
@@ -30,16 +35,21 @@ Todos los ejercicios y exámenes hechos a lo largo del primer año de Programaci
     - [Actividad 12](#actividad-12)
     - [Actividad 13](#actividad-13)
     - [Actividad 14](#actividad-14)
+  - Unidad 5
     - [Actividad 15](#actividad-15)
 - [Exámenes y "Pruebas evaluables"](#exámenes-y-pruebas-evaluables)
 
+</details>
+
+<br>
+<br>
 <br>
 
-## Actividades
+# Actividades
 Lo trabajado en clase está dividido por trimestres.
 
 ## Primer Trimestre (Actividad 1 - Actividad 9)
-
+  
 ### Actividad 1
 Trabajamos con **condicionales**, if, else, switch... Cualquier bucle encontrado no pertenece a lo impartido en la clase, en esta actividad se impartió exclusivamente el uso de los condicionales.
 
@@ -103,6 +113,7 @@ Un **repaso general** de lo trabajado hasta ahora en todo el primer Trimestre co
 
 [Link a la actividad navideña](./1erTrimestre/RepasoNavidad/src/main/java/com/docencia)
 
+
 ## Segundo Trimestre (Actividad 10 ...)
 
 ### Actividad 10
@@ -162,7 +173,7 @@ El ejercicio_3_7 data del *6 Feb 2026*
 <br>
 El ejercicio_3_9 data del *13 Feb 2026*
 <br>
-
+(La actividad 3.5 nunca se llevó a cabo, las demás no figuran en la lista porque se evaluaron como tareas de casa)
 
 La carpeta Pruebas **NO** contendrá los exámenes de final de trimestre.
 
