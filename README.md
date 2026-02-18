@@ -127,13 +127,13 @@ Actividad 3.6 evaluable, un conjunto de 25 ejercicios de expresiones regulares, 
 ### Actividad 14
 Actividad 3.8 evaluable, un conjunto de 25 ejercicios de expresiones regulares (10) y fechas (15). (Faltan ejercicios)
 
-[Link a la actividad 14](./2doTrimestre/Actividad13/src/main/java/com/docencia)
+[Link a la actividad 14](./2doTrimestre/Actividad14/src/main/java/com/docencia)
 
 
 ### Actividad 15
 Actividad 4.1 evaluable, introducción a la recursividad, un conjunto de 60 ejercicios de lógica orientada a bucles (30) y su contraparte hecha de forma recursiva (30).
 
-[Link a la actividad 15](./2doTrimestre/Actividad13/src/main/java/com/docencia)
+[Link a la actividad 15](./2doTrimestre/Actividad15/src/main/java/com/docencia)
 
 <br>
 
