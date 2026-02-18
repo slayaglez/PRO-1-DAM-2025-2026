@@ -38,6 +38,10 @@ public final class Ejercicio5 {
             return Instant.parse(fecha);
         }
 
+<<<<<<< HEAD
         throw new IllegalArgumentException();
+=======
+        return null;
+>>>>>>> dc99aa0abec1a6d7c4efc21653c71a0737d780ed
     }
 }
