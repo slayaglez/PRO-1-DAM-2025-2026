@@ -1,11 +1,23 @@
 package com.docencia.logica;
 
 public class Ejercicio02 {
-  /**
-   * Calcula base^exponente (exponente >= 0)
-   * TODO: Implementar usando lógica tradicional (iterativo).
-   */
+  
   public static long potencia(long base, int exponente) {
-    throw new UnsupportedOperationException("Pendiente de implementar");
+    if(base == 0){
+      return 0;
+    }
+    if(exponente == 0){
+      return 1;
+    }
+
+    long resultado = 1;
+    for (int i = 0; i < exponente; i++) {
+      resultado *= base;
+    }
+    return resultado;
+  }
+
+  public static void main(String[] args) {
+    System.out.println(potencia(2, 3));
   }
 }
