@@ -1,9 +1,12 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief factorial de un numero
+ */
 package com.docencia.logica;
 
 public class Ejercicio01 {
-  
   public static long factorial(int n) {
-    
     if(n < 0){
       throw new IllegalArgumentException();
     }
