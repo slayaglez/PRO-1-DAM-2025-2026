@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.Ejercicio23Test
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! -- in com.docencia.Ejercicio23Test
-com.docencia.Ejercicio23Test.prueba(int[], long)[1] -- Time elapsed: 0.001 s <<< ERROR!
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.019 s <<< FAILURE! -- in com.docencia.Ejercicio23Test
+com.docencia.Ejercicio23Test.prueba(int[], long)[1] -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: Pendiente de implementar
 	at com.docencia.recursividad.Ejercicio23.contarInversiones(Ejercicio23.java:9)
 	at com.docencia.Ejercicio23Test.prueba(Ejercicio23Test.java:25)
@@ -52,7 +52,7 @@ java.lang.UnsupportedOperationException: Pendiente de implementar
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.Ejercicio23Test.prueba(int[], long)[2] -- Time elapsed: 0 s <<< ERROR!
+com.docencia.Ejercicio23Test.prueba(int[], long)[2] -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: Pendiente de implementar
 	at com.docencia.recursividad.Ejercicio23.contarInversiones(Ejercicio23.java:9)
 	at com.docencia.Ejercicio23Test.prueba(Ejercicio23Test.java:25)
@@ -102,7 +102,7 @@ java.lang.UnsupportedOperationException: Pendiente de implementar
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.Ejercicio23Test.prueba(int[], long)[3] -- Time elapsed: 0 s <<< ERROR!
+com.docencia.Ejercicio23Test.prueba(int[], long)[3] -- Time elapsed: 0.003 s <<< ERROR!
 java.lang.UnsupportedOperationException: Pendiente de implementar
 	at com.docencia.recursividad.Ejercicio23.contarInversiones(Ejercicio23.java:9)
 	at com.docencia.Ejercicio23Test.prueba(Ejercicio23Test.java:25)
@@ -152,7 +152,7 @@ java.lang.UnsupportedOperationException: Pendiente de implementar
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.Ejercicio23Test.prueba(int[], long)[4] -- Time elapsed: 0 s <<< ERROR!
+com.docencia.Ejercicio23Test.prueba(int[], long)[4] -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: Pendiente de implementar
 	at com.docencia.recursividad.Ejercicio23.contarInversiones(Ejercicio23.java:9)
 	at com.docencia.Ejercicio23Test.prueba(Ejercicio23Test.java:25)
@@ -202,7 +202,7 @@ java.lang.UnsupportedOperationException: Pendiente de implementar
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.Ejercicio23Test.prueba(int[], long)[5] -- Time elapsed: 0 s <<< ERROR!
+com.docencia.Ejercicio23Test.prueba(int[], long)[5] -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: Pendiente de implementar
 	at com.docencia.recursividad.Ejercicio23.contarInversiones(Ejercicio23.java:9)
 	at com.docencia.Ejercicio23Test.prueba(Ejercicio23Test.java:25)

@@ -1,3 +1,9 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief mcd de dos numero
+ */
+
 package com.docencia.logica;
 
 public class Ejercicio05 {

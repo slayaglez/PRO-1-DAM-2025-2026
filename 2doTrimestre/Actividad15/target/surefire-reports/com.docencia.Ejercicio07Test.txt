@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.Ejercicio07Test
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.004 s <<< FAILURE! -- in com.docencia.Ejercicio07Test
-com.docencia.Ejercicio07Test.prueba(int, int)[1] -- Time elapsed: 0.001 s <<< ERROR!
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.022 s <<< FAILURE! -- in com.docencia.Ejercicio07Test
+com.docencia.Ejercicio07Test.prueba(int, int)[1] -- Time elapsed: 0.006 s <<< ERROR!
 java.lang.UnsupportedOperationException: Pendiente de implementar
 	at com.docencia.recursividad.Ejercicio07.sumaDigitos(Ejercicio07.java:9)
 	at com.docencia.Ejercicio07Test.prueba(Ejercicio07Test.java:25)
@@ -102,7 +102,7 @@ java.lang.UnsupportedOperationException: Pendiente de implementar
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.Ejercicio07Test.prueba(int, int)[3] -- Time elapsed: 0 s <<< ERROR!
+com.docencia.Ejercicio07Test.prueba(int, int)[3] -- Time elapsed: 0.003 s <<< ERROR!
 java.lang.UnsupportedOperationException: Pendiente de implementar
 	at com.docencia.recursividad.Ejercicio07.sumaDigitos(Ejercicio07.java:9)
 	at com.docencia.Ejercicio07Test.prueba(Ejercicio07Test.java:25)
@@ -152,7 +152,7 @@ java.lang.UnsupportedOperationException: Pendiente de implementar
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.Ejercicio07Test.prueba(int, int)[4] -- Time elapsed: 0 s <<< ERROR!
+com.docencia.Ejercicio07Test.prueba(int, int)[4] -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: Pendiente de implementar
 	at com.docencia.recursividad.Ejercicio07.sumaDigitos(Ejercicio07.java:9)
 	at com.docencia.Ejercicio07Test.prueba(Ejercicio07Test.java:25)
@@ -202,7 +202,7 @@ java.lang.UnsupportedOperationException: Pendiente de implementar
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.Ejercicio07Test.prueba(int, int)[5] -- Time elapsed: 0 s <<< ERROR!
+com.docencia.Ejercicio07Test.prueba(int, int)[5] -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: Pendiente de implementar
 	at com.docencia.recursividad.Ejercicio07.sumaDigitos(Ejercicio07.java:9)
 	at com.docencia.Ejercicio07Test.prueba(Ejercicio07Test.java:25)

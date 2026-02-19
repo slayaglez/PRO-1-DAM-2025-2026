@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.Ejercicio13Test
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.033 s <<< FAILURE! -- in com.docencia.Ejercicio13Test
-com.docencia.Ejercicio13Test.prueba(int[], int, int)[1] -- Time elapsed: 0.010 s <<< ERROR!
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.029 s <<< FAILURE! -- in com.docencia.Ejercicio13Test
+com.docencia.Ejercicio13Test.prueba(int[], int, int)[1] -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: Pendiente de implementar
 	at com.docencia.recursividad.Ejercicio13.buscarLineal(Ejercicio13.java:9)
 	at com.docencia.Ejercicio13Test.prueba(Ejercicio13Test.java:25)
@@ -102,7 +102,7 @@ java.lang.UnsupportedOperationException: Pendiente de implementar
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.Ejercicio13Test.prueba(int[], int, int)[3] -- Time elapsed: 0 s <<< ERROR!
+com.docencia.Ejercicio13Test.prueba(int[], int, int)[3] -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: Pendiente de implementar
 	at com.docencia.recursividad.Ejercicio13.buscarLineal(Ejercicio13.java:9)
 	at com.docencia.Ejercicio13Test.prueba(Ejercicio13Test.java:25)
@@ -152,7 +152,7 @@ java.lang.UnsupportedOperationException: Pendiente de implementar
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.Ejercicio13Test.prueba(int[], int, int)[4] -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.Ejercicio13Test.prueba(int[], int, int)[4] -- Time elapsed: 0.004 s <<< ERROR!
 java.lang.UnsupportedOperationException: Pendiente de implementar
 	at com.docencia.recursividad.Ejercicio13.buscarLineal(Ejercicio13.java:9)
 	at com.docencia.Ejercicio13Test.prueba(Ejercicio13Test.java:25)
@@ -202,7 +202,7 @@ java.lang.UnsupportedOperationException: Pendiente de implementar
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.Ejercicio13Test.prueba(int[], int, int)[5] -- Time elapsed: 0.001 s <<< ERROR!
+com.docencia.Ejercicio13Test.prueba(int[], int, int)[5] -- Time elapsed: 0.004 s <<< ERROR!
 java.lang.UnsupportedOperationException: Pendiente de implementar
 	at com.docencia.recursividad.Ejercicio13.buscarLineal(Ejercicio13.java:9)
 	at com.docencia.Ejercicio13Test.prueba(Ejercicio13Test.java:25)

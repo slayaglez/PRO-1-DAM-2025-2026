@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.Ejercicio26Test
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.005 s <<< FAILURE! -- in com.docencia.Ejercicio26Test
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.024 s <<< FAILURE! -- in com.docencia.Ejercicio26Test
 com.docencia.Ejercicio26Test.prueba(int[], int, int)[1] -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: Pendiente de implementar
 	at com.docencia.recursividad.Ejercicio26.generarCombinaciones(Ejercicio26.java:10)
@@ -52,7 +52,7 @@ java.lang.UnsupportedOperationException: Pendiente de implementar
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.Ejercicio26Test.prueba(int[], int, int)[2] -- Time elapsed: 0 s <<< ERROR!
+com.docencia.Ejercicio26Test.prueba(int[], int, int)[2] -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: Pendiente de implementar
 	at com.docencia.recursividad.Ejercicio26.generarCombinaciones(Ejercicio26.java:10)
 	at com.docencia.Ejercicio26Test.prueba(Ejercicio26Test.java:28)
@@ -102,7 +102,7 @@ java.lang.UnsupportedOperationException: Pendiente de implementar
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.Ejercicio26Test.prueba(int[], int, int)[3] -- Time elapsed: 0 s <<< ERROR!
+com.docencia.Ejercicio26Test.prueba(int[], int, int)[3] -- Time elapsed: 0.005 s <<< ERROR!
 java.lang.UnsupportedOperationException: Pendiente de implementar
 	at com.docencia.recursividad.Ejercicio26.generarCombinaciones(Ejercicio26.java:10)
 	at com.docencia.Ejercicio26Test.prueba(Ejercicio26Test.java:28)
@@ -202,7 +202,7 @@ java.lang.UnsupportedOperationException: Pendiente de implementar
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.Ejercicio26Test.prueba(int[], int, int)[5] -- Time elapsed: 0 s <<< ERROR!
+com.docencia.Ejercicio26Test.prueba(int[], int, int)[5] -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: Pendiente de implementar
 	at com.docencia.recursividad.Ejercicio26.generarCombinaciones(Ejercicio26.java:10)
 	at com.docencia.Ejercicio26Test.prueba(Ejercicio26Test.java:28)

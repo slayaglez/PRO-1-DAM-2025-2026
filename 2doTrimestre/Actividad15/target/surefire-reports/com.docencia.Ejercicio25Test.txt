@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.Ejercicio25Test
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.003 s <<< FAILURE! -- in com.docencia.Ejercicio25Test
-com.docencia.Ejercicio25Test.prueba(int[], int)[1] -- Time elapsed: 0 s <<< ERROR!
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.024 s <<< FAILURE! -- in com.docencia.Ejercicio25Test
+com.docencia.Ejercicio25Test.prueba(int[], int)[1] -- Time elapsed: 0.006 s <<< ERROR!
 java.lang.UnsupportedOperationException: Pendiente de implementar
 	at com.docencia.recursividad.Ejercicio25.generarPermutaciones(Ejercicio25.java:10)
 	at com.docencia.Ejercicio25Test.prueba(Ejercicio25Test.java:28)
@@ -52,7 +52,7 @@ java.lang.UnsupportedOperationException: Pendiente de implementar
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.Ejercicio25Test.prueba(int[], int)[2] -- Time elapsed: 0 s <<< ERROR!
+com.docencia.Ejercicio25Test.prueba(int[], int)[2] -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: Pendiente de implementar
 	at com.docencia.recursividad.Ejercicio25.generarPermutaciones(Ejercicio25.java:10)
 	at com.docencia.Ejercicio25Test.prueba(Ejercicio25Test.java:28)
@@ -102,7 +102,7 @@ java.lang.UnsupportedOperationException: Pendiente de implementar
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.Ejercicio25Test.prueba(int[], int)[3] -- Time elapsed: 0 s <<< ERROR!
+com.docencia.Ejercicio25Test.prueba(int[], int)[3] -- Time elapsed: 0.004 s <<< ERROR!
 java.lang.UnsupportedOperationException: Pendiente de implementar
 	at com.docencia.recursividad.Ejercicio25.generarPermutaciones(Ejercicio25.java:10)
 	at com.docencia.Ejercicio25Test.prueba(Ejercicio25Test.java:28)
@@ -152,7 +152,7 @@ java.lang.UnsupportedOperationException: Pendiente de implementar
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.Ejercicio25Test.prueba(int[], int)[4] -- Time elapsed: 0 s <<< ERROR!
+com.docencia.Ejercicio25Test.prueba(int[], int)[4] -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: Pendiente de implementar
 	at com.docencia.recursividad.Ejercicio25.generarPermutaciones(Ejercicio25.java:10)
 	at com.docencia.Ejercicio25Test.prueba(Ejercicio25Test.java:28)
@@ -202,7 +202,7 @@ java.lang.UnsupportedOperationException: Pendiente de implementar
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.Ejercicio25Test.prueba(int[], int)[5] -- Time elapsed: 0 s <<< ERROR!
+com.docencia.Ejercicio25Test.prueba(int[], int)[5] -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: Pendiente de implementar
 	at com.docencia.recursividad.Ejercicio25.generarPermutaciones(Ejercicio25.java:10)
 	at com.docencia.Ejercicio25Test.prueba(Ejercicio25Test.java:28)

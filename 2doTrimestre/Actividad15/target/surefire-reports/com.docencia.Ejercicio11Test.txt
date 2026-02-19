@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.docencia.Ejercicio11Test
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.004 s <<< FAILURE! -- in com.docencia.Ejercicio11Test
-com.docencia.Ejercicio11Test.prueba(int[], long)[1] -- Time elapsed: 0 s <<< ERROR!
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.033 s <<< FAILURE! -- in com.docencia.Ejercicio11Test
+com.docencia.Ejercicio11Test.prueba(int[], long)[1] -- Time elapsed: 0.007 s <<< ERROR!
 java.lang.UnsupportedOperationException: Pendiente de implementar
 	at com.docencia.recursividad.Ejercicio11.sumaArreglo(Ejercicio11.java:9)
 	at com.docencia.Ejercicio11Test.prueba(Ejercicio11Test.java:25)
@@ -152,7 +152,7 @@ java.lang.UnsupportedOperationException: Pendiente de implementar
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.docencia.Ejercicio11Test.prueba(int[], long)[4] -- Time elapsed: 0 s <<< ERROR!
+com.docencia.Ejercicio11Test.prueba(int[], long)[4] -- Time elapsed: 0.004 s <<< ERROR!
 java.lang.UnsupportedOperationException: Pendiente de implementar
 	at com.docencia.recursividad.Ejercicio11.sumaArreglo(Ejercicio11.java:9)
 	at com.docencia.Ejercicio11Test.prueba(Ejercicio11Test.java:25)
