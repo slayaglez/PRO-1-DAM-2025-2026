@@ -1,11 +1,18 @@
 package com.docencia.logica;
 
 public class Ejercicio12 {
-  /**
-   * Máximo elemento
-   * TODO: Implementar usando lógica tradicional (iterativo).
-   */
   public static int maximoArreglo(int[] arreglo) {
-    throw new UnsupportedOperationException("Pendiente de implementar");
+
+    if (arreglo == null || arreglo.length == 0) {
+        return 0;
+    }
+
+    int max = arreglo[0];
+    for (int i : arreglo) {
+      if(i > max){
+        max = i;
+      }
+    }
+    return max;
   }
 }

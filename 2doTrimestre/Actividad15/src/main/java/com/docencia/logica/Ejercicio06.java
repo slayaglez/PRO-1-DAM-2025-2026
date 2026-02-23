@@ -1,12 +1,27 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief una cuenta regresiva
+ */
 package com.docencia.logica;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 public class Ejercicio06 {
-  /**
-   * Devuelve [n, n-1, ..., 0]
-   * TODO: Implementar usando lógica tradicional (iterativo).
-   */
   public static List<Integer> cuentaRegresiva(int n) {
-    throw new UnsupportedOperationException("Pendiente de implementar");
+    if(n<0){
+      throw new IllegalArgumentException();
+    }
+
+    List<Integer> resultado = new ArrayList<>();
+    if(n==0){
+      resultado.add(0);
+      return resultado;
+    }
+
+    for (int i = 0; i <= n; i++) {
+      resultado.add(n-i);
+    }
+    return resultado;
   }
 }

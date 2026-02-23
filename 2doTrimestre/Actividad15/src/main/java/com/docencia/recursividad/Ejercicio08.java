@@ -1,11 +1,22 @@
+/**
+ * @author slayaglez
+ * @version 1.0.0
+ * @brief Cuenta digitos  
+ */
 package com.docencia.recursividad;
 
 public class Ejercicio08 {
-  /**
-   * Cuenta dígitos (0 tiene 1 dígito)
-   * TODO: Implementar usando recursividad.
-   */
+  
   public static int contarDigitos(int n) {
-    throw new UnsupportedOperationException("Pendiente de implementar");
+
+    n = Math.abs(n);
+    int resultado=0;
+
+    if(n < 10){
+      resultado++;
+      return resultado;
+    }
+
+    return 1 + contarDigitos(n/10);
   }
 }
