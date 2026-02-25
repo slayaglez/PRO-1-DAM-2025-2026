@@ -6,7 +6,7 @@ public class Ejercicio01 {
     if(n < 0){
       throw new IllegalArgumentException();
     }
-    if(n == 1) {
+    if(n <= 1) {
       return 1;
     }
     return n*factorial(n-1);
