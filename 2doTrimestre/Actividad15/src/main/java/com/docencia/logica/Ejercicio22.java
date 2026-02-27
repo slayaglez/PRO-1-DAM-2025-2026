@@ -1,11 +1,24 @@
+/**
+ * @author slayaglez
+ * @verison 1.0.0
+ * @brief potencia rapida
+ */
 package com.docencia.logica;
 
 public class Ejercicio22 {
-  /**
-   * Potencia rápida O(log exp)
-   * TODO: Implementar usando lógica tradicional (iterativo).
-   */
+
   public static long potenciaRapida(long base, int exponente) {
-    throw new UnsupportedOperationException("Pendiente de implementar");
+
+    int resultado = 1;
+
+    while (exponente > 0) {
+
+      if (exponente % 2 != 0) {
+        resultado *= base;
+      }
+      base *= base;
+      exponente /= 2;
+    }
+    return resultado;
   }
 }

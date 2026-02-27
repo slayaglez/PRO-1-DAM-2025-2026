@@ -10,7 +10,7 @@ public class Ejercicio16 {
   public static String eliminarCaracter(String texto, char c) {
 
     if(texto == null || texto.isBlank()){
-      throw new IllegalArgumentException();
+      return "";
     }
 
     String resultado = "";
