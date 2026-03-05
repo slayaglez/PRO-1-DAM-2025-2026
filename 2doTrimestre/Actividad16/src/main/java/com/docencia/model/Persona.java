@@ -8,7 +8,10 @@ public abstract class Persona {
     private final int id;
     private String nombre;
 
-    public Persona(){
+    /**
+     * Constructor vacio
+     */
+    protected Persona(){
         this.id=0;
     }
     
@@ -16,17 +19,16 @@ public abstract class Persona {
      * Constructor con identificador
      * @param id identificador unico
      */
-    public Persona(int id) {
+    protected Persona(int id) {
         this.id = id;
     }
-
 
     /**
      * Constructor por defecto
      * @param id identificador unico
      * @param nombre nombre usuario
      */
-    public Persona(int id, String nombre) {
+    protected Persona(int id, String nombre) {
         this.id = id;
         this.nombre = nombre;
     }
@@ -61,5 +63,9 @@ public abstract class Persona {
         return id == other.id;
     }
 
+    @Override
+    public String toString() {
+        return "Persona [id=" + id + ", nombre=" + nombre + "]";
+    }
     
 }

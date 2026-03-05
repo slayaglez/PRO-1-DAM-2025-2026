@@ -102,5 +102,8 @@ public class Usuario extends Persona {
                 + ", bloqueado=" + bloqueado + ", fechaRegistro=" + fechaRegistro + "]";
     }
 
-    
+    public void incrementarIntentosFallidos(){
+        
+    }
+
 }

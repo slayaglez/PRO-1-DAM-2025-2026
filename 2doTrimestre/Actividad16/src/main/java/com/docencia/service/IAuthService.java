@@ -1,5 +1,15 @@
 package com.docencia.service;
 
-public class IAuthService {
+import com.docencia.model.Usuario;
 
+public interface IAuthService {
+
+  Usuario register(int id, String nombre, String email, String password);
+
+  boolean login(String email, String password);
+
+  // opcionales (pero implementados)
+  boolean isBloqueado(String email);
+
+  void desbloquear(String email);
 }

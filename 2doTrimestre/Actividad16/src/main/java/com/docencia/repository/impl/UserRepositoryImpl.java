@@ -36,4 +36,22 @@ public class UserRepositoryImpl implements IUserRepository{
         return usuarios.contains(usuarioABuscar);
     }
 
+    @Override
+    public void save(Usuario usuario) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'save'");
+    }
+
+    @Override
+    public Set<Usuario> findAll() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'findAll'");
+    }
+
+    @Override
+    public boolean deleteByEmail(String email) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'deleteByEmail'");
+    }
+
 }
