@@ -1,5 +1,6 @@
 package com.docencia.app;
 
+import com.docencia.model.Usuario;
 import com.docencia.repository.IUserRepository;
 import com.docencia.repository.impl.UserRepositoryImpl;
 import com.docencia.service.IAuthService;
@@ -14,8 +15,9 @@ public class Main {
   private static final Scanner SC = new Scanner(System.in);
 
   public static void main(String[] args) {
-    IUserService userService = new UserServiceImpl();
-    IAuthService authService = new AuthServiceImpl();
+    IUserRepository userRepository = new UserRepositoryImpl();
+    IUserService userService = new UserServiceImpl(userRepository);
+    IAuthService authService = new AuthServiceImpl(userRepository);
 
     boolean running = true;
     while (running) {
@@ -89,8 +91,12 @@ public class Main {
   private static void buscar(IUserService users) {
     System.out.print("Email a buscar: ");
     String email = SC.nextLine();
-    var u = users.buscarPorEmail(email);
-    //System.out.println(u.map(Object::toString).orElse("No encontrado"));
+    Usuario u = users.buscarPorEmail(email);
+    if (u == null){
+      System.out.println("No encontrado");
+    } else {
+      System.out.println(u.toString());
+    }
   }
 
   private static void eliminar(IUserService users) {

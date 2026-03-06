@@ -4,8 +4,8 @@ import java.util.Set;
 
 import com.docencia.model.Usuario;
 import com.docencia.repository.IUserRepository;
-import com.docencia.repository.impl.UserRepositoryImpl;
 import com.docencia.service.IUserService;
+import com.docencia.util.Validaciones;
 
 public class UserServiceImpl implements IUserService{
 
@@ -14,8 +14,8 @@ public class UserServiceImpl implements IUserService{
     /**
      * Constructor vacio
      */
-    public UserServiceImpl() {
-        this.userRepository = new UserRepositoryImpl();
+    public UserServiceImpl(IUserRepository userRepository) {
+        this.userRepository = userRepository;
     }
 
     @Override
@@ -26,14 +26,16 @@ public class UserServiceImpl implements IUserService{
 
     @Override
     public Set<Usuario> listarUsuarios() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'listarUsuarios'");
+        return userRepository.findAll();
     }
 
     @Override
     public Usuario buscarPorEmail(String email) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'buscarPorEmail'");
+        if(!Validaciones.emailValido(email)){
+            return null;
+        }
+        email = Validaciones.normalizarEmail(email);
+        return userRepository.findByEmail(email);
     }
 
     @Override

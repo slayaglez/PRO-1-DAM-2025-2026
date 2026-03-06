@@ -38,14 +38,12 @@ public class UserRepositoryImpl implements IUserRepository{
 
     @Override
     public void save(Usuario usuario) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'save'");
+        usuarios.add(usuario);
     }
 
     @Override
     public Set<Usuario> findAll() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'findAll'");
+        return usuarios;
     }
 
     @Override

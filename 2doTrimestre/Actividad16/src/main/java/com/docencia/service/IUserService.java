@@ -2,7 +2,6 @@ package com.docencia.service;
 
 import com.docencia.model.Usuario;
 
-import java.util.Optional;
 import java.util.Set;
 
 public interface IUserService {
@@ -11,6 +10,11 @@ public interface IUserService {
 
   Set<Usuario> listarUsuarios();
 
+  /**
+   * Funcion que retorna un usuario por su email
+   * @param email el email del usuario
+   * @return Objeto clase Usuario
+   */
   Usuario buscarPorEmail(String email);
 
   boolean eliminarPorEmail(String email);

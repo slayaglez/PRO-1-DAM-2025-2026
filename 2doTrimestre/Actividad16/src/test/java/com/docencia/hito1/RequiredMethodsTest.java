@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
-import java.util.Optional;
+import com.docencia.model.Usuario;
 
 import static com.docencia.hito1.ReflectUtils.*;
 
@@ -111,7 +111,7 @@ public class RequiredMethodsTest {
     Class<?> usuario = mustLoad("com.docencia.model.Usuario");
 
     mustHaveMethod(repo, "save", void.class, usuario);
-    mustHaveMethod(repo, "findByEmail", Optional.class, String.class);
+    mustHaveMethod(repo, "findByEmail", Usuario.class, String.class);
     mustHaveMethod(repo, "existsByEmail", boolean.class, String.class);
 
     Method findAll = mustHaveMethodAnyReturn(repo, "findAll");
@@ -140,7 +140,7 @@ public class RequiredMethodsTest {
     Method listar = mustHaveMethodAnyReturn(svc, "listarUsuarios");
     mustReturnSetOrList(listar);
 
-    mustHaveMethod(svc, "buscarPorEmail", Optional.class, String.class);
+    mustHaveMethod(svc, "buscarPorEmail", Usuario.class, String.class);
     mustHaveMethod(svc, "eliminarPorEmail", boolean.class, String.class);
 
     optionalMethod(svc, "cambiarNombre", usuario, String.class, String.class);
