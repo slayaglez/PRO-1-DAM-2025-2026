@@ -22,21 +22,45 @@ public class AuthServiceImpl implements IAuthService{
         email = Validaciones.normalizarEmail(email);
         Validaciones.validarPassword(password);
 
+        // Si existe no devolvera null
+        if (userRepository.findByEmail(email) != null) {
+            throw new IllegalArgumentException();
+        }
+        
         Usuario usuario = new Usuario(id, nombre, email, password);
         userRepository.save(usuario);
         return usuario;
     }
 
+    /**
+     * Login de usuario
+     * @param email email
+     * @param password contrasenia
+     * @return true / false
+     */
     @Override
-    public boolean login(String email, String password) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'login'");
+    public boolean login(String email, String password){
+
+        Usuario usuario = userRepository.findByEmail(email);
+
+        if(isBloqueado(email)){
+            return false;
+        }
+
+        if(usuario.getPassword().equals(password)){
+            usuario.resetearIntentosFallidos();
+            return true;
+        }
+
+        usuario.incrementarIntentosFallidos();
+        return false;
     }
 
     @Override
     public boolean isBloqueado(String email) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'isBloqueado'");
+
+        Usuario usuario = userRepository.findByEmail(email);
+        return usuario.getIntentosFallidos() >= 3;
     }
 
     @Override

@@ -18,42 +18,65 @@ public class UserServiceImpl implements IUserService{
         this.userRepository = userRepository;
     }
 
+    /**
+     * Crea un usuario
+     */
     @Override
     public Usuario crearUsuario(int id, String nombre, String email, String password) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'crearUsuario'");
+        Usuario usuario = new Usuario(id, nombre, email, password);
+        userRepository.save(usuario);
+        return usuario;
     }
 
+    /**
+     * Lista usuarios
+     */
     @Override
     public Set<Usuario> listarUsuarios() {
         return userRepository.findAll();
     }
 
+    /**
+     * Busca usuarios por email
+     */
     @Override
     public Usuario buscarPorEmail(String email) {
         if(!Validaciones.emailValido(email)){
-            return null;
+            return new Usuario();
         }
         email = Validaciones.normalizarEmail(email);
+        if(userRepository.findByEmail(email) == null){
+            return new Usuario();
+        }
         return userRepository.findByEmail(email);
     }
 
+    /**
+     * Elimina usuarios por email
+     */
     @Override
     public boolean eliminarPorEmail(String email) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'eliminarPorEmail'");
+        return userRepository.deleteByEmail(email);
     }
 
+    /**
+     * Cambia del nombre del usuario
+     */
     @Override
     public Usuario cambiarNombre(String email, String nuevoNombre) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'cambiarNombre'");
+        Usuario usuario = userRepository.findByEmail(email);
+        usuario.setNombre(nuevoNombre);
+        return usuario;
     }
 
+    /**
+     * Cambia la contrasenia del usuario
+     */
     @Override
     public Usuario cambiarPassword(String email, String nuevaPassword) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'cambiarPassword'");
+        Usuario usuario = userRepository.findByEmail(email);
+        usuario.setPassword(nuevaPassword);
+        return usuario;
     }
 
 }

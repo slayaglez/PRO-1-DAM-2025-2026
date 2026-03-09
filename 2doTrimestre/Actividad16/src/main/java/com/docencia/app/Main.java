@@ -1,5 +1,7 @@
 package com.docencia.app;
 
+import java.util.Scanner;
+
 import com.docencia.model.Usuario;
 import com.docencia.repository.IUserRepository;
 import com.docencia.repository.impl.UserRepositoryImpl;
@@ -7,8 +9,6 @@ import com.docencia.service.IAuthService;
 import com.docencia.service.IUserService;
 import com.docencia.service.impl.AuthServiceImpl;
 import com.docencia.service.impl.UserServiceImpl;
-
-import java.util.Scanner;
 
 public class Main {
 
@@ -55,7 +55,7 @@ public class Main {
     System.out.print("Elige una opción: ");
     try {
       return Integer.parseInt(SC.nextLine().trim());
-    } catch (Exception e) {
+    } catch (NumberFormatException e) {
       return -1;
     }
   }

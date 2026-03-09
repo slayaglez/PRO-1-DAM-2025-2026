@@ -1,7 +1,6 @@
 package com.docencia.model;
 
 import java.time.LocalDate;
-import java.util.Objects;
 
 public class Usuario extends Persona {
 
@@ -10,6 +9,14 @@ public class Usuario extends Persona {
     private int intentosFallidos;
     private boolean bloqueado;
     private final LocalDate fechaRegistro;
+
+    /**
+     * Constructor vacio
+     */
+    public Usuario(){
+        this.email = "";
+        this.fechaRegistro = null;
+    }
 
     /**
      * Constructor por defecto
@@ -21,7 +28,7 @@ public class Usuario extends Persona {
      * @param intentosFallidos intentos falllidos
      * @param bloqueado bloqueado o no
      */
-    public Usuario(int id, String nombre, String password, String email) {
+    public Usuario(int id, String nombre, String email, String password) {
         super(id, nombre);
         this.password = password;
         this.email = email;
@@ -74,26 +81,32 @@ public class Usuario extends Persona {
         return fechaRegistro;
     }
 
+
     @Override
     public int hashCode() {
         final int prime = 31;
         int result = super.hashCode();
-        result = prime * result + Objects.hash(email);
+        result = prime * result + ((email == null) ? 0 : email.hashCode());
         return result;
     }
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
         if (obj == null)
             return false;
+        if (this == obj)
+            return true;
         if (!super.equals(obj))
             return false;
         if (getClass() != obj.getClass())
             return false;
         Usuario other = (Usuario) obj;
-        return Objects.equals(email, other.email);
+        if (email == null) {
+            if (other.email != null)
+                return false;
+        } else if (!email.equals(other.email))
+            return false;
+        return true;
     }
 
     @Override
@@ -103,7 +116,15 @@ public class Usuario extends Persona {
     }
 
     public void incrementarIntentosFallidos(){
-        
+        this.intentosFallidos++;
+    }
+
+    public void resetearIntentosFallidos(){
+        this.intentosFallidos = 0;
+    }
+
+    public void bloquear(){
+        this.bloqueado = true;
     }
 
 }

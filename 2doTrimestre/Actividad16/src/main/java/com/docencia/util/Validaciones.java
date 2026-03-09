@@ -19,7 +19,6 @@ public class Validaciones {
     }
 
     public static boolean emailValido(String email){
-
         String normalizado = normalizarEmail(email);
         
         if(normalizado == null){
@@ -30,22 +29,18 @@ public class Validaciones {
     }   
 
     public static boolean passwordValida(String password){
-        //TODO
-        return true;
+        return password.length()>=6;
     }
 
-    public static boolean validarPassword(String password){
-        //TODO
-        return true;
+    public static void validarPassword(String password){
     }
 
-    public static boolean validarNombre(String nombre){
-        //TODO
-        return true;
+    public static void validarNombre(String nombre){
+        if(nombre.length()>=6){
+            throw new IllegalArgumentException();
+        }
     }
 
-    public static boolean validarEmail(){
-        //TODO
-        return true;
+    public static void validarEmail(String email){
     }
 }

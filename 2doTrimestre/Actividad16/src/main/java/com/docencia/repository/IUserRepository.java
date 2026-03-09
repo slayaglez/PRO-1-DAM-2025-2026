@@ -1,8 +1,8 @@
 package com.docencia.repository;
 
-import com.docencia.model.Usuario;
-
 import java.util.Set;
+
+import com.docencia.model.Usuario;
 
 public interface IUserRepository {
 
@@ -12,8 +12,18 @@ public interface IUserRepository {
    */
   void save(Usuario usuario);
 
+  /**
+     * Encuentra un usuario por su email
+     * @param email string email
+     * @return el Usuario
+     */
   Usuario findByEmail(String email);
 
+  /**
+     * Metodo que comprueba si una email existe o no
+     * @param email String email
+     * @return true / false
+     */
   boolean existsByEmail(String email);
 
   /**
@@ -22,5 +32,10 @@ public interface IUserRepository {
    */
   Set<Usuario> findAll();
 
+  /**
+     * Elimina un usuario dado su email
+     * @param email String email
+     * @return true / false
+     */
   boolean deleteByEmail(String email);
 }
