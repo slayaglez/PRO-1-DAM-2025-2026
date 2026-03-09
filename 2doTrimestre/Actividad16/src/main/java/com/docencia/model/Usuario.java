@@ -111,8 +111,8 @@ public class Usuario extends Persona {
 
     @Override
     public String toString() {
-        return "Id="+ getId()+", nombre="+getNombre()+"Usuario [password=" + password + ", email=" + email + ", intentosFallidos=" + intentosFallidos
-                + ", bloqueado=" + bloqueado + ", fechaRegistro=" + fechaRegistro + "]";
+        return "\n==============================\nID = "+ getId()+"\nNombre = "+getNombre()+"\nPassword = " + password + "\nEmail = " + email + "\nIntentos fallidos = " + intentosFallidos
+                + "\nBloqueado = " + bloqueado + "\nFecha Registro = " + fechaRegistro + "\n==============================\n";
     }
 
     public void incrementarIntentosFallidos(){
