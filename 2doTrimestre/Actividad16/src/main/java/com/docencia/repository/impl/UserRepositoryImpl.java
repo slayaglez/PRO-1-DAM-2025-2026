@@ -56,6 +56,7 @@ public class UserRepositoryImpl extends FileCsv  implements IUserRepository{
     @Override
     public void save(Usuario usuario) {
         usuarios.add(usuario);
+        this.write(usuario.toCsv());
     }
 
     /**

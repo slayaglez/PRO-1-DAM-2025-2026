@@ -39,7 +39,7 @@ public abstract class FileAbstract {
      * @param file
      * @param data
      */
-    public static void write(File file, String data){
+    public void write(String data){
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(file, true))) {
             writer.write(data);
             writer.newLine();
