@@ -65,8 +65,10 @@ public class AuthServiceImpl implements IAuthService{
 
     @Override
     public void desbloquear(String email) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'desbloquear'");
+
+        Usuario usuario = userRepository.findByEmail(email);
+        if(isBloqueado(email)){
+        }
     }
 
 }

@@ -26,7 +26,11 @@ public abstract class FileAbstract {
 
         if(!file.exists() || !file.isFile()) {
             System.err.println("La ruta " + path + " no es una ruta válida o un fichero.");
-            throw new IllegalArgumentException();
+            try {
+                file.createNewFile();
+            } catch (IOException e){
+                e.printStackTrace();
+            }
         }
     }
 

@@ -1,6 +1,7 @@
 package com.docencia.model;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class Usuario extends Persona {
 
@@ -84,10 +85,7 @@ public class Usuario extends Persona {
 
     @Override
     public int hashCode() {
-        final int prime = 31;
-        int result = super.hashCode();
-        result = prime * result + ((email == null) ? 0 : email.hashCode());
-        return result;
+        return Objects.hash(email);
     }
 
     @Override
@@ -96,17 +94,14 @@ public class Usuario extends Persona {
             return false;
         if (this == obj)
             return true;
-        if (!super.equals(obj))
+        if(!(obj instanceof Usuario)){
             return false;
-        if (getClass() != obj.getClass())
+        }
+        Usuario usuario = (Usuario) obj;
+        if (email == null || usuario.getEmail() == null){
             return false;
-        Usuario other = (Usuario) obj;
-        if (email == null) {
-            if (other.email != null)
-                return false;
-        } else if (!email.equals(other.email))
-            return false;
-        return true;
+        }
+        return Objects.equals(email, usuario.email);
     }
 
     @Override

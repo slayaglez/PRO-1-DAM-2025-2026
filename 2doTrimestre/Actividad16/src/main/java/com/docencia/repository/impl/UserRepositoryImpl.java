@@ -5,12 +5,14 @@ import java.util.Set;
 
 import com.docencia.model.Usuario;
 import com.docencia.repository.IUserRepository;
+import com.docencia.repository.file.*;
 
-public class UserRepositoryImpl implements IUserRepository{
+public class UserRepositoryImpl extends FileCsv  implements IUserRepository{
     final Set<Usuario> usuarios;
 
-    public UserRepositoryImpl() {
-        usuarios = new HashSet<>();
+    public UserRepositoryImpl(){
+        super();
+        this.usuarios = super.read();
     }
 
     /**

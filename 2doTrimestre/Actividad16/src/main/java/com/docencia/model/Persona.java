@@ -52,11 +52,11 @@ public abstract class Persona {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
         if (obj == null)
             return false;
-        if (getClass() != obj.getClass())
+        if (this == obj)
+            return true;
+        if (!(obj instanceof Persona))
             return false;
         Persona other = (Persona) obj;
         return id == other.id;
