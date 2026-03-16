@@ -2,6 +2,7 @@ package com.docencia.service;
 
 import com.docencia.model.Usuario;
 
+import java.util.List;
 import java.util.Set;
 
 public interface IUserService {
@@ -23,4 +24,6 @@ public interface IUserService {
   Usuario cambiarNombre(String email, String nuevoNombre);
 
   Usuario cambiarPassword(String email, String nuevaPassword);
+
+  Set<Usuario> obtenerBloqueados();
 }

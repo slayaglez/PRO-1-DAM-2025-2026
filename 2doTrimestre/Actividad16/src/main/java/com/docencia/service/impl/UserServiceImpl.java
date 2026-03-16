@@ -1,5 +1,8 @@
 package com.docencia.service.impl;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import com.docencia.model.Usuario;
@@ -77,6 +80,20 @@ public class UserServiceImpl implements IUserService{
         Usuario usuario = userRepository.findByEmail(email);
         usuario.setPassword(nuevaPassword);
         return usuario;
+    }
+
+    @Override
+    public Set<Usuario> obtenerBloqueados() {
+        Set<Usuario> bloqueados = new HashSet<>();
+        Set<Usuario> todos = listarUsuarios();
+        
+        for (Usuario usuario : todos) {
+            if(usuario.isBloqueado()){
+                bloqueados.add(usuario);
+            }
+        }
+
+        return bloqueados;
     }
 
 }
