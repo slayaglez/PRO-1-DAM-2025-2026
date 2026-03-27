@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Main.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">CRUD Academia</a> &gt; <a href="index.source.html" class="el_package">com.docente.app</a> &gt; <span class="el_source">Main.java</span></div><h1>Main.java</h1><pre class="source lang-java linenums">package com.docente.app;
+
+import com.docente.modelo.Alumno;
+import com.docente.modelo.AlumnoMatriculado;
+import com.docente.modelo.Asignatura;
+import com.docente.servicio.AlumnoMatriculadoService;
+import com.docente.servicio.AlumnoService;
+import com.docente.servicio.AsignaturaService;
+import com.docente.servicio.IAlumnoMatriculadoService;
+import com.docente.servicio.IAlumnoService;
+import com.docente.servicio.IAsignaturaService;
+
+import java.util.List;
+import java.util.Scanner;
+
+<span class="nc" id="L16">public class Main {</span>
+
+    public static void main(String[] args) {
+<span class="nc" id="L19">        Scanner scanner = new Scanner(System.in);</span>
+
+<span class="nc" id="L21">        IAlumnoService alumnoService = new AlumnoService();</span>
+<span class="nc" id="L22">        IAsignaturaService asignaturaService = new AsignaturaService();</span>
+<span class="nc" id="L23">        IAlumnoMatriculadoService alumnoMatriculadoService = new AlumnoMatriculadoService();</span>
+
+        int opcion;
+        do {
+<span class="nc" id="L27">            mostrarMenu();</span>
+<span class="nc" id="L28">            opcion = leerEntero(scanner, &quot;Seleccione una opción: &quot;);</span>
+<span class="nc" id="L29">            scanner.nextLine();</span>
+
+<span class="nc bnc" id="L31" title="All 16 branches missed.">            switch (opcion) {</span>
+<span class="nc" id="L32">                case 1 -&gt; crearAlumno(scanner, alumnoService);</span>
+<span class="nc" id="L33">                case 2 -&gt; listarAlumnos(alumnoService);</span>
+<span class="nc" id="L34">                case 3 -&gt; crearAsignatura(scanner, asignaturaService);</span>
+<span class="nc" id="L35">                case 4 -&gt; listarAsignaturas(asignaturaService);</span>
+<span class="nc" id="L36">                case 5 -&gt; buscarAsignatura(scanner, asignaturaService);</span>
+<span class="nc" id="L37">                case 6 -&gt; modificarAsignatura(scanner, asignaturaService);</span>
+<span class="nc" id="L38">                case 7 -&gt; eliminarAsignatura(scanner, asignaturaService);</span>
+<span class="nc" id="L39">                case 8 -&gt; crearAlumnoMatriculado(scanner, alumnoMatriculadoService);</span>
+<span class="nc" id="L40">                case 9 -&gt; listarAlumnosMatriculados(alumnoMatriculadoService);</span>
+<span class="nc" id="L41">                case 10 -&gt; matricularAsignatura(scanner, alumnoMatriculadoService);</span>
+<span class="nc" id="L42">                case 11 -&gt; desmatricularAsignatura(scanner, alumnoMatriculadoService);</span>
+<span class="nc" id="L43">                case 12 -&gt; consultarNumeroAsignaturas(scanner, alumnoMatriculadoService);</span>
+<span class="nc" id="L44">                case 13 -&gt; consultarMatriculacion(scanner, alumnoMatriculadoService);</span>
+<span class="nc" id="L45">                case 14 -&gt; buscarAlumnoMatriculado(scanner, alumnoMatriculadoService);</span>
+<span class="nc" id="L46">                case 0 -&gt; System.out.println(&quot;Programa finalizado.&quot;);</span>
+<span class="nc" id="L47">                default -&gt; System.out.println(&quot;Opción no válida.&quot;);</span>
+            }
+<span class="nc bnc" id="L49" title="All 2 branches missed.">        } while (opcion != 0);</span>
+
+<span class="nc" id="L51">        scanner.close();</span>
+<span class="nc" id="L52">    }</span>
+
+    private static void mostrarMenu() {
+<span class="nc" id="L55">        System.out.println(&quot;\n--- MENÚ CRUD ACADEMIA ---&quot;);</span>
+<span class="nc" id="L56">        System.out.println(&quot;1. Crear alumno&quot;);</span>
+<span class="nc" id="L57">        System.out.println(&quot;2. Listar alumnos&quot;);</span>
+<span class="nc" id="L58">        System.out.println(&quot;3. Crear asignatura&quot;);</span>
+<span class="nc" id="L59">        System.out.println(&quot;4. Listar asignaturas&quot;);</span>
+<span class="nc" id="L60">        System.out.println(&quot;5. Buscar asignatura&quot;);</span>
+<span class="nc" id="L61">        System.out.println(&quot;6. Modificar asignatura&quot;);</span>
+<span class="nc" id="L62">        System.out.println(&quot;7. Eliminar asignatura&quot;);</span>
+<span class="nc" id="L63">        System.out.println(&quot;8. Crear alumno matriculado&quot;);</span>
+<span class="nc" id="L64">        System.out.println(&quot;9. Listar alumnos matriculados&quot;);</span>
+<span class="nc" id="L65">        System.out.println(&quot;10. Matricular alumno en asignatura&quot;);</span>
+<span class="nc" id="L66">        System.out.println(&quot;11. Desmatricular alumno de asignatura&quot;);</span>
+<span class="nc" id="L67">        System.out.println(&quot;12. Consultar número de asignaturas de un alumno&quot;);</span>
+<span class="nc" id="L68">        System.out.println(&quot;13. Consultar si un alumno está matriculado en una asignatura&quot;);</span>
+<span class="nc" id="L69">        System.out.println(&quot;14. Buscar alumno matriculado&quot;);</span>
+<span class="nc" id="L70">        System.out.println(&quot;0. Salir&quot;);</span>
+<span class="nc" id="L71">    }</span>
+
+    private static void crearAlumno(Scanner scanner, IAlumnoService servicio) {
+<span class="nc" id="L74">        System.out.print(&quot;Identificador (ej. ALU001): &quot;);</span>
+<span class="nc" id="L75">        String identificador = scanner.nextLine();</span>
+<span class="nc" id="L76">        System.out.print(&quot;Nombre: &quot;);</span>
+<span class="nc" id="L77">        String nombre = scanner.nextLine();</span>
+<span class="nc" id="L78">        int edad = leerEntero(scanner, &quot;Edad: &quot;);</span>
+<span class="nc" id="L79">        scanner.nextLine();</span>
+<span class="nc" id="L80">        System.out.print(&quot;Curso (ej. 1DAM, 2ESO, 1BACH): &quot;);</span>
+<span class="nc" id="L81">        String curso = scanner.nextLine();</span>
+
+<span class="nc" id="L83">        boolean resultado = servicio.crearAlumno(identificador, nombre, edad, curso);</span>
+<span class="nc bnc" id="L84" title="All 2 branches missed.">        System.out.println(resultado ? &quot;El alumno se ha creado correctamente&quot; : &quot;Se ha producido un error creando el alumno&quot;);</span>
+<span class="nc" id="L85">    }</span>
+
+    private static void listarAlumnos(IAlumnoService servicio) {
+<span class="nc" id="L88">        List&lt;String&gt; alumnos = servicio.read();</span>
+<span class="nc bnc" id="L89" title="All 2 branches missed.">        if (alumnos.isEmpty()) {</span>
+<span class="nc" id="L90">            System.out.println(&quot;No hay alumnos registrados.&quot;);</span>
+<span class="nc" id="L91">            return;</span>
+        }
+<span class="nc" id="L93">        alumnos.forEach(System.out::println);</span>
+<span class="nc" id="L94">    }</span>
+
+    private static void crearAsignatura(Scanner scanner, IAsignaturaService servicio) {
+<span class="nc" id="L97">        System.out.print(&quot;Código: &quot;);</span>
+<span class="nc" id="L98">        String codigo = scanner.nextLine();</span>
+<span class="nc" id="L99">        System.out.print(&quot;Nombre: &quot;);</span>
+<span class="nc" id="L100">        String nombre = scanner.nextLine();</span>
+<span class="nc" id="L101">        int horas = leerEntero(scanner, &quot;Horas semanales: &quot;);</span>
+<span class="nc" id="L102">        scanner.nextLine();</span>
+
+<span class="nc" id="L104">        boolean resultado = servicio.crearAsignatura(codigo, nombre, horas);</span>
+<span class="nc bnc" id="L105" title="All 2 branches missed.">        System.out.println(resultado ? &quot;Asignatura creada correctamente&quot; : &quot;No se pudo crear la asignatura&quot;);</span>
+<span class="nc" id="L106">    }</span>
+
+    private static void listarAsignaturas(IAsignaturaService servicio) {
+<span class="nc" id="L109">        List&lt;String&gt; asignaturas = servicio.read();</span>
+<span class="nc bnc" id="L110" title="All 2 branches missed.">        if (asignaturas.isEmpty()) {</span>
+<span class="nc" id="L111">            System.out.println(&quot;No hay asignaturas registradas.&quot;);</span>
+<span class="nc" id="L112">            return;</span>
+        }
+<span class="nc" id="L114">        asignaturas.forEach(System.out::println);</span>
+<span class="nc" id="L115">    }</span>
+
+    private static void buscarAsignatura(Scanner scanner, IAsignaturaService servicio) {
+<span class="nc" id="L118">        System.out.print(&quot;Código de la asignatura: &quot;);</span>
+<span class="nc" id="L119">        String codigo = scanner.nextLine();</span>
+<span class="nc" id="L120">        Asignatura asignatura = servicio.buscarAsignatura(codigo);</span>
+<span class="nc bnc" id="L121" title="All 2 branches missed.">        System.out.println(asignatura != null ? asignatura : &quot;Asignatura no encontrada&quot;);</span>
+<span class="nc" id="L122">    }</span>
+
+    private static void modificarAsignatura(Scanner scanner, IAsignaturaService servicio) {
+<span class="nc" id="L125">        System.out.print(&quot;Código de la asignatura a modificar: &quot;);</span>
+<span class="nc" id="L126">        String codigo = scanner.nextLine();</span>
+<span class="nc" id="L127">        System.out.print(&quot;Nuevo nombre: &quot;);</span>
+<span class="nc" id="L128">        String nombre = scanner.nextLine();</span>
+<span class="nc" id="L129">        int horas = leerEntero(scanner, &quot;Nuevas horas semanales: &quot;);</span>
+<span class="nc" id="L130">        scanner.nextLine();</span>
+
+<span class="nc" id="L132">        boolean resultado = servicio.actualizarAsignatura(codigo, nombre, horas);</span>
+<span class="nc bnc" id="L133" title="All 2 branches missed.">        System.out.println(resultado ? &quot;Asignatura modificada correctamente&quot; : &quot;No se pudo modificar la asignatura&quot;);</span>
+<span class="nc" id="L134">    }</span>
+
+    private static void eliminarAsignatura(Scanner scanner, IAsignaturaService servicio) {
+<span class="nc" id="L137">        System.out.print(&quot;Código de la asignatura a eliminar: &quot;);</span>
+<span class="nc" id="L138">        String codigo = scanner.nextLine();</span>
+<span class="nc" id="L139">        boolean resultado = servicio.deleteAsignatura(codigo);</span>
+<span class="nc bnc" id="L140" title="All 2 branches missed.">        System.out.println(resultado ? &quot;Asignatura eliminada correctamente&quot; : &quot;No se pudo eliminar la asignatura&quot;);</span>
+<span class="nc" id="L141">    }</span>
+
+    private static void crearAlumnoMatriculado(Scanner scanner, IAlumnoMatriculadoService servicio) {
+<span class="nc" id="L144">        System.out.print(&quot;Identificador: &quot;);</span>
+<span class="nc" id="L145">        String identificador = scanner.nextLine();</span>
+<span class="nc" id="L146">        System.out.print(&quot;Nombre: &quot;);</span>
+<span class="nc" id="L147">        String nombre = scanner.nextLine();</span>
+<span class="nc" id="L148">        int edad = leerEntero(scanner, &quot;Edad: &quot;);</span>
+<span class="nc" id="L149">        scanner.nextLine();</span>
+<span class="nc" id="L150">        System.out.print(&quot;Curso: &quot;);</span>
+<span class="nc" id="L151">        String curso = scanner.nextLine();</span>
+
+<span class="nc" id="L153">        boolean resultado = servicio.crearAlumnoMatriculado(identificador, nombre, edad, curso);</span>
+<span class="nc bnc" id="L154" title="All 2 branches missed.">        System.out.println(resultado ? &quot;Alumno matriculado creado correctamente&quot; : &quot;No se pudo crear el alumno matriculado&quot;);</span>
+<span class="nc" id="L155">    }</span>
+
+    private static void listarAlumnosMatriculados(IAlumnoMatriculadoService servicio) {
+<span class="nc" id="L158">        List&lt;String&gt; alumnos = servicio.read();</span>
+<span class="nc bnc" id="L159" title="All 2 branches missed.">        if (alumnos.isEmpty()) {</span>
+<span class="nc" id="L160">            System.out.println(&quot;No hay alumnos matriculados.&quot;);</span>
+<span class="nc" id="L161">            return;</span>
+        }
+<span class="nc" id="L163">        alumnos.forEach(System.out::println);</span>
+<span class="nc" id="L164">    }</span>
+
+    private static void matricularAsignatura(Scanner scanner, IAlumnoMatriculadoService servicio) {
+<span class="nc" id="L167">        System.out.print(&quot;Identificador del alumno: &quot;);</span>
+<span class="nc" id="L168">        String identificador = scanner.nextLine();</span>
+<span class="nc" id="L169">        System.out.print(&quot;Código de la asignatura: &quot;);</span>
+<span class="nc" id="L170">        String codigo = scanner.nextLine();</span>
+<span class="nc" id="L171">        boolean resultado = servicio.matricularAsignatura(identificador, codigo);</span>
+<span class="nc bnc" id="L172" title="All 2 branches missed.">        System.out.println(resultado ? &quot;Matrícula realizada correctamente&quot; : &quot;No se pudo realizar la matrícula&quot;);</span>
+<span class="nc" id="L173">    }</span>
+
+    private static void desmatricularAsignatura(Scanner scanner, IAlumnoMatriculadoService servicio) {
+<span class="nc" id="L176">        System.out.print(&quot;Identificador del alumno: &quot;);</span>
+<span class="nc" id="L177">        String identificador = scanner.nextLine();</span>
+<span class="nc" id="L178">        System.out.print(&quot;Código de la asignatura: &quot;);</span>
+<span class="nc" id="L179">        String codigo = scanner.nextLine();</span>
+<span class="nc" id="L180">        boolean resultado = servicio.desmatricularAsignatura(identificador, codigo);</span>
+<span class="nc bnc" id="L181" title="All 2 branches missed.">        System.out.println(resultado ? &quot;Desmatriculación realizada correctamente&quot; : &quot;No se pudo desmatricular la asignatura&quot;);</span>
+<span class="nc" id="L182">    }</span>
+
+    private static void consultarNumeroAsignaturas(Scanner scanner, IAlumnoMatriculadoService servicio) {
+<span class="nc" id="L185">        System.out.print(&quot;Identificador del alumno: &quot;);</span>
+<span class="nc" id="L186">        String identificador = scanner.nextLine();</span>
+<span class="nc" id="L187">        int numero = servicio.getNumeroAsignaturas(identificador);</span>
+<span class="nc bnc" id="L188" title="All 2 branches missed.">        System.out.println(numero &gt;= 0 ? &quot;Número de asignaturas: &quot; + numero : &quot;Alumno no encontrado&quot;);</span>
+<span class="nc" id="L189">    }</span>
+
+    private static void consultarMatriculacion(Scanner scanner, IAlumnoMatriculadoService servicio) {
+<span class="nc" id="L192">        System.out.print(&quot;Identificador del alumno: &quot;);</span>
+<span class="nc" id="L193">        String identificador = scanner.nextLine();</span>
+<span class="nc" id="L194">        System.out.print(&quot;Código de la asignatura: &quot;);</span>
+<span class="nc" id="L195">        String codigo = scanner.nextLine();</span>
+<span class="nc" id="L196">        boolean resultado = servicio.estaMatriculadoEn(identificador, codigo);</span>
+<span class="nc bnc" id="L197" title="All 2 branches missed.">        System.out.println(resultado ? &quot;Sí, el alumno está matriculado en esa asignatura&quot; : &quot;No, el alumno no está matriculado en esa asignatura&quot;);</span>
+<span class="nc" id="L198">    }</span>
+
+    private static void buscarAlumnoMatriculado(Scanner scanner, IAlumnoMatriculadoService servicio) {
+<span class="nc" id="L201">        System.out.print(&quot;Identificador del alumno: &quot;);</span>
+<span class="nc" id="L202">        String identificador = scanner.nextLine();</span>
+<span class="nc" id="L203">        AlumnoMatriculado alumno = servicio.buscarAlumnoMatriculado(identificador);</span>
+<span class="nc bnc" id="L204" title="All 2 branches missed.">        System.out.println(alumno != null ? alumno : &quot;Alumno matriculado no encontrado&quot;);</span>
+<span class="nc" id="L205">    }</span>
+
+    private static int leerEntero(Scanner scanner, String mensaje) {
+        while (true) {
+<span class="nc" id="L209">            System.out.print(mensaje);</span>
+<span class="nc bnc" id="L210" title="All 2 branches missed.">            if (scanner.hasNextInt()) {</span>
+<span class="nc" id="L211">                return scanner.nextInt();</span>
+            }
+<span class="nc" id="L213">            System.out.println(&quot;Debe introducir un número entero.&quot;);</span>
+<span class="nc" id="L214">            scanner.nextLine();</span>
+        }
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

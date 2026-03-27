@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AlumnoMatriculado.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">CRUD Academia</a> &gt; <a href="index.source.html" class="el_package">com.docente.modelo</a> &gt; <span class="el_source">AlumnoMatriculado.java</span></div><h1>AlumnoMatriculado.java</h1><pre class="source lang-java linenums">package com.docente.modelo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.docente.validacion.Validaciones;
+
+
+public class AlumnoMatriculado extends Alumno {
+
+    private List&lt;Asignatura&gt; asignaturas;
+
+    public AlumnoMatriculado(String identificador) {
+<span class="fc" id="L14">        super(identificador);</span>
+<span class="fc" id="L15">        this.asignaturas = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L16">    }</span>
+
+    public AlumnoMatriculado(String identificador, String nombre, int edad, String curso) {
+<span class="fc" id="L19">        super(identificador, nombre, edad, curso);</span>
+<span class="fc" id="L20">        this.asignaturas = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L21">    }</span>
+
+    public AlumnoMatriculado(String identificador, String nombre, int edad, String curso, List&lt;Asignatura&gt; asignaturas) {
+<span class="nc" id="L24">        super(identificador, nombre, edad, curso);</span>
+<span class="nc bnc" id="L25" title="All 2 branches missed.">        this.asignaturas = asignaturas == null ? new ArrayList&lt;&gt;() : new ArrayList&lt;&gt;(asignaturas);</span>
+<span class="nc" id="L26">    }</span>
+
+    public List&lt;Asignatura&gt; getAsignaturas() {
+<span class="fc" id="L29">        return asignaturas;</span>
+    }
+
+    public void setAsignaturas(List&lt;Asignatura&gt; asignaturas) {
+<span class="nc bnc" id="L33" title="All 2 branches missed.">        this.asignaturas = asignaturas == null ? new ArrayList&lt;&gt;() : new ArrayList&lt;&gt;(asignaturas);</span>
+<span class="nc" id="L34">    }</span>
+
+    public boolean addAsignatura(Asignatura asignatura) {
+<span class="pc bpc" id="L37" title="1 of 4 branches missed.">        if (asignatura == null || asignaturas.contains(asignatura)) {</span>
+<span class="fc" id="L38">            return false;</span>
+        }
+<span class="fc" id="L40">        return asignaturas.add(asignatura);</span>
+    }
+
+    public boolean removeAsignatura(String codigoAsignatura) {
+<span class="pc bpc" id="L44" title="1 of 2 branches missed.">       if(!Validaciones.esCodigoAsignaturaValido(codigoAsignatura)){</span>
+<span class="nc" id="L45">        return false;</span>
+       }
+<span class="fc" id="L47">        return asignaturas.removeIf(asignatura -&gt; asignatura.getCodigo().equals(codigoAsignatura));</span>
+    }
+
+    public int getNumeroAsignaturas() {
+<span class="fc" id="L51">        return asignaturas.size();</span>
+    }
+
+    public boolean estaMatriculadoEn(String codigoAsignatura) {
+<span class="nc bnc" id="L55" title="All 2 branches missed.">        if(!Validaciones.esCodigoAsignaturaValido(codigoAsignatura)){</span>
+<span class="nc" id="L56">        return false;</span>
+       }
+
+<span class="nc" id="L59">        Asignatura asignaturaBuscada = new Asignatura(codigoAsignatura);</span>
+<span class="nc" id="L60">        return asignaturas.contains(asignaturaBuscada);</span>
+    }
+
+    public String toCsv() {
+<span class="nc" id="L64">        StringBuilder codigos = new StringBuilder();</span>
+<span class="nc bnc" id="L65" title="All 2 branches missed.">        for (int i = 0; i &lt; asignaturas.size(); i++) {</span>
+<span class="nc" id="L66">            codigos.append(asignaturas.get(i).getCodigo());</span>
+<span class="nc bnc" id="L67" title="All 2 branches missed.">            if (i &lt; asignaturas.size() - 1) {</span>
+<span class="nc" id="L68">                codigos.append(',');</span>
+            }
+        }
+<span class="nc" id="L71">        return getIdentificador() + &quot;|&quot; + getNombre() + &quot;|&quot; + getEdad() + &quot;|&quot; + getCurso() + &quot;|&quot; + codigos;</span>
+    }
+
+    @Override
+    public String toString() {
+<span class="nc" id="L76">        return &quot;AlumnoMatriculado [identificador=&quot; + getIdentificador()</span>
+<span class="nc" id="L77">                + &quot;, nombre=&quot; + getNombre()</span>
+<span class="nc" id="L78">                + &quot;, edad=&quot; + getEdad()</span>
+<span class="nc" id="L79">                + &quot;, curso=&quot; + getCurso()</span>
+<span class="nc" id="L80">                + &quot;, numeroAsignaturas=&quot; + getNumeroAsignaturas()</span>
+                + &quot;, asignaturas=&quot; + asignaturas + &quot;]&quot;;
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

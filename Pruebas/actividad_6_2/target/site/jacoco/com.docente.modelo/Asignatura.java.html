@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Asignatura.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">CRUD Academia</a> &gt; <a href="index.source.html" class="el_package">com.docente.modelo</a> &gt; <span class="el_source">Asignatura.java</span></div><h1>Asignatura.java</h1><pre class="source lang-java linenums">package com.docente.modelo;
+
+import java.util.Objects;
+
+/**
+ * TODO alumnado:
+ * Implementa esta clase completa a partir del enunciado del README.
+ *
+ * Requisitos mínimos:
+ * - atributos: codigo, nombre, horasSemanales
+ * - constructores
+ * - getters y setters
+ * - equals y hashCode por codigo
+ * - toString
+ * - toCsv
+ */
+public class Asignatura {
+
+    private String codigo;
+    private String nombre;
+    private int horasSemanales;
+
+<span class="fc" id="L23">    public Asignatura(String codigo) {</span>
+<span class="fc" id="L24">        this.codigo = codigo;</span>
+<span class="fc" id="L25">    }</span>
+
+<span class="fc" id="L27">    public Asignatura(String codigo, String nombre, int horasSemanales) {</span>
+<span class="fc" id="L28">        this.codigo = codigo;</span>
+<span class="fc" id="L29">        this.nombre = nombre;</span>
+<span class="fc" id="L30">        this.horasSemanales = horasSemanales;</span>
+<span class="fc" id="L31">    }</span>
+
+    public String getCodigo() {
+<span class="fc" id="L34">        return codigo;</span>
+    }
+
+    public void setCodigo(String codigo) {
+<span class="nc" id="L38">        this.codigo = codigo;</span>
+<span class="nc" id="L39">    }</span>
+
+    public String getNombre() {
+<span class="fc" id="L42">        return nombre;</span>
+    }
+
+    public void setNombre(String nombre) {
+<span class="nc" id="L46">        this.nombre = nombre;</span>
+<span class="nc" id="L47">    }</span>
+
+    public int getHorasSemanales() {
+<span class="fc" id="L50">        return horasSemanales;</span>
+    }
+
+    public void setHorasSemanales(int horasSemanales) {
+<span class="nc" id="L54">        this.horasSemanales = horasSemanales;</span>
+<span class="nc" id="L55">    }</span>
+
+    public String toCsv() {
+<span class="nc" id="L58">        return codigo + &quot;|&quot; + nombre + &quot;|&quot; + horasSemanales;</span>
+    }
+
+    @Override
+    public String toString() {
+<span class="fc" id="L63">        return &quot;Asignatura [codigo=&quot; + codigo + &quot;, nombre=&quot; + nombre + &quot;, horasSemanales=&quot; + horasSemanales + &quot;]&quot;;</span>
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+<span class="pc bpc" id="L68" title="1 of 2 branches missed.">        if (this == obj) {</span>
+<span class="nc" id="L69">            return true;</span>
+        }
+<span class="pc bpc" id="L71" title="1 of 2 branches missed.">        if (!(obj instanceof Asignatura other)) {</span>
+<span class="nc" id="L72">            return false;</span>
+        }
+<span class="fc" id="L74">        return Objects.equals(codigo, other.codigo);</span>
+    }
+
+    @Override
+    public int hashCode() {
+<span class="nc" id="L79">        return Objects.hash(codigo);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

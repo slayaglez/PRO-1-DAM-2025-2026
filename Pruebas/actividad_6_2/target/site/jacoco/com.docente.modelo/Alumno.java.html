@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Alumno.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">CRUD Academia</a> &gt; <a href="index.source.html" class="el_package">com.docente.modelo</a> &gt; <span class="el_source">Alumno.java</span></div><h1>Alumno.java</h1><pre class="source lang-java linenums">package com.docente.modelo;
+
+import static com.docente.utils.Utilidades.CSV_DELIMITER;
+
+public class Alumno extends PersonaAbstracta {
+
+    private String curso;
+
+    public Alumno(String identificador) {
+<span class="fc" id="L10">        super(identificador);</span>
+<span class="fc" id="L11">    }</span>
+
+    public Alumno(String identificador, String nombre, int edad, String curso) {
+<span class="fc" id="L14">        super(identificador, nombre, edad);</span>
+<span class="fc" id="L15">        this.curso = curso;</span>
+<span class="fc" id="L16">    }</span>
+
+    public String getCurso() {
+<span class="fc" id="L19">        return curso;</span>
+    }
+
+    public void setCurso(String curso) {
+<span class="nc" id="L23">        this.curso = curso;</span>
+<span class="nc" id="L24">    }</span>
+
+    @Override
+    public boolean equals(Object obj) {
+<span class="fc" id="L28">        return super.equals(obj);</span>
+    }
+
+    @Override
+    public int hashCode() {
+<span class="nc" id="L33">        return super.hashCode();</span>
+    }
+
+    public String toCsv() {
+<span class="nc" id="L37">        return String.format(&quot;%s&quot; + CSV_DELIMITER + &quot;%s&quot; + CSV_DELIMITER + &quot;%d&quot; + CSV_DELIMITER + &quot;%s&quot;,</span>
+<span class="nc" id="L38">                getIdentificador(), getNombre(), getEdad(), getCurso());</span>
+    }
+
+    @Override
+    public String toString() {
+<span class="fc" id="L43">        return &quot;Alumno [getCurso()=&quot; + getCurso() + &quot;, getIdentificador()=&quot; + getIdentificador() + &quot;, getNombre()=&quot;</span>
+<span class="fc" id="L44">                + getNombre() + &quot;, getEdad()=&quot; + getEdad() + &quot;]&quot;;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

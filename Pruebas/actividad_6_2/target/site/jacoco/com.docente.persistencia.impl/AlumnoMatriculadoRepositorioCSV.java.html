@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AlumnoMatriculadoRepositorioCSV.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">CRUD Academia</a> &gt; <a href="index.source.html" class="el_package">com.docente.persistencia.impl</a> &gt; <span class="el_source">AlumnoMatriculadoRepositorioCSV.java</span></div><h1>AlumnoMatriculadoRepositorioCSV.java</h1><pre class="source lang-java linenums">package com.docente.persistencia.impl;
+
+import com.docente.modelo.Alumno;
+import com.docente.modelo.AlumnoMatriculado;
+import com.docente.modelo.Asignatura;
+import com.docente.persistencia.IAlumnoMatriculadoRepositorio;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class AlumnoMatriculadoRepositorioCSV implements IAlumnoMatriculadoRepositorio {
+
+    private static final String PATH = &quot;src/main/resources/alumnos_matriculados.csv&quot;;
+    private final File file;
+
+    public AlumnoMatriculadoRepositorioCSV() {
+<span class="nc" id="L24">        this(PATH);</span>
+<span class="nc" id="L25">    }</span>
+
+<span class="nc" id="L27">    public AlumnoMatriculadoRepositorioCSV(String path) {</span>
+<span class="nc" id="L28">        this.file = new File(path);</span>
+        try {
+<span class="nc" id="L30">            File parent = file.getParentFile();</span>
+<span class="nc bnc" id="L31" title="All 4 branches missed.">            if (parent != null &amp;&amp; !parent.exists()) {</span>
+<span class="nc" id="L32">                parent.mkdirs();</span>
+            }
+<span class="nc bnc" id="L34" title="All 2 branches missed.">            if (!file.exists()) {</span>
+<span class="nc" id="L35">                file.createNewFile();</span>
+            }
+<span class="nc" id="L37">        } catch (IOException e) {</span>
+<span class="nc" id="L38">            throw new IllegalStateException(&quot;No se ha podido crear el fichero de alumnos matriculados&quot;, e);</span>
+<span class="nc" id="L39">        }</span>
+<span class="nc" id="L40">    }</span>
+
+    @Override
+    public List&lt;AlumnoMatriculado&gt; obtenerAlumnosMatriculados() {
+<span class="nc" id="L44">        List&lt;AlumnoMatriculado&gt; alumnosMat= new ArrayList&lt;&gt;();</span>
+        try {
+<span class="nc" id="L46">            try (BufferedReader br = new BufferedReader(new FileReader(file))) {</span>
+            String line;
+<span class="nc bnc" id="L48" title="All 2 branches missed.">            while ((line = br.readLine()) != null) {</span>
+
+<span class="nc" id="L50">                String[] values = line.split(&quot;|&quot;);</span>
+<span class="nc" id="L51">                String[] asignaturasStr = values[4].split(&quot;,&quot;);</span>
+                
+<span class="nc" id="L53">                List&lt;Asignatura&gt; asignaturas = new ArrayList&lt;&gt;();</span>
+<span class="nc bnc" id="L54" title="All 2 branches missed.">                for (String asignatura : asignaturasStr) {</span>
+<span class="nc" id="L55">                    asignaturas.add(new Asignatura(asignatura));</span>
+                }
+<span class="nc" id="L57">                alumnosMat.add(new AlumnoMatriculado(values[0],values[1], Integer.parseInt(values[2].strip()), values[3], asignaturas));</span>
+<span class="nc" id="L58">            }</span>
+        }
+<span class="nc" id="L60">        } catch (Exception e) {</span>
+<span class="nc" id="L61">            System.err.printf(&quot;No se ha podido leer el fichero :%s&quot;, PATH);</span>
+<span class="nc" id="L62">        }</span>
+<span class="nc" id="L63">        return alumnosMat;</span>
+    }
+
+    @Override
+    public boolean guardarAlumnosMatriculados(List&lt;AlumnoMatriculado&gt; alumnosMatriculados) {
+<span class="nc" id="L68">        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file))) {</span>
+<span class="nc bnc" id="L69" title="All 2 branches missed.">            for (AlumnoMatriculado alumnoMatriculado : alumnosMatriculados) {</span>
+<span class="nc" id="L70">                bw.write(alumnoMatriculado.toCsv());</span>
+<span class="nc" id="L71">                bw.newLine();</span>
+<span class="nc" id="L72">            }</span>
+<span class="nc" id="L73">        } catch (IOException e) {</span>
+<span class="nc" id="L74">            throw new IllegalStateException(&quot;Error al guardar el fichero CSV.&quot;, e);</span>
+<span class="nc" id="L75">        }</span>
+<span class="nc" id="L76">        return true;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

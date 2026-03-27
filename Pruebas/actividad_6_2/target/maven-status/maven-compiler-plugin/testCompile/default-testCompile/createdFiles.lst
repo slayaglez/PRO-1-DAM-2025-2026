@@ -1,0 +1,8 @@
+com/docente/modelo/AlumnoTest.class
+com/docente/servicio/AlumnoMatriculadoServiceTest.class
+com/docente/servicio/AlumnoMatriculadoServiceTest$AlumnoMatriculadoRepositorioMemoria.class
+com/docente/servicio/AsignaturaServiceTest.class
+com/docente/servicio/AlumnoMatriculadoServiceTest$AsignaturaRepositorioMemoria.class
+com/docente/servicio/AlumnoServiceTest$AlumnoRepositorioMemoria.class
+com/docente/servicio/AlumnoServiceTest.class
+com/docente/servicio/AsignaturaServiceTest$AsignaturaRepositorioMemoria.class

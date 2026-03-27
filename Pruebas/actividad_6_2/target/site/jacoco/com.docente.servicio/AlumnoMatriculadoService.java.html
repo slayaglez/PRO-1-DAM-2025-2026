@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AlumnoMatriculadoService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">CRUD Academia</a> &gt; <a href="index.source.html" class="el_package">com.docente.servicio</a> &gt; <span class="el_source">AlumnoMatriculadoService.java</span></div><h1>AlumnoMatriculadoService.java</h1><pre class="source lang-java linenums">package com.docente.servicio;
+
+import com.docente.modelo.Alumno;
+import com.docente.modelo.AlumnoMatriculado;
+import com.docente.modelo.Asignatura;
+import com.docente.persistencia.IAlumnoMatriculadoRepositorio;
+import com.docente.persistencia.impl.AlumnoMatriculadoRepositorioCSV;
+import com.docente.validacion.Validaciones;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class AlumnoMatriculadoService implements IAlumnoMatriculadoService {
+
+    private final IAlumnoMatriculadoRepositorio alumnoRepositorio;
+    private final IAsignaturaService asignaturaService;
+    private final List&lt;AlumnoMatriculado&gt; alumnosMatriculados;
+
+    public AlumnoMatriculadoService() {
+<span class="nc" id="L21">        this(new AlumnoMatriculadoRepositorioCSV(), new AsignaturaService());</span>
+<span class="nc" id="L22">    }</span>
+
+<span class="fc" id="L24">    public AlumnoMatriculadoService(IAlumnoMatriculadoRepositorio alumnoRepositorio, IAsignaturaService asignaturaService) {</span>
+<span class="fc" id="L25">        this.alumnoRepositorio = alumnoRepositorio;</span>
+<span class="fc" id="L26">        this.asignaturaService = asignaturaService;</span>
+<span class="fc" id="L27">        this.alumnosMatriculados = new ArrayList&lt;&gt;(alumnoRepositorio.obtenerAlumnosMatriculados());</span>
+<span class="fc" id="L28">    }</span>
+
+    @Override
+    public List&lt;String&gt; read() {
+<span class="nc" id="L32">        List&lt;String&gt; alumnosStr = new ArrayList&lt;&gt;();</span>
+<span class="nc bnc" id="L33" title="All 2 branches missed.">        for (Alumno alumnoMat : alumnosMatriculados) {</span>
+<span class="nc" id="L34">            alumnosStr.add(alumnoMat.toString());</span>
+<span class="nc" id="L35">        }</span>
+<span class="nc" id="L36">        return alumnosStr;</span>
+    }
+
+    public boolean updateLista() {
+<span class="fc" id="L40">        alumnoRepositorio.guardarAlumnosMatriculados(alumnosMatriculados);</span>
+<span class="fc" id="L41">        return true;</span>
+    }
+
+    @Override
+    public boolean crearAlumnoMatriculado(String identificador, String nombre, int edad, String curso) {
+<span class="pc bpc" id="L46" title="1 of 2 branches missed.">        if (!Validaciones.esIdentificadorValido(identificador)</span>
+<span class="pc bpc" id="L47" title="1 of 2 branches missed.">                || !Validaciones.esNombreValido(nombre)</span>
+<span class="pc bpc" id="L48" title="1 of 2 branches missed.">                || !Validaciones.esEdadValida(edad)</span>
+<span class="pc bpc" id="L49" title="1 of 2 branches missed.">                || !Validaciones.esCursoValido(curso)) {</span>
+<span class="nc" id="L50">            return false;</span>
+        }
+
+<span class="fc" id="L53">        AlumnoMatriculado alumnoNuevo = new AlumnoMatriculado(identificador, nombre, edad, curso);</span>
+<span class="pc bpc" id="L54" title="1 of 2 branches missed.">        if (alumnosMatriculados.contains(alumnoNuevo)) {</span>
+<span class="nc" id="L55">            return false;</span>
+        }
+<span class="fc" id="L57">        alumnosMatriculados.add(alumnoNuevo);</span>
+<span class="fc" id="L58">        return updateLista();</span>
+    }
+
+    @Override
+    public boolean actualizarAlumnoMatriculado(String identificador, String nombre, int edad, String curso) {
+<span class="nc bnc" id="L63" title="All 2 branches missed.">        if (!Validaciones.esIdentificadorValido(identificador)</span>
+<span class="nc bnc" id="L64" title="All 2 branches missed.">                || !Validaciones.esNombreValido(nombre)</span>
+<span class="nc bnc" id="L65" title="All 2 branches missed.">                || !Validaciones.esEdadValida(edad)</span>
+<span class="nc bnc" id="L66" title="All 2 branches missed.">                || !Validaciones.esCursoValido(curso)) {</span>
+<span class="nc" id="L67">            return false;</span>
+        }
+
+<span class="nc" id="L70">        AlumnoMatriculado alumnoNuevo = new AlumnoMatriculado(identificador, nombre, edad, curso);</span>
+<span class="nc bnc" id="L71" title="All 2 branches missed.">        if (!alumnosMatriculados.contains(alumnoNuevo)) {</span>
+<span class="nc" id="L72">            return false;</span>
+        }
+<span class="nc" id="L74">        int posicion = alumnosMatriculados.indexOf(alumnoNuevo);</span>
+<span class="nc" id="L75">        alumnosMatriculados.set(posicion, alumnoNuevo);</span>
+<span class="nc" id="L76">        return updateLista();</span>
+    }
+
+    @Override
+    public boolean deleteAlumnoMatriculado(String identificador) {
+<span class="nc bnc" id="L81" title="All 2 branches missed.">        if (!Validaciones.esIdentificadorValido(identificador)) {</span>
+<span class="nc" id="L82">            return false;</span>
+        }
+
+<span class="nc" id="L85">        Alumno alumnoNuevo = new Alumno(identificador);</span>
+<span class="nc bnc" id="L86" title="All 2 branches missed.">        if (!alumnosMatriculados.contains(alumnoNuevo)) {</span>
+<span class="nc" id="L87">            return false;</span>
+        }
+<span class="nc" id="L89">        int posicion = alumnosMatriculados.indexOf(alumnoNuevo);</span>
+<span class="nc" id="L90">        alumnosMatriculados.remove(posicion);</span>
+<span class="nc" id="L91">        return updateLista();</span>
+    }
+
+    @Override
+    public AlumnoMatriculado buscarAlumnoMatriculado(String identificador) {
+<span class="pc bpc" id="L96" title="1 of 2 branches missed.">        if (!Validaciones.esIdentificadorValido(identificador)) {</span>
+<span class="nc" id="L97">            return null;</span>
+        }
+<span class="fc" id="L99">        AlumnoMatriculado alumnoBusqueda = new AlumnoMatriculado(identificador);</span>
+<span class="pc bpc" id="L100" title="1 of 2 branches missed.">        if (!alumnosMatriculados.contains(alumnoBusqueda)) {</span>
+<span class="nc" id="L101">            return null;</span>
+        }
+<span class="fc" id="L103">        int indice = alumnosMatriculados.indexOf(alumnoBusqueda);</span>
+<span class="fc" id="L104">        return alumnosMatriculados.get(indice);</span>
+    }
+
+    @Override
+    public boolean matricularAsignatura(String identificadorAlumno, String codigoAsignatura) {
+<span class="pc bpc" id="L109" title="1 of 2 branches missed.">        if(!Validaciones.esIdentificadorValido(identificadorAlumno)</span>
+<span class="pc bpc" id="L110" title="1 of 2 branches missed.">            || !Validaciones.esCodigoAsignaturaValido(codigoAsignatura)){</span>
+<span class="nc" id="L111">            return false;        </span>
+        }
+        
+<span class="fc" id="L114">        AlumnoMatriculado alumnoBusqueda = new AlumnoMatriculado(identificadorAlumno);</span>
+
+<span class="pc bpc" id="L116" title="1 of 2 branches missed.">        for (AlumnoMatriculado alumnoMatriculado : alumnosMatriculados) {</span>
+<span class="pc bpc" id="L117" title="1 of 2 branches missed.">            if (alumnoMatriculado.equals(alumnoBusqueda)){</span>
+<span class="fc" id="L118">                return alumnoMatriculado.addAsignatura(new Asignatura(codigoAsignatura));</span>
+            }
+<span class="nc" id="L120">        }</span>
+<span class="nc" id="L121">        return false;</span>
+    }
+
+    @Override
+    public boolean desmatricularAsignatura(String identificadorAlumno, String codigoAsignatura) {
+<span class="pc bpc" id="L126" title="1 of 2 branches missed.">        if(!Validaciones.esIdentificadorValido(identificadorAlumno)</span>
+<span class="pc bpc" id="L127" title="1 of 2 branches missed.">            || !Validaciones.esCodigoAsignaturaValido(codigoAsignatura)){</span>
+<span class="nc" id="L128">            return false;        </span>
+        }
+        
+<span class="fc" id="L131">        AlumnoMatriculado alumnoBusqueda = new AlumnoMatriculado(identificadorAlumno);</span>
+
+<span class="fc" id="L133">        Asignatura asignatura = new Asignatura(codigoAsignatura);</span>
+
+<span class="pc bpc" id="L135" title="1 of 2 branches missed.">        for (AlumnoMatriculado alumnoMatriculado : alumnosMatriculados) {</span>
+<span class="pc bpc" id="L136" title="2 of 4 branches missed.">            if (alumnoMatriculado.equals(alumnoBusqueda) &amp;&amp; alumnoMatriculado.getAsignaturas().contains(asignatura)){</span>
+<span class="fc" id="L137">                return alumnoMatriculado.removeAsignatura(codigoAsignatura);</span>
+            }
+<span class="nc" id="L139">        }</span>
+<span class="nc" id="L140">        return false;</span>
+    }
+
+    @Override
+    public int getNumeroAsignaturas(String identificadorAlumno) {
+<span class="pc bpc" id="L145" title="1 of 2 branches missed.">        if(!Validaciones.esIdentificadorValido(identificadorAlumno)){</span>
+<span class="nc" id="L146">            return 0;        </span>
+        }
+        
+<span class="fc" id="L149">        AlumnoMatriculado alumnoBusqueda = new AlumnoMatriculado(identificadorAlumno);</span>
+
+<span class="pc bpc" id="L151" title="1 of 2 branches missed.">        for (AlumnoMatriculado alumnoMatriculado : alumnosMatriculados) {</span>
+<span class="pc bpc" id="L152" title="1 of 2 branches missed.">            if(alumnoMatriculado.equals(alumnoBusqueda)){</span>
+<span class="fc" id="L153">                return alumnoMatriculado.getNumeroAsignaturas();</span>
+            }
+<span class="nc" id="L155">        }</span>
+<span class="nc" id="L156">        return 0;</span>
+    }
+
+    @Override
+    public boolean estaMatriculadoEn(String identificadorAlumno, String codigoAsignatura) {
+<span class="pc bpc" id="L161" title="1 of 2 branches missed.">        if(!Validaciones.esIdentificadorValido(identificadorAlumno)</span>
+<span class="pc bpc" id="L162" title="1 of 2 branches missed.">            || !Validaciones.esCodigoAsignaturaValido(codigoAsignatura)){</span>
+<span class="nc" id="L163">            return false;        </span>
+        }
+        
+<span class="fc" id="L166">        AlumnoMatriculado alumnoBusqueda = new AlumnoMatriculado(identificadorAlumno);</span>
+
+<span class="fc" id="L168">        Asignatura asignatura = new Asignatura(codigoAsignatura);</span>
+
+<span class="fc bfc" id="L170" title="All 2 branches covered.">        for (AlumnoMatriculado alumnoMatriculado : alumnosMatriculados) {</span>
+<span class="pc bpc" id="L171" title="1 of 4 branches missed.">            if (alumnoMatriculado.equals(alumnoBusqueda) &amp;&amp; alumnoMatriculado.getAsignaturas().contains(asignatura)){</span>
+<span class="fc" id="L172">                return true;</span>
+            }
+<span class="fc" id="L174">        }</span>
+<span class="fc" id="L175">        return false;</span>
+        
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
