@@ -37,6 +37,7 @@ Todos los ejercicios y exámenes hechos a lo largo del primer año de Programaci
     - [Actividad 14](#actividad-14)
   - Unidad 5
     - [Actividad 15](#actividad-15)
+    - [Actividad 16](#actividad-16)
 - [Exámenes y "Pruebas evaluables"](#exámenes-y-pruebas-evaluables)
 
 </details>
@@ -147,6 +148,11 @@ Actividad 3.8 evaluable, un conjunto de 25 ejercicios de expresiones regulares (
 Actividad 4.1 evaluable, introducción a la recursividad, un conjunto de 60 ejercicios de lógica orientada a bucles (30) y su contraparte hecha de forma recursiva (30).
 
 [Link a la actividad 15](./2doTrimestre/Actividad15/src/main/java/com/docencia)
+
+### Actividad 16
+Actividad no evaluable, ejercicio de práctica para nuestro proyecto de autenticación de usuarios.
+
+[Link a la actividad 16](./2doTrimestre/Actividad16/src/main/java/com/docencia)
 
 <br>
 
