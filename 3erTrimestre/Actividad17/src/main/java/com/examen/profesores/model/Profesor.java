@@ -1,5 +1,6 @@
 package com.examen.profesores.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 
 import java.util.Objects;
@@ -11,12 +12,16 @@ import java.util.Objects;
 public class Profesor {
 
     @JacksonXmlProperty(localName = "id", isAttribute = true)
+    @JsonProperty("id")
     private String id;
     @JacksonXmlProperty(localName = "nombre")
+    @JsonProperty("nombre")
     private String nombre;
     @JacksonXmlProperty(localName = "departamento")
+    @JsonProperty("departamento")
     private String departamento;
     @JacksonXmlProperty(localName = "activo")
+    @JsonProperty("activo")
     private boolean activo;
 
     public Profesor() {
