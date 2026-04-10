@@ -1,4 +1,4 @@
-/home/cbasx/Escritorio/CICLO_SEBAS/Programacion/PRO-1-DAM-2025-2026/3erTrimestre/Actividad18/src/test/java/com/ejemplo/centro/TestDataHelper.java
-/home/cbasx/Escritorio/CICLO_SEBAS/Programacion/PRO-1-DAM-2025-2026/3erTrimestre/Actividad18/src/test/java/com/ejemplo/centro/repository/A01CentroXmlRepositoryImplTest.java
-/home/cbasx/Escritorio/CICLO_SEBAS/Programacion/PRO-1-DAM-2025-2026/3erTrimestre/Actividad18/src/test/java/com/ejemplo/centro/repository/A02EstadoJsonRepositoryImplTest.java
-/home/cbasx/Escritorio/CICLO_SEBAS/Programacion/PRO-1-DAM-2025-2026/3erTrimestre/Actividad18/src/test/java/com/ejemplo/centro/service/B01CentroServiceImplTest.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad18/src/test/java/com/ejemplo/centro/repository/A01CentroXmlRepositoryImplTest.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad18/src/test/java/com/ejemplo/centro/repository/A02EstadoJsonRepositoryImplTest.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad18/src/test/java/com/ejemplo/centro/TestDataHelper.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad18/src/test/java/com/ejemplo/centro/service/B01CentroServiceImplTest.java

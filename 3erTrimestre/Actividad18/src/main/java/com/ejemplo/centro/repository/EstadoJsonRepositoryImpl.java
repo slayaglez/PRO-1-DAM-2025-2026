@@ -34,11 +34,23 @@ public class EstadoJsonRepositoryImpl implements EstadoJsonRepository {
             throw new IllegalArgumentException();
         }
 
-    
         List<Evaluacion> evaluaciones = estado.getEvaluaciones();
 
-        evaluaciones.add(evaluacion);
+        // si la evaluacion ya existe, sobreescribo
+        if (evaluaciones.contains(evaluacion)) {
+            for (int i = 0; i < evaluaciones.size(); i++) {
+                Evaluacion evaluacion2 = evaluaciones.get(i);
+                if (evaluacion2.getModuloId().equals(evaluacion.getModuloId())
+                        && evaluacion2.getAlumno().equals(evaluacion.getAlumno())) {
+                    evaluaciones.get(i).setNota(evaluacion.getNota());
+                    return;
+                }
+            }
+        }
 
+        evaluaciones.add(evaluacion);
+        estado.setEvaluaciones(evaluaciones);
+        jsonManager.write(jsonPath, estado);
     }
 
     @Override
@@ -51,12 +63,16 @@ public class EstadoJsonRepositoryImpl implements EstadoJsonRepository {
 
     @Override
     public List<Evaluacion> findEvaluacionesByModuloId(String moduloId) {
-        
+
+        if(moduloId == null || moduloId.isBlank()){
+            return new ArrayList<>();
+        }
+
         List<Evaluacion> evaluaciones = new ArrayList<>(estado.getEvaluaciones());
         List<Evaluacion> evaluacionesModulo = new ArrayList<>();
-        
+
         for (Evaluacion evaluacion : evaluaciones) {
-            if(evaluacion.getModuloId().equals(moduloId)){
+            if (evaluacion.getModuloId().equals(moduloId)) {
                 evaluacionesModulo.add(evaluacion);
             }
         }
@@ -85,12 +101,16 @@ public class EstadoJsonRepositoryImpl implements EstadoJsonRepository {
 
     @Override
     public List<Incidencia> findIncidenciasByProfesorId(String profesorId) {
-        
+
+        if(profesorId == null || profesorId.isBlank()){
+            return new ArrayList<>();
+        }
+
         List<Incidencia> incidencias = new ArrayList<>(estado.getIncidencias());
         List<Incidencia> incidenciasProfesor = new ArrayList<>();
 
         for (Incidencia incidencia : incidencias) {
-            if(incidencia.getProfesorId().equals(profesorId)){
+            if (incidencia.getProfesorId().equals(profesorId)) {
                 incidenciasProfesor.add(incidencia);
             }
         }
