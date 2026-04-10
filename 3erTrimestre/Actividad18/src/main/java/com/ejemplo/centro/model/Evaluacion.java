@@ -10,6 +10,10 @@ public class Evaluacion {
     public Evaluacion() {
     }
 
+    public Evaluacion(String moduloId){
+        this.moduloId = moduloId;
+    }
+
     public Evaluacion(String alumno, String moduloId, double nota) {
         this.alumno = alumno;
         this.moduloId = moduloId;

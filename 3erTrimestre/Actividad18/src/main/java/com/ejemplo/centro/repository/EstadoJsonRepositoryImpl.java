@@ -1,14 +1,13 @@
 package com.ejemplo.centro.repository;
 
-import com.ejemplo.centro.model.EstadoCentro;
-import com.ejemplo.centro.model.Evaluacion;
-import com.ejemplo.centro.model.Incidencia;
-import com.ejemplo.centro.model.Profesor;
-import com.ejemplo.centro.util.JsonManager;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
+
+import com.ejemplo.centro.model.EstadoCentro;
+import com.ejemplo.centro.model.Evaluacion;
+import com.ejemplo.centro.model.Incidencia;
+import com.ejemplo.centro.util.JsonManager;
 
 public class EstadoJsonRepositoryImpl implements EstadoJsonRepository {
     private final Path jsonPath;
@@ -27,19 +26,24 @@ public class EstadoJsonRepositoryImpl implements EstadoJsonRepository {
 
     @Override
     public void saveEvaluacion(Evaluacion evaluacion) {
-        // defensiva udghewgfyuegw
 
+        if (evaluacion == null || evaluacion.getAlumno() == null || evaluacion.getAlumno().isBlank()
+                || evaluacion.getModuloId() == null || evaluacion.getModuloId().isBlank()
+                || evaluacion.getNota() < 0) {
+
+            throw new IllegalArgumentException();
+        }
+
+    
         List<Evaluacion> evaluaciones = estado.getEvaluaciones();
-        //List<Incidencia> incidencias = estado.getIncidencias();
 
         evaluaciones.add(evaluacion);
 
-        // estado = evaluaciones + incidencias 
     }
 
     @Override
     public List<Evaluacion> findAllEvaluaciones() {
-        
+
         List<Evaluacion> evaluaciones = new ArrayList<>();
         evaluaciones.addAll(estado.getEvaluaciones());
         return evaluaciones;
@@ -47,27 +51,50 @@ public class EstadoJsonRepositoryImpl implements EstadoJsonRepository {
 
     @Override
     public List<Evaluacion> findEvaluacionesByModuloId(String moduloId) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'findEvaluacionesByModuloId'");
+        
+        List<Evaluacion> evaluaciones = new ArrayList<>(estado.getEvaluaciones());
+        List<Evaluacion> evaluacionesModulo = new ArrayList<>();
+        
+        for (Evaluacion evaluacion : evaluaciones) {
+            if(evaluacion.getModuloId().equals(moduloId)){
+                evaluacionesModulo.add(evaluacion);
+            }
+        }
+        return evaluacionesModulo;
     }
 
     @Override
     public void saveIncidencia(Incidencia incidencia) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'saveIncidencia'");
+        if (incidencia == null || incidencia.getProfesorId() == null || incidencia.getProfesorId().isBlank()
+                || incidencia.getDescripcion() == null || incidencia.getDescripcion().isBlank()
+                || incidencia.getFecha() == null || incidencia.getFecha().isBlank()) {
+
+            throw new IllegalArgumentException();
+        }
+        List<Incidencia> incidencias = estado.getIncidencias();
+        incidencias.add(incidencia);
     }
 
     @Override
     public List<Incidencia> findAllIncidencias() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'findAllIncidencias'");
+
+        List<Incidencia> incidencias = new ArrayList<>();
+        incidencias.addAll(estado.getIncidencias());
+        return incidencias;
     }
 
     @Override
     public List<Incidencia> findIncidenciasByProfesorId(String profesorId) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'findIncidenciasByProfesorId'");
+        
+        List<Incidencia> incidencias = new ArrayList<>(estado.getIncidencias());
+        List<Incidencia> incidenciasProfesor = new ArrayList<>();
+
+        for (Incidencia incidencia : incidencias) {
+            if(incidencia.getProfesorId().equals(profesorId)){
+                incidenciasProfesor.add(incidencia);
+            }
+        }
+        return incidenciasProfesor;
     }
 
-    
 }

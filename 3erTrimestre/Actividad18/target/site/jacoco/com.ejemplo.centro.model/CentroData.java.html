@@ -6,19 +6,19 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 import java.util.ArrayList;
 import java.util.List;
 
-//@JacksonXmlRootElement(localName = &quot;centro&quot;)
+@JacksonXmlRootElement(localName = &quot;centro&quot;)
 public class CentroData {
 
-    //@JacksonXmlElementWrapper(localName = &quot;profesores&quot;)
-    //@JacksonXmlProperty(localName = &quot;profesor&quot;)
-<span class="pc" id="L14">    private List&lt;Profesor&gt; profesores = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L12">    @JacksonXmlElementWrapper(localName = &quot;profesores&quot;)</span>
+    @JacksonXmlProperty(localName = &quot;profesor&quot;)
+    private List&lt;Profesor&gt; profesores = new ArrayList&lt;&gt;();
 
-    //@JacksonXmlElementWrapper(localName = &quot;modulos&quot;)
-    //@JacksonXmlProperty(localName = &quot;modulo&quot;)
-<span class="pc" id="L18">    private List&lt;Modulo&gt; modulos = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L16">    @JacksonXmlElementWrapper(localName = &quot;modulos&quot;)</span>
+    @JacksonXmlProperty(localName = &quot;modulo&quot;)
+    private List&lt;Modulo&gt; modulos = new ArrayList&lt;&gt;();
 
-<span class="nc" id="L20">    public CentroData() {</span>
-<span class="nc" id="L21">    }</span>
+<span class="fc" id="L20">    public CentroData() {</span>
+<span class="fc" id="L21">    }</span>
 
 <span class="fc" id="L23">    public CentroData(List&lt;Profesor&gt; profesores, List&lt;Modulo&gt; modulos) {</span>
 <span class="fc" id="L24">        this.profesores = profesores;</span>
@@ -30,15 +30,15 @@ public class CentroData {
     }
 
     public void setProfesores(List&lt;Profesor&gt; profesores) {
-<span class="nc" id="L33">        this.profesores = profesores;</span>
-<span class="nc" id="L34">    }</span>
+<span class="fc" id="L33">        this.profesores = profesores;</span>
+<span class="fc" id="L34">    }</span>
 
     public List&lt;Modulo&gt; getModulos() {
 <span class="fc" id="L37">        return modulos;</span>
     }
 
     public void setModulos(List&lt;Modulo&gt; modulos) {
-<span class="nc" id="L41">        this.modulos = modulos;</span>
-<span class="nc" id="L42">    }</span>
+<span class="fc" id="L41">        this.modulos = modulos;</span>
+<span class="fc" id="L42">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

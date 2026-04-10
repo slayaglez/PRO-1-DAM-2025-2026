@@ -12,38 +12,63 @@ import java.util.Optional;
 public class CentroXmlRepositoryImpl implements CentroXmlRepository {
     private final Path xmlPath;
     private final XmlManager xmlManager;
+    private final CentroData centro;
+    
 
     public CentroXmlRepositoryImpl(Path xmlPath) {
-<span class="fc" id="L17">        this(xmlPath, new XmlManager());</span>
-<span class="fc" id="L18">    }</span>
+<span class="nc" id="L19">        this(xmlPath, new XmlManager());</span>
+<span class="nc" id="L20">    }</span>
 
-<span class="fc" id="L20">    public CentroXmlRepositoryImpl(Path xmlPath, XmlManager xmlManager) {</span>
-<span class="fc" id="L21">        this.xmlPath = xmlPath;</span>
-<span class="fc" id="L22">        this.xmlManager = xmlManager;</span>
-<span class="fc" id="L23">    }</span>
+<span class="nc" id="L22">    public CentroXmlRepositoryImpl(Path xmlPath, XmlManager xmlManager) {</span>
+<span class="nc" id="L23">        this.xmlPath = xmlPath;</span>
+<span class="nc" id="L24">        this.xmlManager = xmlManager;</span>
+<span class="nc" id="L25">        this.centro = xmlManager.read(xmlPath);</span>
+<span class="nc" id="L26">    }</span>
 
     @Override
     public List&lt;Profesor&gt; findAllProfesores() {
-        // TODO Auto-generated method stub
-<span class="fc" id="L28">        throw new UnsupportedOperationException(&quot;Unimplemented method 'findAllProfesores'&quot;);</span>
+
+<span class="nc" id="L31">        List&lt;Profesor&gt; profesores = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L32">        profesores.addAll(centro.getProfesores());</span>
+<span class="nc" id="L33">        return profesores;</span>
     }
 
     @Override
     public List&lt;Modulo&gt; findAllModulos() {
-        // TODO Auto-generated method stub
-<span class="fc" id="L34">        throw new UnsupportedOperationException(&quot;Unimplemented method 'findAllModulos'&quot;);</span>
+        
+<span class="nc" id="L39">        List&lt;Modulo&gt; modulos = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L40">        modulos.addAll(centro.getModulos());</span>
+<span class="nc" id="L41">        return modulos;</span>
     }
 
     @Override
     public Profesor findProfesorById(String id) {
-        // TODO Auto-generated method stub
-<span class="fc" id="L40">        throw new UnsupportedOperationException(&quot;Unimplemented method 'findProfesorById'&quot;);</span>
+
+<span class="nc" id="L47">        List&lt;Profesor&gt; profesores = centro.getProfesores();</span>
+<span class="nc" id="L48">        Profesor profesorBuscado = new Profesor(id);</span>
+<span class="nc bnc" id="L49" title="All 2 branches missed.">        for (Profesor profesor : profesores) {</span>
+<span class="nc bnc" id="L50" title="All 2 branches missed.">            if(profesorBuscado.equals(profesor)) {</span>
+<span class="nc" id="L51">                return profesor;</span>
+            }
+<span class="nc" id="L53">        }</span>
+
+        // No encontrado
+<span class="nc" id="L56">        return null;</span>
     }
 
     @Override
     public Modulo findModuloById(String id) {
-        // TODO Auto-generated method stub
-<span class="fc" id="L46">        throw new UnsupportedOperationException(&quot;Unimplemented method 'findModuloById'&quot;);</span>
+        
+<span class="nc" id="L62">        List&lt;Modulo&gt; modulos = centro.getModulos();</span>
+<span class="nc" id="L63">        Modulo moduloBuscado = new Modulo(id);</span>
+<span class="nc bnc" id="L64" title="All 2 branches missed.">        for (Modulo modulo : modulos) {</span>
+<span class="nc bnc" id="L65" title="All 2 branches missed.">            if(moduloBuscado.equals(modulo)) {</span>
+<span class="nc" id="L66">                return modulo;</span>
+            }
+<span class="nc" id="L68">        }</span>
+
+        // No encontrado
+<span class="nc" id="L71">        return null;</span>
     }
 
     

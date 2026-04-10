@@ -6,6 +6,8 @@ import com.ejemplo.centro.model.Modulo;
 import com.ejemplo.centro.model.Profesor;
 import com.ejemplo.centro.repository.CentroXmlRepository;
 import com.ejemplo.centro.repository.EstadoJsonRepository;
+
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
@@ -15,63 +17,70 @@ public class CentroServiceImpl implements CentroService {
     private final CentroXmlRepository xmlRepository;
     private final EstadoJsonRepository jsonRepository;
 
-<span class="fc" id="L18">    public CentroServiceImpl(CentroXmlRepository xmlRepository, EstadoJsonRepository jsonRepository) {</span>
-<span class="fc" id="L19">        this.xmlRepository = Objects.requireNonNull(xmlRepository);</span>
-<span class="fc" id="L20">        this.jsonRepository = Objects.requireNonNull(jsonRepository);</span>
-<span class="fc" id="L21">    }</span>
+<span class="nc" id="L20">    public CentroServiceImpl(CentroXmlRepository xmlRepository, EstadoJsonRepository jsonRepository) {</span>
+<span class="nc" id="L21">        this.xmlRepository = Objects.requireNonNull(xmlRepository);</span>
+<span class="nc" id="L22">        this.jsonRepository = Objects.requireNonNull(jsonRepository);</span>
+<span class="nc" id="L23">    }</span>
 
     @Override
     public Profesor buscarProfesor(String profesorId) {
-        // TODO Auto-generated method stub
-<span class="fc" id="L26">        throw new UnsupportedOperationException(&quot;Unimplemented method 'buscarProfesor'&quot;);</span>
+
+<span class="nc" id="L28">        return xmlRepository.findProfesorById(profesorId);</span>
     }
 
     @Override
     public Modulo buscarModulo(String moduloId) {
-        // TODO Auto-generated method stub
-<span class="fc" id="L32">        throw new UnsupportedOperationException(&quot;Unimplemented method 'buscarModulo'&quot;);</span>
+        
+<span class="nc" id="L34">        return xmlRepository.findModuloById(moduloId);</span>
     }
 
     @Override
     public List&lt;Modulo&gt; listarModulosDeProfesor(String profesorId) {
-        // TODO Auto-generated method stub
-<span class="fc" id="L38">        throw new UnsupportedOperationException(&quot;Unimplemented method 'listarModulosDeProfesor'&quot;);</span>
+        
+<span class="nc" id="L40">        List&lt;Modulo&gt; modulosProfesor = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L41">        List&lt;Modulo&gt; modulos = xmlRepository.findAllModulos();</span>
+<span class="nc bnc" id="L42" title="All 2 branches missed.">        for (Modulo modulo : modulos) {</span>
+<span class="nc bnc" id="L43" title="All 2 branches missed.">            if(modulo.getProfesorId().equals(profesorId)){</span>
+<span class="nc" id="L44">                modulosProfesor.add(modulo);</span>
+            }
+<span class="nc" id="L46">        }</span>
+<span class="nc" id="L47">        return modulosProfesor;</span>
     }
 
     @Override
     public Evaluacion registrarEvaluacion(String alumno, String moduloId, double nota) {
         // TODO Auto-generated method stub
-<span class="fc" id="L44">        throw new UnsupportedOperationException(&quot;Unimplemented method 'registrarEvaluacion'&quot;);</span>
+<span class="nc" id="L53">        throw new UnsupportedOperationException(&quot;Unimplemented method 'registrarEvaluacion'&quot;);</span>
     }
 
     @Override
     public List&lt;Evaluacion&gt; listarEvaluacionesDeModulo(String moduloId) {
         // TODO Auto-generated method stub
-<span class="fc" id="L50">        throw new UnsupportedOperationException(&quot;Unimplemented method 'listarEvaluacionesDeModulo'&quot;);</span>
+<span class="nc" id="L59">        throw new UnsupportedOperationException(&quot;Unimplemented method 'listarEvaluacionesDeModulo'&quot;);</span>
     }
 
     @Override
     public double calcularMediaDeModulo(String moduloId) {
         // TODO Auto-generated method stub
-<span class="fc" id="L56">        throw new UnsupportedOperationException(&quot;Unimplemented method 'calcularMediaDeModulo'&quot;);</span>
+<span class="nc" id="L65">        throw new UnsupportedOperationException(&quot;Unimplemented method 'calcularMediaDeModulo'&quot;);</span>
     }
 
     @Override
     public double calcularMediaDeProfesor(String profesorId) {
         // TODO Auto-generated method stub
-<span class="fc" id="L62">        throw new UnsupportedOperationException(&quot;Unimplemented method 'calcularMediaDeProfesor'&quot;);</span>
+<span class="nc" id="L71">        throw new UnsupportedOperationException(&quot;Unimplemented method 'calcularMediaDeProfesor'&quot;);</span>
     }
 
     @Override
     public Incidencia registrarIncidencia(String profesorId, String descripcion, String fecha) {
         // TODO Auto-generated method stub
-<span class="fc" id="L68">        throw new UnsupportedOperationException(&quot;Unimplemented method 'registrarIncidencia'&quot;);</span>
+<span class="nc" id="L77">        throw new UnsupportedOperationException(&quot;Unimplemented method 'registrarIncidencia'&quot;);</span>
     }
 
     @Override
     public List&lt;Incidencia&gt; listarIncidenciasDeProfesor(String profesorId) {
         // TODO Auto-generated method stub
-<span class="fc" id="L74">        throw new UnsupportedOperationException(&quot;Unimplemented method 'listarIncidenciasDeProfesor'&quot;);</span>
+<span class="nc" id="L83">        throw new UnsupportedOperationException(&quot;Unimplemented method 'listarIncidenciasDeProfesor'&quot;);</span>
     }
 
 }

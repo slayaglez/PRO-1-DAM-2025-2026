@@ -40,7 +40,7 @@ import java.util.Scanner;
 <span class="nc" id="L40">        } catch (Exception e) {</span>
 <span class="nc" id="L41">            System.err.println(&quot;Error durante la ejecución:&quot;);</span>
 <span class="nc" id="L42">            e.printStackTrace();</span>
-        }
+<span class="nc" id="L43">        }</span>
 <span class="nc" id="L44">    }</span>
 
     private static void ejecutarMenu(CentroService service, Path xmlPath, Path jsonPath) {
@@ -65,7 +65,7 @@ import java.util.Scanner;
                 case &quot;0&quot; -&gt; {
 <span class="nc" id="L66">                    salir = true;</span>
 <span class="nc" id="L67">                    System.out.println(&quot;Saliendo de la aplicación...&quot;);</span>
-                }
+<span class="nc" id="L68">                }</span>
 <span class="nc" id="L69">                default -&gt; System.out.println(&quot;Opción no válida.&quot;);</span>
             }
 
@@ -73,7 +73,7 @@ import java.util.Scanner;
 <span class="nc" id="L73">                System.out.println(&quot;\nPulsa ENTER para continuar...&quot;);</span>
 <span class="nc" id="L74">                scanner.nextLine();</span>
             }
-        }
+<span class="nc" id="L76">        }</span>
 <span class="nc" id="L77">    }</span>
 
     private static void mostrarMenu() {
@@ -186,13 +186,13 @@ import java.util.Scanner;
 <span class="nc" id="L186">    }</span>
 
     private static double leerDouble(Scanner scanner) {
-<span class="nc" id="L189">        while (true) {</span>
+        while (true) {
             try {
 <span class="nc" id="L191">                String value = scanner.nextLine().trim().replace(&quot;,&quot;, &quot;.&quot;);</span>
 <span class="nc" id="L192">                return Double.parseDouble(value);</span>
 <span class="nc" id="L193">            } catch (NumberFormatException e) {</span>
 <span class="nc" id="L194">                System.out.print(&quot;Valor no válido. Introduce un número: &quot;);</span>
-            }
+<span class="nc" id="L195">            }</span>
         }
     }
 
@@ -203,13 +203,13 @@ import java.util.Scanner;
 <span class="nc bnc" id="L203" title="All 2 branches missed.">        if (!Files.exists(xmlPath)) {</span>
 <span class="nc" id="L204">            CentroData centroData = new CentroData(</span>
 <span class="nc" id="L205">                    List.of(</span>
-<span class="nc" id="L206">                            new Profesor(&quot;P01&quot;, &quot;Ana Pérez&quot;, &quot;Informática&quot;),</span>
-<span class="nc" id="L207">                            new Profesor(&quot;P02&quot;, &quot;Luis Martín&quot;, &quot;FOL&quot;)</span>
+                            new Profesor(&quot;P01&quot;, &quot;Ana Pérez&quot;, &quot;Informática&quot;),
+                            new Profesor(&quot;P02&quot;, &quot;Luis Martín&quot;, &quot;FOL&quot;)
                     ),
 <span class="nc" id="L209">                    List.of(</span>
-<span class="nc" id="L210">                            new Modulo(&quot;M01&quot;, &quot;Programación&quot;, &quot;P01&quot;),</span>
-<span class="nc" id="L211">                            new Modulo(&quot;M02&quot;, &quot;Acceso a datos&quot;, &quot;P01&quot;),</span>
-<span class="nc" id="L212">                            new Modulo(&quot;M03&quot;, &quot;Formación y Orientación Laboral&quot;, &quot;P02&quot;)</span>
+                            new Modulo(&quot;M01&quot;, &quot;Programación&quot;, &quot;P01&quot;),
+                            new Modulo(&quot;M02&quot;, &quot;Acceso a datos&quot;, &quot;P01&quot;),
+                            new Modulo(&quot;M03&quot;, &quot;Formación y Orientación Laboral&quot;, &quot;P02&quot;)
                     )
             );
 <span class="nc" id="L215">            xmlManager.write(xmlPath, centroData);</span>

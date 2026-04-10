@@ -1,0 +1,15 @@
+com/ejemplo/centro/model/Profesor.class
+com/ejemplo/centro/Main.class
+com/ejemplo/centro/repository/CentroXmlRepository.class
+com/ejemplo/centro/model/CentroData.class
+com/ejemplo/centro/model/Incidencia.class
+com/ejemplo/centro/model/Evaluacion.class
+com/ejemplo/centro/util/XmlManager.class
+com/ejemplo/centro/model/EstadoCentro.class
+com/ejemplo/centro/service/CentroService.class
+com/ejemplo/centro/model/Modulo.class
+com/ejemplo/centro/repository/CentroXmlRepositoryImpl.class
+com/ejemplo/centro/repository/EstadoJsonRepositoryImpl.class
+com/ejemplo/centro/service/CentroServiceImpl.class
+com/ejemplo/centro/repository/EstadoJsonRepository.class
+com/ejemplo/centro/util/JsonManager.class
