@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pedidos>
+    <pedido>
+        <id>1</id>
+        <numero>PD001</numero>
+        <clienteId>1</clienteId>
+        <fecha>2026-04-01</fecha>
+        <estado>PAGADO</estado>
+        <total>38.49</total>
+    </pedido>
+    <pedido>
+        <id>2</id>
+        <numero>PD002</numero>
+        <clienteId>3</clienteId>
+        <fecha>2026-04-02</fecha>
+        <estado>ENVIADO</estado>
+        <total>199.90</total>
+    </pedido>
+</pedidos>

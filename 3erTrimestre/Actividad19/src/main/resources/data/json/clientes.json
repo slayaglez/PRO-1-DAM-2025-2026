@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "nif": "12345678A",
+    "nombre": "Ana López",
+    "email": "ana@email.com",
+    "telefono": "600111111",
+    "ciudad": "Madrid",
+    "pais": "España",
+    "activo": true
+  },
+  {
+    "id": 2,
+    "nif": "23456789B",
+    "nombre": "Luis Pérez",
+    "email": "luis@email.com",
+    "telefono": "600222222",
+    "ciudad": "Sevilla",
+    "pais": "España",
+    "activo": false
+  }
+]

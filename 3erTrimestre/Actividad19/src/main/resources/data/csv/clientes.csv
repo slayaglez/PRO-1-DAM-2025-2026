@@ -1,0 +1,4 @@
+id;nif;nombre;email;telefono;ciudad;pais;activo
+1;12345678A;Ana López;ana@email.com;600111111;Madrid;España;true
+2;23456789B;Luis Pérez;luis@email.com;600222222;Sevilla;España;false
+3;34567890C;Marta Díaz;marta@email.com;600333333;Lisboa;Portugal;true

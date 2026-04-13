@@ -1,0 +1,123 @@
+-------------------------------------------------------------------------------
+Test set: com.ejemplo.repository.sqlite.SqliteRepositoriesTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.060 s <<< FAILURE! -- in com.ejemplo.repository.sqlite.SqliteRepositoriesTest
+com.ejemplo.repository.sqlite.SqliteRepositoriesTest.proveedorSqliteCrudWorks -- Time elapsed: 0.024 s <<< ERROR!
+java.lang.RuntimeException: No se pudo restaurar la copia de seguridad de SQLite
+	at com.ejemplo.support.TestBackupManager.restaurarSqlite(TestBackupManager.java:42)
+	at com.ejemplo.repository.sqlite.SqliteRepositoriesTest.init(SqliteRepositoriesTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.nio.file.NoSuchFileException: /var/folders/q5/g2wxn8j93dd20yscy5pqcnt00000gn/T/junit-17993758614488510733/backup/sqlite/base.db
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixCopyFile.copy(UnixCopyFile.java:548)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.copy(UnixFileSystemProvider.java:257)
+	at java.base/java.nio.file.Files.copy(Files.java:1305)
+	at com.ejemplo.support.TestBackupManager.restaurarSqlite(TestBackupManager.java:39)
+	... 4 more
+
+com.ejemplo.repository.sqlite.SqliteRepositoriesTest.pedidoSqliteCrudWorks -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.RuntimeException: No se pudo restaurar la copia de seguridad de SQLite
+	at com.ejemplo.support.TestBackupManager.restaurarSqlite(TestBackupManager.java:42)
+	at com.ejemplo.repository.sqlite.SqliteRepositoriesTest.init(SqliteRepositoriesTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.nio.file.NoSuchFileException: /var/folders/q5/g2wxn8j93dd20yscy5pqcnt00000gn/T/junit-5587631148995270231/backup/sqlite/base.db
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixCopyFile.copy(UnixCopyFile.java:548)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.copy(UnixFileSystemProvider.java:257)
+	at java.base/java.nio.file.Files.copy(Files.java:1305)
+	at com.ejemplo.support.TestBackupManager.restaurarSqlite(TestBackupManager.java:39)
+	... 4 more
+
+com.ejemplo.repository.sqlite.SqliteRepositoriesTest.clienteSqliteCrudWorks -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.RuntimeException: No se pudo restaurar la copia de seguridad de SQLite
+	at com.ejemplo.support.TestBackupManager.restaurarSqlite(TestBackupManager.java:42)
+	at com.ejemplo.repository.sqlite.SqliteRepositoriesTest.init(SqliteRepositoriesTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.nio.file.NoSuchFileException: /var/folders/q5/g2wxn8j93dd20yscy5pqcnt00000gn/T/junit-12023565414354136807/backup/sqlite/base.db
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixCopyFile.copy(UnixCopyFile.java:548)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.copy(UnixFileSystemProvider.java:257)
+	at java.base/java.nio.file.Files.copy(Files.java:1305)
+	at com.ejemplo.support.TestBackupManager.restaurarSqlite(TestBackupManager.java:39)
+	... 4 more
+
+com.ejemplo.repository.sqlite.SqliteRepositoriesTest.inventarioSqliteCrudWorks -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.RuntimeException: No se pudo restaurar la copia de seguridad de SQLite
+	at com.ejemplo.support.TestBackupManager.restaurarSqlite(TestBackupManager.java:42)
+	at com.ejemplo.repository.sqlite.SqliteRepositoriesTest.init(SqliteRepositoriesTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.nio.file.NoSuchFileException: /var/folders/q5/g2wxn8j93dd20yscy5pqcnt00000gn/T/junit-14558824486398185516/backup/sqlite/base.db
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixCopyFile.copy(UnixCopyFile.java:548)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.copy(UnixFileSystemProvider.java:257)
+	at java.base/java.nio.file.Files.copy(Files.java:1305)
+	at com.ejemplo.support.TestBackupManager.restaurarSqlite(TestBackupManager.java:39)
+	... 4 more
+
+com.ejemplo.repository.sqlite.SqliteRepositoriesTest.productoSqliteCrudWorks -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.RuntimeException: No se pudo restaurar la copia de seguridad de SQLite
+	at com.ejemplo.support.TestBackupManager.restaurarSqlite(TestBackupManager.java:42)
+	at com.ejemplo.repository.sqlite.SqliteRepositoriesTest.init(SqliteRepositoriesTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.nio.file.NoSuchFileException: /var/folders/q5/g2wxn8j93dd20yscy5pqcnt00000gn/T/junit-15993249987896806589/backup/sqlite/base.db
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixCopyFile.copy(UnixCopyFile.java:548)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.copy(UnixFileSystemProvider.java:257)
+	at java.base/java.nio.file.Files.copy(Files.java:1305)
+	at com.ejemplo.support.TestBackupManager.restaurarSqlite(TestBackupManager.java:39)
+	... 4 more
+
+com.ejemplo.repository.sqlite.SqliteRepositoriesTest.lineapedidoSqliteCrudWorks -- Time elapsed: 0.006 s <<< ERROR!
+java.lang.RuntimeException: No se pudo restaurar la copia de seguridad de SQLite
+	at com.ejemplo.support.TestBackupManager.restaurarSqlite(TestBackupManager.java:42)
+	at com.ejemplo.repository.sqlite.SqliteRepositoriesTest.init(SqliteRepositoriesTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.nio.file.NoSuchFileException: /var/folders/q5/g2wxn8j93dd20yscy5pqcnt00000gn/T/junit-6759462746015978999/backup/sqlite/base.db
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixCopyFile.copy(UnixCopyFile.java:548)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.copy(UnixFileSystemProvider.java:257)
+	at java.base/java.nio.file.Files.copy(Files.java:1305)
+	at com.ejemplo.support.TestBackupManager.restaurarSqlite(TestBackupManager.java:39)
+	... 4 more
+
+com.ejemplo.repository.sqlite.SqliteRepositoriesTest.sqliteRepositoryRejectsRepeatedId -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.RuntimeException: No se pudo restaurar la copia de seguridad de SQLite
+	at com.ejemplo.support.TestBackupManager.restaurarSqlite(TestBackupManager.java:42)
+	at com.ejemplo.repository.sqlite.SqliteRepositoriesTest.init(SqliteRepositoriesTest.java:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.nio.file.NoSuchFileException: /var/folders/q5/g2wxn8j93dd20yscy5pqcnt00000gn/T/junit-6970047749896082061/backup/sqlite/base.db
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixCopyFile.copy(UnixCopyFile.java:548)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.copy(UnixFileSystemProvider.java:257)
+	at java.base/java.nio.file.Files.copy(Files.java:1305)
+	at com.ejemplo.support.TestBackupManager.restaurarSqlite(TestBackupManager.java:39)
+	... 4 more
+

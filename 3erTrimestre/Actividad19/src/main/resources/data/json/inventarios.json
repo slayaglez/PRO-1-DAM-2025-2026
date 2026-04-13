@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "productoId": 1,
+    "proveedorId": 1,
+    "ubicacion": "A1",
+    "stockDisponible": 8,
+    "stockMinimo": 5,
+    "fechaActualizacion": "2026-04-01"
+  },
+  {
+    "id": 2,
+    "productoId": 2,
+    "proveedorId": 2,
+    "ubicacion": "B2",
+    "stockDisponible": 3,
+    "stockMinimo": 10,
+    "fechaActualizacion": "2026-04-02"
+  }
+]

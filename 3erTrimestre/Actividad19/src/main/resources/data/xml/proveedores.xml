@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<proveedores>
+    <proveedor>
+        <id>1</id>
+        <codigo>PR001</codigo>
+        <nombre>Distribuciones Sur</nombre>
+        <contacto>Marta Ruiz</contacto>
+        <email>marta@proveedor.com</email>
+        <pais>España</pais>
+    </proveedor>
+    <proveedor>
+        <id>2</id>
+        <codigo>PR002</codigo>
+        <nombre>Global Tech</nombre>
+        <contacto>John Smith</contacto>
+        <email>john@globaltech.com</email>
+        <pais>Portugal</pais>
+    </proveedor>
+</proveedores>

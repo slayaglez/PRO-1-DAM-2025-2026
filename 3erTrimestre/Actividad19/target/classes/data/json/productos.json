@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "sku": "P001",
+    "nombre": "Teclado",
+    "categoria": "Informatica",
+    "precio": 25.5,
+    "stock": 10,
+    "activo": true
+  },
+  {
+    "id": 2,
+    "sku": "P002",
+    "nombre": "Ratón",
+    "categoria": "Informatica",
+    "precio": 12.99,
+    "stock": 30,
+    "activo": true
+  },
+  {
+    "id": 3,
+    "sku": "P003",
+    "nombre": "Monitor",
+    "categoria": "Informatica",
+    "precio": 199.9,
+    "stock": 5,
+    "activo": false
+  }
+]

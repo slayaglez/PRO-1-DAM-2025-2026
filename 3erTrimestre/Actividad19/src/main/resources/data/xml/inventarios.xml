@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<inventarios>
+    <inventario>
+        <id>1</id>
+        <productoId>1</productoId>
+        <proveedorId>1</proveedorId>
+        <ubicacion>A1</ubicacion>
+        <stockDisponible>8</stockDisponible>
+        <stockMinimo>5</stockMinimo>
+        <fechaActualizacion>2026-04-01</fechaActualizacion>
+    </inventario>
+    <inventario>
+        <id>2</id>
+        <productoId>2</productoId>
+        <proveedorId>2</proveedorId>
+        <ubicacion>B2</ubicacion>
+        <stockDisponible>3</stockDisponible>
+        <stockMinimo>10</stockMinimo>
+        <fechaActualizacion>2026-04-02</fechaActualizacion>
+    </inventario>
+</inventarios>
