@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<clientes>
+    <cliente>
+        <id>1</id>
+        <nif>12345678A</nif>
+        <nombre>Ana López</nombre>
+        <email>ana@email.com</email>
+        <telefono>600111111</telefono>
+        <ciudad>Madrid</ciudad>
+        <pais>España</pais>
+        <activo>true</activo>
+    </cliente>
+    <cliente>
+        <id>2</id>
+        <nif>23456789B</nif>
+        <nombre>Luis Pérez</nombre>
+        <email>luis@email.com</email>
+        <telefono>600222222</telefono>
+        <ciudad>Sevilla</ciudad>
+        <pais>España</pais>
+        <activo>false</activo>
+    </cliente>
+</clientes>

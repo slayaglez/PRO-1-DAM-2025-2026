@@ -1,0 +1,73 @@
+-------------------------------------------------------------------------------
+Test set: com.ejemplo.repository.csv.CsvRepositoriesTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 1, Errors: 7, Skipped: 0, Time elapsed: 0.026 s <<< FAILURE! -- in com.ejemplo.repository.csv.CsvRepositoriesTest
+com.ejemplo.repository.csv.CsvRepositoriesTest.productoCsvCrudWorks -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.csv.ProductoCsvRepository.create(ProductoCsvRepository.java:27)
+	at com.ejemplo.repository.csv.CsvRepositoriesTest.productoCsvCrudWorks(CsvRepositoriesTest.java:44)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.csv.CsvRepositoriesTest.csvRepositoryCreatesFileIfItDoesNotExist -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
+	at com.ejemplo.repository.csv.CsvRepositoriesTest.csvRepositoryCreatesFileIfItDoesNotExist(CsvRepositoriesTest.java:130)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.csv.CsvRepositoriesTest.clienteCsvCreateFailsWhenIdRepeated -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.csv.ClienteCsvRepository.create(ClienteCsvRepository.java:28)
+	at com.ejemplo.repository.csv.CsvRepositoriesTest.clienteCsvCreateFailsWhenIdRepeated(CsvRepositoriesTest.java:118)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.csv.CsvRepositoriesTest.pedidoCsvCrudWorks -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.csv.PedidoCsvRepository.create(PedidoCsvRepository.java:25)
+	at com.ejemplo.repository.csv.CsvRepositoriesTest.pedidoCsvCrudWorks(CsvRepositoriesTest.java:89)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.csv.CsvRepositoriesTest.proveedorCsvCrudWorks -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.csv.ProveedorCsvRepository.create(ProveedorCsvRepository.java:25)
+	at com.ejemplo.repository.csv.CsvRepositoriesTest.proveedorCsvCrudWorks(CsvRepositoriesTest.java:59)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.csv.CsvRepositoriesTest.clienteCsvCrudWorks -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.csv.ClienteCsvRepository.create(ClienteCsvRepository.java:28)
+	at com.ejemplo.repository.csv.CsvRepositoriesTest.clienteCsvCrudWorks(CsvRepositoriesTest.java:29)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.csv.CsvRepositoriesTest.lineapedidoCsvCrudWorks -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.csv.LineaPedidoCsvRepository.create(LineaPedidoCsvRepository.java:25)
+	at com.ejemplo.repository.csv.CsvRepositoriesTest.lineapedidoCsvCrudWorks(CsvRepositoriesTest.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.csv.CsvRepositoriesTest.inventarioCsvCrudWorks -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.csv.InventarioCsvRepository.create(InventarioCsvRepository.java:26)
+	at com.ejemplo.repository.csv.CsvRepositoriesTest.inventarioCsvCrudWorks(CsvRepositoriesTest.java:74)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

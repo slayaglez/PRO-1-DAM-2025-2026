@@ -1,0 +1,4 @@
+id;sku;nombre;categoria;precio;stock;activo
+1;P001;Teclado;Informatica;25.5;10;true
+2;P002;Ratón;Informatica;12.99;30;true
+3;P003;Monitor;Informatica;199.9;5;false

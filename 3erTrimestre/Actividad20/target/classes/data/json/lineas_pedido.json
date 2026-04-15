@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "pedidoId": 1,
+    "productoId": 1,
+    "cantidad": 1,
+    "precioUnitario": 25.5,
+    "subtotal": 25.5
+  },
+  {
+    "id": 2,
+    "pedidoId": 1,
+    "productoId": 2,
+    "cantidad": 1,
+    "precioUnitario": 12.99,
+    "subtotal": 12.99
+  },
+  {
+    "id": 3,
+    "pedidoId": 2,
+    "productoId": 3,
+    "cantidad": 1,
+    "precioUnitario": 199.9,
+    "subtotal": 199.9
+  }
+]

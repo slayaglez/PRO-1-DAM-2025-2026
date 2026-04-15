@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<productos>
+    <producto>
+        <id>1</id>
+        <sku>P001</sku>
+        <nombre>Teclado</nombre>
+        <categoria>Informatica</categoria>
+        <precio>25.5</precio>
+        <stock>10</stock>
+        <activo>true</activo>
+    </producto>
+    <producto>
+        <id>2</id>
+        <sku>P002</sku>
+        <nombre>Ratón</nombre>
+        <categoria>Informatica</categoria>
+        <precio>12.99</precio>
+        <stock>30</stock>
+        <activo>true</activo>
+    </producto>
+</productos>

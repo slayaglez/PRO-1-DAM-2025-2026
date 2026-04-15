@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lineas>
+    <lineapedido>
+        <id>1</id>
+        <pedidoId>1</pedidoId>
+        <productoId>1</productoId>
+        <cantidad>1</cantidad>
+        <precioUnitario>25.50</precioUnitario>
+        <subtotal>25.50</subtotal>
+    </lineapedido>
+    <lineapedido>
+        <id>2</id>
+        <pedidoId>1</pedidoId>
+        <productoId>2</productoId>
+        <cantidad>1</cantidad>
+        <precioUnitario>12.99</precioUnitario>
+        <subtotal>12.99</subtotal>
+    </lineapedido>
+    <lineapedido>
+        <id>3</id>
+        <pedidoId>2</pedidoId>
+        <productoId>3</productoId>
+        <cantidad>1</cantidad>
+        <precioUnitario>199.90</precioUnitario>
+        <subtotal>199.90</subtotal>
+    </lineapedido>
+</lineas>

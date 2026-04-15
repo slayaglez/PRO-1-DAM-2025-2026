@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "codigo": "PR001",
+    "nombre": "Distribuciones Sur",
+    "contacto": "Marta Ruiz",
+    "email": "marta@proveedor.com",
+    "pais": "España"
+  },
+  {
+    "id": 2,
+    "codigo": "PR002",
+    "nombre": "Global Tech",
+    "contacto": "John Smith",
+    "email": "john@globaltech.com",
+    "pais": "Portugal"
+  }
+]

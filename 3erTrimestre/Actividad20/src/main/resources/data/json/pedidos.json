@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "numero": "PD001",
+    "clienteId": 1,
+    "fecha": "2026-04-01",
+    "estado": "PAGADO",
+    "total": 38.49
+  },
+  {
+    "id": 2,
+    "numero": "PD002",
+    "clienteId": 3,
+    "fecha": "2026-04-02",
+    "estado": "ENVIADO",
+    "total": 199.9
+  }
+]

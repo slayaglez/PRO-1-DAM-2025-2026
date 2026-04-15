@@ -1,0 +1,3 @@
+id	productoId	proveedorId	ubicacion	stockDisponible	stockMinimo	fechaActualizacion
+1	1	1	A1	8	5	2026-04-01
+2	2	2	B2	3	10	2026-04-02
