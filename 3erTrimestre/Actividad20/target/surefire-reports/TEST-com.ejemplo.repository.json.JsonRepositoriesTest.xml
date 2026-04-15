@@ -1,63 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.ejemplo.repository.json.JsonRepositoriesTest" time="0.029" tests="8" errors="7" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.ejemplo.repository.json.JsonRepositoriesTest" time="0.06" tests="8" errors="7" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/jpexposito/Downloads/proyecto-alumno-persistencia/target/test-classes:/Users/jpexposito/Downloads/proyecto-alumno-persistencia/target/classes:/Users/jpexposito/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.21.2/jackson-databind-2.21.2.jar:/Users/jpexposito/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.21/jackson-annotations-2.21.jar:/Users/jpexposito/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.21.2/jackson-core-2.21.2.jar:/Users/jpexposito/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.21.2/jackson-dataformat-xml-2.21.2.jar:/Users/jpexposito/.m2/repository/org/codehaus/woodstox/stax2-api/4.2.2/stax2-api-4.2.2.jar:/Users/jpexposito/.m2/repository/com/fasterxml/woodstox/woodstox-core/7.1.1/woodstox-core-7.1.1.jar:/Users/jpexposito/.m2/repository/org/xerial/sqlite-jdbc/3.51.0.0/sqlite-jdbc-3.51.0.0.jar:/Users/jpexposito/.m2/repository/org/junit/jupiter/junit-jupiter/5.14.3/junit-jupiter-5.14.3.jar:/Users/jpexposito/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.14.3/junit-jupiter-api-5.14.3.jar:/Users/jpexposito/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/jpexposito/.m2/repository/org/junit/platform/junit-platform-commons/1.14.3/junit-platform-commons-1.14.3.jar:/Users/jpexposito/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/jpexposito/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.14.3/junit-jupiter-params-5.14.3.jar:/Users/jpexposito/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.14.3/junit-jupiter-engine-5.14.3.jar:/Users/jpexposito/.m2/repository/org/junit/platform/junit-platform-engine/1.14.3/junit-platform-engine-1.14.3.jar:"/>
-    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="java.class.path" value="/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad20/target/test-classes:/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad20/target/classes:/home/dam/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.21.2/jackson-databind-2.21.2.jar:/home/dam/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.21/jackson-annotations-2.21.jar:/home/dam/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.21.2/jackson-core-2.21.2.jar:/home/dam/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.21.2/jackson-dataformat-xml-2.21.2.jar:/home/dam/.m2/repository/org/codehaus/woodstox/stax2-api/4.2.2/stax2-api-4.2.2.jar:/home/dam/.m2/repository/com/fasterxml/woodstox/woodstox-core/7.1.1/woodstox-core-7.1.1.jar:/home/dam/.m2/repository/org/xerial/sqlite-jdbc/3.51.0.0/sqlite-jdbc-3.51.0.0.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter/5.14.3/junit-jupiter-5.14.3.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.14.3/junit-jupiter-api-5.14.3.jar:/home/dam/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/dam/.m2/repository/org/junit/platform/junit-platform-commons/1.14.3/junit-platform-commons-1.14.3.jar:/home/dam/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.14.3/junit-jupiter-params-5.14.3.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.14.3/junit-jupiter-engine-5.14.3.jar:/home/dam/.m2/repository/org/junit/platform/junit-platform-engine/1.14.3/junit-platform-engine-1.14.3.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
     <property name="user.timezone" value="Atlantic/Canary"/>
-    <property name="os.name" value="Mac OS X"/>
+    <property name="os.name" value="Linux"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
-    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk@17/17.0.17/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/jpexposito/Downloads/proyecto-alumno-persistencia/target/surefire/surefirebooter-20260415185038623_3.jar /Users/jpexposito/Downloads/proyecto-alumno-persistencia/target/surefire 2026-04-15T18-50-38_586-jvmRun1 surefire-20260415185038623_1tmp surefire_0-20260415185038623_2tmp"/>
-    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad20/target/surefire/surefirebooter-20260415203524551_3.jar /home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad20/target/surefire 2026-04-15T20-35-24_255-jvmRun1 surefire-20260415203524551_1tmp surefire_0-20260415203524551_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/jpexposito/Downloads/proyecto-alumno-persistencia/target/test-classes:/Users/jpexposito/Downloads/proyecto-alumno-persistencia/target/classes:/Users/jpexposito/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.21.2/jackson-databind-2.21.2.jar:/Users/jpexposito/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.21/jackson-annotations-2.21.jar:/Users/jpexposito/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.21.2/jackson-core-2.21.2.jar:/Users/jpexposito/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.21.2/jackson-dataformat-xml-2.21.2.jar:/Users/jpexposito/.m2/repository/org/codehaus/woodstox/stax2-api/4.2.2/stax2-api-4.2.2.jar:/Users/jpexposito/.m2/repository/com/fasterxml/woodstox/woodstox-core/7.1.1/woodstox-core-7.1.1.jar:/Users/jpexposito/.m2/repository/org/xerial/sqlite-jdbc/3.51.0.0/sqlite-jdbc-3.51.0.0.jar:/Users/jpexposito/.m2/repository/org/junit/jupiter/junit-jupiter/5.14.3/junit-jupiter-5.14.3.jar:/Users/jpexposito/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.14.3/junit-jupiter-api-5.14.3.jar:/Users/jpexposito/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/jpexposito/.m2/repository/org/junit/platform/junit-platform-commons/1.14.3/junit-platform-commons-1.14.3.jar:/Users/jpexposito/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/jpexposito/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.14.3/junit-jupiter-params-5.14.3.jar:/Users/jpexposito/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.14.3/junit-jupiter-engine-5.14.3.jar:/Users/jpexposito/.m2/repository/org/junit/platform/junit-platform-engine/1.14.3/junit-platform-engine-1.14.3.jar:"/>
+    <property name="surefire.test.class.path" value="/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad20/target/test-classes:/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad20/target/classes:/home/dam/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.21.2/jackson-databind-2.21.2.jar:/home/dam/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.21/jackson-annotations-2.21.jar:/home/dam/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.21.2/jackson-core-2.21.2.jar:/home/dam/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.21.2/jackson-dataformat-xml-2.21.2.jar:/home/dam/.m2/repository/org/codehaus/woodstox/stax2-api/4.2.2/stax2-api-4.2.2.jar:/home/dam/.m2/repository/com/fasterxml/woodstox/woodstox-core/7.1.1/woodstox-core-7.1.1.jar:/home/dam/.m2/repository/org/xerial/sqlite-jdbc/3.51.0.0/sqlite-jdbc-3.51.0.0.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter/5.14.3/junit-jupiter-5.14.3.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.14.3/junit-jupiter-api-5.14.3.jar:/home/dam/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/dam/.m2/repository/org/junit/platform/junit-platform-commons/1.14.3/junit-platform-commons-1.14.3.jar:/home/dam/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.14.3/junit-jupiter-params-5.14.3.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.14.3/junit-jupiter-engine-5.14.3.jar:/home/dam/.m2/repository/org/junit/platform/junit-platform-engine/1.14.3/junit-platform-engine-1.14.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="/Users/jpexposito"/>
+    <property name="user.home" value="/home/dam"/>
     <property name="user.language" value="es"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2025-10-21"/>
-    <property name="java.home" value="/opt/homebrew/Cellar/openjdk@17/17.0.17/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="/usr/lib/jvm/java-17-openjdk-amd64"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/Users/jpexposito/Downloads/proyecto-alumno-persistencia"/>
+    <property name="basedir" value="/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad20"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/Users/jpexposito/Downloads/proyecto-alumno-persistencia/target/surefire/surefirebooter-20260415185038623_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad20/target/surefire/surefirebooter-20260415203524551_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="java.runtime.version" value="17.0.17+0"/>
-    <property name="user.name" value="jpexposito"/>
+    <property name="java.runtime.version" value="17.0.15+6-Ubuntu-0ubuntu124.04"/>
+    <property name="user.name" value="dam"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="26.4.1"/>
+    <property name="os.version" value="6.8.0-60-generic"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="java.vendor.version" value="Homebrew"/>
-    <property name="localRepository" value="/Users/jpexposito/.m2/repository"/>
-    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
-    <property name="java.io.tmpdir" value="/var/folders/q5/g2wxn8j93dd20yscy5pqcnt00000gn/T/"/>
-    <property name="java.version" value="17.0.17"/>
-    <property name="user.dir" value="/Users/jpexposito/Downloads/proyecto-alumno-persistencia"/>
-    <property name="os.arch" value="aarch64"/>
+    <property name="localRepository" value="/home/dam/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-17"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="17.0.15"/>
+    <property name="user.dir" value="/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad20"/>
+    <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="native.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/jpexposito/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.vendor" value="Homebrew"/>
-    <property name="java.vm.version" value="17.0.17+0"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="17.0.15+6-Ubuntu-0ubuntu124.04"/>
     <property name="java.specification.maintenance.version" value="1"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="inventarioJsonCrudWorks" classname="com.ejemplo.repository.json.JsonRepositoriesTest" time="0.004">
+  <testcase name="inventarioJsonCrudWorks" classname="com.ejemplo.repository.json.JsonRepositoriesTest" time="0.011">
     <error message="Unimplemented method &apos;create&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at com.ejemplo.repository.json.InventarioJsonRepository.create(InventarioJsonRepository.java:25)
 	at com.ejemplo.repository.json.JsonRepositoriesTest.inventarioJsonCrudWorks(JsonRepositoriesTest.java:73)
@@ -66,7 +62,7 @@
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ]]></error>
   </testcase>
-  <testcase name="proveedorJsonCrudWorks" classname="com.ejemplo.repository.json.JsonRepositoriesTest" time="0.003">
+  <testcase name="proveedorJsonCrudWorks" classname="com.ejemplo.repository.json.JsonRepositoriesTest" time="0.004">
     <error message="Unimplemented method &apos;create&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at com.ejemplo.repository.json.ProveedorJsonRepository.create(ProveedorJsonRepository.java:25)
 	at com.ejemplo.repository.json.JsonRepositoriesTest.proveedorJsonCrudWorks(JsonRepositoriesTest.java:58)
@@ -75,7 +71,7 @@
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ]]></error>
   </testcase>
-  <testcase name="lineapedidoJsonCrudWorks" classname="com.ejemplo.repository.json.JsonRepositoriesTest" time="0.004">
+  <testcase name="lineapedidoJsonCrudWorks" classname="com.ejemplo.repository.json.JsonRepositoriesTest" time="0.007">
     <error message="Unimplemented method &apos;create&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at com.ejemplo.repository.json.LineaPedidoJsonRepository.create(LineaPedidoJsonRepository.java:25)
 	at com.ejemplo.repository.json.JsonRepositoriesTest.lineapedidoJsonCrudWorks(JsonRepositoriesTest.java:103)
@@ -84,7 +80,7 @@
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ]]></error>
   </testcase>
-  <testcase name="jsonRepositoryRejectsRepeatedId" classname="com.ejemplo.repository.json.JsonRepositoriesTest" time="0.003">
+  <testcase name="jsonRepositoryRejectsRepeatedId" classname="com.ejemplo.repository.json.JsonRepositoriesTest" time="0.008">
     <error message="Unimplemented method &apos;create&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at com.ejemplo.repository.json.ClienteJsonRepository.create(ClienteJsonRepository.java:25)
 	at com.ejemplo.repository.json.JsonRepositoriesTest.jsonRepositoryRejectsRepeatedId(JsonRepositoriesTest.java:127)
@@ -93,7 +89,7 @@
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ]]></error>
   </testcase>
-  <testcase name="jsonRepositoryCreatesFileIfItDoesNotExist" classname="com.ejemplo.repository.json.JsonRepositoriesTest" time="0.003">
+  <testcase name="jsonRepositoryCreatesFileIfItDoesNotExist" classname="com.ejemplo.repository.json.JsonRepositoriesTest" time="0.007">
     <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -107,7 +103,7 @@
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ]]></failure>
   </testcase>
-  <testcase name="productoJsonCrudWorks" classname="com.ejemplo.repository.json.JsonRepositoriesTest" time="0.002">
+  <testcase name="productoJsonCrudWorks" classname="com.ejemplo.repository.json.JsonRepositoriesTest" time="0.005">
     <error message="Unimplemented method &apos;create&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at com.ejemplo.repository.json.ProductoJsonRepository.create(ProductoJsonRepository.java:25)
 	at com.ejemplo.repository.json.JsonRepositoriesTest.productoJsonCrudWorks(JsonRepositoriesTest.java:43)
@@ -116,7 +112,7 @@
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ]]></error>
   </testcase>
-  <testcase name="clienteJsonCrudWorks" classname="com.ejemplo.repository.json.JsonRepositoriesTest" time="0.002">
+  <testcase name="clienteJsonCrudWorks" classname="com.ejemplo.repository.json.JsonRepositoriesTest" time="0.004">
     <error message="Unimplemented method &apos;create&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at com.ejemplo.repository.json.ClienteJsonRepository.create(ClienteJsonRepository.java:25)
 	at com.ejemplo.repository.json.JsonRepositoriesTest.clienteJsonCrudWorks(JsonRepositoriesTest.java:28)
@@ -125,7 +121,7 @@
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ]]></error>
   </testcase>
-  <testcase name="pedidoJsonCrudWorks" classname="com.ejemplo.repository.json.JsonRepositoriesTest" time="0.002">
+  <testcase name="pedidoJsonCrudWorks" classname="com.ejemplo.repository.json.JsonRepositoriesTest" time="0.004">
     <error message="Unimplemented method &apos;create&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at com.ejemplo.repository.json.PedidoJsonRepository.create(PedidoJsonRepository.java:25)
 	at com.ejemplo.repository.json.JsonRepositoriesTest.pedidoJsonCrudWorks(JsonRepositoriesTest.java:88)

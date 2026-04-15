@@ -29,7 +29,7 @@ public class ClienteSqliteRepository extends SQLiteConnectionManager implements 
         try {
             connection = this.getConnection();
             PreparedStatement sentencia = connection.prepareStatement(
-                    "INSERT INTO cliente (id, nif, nombre, email, telefono, ciudad, pais, activo) VALUES (x, x, x, x,)");
+                    "INSERT INTO cliente (id, nif, nombre, email, telefono, ciudad, pais, activo) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
             sentencia.setLong(1, cliente.getId());
             sentencia.setString(2, cliente.getNif());
             sentencia.setString(3, cliente.getNombre());

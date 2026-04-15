@@ -1,66 +1,69 @@
 -------------------------------------------------------------------------------
 Test set: com.ejemplo.repository.sqlite.SqliteRepositoriesTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 0.065 s <<< FAILURE! -- in com.ejemplo.repository.sqlite.SqliteRepositoriesTest
-com.ejemplo.repository.sqlite.SqliteRepositoriesTest.proveedorSqliteCrudWorks -- Time elapsed: 0.031 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: Se produjo un error al preparar la base de datos de prueba: No se pudo restaurar la copia de seguridad de SQLite
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
-	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
-	at com.ejemplo.repository.sqlite.SqliteRepositoriesTest.init(SqliteRepositoriesTest.java:26)
+Tests run: 7, Failures: 2, Errors: 5, Skipped: 0, Time elapsed: 1.119 s <<< FAILURE! -- in com.ejemplo.repository.sqlite.SqliteRepositoriesTest
+com.ejemplo.repository.sqlite.SqliteRepositoriesTest.proveedorSqliteCrudWorks -- Time elapsed: 0.010 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.ProveedorSqliteRepository.create(ProveedorSqliteRepository.java:29)
+	at com.ejemplo.repository.sqlite.SqliteRepositoriesTest.proveedorSqliteCrudWorks(SqliteRepositoriesTest.java:59)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.repository.sqlite.SqliteRepositoriesTest.pedidoSqliteCrudWorks -- Time elapsed: 0.003 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: Se produjo un error al preparar la base de datos de prueba: No se pudo restaurar la copia de seguridad de SQLite
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
-	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
-	at com.ejemplo.repository.sqlite.SqliteRepositoriesTest.init(SqliteRepositoriesTest.java:26)
+com.ejemplo.repository.sqlite.SqliteRepositoriesTest.pedidoSqliteCrudWorks -- Time elapsed: 0.008 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.PedidoSqliteRepository.create(PedidoSqliteRepository.java:23)
+	at com.ejemplo.repository.sqlite.SqliteRepositoriesTest.pedidoSqliteCrudWorks(SqliteRepositoriesTest.java:83)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.repository.sqlite.SqliteRepositoriesTest.clienteSqliteCrudWorks -- Time elapsed: 0.003 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: Se produjo un error al preparar la base de datos de prueba: No se pudo restaurar la copia de seguridad de SQLite
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
-	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
-	at com.ejemplo.repository.sqlite.SqliteRepositoriesTest.init(SqliteRepositoriesTest.java:26)
+com.ejemplo.repository.sqlite.SqliteRepositoriesTest.clienteSqliteCrudWorks -- Time elapsed: 0.762 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <null> but was: <Cliente{id=1, nif='null', nombre='null', email='null', telefono='null', ciudad='null', pais='null', activo=false}>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertNull.failNotNull(AssertNull.java:50)
+	at org.junit.jupiter.api.AssertNull.assertNull(AssertNull.java:35)
+	at org.junit.jupiter.api.AssertNull.assertNull(AssertNull.java:30)
+	at org.junit.jupiter.api.Assertions.assertNull(Assertions.java:279)
+	at com.ejemplo.repository.sqlite.SqliteRepositoriesTest.clienteSqliteCrudWorks(SqliteRepositoriesTest.java:39)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.repository.sqlite.SqliteRepositoriesTest.inventarioSqliteCrudWorks -- Time elapsed: 0.003 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: Se produjo un error al preparar la base de datos de prueba: No se pudo restaurar la copia de seguridad de SQLite
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
-	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
-	at com.ejemplo.repository.sqlite.SqliteRepositoriesTest.init(SqliteRepositoriesTest.java:26)
+com.ejemplo.repository.sqlite.SqliteRepositoriesTest.inventarioSqliteCrudWorks -- Time elapsed: 0.012 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.InventarioSqliteRepository.create(InventarioSqliteRepository.java:30)
+	at com.ejemplo.repository.sqlite.SqliteRepositoriesTest.inventarioSqliteCrudWorks(SqliteRepositoriesTest.java:71)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.repository.sqlite.SqliteRepositoriesTest.productoSqliteCrudWorks -- Time elapsed: 0.002 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: Se produjo un error al preparar la base de datos de prueba: No se pudo restaurar la copia de seguridad de SQLite
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
-	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
-	at com.ejemplo.repository.sqlite.SqliteRepositoriesTest.init(SqliteRepositoriesTest.java:26)
+com.ejemplo.repository.sqlite.SqliteRepositoriesTest.productoSqliteCrudWorks -- Time elapsed: 0.011 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.ProductoSqliteRepository.create(ProductoSqliteRepository.java:23)
+	at com.ejemplo.repository.sqlite.SqliteRepositoriesTest.productoSqliteCrudWorks(SqliteRepositoriesTest.java:47)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.repository.sqlite.SqliteRepositoriesTest.lineapedidoSqliteCrudWorks -- Time elapsed: 0.002 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: Se produjo un error al preparar la base de datos de prueba: No se pudo restaurar la copia de seguridad de SQLite
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
-	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
-	at com.ejemplo.repository.sqlite.SqliteRepositoriesTest.init(SqliteRepositoriesTest.java:26)
+com.ejemplo.repository.sqlite.SqliteRepositoriesTest.lineapedidoSqliteCrudWorks -- Time elapsed: 0.007 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.LineaPedidoSqliteRepository.create(LineaPedidoSqliteRepository.java:25)
+	at com.ejemplo.repository.sqlite.SqliteRepositoriesTest.lineapedidoSqliteCrudWorks(SqliteRepositoriesTest.java:95)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.repository.sqlite.SqliteRepositoriesTest.sqliteRepositoryRejectsRepeatedId -- Time elapsed: 0.003 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: Se produjo un error al preparar la base de datos de prueba: No se pudo restaurar la copia de seguridad de SQLite
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
-	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
-	at com.ejemplo.repository.sqlite.SqliteRepositoriesTest.init(SqliteRepositoriesTest.java:26)
+com.ejemplo.repository.sqlite.SqliteRepositoriesTest.sqliteRepositoryRejectsRepeatedId -- Time elapsed: 0.283 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <1> but was: <2>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at com.ejemplo.repository.sqlite.SqliteRepositoriesTest.sqliteRepositoryRejectsRepeatedId(SqliteRepositoriesTest.java:108)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
