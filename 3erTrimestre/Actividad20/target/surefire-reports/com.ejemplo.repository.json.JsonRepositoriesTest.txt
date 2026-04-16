@@ -2,37 +2,37 @@
 Test set: com.ejemplo.repository.json.JsonRepositoriesTest
 -------------------------------------------------------------------------------
 Tests run: 8, Failures: 1, Errors: 7, Skipped: 0, Time elapsed: 0.060 s <<< FAILURE! -- in com.ejemplo.repository.json.JsonRepositoriesTest
-com.ejemplo.repository.json.JsonRepositoriesTest.inventarioJsonCrudWorks -- Time elapsed: 0.011 s <<< ERROR!
+com.ejemplo.repository.json.JsonRepositoriesTest.inventarioJsonCrudWorks -- Time elapsed: 0.008 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at com.ejemplo.repository.json.InventarioJsonRepository.create(InventarioJsonRepository.java:25)
 	at com.ejemplo.repository.json.JsonRepositoriesTest.inventarioJsonCrudWorks(JsonRepositoriesTest.java:73)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.ejemplo.repository.json.JsonRepositoriesTest.proveedorJsonCrudWorks -- Time elapsed: 0.004 s <<< ERROR!
+com.ejemplo.repository.json.JsonRepositoriesTest.proveedorJsonCrudWorks -- Time elapsed: 0.006 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at com.ejemplo.repository.json.ProveedorJsonRepository.create(ProveedorJsonRepository.java:25)
 	at com.ejemplo.repository.json.JsonRepositoriesTest.proveedorJsonCrudWorks(JsonRepositoriesTest.java:58)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
 com.ejemplo.repository.json.JsonRepositoriesTest.lineapedidoJsonCrudWorks -- Time elapsed: 0.007 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at com.ejemplo.repository.json.LineaPedidoJsonRepository.create(LineaPedidoJsonRepository.java:25)
 	at com.ejemplo.repository.json.JsonRepositoriesTest.lineapedidoJsonCrudWorks(JsonRepositoriesTest.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.ejemplo.repository.json.JsonRepositoriesTest.jsonRepositoryRejectsRepeatedId -- Time elapsed: 0.008 s <<< ERROR!
+com.ejemplo.repository.json.JsonRepositoriesTest.jsonRepositoryRejectsRepeatedId -- Time elapsed: 0.005 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at com.ejemplo.repository.json.ClienteJsonRepository.create(ClienteJsonRepository.java:25)
 	at com.ejemplo.repository.json.JsonRepositoriesTest.jsonRepositoryRejectsRepeatedId(JsonRepositoriesTest.java:127)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
 com.ejemplo.repository.json.JsonRepositoriesTest.jsonRepositoryCreatesFileIfItDoesNotExist -- Time elapsed: 0.007 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
@@ -43,31 +43,31 @@ org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
 	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
 	at com.ejemplo.repository.json.JsonRepositoriesTest.jsonRepositoryCreatesFileIfItDoesNotExist(JsonRepositoriesTest.java:120)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
 com.ejemplo.repository.json.JsonRepositoriesTest.productoJsonCrudWorks -- Time elapsed: 0.005 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at com.ejemplo.repository.json.ProductoJsonRepository.create(ProductoJsonRepository.java:25)
 	at com.ejemplo.repository.json.JsonRepositoriesTest.productoJsonCrudWorks(JsonRepositoriesTest.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.ejemplo.repository.json.JsonRepositoriesTest.clienteJsonCrudWorks -- Time elapsed: 0.004 s <<< ERROR!
+com.ejemplo.repository.json.JsonRepositoriesTest.clienteJsonCrudWorks -- Time elapsed: 0.003 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at com.ejemplo.repository.json.ClienteJsonRepository.create(ClienteJsonRepository.java:25)
 	at com.ejemplo.repository.json.JsonRepositoriesTest.clienteJsonCrudWorks(JsonRepositoriesTest.java:28)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-com.ejemplo.repository.json.JsonRepositoriesTest.pedidoJsonCrudWorks -- Time elapsed: 0.004 s <<< ERROR!
+com.ejemplo.repository.json.JsonRepositoriesTest.pedidoJsonCrudWorks -- Time elapsed: 0.009 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'create'
 	at com.ejemplo.repository.json.PedidoJsonRepository.create(PedidoJsonRepository.java:25)
 	at com.ejemplo.repository.json.JsonRepositoriesTest.pedidoJsonCrudWorks(JsonRepositoriesTest.java:88)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 

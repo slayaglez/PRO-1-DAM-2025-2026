@@ -1,13 +1,15 @@
 package com.ejemplo.repository.sqlite;
 
-import com.ejemplo.model.Cliente;
-import com.ejemplo.repository.IClienteRepository;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+
+import com.ejemplo.model.Cliente;
+import com.ejemplo.repository.IClienteRepository;
 
 public class ClienteSqliteRepository extends SQLiteConnectionManager implements IClienteRepository {
 
@@ -29,7 +31,7 @@ public class ClienteSqliteRepository extends SQLiteConnectionManager implements 
         try {
             connection = this.getConnection();
             PreparedStatement sentencia = connection.prepareStatement(
-                    "INSERT INTO cliente (id, nif, nombre, email, telefono, ciudad, pais, activo) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+                    "INSERT INTO cliente VALUES (?, ?, ?, ?, ?, ?, ?, ?);");
             sentencia.setLong(1, cliente.getId());
             sentencia.setString(2, cliente.getNif());
             sentencia.setString(3, cliente.getNombre());
@@ -39,6 +41,7 @@ public class ClienteSqliteRepository extends SQLiteConnectionManager implements 
             sentencia.setString(7, cliente.getPais());
             sentencia.setBoolean(8, cliente.isActivo());
             sentencia.execute();
+            return true;
 
         } catch (Exception e) {
             System.err.println("No se pudo almacenar el Cliente: " + cliente.getId());
@@ -49,8 +52,6 @@ public class ClienteSqliteRepository extends SQLiteConnectionManager implements 
             closeConnection(connection);
 
         }
-
-        return true;
     }
 
     @Override
@@ -63,12 +64,12 @@ public class ClienteSqliteRepository extends SQLiteConnectionManager implements 
             connection = this.getConnection();
             PreparedStatement sentencia = connection.prepareStatement("SELECT * FROM cliente");
             ResultSet resultado = sentencia.executeQuery();
+
             // Cliente 100|00000000Z|Cliente Demo|demo@demo.com|600000000|Madrid|Espana|1
 
             while (resultado.next()) {
 
-                int id = resultado.getInt("id");
-                long miId = Long.valueOf(id);
+                long id = resultado.getInt("id");
                 String nif = resultado.getString("nif");
                 String nombre = resultado.getString("nombre");
                 String email = resultado.getString("email");
@@ -76,14 +77,13 @@ public class ClienteSqliteRepository extends SQLiteConnectionManager implements 
                 String ciudad = resultado.getString("ciudad");
                 String pais = resultado.getString("pais");
                 int activo = resultado.getInt("activo");
-                boolean miActivo = Boolean.valueOf(String.valueOf(activo));
-                Cliente cliente = new Cliente(miId, nif, nombre, email, telefono, ciudad, pais, miActivo);
+                boolean miActivo = Boolean.parseBoolean(String.valueOf(activo));
+                Cliente cliente = new Cliente(id, nif, nombre, email, telefono, ciudad, pais, miActivo);
                 clientes.add(cliente);
             }
 
         } catch (Exception e) {
-            // return null;
-            return new ArrayList<Cliente>();
+            return Collections.emptyList();
 
         } finally {
             closeConnection(connection);
@@ -103,28 +103,29 @@ public class ClienteSqliteRepository extends SQLiteConnectionManager implements 
                     .prepareStatement("SELECT * FROM cliente WHERE id=" + id);
             ResultSet resultado = sentencia.executeQuery();
 
-            long miId = Long.valueOf(id);
+            if (!resultado.next()) {
+                return null;
+            }
+
+            long miId = resultado.getInt("id");
             String nif = resultado.getString("nif");
             String nombre = resultado.getString("nombre");
             String email = resultado.getString("email");
             String telefono = resultado.getString("telefono");
             String ciudad = resultado.getString("ciudad");
             String pais = resultado.getString("pais");
-            int activo = resultado.getInt("activo");
-            boolean miActivo = Boolean.valueOf(String.valueOf(activo));
-            Cliente cliente = new Cliente(miId, nif, nombre, email, telefono, ciudad, pais, miActivo);
+            boolean activo = resultado.getBoolean("activo");
+            Cliente cliente = new Cliente(miId, nif, nombre, email, telefono, ciudad, pais, activo);
             return cliente;
 
         } catch (SQLException e) {
             e.printStackTrace();
+            return null;
 
         } finally {
             closeConnection(connection);
 
         }
-
-        // no encontrado
-        return null;
     }
 
     @Override
@@ -140,7 +141,7 @@ public class ClienteSqliteRepository extends SQLiteConnectionManager implements 
         try {
             connection = this.getConnection();
             PreparedStatement sentencia = connection.prepareStatement(String.format(
-                    "UPDATE cliente SET nif = '%s', nombre = '%s', email = '%s', telefono = '%s', ciudad = '%s', pais = '%s', activo = '%s'",
+                    "UPDATE cliente SET nif = '%s', nombre = '%s', email = '%s', telefono = '%s', ciudad = '%s', pais = '%s', activo = '%s' WHERE id="+cliente.getId(),
                     cliente.getNif(), cliente.getNombre(), cliente.getEmail(), cliente.getTelefono(), cliente.getCiudad(), cliente.getPais(), (cliente.isActivo()) ? "1" : "0"));
             sentencia.execute();
             return true;

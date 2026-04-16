@@ -1,7 +1,7 @@
 com/ejemplo/service/InMemoryInventarioRepository.class
 com/ejemplo/repository/csv/CsvReaderTest.class
-com/ejemplo/repository/xml/XmlRepositoriesTest.class
 com/ejemplo/model/xml/XmlCollectionsTest.class
+com/ejemplo/repository/xml/XmlRepositoriesTest.class
 com/ejemplo/service/InMemoryProveedorRepository.class
 com/ejemplo/repository/csv/CsvRepositoriesTest.class
 com/ejemplo/service/ServiceLayerTest.class
