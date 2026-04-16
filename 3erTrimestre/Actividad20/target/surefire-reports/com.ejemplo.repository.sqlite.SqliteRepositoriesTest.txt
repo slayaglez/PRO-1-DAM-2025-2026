@@ -1,4 +1,36 @@
 -------------------------------------------------------------------------------
 Test set: com.ejemplo.repository.sqlite.SqliteRepositoriesTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.416 s -- in com.ejemplo.repository.sqlite.SqliteRepositoriesTest
+Tests run: 7, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 1.714 s <<< FAILURE! -- in com.ejemplo.repository.sqlite.SqliteRepositoriesTest
+com.ejemplo.repository.sqlite.SqliteRepositoriesTest.proveedorSqliteCrudWorks -- Time elapsed: 0.010 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.ProveedorSqliteRepository.create(ProveedorSqliteRepository.java:29)
+	at com.ejemplo.repository.sqlite.SqliteRepositoriesTest.proveedorSqliteCrudWorks(SqliteRepositoriesTest.java:59)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.SqliteRepositoriesTest.pedidoSqliteCrudWorks -- Time elapsed: 0.010 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.PedidoSqliteRepository.create(PedidoSqliteRepository.java:23)
+	at com.ejemplo.repository.sqlite.SqliteRepositoriesTest.pedidoSqliteCrudWorks(SqliteRepositoriesTest.java:83)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.SqliteRepositoriesTest.productoSqliteCrudWorks -- Time elapsed: 0.012 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.ProductoSqliteRepository.create(ProductoSqliteRepository.java:23)
+	at com.ejemplo.repository.sqlite.SqliteRepositoriesTest.productoSqliteCrudWorks(SqliteRepositoriesTest.java:47)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.SqliteRepositoriesTest.lineapedidoSqliteCrudWorks -- Time elapsed: 0.011 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.LineaPedidoSqliteRepository.create(LineaPedidoSqliteRepository.java:25)
+	at com.ejemplo.repository.sqlite.SqliteRepositoriesTest.lineapedidoSqliteCrudWorks(SqliteRepositoriesTest.java:95)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

@@ -13,8 +13,6 @@ import com.ejemplo.repository.IClienteRepository;
 
 public class ClienteSqliteRepository extends SQLiteConnectionManager implements IClienteRepository {
 
-    private static String rutaDB = "src/main/resources/data/sqlite/demo.db";
-
     public ClienteSqliteRepository(String rutaDB) {
         super(rutaDB);
     }

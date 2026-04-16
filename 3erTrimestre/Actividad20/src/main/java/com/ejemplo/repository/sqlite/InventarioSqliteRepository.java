@@ -13,8 +13,6 @@ import com.ejemplo.repository.IInventarioRepository;
 
 public class InventarioSqliteRepository extends SQLiteConnectionManager implements IInventarioRepository {
 
-    private static String rutaDB = "src/main/resources/data/sqlite/demo.db";
-
     public InventarioSqliteRepository(String rutaDB) {
         super(rutaDB);
     }

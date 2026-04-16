@@ -4,10 +4,12 @@ import java.io.File;
 import java.nio.file.Path;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public abstract class SQLiteConnectionManager {
 
+    public static String rutaDB = "src/main/resources/data/sqlite/demo.db";
     private String url;
 
     SQLiteConnectionManager(String rutaDB) {
@@ -21,7 +23,7 @@ public abstract class SQLiteConnectionManager {
             }
             this.url = rutaDB;
         } catch (Exception e) {
-            // TODO: handle exception
+            System.err.println("No se pudo inicializar / encontrar la BBDD");
         }
 
         this.url = "jdbc:sqlite:" + rutaDB;
@@ -44,5 +46,24 @@ public abstract class SQLiteConnectionManager {
             return false;
         }
         return true;
+    }
+
+
+    public boolean deleteById(String sql) {
+        
+        Connection connection = null;
+        try {
+            connection = this.getConnection();
+            PreparedStatement sentencia = connection.prepareStatement(sql);
+            sentencia.execute();
+            return true;
+        
+        } catch (SQLException e){
+            System.err.println("No se pudo eliminar el cliente: ");
+            return false;
+
+        } finally {
+            closeConnection(connection);
+        }
     }
 }
