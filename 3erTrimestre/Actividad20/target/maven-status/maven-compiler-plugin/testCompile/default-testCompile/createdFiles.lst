@@ -1,0 +1,16 @@
+com/ejemplo/service/InMemoryInventarioRepository.class
+com/ejemplo/repository/csv/CsvReaderTest.class
+com/ejemplo/model/xml/XmlCollectionsTest.class
+com/ejemplo/repository/xml/XmlRepositoriesTest.class
+com/ejemplo/service/InMemoryProveedorRepository.class
+com/ejemplo/repository/csv/CsvRepositoriesTest.class
+com/ejemplo/service/ServiceLayerTest.class
+com/ejemplo/service/InMemoryLineaPedidoRepository.class
+com/ejemplo/model/ModelLayerTest.class
+com/ejemplo/service/InMemoryProductoRepository.class
+com/ejemplo/repository/json/JsonRepositoriesTest.class
+com/ejemplo/service/InMemoryClienteRepository.class
+com/ejemplo/support/TestDataFactory.class
+com/ejemplo/service/InMemoryPedidoRepository.class
+com/ejemplo/repository/sqlite/SqliteRepositoriesTest.class
+com/ejemplo/support/TestBackupManager.class

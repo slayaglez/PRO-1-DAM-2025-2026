@@ -156,22 +156,8 @@ public class ClienteSqliteRepository extends SQLiteConnectionManager implements 
 
     @Override
     public boolean deleteById(Long id) {
-        
-        Connection connection = null;
-        try {
-            connection = this.getConnection();
-            String sql = "DELETE FROM cliente AS c WHERE c.id ="+id;
-            PreparedStatement sentencia = connection.prepareStatement(sql);
-            sentencia.execute();
-            return true;
-        
-        } catch (SQLException e){
-            System.err.println("No se pudo eliminar el cliente: "+id);
-            return false;
-
-        } finally {
-            closeConnection(connection);
-        }
+        String sentencia = "DELETE FROM cliente WHERE id="+id;
+        return super.deleteById(sentencia);
     }
 
 }

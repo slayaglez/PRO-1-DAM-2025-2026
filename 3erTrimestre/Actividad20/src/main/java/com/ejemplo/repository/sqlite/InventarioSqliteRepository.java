@@ -7,7 +7,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.ejemplo.model.Cliente;
 import com.ejemplo.model.Inventario;
 import com.ejemplo.repository.IInventarioRepository;
 
@@ -23,6 +22,7 @@ public class InventarioSqliteRepository extends SQLiteConnectionManager implemen
 
     @Override
     public boolean create(Inventario inventario) {
+
         Connection connection = null;
 
         try {
@@ -149,21 +149,9 @@ public class InventarioSqliteRepository extends SQLiteConnectionManager implemen
 
     @Override
     public boolean deleteById(Long id) {
-        Connection connection = null;
-        try {
-            connection = this.getConnection();
-            String sql = "DELETE FROM inventario AS i WHERE i.id ="+id;
-            PreparedStatement sentencia = connection.prepareStatement(sql);
-            sentencia.execute();
-            return true;
-        
-        } catch (SQLException e){
-            System.err.println("No se pudo eliminar el inventario: "+id);
-            return false;
 
-        } finally {
-            closeConnection(connection);
-        }
+        String sentencia = "DELETE FROM inventario WHERE id="+id;
+        return super.deleteById(sentencia);
     }
 
 }
