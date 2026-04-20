@@ -1,0 +1,13 @@
+/home/slayaglez/dam1/PRO-1-DAM-2025-2026/3erTrimestre/Actividad21/src/main/java/com/ejemplo/repository/sqlite/SchemaRepository.java
+/home/slayaglez/dam1/PRO-1-DAM-2025-2026/3erTrimestre/Actividad21/src/main/java/com/ejemplo/repository/sqlite/SQLiteConnectionManager.java
+/home/slayaglez/dam1/PRO-1-DAM-2025-2026/3erTrimestre/Actividad21/src/main/java/com/ejemplo/service/InmuebleService.java
+/home/slayaglez/dam1/PRO-1-DAM-2025-2026/3erTrimestre/Actividad21/src/main/java/com/ejemplo/service/PropietarioService.java
+/home/slayaglez/dam1/PRO-1-DAM-2025-2026/3erTrimestre/Actividad21/src/main/java/com/ejemplo/app/Main.java
+/home/slayaglez/dam1/PRO-1-DAM-2025-2026/3erTrimestre/Actividad21/src/main/java/com/ejemplo/model/Inmueble.java
+/home/slayaglez/dam1/PRO-1-DAM-2025-2026/3erTrimestre/Actividad21/src/main/java/com/ejemplo/repository/IInmuebleRepository.java
+/home/slayaglez/dam1/PRO-1-DAM-2025-2026/3erTrimestre/Actividad21/src/main/java/com/ejemplo/repository/sqlite/InmuebleSqliteRepository.java
+/home/slayaglez/dam1/PRO-1-DAM-2025-2026/3erTrimestre/Actividad21/src/main/java/com/ejemplo/service/IPropietarioService.java
+/home/slayaglez/dam1/PRO-1-DAM-2025-2026/3erTrimestre/Actividad21/src/main/java/com/ejemplo/model/Propietario.java
+/home/slayaglez/dam1/PRO-1-DAM-2025-2026/3erTrimestre/Actividad21/src/main/java/com/ejemplo/repository/sqlite/PropietarioSqliteRepository.java
+/home/slayaglez/dam1/PRO-1-DAM-2025-2026/3erTrimestre/Actividad21/src/main/java/com/ejemplo/service/IInmuebleService.java
+/home/slayaglez/dam1/PRO-1-DAM-2025-2026/3erTrimestre/Actividad21/src/main/java/com/ejemplo/repository/IPropietarioRepository.java

@@ -1,0 +1,180 @@
+-------------------------------------------------------------------------------
+Test set: com.ejemplo.service.PropietarioServiceSqliteTest
+-------------------------------------------------------------------------------
+Tests run: 22, Failures: 0, Errors: 22, Skipped: 0, Time elapsed: 0.311 s <<< FAILURE! -- in com.ejemplo.service.PropietarioServiceSqliteTest
+com.ejemplo.service.PropietarioServiceSqliteTest.noPermiteCrearPropietarioConDniVacio -- Time elapsed: 0.006 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.noPermiteCrearPropietarioConDniVacio(PropietarioServiceSqliteTest.java:59)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.PropietarioServiceSqliteTest.noPermiteCrearPropietarioConNombreVacio -- Time elapsed: 0.006 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.noPermiteCrearPropietarioConNombreVacio(PropietarioServiceSqliteTest.java:73)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.PropietarioServiceSqliteTest.eliminarPropietarioInexistenteDevuelveFalse -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'eliminar'
+	at com.ejemplo.service.PropietarioService.eliminar(PropietarioService.java:44)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.eliminarPropietarioInexistenteDevuelveFalse(PropietarioServiceSqliteTest.java:130)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.PropietarioServiceSqliteTest.buscarPorCiudadSinCoincidenciasDevuelveVacio -- Time elapsed: 0.006 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.buscarPorCiudadSinCoincidenciasDevuelveVacio(PropietarioServiceSqliteTest.java:164)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.PropietarioServiceSqliteTest.contarActivosFunciona -- Time elapsed: 0.006 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.contarActivosFunciona(PropietarioServiceSqliteTest.java:142)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.PropietarioServiceSqliteTest.actualizarPropietarioExistenteFunciona -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.actualizarPropietarioExistenteFunciona(PropietarioServiceSqliteTest.java:102)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.PropietarioServiceSqliteTest.restauracionDeBackupAislaLosTests -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.restauracionDeBackupAislaLosTests(PropietarioServiceSqliteTest.java:176)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.PropietarioServiceSqliteTest.buscarPorCiudadEncuentraCoincidencias -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.buscarPorCiudadEncuentraCoincidencias(PropietarioServiceSqliteTest.java:150)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.PropietarioServiceSqliteTest.crearPropietarioValidoFunciona -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.crearPropietarioValidoFunciona(PropietarioServiceSqliteTest.java:37)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.PropietarioServiceSqliteTest.noPermiteCrearPropietarioDuplicado -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.noPermiteCrearPropietarioDuplicado(PropietarioServiceSqliteTest.java:78)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.PropietarioServiceSqliteTest.noPermiteCrearPropietarioConDniNulo -- Time elapsed: 0.010 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.noPermiteCrearPropietarioConDniNulo(PropietarioServiceSqliteTest.java:52)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.PropietarioServiceSqliteTest.listarActivosSoloIncluyeActivos -- Time elapsed: 0.009 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.listarActivosSoloIncluyeActivos(PropietarioServiceSqliteTest.java:135)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.PropietarioServiceSqliteTest.crearPropietarioInactivoEsValido -- Time elapsed: 0.011 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.crearPropietarioInactivoEsValido(PropietarioServiceSqliteTest.java:170)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.PropietarioServiceSqliteTest.buscarPorCiudadIgnoraMayusculas -- Time elapsed: 0.012 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.buscarPorCiudadIgnoraMayusculas(PropietarioServiceSqliteTest.java:158)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.PropietarioServiceSqliteTest.noPermiteCrearPropietarioConNombreNulo -- Time elapsed: 0.010 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.noPermiteCrearPropietarioConNombreNulo(PropietarioServiceSqliteTest.java:66)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.PropietarioServiceSqliteTest.buscarPorDniInexistenteDevuelveNull -- Time elapsed: 0.015 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'buscarPorDni'
+	at com.ejemplo.service.PropietarioService.buscarPorDni(PropietarioService.java:26)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.buscarPorDniInexistenteDevuelveNull(PropietarioServiceSqliteTest.java:91)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.PropietarioServiceSqliteTest.noPermiteActualizarPropietarioInvalido -- Time elapsed: 0.013 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.noPermiteActualizarPropietarioInvalido(PropietarioServiceSqliteTest.java:116)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.PropietarioServiceSqliteTest.eliminarPropietarioExistenteFunciona -- Time elapsed: 0.010 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.eliminarPropietarioExistenteFunciona(PropietarioServiceSqliteTest.java:123)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.PropietarioServiceSqliteTest.listarTodosEmpiezaVacioEnCadaTest -- Time elapsed: 0.011 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'listarTodos'
+	at com.ejemplo.service.PropietarioService.listarTodos(PropietarioService.java:32)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.listarTodosEmpiezaVacioEnCadaTest(PropietarioServiceSqliteTest.java:96)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.PropietarioServiceSqliteTest.crearDosClientesValidosFunciona -- Time elapsed: 0.013 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.crearDosClientesValidosFunciona(PropietarioServiceSqliteTest.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.PropietarioServiceSqliteTest.noPermiteActualizarPropietarioInexistente -- Time elapsed: 0.010 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'actualizar'
+	at com.ejemplo.service.PropietarioService.actualizar(PropietarioService.java:38)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.noPermiteActualizarPropietarioInexistente(PropietarioServiceSqliteTest.java:110)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.PropietarioServiceSqliteTest.buscarPorDniExistenteDevuelvePropietario -- Time elapsed: 0.015 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.buscarPorDniExistenteDevuelvePropietario(PropietarioServiceSqliteTest.java:85)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

@@ -1,0 +1,303 @@
+-------------------------------------------------------------------------------
+Test set: com.ejemplo.service.InmuebleServiceSqliteTest
+-------------------------------------------------------------------------------
+Tests run: 34, Failures: 0, Errors: 34, Skipped: 0, Time elapsed: 0.519 s <<< FAILURE! -- in com.ejemplo.service.InmuebleServiceSqliteTest
+com.ejemplo.service.InmuebleServiceSqliteTest.noPermiteCrearInmuebleConKilometrosNegativos -- Time elapsed: 0.091 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.noPermiteCrearInmuebleConKilometrosNegativos(InmuebleServiceSqliteTest.java:82)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.tiporComoVendidoFallaSiNoExiste -- Time elapsed: 0.008 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'tiporComoVendido'
+	at com.ejemplo.service.InmuebleService.tiporComoVendido(InmuebleService.java:109)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.tiporComoVendidoFallaSiNoExiste(InmuebleServiceSqliteTest.java:229)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.noPermiteCrearInmuebleConPrecioNoPositivo -- Time elapsed: 0.007 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.noPermiteCrearInmuebleConPrecioNoPositivo(InmuebleServiceSqliteTest.java:90)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.listarVendidosSoloIncluyeVendidos -- Time elapsed: 0.007 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.listarVendidosSoloIncluyeVendidos(InmuebleServiceSqliteTest.java:173)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.crearInmuebleValidoFunciona -- Time elapsed: 0.006 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearInmuebleValidoFunciona(InmuebleServiceSqliteTest.java:45)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.noPermiteCrearInmuebleConMatriculaVacia -- Time elapsed: 0.007 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.noPermiteCrearInmuebleConMatriculaVacia(InmuebleServiceSqliteTest.java:58)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.actualizarInmuebleExistenteFunciona -- Time elapsed: 0.006 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.actualizarInmuebleExistenteFunciona(InmuebleServiceSqliteTest.java:123)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.listarDisponiblesSoloIncluyeNoVendidos -- Time elapsed: 0.006 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.listarDisponiblesSoloIncluyeNoVendidos(InmuebleServiceSqliteTest.java:181)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.cambiarPropietarioFuncionaSiNuevoPropietarioExiste -- Time elapsed: 0.007 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.cambiarPropietarioFuncionaSiNuevoPropietarioExiste(InmuebleServiceSqliteTest.java:189)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.restauracionDeBackupAislaLosTests -- Time elapsed: 0.006 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.restauracionDeBackupAislaLosTests(InmuebleServiceSqliteTest.java:292)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.calcularPrecioMedioDevuelveCeroSinInmuebles -- Time elapsed: 0.006 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'calcularPrecioMedio'
+	at com.ejemplo.service.InmuebleService.calcularPrecioMedio(InmuebleService.java:91)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.calcularPrecioMedioDevuelveCeroSinInmuebles(InmuebleServiceSqliteTest.java:256)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.buscarPorIdInexistenteDevuelveNull -- Time elapsed: 0.006 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'buscarPorId'
+	at com.ejemplo.service.InmuebleService.buscarPorId(InmuebleService.java:31)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.buscarPorIdInexistenteDevuelveNull(InmuebleServiceSqliteTest.java:113)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.noPermiteActualizarInmuebleConPropietarioInexistente -- Time elapsed: 0.006 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.noPermiteActualizarInmuebleConPropietarioInexistente(InmuebleServiceSqliteTest.java:141)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.noPermiteCrearInmuebleSinPropietarioExistente -- Time elapsed: 0.007 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.InmuebleService.crear(InmuebleService.java:25)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.noPermiteCrearInmuebleSinPropietarioExistente(InmuebleServiceSqliteTest.java:53)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.cambiarPropietarioFallaSiInmuebleNoExiste -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.cambiarPropietarioFallaSiInmuebleNoExiste(InmuebleServiceSqliteTest.java:198)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.contarInmueblesDePropietarioFunciona -- Time elapsed: 0.006 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.contarInmueblesDePropietarioFunciona(InmuebleServiceSqliteTest.java:278)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.calcularPrecioMedioFunciona -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.calcularPrecioMedioFunciona(InmuebleServiceSqliteTest.java:261)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.noPermiteCrearInmuebleConTipoVacia -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.noPermiteCrearInmuebleConTipoVacia(InmuebleServiceSqliteTest.java:66)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.listarPorPropietarioDevuelveSusInmuebles -- Time elapsed: 0.006 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.listarPorPropietarioDevuelveSusInmuebles(InmuebleServiceSqliteTest.java:164)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.noPermiteActualizarInmuebleInexistente -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.noPermiteActualizarInmuebleInexistente(InmuebleServiceSqliteTest.java:133)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.eliminarInmuebleInexistenteDevuelveFalse -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'eliminar'
+	at com.ejemplo.service.InmuebleService.eliminar(InmuebleService.java:49)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.eliminarInmuebleInexistenteDevuelveFalse(InmuebleServiceSqliteTest.java:159)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.crearInmuebleParaPropietarioInactivoEsValidoPorqueExiste -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearInmuebleParaPropietarioInactivoEsValidoPorqueExiste(InmuebleServiceSqliteTest.java:286)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.actualizarMetrosCuadradosFallaSiValorEsNegativo -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.actualizarMetrosCuadradosFallaSiValorEsNegativo(InmuebleServiceSqliteTest.java:243)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.noPermiteCrearInmuebleConModeloVacio -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.noPermiteCrearInmuebleConModeloVacio(InmuebleServiceSqliteTest.java:74)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.actualizarMetrosCuadradosFallaSiInmuebleNoExiste -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'actualizarMetrosCuadrados'
+	at com.ejemplo.service.InmuebleService.actualizarMetrosCuadrados(InmuebleService.java:85)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.actualizarMetrosCuadradosFallaSiInmuebleNoExiste(InmuebleServiceSqliteTest.java:251)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.eliminarInmuebleExistenteFunciona -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.eliminarInmuebleExistenteFunciona(InmuebleServiceSqliteTest.java:150)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.listarTodosEmpiezaVacioEnCadaTest -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'listarTodos'
+	at com.ejemplo.service.InmuebleService.listarTodos(InmuebleService.java:37)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.listarTodosEmpiezaVacioEnCadaTest(InmuebleServiceSqliteTest.java:118)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.cambiarPropietarioFallaSiPropietarioNoExiste -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.cambiarPropietarioFallaSiPropietarioNoExiste(InmuebleServiceSqliteTest.java:204)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.noPermiteCrearInmuebleDuplicadoPorMatricula -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.noPermiteCrearInmuebleDuplicadoPorMatricula(InmuebleServiceSqliteTest.java:98)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.tiporComoVendidoFuncionaUnaVez -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.tiporComoVendidoFuncionaUnaVez(InmuebleServiceSqliteTest.java:212)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.tiporComoVendidoFallaSiYaEstaVendido -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.tiporComoVendidoFallaSiYaEstaVendido(InmuebleServiceSqliteTest.java:221)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.actualizarMetrosCuadradosFunciona -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.actualizarMetrosCuadradosFunciona(InmuebleServiceSqliteTest.java:234)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.calcularValorTotalDisponibleSumaSoloNoVendidos -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.calcularValorTotalDisponibleSumaSoloNoVendidos(InmuebleServiceSqliteTest.java:269)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.InmuebleServiceSqliteTest.buscarPorIdExistenteDevuelveInmueble -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.crearPropietariosBase(InmuebleServiceSqliteTest.java:38)
+	at com.ejemplo.service.InmuebleServiceSqliteTest.buscarPorIdExistenteDevuelveInmueble(InmuebleServiceSqliteTest.java:105)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

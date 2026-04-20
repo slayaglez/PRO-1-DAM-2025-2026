@@ -1,0 +1,4 @@
+com/ejemplo/support/TestDataFactory.class
+com/ejemplo/service/PropietarioServiceSqliteTest.class
+com/ejemplo/service/InmuebleServiceSqliteTest.class
+com/ejemplo/support/TestBackupManager.class

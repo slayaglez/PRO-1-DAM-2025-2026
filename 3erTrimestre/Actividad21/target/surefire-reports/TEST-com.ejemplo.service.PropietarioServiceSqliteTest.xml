@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.ejemplo.service.PropietarioServiceSqliteTest" time="0.311" tests="22" errors="22" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/slayaglez/dam1/PRO-1-DAM-2025-2026/3erTrimestre/Actividad21/target/test-classes:/home/slayaglez/dam1/PRO-1-DAM-2025-2026/3erTrimestre/Actividad21/target/classes:/home/slayaglez/.m2/repository/org/xerial/sqlite-jdbc/3.45.3.0/sqlite-jdbc-3.45.3.0.jar:/home/slayaglez/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/slayaglez/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/slayaglez/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/slayaglez/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/slayaglez/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/slayaglez/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/slayaglez/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/slayaglez/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/slayaglez/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
+    <property name="java.vm.vendor" value="Debian"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://tracker.debian.org/openjdk-17"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/slayaglez/dam1/PRO-1-DAM-2025-2026/3erTrimestre/Actividad21/target/surefire/surefirebooter-20260420021000186_3.jar /home/slayaglez/dam1/PRO-1-DAM-2025-2026/3erTrimestre/Actividad21/target/surefire 2026-04-20T02-09-58_449-jvmRun1 surefire-20260420021000186_1tmp surefire_0-20260420021000186_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/slayaglez/dam1/PRO-1-DAM-2025-2026/3erTrimestre/Actividad21/target/test-classes:/home/slayaglez/dam1/PRO-1-DAM-2025-2026/3erTrimestre/Actividad21/target/classes:/home/slayaglez/.m2/repository/org/xerial/sqlite-jdbc/3.45.3.0/sqlite-jdbc-3.45.3.0.jar:/home/slayaglez/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/slayaglez/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/slayaglez/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/slayaglez/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/slayaglez/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/slayaglez/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/slayaglez/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/slayaglez/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/slayaglez/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/slayaglez"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="/usr/lib/jvm/java-17-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/slayaglez/dam1/PRO-1-DAM-2025-2026/3erTrimestre/Actividad21"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/home/slayaglez/dam1/PRO-1-DAM-2025-2026/3erTrimestre/Actividad21/target/surefire/surefirebooter-20260420021000186_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.18+8-Debian-1deb12u1"/>
+    <property name="user.name" value="slayaglez"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.6.99-09128-g14e87a8a9b71"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/slayaglez/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.debian.org/openjdk-17"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="17.0.18"/>
+    <property name="user.dir" value="/home/slayaglez/dam1/PRO-1-DAM-2025-2026/3erTrimestre/Actividad21"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Debian"/>
+    <property name="java.vm.version" value="17.0.18+8-Debian-1deb12u1"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="noPermiteCrearPropietarioConDniVacio" classname="com.ejemplo.service.PropietarioServiceSqliteTest" time="0.006">
+    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.noPermiteCrearPropietarioConDniVacio(PropietarioServiceSqliteTest.java:59)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></error>
+  </testcase>
+  <testcase name="noPermiteCrearPropietarioConNombreVacio" classname="com.ejemplo.service.PropietarioServiceSqliteTest" time="0.006">
+    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.noPermiteCrearPropietarioConNombreVacio(PropietarioServiceSqliteTest.java:73)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></error>
+  </testcase>
+  <testcase name="eliminarPropietarioInexistenteDevuelveFalse" classname="com.ejemplo.service.PropietarioServiceSqliteTest" time="0.005">
+    <error message="Unimplemented method &apos;eliminar&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'eliminar'
+	at com.ejemplo.service.PropietarioService.eliminar(PropietarioService.java:44)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.eliminarPropietarioInexistenteDevuelveFalse(PropietarioServiceSqliteTest.java:130)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></error>
+  </testcase>
+  <testcase name="buscarPorCiudadSinCoincidenciasDevuelveVacio" classname="com.ejemplo.service.PropietarioServiceSqliteTest" time="0.006">
+    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.buscarPorCiudadSinCoincidenciasDevuelveVacio(PropietarioServiceSqliteTest.java:164)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></error>
+  </testcase>
+  <testcase name="contarActivosFunciona" classname="com.ejemplo.service.PropietarioServiceSqliteTest" time="0.006">
+    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.contarActivosFunciona(PropietarioServiceSqliteTest.java:142)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></error>
+  </testcase>
+  <testcase name="actualizarPropietarioExistenteFunciona" classname="com.ejemplo.service.PropietarioServiceSqliteTest" time="0.004">
+    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.actualizarPropietarioExistenteFunciona(PropietarioServiceSqliteTest.java:102)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></error>
+  </testcase>
+  <testcase name="restauracionDeBackupAislaLosTests" classname="com.ejemplo.service.PropietarioServiceSqliteTest" time="0.004">
+    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.restauracionDeBackupAislaLosTests(PropietarioServiceSqliteTest.java:176)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></error>
+  </testcase>
+  <testcase name="buscarPorCiudadEncuentraCoincidencias" classname="com.ejemplo.service.PropietarioServiceSqliteTest" time="0.004">
+    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.buscarPorCiudadEncuentraCoincidencias(PropietarioServiceSqliteTest.java:150)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></error>
+  </testcase>
+  <testcase name="crearPropietarioValidoFunciona" classname="com.ejemplo.service.PropietarioServiceSqliteTest" time="0.004">
+    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.crearPropietarioValidoFunciona(PropietarioServiceSqliteTest.java:37)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></error>
+  </testcase>
+  <testcase name="noPermiteCrearPropietarioDuplicado" classname="com.ejemplo.service.PropietarioServiceSqliteTest" time="0.005">
+    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.noPermiteCrearPropietarioDuplicado(PropietarioServiceSqliteTest.java:78)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></error>
+  </testcase>
+  <testcase name="noPermiteCrearPropietarioConDniNulo" classname="com.ejemplo.service.PropietarioServiceSqliteTest" time="0.01">
+    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.noPermiteCrearPropietarioConDniNulo(PropietarioServiceSqliteTest.java:52)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></error>
+  </testcase>
+  <testcase name="listarActivosSoloIncluyeActivos" classname="com.ejemplo.service.PropietarioServiceSqliteTest" time="0.009">
+    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.listarActivosSoloIncluyeActivos(PropietarioServiceSqliteTest.java:135)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></error>
+  </testcase>
+  <testcase name="crearPropietarioInactivoEsValido" classname="com.ejemplo.service.PropietarioServiceSqliteTest" time="0.011">
+    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.crearPropietarioInactivoEsValido(PropietarioServiceSqliteTest.java:170)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></error>
+  </testcase>
+  <testcase name="buscarPorCiudadIgnoraMayusculas" classname="com.ejemplo.service.PropietarioServiceSqliteTest" time="0.012">
+    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.buscarPorCiudadIgnoraMayusculas(PropietarioServiceSqliteTest.java:158)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></error>
+  </testcase>
+  <testcase name="noPermiteCrearPropietarioConNombreNulo" classname="com.ejemplo.service.PropietarioServiceSqliteTest" time="0.01">
+    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.noPermiteCrearPropietarioConNombreNulo(PropietarioServiceSqliteTest.java:66)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></error>
+  </testcase>
+  <testcase name="buscarPorDniInexistenteDevuelveNull" classname="com.ejemplo.service.PropietarioServiceSqliteTest" time="0.015">
+    <error message="Unimplemented method &apos;buscarPorDni&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'buscarPorDni'
+	at com.ejemplo.service.PropietarioService.buscarPorDni(PropietarioService.java:26)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.buscarPorDniInexistenteDevuelveNull(PropietarioServiceSqliteTest.java:91)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></error>
+  </testcase>
+  <testcase name="noPermiteActualizarPropietarioInvalido" classname="com.ejemplo.service.PropietarioServiceSqliteTest" time="0.013">
+    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.noPermiteActualizarPropietarioInvalido(PropietarioServiceSqliteTest.java:116)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></error>
+  </testcase>
+  <testcase name="eliminarPropietarioExistenteFunciona" classname="com.ejemplo.service.PropietarioServiceSqliteTest" time="0.01">
+    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.eliminarPropietarioExistenteFunciona(PropietarioServiceSqliteTest.java:123)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></error>
+  </testcase>
+  <testcase name="listarTodosEmpiezaVacioEnCadaTest" classname="com.ejemplo.service.PropietarioServiceSqliteTest" time="0.011">
+    <error message="Unimplemented method &apos;listarTodos&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'listarTodos'
+	at com.ejemplo.service.PropietarioService.listarTodos(PropietarioService.java:32)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.listarTodosEmpiezaVacioEnCadaTest(PropietarioServiceSqliteTest.java:96)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></error>
+  </testcase>
+  <testcase name="crearDosClientesValidosFunciona" classname="com.ejemplo.service.PropietarioServiceSqliteTest" time="0.013">
+    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.crearDosClientesValidosFunciona(PropietarioServiceSqliteTest.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></error>
+  </testcase>
+  <testcase name="noPermiteActualizarPropietarioInexistente" classname="com.ejemplo.service.PropietarioServiceSqliteTest" time="0.01">
+    <error message="Unimplemented method &apos;actualizar&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'actualizar'
+	at com.ejemplo.service.PropietarioService.actualizar(PropietarioService.java:38)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.noPermiteActualizarPropietarioInexistente(PropietarioServiceSqliteTest.java:110)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></error>
+  </testcase>
+  <testcase name="buscarPorDniExistenteDevuelvePropietario" classname="com.ejemplo.service.PropietarioServiceSqliteTest" time="0.015">
+    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.PropietarioService.crear(PropietarioService.java:20)
+	at com.ejemplo.service.PropietarioServiceSqliteTest.buscarPorDniExistenteDevuelvePropietario(PropietarioServiceSqliteTest.java:85)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></error>
+  </testcase>
+</testsuite>

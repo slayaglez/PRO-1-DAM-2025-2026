@@ -1,0 +1,13 @@
+com/ejemplo/service/PropietarioService.class
+com/ejemplo/service/IPropietarioService.class
+com/ejemplo/repository/IPropietarioRepository.class
+com/ejemplo/repository/sqlite/InmuebleSqliteRepository.class
+com/ejemplo/model/Inmueble.class
+com/ejemplo/service/InmuebleService.class
+com/ejemplo/repository/IInmuebleRepository.class
+com/ejemplo/model/Propietario.class
+com/ejemplo/service/IInmuebleService.class
+com/ejemplo/app/Main.class
+com/ejemplo/repository/sqlite/SchemaRepository.class
+com/ejemplo/repository/sqlite/SQLiteConnectionManager.class
+com/ejemplo/repository/sqlite/PropietarioSqliteRepository.class
