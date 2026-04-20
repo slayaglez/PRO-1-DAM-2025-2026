@@ -92,7 +92,6 @@ public class InmuebleSqliteRepository extends SQLiteConnectionManager implements
                 return null;
             }
 
-            Long myId = resultado.getLong("id");
             String referencia = resultado.getString("referencia");
             String tipo = resultado.getString("tipo");
             String direccion = resultado.getString("direccion");
@@ -109,8 +108,10 @@ public class InmuebleSqliteRepository extends SQLiteConnectionManager implements
         } catch (Exception e) {
             System.err.println("No se pudo encontrar el inmueble");
             return null;
+
         } finally {
             closeConnection(connection);
+
         }
     }
 
