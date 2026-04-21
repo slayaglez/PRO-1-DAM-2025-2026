@@ -1,0 +1,167 @@
+-------------------------------------------------------------------------------
+Test set: com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 0, Errors: 20, Skipped: 0, Time elapsed: 0.308 s <<< FAILURE! -- in com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest
+com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.deleteSkillExistenteDevuelveTrue -- Time elapsed: 0.233 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.SkillSqliteRepository.create(SkillSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.deleteSkillExistenteDevuelveTrue(SkillSqliteRepositoryTest.java:136)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.updateConNombreDuplicadoDevuelveFalse -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.SkillSqliteRepository.create(SkillSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.crearSkillsBase(SkillSqliteRepositoryTest.java:38)
+	at com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.updateConNombreDuplicadoDevuelveFalse(SkillSqliteRepositoryTest.java:120)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.updateConCategoriaInexistenteDevuelveFalse -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.SkillSqliteRepository.create(SkillSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.updateConCategoriaInexistenteDevuelveFalse(SkillSqliteRepositoryTest.java:128)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.findByIdMapeaCorrectamenteTodosLosCampos -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.SkillSqliteRepository.create(SkillSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.findByIdMapeaCorrectamenteTodosLosCampos(SkillSqliteRepositoryTest.java:86)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.deleteSkillInexistenteDevuelveFalse -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'deleteById'
+	at com.ejemplo.repository.sqlite.SkillSqliteRepository.deleteById(SkillSqliteRepository.java:45)
+	at com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.deleteSkillInexistenteDevuelveFalse(SkillSqliteRepositoryTest.java:143)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.deleteSkillAsignadaFallaPorIntegridad -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepository.create(EmployeeSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.deleteSkillAsignadaFallaPorIntegridad(SkillSqliteRepositoryTest.java:148)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.createConCategoriaInexistenteFallaPorIntegridad -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.SkillSqliteRepository.create(SkillSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.createConCategoriaInexistenteFallaPorIntegridad(SkillSqliteRepositoryTest.java:64)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.createConIdDuplicadoDevuelveFalse -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.SkillSqliteRepository.create(SkillSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.createConIdDuplicadoDevuelveFalse(SkillSqliteRepositoryTest.java:51)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.updateNoCambiaNadaSiValoresSonIgualesPeroDevuelveTrue -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.SkillSqliteRepository.create(SkillSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.updateNoCambiaNadaSiValoresSonIgualesPeroDevuelveTrue(SkillSqliteRepositoryTest.java:187)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.updateSkillExistenteModificaCategoria -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.SkillSqliteRepository.create(SkillSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.updateSkillExistenteModificaCategoria(SkillSqliteRepositoryTest.java:106)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.findAllEmpiezaVacio -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'findAll'
+	at com.ejemplo.repository.sqlite.SkillSqliteRepository.findAll(SkillSqliteRepository.java:33)
+	at com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.findAllEmpiezaVacio(SkillSqliteRepositoryTest.java:74)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.updateSkillInexistenteDevuelveFalse -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'update'
+	at com.ejemplo.repository.sqlite.SkillSqliteRepository.update(SkillSqliteRepository.java:39)
+	at com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.updateSkillInexistenteDevuelveFalse(SkillSqliteRepositoryTest.java:115)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.createPermiteDistintosNombresEnMismaCategoria -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.SkillSqliteRepository.create(SkillSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.createPermiteDistintosNombresEnMismaCategoria(SkillSqliteRepositoryTest.java:166)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.findByIdInexistenteDevuelveNull -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'findById'
+	at com.ejemplo.repository.sqlite.SkillSqliteRepository.findById(SkillSqliteRepository.java:27)
+	at com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.findByIdInexistenteDevuelveNull(SkillSqliteRepositoryTest.java:69)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.updateSkillExistenteModificaNombre -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.SkillSqliteRepository.create(SkillSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.updateSkillExistenteModificaNombre(SkillSqliteRepositoryTest.java:97)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.createPermiteMismoCategoryIdEnVariasSkills -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.SkillSqliteRepository.create(SkillSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.createPermiteMismoCategoryIdEnVariasSkills(SkillSqliteRepositoryTest.java:173)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.findAllDevuelveTodasOrdenadasPorId -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.SkillSqliteRepository.create(SkillSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.crearSkillsBase(SkillSqliteRepositoryTest.java:38)
+	at com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.findAllDevuelveTodasOrdenadasPorId(SkillSqliteRepositoryTest.java:79)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.createSkillValidaPersisteCorrectamente -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.SkillSqliteRepository.create(SkillSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.createSkillValidaPersisteCorrectamente(SkillSqliteRepositoryTest.java:45)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.findAllTrasDeleteReduceCantidad -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.SkillSqliteRepository.create(SkillSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.crearSkillsBase(SkillSqliteRepositoryTest.java:38)
+	at com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.findAllTrasDeleteReduceCantidad(SkillSqliteRepositoryTest.java:180)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.createConNombreDuplicadoDevuelveFalse -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.SkillSqliteRepository.create(SkillSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.SkillSqliteRepositoryTest.createConNombreDuplicadoDevuelveFalse(SkillSqliteRepositoryTest.java:57)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

@@ -1,0 +1,9 @@
+com/ejemplo/repository/sqlite/EmployeeSqliteRepositoryTest.class
+com/ejemplo/support/TestDatabaseSupport.class
+com/ejemplo/service/EmployeeServiceRobustnessSqliteTest.class
+com/ejemplo/service/SkillServiceSqliteTest.class
+com/ejemplo/service/SkillServiceRobustnessSqliteTest.class
+com/ejemplo/support/TestDataFactory.class
+com/ejemplo/service/EmployeeServiceSqliteTest.class
+com/ejemplo/repository/sqlite/SkillSqliteRepositoryTest.class
+com/ejemplo/support/TestBackupManager.class

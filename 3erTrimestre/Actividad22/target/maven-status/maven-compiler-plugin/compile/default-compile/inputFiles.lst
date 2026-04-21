@@ -1,0 +1,15 @@
+/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/model/Skill.java
+/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/repository/ISkillRepository.java
+/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/model/Category.java
+/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/service/IEmployeeService.java
+/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/service/ISkillService.java
+/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/model/Employee.java
+/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/repository/sqlite/EmployeeSqliteRepository.java
+/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/service/EmployeeService.java
+/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/model/Rol.java
+/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/app/Main.java
+/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/repository/IEmployeeRepository.java
+/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/repository/sqlite/SchemaRepository.java
+/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/service/SkillService.java
+/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/repository/sqlite/SkillSqliteRepository.java
+/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/repository/sqlite/SQLiteConnectionManager.java

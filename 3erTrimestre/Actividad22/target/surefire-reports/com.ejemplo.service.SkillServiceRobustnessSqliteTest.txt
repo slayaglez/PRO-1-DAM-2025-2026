@@ -1,0 +1,526 @@
+-------------------------------------------------------------------------------
+Test set: com.ejemplo.service.SkillServiceRobustnessSqliteTest
+-------------------------------------------------------------------------------
+Tests run: 46, Failures: 0, Errors: 46, Skipped: 0, Time elapsed: 0.139 s <<< FAILURE! -- in com.ejemplo.service.SkillServiceRobustnessSqliteTest
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConSkillNullFalla -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'asignarEmpleado'
+	at com.ejemplo.service.SkillService.asignarEmpleado(SkillService.java:62)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConSkillNullFalla(SkillServiceRobustnessSqliteTest.java:215)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearVariasSkillsYListarTodasMantieneCantidad -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearVariasSkillsYListarTodasMantieneCantidad(SkillServiceRobustnessSqliteTest.java:312)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConLevelNullFunciona -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearEmpleadoBase(SkillServiceRobustnessSqliteTest.java:41)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConLevelNullFunciona(SkillServiceRobustnessSqliteTest.java:232)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConEmpleadoInexistenteFalla -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConEmpleadoInexistenteFalla(SkillServiceRobustnessSqliteTest.java:220)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarSinAsignarCuandoTodasEstanAsignadasDevuelveVacio -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearEmpleadoBase(SkillServiceRobustnessSqliteTest.java:41)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarSinAsignarCuandoTodasEstanAsignadasDevuelveVacio(SkillServiceRobustnessSqliteTest.java:292)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConSkillInexistenteFalla -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearEmpleadoBase(SkillServiceRobustnessSqliteTest.java:41)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConSkillInexistenteFalla(SkillServiceRobustnessSqliteTest.java:226)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreVacioEnVariantes(String)[1] -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreVacioEnVariantes(SkillServiceRobustnessSqliteTest.java:63)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreVacioEnVariantes(String)[2] -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreVacioEnVariantes(SkillServiceRobustnessSqliteTest.java:63)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreVacioEnVariantes(String)[3] -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreVacioEnVariantes(SkillServiceRobustnessSqliteTest.java:63)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreVacioEnVariantes(String)[4] -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreVacioEnVariantes(SkillServiceRobustnessSqliteTest.java:63)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillInexistente -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'actualizar'
+	at com.ejemplo.service.SkillService.actualizar(SkillService.java:44)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillInexistente(SkillServiceRobustnessSqliteTest.java:125)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillConCategoriaNula -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillConCategoriaNula(SkillServiceRobustnessSqliteTest.java:138)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarSinAsignarConVariasNoAsignadasDevuelveCantidadCorrecta -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearEmpleadoBase(SkillServiceRobustnessSqliteTest.java:41)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarSinAsignarConVariasNoAsignadasDevuelveCantidadCorrecta(SkillServiceRobustnessSqliteTest.java:302)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConIdDuplicado -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConIdDuplicado(SkillServiceRobustnessSqliteTest.java:75)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConIdNulo -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConIdNulo(SkillServiceRobustnessSqliteTest.java:55)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.contarEmpleadosConSkillNullEsCero -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'contarEmpleadosConSkill'
+	at com.ejemplo.service.SkillService.contarEmpleadosConSkill(SkillService.java:74)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.contarEmpleadosConSkillNullEsCero(SkillServiceRobustnessSqliteTest.java:271)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillConIdNulo -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'actualizar'
+	at com.ejemplo.service.SkillService.actualizar(SkillService.java:44)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillConIdNulo(SkillServiceRobustnessSqliteTest.java:120)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.buscarPorIdInexistenteDevuelveNull -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'buscarPorId'
+	at com.ejemplo.service.SkillService.buscarPorId(SkillService.java:32)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.buscarPorIdInexistenteDevuelveNull(SkillServiceRobustnessSqliteTest.java:108)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillConNombreDuplicadoExacto -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillConNombreDuplicadoExacto(SkillServiceRobustnessSqliteTest.java:146)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorCategoriaSinCoincidenciasDevuelveVacio -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorCategoriaSinCoincidenciasDevuelveVacio(SkillServiceRobustnessSqliteTest.java:196)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorEmpleadoNullDevuelveVacio -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'listarPorEmpleado'
+	at com.ejemplo.service.SkillService.listarPorEmpleado(SkillService.java:68)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorEmpleadoNullDevuelveVacio(SkillServiceRobustnessSqliteTest.java:248)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.permiteAsignarDosSkillsAUnMismoEmpleado -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearEmpleadoBase(SkillServiceRobustnessSqliteTest.java:41)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.permiteAsignarDosSkillsAUnMismoEmpleado(SkillServiceRobustnessSqliteTest.java:337)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorEmpleadoSinAsignacionesDevuelveVacio -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearEmpleadoBase(SkillServiceRobustnessSqliteTest.java:41)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorEmpleadoSinAsignacionesDevuelveVacio(SkillServiceRobustnessSqliteTest.java:253)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarTodasTrasEliminarUnaReduceCantidad -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarTodasTrasEliminarUnaReduceCantidad(SkillServiceRobustnessSqliteTest.java:320)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.actualizarSkillNullDevuelveFalse -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'actualizar'
+	at com.ejemplo.service.SkillService.actualizar(SkillService.java:44)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.actualizarSkillNullDevuelveFalse(SkillServiceRobustnessSqliteTest.java:113)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreDuplicadoIgnorandoEspacios -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreDuplicadoIgnorandoEspacios(SkillServiceRobustnessSqliteTest.java:89)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.permiteAsignarMismaSkillADosEmpleadosDistintos -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearEmpleadoBase(SkillServiceRobustnessSqliteTest.java:41)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.permiteAsignarMismaSkillADosEmpleadosDistintos(SkillServiceRobustnessSqliteTest.java:328)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.buscarPorIdNullDevuelveNull -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'buscarPorId'
+	at com.ejemplo.service.SkillService.buscarPorId(SkillService.java:32)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.buscarPorIdNullDevuelveNull(SkillServiceRobustnessSqliteTest.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.contarEmpleadosConSkillSinAsignacionesEsCero -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.contarEmpleadosConSkillSinAsignacionesEsCero(SkillServiceRobustnessSqliteTest.java:281)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorEmpleadoDevuelveSkillsOrdenadasPorId -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearEmpleadoBase(SkillServiceRobustnessSqliteTest.java:41)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorEmpleadoDevuelveSkillsOrdenadasPorId(SkillServiceRobustnessSqliteTest.java:260)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearSkillNullDevuelveFalse -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearSkillNullDevuelveFalse(SkillServiceRobustnessSqliteTest.java:48)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.actualizarSkillHaceTrimDelNombre -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.actualizarSkillHaceTrimDelNombre(SkillServiceRobustnessSqliteTest.java:164)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillConNombreVacio -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillConNombreVacio(SkillServiceRobustnessSqliteTest.java:130)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorCategoriaConVariasSkillsDevuelveTodas -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorCategoriaConVariasSkillsDevuelveTodas(SkillServiceRobustnessSqliteTest.java:202)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.eliminarSkillAsignadaFallaPorIntegridadReferencial -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearEmpleadoBase(SkillServiceRobustnessSqliteTest.java:41)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.eliminarSkillAsignadaFallaPorIntegridadReferencial(SkillServiceRobustnessSqliteTest.java:183)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConCategoriaNula -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConCategoriaNula(SkillServiceRobustnessSqliteTest.java:70)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarSinAsignarSinSkillsDevuelveVacio -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'listarSinAsignar'
+	at com.ejemplo.service.SkillService.listarSinAsignar(SkillService.java:80)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarSinAsignarSinSkillsDevuelveVacio(SkillServiceRobustnessSqliteTest.java:287)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearSkillHaceTrimDelNombre -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearSkillHaceTrimDelNombre(SkillServiceRobustnessSqliteTest.java:97)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.eliminarSkillInexistenteDevuelveFalse -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'eliminar'
+	at com.ejemplo.service.SkillService.eliminar(SkillService.java:50)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.eliminarSkillInexistenteDevuelveFalse(SkillServiceRobustnessSqliteTest.java:178)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoHaceTrimDelLevel -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearEmpleadoBase(SkillServiceRobustnessSqliteTest.java:41)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoHaceTrimDelLevel(SkillServiceRobustnessSqliteTest.java:240)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorCategoriaNullDevuelveVacio -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'listarPorCategoria'
+	at com.ejemplo.service.SkillService.listarPorCategoria(SkillService.java:56)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorCategoriaNullDevuelveVacio(SkillServiceRobustnessSqliteTest.java:191)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.contarEmpleadosConSkillInexistenteEsCero -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'contarEmpleadosConSkill'
+	at com.ejemplo.service.SkillService.contarEmpleadosConSkill(SkillService.java:74)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.contarEmpleadosConSkillInexistenteEsCero(SkillServiceRobustnessSqliteTest.java:276)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConEmployeeNullFalla -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'asignarEmpleado'
+	at com.ejemplo.service.SkillService.asignarEmpleado(SkillService.java:62)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConEmployeeNullFalla(SkillServiceRobustnessSqliteTest.java:210)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.eliminarSkillNullDevuelveFalse -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'eliminar'
+	at com.ejemplo.service.SkillService.eliminar(SkillService.java:50)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.eliminarSkillNullDevuelveFalse(SkillServiceRobustnessSqliteTest.java:173)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreDuplicadoIgnorandoMayusculas -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreDuplicadoIgnorandoMayusculas(SkillServiceRobustnessSqliteTest.java:82)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillConNombreDuplicadoIgnorandoMayusculas -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'crear'
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillConNombreDuplicadoIgnorandoMayusculas(SkillServiceRobustnessSqliteTest.java:155)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

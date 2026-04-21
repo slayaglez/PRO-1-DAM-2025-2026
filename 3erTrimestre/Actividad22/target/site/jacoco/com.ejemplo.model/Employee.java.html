@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Employee.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">employee-skills-sqlite-ejercicio</a> &gt; <a href="index.source.html" class="el_package">com.ejemplo.model</a> &gt; <span class="el_source">Employee.java</span></div><h1>Employee.java</h1><pre class="source lang-java linenums">package com.ejemplo.model;
+
+import java.util.Objects;
+
+public class Employee {
+
+    private Integer id;
+    private String name;
+    private String surname;
+    private String startDate;
+    private Integer reportsTo;
+    private Integer rolId;
+
+<span class="nc" id="L14">    public Employee() {</span>
+<span class="nc" id="L15">    }</span>
+
+<span class="fc" id="L17">    public Employee(Integer id, String name, String surname, String startDate, Integer reportsTo, Integer rolId) {</span>
+<span class="fc" id="L18">        this.id = id;</span>
+<span class="fc" id="L19">        this.name = name;</span>
+<span class="fc" id="L20">        this.surname = surname;</span>
+<span class="fc" id="L21">        this.startDate = startDate;</span>
+<span class="fc" id="L22">        this.reportsTo = reportsTo;</span>
+<span class="fc" id="L23">        this.rolId = rolId;</span>
+<span class="fc" id="L24">    }</span>
+
+<span class="nc" id="L26">    public Integer getId() { return id; }</span>
+<span class="fc" id="L27">    public void setId(Integer id) { this.id = id; }</span>
+<span class="nc" id="L28">    public String getName() { return name; }</span>
+<span class="fc" id="L29">    public void setName(String name) { this.name = name; }</span>
+<span class="nc" id="L30">    public String getSurname() { return surname; }</span>
+<span class="fc" id="L31">    public void setSurname(String surname) { this.surname = surname; }</span>
+<span class="nc" id="L32">    public String getStartDate() { return startDate; }</span>
+<span class="fc" id="L33">    public void setStartDate(String startDate) { this.startDate = startDate; }</span>
+<span class="nc" id="L34">    public Integer getReportsTo() { return reportsTo; }</span>
+<span class="fc" id="L35">    public void setReportsTo(Integer reportsTo) { this.reportsTo = reportsTo; }</span>
+<span class="nc" id="L36">    public Integer getRolId() { return rolId; }</span>
+<span class="fc" id="L37">    public void setRolId(Integer rolId) { this.rolId = rolId; }</span>
+
+    @Override
+    public boolean equals(Object o) {
+<span class="nc bnc" id="L41" title="All 2 branches missed.">        if (this == o) return true;</span>
+<span class="nc bnc" id="L42" title="All 4 branches missed.">        if (o == null || getClass() != o.getClass()) return false;</span>
+<span class="nc" id="L43">        Employee employee = (Employee) o;</span>
+<span class="nc" id="L44">        return Objects.equals(id, employee.id);</span>
+    }
+
+    @Override
+    public int hashCode() {
+<span class="nc" id="L49">        return Objects.hash(id);</span>
+    }
+
+    @Override
+    public String toString() {
+<span class="nc" id="L54">        return &quot;Employee{&quot; +</span>
+                &quot;id=&quot; + id +
+                &quot;, name='&quot; + name + '\'' +
+                &quot;, surname='&quot; + surname + '\'' +
+                &quot;, startDate='&quot; + startDate + '\'' +
+                &quot;, reportsTo=&quot; + reportsTo +
+                &quot;, rolId=&quot; + rolId +
+                '}';
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

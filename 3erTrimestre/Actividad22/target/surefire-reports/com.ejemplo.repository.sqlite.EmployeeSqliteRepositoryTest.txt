@@ -1,0 +1,167 @@
+-------------------------------------------------------------------------------
+Test set: com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 0, Errors: 20, Skipped: 0, Time elapsed: 0.067 s <<< FAILURE! -- in com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest
+com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.createConManagerExistentePersisteRelacion -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepository.create(EmployeeSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.createConManagerExistentePersisteRelacion(EmployeeSqliteRepositoryTest.java:57)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.updateConManagerInexistenteDevuelveFalse -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepository.create(EmployeeSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.updateConManagerInexistenteDevuelveFalse(EmployeeSqliteRepositoryTest.java:132)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.findAllDevuelveTodosOrdenadosPorId -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepository.create(EmployeeSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.crearBase(EmployeeSqliteRepositoryTest.java:36)
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.findAllDevuelveTodosOrdenadosPorId(EmployeeSqliteRepositoryTest.java:93)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.deleteEmpleadoInexistenteDevuelveFalse -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'deleteById'
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepository.deleteById(EmployeeSqliteRepository.java:45)
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.deleteEmpleadoInexistenteDevuelveFalse(EmployeeSqliteRepositoryTest.java:147)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.updateEmpleadoInexistenteDevuelveFalse -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'update'
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepository.update(EmployeeSqliteRepository.java:39)
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.updateEmpleadoInexistenteDevuelveFalse(EmployeeSqliteRepositoryTest.java:119)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.findByIdMapeaCorrectamenteTodosLosCampos -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepository.create(EmployeeSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.crearBase(EmployeeSqliteRepositoryTest.java:36)
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.findByIdMapeaCorrectamenteTodosLosCampos(EmployeeSqliteRepositoryTest.java:166)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.updateEmpleadoExistenteModificaDatos -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepository.create(EmployeeSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.updateEmpleadoExistenteModificaDatos(EmployeeSqliteRepositoryTest.java:100)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.deleteEmpleadoExistenteDevuelveTrue -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepository.create(EmployeeSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.deleteEmpleadoExistenteDevuelveTrue(EmployeeSqliteRepositoryTest.java:140)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.updatePermiteCambiarManagerANull -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepository.create(EmployeeSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.updatePermiteCambiarManagerANull(EmployeeSqliteRepositoryTest.java:109)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.deleteManagerConSubordinadosFallaPorIntegridad -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepository.create(EmployeeSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.crearBase(EmployeeSqliteRepositoryTest.java:36)
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.deleteManagerConSubordinadosFallaPorIntegridad(EmployeeSqliteRepositoryTest.java:152)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.updatePuedeCambiarRol -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepository.create(EmployeeSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.updatePuedeCambiarRol(EmployeeSqliteRepositoryTest.java:180)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.createConManagerInexistenteFallaPorIntegridad -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepository.create(EmployeeSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.createConManagerInexistenteFallaPorIntegridad(EmployeeSqliteRepositoryTest.java:78)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.updateConRolInexistenteDevuelveFalse -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepository.create(EmployeeSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.updateConRolInexistenteDevuelveFalse(EmployeeSqliteRepositoryTest.java:124)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.createConIdDuplicadoDevuelveFalse -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepository.create(EmployeeSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.createConIdDuplicadoDevuelveFalse(EmployeeSqliteRepositoryTest.java:64)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.findAllEmpiezaVacio -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'findAll'
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepository.findAll(EmployeeSqliteRepository.java:33)
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.findAllEmpiezaVacio(EmployeeSqliteRepositoryTest.java:88)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.createConRolInexistenteFallaPorIntegridad -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepository.create(EmployeeSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.createConRolInexistenteFallaPorIntegridad(EmployeeSqliteRepositoryTest.java:73)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.findByIdInexistenteDevuelveNull -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'findById'
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepository.findById(EmployeeSqliteRepository.java:27)
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.findByIdInexistenteDevuelveNull(EmployeeSqliteRepositoryTest.java:83)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.createConReportsToNullSeMapeaComoNull -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepository.create(EmployeeSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.createConReportsToNullSeMapeaComoNull(EmployeeSqliteRepositoryTest.java:51)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.deleteEmpleadoConResumeFallaPorIntegridad -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepository.create(EmployeeSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.deleteEmpleadoConResumeFallaPorIntegridad(EmployeeSqliteRepositoryTest.java:159)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.createEmpleadoValidoPersisteCorrectamente -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'create'
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepository.create(EmployeeSqliteRepository.java:21)
+	at com.ejemplo.repository.sqlite.EmployeeSqliteRepositoryTest.createEmpleadoValidoPersisteCorrectamente(EmployeeSqliteRepositoryTest.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
