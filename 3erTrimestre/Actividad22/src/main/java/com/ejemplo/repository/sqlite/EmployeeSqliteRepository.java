@@ -98,7 +98,7 @@ public class EmployeeSqliteRepository extends SQLiteConnectionManager implements
                 String name = resultado.getString("name");
                 String surname = resultado.getString("surname");
                 String startDate = resultado.getString("start_date");
-                Integer reportsTo = resultado.getInt("reports_to");
+                Integer reportsTo = (Integer) resultado.getObject("reports_to");
                 Integer rolId = resultado.getInt("rol_id");
 
                 Employee empleado = new Employee(id, name, surname, startDate, reportsTo, rolId);
@@ -124,7 +124,7 @@ public class EmployeeSqliteRepository extends SQLiteConnectionManager implements
             connection = getConnection();
             PreparedStatement sentencia = connection.prepareStatement(
                     "UPDATE employee SET name=?, surname=?, starts_date=?, reports_to=?, rol_id=? WHERE id=?");
-            sentencia.setInt(6, employee.getId());
+            
             sentencia.setString(1, employee.getName());
             sentencia.setString(2, employee.getSurname());
             sentencia.setString(3, employee.getStartDate());
@@ -136,11 +136,11 @@ public class EmployeeSqliteRepository extends SQLiteConnectionManager implements
             }
             
             sentencia.setInt(5, employee.getRolId());
-            sentencia.executeUpdate();
-            return true;
+            sentencia.setInt(6, employee.getId());
+            return sentencia.executeUpdate() > 0;
 
         } catch (Exception e) {
-            System.err.println("Error creando empleado");
+            System.err.println("Error actualizando empleado");
             return false;
 
         } finally {
