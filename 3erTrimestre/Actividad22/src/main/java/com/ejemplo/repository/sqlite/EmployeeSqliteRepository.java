@@ -28,7 +28,6 @@ public class EmployeeSqliteRepository extends SQLiteConnectionManager implements
             sentencia.setString(3, employee.getSurname());
             sentencia.setString(4, employee.getStartDate());
 
-            // ! Esta es la forma correcta de manejar el null?
             if (employee.getReportsTo() == null) {
                 sentencia.setNull(5, java.sql.Types.INTEGER);
             } else {
@@ -36,8 +35,8 @@ public class EmployeeSqliteRepository extends SQLiteConnectionManager implements
             }
 
             sentencia.setInt(6, employee.getRolId());
-            sentencia.execute(); // ! Diferencia entre executeQuery()?
-            return true;
+            return sentencia.executeUpdate() > 0;
+
 
         } catch (Exception e) {
             System.err.println("Error creando empleado");
@@ -56,7 +55,8 @@ public class EmployeeSqliteRepository extends SQLiteConnectionManager implements
 
         try {
             connection = getConnection();
-            PreparedStatement sentencia = connection.prepareStatement("SELECT * FROM employee WHERE id=" + id);
+            PreparedStatement sentencia = connection.prepareStatement("SELECT * FROM employee WHERE id=?");
+            sentencia.setInt(1, id);
             ResultSet resultado = sentencia.executeQuery();
 
             if (!resultado.next())
@@ -65,7 +65,6 @@ public class EmployeeSqliteRepository extends SQLiteConnectionManager implements
             String name = resultado.getString("name");
             String surname = resultado.getString("surname");
             String startDate = resultado.getString("start_date");
-            // ! Es esta la forma correcta de manejar el null???
             Integer reportsTo = (Integer) resultado.getObject("reports_to");
             Integer rolId = resultado.getInt("rol_id");
 
@@ -162,7 +161,7 @@ public class EmployeeSqliteRepository extends SQLiteConnectionManager implements
             return true;
 
         } catch (Exception e) {
-            System.err.println("Error borrando el cliente");
+            System.err.println("Error borrando el empleado" + e);
             return false;
 
         } finally {

@@ -22,7 +22,9 @@ public class EmployeeService implements IEmployeeService {
 
     @Override
     public boolean crear(Employee employee) {
-        if(!validarEmployee(employee)) return false;
+        if(!validarEmployee(employee) && repository.findById(employee.getId()) == null){
+            return false;
+        } 
         return repository.create(employee);
     }
 
@@ -89,9 +91,10 @@ public class EmployeeService implements IEmployeeService {
     public boolean validarEmployee(Employee empleado){
 
         if(empleado == null) return false;
-        if(empleado.getId() == null || empleado.getId() < 0) return false;
+        if(empleado.getId() == null) return false;
         if(empleado.getName() == null || empleado.getName().isBlank()) return false;
-        
+        if(empleado.getSurname() == null || empleado.getSurname().isBlank()) return false;
+
         return true;
     }
 }
