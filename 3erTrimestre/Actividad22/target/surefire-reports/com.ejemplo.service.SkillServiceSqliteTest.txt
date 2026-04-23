@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.ejemplo.service.SkillServiceSqliteTest
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 0, Errors: 13, Skipped: 0, Time elapsed: 0.041 s <<< FAILURE! -- in com.ejemplo.service.SkillServiceSqliteTest
-com.ejemplo.service.SkillServiceSqliteTest.noPermiteCrearSkillDuplicada -- Time elapsed: 0.003 s <<< ERROR!
+Tests run: 13, Failures: 0, Errors: 13, Skipped: 0, Time elapsed: 16.59 s <<< FAILURE! -- in com.ejemplo.service.SkillServiceSqliteTest
+com.ejemplo.service.SkillServiceSqliteTest.noPermiteCrearSkillDuplicada -- Time elapsed: 1.146 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
 	at com.ejemplo.service.SkillServiceSqliteTest.noPermiteCrearSkillDuplicada(SkillServiceSqliteTest.java:50)
@@ -10,15 +10,15 @@ java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceSqliteTest.listarSinAsignarIncluyeSkillsSinUso -- Time elapsed: 0.003 s <<< ERROR!
+com.ejemplo.service.SkillServiceSqliteTest.listarSinAsignarIncluyeSkillsSinUso -- Time elapsed: 1.568 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.SkillServiceSqliteTest.listarSinAsignarIncluyeSkillsSinUso(SkillServiceSqliteTest.java:121)
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceSqliteTest.listarSinAsignarIncluyeSkillsSinUso(SkillServiceSqliteTest.java:123)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceSqliteTest.actualizarSkillExistenteFunciona -- Time elapsed: 0.003 s <<< ERROR!
+com.ejemplo.service.SkillServiceSqliteTest.actualizarSkillExistenteFunciona -- Time elapsed: 1.105 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
 	at com.ejemplo.service.SkillServiceSqliteTest.actualizarSkillExistenteFunciona(SkillServiceSqliteTest.java:68)
@@ -26,7 +26,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceSqliteTest.noPermiteCrearSkillConNombreVacio -- Time elapsed: 0.003 s <<< ERROR!
+com.ejemplo.service.SkillServiceSqliteTest.noPermiteCrearSkillConNombreVacio -- Time elapsed: 1.404 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
 	at com.ejemplo.service.SkillServiceSqliteTest.noPermiteCrearSkillConNombreVacio(SkillServiceSqliteTest.java:45)
@@ -34,7 +34,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceSqliteTest.listarTodasEmpiezaVacio -- Time elapsed: 0.004 s <<< ERROR!
+com.ejemplo.service.SkillServiceSqliteTest.listarTodasEmpiezaVacio -- Time elapsed: 1.136 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'listarTodas'
 	at com.ejemplo.service.SkillService.listarTodas(SkillService.java:38)
 	at com.ejemplo.service.SkillServiceSqliteTest.listarTodasEmpiezaVacio(SkillServiceSqliteTest.java:63)
@@ -42,7 +42,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'listarTodas'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceSqliteTest.restauracionDeBackupAislaLosTests -- Time elapsed: 0.003 s <<< ERROR!
+com.ejemplo.service.SkillServiceSqliteTest.restauracionDeBackupAislaLosTests -- Time elapsed: 1.194 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
 	at com.ejemplo.service.SkillServiceSqliteTest.restauracionDeBackupAislaLosTests(SkillServiceSqliteTest.java:131)
@@ -50,7 +50,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceSqliteTest.noPermiteCrearSkillConCategoriaInexistente -- Time elapsed: 0.003 s <<< ERROR!
+com.ejemplo.service.SkillServiceSqliteTest.noPermiteCrearSkillConCategoriaInexistente -- Time elapsed: 1.095 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
 	at com.ejemplo.service.SkillServiceSqliteTest.noPermiteCrearSkillConCategoriaInexistente(SkillServiceSqliteTest.java:58)
@@ -58,7 +58,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceSqliteTest.eliminarSkillExistenteFunciona -- Time elapsed: 0.002 s <<< ERROR!
+com.ejemplo.service.SkillServiceSqliteTest.eliminarSkillExistenteFunciona -- Time elapsed: 1.047 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
 	at com.ejemplo.service.SkillServiceSqliteTest.eliminarSkillExistenteFunciona(SkillServiceSqliteTest.java:77)
@@ -66,7 +66,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceSqliteTest.crearSkillValidaFunciona -- Time elapsed: 0.002 s <<< ERROR!
+com.ejemplo.service.SkillServiceSqliteTest.crearSkillValidaFunciona -- Time elapsed: 1.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
 	at com.ejemplo.service.SkillServiceSqliteTest.crearSkillValidaFunciona(SkillServiceSqliteTest.java:37)
@@ -74,23 +74,23 @@ java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceSqliteTest.contarEmpleadosConSkillFunciona -- Time elapsed: 0.003 s <<< ERROR!
+com.ejemplo.service.SkillServiceSqliteTest.contarEmpleadosConSkillFunciona -- Time elapsed: 1.579 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.SkillServiceSqliteTest.contarEmpleadosConSkillFunciona(SkillServiceSqliteTest.java:110)
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceSqliteTest.contarEmpleadosConSkillFunciona(SkillServiceSqliteTest.java:113)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceSqliteTest.noPermiteAsignarSkillDuplicadaAlMismoEmpleado -- Time elapsed: 0.003 s <<< ERROR!
+com.ejemplo.service.SkillServiceSqliteTest.noPermiteAsignarSkillDuplicadaAlMismoEmpleado -- Time elapsed: 1.670 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.SkillServiceSqliteTest.noPermiteAsignarSkillDuplicadaAlMismoEmpleado(SkillServiceSqliteTest.java:101)
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceSqliteTest.noPermiteAsignarSkillDuplicadaAlMismoEmpleado(SkillServiceSqliteTest.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceSqliteTest.listarPorCategoriaDevuelveCoincidencias -- Time elapsed: 0.002 s <<< ERROR!
+com.ejemplo.service.SkillServiceSqliteTest.listarPorCategoriaDevuelveCoincidencias -- Time elapsed: 1.152 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
 	at com.ejemplo.service.SkillServiceSqliteTest.listarPorCategoriaDevuelveCoincidencias(SkillServiceSqliteTest.java:84)
@@ -98,10 +98,10 @@ java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceSqliteTest.asignarEmpleadoFuncionaSiEmployeeYSkillExisten -- Time elapsed: 0.003 s <<< ERROR!
+com.ejemplo.service.SkillServiceSqliteTest.asignarEmpleadoFuncionaSiEmployeeYSkillExisten -- Time elapsed: 1.477 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.SkillServiceSqliteTest.asignarEmpleadoFuncionaSiEmployeeYSkillExisten(SkillServiceSqliteTest.java:92)
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceSqliteTest.asignarEmpleadoFuncionaSiEmployeeYSkillExisten(SkillServiceSqliteTest.java:94)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)

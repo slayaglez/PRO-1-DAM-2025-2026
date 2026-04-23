@@ -15,5 +15,4 @@ public interface IEmployeeService {
     boolean cambiarManager(Integer employeeId, Integer managerId);
     int contarSubordinados(Integer managerId);
     List<Employee> buscarPorApellido(String surname);
-
 }

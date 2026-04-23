@@ -1,9 +1,9 @@
-/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/test/java/com/ejemplo/service/EmployeeServiceSqliteTest.java
-/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/test/java/com/ejemplo/service/SkillServiceSqliteTest.java
-/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/test/java/com/ejemplo/service/EmployeeServiceRobustnessSqliteTest.java
-/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/test/java/com/ejemplo/repository/sqlite/EmployeeSqliteRepositoryTest.java
-/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/test/java/com/ejemplo/support/TestDatabaseSupport.java
-/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/test/java/com/ejemplo/support/TestDataFactory.java
-/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/test/java/com/ejemplo/repository/sqlite/SkillSqliteRepositoryTest.java
-/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/test/java/com/ejemplo/support/TestBackupManager.java
-/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/test/java/com/ejemplo/service/SkillServiceRobustnessSqliteTest.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/src/test/java/com/ejemplo/service/SkillServiceSqliteTest.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/src/test/java/com/ejemplo/repository/sqlite/SkillSqliteRepositoryTest.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/src/test/java/com/ejemplo/service/SkillServiceRobustnessSqliteTest.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/src/test/java/com/ejemplo/support/TestDataFactory.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/src/test/java/com/ejemplo/service/EmployeeServiceRobustnessSqliteTest.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/src/test/java/com/ejemplo/support/TestBackupManager.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/src/test/java/com/ejemplo/support/TestDatabaseSupport.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/src/test/java/com/ejemplo/service/EmployeeServiceSqliteTest.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/src/test/java/com/ejemplo/repository/sqlite/EmployeeSqliteRepositoryTest.java

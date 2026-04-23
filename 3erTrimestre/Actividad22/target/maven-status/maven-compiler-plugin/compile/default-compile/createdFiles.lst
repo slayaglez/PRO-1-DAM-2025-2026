@@ -1,7 +1,7 @@
 com/ejemplo/repository/IEmployeeRepository.class
-com/ejemplo/model/Category.class
-com/ejemplo/model/Skill.class
 com/ejemplo/service/ISkillService.class
+com/ejemplo/model/Skill.class
+com/ejemplo/model/Category.class
 com/ejemplo/repository/ISkillRepository.class
 com/ejemplo/service/IEmployeeService.class
 com/ejemplo/service/SkillService.class

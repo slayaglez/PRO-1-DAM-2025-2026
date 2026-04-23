@@ -23,12 +23,12 @@ public class SkillSqliteRepository extends SQLiteConnectionManager implements IS
 
         try {
             connection = getConnection();
-            PreparedStatement sentencia = connection.prepareStatement("INSERT INTO skill VALUES (?, '?', ?)");
+            PreparedStatement sentencia = connection.prepareStatement("INSERT INTO skill VALUES (?, ?, ?)");
             sentencia.setInt(1, skill.getId());
             sentencia.setString(2, skill.getName());
             sentencia.setInt(3, skill.getCategoryId());
-            sentencia.execute();
-            return true;
+            return sentencia.executeUpdate() > 0;
+            
 
         } catch (Exception e) {
             System.err.println("Error creando skill");
@@ -46,7 +46,8 @@ public class SkillSqliteRepository extends SQLiteConnectionManager implements IS
 
         try {
             connection = getConnection();
-            PreparedStatement sentencia = connection.prepareStatement("SELECT * FROM skill WHERE id=" + id);
+            PreparedStatement sentencia = connection.prepareStatement("SELECT * FROM skill WHERE id = ?");
+            sentencia.setInt(1, id);
             ResultSet resultado = sentencia.executeQuery();
 
             if (!resultado.next()) return null;
@@ -105,16 +106,15 @@ public class SkillSqliteRepository extends SQLiteConnectionManager implements IS
         try {
             connection = getConnection();
             PreparedStatement sentencia = connection.prepareStatement(
-                    "UPDATE employee SET name='?', category_id='?' WHERE id=?");
+                    "UPDATE employee SET name = ?, category_id = ? WHERE id = ?");
             sentencia.setInt(3, skill.getId());
             sentencia.setString(1, skill.getName());
             sentencia.setInt(2, skill.getCategoryId());
             
-            sentencia.execute();
-            return true;
+            return sentencia.executeUpdate() == 1;
 
         } catch (Exception e) {
-            System.err.println("Error creando skill");
+            System.err.println("Error actualizando skill");
             return false;
 
         } finally {
@@ -129,7 +129,7 @@ public class SkillSqliteRepository extends SQLiteConnectionManager implements IS
 
         try {
             connection = getConnection();
-            PreparedStatement sentencia = connection.prepareStatement("DELETE FROM skill WHERE id=?");
+            PreparedStatement sentencia = connection.prepareStatement("DELETE FROM skill WHERE id = ?");
             sentencia.setInt(1, id);
 
             return sentencia.execute();

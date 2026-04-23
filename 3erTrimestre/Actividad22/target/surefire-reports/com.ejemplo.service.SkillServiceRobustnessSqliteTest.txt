@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.ejemplo.service.SkillServiceRobustnessSqliteTest
 -------------------------------------------------------------------------------
-Tests run: 46, Failures: 0, Errors: 46, Skipped: 0, Time elapsed: 0.139 s <<< FAILURE! -- in com.ejemplo.service.SkillServiceRobustnessSqliteTest
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConSkillNullFalla -- Time elapsed: 0.004 s <<< ERROR!
+Tests run: 46, Failures: 0, Errors: 46, Skipped: 0, Time elapsed: 43.66 s <<< FAILURE! -- in com.ejemplo.service.SkillServiceRobustnessSqliteTest
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConSkillNullFalla -- Time elapsed: 1.224 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'asignarEmpleado'
 	at com.ejemplo.service.SkillService.asignarEmpleado(SkillService.java:62)
 	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConSkillNullFalla(SkillServiceRobustnessSqliteTest.java:215)
@@ -10,7 +10,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'asignarEmpleado'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearVariasSkillsYListarTodasMantieneCantidad -- Time elapsed: 0.005 s <<< ERROR!
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearVariasSkillsYListarTodasMantieneCantidad -- Time elapsed: 1.063 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
 	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearVariasSkillsYListarTodasMantieneCantidad(SkillServiceRobustnessSqliteTest.java:312)
@@ -18,16 +18,15 @@ java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConLevelNullFunciona -- Time elapsed: 0.003 s <<< ERROR!
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConLevelNullFunciona -- Time elapsed: 1.645 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearEmpleadoBase(SkillServiceRobustnessSqliteTest.java:41)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConLevelNullFunciona(SkillServiceRobustnessSqliteTest.java:232)
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConLevelNullFunciona(SkillServiceRobustnessSqliteTest.java:233)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConEmpleadoInexistenteFalla -- Time elapsed: 0.003 s <<< ERROR!
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConEmpleadoInexistenteFalla -- Time elapsed: 1.123 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
 	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConEmpleadoInexistenteFalla(SkillServiceRobustnessSqliteTest.java:220)
@@ -35,25 +34,23 @@ java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarSinAsignarCuandoTodasEstanAsignadasDevuelveVacio -- Time elapsed: 0.003 s <<< ERROR!
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarSinAsignarCuandoTodasEstanAsignadasDevuelveVacio -- Time elapsed: 1.438 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearEmpleadoBase(SkillServiceRobustnessSqliteTest.java:41)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarSinAsignarCuandoTodasEstanAsignadasDevuelveVacio(SkillServiceRobustnessSqliteTest.java:292)
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarSinAsignarCuandoTodasEstanAsignadasDevuelveVacio(SkillServiceRobustnessSqliteTest.java:293)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConSkillInexistenteFalla -- Time elapsed: 0.002 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearEmpleadoBase(SkillServiceRobustnessSqliteTest.java:41)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConSkillInexistenteFalla(SkillServiceRobustnessSqliteTest.java:226)
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConSkillInexistenteFalla -- Time elapsed: 1.401 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'asignarEmpleado'
+	at com.ejemplo.service.SkillService.asignarEmpleado(SkillService.java:62)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConSkillInexistenteFalla(SkillServiceRobustnessSqliteTest.java:227)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreVacioEnVariantes(String)[1] -- Time elapsed: 0.003 s <<< ERROR!
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreVacioEnVariantes(String)[1] -- Time elapsed: 1.075 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
 	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreVacioEnVariantes(SkillServiceRobustnessSqliteTest.java:63)
@@ -97,7 +94,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreVacioEnVariantes(String)[2] -- Time elapsed: 0.003 s <<< ERROR!
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreVacioEnVariantes(String)[2] -- Time elapsed: 1.044 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
 	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreVacioEnVariantes(SkillServiceRobustnessSqliteTest.java:63)
@@ -141,7 +138,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreVacioEnVariantes(String)[3] -- Time elapsed: 0.004 s <<< ERROR!
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreVacioEnVariantes(String)[3] -- Time elapsed: 1.060 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
 	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreVacioEnVariantes(SkillServiceRobustnessSqliteTest.java:63)
@@ -185,7 +182,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreVacioEnVariantes(String)[4] -- Time elapsed: 0.003 s <<< ERROR!
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreVacioEnVariantes(String)[4] -- Time elapsed: 1.041 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
 	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreVacioEnVariantes(SkillServiceRobustnessSqliteTest.java:63)
@@ -229,7 +226,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillInexistente -- Time elapsed: 0.003 s <<< ERROR!
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillInexistente -- Time elapsed: 1.568 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'actualizar'
 	at com.ejemplo.service.SkillService.actualizar(SkillService.java:44)
 	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillInexistente(SkillServiceRobustnessSqliteTest.java:125)
@@ -237,7 +234,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'actualizar'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillConCategoriaNula -- Time elapsed: 0.003 s <<< ERROR!
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillConCategoriaNula -- Time elapsed: 1.152 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
 	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillConCategoriaNula(SkillServiceRobustnessSqliteTest.java:138)
@@ -245,16 +242,15 @@ java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarSinAsignarConVariasNoAsignadasDevuelveCantidadCorrecta -- Time elapsed: 0.002 s <<< ERROR!
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarSinAsignarConVariasNoAsignadasDevuelveCantidadCorrecta -- Time elapsed: 1.568 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearEmpleadoBase(SkillServiceRobustnessSqliteTest.java:41)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarSinAsignarConVariasNoAsignadasDevuelveCantidadCorrecta(SkillServiceRobustnessSqliteTest.java:302)
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarSinAsignarConVariasNoAsignadasDevuelveCantidadCorrecta(SkillServiceRobustnessSqliteTest.java:303)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConIdDuplicado -- Time elapsed: 0.002 s <<< ERROR!
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConIdDuplicado -- Time elapsed: 1.604 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
 	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConIdDuplicado(SkillServiceRobustnessSqliteTest.java:75)
@@ -262,7 +258,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConIdNulo -- Time elapsed: 0.003 s <<< ERROR!
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConIdNulo -- Time elapsed: 1.284 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
 	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConIdNulo(SkillServiceRobustnessSqliteTest.java:55)
@@ -270,7 +266,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.contarEmpleadosConSkillNullEsCero -- Time elapsed: 0.002 s <<< ERROR!
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.contarEmpleadosConSkillNullEsCero -- Time elapsed: 1.389 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'contarEmpleadosConSkill'
 	at com.ejemplo.service.SkillService.contarEmpleadosConSkill(SkillService.java:74)
 	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.contarEmpleadosConSkillNullEsCero(SkillServiceRobustnessSqliteTest.java:271)
@@ -278,7 +274,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'contarEmpleadosCo
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillConIdNulo -- Time elapsed: 0.002 s <<< ERROR!
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillConIdNulo -- Time elapsed: 1.166 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'actualizar'
 	at com.ejemplo.service.SkillService.actualizar(SkillService.java:44)
 	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillConIdNulo(SkillServiceRobustnessSqliteTest.java:120)
@@ -286,7 +282,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'actualizar'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.buscarPorIdInexistenteDevuelveNull -- Time elapsed: 0.002 s <<< ERROR!
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.buscarPorIdInexistenteDevuelveNull -- Time elapsed: 1.255 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'buscarPorId'
 	at com.ejemplo.service.SkillService.buscarPorId(SkillService.java:32)
 	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.buscarPorIdInexistenteDevuelveNull(SkillServiceRobustnessSqliteTest.java:108)
@@ -294,7 +290,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'buscarPorId'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillConNombreDuplicadoExacto -- Time elapsed: 0.002 s <<< ERROR!
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillConNombreDuplicadoExacto -- Time elapsed: 1.228 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
 	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillConNombreDuplicadoExacto(SkillServiceRobustnessSqliteTest.java:146)
@@ -302,7 +298,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorCategoriaSinCoincidenciasDevuelveVacio -- Time elapsed: 0.003 s <<< ERROR!
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorCategoriaSinCoincidenciasDevuelveVacio -- Time elapsed: 1.132 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
 	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorCategoriaSinCoincidenciasDevuelveVacio(SkillServiceRobustnessSqliteTest.java:196)
@@ -310,7 +306,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorEmpleadoNullDevuelveVacio -- Time elapsed: 0.004 s <<< ERROR!
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorEmpleadoNullDevuelveVacio -- Time elapsed: 1.314 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'listarPorEmpleado'
 	at com.ejemplo.service.SkillService.listarPorEmpleado(SkillService.java:68)
 	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorEmpleadoNullDevuelveVacio(SkillServiceRobustnessSqliteTest.java:248)
@@ -318,25 +314,23 @@ java.lang.UnsupportedOperationException: Unimplemented method 'listarPorEmpleado
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.permiteAsignarDosSkillsAUnMismoEmpleado -- Time elapsed: 0.003 s <<< ERROR!
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.permiteAsignarDosSkillsAUnMismoEmpleado -- Time elapsed: 1.911 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearEmpleadoBase(SkillServiceRobustnessSqliteTest.java:41)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.permiteAsignarDosSkillsAUnMismoEmpleado(SkillServiceRobustnessSqliteTest.java:337)
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.permiteAsignarDosSkillsAUnMismoEmpleado(SkillServiceRobustnessSqliteTest.java:338)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorEmpleadoSinAsignacionesDevuelveVacio -- Time elapsed: 0.004 s <<< ERROR!
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorEmpleadoSinAsignacionesDevuelveVacio -- Time elapsed: 1.930 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearEmpleadoBase(SkillServiceRobustnessSqliteTest.java:41)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorEmpleadoSinAsignacionesDevuelveVacio(SkillServiceRobustnessSqliteTest.java:253)
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorEmpleadoSinAsignacionesDevuelveVacio(SkillServiceRobustnessSqliteTest.java:254)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarTodasTrasEliminarUnaReduceCantidad -- Time elapsed: 0.003 s <<< ERROR!
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarTodasTrasEliminarUnaReduceCantidad -- Time elapsed: 1.545 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
 	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarTodasTrasEliminarUnaReduceCantidad(SkillServiceRobustnessSqliteTest.java:320)
@@ -344,7 +338,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.actualizarSkillNullDevuelveFalse -- Time elapsed: 0.003 s <<< ERROR!
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.actualizarSkillNullDevuelveFalse -- Time elapsed: 1.278 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'actualizar'
 	at com.ejemplo.service.SkillService.actualizar(SkillService.java:44)
 	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.actualizarSkillNullDevuelveFalse(SkillServiceRobustnessSqliteTest.java:113)
@@ -352,7 +346,7 @@ java.lang.UnsupportedOperationException: Unimplemented method 'actualizar'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreDuplicadoIgnorandoEspacios -- Time elapsed: 0.003 s <<< ERROR!
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreDuplicadoIgnorandoEspacios -- Time elapsed: 1.193 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
 	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreDuplicadoIgnorandoEspacios(SkillServiceRobustnessSqliteTest.java:89)
@@ -360,16 +354,15 @@ java.lang.UnsupportedOperationException: Unimplemented method 'crear'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.permiteAsignarMismaSkillADosEmpleadosDistintos -- Time elapsed: 0.003 s <<< ERROR!
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.permiteAsignarMismaSkillADosEmpleadosDistintos -- Time elapsed: 1.804 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearEmpleadoBase(SkillServiceRobustnessSqliteTest.java:41)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.permiteAsignarMismaSkillADosEmpleadosDistintos(SkillServiceRobustnessSqliteTest.java:328)
+	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.permiteAsignarMismaSkillADosEmpleadosDistintos(SkillServiceRobustnessSqliteTest.java:329)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.buscarPorIdNullDevuelveNull -- Time elapsed: 0.002 s <<< ERROR!
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.buscarPorIdNullDevuelveNull -- Time elapsed: 0.861 s <<< ERROR!
 java.lang.UnsupportedOperationException: Unimplemented method 'buscarPorId'
 	at com.ejemplo.service.SkillService.buscarPorId(SkillService.java:32)
 	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.buscarPorIdNullDevuelveNull(SkillServiceRobustnessSqliteTest.java:103)
@@ -377,150 +370,363 @@ java.lang.UnsupportedOperationException: Unimplemented method 'buscarPorId'
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.contarEmpleadosConSkillSinAsignacionesEsCero -- Time elapsed: 0.002 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.contarEmpleadosConSkillSinAsignacionesEsCero(SkillServiceRobustnessSqliteTest.java:281)
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.contarEmpleadosConSkillSinAsignacionesEsCero -- Time elapsed: 0.923 s <<< ERROR!
+java.lang.RuntimeException: No se pudo insertar rol
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:34)
+	at com.ejemplo.support.TestDatabaseSupport.insertarCatalogosBase(TestDatabaseSupport.java:20)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.setUp(SkillServiceRobustnessSqliteTest.java:32)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.sqlite.SQLiteException: [SQLITE_READONLY_DBMOVED] The database file has been moved since it was opened (attempt to write a readonly database)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.execute(DB.java:988)
+	at org.sqlite.core.DB.executeUpdate(DB.java:1054)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$executeLargeUpdate$2(JDBC3PreparedStatement.java:129)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeLargeUpdate(JDBC3PreparedStatement.java:124)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:105)
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:32)
+	... 5 more
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorEmpleadoDevuelveSkillsOrdenadasPorId -- Time elapsed: 0.002 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearEmpleadoBase(SkillServiceRobustnessSqliteTest.java:41)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorEmpleadoDevuelveSkillsOrdenadasPorId(SkillServiceRobustnessSqliteTest.java:260)
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorEmpleadoDevuelveSkillsOrdenadasPorId -- Time elapsed: 0.243 s <<< ERROR!
+java.lang.RuntimeException: No se pudo insertar rol
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:34)
+	at com.ejemplo.support.TestDatabaseSupport.insertarCatalogosBase(TestDatabaseSupport.java:17)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.setUp(SkillServiceRobustnessSqliteTest.java:32)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.sqlite.SQLiteException: [SQLITE_IOERR_DELETE_NOENT] The file being deleted does not exist (disk I/O error)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.execute(DB.java:988)
+	at org.sqlite.core.DB.executeUpdate(DB.java:1054)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$executeLargeUpdate$2(JDBC3PreparedStatement.java:129)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeLargeUpdate(JDBC3PreparedStatement.java:124)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:105)
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:32)
+	... 5 more
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearSkillNullDevuelveFalse -- Time elapsed: 0.002 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearSkillNullDevuelveFalse(SkillServiceRobustnessSqliteTest.java:48)
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearSkillNullDevuelveFalse -- Time elapsed: 0.172 s <<< ERROR!
+java.lang.RuntimeException: No se pudo insertar rol
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:34)
+	at com.ejemplo.support.TestDatabaseSupport.insertarCatalogosBase(TestDatabaseSupport.java:17)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.setUp(SkillServiceRobustnessSqliteTest.java:32)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.sqlite.SQLiteException: [SQLITE_IOERR_DELETE_NOENT] The file being deleted does not exist (disk I/O error)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.execute(DB.java:988)
+	at org.sqlite.core.DB.executeUpdate(DB.java:1054)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$executeLargeUpdate$2(JDBC3PreparedStatement.java:129)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeLargeUpdate(JDBC3PreparedStatement.java:124)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:105)
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:32)
+	... 5 more
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.actualizarSkillHaceTrimDelNombre -- Time elapsed: 0.003 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.actualizarSkillHaceTrimDelNombre(SkillServiceRobustnessSqliteTest.java:164)
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.actualizarSkillHaceTrimDelNombre -- Time elapsed: 0.428 s <<< ERROR!
+java.lang.RuntimeException: No se pudo insertar rol
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:34)
+	at com.ejemplo.support.TestDatabaseSupport.insertarCatalogosBase(TestDatabaseSupport.java:19)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.setUp(SkillServiceRobustnessSqliteTest.java:32)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.sqlite.SQLiteException: [SQLITE_READONLY_DBMOVED] The database file has been moved since it was opened (attempt to write a readonly database)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.execute(DB.java:988)
+	at org.sqlite.core.DB.executeUpdate(DB.java:1054)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$executeLargeUpdate$2(JDBC3PreparedStatement.java:129)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeLargeUpdate(JDBC3PreparedStatement.java:124)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:105)
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:32)
+	... 5 more
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillConNombreVacio -- Time elapsed: 0.003 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillConNombreVacio(SkillServiceRobustnessSqliteTest.java:130)
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillConNombreVacio -- Time elapsed: 0.347 s <<< ERROR!
+java.lang.RuntimeException: No se pudo insertar rol
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:34)
+	at com.ejemplo.support.TestDatabaseSupport.insertarCatalogosBase(TestDatabaseSupport.java:17)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.setUp(SkillServiceRobustnessSqliteTest.java:32)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.sqlite.SQLiteException: [SQLITE_IOERR_DELETE_NOENT] The file being deleted does not exist (disk I/O error)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.execute(DB.java:988)
+	at org.sqlite.core.DB.executeUpdate(DB.java:1054)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$executeLargeUpdate$2(JDBC3PreparedStatement.java:129)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeLargeUpdate(JDBC3PreparedStatement.java:124)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:105)
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:32)
+	... 5 more
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorCategoriaConVariasSkillsDevuelveTodas -- Time elapsed: 0.002 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorCategoriaConVariasSkillsDevuelveTodas(SkillServiceRobustnessSqliteTest.java:202)
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorCategoriaConVariasSkillsDevuelveTodas -- Time elapsed: 0.196 s <<< ERROR!
+java.lang.RuntimeException: No se pudo insertar rol
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:34)
+	at com.ejemplo.support.TestDatabaseSupport.insertarCatalogosBase(TestDatabaseSupport.java:17)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.setUp(SkillServiceRobustnessSqliteTest.java:32)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.sqlite.SQLiteException: [SQLITE_IOERR_DELETE_NOENT] The file being deleted does not exist (disk I/O error)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.execute(DB.java:988)
+	at org.sqlite.core.DB.executeUpdate(DB.java:1054)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$executeLargeUpdate$2(JDBC3PreparedStatement.java:129)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeLargeUpdate(JDBC3PreparedStatement.java:124)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:105)
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:32)
+	... 5 more
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.eliminarSkillAsignadaFallaPorIntegridadReferencial -- Time elapsed: 0.003 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearEmpleadoBase(SkillServiceRobustnessSqliteTest.java:41)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.eliminarSkillAsignadaFallaPorIntegridadReferencial(SkillServiceRobustnessSqliteTest.java:183)
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.eliminarSkillAsignadaFallaPorIntegridadReferencial -- Time elapsed: 0.249 s <<< ERROR!
+java.lang.RuntimeException: No se pudo insertar rol
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:34)
+	at com.ejemplo.support.TestDatabaseSupport.insertarCatalogosBase(TestDatabaseSupport.java:17)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.setUp(SkillServiceRobustnessSqliteTest.java:32)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.sqlite.SQLiteException: [SQLITE_IOERR_DELETE_NOENT] The file being deleted does not exist (disk I/O error)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.execute(DB.java:988)
+	at org.sqlite.core.DB.executeUpdate(DB.java:1054)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$executeLargeUpdate$2(JDBC3PreparedStatement.java:129)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeLargeUpdate(JDBC3PreparedStatement.java:124)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:105)
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:32)
+	... 5 more
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConCategoriaNula -- Time elapsed: 0.002 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConCategoriaNula(SkillServiceRobustnessSqliteTest.java:70)
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConCategoriaNula -- Time elapsed: 0.275 s <<< ERROR!
+java.lang.RuntimeException: No se pudo insertar rol
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:34)
+	at com.ejemplo.support.TestDatabaseSupport.insertarCatalogosBase(TestDatabaseSupport.java:17)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.setUp(SkillServiceRobustnessSqliteTest.java:32)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.sqlite.SQLiteException: [SQLITE_IOERR_DELETE_NOENT] The file being deleted does not exist (disk I/O error)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.execute(DB.java:988)
+	at org.sqlite.core.DB.executeUpdate(DB.java:1054)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$executeLargeUpdate$2(JDBC3PreparedStatement.java:129)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeLargeUpdate(JDBC3PreparedStatement.java:124)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:105)
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:32)
+	... 5 more
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarSinAsignarSinSkillsDevuelveVacio -- Time elapsed: 0.002 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'listarSinAsignar'
-	at com.ejemplo.service.SkillService.listarSinAsignar(SkillService.java:80)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarSinAsignarSinSkillsDevuelveVacio(SkillServiceRobustnessSqliteTest.java:287)
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarSinAsignarSinSkillsDevuelveVacio -- Time elapsed: 0.213 s <<< ERROR!
+java.lang.RuntimeException: No se pudo insertar rol
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:34)
+	at com.ejemplo.support.TestDatabaseSupport.insertarCatalogosBase(TestDatabaseSupport.java:18)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.setUp(SkillServiceRobustnessSqliteTest.java:32)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.sqlite.SQLiteException: [SQLITE_READONLY_DBMOVED] The database file has been moved since it was opened (attempt to write a readonly database)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.execute(DB.java:988)
+	at org.sqlite.core.DB.executeUpdate(DB.java:1054)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$executeLargeUpdate$2(JDBC3PreparedStatement.java:129)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeLargeUpdate(JDBC3PreparedStatement.java:124)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:105)
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:32)
+	... 5 more
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearSkillHaceTrimDelNombre -- Time elapsed: 0.003 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearSkillHaceTrimDelNombre(SkillServiceRobustnessSqliteTest.java:97)
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearSkillHaceTrimDelNombre -- Time elapsed: 0.299 s <<< ERROR!
+java.lang.RuntimeException: No se pudo insertar rol
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:34)
+	at com.ejemplo.support.TestDatabaseSupport.insertarCatalogosBase(TestDatabaseSupport.java:18)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.setUp(SkillServiceRobustnessSqliteTest.java:32)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.sqlite.SQLiteException: [SQLITE_READONLY_DBMOVED] The database file has been moved since it was opened (attempt to write a readonly database)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.execute(DB.java:988)
+	at org.sqlite.core.DB.executeUpdate(DB.java:1054)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$executeLargeUpdate$2(JDBC3PreparedStatement.java:129)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeLargeUpdate(JDBC3PreparedStatement.java:124)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:105)
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:32)
+	... 5 more
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.eliminarSkillInexistenteDevuelveFalse -- Time elapsed: 0.003 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'eliminar'
-	at com.ejemplo.service.SkillService.eliminar(SkillService.java:50)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.eliminarSkillInexistenteDevuelveFalse(SkillServiceRobustnessSqliteTest.java:178)
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.eliminarSkillInexistenteDevuelveFalse -- Time elapsed: 0.217 s <<< ERROR!
+java.lang.RuntimeException: No se pudo insertar rol
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:34)
+	at com.ejemplo.support.TestDatabaseSupport.insertarCatalogosBase(TestDatabaseSupport.java:17)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.setUp(SkillServiceRobustnessSqliteTest.java:32)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.sqlite.SQLiteException: [SQLITE_IOERR_DELETE_NOENT] The file being deleted does not exist (disk I/O error)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.execute(DB.java:988)
+	at org.sqlite.core.DB.executeUpdate(DB.java:1054)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$executeLargeUpdate$2(JDBC3PreparedStatement.java:129)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeLargeUpdate(JDBC3PreparedStatement.java:124)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:105)
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:32)
+	... 5 more
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoHaceTrimDelLevel -- Time elapsed: 0.003 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.crearEmpleadoBase(SkillServiceRobustnessSqliteTest.java:41)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoHaceTrimDelLevel(SkillServiceRobustnessSqliteTest.java:240)
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoHaceTrimDelLevel -- Time elapsed: 0.175 s <<< ERROR!
+java.lang.RuntimeException: No se pudo insertar rol
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:34)
+	at com.ejemplo.support.TestDatabaseSupport.insertarCatalogosBase(TestDatabaseSupport.java:17)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.setUp(SkillServiceRobustnessSqliteTest.java:32)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.sqlite.SQLiteException: [SQLITE_IOERR_DELETE_NOENT] The file being deleted does not exist (disk I/O error)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.execute(DB.java:988)
+	at org.sqlite.core.DB.executeUpdate(DB.java:1054)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$executeLargeUpdate$2(JDBC3PreparedStatement.java:129)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeLargeUpdate(JDBC3PreparedStatement.java:124)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:105)
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:32)
+	... 5 more
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorCategoriaNullDevuelveVacio -- Time elapsed: 0.003 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'listarPorCategoria'
-	at com.ejemplo.service.SkillService.listarPorCategoria(SkillService.java:56)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorCategoriaNullDevuelveVacio(SkillServiceRobustnessSqliteTest.java:191)
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.listarPorCategoriaNullDevuelveVacio -- Time elapsed: 0.276 s <<< ERROR!
+java.lang.RuntimeException: No se pudo insertar rol
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:34)
+	at com.ejemplo.support.TestDatabaseSupport.insertarCatalogosBase(TestDatabaseSupport.java:17)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.setUp(SkillServiceRobustnessSqliteTest.java:32)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.sqlite.SQLiteException: [SQLITE_IOERR_DELETE_NOENT] The file being deleted does not exist (disk I/O error)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.execute(DB.java:988)
+	at org.sqlite.core.DB.executeUpdate(DB.java:1054)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$executeLargeUpdate$2(JDBC3PreparedStatement.java:129)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeLargeUpdate(JDBC3PreparedStatement.java:124)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:105)
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:32)
+	... 5 more
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.contarEmpleadosConSkillInexistenteEsCero -- Time elapsed: 0.003 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'contarEmpleadosConSkill'
-	at com.ejemplo.service.SkillService.contarEmpleadosConSkill(SkillService.java:74)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.contarEmpleadosConSkillInexistenteEsCero(SkillServiceRobustnessSqliteTest.java:276)
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.contarEmpleadosConSkillInexistenteEsCero -- Time elapsed: 0.878 s <<< ERROR!
+java.lang.RuntimeException: No se pudo insertar categoria
+	at com.ejemplo.support.TestDatabaseSupport.insertarCategoria(TestDatabaseSupport.java:45)
+	at com.ejemplo.support.TestDatabaseSupport.insertarCatalogosBase(TestDatabaseSupport.java:21)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.setUp(SkillServiceRobustnessSqliteTest.java:32)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.sqlite.SQLiteException: [SQLITE_READONLY_DBMOVED] The database file has been moved since it was opened (attempt to write a readonly database)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.execute(DB.java:988)
+	at org.sqlite.core.DB.executeUpdate(DB.java:1054)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$executeLargeUpdate$2(JDBC3PreparedStatement.java:129)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeLargeUpdate(JDBC3PreparedStatement.java:124)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:105)
+	at com.ejemplo.support.TestDatabaseSupport.insertarCategoria(TestDatabaseSupport.java:43)
+	... 5 more
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConEmployeeNullFalla -- Time elapsed: 0.003 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'asignarEmpleado'
-	at com.ejemplo.service.SkillService.asignarEmpleado(SkillService.java:62)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConEmployeeNullFalla(SkillServiceRobustnessSqliteTest.java:210)
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.asignarEmpleadoConEmployeeNullFalla -- Time elapsed: 0.250 s <<< ERROR!
+java.lang.RuntimeException: No se pudo insertar rol
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:34)
+	at com.ejemplo.support.TestDatabaseSupport.insertarCatalogosBase(TestDatabaseSupport.java:17)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.setUp(SkillServiceRobustnessSqliteTest.java:32)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.sqlite.SQLiteException: [SQLITE_IOERR_DELETE_NOENT] The file being deleted does not exist (disk I/O error)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.execute(DB.java:988)
+	at org.sqlite.core.DB.executeUpdate(DB.java:1054)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$executeLargeUpdate$2(JDBC3PreparedStatement.java:129)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeLargeUpdate(JDBC3PreparedStatement.java:124)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:105)
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:32)
+	... 5 more
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.eliminarSkillNullDevuelveFalse -- Time elapsed: 0.003 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'eliminar'
-	at com.ejemplo.service.SkillService.eliminar(SkillService.java:50)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.eliminarSkillNullDevuelveFalse(SkillServiceRobustnessSqliteTest.java:173)
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.eliminarSkillNullDevuelveFalse -- Time elapsed: 0.197 s <<< ERROR!
+java.lang.RuntimeException: No se pudo insertar rol
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:34)
+	at com.ejemplo.support.TestDatabaseSupport.insertarCatalogosBase(TestDatabaseSupport.java:17)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.setUp(SkillServiceRobustnessSqliteTest.java:32)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.sqlite.SQLiteException: [SQLITE_IOERR_DELETE_NOENT] The file being deleted does not exist (disk I/O error)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.execute(DB.java:988)
+	at org.sqlite.core.DB.executeUpdate(DB.java:1054)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$executeLargeUpdate$2(JDBC3PreparedStatement.java:129)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeLargeUpdate(JDBC3PreparedStatement.java:124)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:105)
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:32)
+	... 5 more
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreDuplicadoIgnorandoMayusculas -- Time elapsed: 0.002 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreDuplicadoIgnorandoMayusculas(SkillServiceRobustnessSqliteTest.java:82)
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteCrearSkillConNombreDuplicadoIgnorandoMayusculas -- Time elapsed: 0.581 s <<< ERROR!
+java.lang.RuntimeException: No se pudo insertar rol
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:34)
+	at com.ejemplo.support.TestDatabaseSupport.insertarCatalogosBase(TestDatabaseSupport.java:19)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.setUp(SkillServiceRobustnessSqliteTest.java:32)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.sqlite.SQLiteException: [SQLITE_READONLY_DBMOVED] The database file has been moved since it was opened (attempt to write a readonly database)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.execute(DB.java:988)
+	at org.sqlite.core.DB.executeUpdate(DB.java:1054)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$executeLargeUpdate$2(JDBC3PreparedStatement.java:129)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeLargeUpdate(JDBC3PreparedStatement.java:124)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:105)
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:32)
+	... 5 more
 
-com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillConNombreDuplicadoIgnorandoMayusculas -- Time elapsed: 0.003 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.SkillService.crear(SkillService.java:26)
-	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillConNombreDuplicadoIgnorandoMayusculas(SkillServiceRobustnessSqliteTest.java:155)
+com.ejemplo.service.SkillServiceRobustnessSqliteTest.noPermiteActualizarSkillConNombreDuplicadoIgnorandoMayusculas -- Time elapsed: 0.201 s <<< ERROR!
+java.lang.RuntimeException: No se pudo insertar rol
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:34)
+	at com.ejemplo.support.TestDatabaseSupport.insertarCatalogosBase(TestDatabaseSupport.java:17)
+	at com.ejemplo.service.SkillServiceRobustnessSqliteTest.setUp(SkillServiceRobustnessSqliteTest.java:32)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.sqlite.SQLiteException: [SQLITE_IOERR_DELETE_NOENT] The file being deleted does not exist (disk I/O error)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.execute(DB.java:988)
+	at org.sqlite.core.DB.executeUpdate(DB.java:1054)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$executeLargeUpdate$2(JDBC3PreparedStatement.java:129)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeLargeUpdate(JDBC3PreparedStatement.java:124)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:105)
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:32)
+	... 5 more
 

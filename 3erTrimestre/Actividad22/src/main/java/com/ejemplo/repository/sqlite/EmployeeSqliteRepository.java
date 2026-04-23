@@ -122,7 +122,7 @@ public class EmployeeSqliteRepository extends SQLiteConnectionManager implements
         try {
             connection = getConnection();
             PreparedStatement sentencia = connection.prepareStatement(
-                    "UPDATE employee SET name=?, surname=?, starts_date=?, reports_to=?, rol_id=? WHERE id=?");
+                    "UPDATE employee SET name = ?, surname = ?, start_date = ?, reports_to = ?, rol_id = ? WHERE id = ?");
             
             sentencia.setString(1, employee.getName());
             sentencia.setString(2, employee.getSurname());
@@ -157,8 +157,7 @@ public class EmployeeSqliteRepository extends SQLiteConnectionManager implements
             PreparedStatement sentencia = connection.prepareStatement("DELETE FROM employee WHERE id=?");
             sentencia.setInt(1, id);
 
-            sentencia.execute();
-            return true;
+            return sentencia.executeUpdate() == 1;
 
         } catch (Exception e) {
             System.err.println("Error borrando el empleado" + e);
@@ -169,5 +168,4 @@ public class EmployeeSqliteRepository extends SQLiteConnectionManager implements
 
         }
     }
-
 }

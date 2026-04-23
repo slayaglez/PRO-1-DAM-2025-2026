@@ -1,192 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.ejemplo.service.EmployeeServiceSqliteTest" time="0.044" tests="15" errors="15" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.ejemplo.service.EmployeeServiceSqliteTest" time="18.514" tests="15" errors="5" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/jpexposito/Documents/New project/employee-skills-sqlite/target/test-classes:/Users/jpexposito/Documents/New project/employee-skills-sqlite/target/classes:/Users/jpexposito/.m2/repository/org/xerial/sqlite-jdbc/3.45.3.0/sqlite-jdbc-3.45.3.0.jar:/Users/jpexposito/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/jpexposito/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/jpexposito/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/jpexposito/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/jpexposito/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/jpexposito/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/jpexposito/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/jpexposito/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/jpexposito/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
-    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="java.class.path" value="/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/target/test-classes:/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/target/classes:/home/dam/.m2/repository/org/xerial/sqlite-jdbc/3.45.3.0/sqlite-jdbc-3.45.3.0.jar:/home/dam/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/dam/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/dam/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/dam/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/dam/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
     <property name="user.timezone" value="Atlantic/Canary"/>
-    <property name="os.name" value="Mac OS X"/>
+    <property name="os.name" value="Linux"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
-    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk@17/17.0.17/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/jpexposito/Documents/New project/employee-skills-sqlite/target/surefire/surefirebooter-20260421200224710_3.jar /Users/jpexposito/Documents/New project/employee-skills-sqlite/target/surefire 2026-04-21T20-02-24_677-jvmRun1 surefire-20260421200224710_1tmp surefire_0-20260421200224710_2tmp"/>
-    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/target/surefire/surefirebooter-20260423181402324_3.jar /home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/target/surefire 2026-04-23T18-14-02_208-jvmRun1 surefire-20260423181402324_1tmp surefire_0-20260423181402324_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/jpexposito/Documents/New project/employee-skills-sqlite/target/test-classes:/Users/jpexposito/Documents/New project/employee-skills-sqlite/target/classes:/Users/jpexposito/.m2/repository/org/xerial/sqlite-jdbc/3.45.3.0/sqlite-jdbc-3.45.3.0.jar:/Users/jpexposito/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/jpexposito/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/jpexposito/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/jpexposito/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/jpexposito/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/jpexposito/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/jpexposito/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/jpexposito/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/jpexposito/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
+    <property name="surefire.test.class.path" value="/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/target/test-classes:/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/target/classes:/home/dam/.m2/repository/org/xerial/sqlite-jdbc/3.45.3.0/sqlite-jdbc-3.45.3.0.jar:/home/dam/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/dam/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/dam/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/dam/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/dam/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/dam/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="/Users/jpexposito"/>
+    <property name="user.home" value="/home/dam"/>
     <property name="user.language" value="es"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2025-10-21"/>
-    <property name="java.home" value="/opt/homebrew/Cellar/openjdk@17/17.0.17/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="/usr/lib/jvm/java-17-openjdk-amd64"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/Users/jpexposito/Documents/New project/employee-skills-sqlite"/>
+    <property name="basedir" value="/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/Users/jpexposito/Documents/New project/employee-skills-sqlite/target/surefire/surefirebooter-20260421200224710_3.jar"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/target/surefire/surefirebooter-20260423181402324_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="java.runtime.version" value="17.0.17+0"/>
-    <property name="user.name" value="jpexposito"/>
+    <property name="java.runtime.version" value="17.0.15+6-Ubuntu-0ubuntu124.04"/>
+    <property name="user.name" value="dam"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="26.4.1"/>
+    <property name="os.version" value="6.8.0-60-generic"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="java.vendor.version" value="Homebrew"/>
-    <property name="localRepository" value="/Users/jpexposito/.m2/repository"/>
-    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
-    <property name="java.io.tmpdir" value="/var/folders/q5/g2wxn8j93dd20yscy5pqcnt00000gn/T/"/>
-    <property name="java.version" value="17.0.17"/>
-    <property name="user.dir" value="/Users/jpexposito/Documents/New project/employee-skills-sqlite"/>
-    <property name="os.arch" value="aarch64"/>
+    <property name="localRepository" value="/home/dam/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-17"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="17.0.15"/>
+    <property name="user.dir" value="/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22"/>
+    <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="native.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/jpexposito/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.vendor" value="Homebrew"/>
-    <property name="java.vm.version" value="17.0.17+0"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="17.0.15+6-Ubuntu-0ubuntu124.04"/>
     <property name="java.specification.maintenance.version" value="1"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="buscarPorApellidoIgnoraMayusculas" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="0.004">
-    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.buscarPorApellidoIgnoraMayusculas(EmployeeServiceSqliteTest.java:132)
+  <testcase name="buscarPorApellidoIgnoraMayusculas" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="0.348">
+    <error message="No se pudo insertar rol" type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: No se pudo insertar rol
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:34)
+	at com.ejemplo.support.TestDatabaseSupport.insertarCatalogosBase(TestDatabaseSupport.java:17)
+	at com.ejemplo.service.EmployeeServiceSqliteTest.setUp(EmployeeServiceSqliteTest.java:27)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.sqlite.SQLiteException: [SQLITE_IOERR_DELETE_NOENT] The file being deleted does not exist (disk I/O error)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.execute(DB.java:988)
+	at org.sqlite.core.DB.executeUpdate(DB.java:1054)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$executeLargeUpdate$2(JDBC3PreparedStatement.java:129)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeLargeUpdate(JDBC3PreparedStatement.java:124)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:105)
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:32)
+	... 5 more
+]]></error>
+  </testcase>
+  <testcase name="listarPorRolDevuelveCoincidencias" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="0.494">
+    <error message="No se pudo insertar rol" type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: No se pudo insertar rol
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:34)
+	at com.ejemplo.support.TestDatabaseSupport.insertarCatalogosBase(TestDatabaseSupport.java:18)
+	at com.ejemplo.service.EmployeeServiceSqliteTest.setUp(EmployeeServiceSqliteTest.java:27)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: rol.id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.execute(DB.java:985)
+	at org.sqlite.core.DB.executeUpdate(DB.java:1054)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$executeLargeUpdate$2(JDBC3PreparedStatement.java:129)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeLargeUpdate(JDBC3PreparedStatement.java:124)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:105)
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:32)
+	... 5 more
+]]></error>
+  </testcase>
+  <testcase name="eliminarEmpleadoExistenteFunciona" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="2.097"/>
+  <testcase name="noPermiteCrearEmpleadoConNombreNulo" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="0.943"/>
+  <testcase name="noPermiteCrearEmpleadoSinRolExistente" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="1.057">
+    <system-err><![CDATA[Error creando empleado
+]]></system-err>
+  </testcase>
+  <testcase name="restauracionDeBackupAislaLosTests" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="0.99"/>
+  <testcase name="cambiarManagerFuncionaSiExiste" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="1.576">
+    <error message="Unimplemented method &apos;cambiarManager&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'cambiarManager'
+	at com.ejemplo.service.EmployeeService.cambiarManager(EmployeeService.java:76)
+	at com.ejemplo.service.EmployeeServiceSqliteTest.cambiarManagerFuncionaSiExiste(EmployeeServiceSqliteTest.java:118)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ]]></error>
   </testcase>
-  <testcase name="listarPorRolDevuelveCoincidencias" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="0.002">
-    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.listarPorRolDevuelveCoincidencias(EmployeeServiceSqliteTest.java:98)
+  <testcase name="noPermiteCrearEmpleadoConApellidoVacio" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="1.191"/>
+  <testcase name="listarTodosEmpiezaVacio" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="1.318"/>
+  <testcase name="noPermiteCrearEmpleadoConManagerInexistente" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="1.274">
+    <system-err><![CDATA[Error creando empleado
+]]></system-err>
+  </testcase>
+  <testcase name="noPermiteActualizarEmpleadoInexistente" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="1.095">
+    <system-err><![CDATA[Error actualizando empleado
+]]></system-err>
+  </testcase>
+  <testcase name="actualizarEmpleadoExistenteFunciona" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="1.663">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
+	at com.ejemplo.service.EmployeeServiceSqliteTest.actualizarEmpleadoExistenteFunciona(EmployeeServiceSqliteTest.java:79)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></failure>
+    <system-err><![CDATA[Error actualizando empleado
+]]></system-err>
+  </testcase>
+  <testcase name="crearEmpleadoValidoFunciona" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="1.469"/>
+  <testcase name="listarManagersSoloIncluyeManagers" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="1.504">
+    <error message="Unimplemented method &apos;listarManagers&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'listarManagers'
+	at com.ejemplo.service.EmployeeService.listarManagers(EmployeeService.java:70)
+	at com.ejemplo.service.EmployeeServiceSqliteTest.listarManagersSoloIncluyeManagers(EmployeeServiceSqliteTest.java:110)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ]]></error>
   </testcase>
-  <testcase name="eliminarEmpleadoExistenteFunciona" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="0.003">
-    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.eliminarEmpleadoExistenteFunciona(EmployeeServiceSqliteTest.java:90)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-  </testcase>
-  <testcase name="noPermiteCrearEmpleadoConNombreNulo" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="0.003">
-    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.noPermiteCrearEmpleadoConNombreNulo(EmployeeServiceSqliteTest.java:44)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-  </testcase>
-  <testcase name="noPermiteCrearEmpleadoSinRolExistente" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="0.002">
-    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.noPermiteCrearEmpleadoSinRolExistente(EmployeeServiceSqliteTest.java:58)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-  </testcase>
-  <testcase name="restauracionDeBackupAislaLosTests" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="0.003">
-    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.restauracionDeBackupAislaLosTests(EmployeeServiceSqliteTest.java:139)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-  </testcase>
-  <testcase name="cambiarManagerFuncionaSiExiste" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="0.004">
-    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.cambiarManagerFuncionaSiExiste(EmployeeServiceSqliteTest.java:115)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-  </testcase>
-  <testcase name="noPermiteCrearEmpleadoConApellidoVacio" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="0.003">
-    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.noPermiteCrearEmpleadoConApellidoVacio(EmployeeServiceSqliteTest.java:51)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-  </testcase>
-  <testcase name="listarTodosEmpiezaVacio" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="0.003">
-    <error message="Unimplemented method &apos;listarTodos&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'listarTodos'
-	at com.ejemplo.service.EmployeeService.listarTodos(EmployeeService.java:37)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.listarTodosEmpiezaVacio(EmployeeServiceSqliteTest.java:70)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-  </testcase>
-  <testcase name="noPermiteCrearEmpleadoConManagerInexistente" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="0.003">
-    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.noPermiteCrearEmpleadoConManagerInexistente(EmployeeServiceSqliteTest.java:65)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-  </testcase>
-  <testcase name="noPermiteActualizarEmpleadoInexistente" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="0.003">
-    <error message="Unimplemented method &apos;actualizar&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'actualizar'
-	at com.ejemplo.service.EmployeeService.actualizar(EmployeeService.java:43)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.noPermiteActualizarEmpleadoInexistente(EmployeeServiceSqliteTest.java:85)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-  </testcase>
-  <testcase name="actualizarEmpleadoExistenteFunciona" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="0.003">
-    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.actualizarEmpleadoExistenteFunciona(EmployeeServiceSqliteTest.java:75)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-  </testcase>
-  <testcase name="crearEmpleadoValidoFunciona" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="0.002">
-    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.crearEmpleadoValidoFunciona(EmployeeServiceSqliteTest.java:36)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-  </testcase>
-  <testcase name="listarManagersSoloIncluyeManagers" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="0.003">
-    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.listarManagersSoloIncluyeManagers(EmployeeServiceSqliteTest.java:107)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-  </testcase>
-  <testcase name="contarSubordinadosFunciona" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="0.002">
-    <error message="Unimplemented method &apos;crear&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.contarSubordinadosFunciona(EmployeeServiceSqliteTest.java:124)
+  <testcase name="contarSubordinadosFunciona" classname="com.ejemplo.service.EmployeeServiceSqliteTest" time="1.471">
+    <error message="Unimplemented method &apos;contarSubordinados&apos;" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: Unimplemented method 'contarSubordinados'
+	at com.ejemplo.service.EmployeeService.contarSubordinados(EmployeeService.java:82)
+	at com.ejemplo.service.EmployeeServiceSqliteTest.contarSubordinadosFunciona(EmployeeServiceSqliteTest.java:127)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)

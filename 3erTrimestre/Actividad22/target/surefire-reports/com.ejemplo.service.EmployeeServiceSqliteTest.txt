@@ -1,123 +1,80 @@
 -------------------------------------------------------------------------------
 Test set: com.ejemplo.service.EmployeeServiceSqliteTest
 -------------------------------------------------------------------------------
-Tests run: 15, Failures: 0, Errors: 15, Skipped: 0, Time elapsed: 0.044 s <<< FAILURE! -- in com.ejemplo.service.EmployeeServiceSqliteTest
-com.ejemplo.service.EmployeeServiceSqliteTest.buscarPorApellidoIgnoraMayusculas -- Time elapsed: 0.004 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.buscarPorApellidoIgnoraMayusculas(EmployeeServiceSqliteTest.java:132)
+Tests run: 15, Failures: 1, Errors: 5, Skipped: 0, Time elapsed: 18.51 s <<< FAILURE! -- in com.ejemplo.service.EmployeeServiceSqliteTest
+com.ejemplo.service.EmployeeServiceSqliteTest.buscarPorApellidoIgnoraMayusculas -- Time elapsed: 0.348 s <<< ERROR!
+java.lang.RuntimeException: No se pudo insertar rol
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:34)
+	at com.ejemplo.support.TestDatabaseSupport.insertarCatalogosBase(TestDatabaseSupport.java:17)
+	at com.ejemplo.service.EmployeeServiceSqliteTest.setUp(EmployeeServiceSqliteTest.java:27)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.sqlite.SQLiteException: [SQLITE_IOERR_DELETE_NOENT] The file being deleted does not exist (disk I/O error)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.execute(DB.java:988)
+	at org.sqlite.core.DB.executeUpdate(DB.java:1054)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$executeLargeUpdate$2(JDBC3PreparedStatement.java:129)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeLargeUpdate(JDBC3PreparedStatement.java:124)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:105)
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:32)
+	... 5 more
+
+com.ejemplo.service.EmployeeServiceSqliteTest.listarPorRolDevuelveCoincidencias -- Time elapsed: 0.494 s <<< ERROR!
+java.lang.RuntimeException: No se pudo insertar rol
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:34)
+	at com.ejemplo.support.TestDatabaseSupport.insertarCatalogosBase(TestDatabaseSupport.java:18)
+	at com.ejemplo.service.EmployeeServiceSqliteTest.setUp(EmployeeServiceSqliteTest.java:27)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: rol.id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.execute(DB.java:985)
+	at org.sqlite.core.DB.executeUpdate(DB.java:1054)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$executeLargeUpdate$2(JDBC3PreparedStatement.java:129)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeLargeUpdate(JDBC3PreparedStatement.java:124)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:105)
+	at com.ejemplo.support.TestDatabaseSupport.insertarRol(TestDatabaseSupport.java:32)
+	... 5 more
+
+com.ejemplo.service.EmployeeServiceSqliteTest.cambiarManagerFuncionaSiExiste -- Time elapsed: 1.576 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'cambiarManager'
+	at com.ejemplo.service.EmployeeService.cambiarManager(EmployeeService.java:76)
+	at com.ejemplo.service.EmployeeServiceSqliteTest.cambiarManagerFuncionaSiExiste(EmployeeServiceSqliteTest.java:118)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.EmployeeServiceSqliteTest.listarPorRolDevuelveCoincidencias -- Time elapsed: 0.002 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.listarPorRolDevuelveCoincidencias(EmployeeServiceSqliteTest.java:98)
+com.ejemplo.service.EmployeeServiceSqliteTest.actualizarEmpleadoExistenteFunciona -- Time elapsed: 1.663 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
+	at com.ejemplo.service.EmployeeServiceSqliteTest.actualizarEmpleadoExistenteFunciona(EmployeeServiceSqliteTest.java:79)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.EmployeeServiceSqliteTest.eliminarEmpleadoExistenteFunciona -- Time elapsed: 0.003 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.eliminarEmpleadoExistenteFunciona(EmployeeServiceSqliteTest.java:90)
+com.ejemplo.service.EmployeeServiceSqliteTest.listarManagersSoloIncluyeManagers -- Time elapsed: 1.504 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'listarManagers'
+	at com.ejemplo.service.EmployeeService.listarManagers(EmployeeService.java:70)
+	at com.ejemplo.service.EmployeeServiceSqliteTest.listarManagersSoloIncluyeManagers(EmployeeServiceSqliteTest.java:110)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.ejemplo.service.EmployeeServiceSqliteTest.noPermiteCrearEmpleadoConNombreNulo -- Time elapsed: 0.003 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.noPermiteCrearEmpleadoConNombreNulo(EmployeeServiceSqliteTest.java:44)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-com.ejemplo.service.EmployeeServiceSqliteTest.noPermiteCrearEmpleadoSinRolExistente -- Time elapsed: 0.002 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.noPermiteCrearEmpleadoSinRolExistente(EmployeeServiceSqliteTest.java:58)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-com.ejemplo.service.EmployeeServiceSqliteTest.restauracionDeBackupAislaLosTests -- Time elapsed: 0.003 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.restauracionDeBackupAislaLosTests(EmployeeServiceSqliteTest.java:139)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-com.ejemplo.service.EmployeeServiceSqliteTest.cambiarManagerFuncionaSiExiste -- Time elapsed: 0.004 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.cambiarManagerFuncionaSiExiste(EmployeeServiceSqliteTest.java:115)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-com.ejemplo.service.EmployeeServiceSqliteTest.noPermiteCrearEmpleadoConApellidoVacio -- Time elapsed: 0.003 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.noPermiteCrearEmpleadoConApellidoVacio(EmployeeServiceSqliteTest.java:51)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-com.ejemplo.service.EmployeeServiceSqliteTest.listarTodosEmpiezaVacio -- Time elapsed: 0.003 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'listarTodos'
-	at com.ejemplo.service.EmployeeService.listarTodos(EmployeeService.java:37)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.listarTodosEmpiezaVacio(EmployeeServiceSqliteTest.java:70)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-com.ejemplo.service.EmployeeServiceSqliteTest.noPermiteCrearEmpleadoConManagerInexistente -- Time elapsed: 0.003 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.noPermiteCrearEmpleadoConManagerInexistente(EmployeeServiceSqliteTest.java:65)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-com.ejemplo.service.EmployeeServiceSqliteTest.noPermiteActualizarEmpleadoInexistente -- Time elapsed: 0.003 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'actualizar'
-	at com.ejemplo.service.EmployeeService.actualizar(EmployeeService.java:43)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.noPermiteActualizarEmpleadoInexistente(EmployeeServiceSqliteTest.java:85)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-com.ejemplo.service.EmployeeServiceSqliteTest.actualizarEmpleadoExistenteFunciona -- Time elapsed: 0.003 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.actualizarEmpleadoExistenteFunciona(EmployeeServiceSqliteTest.java:75)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-com.ejemplo.service.EmployeeServiceSqliteTest.crearEmpleadoValidoFunciona -- Time elapsed: 0.002 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.crearEmpleadoValidoFunciona(EmployeeServiceSqliteTest.java:36)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-com.ejemplo.service.EmployeeServiceSqliteTest.listarManagersSoloIncluyeManagers -- Time elapsed: 0.003 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.listarManagersSoloIncluyeManagers(EmployeeServiceSqliteTest.java:107)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-com.ejemplo.service.EmployeeServiceSqliteTest.contarSubordinadosFunciona -- Time elapsed: 0.002 s <<< ERROR!
-java.lang.UnsupportedOperationException: Unimplemented method 'crear'
-	at com.ejemplo.service.EmployeeService.crear(EmployeeService.java:25)
-	at com.ejemplo.service.EmployeeServiceSqliteTest.contarSubordinadosFunciona(EmployeeServiceSqliteTest.java:124)
+com.ejemplo.service.EmployeeServiceSqliteTest.contarSubordinadosFunciona -- Time elapsed: 1.471 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'contarSubordinados'
+	at com.ejemplo.service.EmployeeService.contarSubordinados(EmployeeService.java:82)
+	at com.ejemplo.service.EmployeeServiceSqliteTest.contarSubordinadosFunciona(EmployeeServiceSqliteTest.java:127)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)

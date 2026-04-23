@@ -1,15 +1,15 @@
-/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/model/Skill.java
-/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/repository/ISkillRepository.java
-/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/model/Category.java
-/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/service/IEmployeeService.java
-/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/service/ISkillService.java
-/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/model/Employee.java
-/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/repository/sqlite/EmployeeSqliteRepository.java
-/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/service/EmployeeService.java
-/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/model/Rol.java
-/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/app/Main.java
-/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/repository/IEmployeeRepository.java
-/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/repository/sqlite/SchemaRepository.java
-/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/service/SkillService.java
-/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/repository/sqlite/SkillSqliteRepository.java
-/Users/jpexposito/Documents/New project/employee-skills-sqlite/src/main/java/com/ejemplo/repository/sqlite/SQLiteConnectionManager.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/src/main/java/com/ejemplo/service/SkillService.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/src/main/java/com/ejemplo/model/Rol.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/src/main/java/com/ejemplo/service/IEmployeeService.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/src/main/java/com/ejemplo/repository/sqlite/SQLiteConnectionManager.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/src/main/java/com/ejemplo/app/Main.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/src/main/java/com/ejemplo/model/Employee.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/src/main/java/com/ejemplo/service/ISkillService.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/src/main/java/com/ejemplo/repository/sqlite/SchemaRepository.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/src/main/java/com/ejemplo/repository/sqlite/EmployeeSqliteRepository.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/src/main/java/com/ejemplo/model/Category.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/src/main/java/com/ejemplo/repository/IEmployeeRepository.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/src/main/java/com/ejemplo/service/EmployeeService.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/src/main/java/com/ejemplo/repository/ISkillRepository.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/src/main/java/com/ejemplo/model/Skill.java
+/home/dam/Escritorio/PRO-1-DAM-2025-2026/3erTrimestre/Actividad22/src/main/java/com/ejemplo/repository/sqlite/SkillSqliteRepository.java
