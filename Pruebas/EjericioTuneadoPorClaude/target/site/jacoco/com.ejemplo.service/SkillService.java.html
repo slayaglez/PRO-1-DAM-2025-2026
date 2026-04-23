@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SkillService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">employee-skills-sqlite-ejercicio</a> &gt; <a href="index.source.html" class="el_package">com.ejemplo.service</a> &gt; <span class="el_source">SkillService.java</span></div><h1>SkillService.java</h1><pre class="source lang-java linenums">package com.ejemplo.service;
+
+import com.ejemplo.model.Skill;
+import com.ejemplo.repository.ISkillRepository;
+import com.ejemplo.repository.sqlite.SQLiteConnectionManager;
+import com.ejemplo.repository.sqlite.SkillSqliteRepository;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class SkillService implements ISkillService {
+
+    private final ISkillRepository repository;
+
+<span class="fc" id="L19">    public SkillService() {</span>
+<span class="fc" id="L20">        this.repository = new SkillSqliteRepository();</span>
+<span class="fc" id="L21">    }</span>
+
+    @Override
+    public boolean crear(Skill skill) {
+<span class="fc bfc" id="L25" title="All 2 branches covered.">        if (!validarSkill(skill)) return false;</span>
+<span class="fc bfc" id="L26" title="All 2 branches covered.">        if (repository.findById(skill.getId()) != null) return false;</span>
+<span class="fc" id="L27">        skill.setName(skill.getName().trim());</span>
+<span class="fc bfc" id="L28" title="All 2 branches covered.">        if (existeNombreCaseInsensitive(skill.getName(), null)) return false;</span>
+<span class="fc" id="L29">        return repository.create(skill);</span>
+    }
+
+    @Override
+    public Skill buscarPorId(Integer id) {
+<span class="fc bfc" id="L34" title="All 2 branches covered.">        if (id == null) return null;</span>
+<span class="fc" id="L35">        return repository.findById(id);</span>
+    }
+
+    @Override
+    public List&lt;Skill&gt; listarTodas() {
+<span class="fc" id="L40">        return repository.findAll();</span>
+    }
+
+    @Override
+    public boolean actualizar(Skill skill) {
+<span class="fc bfc" id="L45" title="All 2 branches covered.">        if (!validarSkill(skill)) return false;</span>
+<span class="fc" id="L46">        skill.setName(skill.getName().trim());</span>
+        // Comprueba duplicado excluyendo el propio registro (por id)
+<span class="fc bfc" id="L48" title="All 2 branches covered.">        if (existeNombreCaseInsensitive(skill.getName(), skill.getId())) return false;</span>
+<span class="fc" id="L49">        return repository.update(skill);</span>
+    }
+
+    @Override
+    public boolean eliminar(Integer id) {
+<span class="fc bfc" id="L54" title="All 2 branches covered.">        if (id == null) return false;</span>
+<span class="fc" id="L55">        return repository.deleteById(id);</span>
+    }
+
+    @Override
+    public List&lt;Skill&gt; listarPorCategoria(Integer categoryId) {
+<span class="fc bfc" id="L60" title="All 2 branches covered.">        if (categoryId == null) return new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L61">        List&lt;Skill&gt; todas = repository.findAll();</span>
+<span class="fc" id="L62">        List&lt;Skill&gt; resultado = new ArrayList&lt;&gt;();</span>
+<span class="fc bfc" id="L63" title="All 2 branches covered.">        for (Skill s : todas) {</span>
+<span class="fc bfc" id="L64" title="All 2 branches covered.">            if (categoryId.equals(s.getCategoryId())) resultado.add(s);</span>
+<span class="fc" id="L65">        }</span>
+<span class="fc" id="L66">        return resultado;</span>
+    }
+
+    // ── Operaciones sobre la tabla intermedia employee_skill ─────────────────
+
+    @Override
+    public boolean asignarEmpleado(Integer employeeId, Integer skillId, String levelId) {
+<span class="fc bfc" id="L73" title="All 4 branches covered.">        if (employeeId == null || skillId == null) return false;</span>
+        // La PK compuesta (employee_id, skill_id) impide duplicados.
+        // Las FK impiden employee_id o skill_id inexistentes.
+        // Ambas restricciones son gestionadas por la BD y se capturan en el catch.
+<span class="fc bfc" id="L77" title="All 2 branches covered.">        String levelGuardado = levelId != null ? levelId.trim() : null;</span>
+<span class="fc" id="L78">        try (Connection connection = SQLiteConnectionManager.openConnection();</span>
+<span class="fc" id="L79">             PreparedStatement ps = connection.prepareStatement(</span>
+                     &quot;INSERT INTO employee_skill (employee_id, skill_id, level_id) VALUES (?, ?, ?)&quot;)) {
+<span class="fc" id="L81">            ps.setInt(1, employeeId);</span>
+<span class="fc" id="L82">            ps.setInt(2, skillId);</span>
+<span class="fc" id="L83">            ps.setString(3, levelGuardado);</span>
+<span class="pc bpc" id="L84" title="1 of 2 branches missed.">            return ps.executeUpdate() &gt; 0;</span>
+<span class="fc" id="L85">        } catch (SQLException e) {</span>
+<span class="fc" id="L86">            return false;</span>
+        }
+    }
+
+    @Override
+    public List&lt;Skill&gt; listarPorEmpleado(Integer employeeId) {
+<span class="fc bfc" id="L92" title="All 2 branches covered.">        if (employeeId == null) return new ArrayList&lt;&gt;();</span>
+        // INNER JOIN: devuelve solo las skills asignadas al empleado
+<span class="fc" id="L94">        try (Connection connection = SQLiteConnectionManager.openConnection();</span>
+<span class="fc" id="L95">             PreparedStatement ps = connection.prepareStatement(</span>
+                     &quot;SELECT s.id, s.name, s.category_id &quot; +
+                     &quot;FROM skill s &quot; +
+                     &quot;INNER JOIN employee_skill es ON s.id = es.skill_id &quot; +
+                     &quot;WHERE es.employee_id = ?&quot;)) {
+<span class="fc" id="L100">            ps.setInt(1, employeeId);</span>
+<span class="fc" id="L101">            try (ResultSet rs = ps.executeQuery()) {</span>
+<span class="fc" id="L102">                List&lt;Skill&gt; skills = new ArrayList&lt;&gt;();</span>
+<span class="fc bfc" id="L103" title="All 2 branches covered.">                while (rs.next()) {</span>
+<span class="fc" id="L104">                    skills.add(new Skill(</span>
+<span class="fc" id="L105">                            rs.getInt(&quot;id&quot;),</span>
+<span class="fc" id="L106">                            rs.getString(&quot;name&quot;),</span>
+<span class="fc" id="L107">                            rs.getInt(&quot;category_id&quot;)));</span>
+                }
+<span class="fc" id="L109">                return skills;</span>
+            }
+<span class="nc" id="L111">        } catch (SQLException e) {</span>
+<span class="nc" id="L112">            return new ArrayList&lt;&gt;();</span>
+        }
+    }
+
+    @Override
+    public int contarEmpleadosConSkill(Integer skillId) {
+<span class="fc bfc" id="L118" title="All 2 branches covered.">        if (skillId == null) return 0;</span>
+<span class="fc" id="L119">        try (Connection connection = SQLiteConnectionManager.openConnection();</span>
+<span class="fc" id="L120">             PreparedStatement ps = connection.prepareStatement(</span>
+                     &quot;SELECT COUNT(*) FROM employee_skill WHERE skill_id = ?&quot;)) {
+<span class="fc" id="L122">            ps.setInt(1, skillId);</span>
+<span class="fc" id="L123">            try (ResultSet rs = ps.executeQuery()) {</span>
+<span class="pc bpc" id="L124" title="1 of 2 branches missed.">                return rs.next() ? rs.getInt(1) : 0;</span>
+            }
+<span class="nc" id="L126">        } catch (SQLException e) {</span>
+<span class="nc" id="L127">            return 0;</span>
+        }
+    }
+
+    @Override
+    public List&lt;Skill&gt; listarSinAsignar() {
+        // NOT IN con subconsulta: skills cuyo id no aparece en employee_skill
+<span class="fc" id="L134">        try (Connection connection = SQLiteConnectionManager.openConnection();</span>
+<span class="fc" id="L135">             PreparedStatement ps = connection.prepareStatement(</span>
+                     &quot;SELECT id, name, category_id FROM skill &quot; +
+                     &quot;WHERE id NOT IN (SELECT DISTINCT skill_id FROM employee_skill)&quot;)) {
+<span class="fc" id="L138">            try (ResultSet rs = ps.executeQuery()) {</span>
+<span class="fc" id="L139">                List&lt;Skill&gt; skills = new ArrayList&lt;&gt;();</span>
+<span class="fc bfc" id="L140" title="All 2 branches covered.">                while (rs.next()) {</span>
+<span class="fc" id="L141">                    skills.add(new Skill(</span>
+<span class="fc" id="L142">                            rs.getInt(&quot;id&quot;),</span>
+<span class="fc" id="L143">                            rs.getString(&quot;name&quot;),</span>
+<span class="fc" id="L144">                            rs.getInt(&quot;category_id&quot;)));</span>
+                }
+<span class="fc" id="L146">                return skills;</span>
+            }
+<span class="nc" id="L148">        } catch (SQLException e) {</span>
+<span class="nc" id="L149">            return new ArrayList&lt;&gt;();</span>
+        }
+    }
+
+    private boolean validarSkill(Skill skill) {
+<span class="fc bfc" id="L154" title="All 2 branches covered.">        if (skill == null) return false;</span>
+<span class="fc bfc" id="L155" title="All 2 branches covered.">        if (skill.getId() == null) return false;</span>
+<span class="pc bpc" id="L156" title="1 of 4 branches missed.">        if (skill.getName() == null || skill.getName().isBlank()) return false;</span>
+<span class="fc bfc" id="L157" title="All 2 branches covered.">        if (skill.getCategoryId() == null) return false;</span>
+<span class="fc" id="L158">        return true;</span>
+    }
+
+    // Devuelve true si ya existe una skill con el mismo nombre (ignorando mayúsculas),
+    // excluyendo el registro con excludeId (útil en actualizar para no bloquearse a sí mismo).
+    private boolean existeNombreCaseInsensitive(String nombre, Integer excludeId) {
+<span class="fc bfc" id="L164" title="All 2 branches covered.">        String sql = excludeId == null</span>
+<span class="fc" id="L165">                ? &quot;SELECT COUNT(*) FROM skill WHERE UPPER(name) = UPPER(?)&quot;</span>
+<span class="fc" id="L166">                : &quot;SELECT COUNT(*) FROM skill WHERE UPPER(name) = UPPER(?) AND id != ?&quot;;</span>
+<span class="fc" id="L167">        try (Connection connection = SQLiteConnectionManager.openConnection();</span>
+<span class="fc" id="L168">             PreparedStatement ps = connection.prepareStatement(sql)) {</span>
+<span class="fc" id="L169">            ps.setString(1, nombre);</span>
+<span class="fc bfc" id="L170" title="All 2 branches covered.">            if (excludeId != null) ps.setInt(2, excludeId);</span>
+<span class="fc" id="L171">            try (ResultSet rs = ps.executeQuery()) {</span>
+<span class="pc bpc" id="L172" title="1 of 4 branches missed.">                return rs.next() &amp;&amp; rs.getInt(1) &gt; 0;</span>
+            }
+<span class="nc" id="L174">        } catch (SQLException e) {</span>
+<span class="nc" id="L175">            return false;</span>
+        }
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

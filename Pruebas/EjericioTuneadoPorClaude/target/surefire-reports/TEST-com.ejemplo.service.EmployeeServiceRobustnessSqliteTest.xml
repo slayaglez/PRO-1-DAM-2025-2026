@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="7.542" tests="50" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/slayaglez/Actividad22/target/test-classes:/home/slayaglez/Actividad22/target/classes:/home/slayaglez/.m2/repository/org/xerial/sqlite-jdbc/3.45.3.0/sqlite-jdbc-3.45.3.0.jar:/home/slayaglez/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/slayaglez/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/slayaglez/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/slayaglez/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/slayaglez/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/slayaglez/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/slayaglez/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/slayaglez/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/slayaglez/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
+    <property name="java.vm.vendor" value="Debian"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://tracker.debian.org/openjdk-17"/>
+    <property name="user.timezone" value="Atlantic/Canary"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/slayaglez/Actividad22/target/surefire/surefirebooter-20260424000446660_3.jar /home/slayaglez/Actividad22/target/surefire 2026-04-24T00-04-46_332-jvmRun1 surefire-20260424000446660_1tmp surefire_0-20260424000446660_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/slayaglez/Actividad22/target/test-classes:/home/slayaglez/Actividad22/target/classes:/home/slayaglez/.m2/repository/org/xerial/sqlite-jdbc/3.45.3.0/sqlite-jdbc-3.45.3.0.jar:/home/slayaglez/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/slayaglez/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/slayaglez/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/slayaglez/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/slayaglez/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/slayaglez/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/slayaglez/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/slayaglez/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/slayaglez/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/slayaglez"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="/usr/lib/jvm/java-17-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/slayaglez/Actividad22"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/home/slayaglez/Actividad22/target/surefire/surefirebooter-20260424000446660_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.18+8-Debian-1deb12u1"/>
+    <property name="user.name" value="slayaglez"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.6.99-09128-g14e87a8a9b71"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/slayaglez/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.debian.org/openjdk-17"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="17.0.18"/>
+    <property name="user.dir" value="/home/slayaglez/Actividad22"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Debian"/>
+    <property name="java.vm.version" value="17.0.18+8-Debian-1deb12u1"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="listarTodosTrasCrearVariosMantieneOrdenPorId" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.231"/>
+  <testcase name="noPermiteActualizarEmpleadoConRolInexistente" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.183"/>
+  <testcase name="crearEmpleadoNullDevuelveFalse" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.103"/>
+  <testcase name="noPermiteActualizarEmpleadoConIdNulo" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.107"/>
+  <testcase name="crearEmpleadoHaceTrimDeCamposTexto" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.168"/>
+  <testcase name="cambiarManagerConManagerInexistenteFalla" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.178"/>
+  <testcase name="noPermiteCrearEmpleadoComoSuPropioManager" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.121"/>
+  <testcase name="cambiarManagerConEmpleadoNullFalla" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.108"/>
+  <testcase name="listarPorRolSinCoincidenciasDevuelveVacio" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.185"/>
+  <testcase name="cambiarManagerActualizaNumeroDeSubordinados" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.2"/>
+  <testcase name="noPermiteCrearEmpleadoConIdDuplicado" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.128"/>
+  <testcase name="buscarPorApellidoHaceTrim" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.2"/>
+  <testcase name="eliminarEmpleadoConResumeFallaPorIntegridadReferencial" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.143">
+    <system-err><![CDATA[Error borrando el empleadoorg.sqlite.SQLiteException: [SQLITE_CONSTRAINT_FOREIGNKEY] A foreign key constraint failed (FOREIGN KEY constraint failed)
+]]></system-err>
+  </testcase>
+  <testcase name="cambiarManagerConManagerNullFalla" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.103"/>
+  <testcase name="noPermiteCrearEmpleadoConStartDateVaciaEnVariantes(String)[1]" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.188"/>
+  <testcase name="noPermiteCrearEmpleadoConStartDateVaciaEnVariantes(String)[2]" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.135"/>
+  <testcase name="noPermiteCrearEmpleadoConStartDateVaciaEnVariantes(String)[3]" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.13"/>
+  <testcase name="noPermiteCrearEmpleadoConStartDateVaciaEnVariantes(String)[4]" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.138"/>
+  <testcase name="noPermiteCrearEmpleadoConApellidoVacioEnVariantes(String)[1]" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.123"/>
+  <testcase name="noPermiteCrearEmpleadoConApellidoVacioEnVariantes(String)[2]" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.099"/>
+  <testcase name="noPermiteCrearEmpleadoConApellidoVacioEnVariantes(String)[3]" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.109"/>
+  <testcase name="noPermiteCrearEmpleadoConApellidoVacioEnVariantes(String)[4]" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.12"/>
+  <testcase name="buscarPorApellidoVacioDevuelveVacio(String)[1]" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.124"/>
+  <testcase name="buscarPorApellidoVacioDevuelveVacio(String)[2]" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.12"/>
+  <testcase name="buscarPorApellidoVacioDevuelveVacio(String)[3]" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.112"/>
+  <testcase name="buscarPorIdInexistenteDevuelveNull" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.114"/>
+  <testcase name="listarManagersIncluyeManagersIntermedios" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.278"/>
+  <testcase name="noPermiteCrearEmpleadoConNombreVacioEnVariantes(String)[1]" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.109"/>
+  <testcase name="noPermiteCrearEmpleadoConNombreVacioEnVariantes(String)[2]" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.108"/>
+  <testcase name="noPermiteCrearEmpleadoConNombreVacioEnVariantes(String)[3]" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.108"/>
+  <testcase name="noPermiteCrearEmpleadoConNombreVacioEnVariantes(String)[4]" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.145"/>
+  <testcase name="eliminarManagerConSubordinadosFallaPorIntegridadReferencial" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.147">
+    <system-err><![CDATA[Error borrando el empleadoorg.sqlite.SQLiteException: [SQLITE_CONSTRAINT_FOREIGNKEY] A foreign key constraint failed (FOREIGN KEY constraint failed)
+]]></system-err>
+  </testcase>
+  <testcase name="buscarPorApellidoSinCoincidenciasDevuelveVacio" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.153"/>
+  <testcase name="buscarPorIdNullDevuelveNull" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.093"/>
+  <testcase name="cambiarManagerConEmpleadoInexistenteFalla" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.181"/>
+  <testcase name="eliminarInexistenteDevuelveFalse" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.143"/>
+  <testcase name="actualizarEmpleadoHaceTrimDeCampos" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.189"/>
+  <testcase name="noPermiteActualizarEmpleadoConManagerInexistente" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.179"/>
+  <testcase name="eliminarNullDevuelveFalse" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.126"/>
+  <testcase name="contarSubordinadosInexistenteEsCero" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.216"/>
+  <testcase name="noPermiteActualizarEmpleadoComoSuPropioManager" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.172"/>
+  <testcase name="actualizarNullDevuelveFalse" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.109"/>
+  <testcase name="listarTodosTrasEliminarReduceCantidad" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.219"/>
+  <testcase name="contarSubordinadosNullEsCero" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.11"/>
+  <testcase name="cambiarManagerASiMismoFalla" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.122"/>
+  <testcase name="buscarPorApellidoNullDevuelveVacio" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.118"/>
+  <testcase name="noPermiteCrearEmpleadoConIdNulo" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.097"/>
+  <testcase name="listarPorRolNullDevuelveVacio" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.131"/>
+  <testcase name="listarPorRolMantieneTodosLosDelRol" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.243"/>
+  <testcase name="listarManagersVacioSiNoHayJerarquia" classname="com.ejemplo.service.EmployeeServiceRobustnessSqliteTest" time="0.139"/>
+</testsuite>

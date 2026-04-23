@@ -1,0 +1,12 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+employee-skills-sqlite-ejercicio,com.ejemplo.service,SkillService,18,346,4,52,8,76,4,37,0,13
+employee-skills-sqlite-ejercicio,com.ejemplo.service,EmployeeService,5,367,4,70,2,77,4,47,0,14
+employee-skills-sqlite-ejercicio,com.ejemplo.repository.sqlite,EmployeeSqliteRepository,17,311,1,13,6,76,1,12,0,6
+employee-skills-sqlite-ejercicio,com.ejemplo.repository.sqlite,SQLiteConnectionManager,7,29,1,1,2,13,1,5,0,5
+employee-skills-sqlite-ejercicio,com.ejemplo.repository.sqlite,SkillSqliteRepository,17,229,1,9,6,58,1,10,0,6
+employee-skills-sqlite-ejercicio,com.ejemplo.repository.sqlite,SchemaRepository,47,0,0,0,15,0,2,0,2,0
+employee-skills-sqlite-ejercicio,com.ejemplo.model,Rol,36,0,0,0,13,0,8,0,8,0
+employee-skills-sqlite-ejercicio,com.ejemplo.model,Employee,49,63,6,0,8,20,7,13,4,13
+employee-skills-sqlite-ejercicio,com.ejemplo.model,Category,26,0,0,0,10,0,6,0,6,0
+employee-skills-sqlite-ejercicio,com.ejemplo.model,Skill,43,33,6,0,8,11,7,7,4,7
+employee-skills-sqlite-ejercicio,com.ejemplo.app,Main,18,0,0,0,6,0,2,0,2,0

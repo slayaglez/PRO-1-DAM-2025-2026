@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.ejemplo.service.SkillServiceSqliteTest
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.910 s -- in com.ejemplo.service.SkillServiceSqliteTest

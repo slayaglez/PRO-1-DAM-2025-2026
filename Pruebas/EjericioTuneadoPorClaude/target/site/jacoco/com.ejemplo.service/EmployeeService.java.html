@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>EmployeeService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">employee-skills-sqlite-ejercicio</a> &gt; <a href="index.source.html" class="el_package">com.ejemplo.service</a> &gt; <span class="el_source">EmployeeService.java</span></div><h1>EmployeeService.java</h1><pre class="source lang-java linenums">package com.ejemplo.service;
+
+import com.ejemplo.model.Employee;
+import com.ejemplo.repository.IEmployeeRepository;
+import com.ejemplo.repository.sqlite.EmployeeSqliteRepository;
+import com.ejemplo.repository.sqlite.SQLiteConnectionManager;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class EmployeeService implements IEmployeeService {
+
+    private final IEmployeeRepository repository;
+
+<span class="fc" id="L21">    public EmployeeService() {</span>
+<span class="fc" id="L22">        this.repository = new EmployeeSqliteRepository();</span>
+<span class="fc" id="L23">    }</span>
+
+    @Override
+    public boolean crear(Employee employee) {
+<span class="fc bfc" id="L27" title="All 2 branches covered.">        if (!validarEmployee(employee)) return false;</span>
+<span class="fc bfc" id="L28" title="All 2 branches covered.">        if (repository.findById(employee.getId()) != null) return false;</span>
+<span class="fc bfc" id="L29" title="All 2 branches covered.">        if (!existeEnTabla(&quot;rol&quot;, employee.getRolId())) return false;</span>
+<span class="fc bfc" id="L30" title="All 4 branches covered.">        if (employee.getReportsTo() != null &amp;&amp; repository.findById(employee.getReportsTo()) == null) return false;</span>
+<span class="fc" id="L31">        trimEmployee(employee);</span>
+<span class="fc" id="L32">        return repository.create(employee);</span>
+    }
+
+    @Override
+    public Employee buscarPorId(Integer id) {
+<span class="fc bfc" id="L37" title="All 2 branches covered.">        if (id == null) return null;</span>
+<span class="fc" id="L38">        return repository.findById(id);</span>
+    }
+
+    @Override
+    public List&lt;Employee&gt; listarTodos() {
+<span class="fc" id="L43">        return repository.findAll();</span>
+    }
+
+    @Override
+    public boolean actualizar(Employee employee) {
+<span class="fc bfc" id="L48" title="All 2 branches covered.">        if (!validarEmployee(employee)) return false;</span>
+<span class="fc bfc" id="L49" title="All 2 branches covered.">        if (!existeEnTabla(&quot;rol&quot;, employee.getRolId())) return false;</span>
+<span class="pc bpc" id="L50" title="1 of 2 branches missed.">        if (employee.getReportsTo() != null) {</span>
+<span class="fc bfc" id="L51" title="All 2 branches covered.">            if (employee.getReportsTo().equals(employee.getId())) return false;</span>
+<span class="fc bfc" id="L52" title="All 2 branches covered.">            if (repository.findById(employee.getReportsTo()) == null) return false;</span>
+        }
+<span class="fc" id="L54">        trimEmployee(employee);</span>
+<span class="fc" id="L55">        return repository.update(employee);</span>
+    }
+
+    @Override
+    public boolean eliminar(Integer id) {
+<span class="fc bfc" id="L60" title="All 2 branches covered.">        if (id == null) return false;</span>
+<span class="fc" id="L61">        return repository.deleteById(id);</span>
+    }
+
+    @Override
+    public List&lt;Employee&gt; listarPorRol(Integer rolId) {
+<span class="fc" id="L66">        List&lt;Employee&gt; empleados = repository.findAll();</span>
+<span class="fc" id="L67">        List&lt;Employee&gt; porRol = new ArrayList&lt;&gt;();</span>
+<span class="fc bfc" id="L68" title="All 2 branches covered.">        for (Employee employee : empleados) {</span>
+<span class="fc bfc" id="L69" title="All 2 branches covered.">            if (employee.getRolId().equals(rolId)) {</span>
+<span class="fc" id="L70">                porRol.add(employee);</span>
+            }
+<span class="fc" id="L72">        }</span>
+<span class="fc" id="L73">        return porRol;</span>
+    }
+
+    @Override
+    public List&lt;Employee&gt; listarManagers() {
+<span class="fc" id="L78">        List&lt;Employee&gt; todos = repository.findAll();</span>
+<span class="fc" id="L79">        Set&lt;Integer&gt; idsDeManagers = new HashSet&lt;&gt;();</span>
+<span class="fc bfc" id="L80" title="All 2 branches covered.">        for (Employee e : todos) {</span>
+<span class="fc bfc" id="L81" title="All 2 branches covered.">            if (e.getReportsTo() != null) {</span>
+<span class="fc" id="L82">                idsDeManagers.add(e.getReportsTo());</span>
+            }
+<span class="fc" id="L84">        }</span>
+<span class="fc" id="L85">        List&lt;Employee&gt; managers = new ArrayList&lt;&gt;();</span>
+<span class="fc bfc" id="L86" title="All 2 branches covered.">        for (Employee e : todos) {</span>
+<span class="fc bfc" id="L87" title="All 2 branches covered.">            if (idsDeManagers.contains(e.getId())) {</span>
+<span class="fc" id="L88">                managers.add(e);</span>
+            }
+<span class="fc" id="L90">        }</span>
+<span class="fc" id="L91">        return managers;</span>
+    }
+
+    @Override
+    public boolean cambiarManager(Integer employeeId, Integer managerId) {
+<span class="fc bfc" id="L96" title="All 4 branches covered.">        if (employeeId == null || managerId == null) return false;</span>
+<span class="fc" id="L97">        Employee employee = repository.findById(employeeId);</span>
+<span class="fc bfc" id="L98" title="All 2 branches covered.">        if (employee == null) return false;</span>
+<span class="fc bfc" id="L99" title="All 2 branches covered.">        if (repository.findById(managerId) == null) return false;</span>
+<span class="fc" id="L100">        employee.setReportsTo(managerId);</span>
+<span class="fc" id="L101">        return repository.update(employee);</span>
+    }
+
+    @Override
+    public int contarSubordinados(Integer managerId) {
+<span class="fc bfc" id="L106" title="All 2 branches covered.">        if (managerId == null) return 0;</span>
+<span class="fc" id="L107">        List&lt;Employee&gt; todos = repository.findAll();</span>
+<span class="fc" id="L108">        int count = 0;</span>
+<span class="fc bfc" id="L109" title="All 2 branches covered.">        for (Employee e : todos) {</span>
+<span class="fc bfc" id="L110" title="All 2 branches covered.">            if (managerId.equals(e.getReportsTo())) count++;</span>
+<span class="fc" id="L111">        }</span>
+<span class="fc" id="L112">        return count;</span>
+    }
+
+    @Override
+    public List&lt;Employee&gt; buscarPorApellido(String surname) {
+<span class="fc bfc" id="L117" title="All 2 branches covered.">        if (surname == null) return new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L118">        List&lt;Employee&gt; todos = repository.findAll();</span>
+<span class="fc" id="L119">        List&lt;Employee&gt; resultado = new ArrayList&lt;&gt;();</span>
+<span class="fc bfc" id="L120" title="All 2 branches covered.">        for (Employee e : todos) {</span>
+<span class="fc bfc" id="L121" title="All 2 branches covered.">            if (e.getSurname().equalsIgnoreCase(surname.trim())) {</span>
+<span class="fc" id="L122">                resultado.add(e);</span>
+            }
+<span class="fc" id="L124">        }</span>
+<span class="fc" id="L125">        return resultado;</span>
+    }
+
+    public boolean validarEmployee(Employee empleado) {
+<span class="fc bfc" id="L129" title="All 2 branches covered.">        if (empleado == null) return false;</span>
+<span class="fc bfc" id="L130" title="All 2 branches covered.">        if (empleado.getId() == null) return false;</span>
+<span class="fc bfc" id="L131" title="All 4 branches covered.">        if (empleado.getName() == null || empleado.getName().isBlank()) return false;</span>
+<span class="pc bpc" id="L132" title="1 of 4 branches missed.">        if (empleado.getSurname() == null || empleado.getSurname().isBlank()) return false;</span>
+<span class="pc bpc" id="L133" title="1 of 4 branches missed.">        if (empleado.getStartDate() == null || empleado.getStartDate().isBlank()) return false;</span>
+<span class="fc" id="L134">        return true;</span>
+    }
+
+    private void trimEmployee(Employee e) {
+<span class="fc" id="L138">        e.setName(e.getName().trim());</span>
+<span class="fc" id="L139">        e.setSurname(e.getSurname().trim());</span>
+<span class="fc" id="L140">        e.setStartDate(e.getStartDate().trim());</span>
+<span class="fc" id="L141">    }</span>
+
+    // Comprueba si existe una fila con ese id en una tabla catálogo
+    private boolean existeEnTabla(String tabla, Integer id) {
+<span class="pc bpc" id="L145" title="1 of 2 branches missed.">        if (id == null) return false;</span>
+<span class="fc" id="L146">        try (Connection connection = SQLiteConnectionManager.openConnection();</span>
+<span class="fc" id="L147">             PreparedStatement ps = connection.prepareStatement(</span>
+                     &quot;SELECT id FROM &quot; + tabla + &quot; WHERE id = ?&quot;)) {
+<span class="fc" id="L149">            ps.setInt(1, id);</span>
+<span class="fc" id="L150">            try (ResultSet rs = ps.executeQuery()) {</span>
+<span class="fc" id="L151">                return rs.next();</span>
+            }
+<span class="nc" id="L153">        } catch (SQLException e) {</span>
+<span class="nc" id="L154">            return false;</span>
+        }
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

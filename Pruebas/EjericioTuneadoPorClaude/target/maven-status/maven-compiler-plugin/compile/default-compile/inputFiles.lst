@@ -1,0 +1,15 @@
+/home/slayaglez/Actividad22/src/main/java/com/ejemplo/model/Rol.java
+/home/slayaglez/Actividad22/src/main/java/com/ejemplo/model/Skill.java
+/home/slayaglez/Actividad22/src/main/java/com/ejemplo/repository/IEmployeeRepository.java
+/home/slayaglez/Actividad22/src/main/java/com/ejemplo/repository/sqlite/SQLiteConnectionManager.java
+/home/slayaglez/Actividad22/src/main/java/com/ejemplo/service/ISkillService.java
+/home/slayaglez/Actividad22/src/main/java/com/ejemplo/service/IEmployeeService.java
+/home/slayaglez/Actividad22/src/main/java/com/ejemplo/model/Category.java
+/home/slayaglez/Actividad22/src/main/java/com/ejemplo/repository/sqlite/SkillSqliteRepository.java
+/home/slayaglez/Actividad22/src/main/java/com/ejemplo/app/Main.java
+/home/slayaglez/Actividad22/src/main/java/com/ejemplo/repository/sqlite/SchemaRepository.java
+/home/slayaglez/Actividad22/src/main/java/com/ejemplo/repository/sqlite/EmployeeSqliteRepository.java
+/home/slayaglez/Actividad22/src/main/java/com/ejemplo/repository/ISkillRepository.java
+/home/slayaglez/Actividad22/src/main/java/com/ejemplo/model/Employee.java
+/home/slayaglez/Actividad22/src/main/java/com/ejemplo/service/SkillService.java
+/home/slayaglez/Actividad22/src/main/java/com/ejemplo/service/EmployeeService.java

@@ -1,0 +1,15 @@
+com/ejemplo/repository/IEmployeeRepository.class
+com/ejemplo/model/Skill.class
+com/ejemplo/model/Category.class
+com/ejemplo/service/ISkillService.class
+com/ejemplo/repository/ISkillRepository.class
+com/ejemplo/service/IEmployeeService.class
+com/ejemplo/service/SkillService.class
+com/ejemplo/app/Main.class
+com/ejemplo/repository/sqlite/EmployeeSqliteRepository.class
+com/ejemplo/repository/sqlite/SchemaRepository.class
+com/ejemplo/repository/sqlite/SQLiteConnectionManager.class
+com/ejemplo/model/Rol.class
+com/ejemplo/repository/sqlite/SkillSqliteRepository.class
+com/ejemplo/model/Employee.class
+com/ejemplo/service/EmployeeService.class
