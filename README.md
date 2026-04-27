@@ -115,7 +115,7 @@ Un **repaso general** de lo trabajado hasta ahora en todo el primer Trimestre co
 [Link a la actividad navideña](./1erTrimestre/RepasoNavidad/src/main/java/com/docencia)
 
 
-## Segundo Trimestre (Actividad 10 ...)
+## Segundo Trimestre (Actividad 10 - Actividad 16)
 
 ### Actividad 10
 Introducción a interfaces, y ejercicios de ejemplo con uso de herencias y polimorfismo.
@@ -153,6 +153,43 @@ Actividad 4.1 evaluable, introducción a la recursividad, un conjunto de 60 ejer
 Actividad no evaluable, ejercicio de práctica para nuestro proyecto de autenticación de usuarios.
 
 [Link a la actividad 16](./2doTrimestre/Actividad16/src/main/java/com/docencia)
+
+## Tercer Trimestre (Actividad 17 - Actividad 23)
+
+### Actividad 17
+Introducción a **ficheros**, ejercicio de programación por capas, siendo el repositorio un archivo XML que no permite duplicados. Esta vez es una plataforma de registro docente.
+
+[Link a la actividad 17](./3erTrimestre/Actividad17/src/main/java/com/docencia)
+
+### Actividad 18
+Introducción a JSON con la librería JDB, ejercicios de programación por capas con un XML y un JSON como repositorio.
+
+[Link a la actividad 18](./3erTrimestre/Actividad18/src/main/java/com/docencia)
+
+### Actividad 19
+Actividad de manejo de ficheros con la librería Jackson XML, otro ejercicio de registro docente.
+
+[Link a la actividad 19](./3erTrimestre/Actividad19/src/main/java/com/docencia)
+
+### Actividad 20
+Actividad no evaluable, crear un CRUD para ficheros CSV, XML y JSON. Por otro lado también crearemos el CRUD para un repositorio en **SQLite** introduciéndonos en conexión a **BBDD**.
+
+[Link a la actividad 20](./3erTrimestre/Actividad20/src/main/java/com/docencia)
+
+### Actividad 21
+Desarrollo de una aplicación por capas con conexiones a una base de datos SQLite donde simulamos una aplicación de inmuebles.
+
+[Link a la actividad 21](./3erTrimestre/Actividad21/src/main/java/com/docencia)
+
+### Actividad 22
+Otro proyecto no evaluable muy parecido al anterior, en este el sistema va sobre empleados, sus skills y derivados. SQLite.
+
+[Link a la actividad 22](./3erTrimestre/Actividad22/src/main/java/com/docencia)
+
+### Actividad 23
+Lo mismo pero ahora es una frutería.
+
+[Link a la actividad 23](./3erTrimestre/Actividad23/src/main/java/com/docencia)
 
 <br>
 
