@@ -195,14 +195,14 @@ public class CompraSqliteRepository extends SQLiteConnectionManager implements I
 
             while (resultado.next()) {
                 Integer id = resultado.getInt("id");
-                String idProducto = resultado.getString("id_producto");
+                Integer idProducto = resultado.getInt("id_producto");
                 String numeroFactura = resultado.getString("numero_factura");
                 Double cantidad = resultado.getDouble("cantidad");
                 Double precioUnitario = resultado.getDouble("precio_unitario");
                 Double descuento = resultado.getDouble("descuento");
                 Double totalLinea = resultado.getDouble("total_linea");
-                // TODO
-                //compras.add(new CompraDetalle(id, idCompra, idProducto, cantidad, precioUnitario, descuento, totalLinea));
+                
+                compras.add(new CompraDetalle(id, idCompra, idProducto, cantidad, precioUnitario, descuento, totalLinea));
             }
 
             return compras;
