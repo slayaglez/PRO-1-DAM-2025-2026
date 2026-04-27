@@ -38,6 +38,17 @@ Todos los ejercicios y exámenes hechos a lo largo del primer año de Programaci
   - Unidad 5
     - [Actividad 15](#actividad-15)
     - [Actividad 16](#actividad-16)
+- Tercer Trimestre
+  - Unidad 6
+    - [Actividad 17](#actividad-17)
+    - [Actividad 18](#actividad-18)
+    - [Actividad 19](#actividad-19)
+  - Unidad 7
+    - [Actividad 20](#actividad-20)
+    - [Actividad 21](#actividad-21)
+    - [Actividad 22](#actividad-22)
+    - [Actividad 23](#actividad-23)
+
 - [Exámenes y "Pruebas evaluables"](#exámenes-y-pruebas-evaluables)
 
 </details>
